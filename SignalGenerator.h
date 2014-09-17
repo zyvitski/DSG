@@ -1,0 +1,75 @@
+//
+//  SignalGenerator.h
+//  DSG
+//
+//  Created by Alexander Zywicki on 9/16/14.
+//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
+//
+
+#ifndef __DSG__SignalGenerator__
+#define __DSG__SignalGenerator__
+
+#include "SignalProcess.h"
+#include "AudioSettings.h"
+#include "Sine.h"
+namespace DSG{
+    class SignalGenerator:public DSG::SignalProcess{
+    public:
+        SignalGenerator();
+        SignalGenerator(DSG::DSGFrequency const& frequency,DSG::DSGPhase const& offset);
+        virtual ~SignalGenerator();
+        virtual inline bool Perform(DSG::DSGSample& signal);
+        virtual inline bool Perform(DSG::RingBuffer& signal);
+        virtual inline DSG::DSGFrequency const& Frequency();
+        virtual inline DSG::DSGFrequency const& Frequency(DSG::DSGFrequency const& value);
+        virtual inline DSG::DSGPhase const& Phase();
+        virtual inline DSG::DSGPhase const& Phase(DSG::DSGPhase const& value);
+    protected:
+        inline void _pstep();
+        inline void _psync();
+        DSG::DSGFrequency _frequency;
+        DSG::DSGPhase _rate;
+        DSG::DSGPhase _offset;
+        DSG::DSGPhase _phasor;
+        DSG::DSGSample _storage;
+    };
+    
+    inline unsigned long MaxHarms(DSG::DSGFrequency const& frequency){
+        double _s = DSG::SampleRate()*  20000.0/DSG::SampleRate();
+        _s/=frequency;
+        return _s;
+    }
+}
+inline bool DSG::SignalGenerator::Perform(DSG::DSGSample& signal){
+    signal=0;
+    return false;
+}
+inline bool DSG::SignalGenerator::Perform(DSG::RingBuffer& signal){
+    signal.Flush();
+    return false;
+}
+inline DSG::DSGFrequency const& DSG::SignalGenerator::Frequency(){
+    return _frequency;
+}
+inline DSG::DSGFrequency const& DSG::SignalGenerator::Frequency(DSG::DSGFrequency const& value){
+    _rate = _frequency/DSG::SampleRate();
+    return _frequency;
+}
+inline DSG::DSGPhase const& DSG::SignalGenerator::Phase(){
+    return _offset;
+}
+inline DSG::DSGPhase const& DSG::SignalGenerator::Phase(DSG::DSGPhase const& value){
+    _offset-=value;
+    _phasor-=_offset;
+    _offset=value;
+    return _offset;
+}
+inline void DSG::SignalGenerator::_pstep(){
+    _phasor+=_rate;
+    _phasor>1.0 ? --_phasor:0;
+}
+inline void DSG::SignalGenerator::_psync(){
+    _phasor=_offset;
+}
+
+#endif /* defined(__DSG__SignalGenerator__) */

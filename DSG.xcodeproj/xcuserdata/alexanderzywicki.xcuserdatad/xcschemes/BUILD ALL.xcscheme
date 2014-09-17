@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F43E41D19C8D5ED0012C668"
-               BuildableName = "libDSG.dylib"
-               BlueprintName = "DSG"
+               BlueprintIdentifier = "1F43E45A19C8D71C0012C668"
+               BuildableName = "BUILD ALL"
+               BlueprintName = "BUILD ALL"
                ReferencedContainer = "container:DSG.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -35,7 +35,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">

@@ -6,8 +6,139 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		1F43E45A19C8D71C0012C668 /* BUILD ALL */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1F43E45B19C8D71C0012C668 /* Build configuration list for PBXAggregateTarget "BUILD ALL" */;
+			buildPhases = (
+			);
+			dependencies = (
+				1F43E45F19C8D7260012C668 /* PBXTargetDependency */,
+				1F43E46119C8D7260012C668 /* PBXTargetDependency */,
+			);
+			name = "BUILD ALL";
+			productName = "BUILD ALL";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1F43E43219C8D6240012C668 /* AudioSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E42619C8D6240012C668 /* AudioSettings.cpp */; };
+		1F43E43319C8D6240012C668 /* AudioSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E42719C8D6240012C668 /* AudioSettings.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E43619C8D6240012C668 /* DSG.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E42A19C8D6240012C668 /* DSG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F43E43719C8D6240012C668 /* DSGTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E42B19C8D6240012C668 /* DSGTypes.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E43A19C8D6240012C668 /* SignalGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E42E19C8D6240012C668 /* SignalGenerator.cpp */; };
+		1F43E43B19C8D6240012C668 /* SignalGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E42F19C8D6240012C668 /* SignalGenerator.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E43C19C8D6240012C668 /* SignalProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E43019C8D6240012C668 /* SignalProcess.cpp */; };
+		1F43E43D19C8D6240012C668 /* SignalProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E43119C8D6240012C668 /* SignalProcess.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E44219C8D67E0012C668 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E43E19C8D67E0012C668 /* Buffer.cpp */; };
+		1F43E44319C8D67E0012C668 /* Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E43F19C8D67E0012C668 /* Buffer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E44419C8D67E0012C668 /* RingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E44019C8D67E0012C668 /* RingBuffer.cpp */; };
+		1F43E44519C8D67E0012C668 /* RingBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E44119C8D67E0012C668 /* RingBuffer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E44E19C8D6F70012C668 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E43E19C8D67E0012C668 /* Buffer.cpp */; };
+		1F43E44F19C8D6F70012C668 /* Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E43F19C8D67E0012C668 /* Buffer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E45019C8D6F70012C668 /* RingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E44019C8D67E0012C668 /* RingBuffer.cpp */; };
+		1F43E45119C8D6F70012C668 /* RingBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E44119C8D67E0012C668 /* RingBuffer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E45219C8D6F70012C668 /* AudioSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E42619C8D6240012C668 /* AudioSettings.cpp */; };
+		1F43E45319C8D6F70012C668 /* AudioSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E42719C8D6240012C668 /* AudioSettings.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E45419C8D6F70012C668 /* DSG.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E42A19C8D6240012C668 /* DSG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F43E45519C8D6F70012C668 /* DSGTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E42B19C8D6240012C668 /* DSGTypes.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E45619C8D6F70012C668 /* SignalGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E42E19C8D6240012C668 /* SignalGenerator.cpp */; };
+		1F43E45719C8D6F70012C668 /* SignalGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E42F19C8D6240012C668 /* SignalGenerator.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E45819C8D6F70012C668 /* SignalProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E43019C8D6240012C668 /* SignalProcess.cpp */; };
+		1F43E45919C8D6F70012C668 /* SignalProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E43119C8D6240012C668 /* SignalProcess.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E46919C900110012C668 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E46819C900110012C668 /* main.cpp */; };
+		1F43E46B19C900110012C668 /* DSG_TEST.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F43E46A19C900110012C668 /* DSG_TEST.1 */; };
+		1F43E47619C901230012C668 /* libDSG.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F43E41E19C8D5ED0012C668 /* libDSG.dylib */; };
+		1F43E47F19C9038D0012C668 /* PI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E47E19C9038D0012C668 /* PI.h */; };
+		1F43E48019C9038D0012C668 /* PI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E47E19C9038D0012C668 /* PI.h */; };
+		1F43E48319C9079F0012C668 /* Sine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E48119C9079F0012C668 /* Sine.cpp */; };
+		1F43E48419C9079F0012C668 /* Sine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E48119C9079F0012C668 /* Sine.cpp */; };
+		1F43E48519C9079F0012C668 /* Sine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48219C9079F0012C668 /* Sine.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E48619C9079F0012C668 /* Sine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48219C9079F0012C668 /* Sine.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E48919C908EA0012C668 /* LUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48719C908EA0012C668 /* LUT.h */; };
+		1F43E48A19C908EA0012C668 /* LUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48719C908EA0012C668 /* LUT.h */; };
+		1F43E48B19C908EA0012C668 /* SineLUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48819C908EA0012C668 /* SineLUT.h */; };
+		1F43E48C19C908EA0012C668 /* SineLUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48819C908EA0012C668 /* SineLUT.h */; };
+		1F43E48F19C90DB40012C668 /* FourierSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E48D19C90DB40012C668 /* FourierSaw.cpp */; };
+		1F43E49019C90DB40012C668 /* FourierSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E48D19C90DB40012C668 /* FourierSaw.cpp */; };
+		1F43E49119C90DB40012C668 /* FourierSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48E19C90DB40012C668 /* FourierSaw.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E49219C90DB40012C668 /* FourierSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48E19C90DB40012C668 /* FourierSaw.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E49519C90DBD0012C668 /* FourierSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E49319C90DBD0012C668 /* FourierSquare.cpp */; };
+		1F43E49619C90DBD0012C668 /* FourierSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E49319C90DBD0012C668 /* FourierSquare.cpp */; };
+		1F43E49719C90DBD0012C668 /* FourierSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E49419C90DBD0012C668 /* FourierSquare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E49819C90DBD0012C668 /* FourierSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E49419C90DBD0012C668 /* FourierSquare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E49B19C90DC70012C668 /* FourierTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E49919C90DC70012C668 /* FourierTriangle.cpp */; };
+		1F43E49C19C90DC70012C668 /* FourierTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E49919C90DC70012C668 /* FourierTriangle.cpp */; };
+		1F43E49D19C90DC70012C668 /* FourierTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E49A19C90DC70012C668 /* FourierTriangle.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F43E49E19C90DC70012C668 /* FourierTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E49A19C90DC70012C668 /* FourierTriangle.h */; settings = {ATTRIBUTES = (Private, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F43E45E19C8D7260012C668 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F43E41619C8D5EC0012C668 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F43E41D19C8D5ED0012C668;
+			remoteInfo = DSG;
+		};
+		1F43E46019C8D7260012C668 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F43E41619C8D5EC0012C668 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F43E44919C8D6E90012C668;
+			remoteInfo = DSG_static;
+		};
+		1F43E47419C900790012C668 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F43E41619C8D5EC0012C668 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F43E45A19C8D71C0012C668;
+			remoteInfo = "BUILD ALL";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F43E46419C900110012C668 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				1F43E46B19C900110012C668 /* DSG_TEST.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1F43E41E19C8D5ED0012C668 /* libDSG.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDSG.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F43E42619C8D6240012C668 /* AudioSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioSettings.cpp; sourceTree = "<group>"; };
+		1F43E42719C8D6240012C668 /* AudioSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSettings.h; sourceTree = "<group>"; };
+		1F43E42A19C8D6240012C668 /* DSG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSG.h; sourceTree = "<group>"; };
+		1F43E42B19C8D6240012C668 /* DSGTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSGTypes.h; sourceTree = "<group>"; };
+		1F43E42E19C8D6240012C668 /* SignalGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SignalGenerator.cpp; sourceTree = "<group>"; };
+		1F43E42F19C8D6240012C668 /* SignalGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalGenerator.h; sourceTree = "<group>"; };
+		1F43E43019C8D6240012C668 /* SignalProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SignalProcess.cpp; sourceTree = "<group>"; };
+		1F43E43119C8D6240012C668 /* SignalProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalProcess.h; sourceTree = "<group>"; };
+		1F43E43E19C8D67E0012C668 /* Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Buffer.cpp; sourceTree = "<group>"; };
+		1F43E43F19C8D67E0012C668 /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Buffer.h; sourceTree = "<group>"; };
+		1F43E44019C8D67E0012C668 /* RingBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RingBuffer.cpp; sourceTree = "<group>"; };
+		1F43E44119C8D67E0012C668 /* RingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingBuffer.h; sourceTree = "<group>"; };
+		1F43E44A19C8D6E90012C668 /* libDSG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDSG.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F43E46619C900110012C668 /* DSG_TEST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSG_TEST; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F43E46819C900110012C668 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1F43E46A19C900110012C668 /* DSG_TEST.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DSG_TEST.1; sourceTree = "<group>"; };
+		1F43E47E19C9038D0012C668 /* PI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PI.h; sourceTree = "<group>"; };
+		1F43E48119C9079F0012C668 /* Sine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sine.cpp; sourceTree = "<group>"; };
+		1F43E48219C9079F0012C668 /* Sine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sine.h; sourceTree = "<group>"; };
+		1F43E48719C908EA0012C668 /* LUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LUT.h; sourceTree = "<group>"; };
+		1F43E48819C908EA0012C668 /* SineLUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SineLUT.h; sourceTree = "<group>"; };
+		1F43E48D19C90DB40012C668 /* FourierSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FourierSaw.cpp; sourceTree = "<group>"; };
+		1F43E48E19C90DB40012C668 /* FourierSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourierSaw.h; sourceTree = "<group>"; };
+		1F43E49319C90DBD0012C668 /* FourierSquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FourierSquare.cpp; sourceTree = "<group>"; };
+		1F43E49419C90DBD0012C668 /* FourierSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourierSquare.h; sourceTree = "<group>"; };
+		1F43E49919C90DC70012C668 /* FourierTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FourierTriangle.cpp; sourceTree = "<group>"; };
+		1F43E49A19C90DC70012C668 /* FourierTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourierTriangle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -18,12 +149,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F43E44719C8D6E90012C668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F43E46319C900110012C668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F43E47619C901230012C668 /* libDSG.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1F43E41519C8D5EC0012C668 = {
 			isa = PBXGroup;
 			children = (
+				1F43E42519C8D6140012C668 /* src */,
+				1F43E46719C900110012C668 /* DSG_TEST */,
 				1F43E41F19C8D5ED0012C668 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -32,8 +180,57 @@
 			isa = PBXGroup;
 			children = (
 				1F43E41E19C8D5ED0012C668 /* libDSG.dylib */,
+				1F43E44A19C8D6E90012C668 /* libDSG.a */,
+				1F43E46619C900110012C668 /* DSG_TEST */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1F43E42519C8D6140012C668 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1F43E47719C901590012C668 /* Core */,
+				1F43E42A19C8D6240012C668 /* DSG.h */,
+				1F43E48D19C90DB40012C668 /* FourierSaw.cpp */,
+				1F43E48E19C90DB40012C668 /* FourierSaw.h */,
+				1F43E49319C90DBD0012C668 /* FourierSquare.cpp */,
+				1F43E49419C90DBD0012C668 /* FourierSquare.h */,
+				1F43E49919C90DC70012C668 /* FourierTriangle.cpp */,
+				1F43E49A19C90DC70012C668 /* FourierTriangle.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		1F43E46719C900110012C668 /* DSG_TEST */ = {
+			isa = PBXGroup;
+			children = (
+				1F43E46819C900110012C668 /* main.cpp */,
+				1F43E46A19C900110012C668 /* DSG_TEST.1 */,
+			);
+			path = DSG_TEST;
+			sourceTree = "<group>";
+		};
+		1F43E47719C901590012C668 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1F43E48719C908EA0012C668 /* LUT.h */,
+				1F43E48819C908EA0012C668 /* SineLUT.h */,
+				1F43E43E19C8D67E0012C668 /* Buffer.cpp */,
+				1F43E43F19C8D67E0012C668 /* Buffer.h */,
+				1F43E44019C8D67E0012C668 /* RingBuffer.cpp */,
+				1F43E44119C8D67E0012C668 /* RingBuffer.h */,
+				1F43E42619C8D6240012C668 /* AudioSettings.cpp */,
+				1F43E42719C8D6240012C668 /* AudioSettings.h */,
+				1F43E42B19C8D6240012C668 /* DSGTypes.h */,
+				1F43E42E19C8D6240012C668 /* SignalGenerator.cpp */,
+				1F43E42F19C8D6240012C668 /* SignalGenerator.h */,
+				1F43E43019C8D6240012C668 /* SignalProcess.cpp */,
+				1F43E43119C8D6240012C668 /* SignalProcess.h */,
+				1F43E47E19C9038D0012C668 /* PI.h */,
+				1F43E48119C9079F0012C668 /* Sine.cpp */,
+				1F43E48219C9079F0012C668 /* Sine.h */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -43,6 +240,41 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F43E47F19C9038D0012C668 /* PI.h in Headers */,
+				1F43E48519C9079F0012C668 /* Sine.h in Headers */,
+				1F43E44319C8D67E0012C668 /* Buffer.h in Headers */,
+				1F43E43619C8D6240012C668 /* DSG.h in Headers */,
+				1F43E49719C90DBD0012C668 /* FourierSquare.h in Headers */,
+				1F43E48919C908EA0012C668 /* LUT.h in Headers */,
+				1F43E49119C90DB40012C668 /* FourierSaw.h in Headers */,
+				1F43E43B19C8D6240012C668 /* SignalGenerator.h in Headers */,
+				1F43E44519C8D67E0012C668 /* RingBuffer.h in Headers */,
+				1F43E49D19C90DC70012C668 /* FourierTriangle.h in Headers */,
+				1F43E43319C8D6240012C668 /* AudioSettings.h in Headers */,
+				1F43E43719C8D6240012C668 /* DSGTypes.h in Headers */,
+				1F43E48B19C908EA0012C668 /* SineLUT.h in Headers */,
+				1F43E43D19C8D6240012C668 /* SignalProcess.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F43E44819C8D6E90012C668 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F43E48019C9038D0012C668 /* PI.h in Headers */,
+				1F43E48619C9079F0012C668 /* Sine.h in Headers */,
+				1F43E45119C8D6F70012C668 /* RingBuffer.h in Headers */,
+				1F43E45419C8D6F70012C668 /* DSG.h in Headers */,
+				1F43E49819C90DBD0012C668 /* FourierSquare.h in Headers */,
+				1F43E48A19C908EA0012C668 /* LUT.h in Headers */,
+				1F43E49219C90DB40012C668 /* FourierSaw.h in Headers */,
+				1F43E45719C8D6F70012C668 /* SignalGenerator.h in Headers */,
+				1F43E45319C8D6F70012C668 /* AudioSettings.h in Headers */,
+				1F43E49E19C90DC70012C668 /* FourierTriangle.h in Headers */,
+				1F43E45519C8D6F70012C668 /* DSGTypes.h in Headers */,
+				1F43E44F19C8D6F70012C668 /* Buffer.h in Headers */,
+				1F43E48C19C908EA0012C668 /* SineLUT.h in Headers */,
+				1F43E45919C8D6F70012C668 /* SignalProcess.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +298,41 @@
 			productReference = 1F43E41E19C8D5ED0012C668 /* libDSG.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		1F43E44919C8D6E90012C668 /* DSG_static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F43E44B19C8D6E90012C668 /* Build configuration list for PBXNativeTarget "DSG_static" */;
+			buildPhases = (
+				1F43E44619C8D6E90012C668 /* Sources */,
+				1F43E44719C8D6E90012C668 /* Frameworks */,
+				1F43E44819C8D6E90012C668 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSG_static;
+			productName = DSG_static;
+			productReference = 1F43E44A19C8D6E90012C668 /* libDSG.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1F43E46519C900110012C668 /* DSG_TEST */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F43E46C19C900110012C668 /* Build configuration list for PBXNativeTarget "DSG_TEST" */;
+			buildPhases = (
+				1F43E46219C900110012C668 /* Sources */,
+				1F43E46319C900110012C668 /* Frameworks */,
+				1F43E46419C900110012C668 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F43E47519C900790012C668 /* PBXTargetDependency */,
+			);
+			name = DSG_TEST;
+			productName = DSG_TEST;
+			productReference = 1F43E46619C900110012C668 /* DSG_TEST */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -88,6 +355,9 @@
 			projectRoot = "";
 			targets = (
 				1F43E41D19C8D5ED0012C668 /* DSG */,
+				1F43E44919C8D6E90012C668 /* DSG_static */,
+				1F43E45A19C8D71C0012C668 /* BUILD ALL */,
+				1F43E46519C900110012C668 /* DSG_TEST */,
 			);
 		};
 /* End PBXProject section */
@@ -97,10 +367,61 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F43E48319C9079F0012C668 /* Sine.cpp in Sources */,
+				1F43E49B19C90DC70012C668 /* FourierTriangle.cpp in Sources */,
+				1F43E43219C8D6240012C668 /* AudioSettings.cpp in Sources */,
+				1F43E48F19C90DB40012C668 /* FourierSaw.cpp in Sources */,
+				1F43E44219C8D67E0012C668 /* Buffer.cpp in Sources */,
+				1F43E43A19C8D6240012C668 /* SignalGenerator.cpp in Sources */,
+				1F43E43C19C8D6240012C668 /* SignalProcess.cpp in Sources */,
+				1F43E44419C8D67E0012C668 /* RingBuffer.cpp in Sources */,
+				1F43E49519C90DBD0012C668 /* FourierSquare.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F43E44619C8D6E90012C668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F43E48419C9079F0012C668 /* Sine.cpp in Sources */,
+				1F43E49C19C90DC70012C668 /* FourierTriangle.cpp in Sources */,
+				1F43E44E19C8D6F70012C668 /* Buffer.cpp in Sources */,
+				1F43E49019C90DB40012C668 /* FourierSaw.cpp in Sources */,
+				1F43E45619C8D6F70012C668 /* SignalGenerator.cpp in Sources */,
+				1F43E45019C8D6F70012C668 /* RingBuffer.cpp in Sources */,
+				1F43E45219C8D6F70012C668 /* AudioSettings.cpp in Sources */,
+				1F43E45819C8D6F70012C668 /* SignalProcess.cpp in Sources */,
+				1F43E49619C90DBD0012C668 /* FourierSquare.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F43E46219C900110012C668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F43E46919C900110012C668 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F43E45F19C8D7260012C668 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F43E41D19C8D5ED0012C668 /* DSG */;
+			targetProxy = 1F43E45E19C8D7260012C668 /* PBXContainerItemProxy */;
+		};
+		1F43E46119C8D7260012C668 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F43E44919C8D6E90012C668 /* DSG_static */;
+			targetProxy = 1F43E46019C8D7260012C668 /* PBXContainerItemProxy */;
+		};
+		1F43E47519C900790012C668 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F43E45A19C8D71C0012C668 /* BUILD ALL */;
+			targetProxy = 1F43E47419C900790012C668 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1F43E42019C8D5ED0012C668 /* Debug */ = {
@@ -123,7 +444,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -177,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				New_Setting = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -185,6 +507,60 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				New_Setting = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F43E44C19C8D6E90012C668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = DSG;
+			};
+			name = Debug;
+		};
+		1F43E44D19C8D6E90012C668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = DSG;
+			};
+			name = Release;
+		};
+		1F43E45C19C8D71C0012C668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F43E45D19C8D71C0012C668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F43E46D19C900110012C668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F43E46E19C900110012C668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -206,6 +582,30 @@
 			buildConfigurations = (
 				1F43E42319C8D5ED0012C668 /* Debug */,
 				1F43E42419C8D5ED0012C668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F43E44B19C8D6E90012C668 /* Build configuration list for PBXNativeTarget "DSG_static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F43E44C19C8D6E90012C668 /* Debug */,
+				1F43E44D19C8D6E90012C668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F43E45B19C8D71C0012C668 /* Build configuration list for PBXAggregateTarget "BUILD ALL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F43E45C19C8D71C0012C668 /* Debug */,
+				1F43E45D19C8D71C0012C668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F43E46C19C900110012C668 /* Build configuration list for PBXNativeTarget "DSG_TEST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F43E46D19C900110012C668 /* Debug */,
+				1F43E46E19C900110012C668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

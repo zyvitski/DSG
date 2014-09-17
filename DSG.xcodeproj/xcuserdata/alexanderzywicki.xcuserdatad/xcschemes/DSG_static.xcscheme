@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F43E41D19C8D5ED0012C668"
-               BuildableName = "libDSG.dylib"
-               BlueprintName = "DSG"
+               BlueprintIdentifier = "1F43E44919C8D6E90012C668"
+               BuildableName = "libDSG.a"
+               BlueprintName = "DSG_static"
                ReferencedContainer = "container:DSG.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

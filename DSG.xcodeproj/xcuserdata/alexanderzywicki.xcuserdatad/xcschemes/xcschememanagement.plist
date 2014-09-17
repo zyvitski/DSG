@@ -4,15 +4,45 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BUILD ALL.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>DSG.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>DSG_TEST.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>DSG_static.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>1F43E41D19C8D5ED0012C668</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1F43E44919C8D6E90012C668</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1F43E45A19C8D71C0012C668</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1F43E46519C900110012C668</key>
 		<dict>
 			<key>primary</key>
 			<true/>
