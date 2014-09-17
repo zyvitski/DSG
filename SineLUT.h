@@ -5,16 +5,13 @@
 //  Created by Alexander Zywicki on 8/25/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
-
 #ifndef Waveform_SineLUT_h
 #define Waveform_SineLUT_h
-
 #include <stdint.h>
 #include <math.h>
 #include "LUT.h"
 #include "PI.h"
 namespace DSG{
-    
     template <typename element, unsigned long size>
     class SineLUT:public LUT<element,size> {
     public:

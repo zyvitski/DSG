@@ -17,6 +17,12 @@
 #include "Sine.h"
 
 #include "FourierSaw.h"
+#include "FourierSquare.h"
+#include "FourierTriangle.h"
+
+#include "AnalogSaw.h"
+#include "AnalogSquare.h"
+#include "AnalogTriangle.h"
 
 
 #endif

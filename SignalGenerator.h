@@ -5,14 +5,14 @@
 //  Created by Alexander Zywicki on 9/16/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
-
 #ifndef __DSG__SignalGenerator__
 #define __DSG__SignalGenerator__
-
 #include "SignalProcess.h"
 #include "AudioSettings.h"
 #include "Sine.h"
 namespace DSG{
+    /*!\brief DSG::SignalGenerator - Extends DSG::Signal Process With Tools For Signal Generation
+     */
     class SignalGenerator:public DSG::SignalProcess{
     public:
         SignalGenerator();
@@ -71,5 +71,4 @@ inline void DSG::SignalGenerator::_pstep(){
 inline void DSG::SignalGenerator::_psync(){
     _phasor=_offset;
 }
-
 #endif /* defined(__DSG__SignalGenerator__) */

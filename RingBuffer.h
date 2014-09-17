@@ -5,18 +5,16 @@
 //  Created by Alexander Zywicki on 9/16/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
-
 #ifndef __DSG__RingBuffer__
 #define __DSG__RingBuffer__
 #ifdef DEBUG
 #include <iostream>
 #endif
-
 #include <atomic>
 #include <math.h>
 #include "Buffer.h"
 namespace DSG {
-    /*!\brief RingBuffer of Audio
+    /*!\brief DSG::RingBuffer - Circular Buffer of Audio
      */
     class RingBuffer:public DSG::Buffer {
     protected:

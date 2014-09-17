@@ -5,10 +5,8 @@
 //  Created by Alexander Zywicki on 9/16/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
-
 #ifndef __DSG__FourierSaw__
 #define __DSG__FourierSaw__
-
 #include "SignalGenerator.h"
 namespace DSG{
     class FourierSaw : public DSG::SignalGenerator {
@@ -21,12 +19,13 @@ namespace DSG{
         virtual inline DSG::DSGFrequency const& Frequency(DSG::DSGFrequency const& value);
     protected:
         unsigned long _h;
-        const double _a = 0.5;
+        const double _a = 1.7/PI;
         double phs=0,value=0;
+        int i=0;
     };
     inline bool DSG::FourierSaw::Perform(DSG::DSGSample& signal){
         value=DSG::Sin(_phasor);
-        for (int i=1; i<_h; ++i) {
+        for (i=2; i<_h; ++i) {
             value += (1.0/i) * DSG::Sin(_phasor*i);
         }
         value*=_a;
@@ -48,5 +47,4 @@ namespace DSG{
         return _frequency;
     }
 }
-
 #endif /* defined(__DSG__FourierSaw__) */

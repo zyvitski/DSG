@@ -5,7 +5,6 @@
 //  Created by Alexander Zywicki on 9/16/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
-
 #include "Buffer.h"
 DSG::Buffer::Buffer():_size(0),_buffer(nullptr){}
 DSG::Buffer::Buffer(size_t size):_size(size),_buffer(new  DSG::DSGSample[size]){}

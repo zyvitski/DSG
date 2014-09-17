@@ -51,8 +51,6 @@
 		1F43E47619C901230012C668 /* libDSG.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F43E41E19C8D5ED0012C668 /* libDSG.dylib */; };
 		1F43E47F19C9038D0012C668 /* PI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E47E19C9038D0012C668 /* PI.h */; };
 		1F43E48019C9038D0012C668 /* PI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E47E19C9038D0012C668 /* PI.h */; };
-		1F43E48319C9079F0012C668 /* Sine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E48119C9079F0012C668 /* Sine.cpp */; };
-		1F43E48419C9079F0012C668 /* Sine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E48119C9079F0012C668 /* Sine.cpp */; };
 		1F43E48519C9079F0012C668 /* Sine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48219C9079F0012C668 /* Sine.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1F43E48619C9079F0012C668 /* Sine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48219C9079F0012C668 /* Sine.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1F43E48919C908EA0012C668 /* LUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48719C908EA0012C668 /* LUT.h */; };
@@ -71,6 +69,34 @@
 		1F43E49C19C90DC70012C668 /* FourierTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E49919C90DC70012C668 /* FourierTriangle.cpp */; };
 		1F43E49D19C90DC70012C668 /* FourierTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E49A19C90DC70012C668 /* FourierTriangle.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1F43E49E19C90DC70012C668 /* FourierTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E49A19C90DC70012C668 /* FourierTriangle.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FA8763319CA455400AE3EF1 /* AnalogSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8763119CA455400AE3EF1 /* AnalogSaw.cpp */; };
+		1FA8763419CA455400AE3EF1 /* AnalogSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8763119CA455400AE3EF1 /* AnalogSaw.cpp */; };
+		1FA8763519CA455400AE3EF1 /* AnalogSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8763219CA455400AE3EF1 /* AnalogSaw.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FA8763619CA455400AE3EF1 /* AnalogSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8763219CA455400AE3EF1 /* AnalogSaw.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FA8763919CA456300AE3EF1 /* AnalogSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8763719CA456300AE3EF1 /* AnalogSquare.cpp */; };
+		1FA8763A19CA456300AE3EF1 /* AnalogSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8763719CA456300AE3EF1 /* AnalogSquare.cpp */; };
+		1FA8763B19CA456300AE3EF1 /* AnalogSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8763819CA456300AE3EF1 /* AnalogSquare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FA8763C19CA456300AE3EF1 /* AnalogSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8763819CA456300AE3EF1 /* AnalogSquare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FA8763F19CA456E00AE3EF1 /* AnalogTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8763D19CA456E00AE3EF1 /* AnalogTriangle.cpp */; };
+		1FA8764019CA456E00AE3EF1 /* AnalogTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8763D19CA456E00AE3EF1 /* AnalogTriangle.cpp */; };
+		1FA8764119CA456E00AE3EF1 /* AnalogTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8763E19CA456E00AE3EF1 /* AnalogTriangle.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FA8764219CA456E00AE3EF1 /* AnalogTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8763E19CA456E00AE3EF1 /* AnalogTriangle.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FA8764919CA55F200AE3EF1 /* BLIT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8764719CA55F200AE3EF1 /* BLIT.cpp */; };
+		1FA8764A19CA55F200AE3EF1 /* BLIT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8764719CA55F200AE3EF1 /* BLIT.cpp */; };
+		1FA8764B19CA55F200AE3EF1 /* BLIT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8764819CA55F200AE3EF1 /* BLIT.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FA8764C19CA55F200AE3EF1 /* BLIT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8764819CA55F200AE3EF1 /* BLIT.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FA8764F19CA55FA00AE3EF1 /* BLITSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8764D19CA55FA00AE3EF1 /* BLITSaw.cpp */; };
+		1FA8765019CA55FA00AE3EF1 /* BLITSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8764D19CA55FA00AE3EF1 /* BLITSaw.cpp */; };
+		1FA8765119CA55FA00AE3EF1 /* BLITSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8764E19CA55FA00AE3EF1 /* BLITSaw.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FA8765219CA55FA00AE3EF1 /* BLITSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8764E19CA55FA00AE3EF1 /* BLITSaw.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FA8765519CA560300AE3EF1 /* BLITSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8765319CA560300AE3EF1 /* BLITSquare.cpp */; };
+		1FA8765619CA560300AE3EF1 /* BLITSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8765319CA560300AE3EF1 /* BLITSquare.cpp */; };
+		1FA8765719CA560300AE3EF1 /* BLITSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8765419CA560300AE3EF1 /* BLITSquare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FA8765819CA560300AE3EF1 /* BLITSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8765419CA560300AE3EF1 /* BLITSquare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FA8765B19CA560E00AE3EF1 /* BLITTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8765919CA560E00AE3EF1 /* BLITTriangle.cpp */; };
+		1FA8765C19CA560E00AE3EF1 /* BLITTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8765919CA560E00AE3EF1 /* BLITTriangle.cpp */; };
+		1FA8765D19CA560E00AE3EF1 /* BLITTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8765A19CA560E00AE3EF1 /* BLITTriangle.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FA8765E19CA560E00AE3EF1 /* BLITTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8765A19CA560E00AE3EF1 /* BLITTriangle.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,7 +155,6 @@
 		1F43E46819C900110012C668 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1F43E46A19C900110012C668 /* DSG_TEST.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DSG_TEST.1; sourceTree = "<group>"; };
 		1F43E47E19C9038D0012C668 /* PI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PI.h; sourceTree = "<group>"; };
-		1F43E48119C9079F0012C668 /* Sine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sine.cpp; sourceTree = "<group>"; };
 		1F43E48219C9079F0012C668 /* Sine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sine.h; sourceTree = "<group>"; };
 		1F43E48719C908EA0012C668 /* LUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LUT.h; sourceTree = "<group>"; };
 		1F43E48819C908EA0012C668 /* SineLUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SineLUT.h; sourceTree = "<group>"; };
@@ -139,6 +164,20 @@
 		1F43E49419C90DBD0012C668 /* FourierSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourierSquare.h; sourceTree = "<group>"; };
 		1F43E49919C90DC70012C668 /* FourierTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FourierTriangle.cpp; sourceTree = "<group>"; };
 		1F43E49A19C90DC70012C668 /* FourierTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourierTriangle.h; sourceTree = "<group>"; };
+		1FA8763119CA455400AE3EF1 /* AnalogSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnalogSaw.cpp; sourceTree = "<group>"; };
+		1FA8763219CA455400AE3EF1 /* AnalogSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalogSaw.h; sourceTree = "<group>"; };
+		1FA8763719CA456300AE3EF1 /* AnalogSquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnalogSquare.cpp; sourceTree = "<group>"; };
+		1FA8763819CA456300AE3EF1 /* AnalogSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalogSquare.h; sourceTree = "<group>"; };
+		1FA8763D19CA456E00AE3EF1 /* AnalogTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnalogTriangle.cpp; sourceTree = "<group>"; };
+		1FA8763E19CA456E00AE3EF1 /* AnalogTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalogTriangle.h; sourceTree = "<group>"; };
+		1FA8764719CA55F200AE3EF1 /* BLIT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BLIT.cpp; sourceTree = "<group>"; };
+		1FA8764819CA55F200AE3EF1 /* BLIT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLIT.h; sourceTree = "<group>"; };
+		1FA8764D19CA55FA00AE3EF1 /* BLITSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BLITSaw.cpp; sourceTree = "<group>"; };
+		1FA8764E19CA55FA00AE3EF1 /* BLITSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLITSaw.h; sourceTree = "<group>"; };
+		1FA8765319CA560300AE3EF1 /* BLITSquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BLITSquare.cpp; sourceTree = "<group>"; };
+		1FA8765419CA560300AE3EF1 /* BLITSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLITSquare.h; sourceTree = "<group>"; };
+		1FA8765919CA560E00AE3EF1 /* BLITTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BLITTriangle.cpp; sourceTree = "<group>"; };
+		1FA8765A19CA560E00AE3EF1 /* BLITTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLITTriangle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,14 +228,11 @@
 		1F43E42519C8D6140012C668 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				1FA8764619CA55DF00AE3EF1 /* BLIT */,
 				1F43E47719C901590012C668 /* Core */,
 				1F43E42A19C8D6240012C668 /* DSG.h */,
-				1F43E48D19C90DB40012C668 /* FourierSaw.cpp */,
-				1F43E48E19C90DB40012C668 /* FourierSaw.h */,
-				1F43E49319C90DBD0012C668 /* FourierSquare.cpp */,
-				1F43E49419C90DBD0012C668 /* FourierSquare.h */,
-				1F43E49919C90DC70012C668 /* FourierTriangle.cpp */,
-				1F43E49A19C90DC70012C668 /* FourierTriangle.h */,
+				1FA8763019CA42AD00AE3EF1 /* Fourier */,
+				1FA8764319CA464600AE3EF1 /* Analog */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -227,10 +263,50 @@
 				1F43E43019C8D6240012C668 /* SignalProcess.cpp */,
 				1F43E43119C8D6240012C668 /* SignalProcess.h */,
 				1F43E47E19C9038D0012C668 /* PI.h */,
-				1F43E48119C9079F0012C668 /* Sine.cpp */,
 				1F43E48219C9079F0012C668 /* Sine.h */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		1FA8763019CA42AD00AE3EF1 /* Fourier */ = {
+			isa = PBXGroup;
+			children = (
+				1F43E48D19C90DB40012C668 /* FourierSaw.cpp */,
+				1F43E48E19C90DB40012C668 /* FourierSaw.h */,
+				1F43E49319C90DBD0012C668 /* FourierSquare.cpp */,
+				1F43E49419C90DBD0012C668 /* FourierSquare.h */,
+				1F43E49919C90DC70012C668 /* FourierTriangle.cpp */,
+				1F43E49A19C90DC70012C668 /* FourierTriangle.h */,
+			);
+			name = Fourier;
+			sourceTree = "<group>";
+		};
+		1FA8764319CA464600AE3EF1 /* Analog */ = {
+			isa = PBXGroup;
+			children = (
+				1FA8763119CA455400AE3EF1 /* AnalogSaw.cpp */,
+				1FA8763219CA455400AE3EF1 /* AnalogSaw.h */,
+				1FA8763719CA456300AE3EF1 /* AnalogSquare.cpp */,
+				1FA8763819CA456300AE3EF1 /* AnalogSquare.h */,
+				1FA8763D19CA456E00AE3EF1 /* AnalogTriangle.cpp */,
+				1FA8763E19CA456E00AE3EF1 /* AnalogTriangle.h */,
+			);
+			name = Analog;
+			sourceTree = "<group>";
+		};
+		1FA8764619CA55DF00AE3EF1 /* BLIT */ = {
+			isa = PBXGroup;
+			children = (
+				1FA8764719CA55F200AE3EF1 /* BLIT.cpp */,
+				1FA8764819CA55F200AE3EF1 /* BLIT.h */,
+				1FA8764D19CA55FA00AE3EF1 /* BLITSaw.cpp */,
+				1FA8764E19CA55FA00AE3EF1 /* BLITSaw.h */,
+				1FA8765319CA560300AE3EF1 /* BLITSquare.cpp */,
+				1FA8765419CA560300AE3EF1 /* BLITSquare.h */,
+				1FA8765919CA560E00AE3EF1 /* BLITTriangle.cpp */,
+				1FA8765A19CA560E00AE3EF1 /* BLITTriangle.h */,
+			);
+			name = BLIT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,13 +316,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA8765119CA55FA00AE3EF1 /* BLITSaw.h in Headers */,
 				1F43E47F19C9038D0012C668 /* PI.h in Headers */,
+				1FA8765719CA560300AE3EF1 /* BLITSquare.h in Headers */,
 				1F43E48519C9079F0012C668 /* Sine.h in Headers */,
 				1F43E44319C8D67E0012C668 /* Buffer.h in Headers */,
 				1F43E43619C8D6240012C668 /* DSG.h in Headers */,
 				1F43E49719C90DBD0012C668 /* FourierSquare.h in Headers */,
+				1FA8764B19CA55F200AE3EF1 /* BLIT.h in Headers */,
+				1FA8765D19CA560E00AE3EF1 /* BLITTriangle.h in Headers */,
 				1F43E48919C908EA0012C668 /* LUT.h in Headers */,
 				1F43E49119C90DB40012C668 /* FourierSaw.h in Headers */,
+				1FA8763B19CA456300AE3EF1 /* AnalogSquare.h in Headers */,
 				1F43E43B19C8D6240012C668 /* SignalGenerator.h in Headers */,
 				1F43E44519C8D67E0012C668 /* RingBuffer.h in Headers */,
 				1F43E49D19C90DC70012C668 /* FourierTriangle.h in Headers */,
@@ -254,6 +335,8 @@
 				1F43E43719C8D6240012C668 /* DSGTypes.h in Headers */,
 				1F43E48B19C908EA0012C668 /* SineLUT.h in Headers */,
 				1F43E43D19C8D6240012C668 /* SignalProcess.h in Headers */,
+				1FA8763519CA455400AE3EF1 /* AnalogSaw.h in Headers */,
+				1FA8764119CA456E00AE3EF1 /* AnalogTriangle.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,13 +344,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA8765219CA55FA00AE3EF1 /* BLITSaw.h in Headers */,
 				1F43E48019C9038D0012C668 /* PI.h in Headers */,
+				1FA8765819CA560300AE3EF1 /* BLITSquare.h in Headers */,
 				1F43E48619C9079F0012C668 /* Sine.h in Headers */,
 				1F43E45119C8D6F70012C668 /* RingBuffer.h in Headers */,
 				1F43E45419C8D6F70012C668 /* DSG.h in Headers */,
 				1F43E49819C90DBD0012C668 /* FourierSquare.h in Headers */,
+				1FA8764C19CA55F200AE3EF1 /* BLIT.h in Headers */,
+				1FA8765E19CA560E00AE3EF1 /* BLITTriangle.h in Headers */,
 				1F43E48A19C908EA0012C668 /* LUT.h in Headers */,
 				1F43E49219C90DB40012C668 /* FourierSaw.h in Headers */,
+				1FA8763C19CA456300AE3EF1 /* AnalogSquare.h in Headers */,
 				1F43E45719C8D6F70012C668 /* SignalGenerator.h in Headers */,
 				1F43E45319C8D6F70012C668 /* AudioSettings.h in Headers */,
 				1F43E49E19C90DC70012C668 /* FourierTriangle.h in Headers */,
@@ -275,6 +363,8 @@
 				1F43E44F19C8D6F70012C668 /* Buffer.h in Headers */,
 				1F43E48C19C908EA0012C668 /* SineLUT.h in Headers */,
 				1F43E45919C8D6F70012C668 /* SignalProcess.h in Headers */,
+				1FA8763619CA455400AE3EF1 /* AnalogSaw.h in Headers */,
+				1FA8764219CA456E00AE3EF1 /* AnalogTriangle.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,15 +457,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F43E48319C9079F0012C668 /* Sine.cpp in Sources */,
+				1FA8764919CA55F200AE3EF1 /* BLIT.cpp in Sources */,
 				1F43E49B19C90DC70012C668 /* FourierTriangle.cpp in Sources */,
 				1F43E43219C8D6240012C668 /* AudioSettings.cpp in Sources */,
 				1F43E48F19C90DB40012C668 /* FourierSaw.cpp in Sources */,
 				1F43E44219C8D67E0012C668 /* Buffer.cpp in Sources */,
 				1F43E43A19C8D6240012C668 /* SignalGenerator.cpp in Sources */,
 				1F43E43C19C8D6240012C668 /* SignalProcess.cpp in Sources */,
+				1FA8763319CA455400AE3EF1 /* AnalogSaw.cpp in Sources */,
+				1FA8763F19CA456E00AE3EF1 /* AnalogTriangle.cpp in Sources */,
 				1F43E44419C8D67E0012C668 /* RingBuffer.cpp in Sources */,
+				1FA8765B19CA560E00AE3EF1 /* BLITTriangle.cpp in Sources */,
+				1FA8763919CA456300AE3EF1 /* AnalogSquare.cpp in Sources */,
+				1FA8764F19CA55FA00AE3EF1 /* BLITSaw.cpp in Sources */,
 				1F43E49519C90DBD0012C668 /* FourierSquare.cpp in Sources */,
+				1FA8765519CA560300AE3EF1 /* BLITSquare.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,15 +479,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F43E48419C9079F0012C668 /* Sine.cpp in Sources */,
+				1FA8764A19CA55F200AE3EF1 /* BLIT.cpp in Sources */,
 				1F43E49C19C90DC70012C668 /* FourierTriangle.cpp in Sources */,
 				1F43E44E19C8D6F70012C668 /* Buffer.cpp in Sources */,
 				1F43E49019C90DB40012C668 /* FourierSaw.cpp in Sources */,
 				1F43E45619C8D6F70012C668 /* SignalGenerator.cpp in Sources */,
 				1F43E45019C8D6F70012C668 /* RingBuffer.cpp in Sources */,
 				1F43E45219C8D6F70012C668 /* AudioSettings.cpp in Sources */,
+				1FA8763419CA455400AE3EF1 /* AnalogSaw.cpp in Sources */,
+				1FA8764019CA456E00AE3EF1 /* AnalogTriangle.cpp in Sources */,
 				1F43E45819C8D6F70012C668 /* SignalProcess.cpp in Sources */,
+				1FA8765C19CA560E00AE3EF1 /* BLITTriangle.cpp in Sources */,
+				1FA8763A19CA456300AE3EF1 /* AnalogSquare.cpp in Sources */,
+				1FA8765019CA55FA00AE3EF1 /* BLITSaw.cpp in Sources */,
 				1F43E49619C90DBD0012C668 /* FourierSquare.cpp in Sources */,
+				1FA8765619CA560300AE3EF1 /* BLITSquare.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +686,7 @@
 				1F43E42419C8D5ED0012C668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F43E44B19C8D6E90012C668 /* Build configuration list for PBXNativeTarget "DSG_static" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +695,7 @@
 				1F43E44D19C8D6E90012C668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F43E45B19C8D71C0012C668 /* Build configuration list for PBXAggregateTarget "BUILD ALL" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +704,7 @@
 				1F43E45D19C8D71C0012C668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F43E46C19C900110012C668 /* Build configuration list for PBXNativeTarget "DSG_TEST" */ = {
 			isa = XCConfigurationList;
@@ -608,6 +713,7 @@
 				1F43E46E19C900110012C668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
