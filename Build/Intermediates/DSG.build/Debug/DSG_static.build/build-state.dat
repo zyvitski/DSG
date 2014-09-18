@@ -1,0 +1,965 @@
+TDSG_static
+v6
+r1
+cCheck dependencies
+cCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLIT.o /Users/alexanderzywicki/Documents/DSG/BLIT.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierTriangle.o /Users/alexanderzywicki/Documents/DSG/FourierTriangle.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/Buffer.o /Users/alexanderzywicki/Documents/DSG/Buffer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSaw.o /Users/alexanderzywicki/Documents/DSG/FourierSaw.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalGenerator.o /Users/alexanderzywicki/Documents/DSG/SignalGenerator.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/RingBuffer.o /Users/alexanderzywicki/Documents/DSG/RingBuffer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AudioSettings.o /Users/alexanderzywicki/Documents/DSG/AudioSettings.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSaw.o /Users/alexanderzywicki/Documents/DSG/AnalogSaw.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogTriangle.o /Users/alexanderzywicki/Documents/DSG/AnalogTriangle.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalProcess.o /Users/alexanderzywicki/Documents/DSG/SignalProcess.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o /Users/alexanderzywicki/Documents/DSG/BLITTriangle.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSquare.o /Users/alexanderzywicki/Documents/DSG/AnalogSquare.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSaw.o /Users/alexanderzywicki/Documents/DSG/BLITSaw.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSquare.o /Users/alexanderzywicki/Documents/DSG/FourierSquare.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSquare.o /Users/alexanderzywicki/Documents/DSG/BLITSquare.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/libDSG.a normal x86_64
+cCpHeader BLITSaw.h Build/Products/Debug/usr/local/include/BLITSaw.h
+cCpHeader Sine.h Build/Products/Debug/usr/local/include/Sine.h
+cCpHeader BLITSquare.h Build/Products/Debug/usr/local/include/BLITSquare.h
+cCpHeader RingBuffer.h Build/Products/Debug/usr/local/include/RingBuffer.h
+cCpHeader DSG.h Build/Products/Debug/usr/local/include/DSG.h
+cCpHeader FourierSquare.h Build/Products/Debug/usr/local/include/FourierSquare.h
+cCpHeader BLIT.h Build/Products/Debug/usr/local/include/BLIT.h
+cCpHeader BLITTriangle.h Build/Products/Debug/usr/local/include/BLITTriangle.h
+cCpHeader FourierSaw.h Build/Products/Debug/usr/local/include/FourierSaw.h
+cCpHeader AnalogSquare.h Build/Products/Debug/usr/local/include/AnalogSquare.h
+cCpHeader SignalGenerator.h Build/Products/Debug/usr/local/include/SignalGenerator.h
+cCpHeader AudioSettings.h Build/Products/Debug/usr/local/include/AudioSettings.h
+cCpHeader FourierTriangle.h Build/Products/Debug/usr/local/include/FourierTriangle.h
+cCpHeader DSGTypes.h Build/Products/Debug/usr/local/include/DSGTypes.h
+cCpHeader Buffer.h Build/Products/Debug/usr/local/include/Buffer.h
+cCpHeader SignalProcess.h Build/Products/Debug/usr/local/include/SignalProcess.h
+cCpHeader AnalogTriangle.h Build/Products/Debug/usr/local/include/AnalogTriangle.h
+cCpHeader AnalogSaw.h Build/Products/Debug/usr/local/include/AnalogSaw.h
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c00000000530295C100000000000000AA
+t1392678337
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c0000000054186D31000000000000044C
+t1410886961
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000054186D3100000000000001DE
+t1410886961
+s478
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c0000000054186D390000000000000ADC
+t1410886969
+s2780
+
+N/Users/alexanderzywicki/Documents/DSG/AnalogSaw.cpp
+c00000000541A0E41000000000000017D
+t1410993729
+s381
+
+N/Users/alexanderzywicki/Documents/DSG/AnalogSaw.h
+c00000000541A10D40000000000000496
+t1410994388
+s1174
+
+N/Users/alexanderzywicki/Documents/DSG/AnalogSquare.cpp
+c00000000541A0FD20000000000000195
+t1410994130
+s405
+
+N/Users/alexanderzywicki/Documents/DSG/AnalogSquare.h
+c00000000541A13190000000000000450
+t1410994969
+s1104
+
+N/Users/alexanderzywicki/Documents/DSG/AnalogTriangle.cpp
+c00000000541A120F00000000000001A5
+t1410994703
+s421
+
+N/Users/alexanderzywicki/Documents/DSG/AnalogTriangle.h
+c00000000541A160E0000000000000564
+t1410995726
+s1380
+
+N/Users/alexanderzywicki/Documents/DSG/AudioSettings.cpp
+c000000005418930700000000000001C1
+t1410896647
+s449
+
+N/Users/alexanderzywicki/Documents/DSG/AudioSettings.h
+c00000000541A0D5C000000000000036C
+t1410993500
+s876
+
+N/Users/alexanderzywicki/Documents/DSG/BLIT.cpp
+c00000000541A1E72000000000000009D
+t1410997874
+s157
+
+N/Users/alexanderzywicki/Documents/DSG/BLIT.h
+c00000000541A1EAB00000000000000F8
+t1410997931
+s248
+
+N/Users/alexanderzywicki/Documents/DSG/BLITSaw.cpp
+c00000000541A1E7A00000000000000A3
+t1410997882
+s163
+
+N/Users/alexanderzywicki/Documents/DSG/BLITSaw.h
+c00000000541A1EB70000000000000104
+t1410997943
+s260
+
+N/Users/alexanderzywicki/Documents/DSG/BLITSquare.cpp
+c00000000541A1E8200000000000000A9
+t1410997890
+s169
+
+N/Users/alexanderzywicki/Documents/DSG/BLITSquare.h
+c00000000541A1EB70000000000000110
+t1410997943
+s272
+
+N/Users/alexanderzywicki/Documents/DSG/BLITTriangle.cpp
+c00000000541A1E8D00000000000000AD
+t1410997901
+s173
+
+N/Users/alexanderzywicki/Documents/DSG/BLITTriangle.h
+c00000000541A1EB70000000000000118
+t1410997943
+s280
+
+N/Users/alexanderzywicki/Documents/DSG/Buffer.cpp
+c00000000541A0D1300000000000003DB
+t1410993427
+s987
+
+N/Users/alexanderzywicki/Documents/DSG/Buffer.h
+c00000000541A0D7F0000000000000357
+t1410993535
+s855
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSaw.o
+t1410998431
+s21756
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSquare.o
+t1410998432
+s21960
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogTriangle.o
+t1410998432
+s22140
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AudioSettings.o
+t1410998431
+s3716
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLIT.o
+t1410998431
+s2012
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSaw.o
+t1410998433
+s2016
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSquare.o
+t1410998433
+s2024
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o
+t1410998432
+s2028
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/Buffer.o
+t1410998431
+s11412
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/DSG.LinkFileList
+c00000000541A209E000000000000076F
+t1410998430
+s1903
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSaw.o
+t1410998431
+s97440
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSquare.o
+t1410998433
+s97572
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierTriangle.o
+t1410998431
+s97716
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/RingBuffer.o
+t1410998431
+s88176
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalGenerator.o
+t1410998431
+s21068
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalProcess.o
+t1410998432
+s12460
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/libDSG.a
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/AnalogSaw.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/AnalogSquare.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/AnalogTriangle.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/AudioSettings.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/BLIT.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/BLITSaw.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/BLITSquare.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/BLITTriangle.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/Buffer.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/DSG.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/DSGTypes.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/FourierSaw.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/FourierSquare.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/FourierTriangle.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/RingBuffer.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/SignalGenerator.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/SignalProcess.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/Sine.h
+t2
+s0
+
+N/Users/alexanderzywicki/Documents/DSG/DSG.h
+c00000000541A132600000000000001E6
+t1410994982
+s486
+
+N/Users/alexanderzywicki/Documents/DSG/DSGTypes.h
+c00000000541A0D56000000000000012C
+t1410993494
+s300
+
+N/Users/alexanderzywicki/Documents/DSG/FourierSaw.cpp
+c00000000541A0B4C00000000000001A7
+t1410992972
+s423
+
+N/Users/alexanderzywicki/Documents/DSG/FourierSaw.h
+c000000005419D0420000000000000644
+t1410977858
+s1604
+
+N/Users/alexanderzywicki/Documents/DSG/FourierSquare.cpp
+c00000000541A0B4C00000000000001BE
+t1410992972
+s446
+
+N/Users/alexanderzywicki/Documents/DSG/FourierSquare.h
+c00000000541A05A2000000000000061C
+t1410991522
+s1564
+
+N/Users/alexanderzywicki/Documents/DSG/FourierTriangle.cpp
+c00000000541A0B4C00000000000001CE
+t1410992972
+s462
+
+N/Users/alexanderzywicki/Documents/DSG/FourierTriangle.h
+c00000000541A0AF700000000000006CD
+t1410992887
+s1741
+
+N/Users/alexanderzywicki/Documents/DSG/RingBuffer.cpp
+c00000000541A0D130000000000000560
+t1410993427
+s1376
+
+N/Users/alexanderzywicki/Documents/DSG/RingBuffer.h
+c00000000541A0D7F0000000000000A4C
+t1410993535
+s2636
+
+N/Users/alexanderzywicki/Documents/DSG/SignalGenerator.cpp
+c0000000054188D140000000000000219
+t1410895124
+s537
+
+N/Users/alexanderzywicki/Documents/DSG/SignalGenerator.h
+c00000000541A0D500000000000000957
+t1410993488
+s2391
+
+N/Users/alexanderzywicki/Documents/DSG/SignalProcess.cpp
+c00000000541A0D1300000000000000FA
+t1410993427
+s250
+
+N/Users/alexanderzywicki/Documents/DSG/SignalProcess.h
+c00000000541A0D500000000000000278
+t1410993488
+s632
+
+N/Users/alexanderzywicki/Documents/DSG/Sine.h
+c00000000541A1F1400000000000004AB
+t1410998036
+s1195
+
+CBuild AST from /Users/alexanderzywicki/Documents/DSG/AnalogSaw.cpp
+r0
+
+CBuild AST from /Users/alexanderzywicki/Documents/DSG/AnalogSquare.cpp
+r0
+
+CBuild AST from /Users/alexanderzywicki/Documents/DSG/AnalogTriangle.cpp
+r0
+
+CBuild AST from /Users/alexanderzywicki/Documents/DSG/AudioSettings.cpp
+r0
+
+CBuild AST from /Users/alexanderzywicki/Documents/DSG/BLIT.cpp
+r0
+
+CBuild AST from /Users/alexanderzywicki/Documents/DSG/BLITSaw.cpp
+r0
+
+CBuild AST from /Users/alexanderzywicki/Documents/DSG/BLITSquare.cpp
+r0
+
+CBuild AST from /Users/alexanderzywicki/Documents/DSG/BLITTriangle.cpp
+r0
+
+CBuild AST from /Users/alexanderzywicki/Documents/DSG/Buffer.cpp
+r0
+
+CBuild AST from /Users/alexanderzywicki/Documents/DSG/FourierSaw.cpp
+r0
+
+CBuild AST from /Users/alexanderzywicki/Documents/DSG/FourierSquare.cpp
+r0
+
+CBuild AST from /Users/alexanderzywicki/Documents/DSG/FourierTriangle.cpp
+r0
+
+CBuild AST from /Users/alexanderzywicki/Documents/DSG/RingBuffer.cpp
+r0
+
+CBuild AST from /Users/alexanderzywicki/Documents/DSG/SignalGenerator.cpp
+r0
+
+CBuild AST from /Users/alexanderzywicki/Documents/DSG/SignalProcess.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd32ee61e58cab941^aa7ff01e58cab941^---0#1#1#--18"Check dependencies36"E3BA1DA7-59EE-446D-BFCF-A305853F4A5A-
+
+CCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSaw.o /Users/alexanderzywicki/Documents/DSG/AnalogSaw.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s432691231.095121
+e432691231.860124
+r1
+xCompileC
+xBuild/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSaw.o
+x/Users/alexanderzywicki/Documents/DSG/AnalogSaw.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderzywicki/Documents/DSG/AnalogSaw.cpp
+d/Users/alexanderzywicki/Documents/DSG/AnalogSaw.h
+d/Users/alexanderzywicki/Documents/DSG/SignalGenerator.h
+d/Users/alexanderzywicki/Documents/DSG/SignalProcess.h
+d/Users/alexanderzywicki/Documents/DSG/DSGTypes.h
+d/Users/alexanderzywicki/Documents/DSG/RingBuffer.h
+d/Users/alexanderzywicki/Documents/DSG/Buffer.h
+d/Users/alexanderzywicki/Documents/DSG/AudioSettings.h
+d/Users/alexanderzywicki/Documents/DSG/Sine.h
+d/Users/alexanderzywicki/Documents/DSG/SineLUT.h
+d/Users/alexanderzywicki/Documents/DSG/LUT.h
+d/Users/alexanderzywicki/Documents/DSG/PI.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Compile /Users/alexanderzywicki/Documents/DSG/AnalogSaw.cpp171"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSaw.o AnalogSaw.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler1d75181f58cab941^df31dc1f58cab941^---0#0#1#-19%DVTDocumentLocation2@58"file:///Users/alexanderzywicki/Documents/DSG/AnalogSaw.cpp0000000000000000^2870"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSaw.o AnalogSaw.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Documents/DSG/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-generated-files.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-project-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSaw.d --serialize-diagnostics /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSaw.dia -c /Users/alexanderzywicki/Documents/DSG/AnalogSaw.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSaw.o36"48F182DE-F67F-45FA-ABB8-0A54379E6AD9-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSquare.o /Users/alexanderzywicki/Documents/DSG/AnalogSquare.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s432691231.747150
+e432691232.447466
+r1
+xCompileC
+xBuild/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSquare.o
+x/Users/alexanderzywicki/Documents/DSG/AnalogSquare.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderzywicki/Documents/DSG/AnalogSquare.cpp
+d/Users/alexanderzywicki/Documents/DSG/AnalogSquare.h
+d/Users/alexanderzywicki/Documents/DSG/SignalGenerator.h
+d/Users/alexanderzywicki/Documents/DSG/SignalProcess.h
+d/Users/alexanderzywicki/Documents/DSG/DSGTypes.h
+d/Users/alexanderzywicki/Documents/DSG/RingBuffer.h
+d/Users/alexanderzywicki/Documents/DSG/Buffer.h
+d/Users/alexanderzywicki/Documents/DSG/AudioSettings.h
+d/Users/alexanderzywicki/Documents/DSG/Sine.h
+d/Users/alexanderzywicki/Documents/DSG/SineLUT.h
+d/Users/alexanderzywicki/Documents/DSG/LUT.h
+d/Users/alexanderzywicki/Documents/DSG/PI.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/alexanderzywicki/Documents/DSG/AnalogSquare.cpp177"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSquare.o AnalogSquare.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler035dbf1f58cab941^e696722058cab941^---0#0#1#-19%DVTDocumentLocation2@61"file:///Users/alexanderzywicki/Documents/DSG/AnalogSquare.cpp0000000000000000^2888"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSquare.o AnalogSquare.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Documents/DSG/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-generated-files.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-project-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSquare.d --serialize-diagnostics /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSquare.dia -c /Users/alexanderzywicki/Documents/DSG/AnalogSquare.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogSquare.o36"71ED761A-7263-41E5-BA19-B5D9F8DE1062-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogTriangle.o /Users/alexanderzywicki/Documents/DSG/AnalogTriangle.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s432691231.649297
+e432691232.387993
+r1
+xCompileC
+xBuild/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogTriangle.o
+x/Users/alexanderzywicki/Documents/DSG/AnalogTriangle.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderzywicki/Documents/DSG/AnalogTriangle.cpp
+d/Users/alexanderzywicki/Documents/DSG/AnalogTriangle.h
+d/Users/alexanderzywicki/Documents/DSG/SignalGenerator.h
+d/Users/alexanderzywicki/Documents/DSG/SignalProcess.h
+d/Users/alexanderzywicki/Documents/DSG/DSGTypes.h
+d/Users/alexanderzywicki/Documents/DSG/RingBuffer.h
+d/Users/alexanderzywicki/Documents/DSG/Buffer.h
+d/Users/alexanderzywicki/Documents/DSG/AudioSettings.h
+d/Users/alexanderzywicki/Documents/DSG/Sine.h
+d/Users/alexanderzywicki/Documents/DSG/SineLUT.h
+d/Users/alexanderzywicki/Documents/DSG/LUT.h
+d/Users/alexanderzywicki/Documents/DSG/PI.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/alexanderzywicki/Documents/DSG/AnalogTriangle.cpp181"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogTriangle.o AnalogTriangle.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler92b1a61f58cab941^3b54632058cab941^---0#0#1#-19%DVTDocumentLocation2@63"file:///Users/alexanderzywicki/Documents/DSG/AnalogTriangle.cpp0000000000000000^2900"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogTriangle.o AnalogTriangle.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Documents/DSG/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-generated-files.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-project-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogTriangle.d --serialize-diagnostics /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogTriangle.dia -c /Users/alexanderzywicki/Documents/DSG/AnalogTriangle.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AnalogTriangle.o36"4D8D9FA6-6D5E-4D34-BAE7-B413D185D82C-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AudioSettings.o /Users/alexanderzywicki/Documents/DSG/AudioSettings.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s432691231.034742
+e432691231.062130
+r1
+xCompileC
+xBuild/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AudioSettings.o
+x/Users/alexanderzywicki/Documents/DSG/AudioSettings.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderzywicki/Documents/DSG/AudioSettings.cpp
+d/Users/alexanderzywicki/Documents/DSG/AudioSettings.h
+d/Users/alexanderzywicki/Documents/DSG/DSGTypes.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/alexanderzywicki/Documents/DSG/AudioSettings.cpp179"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AudioSettings.o AudioSettings.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler3f00091f58cab941^14e80f1f58cab941^---0#0#1#-19%DVTDocumentLocation2@62"file:///Users/alexanderzywicki/Documents/DSG/AudioSettings.cpp0000000000000000^2894"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AudioSettings.o AudioSettings.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Documents/DSG/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-generated-files.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-project-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AudioSettings.d --serialize-diagnostics /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AudioSettings.dia -c /Users/alexanderzywicki/Documents/DSG/AudioSettings.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/AudioSettings.o36"EB753145-3FFA-4E53-A319-D0523F637115-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLIT.o /Users/alexanderzywicki/Documents/DSG/BLIT.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s432691230.937410
+e432691231.622785
+r1
+xCompileC
+xBuild/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLIT.o
+x/Users/alexanderzywicki/Documents/DSG/BLIT.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderzywicki/Documents/DSG/BLIT.cpp
+d/Users/alexanderzywicki/Documents/DSG/BLIT.h
+d/Users/alexanderzywicki/Documents/DSG/SignalGenerator.h
+d/Users/alexanderzywicki/Documents/DSG/SignalProcess.h
+d/Users/alexanderzywicki/Documents/DSG/DSGTypes.h
+d/Users/alexanderzywicki/Documents/DSG/RingBuffer.h
+d/Users/alexanderzywicki/Documents/DSG/Buffer.h
+d/Users/alexanderzywicki/Documents/DSG/AudioSettings.h
+d/Users/alexanderzywicki/Documents/DSG/Sine.h
+d/Users/alexanderzywicki/Documents/DSG/SineLUT.h
+d/Users/alexanderzywicki/Documents/DSG/LUT.h
+d/Users/alexanderzywicki/Documents/DSG/PI.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Compile /Users/alexanderzywicki/Documents/DSG/BLIT.cpp161"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLIT.o BLIT.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerca17f01e58cab941^1a6f9f1f58cab941^---0#0#1#-19%DVTDocumentLocation2@53"file:///Users/alexanderzywicki/Documents/DSG/BLIT.cpp0000000000000000^2840"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLIT.o BLIT.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Documents/DSG/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-generated-files.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-project-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLIT.d --serialize-diagnostics /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLIT.dia -c /Users/alexanderzywicki/Documents/DSG/BLIT.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLIT.o36"110AEEB4-DB2F-4EE5-B7F3-D948C1AF2A31-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSaw.o /Users/alexanderzywicki/Documents/DSG/BLITSaw.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s432691232.381286
+e432691233.110794
+r1
+xCompileC
+xBuild/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSaw.o
+x/Users/alexanderzywicki/Documents/DSG/BLITSaw.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderzywicki/Documents/DSG/BLITSaw.cpp
+d/Users/alexanderzywicki/Documents/DSG/BLITSaw.h
+d/Users/alexanderzywicki/Documents/DSG/SignalGenerator.h
+d/Users/alexanderzywicki/Documents/DSG/SignalProcess.h
+d/Users/alexanderzywicki/Documents/DSG/DSGTypes.h
+d/Users/alexanderzywicki/Documents/DSG/RingBuffer.h
+d/Users/alexanderzywicki/Documents/DSG/Buffer.h
+d/Users/alexanderzywicki/Documents/DSG/AudioSettings.h
+d/Users/alexanderzywicki/Documents/DSG/Sine.h
+d/Users/alexanderzywicki/Documents/DSG/SineLUT.h
+d/Users/alexanderzywicki/Documents/DSG/LUT.h
+d/Users/alexanderzywicki/Documents/DSG/PI.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Compile /Users/alexanderzywicki/Documents/DSG/BLITSaw.cpp167"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSaw.o BLITSaw.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler12fa612058cab941^3e5e1c2158cab941^---0#0#1#-19%DVTDocumentLocation2@56"file:///Users/alexanderzywicki/Documents/DSG/BLITSaw.cpp0000000000000000^2858"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSaw.o BLITSaw.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Documents/DSG/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-generated-files.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-project-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSaw.d --serialize-diagnostics /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSaw.dia -c /Users/alexanderzywicki/Documents/DSG/BLITSaw.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSaw.o36"CF2127A5-DC0D-4A0D-B07F-965C9F8488DF-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSquare.o /Users/alexanderzywicki/Documents/DSG/BLITSquare.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s432691232.414685
+e432691233.138026
+r1
+xCompileC
+xBuild/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSquare.o
+x/Users/alexanderzywicki/Documents/DSG/BLITSquare.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderzywicki/Documents/DSG/BLITSquare.cpp
+d/Users/alexanderzywicki/Documents/DSG/BLITSquare.h
+d/Users/alexanderzywicki/Documents/DSG/SignalGenerator.h
+d/Users/alexanderzywicki/Documents/DSG/SignalProcess.h
+d/Users/alexanderzywicki/Documents/DSG/DSGTypes.h
+d/Users/alexanderzywicki/Documents/DSG/RingBuffer.h
+d/Users/alexanderzywicki/Documents/DSG/Buffer.h
+d/Users/alexanderzywicki/Documents/DSG/AudioSettings.h
+d/Users/alexanderzywicki/Documents/DSG/Sine.h
+d/Users/alexanderzywicki/Documents/DSG/SineLUT.h
+d/Users/alexanderzywicki/Documents/DSG/LUT.h
+d/Users/alexanderzywicki/Documents/DSG/PI.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Compile /Users/alexanderzywicki/Documents/DSG/BLITSquare.cpp173"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSquare.o BLITSquare.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler45476a2058cab941^6556232158cab941^---0#0#1#-19%DVTDocumentLocation2@59"file:///Users/alexanderzywicki/Documents/DSG/BLITSquare.cpp0000000000000000^2876"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSquare.o BLITSquare.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Documents/DSG/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-generated-files.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-project-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSquare.d --serialize-diagnostics /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSquare.dia -c /Users/alexanderzywicki/Documents/DSG/BLITSquare.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSquare.o36"F2061795-7666-418D-8614-99BDA09902B4-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o /Users/alexanderzywicki/Documents/DSG/BLITTriangle.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s432691231.701678
+e432691232.381057
+r1
+xCompileC
+xBuild/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o
+x/Users/alexanderzywicki/Documents/DSG/BLITTriangle.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderzywicki/Documents/DSG/BLITTriangle.cpp
+d/Users/alexanderzywicki/Documents/DSG/BLITTriangle.h
+d/Users/alexanderzywicki/Documents/DSG/SignalGenerator.h
+d/Users/alexanderzywicki/Documents/DSG/SignalProcess.h
+d/Users/alexanderzywicki/Documents/DSG/DSGTypes.h
+d/Users/alexanderzywicki/Documents/DSG/RingBuffer.h
+d/Users/alexanderzywicki/Documents/DSG/Buffer.h
+d/Users/alexanderzywicki/Documents/DSG/AudioSettings.h
+d/Users/alexanderzywicki/Documents/DSG/Sine.h
+d/Users/alexanderzywicki/Documents/DSG/SineLUT.h
+d/Users/alexanderzywicki/Documents/DSG/LUT.h
+d/Users/alexanderzywicki/Documents/DSG/PI.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/alexanderzywicki/Documents/DSG/BLITTriangle.cpp177"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o BLITTriangle.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerf5bcb31f58cab941^abcf612058cab941^---0#0#1#-19%DVTDocumentLocation2@61"file:///Users/alexanderzywicki/Documents/DSG/BLITTriangle.cpp0000000000000000^2888"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o BLITTriangle.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Documents/DSG/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-generated-files.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-project-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITTriangle.d --serialize-diagnostics /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITTriangle.dia -c /Users/alexanderzywicki/Documents/DSG/BLITTriangle.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o36"C31B1D19-7545-44FB-9836-D754B3F9498C-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/Buffer.o /Users/alexanderzywicki/Documents/DSG/Buffer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s432691230.937977
+e432691231.034401
+r1
+xCompileC
+xBuild/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/Buffer.o
+x/Users/alexanderzywicki/Documents/DSG/Buffer.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderzywicki/Documents/DSG/Buffer.cpp
+d/Users/alexanderzywicki/Documents/DSG/Buffer.h
+d/Users/alexanderzywicki/Documents/DSG/DSGTypes.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Compile /Users/alexanderzywicki/Documents/DSG/Buffer.cpp165"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/Buffer.o Buffer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler2541f01e58cab941^b3ce081f58cab941^---0#0#1#-19%DVTDocumentLocation2@55"file:///Users/alexanderzywicki/Documents/DSG/Buffer.cpp0000000000000000^2852"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/Buffer.o Buffer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Documents/DSG/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-generated-files.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-project-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/Buffer.d --serialize-diagnostics /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/Buffer.dia -c /Users/alexanderzywicki/Documents/DSG/Buffer.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/Buffer.o36"BF22AE70-34A7-47F8-B4F2-ADA616187687-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSaw.o /Users/alexanderzywicki/Documents/DSG/FourierSaw.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s432691230.938351
+e432691231.695716
+r1
+xCompileC
+xBuild/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSaw.o
+x/Users/alexanderzywicki/Documents/DSG/FourierSaw.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderzywicki/Documents/DSG/FourierSaw.cpp
+d/Users/alexanderzywicki/Documents/DSG/FourierSaw.h
+d/Users/alexanderzywicki/Documents/DSG/SignalGenerator.h
+d/Users/alexanderzywicki/Documents/DSG/SignalProcess.h
+d/Users/alexanderzywicki/Documents/DSG/DSGTypes.h
+d/Users/alexanderzywicki/Documents/DSG/RingBuffer.h
+d/Users/alexanderzywicki/Documents/DSG/Buffer.h
+d/Users/alexanderzywicki/Documents/DSG/AudioSettings.h
+d/Users/alexanderzywicki/Documents/DSG/Sine.h
+d/Users/alexanderzywicki/Documents/DSG/SineLUT.h
+d/Users/alexanderzywicki/Documents/DSG/LUT.h
+d/Users/alexanderzywicki/Documents/DSG/PI.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Compile /Users/alexanderzywicki/Documents/DSG/FourierSaw.cpp173"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSaw.o FourierSaw.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerb16ef01e58cab941^a81db21f58cab941^---0#0#1#-19%DVTDocumentLocation2@59"file:///Users/alexanderzywicki/Documents/DSG/FourierSaw.cpp0000000000000000^2876"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSaw.o FourierSaw.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Documents/DSG/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-generated-files.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-project-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSaw.d --serialize-diagnostics /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSaw.dia -c /Users/alexanderzywicki/Documents/DSG/FourierSaw.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSaw.o36"8B983BF6-E1CF-4BA1-B59C-F790BDE3C9EB-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSquare.o /Users/alexanderzywicki/Documents/DSG/FourierSquare.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s432691232.402237
+e432691233.190446
+r1
+xCompileC
+xBuild/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSquare.o
+x/Users/alexanderzywicki/Documents/DSG/FourierSquare.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderzywicki/Documents/DSG/FourierSquare.cpp
+d/Users/alexanderzywicki/Documents/DSG/FourierSquare.h
+d/Users/alexanderzywicki/Documents/DSG/SignalGenerator.h
+d/Users/alexanderzywicki/Documents/DSG/SignalProcess.h
+d/Users/alexanderzywicki/Documents/DSG/DSGTypes.h
+d/Users/alexanderzywicki/Documents/DSG/RingBuffer.h
+d/Users/alexanderzywicki/Documents/DSG/Buffer.h
+d/Users/alexanderzywicki/Documents/DSG/AudioSettings.h
+d/Users/alexanderzywicki/Documents/DSG/Sine.h
+d/Users/alexanderzywicki/Documents/DSG/SineLUT.h
+d/Users/alexanderzywicki/Documents/DSG/LUT.h
+d/Users/alexanderzywicki/Documents/DSG/PI.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/alexanderzywicki/Documents/DSG/FourierSquare.cpp179"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSquare.o FourierSquare.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler9415672058cab941^fdc1302158cab941^---0#0#1#-19%DVTDocumentLocation2@62"file:///Users/alexanderzywicki/Documents/DSG/FourierSquare.cpp0000000000000000^2894"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSquare.o FourierSquare.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Documents/DSG/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-generated-files.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-project-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSquare.d --serialize-diagnostics /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSquare.dia -c /Users/alexanderzywicki/Documents/DSG/FourierSquare.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierSquare.o36"E0B3DFD6-DCCD-4233-A45B-284674C3C75B-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierTriangle.o /Users/alexanderzywicki/Documents/DSG/FourierTriangle.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s432691230.937668
+e432691231.701306
+r1
+xCompileC
+xBuild/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierTriangle.o
+x/Users/alexanderzywicki/Documents/DSG/FourierTriangle.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderzywicki/Documents/DSG/FourierTriangle.cpp
+d/Users/alexanderzywicki/Documents/DSG/FourierTriangle.h
+d/Users/alexanderzywicki/Documents/DSG/SignalGenerator.h
+d/Users/alexanderzywicki/Documents/DSG/SignalProcess.h
+d/Users/alexanderzywicki/Documents/DSG/DSGTypes.h
+d/Users/alexanderzywicki/Documents/DSG/RingBuffer.h
+d/Users/alexanderzywicki/Documents/DSG/Buffer.h
+d/Users/alexanderzywicki/Documents/DSG/AudioSettings.h
+d/Users/alexanderzywicki/Documents/DSG/Sine.h
+d/Users/alexanderzywicki/Documents/DSG/SineLUT.h
+d/Users/alexanderzywicki/Documents/DSG/LUT.h
+d/Users/alexanderzywicki/Documents/DSG/PI.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/alexanderzywicki/Documents/DSG/FourierTriangle.cpp183"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierTriangle.o FourierTriangle.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler1f2ff01e58cab941^e528b41f58cab941^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/alexanderzywicki/Documents/DSG/FourierTriangle.cpp0000000000000000^2906"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierTriangle.o FourierTriangle.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Documents/DSG/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-generated-files.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-project-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierTriangle.d --serialize-diagnostics /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierTriangle.dia -c /Users/alexanderzywicki/Documents/DSG/FourierTriangle.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/FourierTriangle.o36"426ED93E-5535-43CB-9C20-27496F5E217E-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/RingBuffer.o /Users/alexanderzywicki/Documents/DSG/RingBuffer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s432691230.940271
+e432691231.746905
+r1
+xCompileC
+xBuild/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/RingBuffer.o
+x/Users/alexanderzywicki/Documents/DSG/RingBuffer.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderzywicki/Documents/DSG/RingBuffer.cpp
+d/Users/alexanderzywicki/Documents/DSG/RingBuffer.h
+d/Users/alexanderzywicki/Documents/DSG/Buffer.h
+d/Users/alexanderzywicki/Documents/DSG/DSGTypes.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Compile /Users/alexanderzywicki/Documents/DSG/RingBuffer.cpp173"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/RingBuffer.o RingBuffer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler8cf6f01e58cab941^b135bf1f58cab941^---0#0#1#-19%DVTDocumentLocation2@59"file:///Users/alexanderzywicki/Documents/DSG/RingBuffer.cpp0000000000000000^2876"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/RingBuffer.o RingBuffer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Documents/DSG/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-generated-files.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-project-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/RingBuffer.d --serialize-diagnostics /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/RingBuffer.dia -c /Users/alexanderzywicki/Documents/DSG/RingBuffer.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/RingBuffer.o36"469FA665-EACC-402C-A4D2-09EF02656FE3-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalGenerator.o /Users/alexanderzywicki/Documents/DSG/SignalGenerator.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s432691230.939562
+e432691231.656423
+r1
+xCompileC
+xBuild/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalGenerator.o
+x/Users/alexanderzywicki/Documents/DSG/SignalGenerator.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderzywicki/Documents/DSG/SignalGenerator.cpp
+d/Users/alexanderzywicki/Documents/DSG/SignalGenerator.h
+d/Users/alexanderzywicki/Documents/DSG/SignalProcess.h
+d/Users/alexanderzywicki/Documents/DSG/DSGTypes.h
+d/Users/alexanderzywicki/Documents/DSG/RingBuffer.h
+d/Users/alexanderzywicki/Documents/DSG/Buffer.h
+d/Users/alexanderzywicki/Documents/DSG/AudioSettings.h
+d/Users/alexanderzywicki/Documents/DSG/Sine.h
+d/Users/alexanderzywicki/Documents/DSG/SineLUT.h
+d/Users/alexanderzywicki/Documents/DSG/LUT.h
+d/Users/alexanderzywicki/Documents/DSG/PI.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/alexanderzywicki/Documents/DSG/SignalGenerator.cpp183"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalGenerator.o SignalGenerator.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerc5e5f01e58cab941^890ba81f58cab941^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/alexanderzywicki/Documents/DSG/SignalGenerator.cpp0000000000000000^2906"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalGenerator.o SignalGenerator.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Documents/DSG/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-generated-files.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-project-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalGenerator.d --serialize-diagnostics /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalGenerator.dia -c /Users/alexanderzywicki/Documents/DSG/SignalGenerator.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalGenerator.o36"7C28C4AE-BA60-4509-8E41-7A0C3B759C5B-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalProcess.o /Users/alexanderzywicki/Documents/DSG/SignalProcess.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s432691231.697470
+e432691232.380844
+r1
+xCompileC
+xBuild/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalProcess.o
+x/Users/alexanderzywicki/Documents/DSG/SignalProcess.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderzywicki/Documents/DSG/SignalProcess.cpp
+d/Users/alexanderzywicki/Documents/DSG/SignalProcess.h
+d/Users/alexanderzywicki/Documents/DSG/DSGTypes.h
+d/Users/alexanderzywicki/Documents/DSG/RingBuffer.h
+d/Users/alexanderzywicki/Documents/DSG/Buffer.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/alexanderzywicki/Documents/DSG/SignalProcess.cpp179"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalProcess.o SignalProcess.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler47abb21f58cab941^637f612058cab941^---0#0#1#-19%DVTDocumentLocation2@62"file:///Users/alexanderzywicki/Documents/DSG/SignalProcess.cpp0000000000000000^2894"CompileC Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalProcess.o SignalProcess.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/alexanderzywicki/Documents/DSG/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-generated-files.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-own-target-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-all-target-headers.hmap -iquote /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DSG-project-headers.hmap -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug -MMD -MT dependencies -MF /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalProcess.d --serialize-diagnostics /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalProcess.dia -c /Users/alexanderzywicki/Documents/DSG/SignalProcess.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/SignalProcess.o36"49C926A5-8B1B-4C48-AD09-A729436944B0-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader AnalogSaw.h Build/Products/Debug/usr/local/include/AnalogSaw.h
+s432691233.235581
+e432691233.238093
+r1
+xCpHeader
+xAnalogSaw.h
+xBuild/Products/Debug/usr/local/include/AnalogSaw.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy Build/Products/Debug/usr/local/include/AnalogSaw.h71"CpHeader AnalogSaw.h Build/Products/Debug/usr/local/include/AnalogSaw.h1ba03c2158cab941^d7f83c2158cab941^---0#0#1#-19%DVTDocumentLocation2@95"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/AnalogSaw.h0034d0fbdeffdf42^356"CpHeader AnalogSaw.h Build/Products/Debug/usr/local/include/AnalogSaw.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/AnalogSaw.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"3608BD40-6F81-4C2A-8D5D-7B98E1E52033-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader AnalogSquare.h Build/Products/Debug/usr/local/include/AnalogSquare.h
+s432691233.224689
+e432691233.227124
+r1
+xCpHeader
+xAnalogSquare.h
+xBuild/Products/Debug/usr/local/include/AnalogSquare.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy Build/Products/Debug/usr/local/include/AnalogSquare.h77"CpHeader AnalogSquare.h Build/Products/Debug/usr/local/include/AnalogSquare.hc992392158cab941^ea253a2158cab941^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/AnalogSquare.h0034d0fbdeffdf42^365"CpHeader AnalogSquare.h Build/Products/Debug/usr/local/include/AnalogSquare.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/AnalogSquare.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"70C0F06E-4C80-4F67-9513-F5202FF9CA3C-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader AnalogTriangle.h Build/Products/Debug/usr/local/include/AnalogTriangle.h
+s432691233.235849
+e432691233.238163
+r1
+xCpHeader
+xAnalogTriangle.h
+xBuild/Products/Debug/usr/local/include/AnalogTriangle.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy Build/Products/Debug/usr/local/include/AnalogTriangle.h81"CpHeader AnalogTriangle.h Build/Products/Debug/usr/local/include/AnalogTriangle.hfd6c3c2158cab941^3e043d2158cab941^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/AnalogTriangle.h0034d0fbdeffdf42^371"CpHeader AnalogTriangle.h Build/Products/Debug/usr/local/include/AnalogTriangle.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/AnalogTriangle.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"1A64774A-86FF-4E0C-9502-21FE5C3756E4-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader AudioSettings.h Build/Products/Debug/usr/local/include/AudioSettings.h
+s432691233.229293
+e432691233.233689
+r1
+xCpHeader
+xAudioSettings.h
+xBuild/Products/Debug/usr/local/include/AudioSettings.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Copy Build/Products/Debug/usr/local/include/AudioSettings.h79"CpHeader AudioSettings.h Build/Products/Debug/usr/local/include/AudioSettings.hf9c03a2158cab941^e5d33b2158cab941^---0#0#1#-19%DVTDocumentLocation2@99"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/AudioSettings.h0034d0fbdeffdf42^368"CpHeader AudioSettings.h Build/Products/Debug/usr/local/include/AudioSettings.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/AudioSettings.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"39E9F746-B8CD-453B-8A66-46C06AA374DA-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader BLIT.h Build/Products/Debug/usr/local/include/BLIT.h
+s432691233.217394
+e432691233.220148
+r1
+xCpHeader
+xBLIT.h
+xBuild/Products/Debug/usr/local/include/BLIT.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy Build/Products/Debug/usr/local/include/BLIT.h61"CpHeader BLIT.h Build/Products/Debug/usr/local/include/BLIT.h6327382158cab941^cf67382158cab941^---0#0#1#-19%DVTDocumentLocation2@90"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/BLIT.h0034d0fbdeffdf42^341"CpHeader BLIT.h Build/Products/Debug/usr/local/include/BLIT.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/BLIT.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"84CDAF7D-19AC-4C18-9B23-C2DBEEF6E6A4-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader BLITSaw.h Build/Products/Debug/usr/local/include/BLITSaw.h
+s432691233.207027
+e432691233.208824
+r1
+xCpHeader
+xBLITSaw.h
+xBuild/Products/Debug/usr/local/include/BLITSaw.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy Build/Products/Debug/usr/local/include/BLITSaw.h67"CpHeader BLITSaw.h Build/Products/Debug/usr/local/include/BLITSaw.h7c0d352158cab941^c977352158cab941^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/BLITSaw.h0034d0fbdeffdf42^350"CpHeader BLITSaw.h Build/Products/Debug/usr/local/include/BLITSaw.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/BLITSaw.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"23A0A198-FC79-40FA-A8CF-0255C1F5C047-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader BLITSquare.h Build/Products/Debug/usr/local/include/BLITSquare.h
+s432691233.209322
+e432691233.214454
+r1
+xCpHeader
+xBLITSquare.h
+xBuild/Products/Debug/usr/local/include/BLITSquare.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy Build/Products/Debug/usr/local/include/BLITSquare.h73"CpHeader BLITSquare.h Build/Products/Debug/usr/local/include/BLITSquare.h6ea3352158cab941^c097362158cab941^---0#0#1#-19%DVTDocumentLocation2@96"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/BLITSquare.h0034d0fbdeffdf42^359"CpHeader BLITSquare.h Build/Products/Debug/usr/local/include/BLITSquare.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/BLITSquare.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"1E8D0787-0270-4E7D-9387-8ACE4689CF6E-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader BLITTriangle.h Build/Products/Debug/usr/local/include/BLITTriangle.h
+s432691233.221011
+e432691233.222867
+r1
+xCpHeader
+xBLITTriangle.h
+xBuild/Products/Debug/usr/local/include/BLITTriangle.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy Build/Products/Debug/usr/local/include/BLITTriangle.h77"CpHeader BLITTriangle.h Build/Products/Debug/usr/local/include/BLITTriangle.h66a2382158cab941^5f0c392158cab941^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/BLITTriangle.h0034d0fbdeffdf42^365"CpHeader BLITTriangle.h Build/Products/Debug/usr/local/include/BLITTriangle.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/BLITTriangle.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"EDE4AFDA-8BBE-49B8-A383-984147FBAC27-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader Buffer.h Build/Products/Debug/usr/local/include/Buffer.h
+s432691233.232792
+e432691233.234154
+r1
+xCpHeader
+xBuffer.h
+xBuild/Products/Debug/usr/local/include/Buffer.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Copy Build/Products/Debug/usr/local/include/Buffer.h65"CpHeader Buffer.h Build/Products/Debug/usr/local/include/Buffer.h83a43b2158cab941^c5203c2158cab941^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/Buffer.h0034d0fbdeffdf42^347"CpHeader Buffer.h Build/Products/Debug/usr/local/include/Buffer.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/Buffer.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"BFF55290-A2FA-4B97-8871-FCE1B337EF2D-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader DSG.h Build/Products/Debug/usr/local/include/DSG.h
+s432691233.215975
+e432691233.218473
+r1
+xCpHeader
+xDSG.h
+xBuild/Products/Debug/usr/local/include/DSG.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy Build/Products/Debug/usr/local/include/DSG.h59"CpHeader DSG.h Build/Products/Debug/usr/local/include/DSG.hb058372158cab941^e02d382158cab941^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/DSG.h0034d0fbdeffdf42^338"CpHeader DSG.h Build/Products/Debug/usr/local/include/DSG.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/DSG.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"32D50909-7697-45BF-8A2B-C83C067AE628-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader DSGTypes.h Build/Products/Debug/usr/local/include/DSGTypes.h
+s432691233.231938
+e432691233.236251
+r1
+xCpHeader
+xDSGTypes.h
+xBuild/Products/Debug/usr/local/include/DSGTypes.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy Build/Products/Debug/usr/local/include/DSGTypes.h69"CpHeader DSGTypes.h Build/Products/Debug/usr/local/include/DSGTypes.h2f6e3b2158cab941^69393c2158cab941^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/DSGTypes.h0034d0fbdeffdf42^353"CpHeader DSGTypes.h Build/Products/Debug/usr/local/include/DSGTypes.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/DSGTypes.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"5AD1C9C5-AB5D-41B6-808B-A54E34C33AB9-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader FourierSaw.h Build/Products/Debug/usr/local/include/FourierSaw.h
+s432691233.222340
+e432691233.223231
+r1
+xCpHeader
+xFourierSaw.h
+xBuild/Products/Debug/usr/local/include/FourierSaw.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy Build/Products/Debug/usr/local/include/FourierSaw.h73"CpHeader FourierSaw.h Build/Products/Debug/usr/local/include/FourierSaw.h1ff8382158cab941^577a392158cab941^---0#0#1#-19%DVTDocumentLocation2@96"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/FourierSaw.h0034d0fbdeffdf42^359"CpHeader FourierSaw.h Build/Products/Debug/usr/local/include/FourierSaw.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/FourierSaw.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"94CDA457-41BD-4EE4-B0F4-B60023B6B208-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader FourierSquare.h Build/Products/Debug/usr/local/include/FourierSquare.h
+s432691233.216235
+e432691233.219790
+r1
+xCpHeader
+xFourierSquare.h
+xBuild/Products/Debug/usr/local/include/FourierSquare.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Copy Build/Products/Debug/usr/local/include/FourierSquare.h79"CpHeader FourierSquare.h Build/Products/Debug/usr/local/include/FourierSquare.h13f0372158cab941^fe64382158cab941^---0#0#1#-19%DVTDocumentLocation2@99"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/FourierSquare.h0034d0fbdeffdf42^368"CpHeader FourierSquare.h Build/Products/Debug/usr/local/include/FourierSquare.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/FourierSquare.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"A6BAA6FF-AEBB-4155-B68E-723D4204DBEA-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader FourierTriangle.h Build/Products/Debug/usr/local/include/FourierTriangle.h
+s432691233.230585
+e432691233.234474
+r1
+xCpHeader
+xFourierTriangle.h
+xBuild/Products/Debug/usr/local/include/FourierTriangle.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy Build/Products/Debug/usr/local/include/FourierTriangle.h83"CpHeader FourierTriangle.h Build/Products/Debug/usr/local/include/FourierTriangle.h658c3b2158cab941^5f243c2158cab941^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/FourierTriangle.h0034d0fbdeffdf42^374"CpHeader FourierTriangle.h Build/Products/Debug/usr/local/include/FourierTriangle.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/FourierTriangle.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"393BAE15-894E-4CBF-BED6-CAD27C4ABE0E-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader RingBuffer.h Build/Products/Debug/usr/local/include/RingBuffer.h
+s432691233.211036
+e432691233.212886
+r1
+xCpHeader
+xRingBuffer.h
+xBuild/Products/Debug/usr/local/include/RingBuffer.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy Build/Products/Debug/usr/local/include/RingBuffer.h73"CpHeader RingBuffer.h Build/Products/Debug/usr/local/include/RingBuffer.h7216362158cab941^9d80362158cab941^---0#0#1#-19%DVTDocumentLocation2@96"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/RingBuffer.h0034d0fbdeffdf42^359"CpHeader RingBuffer.h Build/Products/Debug/usr/local/include/RingBuffer.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/RingBuffer.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"25AFCD44-9308-448F-9095-C269C3D04578-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader SignalGenerator.h Build/Products/Debug/usr/local/include/SignalGenerator.h
+s432691233.224945
+e432691233.225905
+r1
+xCpHeader
+xSignalGenerator.h
+xBuild/Products/Debug/usr/local/include/SignalGenerator.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy Build/Products/Debug/usr/local/include/SignalGenerator.h83"CpHeader SignalGenerator.h Build/Products/Debug/usr/local/include/SignalGenerator.h3ca3392158cab941^e5d5392158cab941^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/SignalGenerator.h0034d0fbdeffdf42^374"CpHeader SignalGenerator.h Build/Products/Debug/usr/local/include/SignalGenerator.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/SignalGenerator.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"B5B88070-9A01-433A-8BCB-C3AB5E027983-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader SignalProcess.h Build/Products/Debug/usr/local/include/SignalProcess.h
+s432691233.234265
+e432691233.238315
+r1
+xCpHeader
+xSignalProcess.h
+xBuild/Products/Debug/usr/local/include/SignalProcess.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Copy Build/Products/Debug/usr/local/include/SignalProcess.h79"CpHeader SignalProcess.h Build/Products/Debug/usr/local/include/SignalProcess.h3f903c2158cab941^88123d2158cab941^---0#0#1#-19%DVTDocumentLocation2@99"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/SignalProcess.h0034d0fbdeffdf42^368"CpHeader SignalProcess.h Build/Products/Debug/usr/local/include/SignalProcess.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/SignalProcess.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"433A4461-3C68-413E-87B4-C8264B4EE66D-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CCpHeader Sine.h Build/Products/Debug/usr/local/include/Sine.h
+s432691233.208552
+e432691233.215205
+r1
+xCpHeader
+xSine.h
+xBuild/Products/Debug/usr/local/include/Sine.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy Build/Products/Debug/usr/local/include/Sine.h61"CpHeader Sine.h Build/Products/Debug/usr/local/include/Sine.h33fa352158cab941^7618372158cab941^---0#0#1#-19%DVTDocumentLocation2@90"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include/Sine.h0034d0fbdeffdf42^341"CpHeader Sine.h Build/Products/Debug/usr/local/include/Sine.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/Sine.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/usr/local/include36"B4348A5A-EE45-4C2A-B94A-E9384090A216-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
+CLibtool /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/libDSG.a normal x86_64
+s432691233.193285
+e432691233.204651
+r1
+xLibtool
+x/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/libDSG.a
+xnormal
+xx86_64
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLIT.o has no symbols
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o has no symbols
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSaw.o has no symbols
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSquare.o has no symbols
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Libtool Build/Products/Debug/libDSG.a normal x86_6451"Libtool Build/Products/Debug/libDSG.a normal x86_648f8c312158cab941^f969342158cab941^-965"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLIT.o has no symbols/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o has no symbols/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSaw.o has no symbols/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/BLITSquare.o has no symbols-0#0#1#--646"Libtool Build/Products/Debug/libDSG.a normal x86_64    cd /Users/alexanderzywicki/Documents/DSG    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/alexanderzywicki/Documents/DSG/Build/Products/Debug -filelist /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG_static.build/Objects-normal/x86_64/DSG.LinkFileList -o /Users/alexanderzywicki/Documents/DSG/Build/Products/Debug/libDSG.a36"683C888A-66C1-40BE-BADA-E5A7E414F645-
+bA3E29BF6-4C72-4C1D-9179-1E7143C0AC8A
+
