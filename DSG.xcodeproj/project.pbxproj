@@ -22,81 +22,83 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		1F43E43219C8D6240012C668 /* AudioSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E42619C8D6240012C668 /* AudioSettings.cpp */; };
-		1F43E43319C8D6240012C668 /* AudioSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E42719C8D6240012C668 /* AudioSettings.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E43619C8D6240012C668 /* DSG.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E42A19C8D6240012C668 /* DSG.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F43E43719C8D6240012C668 /* DSGTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E42B19C8D6240012C668 /* DSGTypes.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E43A19C8D6240012C668 /* SignalGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E42E19C8D6240012C668 /* SignalGenerator.cpp */; };
-		1F43E43B19C8D6240012C668 /* SignalGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E42F19C8D6240012C668 /* SignalGenerator.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E43C19C8D6240012C668 /* SignalProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E43019C8D6240012C668 /* SignalProcess.cpp */; };
-		1F43E43D19C8D6240012C668 /* SignalProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E43119C8D6240012C668 /* SignalProcess.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E44219C8D67E0012C668 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E43E19C8D67E0012C668 /* Buffer.cpp */; };
-		1F43E44319C8D67E0012C668 /* Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E43F19C8D67E0012C668 /* Buffer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E44419C8D67E0012C668 /* RingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E44019C8D67E0012C668 /* RingBuffer.cpp */; };
-		1F43E44519C8D67E0012C668 /* RingBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E44119C8D67E0012C668 /* RingBuffer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E44E19C8D6F70012C668 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E43E19C8D67E0012C668 /* Buffer.cpp */; };
-		1F43E44F19C8D6F70012C668 /* Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E43F19C8D67E0012C668 /* Buffer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E45019C8D6F70012C668 /* RingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E44019C8D67E0012C668 /* RingBuffer.cpp */; };
-		1F43E45119C8D6F70012C668 /* RingBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E44119C8D67E0012C668 /* RingBuffer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E45219C8D6F70012C668 /* AudioSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E42619C8D6240012C668 /* AudioSettings.cpp */; };
-		1F43E45319C8D6F70012C668 /* AudioSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E42719C8D6240012C668 /* AudioSettings.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E45419C8D6F70012C668 /* DSG.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E42A19C8D6240012C668 /* DSG.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F43E45519C8D6F70012C668 /* DSGTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E42B19C8D6240012C668 /* DSGTypes.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E45619C8D6F70012C668 /* SignalGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E42E19C8D6240012C668 /* SignalGenerator.cpp */; };
-		1F43E45719C8D6F70012C668 /* SignalGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E42F19C8D6240012C668 /* SignalGenerator.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E45819C8D6F70012C668 /* SignalProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E43019C8D6240012C668 /* SignalProcess.cpp */; };
-		1F43E45919C8D6F70012C668 /* SignalProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E43119C8D6240012C668 /* SignalProcess.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1F43E46919C900110012C668 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E46819C900110012C668 /* main.cpp */; };
 		1F43E46B19C900110012C668 /* DSG_TEST.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F43E46A19C900110012C668 /* DSG_TEST.1 */; };
 		1F43E47619C901230012C668 /* libDSG.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F43E41E19C8D5ED0012C668 /* libDSG.dylib */; };
-		1F43E47F19C9038D0012C668 /* PI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E47E19C9038D0012C668 /* PI.h */; };
-		1F43E48019C9038D0012C668 /* PI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E47E19C9038D0012C668 /* PI.h */; };
-		1F43E48519C9079F0012C668 /* Sine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48219C9079F0012C668 /* Sine.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E48619C9079F0012C668 /* Sine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48219C9079F0012C668 /* Sine.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E48919C908EA0012C668 /* LUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48719C908EA0012C668 /* LUT.h */; };
-		1F43E48A19C908EA0012C668 /* LUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48719C908EA0012C668 /* LUT.h */; };
-		1F43E48B19C908EA0012C668 /* SineLUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48819C908EA0012C668 /* SineLUT.h */; };
-		1F43E48C19C908EA0012C668 /* SineLUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48819C908EA0012C668 /* SineLUT.h */; };
-		1F43E48F19C90DB40012C668 /* FourierSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E48D19C90DB40012C668 /* FourierSaw.cpp */; };
-		1F43E49019C90DB40012C668 /* FourierSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E48D19C90DB40012C668 /* FourierSaw.cpp */; };
-		1F43E49119C90DB40012C668 /* FourierSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48E19C90DB40012C668 /* FourierSaw.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E49219C90DB40012C668 /* FourierSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E48E19C90DB40012C668 /* FourierSaw.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E49519C90DBD0012C668 /* FourierSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E49319C90DBD0012C668 /* FourierSquare.cpp */; };
-		1F43E49619C90DBD0012C668 /* FourierSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E49319C90DBD0012C668 /* FourierSquare.cpp */; };
-		1F43E49719C90DBD0012C668 /* FourierSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E49419C90DBD0012C668 /* FourierSquare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E49819C90DBD0012C668 /* FourierSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E49419C90DBD0012C668 /* FourierSquare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E49B19C90DC70012C668 /* FourierTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E49919C90DC70012C668 /* FourierTriangle.cpp */; };
-		1F43E49C19C90DC70012C668 /* FourierTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E49919C90DC70012C668 /* FourierTriangle.cpp */; };
-		1F43E49D19C90DC70012C668 /* FourierTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E49A19C90DC70012C668 /* FourierTriangle.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F43E49E19C90DC70012C668 /* FourierTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F43E49A19C90DC70012C668 /* FourierTriangle.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1FA8763319CA455400AE3EF1 /* AnalogSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8763119CA455400AE3EF1 /* AnalogSaw.cpp */; };
-		1FA8763419CA455400AE3EF1 /* AnalogSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8763119CA455400AE3EF1 /* AnalogSaw.cpp */; };
-		1FA8763519CA455400AE3EF1 /* AnalogSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8763219CA455400AE3EF1 /* AnalogSaw.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1FA8763619CA455400AE3EF1 /* AnalogSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8763219CA455400AE3EF1 /* AnalogSaw.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1FA8763919CA456300AE3EF1 /* AnalogSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8763719CA456300AE3EF1 /* AnalogSquare.cpp */; };
-		1FA8763A19CA456300AE3EF1 /* AnalogSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8763719CA456300AE3EF1 /* AnalogSquare.cpp */; };
-		1FA8763B19CA456300AE3EF1 /* AnalogSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8763819CA456300AE3EF1 /* AnalogSquare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1FA8763C19CA456300AE3EF1 /* AnalogSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8763819CA456300AE3EF1 /* AnalogSquare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1FA8763F19CA456E00AE3EF1 /* AnalogTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8763D19CA456E00AE3EF1 /* AnalogTriangle.cpp */; };
-		1FA8764019CA456E00AE3EF1 /* AnalogTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8763D19CA456E00AE3EF1 /* AnalogTriangle.cpp */; };
-		1FA8764119CA456E00AE3EF1 /* AnalogTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8763E19CA456E00AE3EF1 /* AnalogTriangle.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1FA8764219CA456E00AE3EF1 /* AnalogTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8763E19CA456E00AE3EF1 /* AnalogTriangle.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1FA8764919CA55F200AE3EF1 /* BLIT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8764719CA55F200AE3EF1 /* BLIT.cpp */; };
-		1FA8764A19CA55F200AE3EF1 /* BLIT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8764719CA55F200AE3EF1 /* BLIT.cpp */; };
-		1FA8764B19CA55F200AE3EF1 /* BLIT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8764819CA55F200AE3EF1 /* BLIT.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1FA8764C19CA55F200AE3EF1 /* BLIT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8764819CA55F200AE3EF1 /* BLIT.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1FA8764F19CA55FA00AE3EF1 /* BLITSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8764D19CA55FA00AE3EF1 /* BLITSaw.cpp */; };
-		1FA8765019CA55FA00AE3EF1 /* BLITSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8764D19CA55FA00AE3EF1 /* BLITSaw.cpp */; };
-		1FA8765119CA55FA00AE3EF1 /* BLITSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8764E19CA55FA00AE3EF1 /* BLITSaw.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1FA8765219CA55FA00AE3EF1 /* BLITSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8764E19CA55FA00AE3EF1 /* BLITSaw.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1FA8765519CA560300AE3EF1 /* BLITSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8765319CA560300AE3EF1 /* BLITSquare.cpp */; };
-		1FA8765619CA560300AE3EF1 /* BLITSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8765319CA560300AE3EF1 /* BLITSquare.cpp */; };
-		1FA8765719CA560300AE3EF1 /* BLITSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8765419CA560300AE3EF1 /* BLITSquare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1FA8765819CA560300AE3EF1 /* BLITSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8765419CA560300AE3EF1 /* BLITSquare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1FA8765B19CA560E00AE3EF1 /* BLITTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8765919CA560E00AE3EF1 /* BLITTriangle.cpp */; };
-		1FA8765C19CA560E00AE3EF1 /* BLITTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8765919CA560E00AE3EF1 /* BLITTriangle.cpp */; };
-		1FA8765D19CA560E00AE3EF1 /* BLITTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8765A19CA560E00AE3EF1 /* BLITTriangle.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1FA8765E19CA560E00AE3EF1 /* BLITTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8765A19CA560E00AE3EF1 /* BLITTriangle.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FAB7D4819CB5F0800515633 /* libportaudio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAB7D4719CB5F0800515633 /* libportaudio.dylib */; };
+		1FAB7D4B19CB651700515633 /* Driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB7D4919CB651700515633 /* Driver.cpp */; };
+		1FB9FCBE19CA88C700E42C69 /* AnalogSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCB819CA88C700E42C69 /* AnalogSaw.cpp */; };
+		1FB9FCBF19CA88C700E42C69 /* AnalogSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCB919CA88C700E42C69 /* AnalogSaw.h */; };
+		1FB9FCC019CA88C700E42C69 /* AnalogSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCBA19CA88C700E42C69 /* AnalogSquare.cpp */; };
+		1FB9FCC119CA88C700E42C69 /* AnalogSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCBB19CA88C700E42C69 /* AnalogSquare.h */; };
+		1FB9FCC219CA88C700E42C69 /* AnalogTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCBC19CA88C700E42C69 /* AnalogTriangle.cpp */; };
+		1FB9FCC319CA88C700E42C69 /* AnalogTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCBD19CA88C700E42C69 /* AnalogTriangle.h */; };
+		1FB9FCCA19CA88D500E42C69 /* FourierSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCC419CA88D500E42C69 /* FourierSaw.cpp */; };
+		1FB9FCCB19CA88D500E42C69 /* FourierSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCC419CA88D500E42C69 /* FourierSaw.cpp */; };
+		1FB9FCCC19CA88D500E42C69 /* FourierSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCC519CA88D500E42C69 /* FourierSaw.h */; };
+		1FB9FCCD19CA88D500E42C69 /* FourierSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCC519CA88D500E42C69 /* FourierSaw.h */; };
+		1FB9FCCE19CA88D500E42C69 /* FourierSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCC619CA88D500E42C69 /* FourierSquare.cpp */; };
+		1FB9FCCF19CA88D500E42C69 /* FourierSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCC619CA88D500E42C69 /* FourierSquare.cpp */; };
+		1FB9FCD019CA88D500E42C69 /* FourierSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCC719CA88D500E42C69 /* FourierSquare.h */; };
+		1FB9FCD119CA88D500E42C69 /* FourierSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCC719CA88D500E42C69 /* FourierSquare.h */; };
+		1FB9FCD219CA88D500E42C69 /* FourierTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCC819CA88D500E42C69 /* FourierTriangle.cpp */; };
+		1FB9FCD319CA88D500E42C69 /* FourierTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCC819CA88D500E42C69 /* FourierTriangle.cpp */; };
+		1FB9FCD419CA88D500E42C69 /* FourierTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCC919CA88D500E42C69 /* FourierTriangle.h */; };
+		1FB9FCD519CA88D500E42C69 /* FourierTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCC919CA88D500E42C69 /* FourierTriangle.h */; };
+		1FB9FCD619CA88D900E42C69 /* AnalogSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCB819CA88C700E42C69 /* AnalogSaw.cpp */; };
+		1FB9FCD719CA88D900E42C69 /* AnalogSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCB919CA88C700E42C69 /* AnalogSaw.h */; };
+		1FB9FCD819CA88D900E42C69 /* AnalogSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCBA19CA88C700E42C69 /* AnalogSquare.cpp */; };
+		1FB9FCD919CA88D900E42C69 /* AnalogSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCBB19CA88C700E42C69 /* AnalogSquare.h */; };
+		1FB9FCDA19CA88D900E42C69 /* AnalogTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCBC19CA88C700E42C69 /* AnalogTriangle.cpp */; };
+		1FB9FCDB19CA88D900E42C69 /* AnalogTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCBD19CA88C700E42C69 /* AnalogTriangle.h */; };
+		1FB9FCE419CA88E900E42C69 /* BLIT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCDC19CA88E900E42C69 /* BLIT.cpp */; };
+		1FB9FCE519CA88E900E42C69 /* BLIT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCDC19CA88E900E42C69 /* BLIT.cpp */; };
+		1FB9FCE619CA88E900E42C69 /* BLIT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCDD19CA88E900E42C69 /* BLIT.h */; };
+		1FB9FCE719CA88E900E42C69 /* BLIT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCDD19CA88E900E42C69 /* BLIT.h */; };
+		1FB9FCE819CA88E900E42C69 /* BLITSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCDE19CA88E900E42C69 /* BLITSaw.cpp */; };
+		1FB9FCE919CA88E900E42C69 /* BLITSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCDE19CA88E900E42C69 /* BLITSaw.cpp */; };
+		1FB9FCEA19CA88E900E42C69 /* BLITSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCDF19CA88E900E42C69 /* BLITSaw.h */; };
+		1FB9FCEB19CA88E900E42C69 /* BLITSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCDF19CA88E900E42C69 /* BLITSaw.h */; };
+		1FB9FCEC19CA88E900E42C69 /* BLITSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCE019CA88E900E42C69 /* BLITSquare.cpp */; };
+		1FB9FCED19CA88E900E42C69 /* BLITSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCE019CA88E900E42C69 /* BLITSquare.cpp */; };
+		1FB9FCEE19CA88E900E42C69 /* BLITSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCE119CA88E900E42C69 /* BLITSquare.h */; };
+		1FB9FCEF19CA88E900E42C69 /* BLITSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCE119CA88E900E42C69 /* BLITSquare.h */; };
+		1FB9FCF019CA88E900E42C69 /* BLITTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCE219CA88E900E42C69 /* BLITTriangle.cpp */; };
+		1FB9FCF119CA88E900E42C69 /* BLITTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCE219CA88E900E42C69 /* BLITTriangle.cpp */; };
+		1FB9FCF219CA88E900E42C69 /* BLITTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCE319CA88E900E42C69 /* BLITTriangle.h */; };
+		1FB9FCF319CA88E900E42C69 /* BLITTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCE319CA88E900E42C69 /* BLITTriangle.h */; };
+		1FB9FD0419CA88F800E42C69 /* AudioSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCF419CA88F800E42C69 /* AudioSettings.cpp */; };
+		1FB9FD0519CA88F800E42C69 /* AudioSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCF419CA88F800E42C69 /* AudioSettings.cpp */; };
+		1FB9FD0619CA88F800E42C69 /* AudioSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCF519CA88F800E42C69 /* AudioSettings.h */; };
+		1FB9FD0719CA88F800E42C69 /* AudioSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCF519CA88F800E42C69 /* AudioSettings.h */; };
+		1FB9FD0819CA88F800E42C69 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCF619CA88F800E42C69 /* Buffer.cpp */; };
+		1FB9FD0919CA88F800E42C69 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCF619CA88F800E42C69 /* Buffer.cpp */; };
+		1FB9FD0A19CA88F800E42C69 /* Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCF719CA88F800E42C69 /* Buffer.h */; };
+		1FB9FD0B19CA88F800E42C69 /* Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCF719CA88F800E42C69 /* Buffer.h */; };
+		1FB9FD0C19CA88F800E42C69 /* DSG.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCF819CA88F800E42C69 /* DSG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FB9FD0D19CA88F800E42C69 /* DSG.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCF819CA88F800E42C69 /* DSG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FB9FD0E19CA88F800E42C69 /* DSGTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCF919CA88F800E42C69 /* DSGTypes.h */; };
+		1FB9FD0F19CA88F800E42C69 /* DSGTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCF919CA88F800E42C69 /* DSGTypes.h */; };
+		1FB9FD1019CA88F800E42C69 /* LUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCFA19CA88F800E42C69 /* LUT.h */; };
+		1FB9FD1119CA88F800E42C69 /* LUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCFA19CA88F800E42C69 /* LUT.h */; };
+		1FB9FD1219CA88F800E42C69 /* PI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCFB19CA88F800E42C69 /* PI.h */; };
+		1FB9FD1319CA88F800E42C69 /* PI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCFB19CA88F800E42C69 /* PI.h */; };
+		1FB9FD1419CA88F800E42C69 /* RingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCFC19CA88F800E42C69 /* RingBuffer.cpp */; };
+		1FB9FD1519CA88F800E42C69 /* RingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCFC19CA88F800E42C69 /* RingBuffer.cpp */; };
+		1FB9FD1619CA88F800E42C69 /* RingBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCFD19CA88F800E42C69 /* RingBuffer.h */; };
+		1FB9FD1719CA88F800E42C69 /* RingBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCFD19CA88F800E42C69 /* RingBuffer.h */; };
+		1FB9FD1819CA88F800E42C69 /* SignalGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCFE19CA88F800E42C69 /* SignalGenerator.cpp */; };
+		1FB9FD1919CA88F800E42C69 /* SignalGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCFE19CA88F800E42C69 /* SignalGenerator.cpp */; };
+		1FB9FD1A19CA88F800E42C69 /* SignalGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCFF19CA88F800E42C69 /* SignalGenerator.h */; };
+		1FB9FD1B19CA88F800E42C69 /* SignalGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCFF19CA88F800E42C69 /* SignalGenerator.h */; };
+		1FB9FD1C19CA88F800E42C69 /* SignalProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FD0019CA88F800E42C69 /* SignalProcess.cpp */; };
+		1FB9FD1D19CA88F800E42C69 /* SignalProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FD0019CA88F800E42C69 /* SignalProcess.cpp */; };
+		1FB9FD1E19CA88F800E42C69 /* SignalProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FD0119CA88F800E42C69 /* SignalProcess.h */; };
+		1FB9FD1F19CA88F800E42C69 /* SignalProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FD0119CA88F800E42C69 /* SignalProcess.h */; };
+		1FB9FD2019CA88F800E42C69 /* Sine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FD0219CA88F800E42C69 /* Sine.h */; };
+		1FB9FD2119CA88F800E42C69 /* Sine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FD0219CA88F800E42C69 /* Sine.h */; };
+		1FB9FD2219CA88F800E42C69 /* SineLUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FD0319CA88F800E42C69 /* SineLUT.h */; };
+		1FB9FD2319CA88F800E42C69 /* SineLUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FD0319CA88F800E42C69 /* SineLUT.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,46 +140,49 @@
 
 /* Begin PBXFileReference section */
 		1F43E41E19C8D5ED0012C668 /* libDSG.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDSG.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F43E42619C8D6240012C668 /* AudioSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioSettings.cpp; sourceTree = "<group>"; };
-		1F43E42719C8D6240012C668 /* AudioSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSettings.h; sourceTree = "<group>"; };
-		1F43E42A19C8D6240012C668 /* DSG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSG.h; sourceTree = "<group>"; };
-		1F43E42B19C8D6240012C668 /* DSGTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSGTypes.h; sourceTree = "<group>"; };
-		1F43E42E19C8D6240012C668 /* SignalGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SignalGenerator.cpp; sourceTree = "<group>"; };
-		1F43E42F19C8D6240012C668 /* SignalGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalGenerator.h; sourceTree = "<group>"; };
-		1F43E43019C8D6240012C668 /* SignalProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SignalProcess.cpp; sourceTree = "<group>"; };
-		1F43E43119C8D6240012C668 /* SignalProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalProcess.h; sourceTree = "<group>"; };
-		1F43E43E19C8D67E0012C668 /* Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Buffer.cpp; sourceTree = "<group>"; };
-		1F43E43F19C8D67E0012C668 /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Buffer.h; sourceTree = "<group>"; };
-		1F43E44019C8D67E0012C668 /* RingBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RingBuffer.cpp; sourceTree = "<group>"; };
-		1F43E44119C8D67E0012C668 /* RingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingBuffer.h; sourceTree = "<group>"; };
 		1F43E44A19C8D6E90012C668 /* libDSG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDSG.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F43E46619C900110012C668 /* DSG_TEST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSG_TEST; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F43E46819C900110012C668 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1F43E46A19C900110012C668 /* DSG_TEST.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DSG_TEST.1; sourceTree = "<group>"; };
-		1F43E47E19C9038D0012C668 /* PI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PI.h; sourceTree = "<group>"; };
-		1F43E48219C9079F0012C668 /* Sine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sine.h; sourceTree = "<group>"; };
-		1F43E48719C908EA0012C668 /* LUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LUT.h; sourceTree = "<group>"; };
-		1F43E48819C908EA0012C668 /* SineLUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SineLUT.h; sourceTree = "<group>"; };
-		1F43E48D19C90DB40012C668 /* FourierSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FourierSaw.cpp; sourceTree = "<group>"; };
-		1F43E48E19C90DB40012C668 /* FourierSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourierSaw.h; sourceTree = "<group>"; };
-		1F43E49319C90DBD0012C668 /* FourierSquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FourierSquare.cpp; sourceTree = "<group>"; };
-		1F43E49419C90DBD0012C668 /* FourierSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourierSquare.h; sourceTree = "<group>"; };
-		1F43E49919C90DC70012C668 /* FourierTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FourierTriangle.cpp; sourceTree = "<group>"; };
-		1F43E49A19C90DC70012C668 /* FourierTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourierTriangle.h; sourceTree = "<group>"; };
-		1FA8763119CA455400AE3EF1 /* AnalogSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnalogSaw.cpp; sourceTree = "<group>"; };
-		1FA8763219CA455400AE3EF1 /* AnalogSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalogSaw.h; sourceTree = "<group>"; };
-		1FA8763719CA456300AE3EF1 /* AnalogSquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnalogSquare.cpp; sourceTree = "<group>"; };
-		1FA8763819CA456300AE3EF1 /* AnalogSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalogSquare.h; sourceTree = "<group>"; };
-		1FA8763D19CA456E00AE3EF1 /* AnalogTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnalogTriangle.cpp; sourceTree = "<group>"; };
-		1FA8763E19CA456E00AE3EF1 /* AnalogTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalogTriangle.h; sourceTree = "<group>"; };
-		1FA8764719CA55F200AE3EF1 /* BLIT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BLIT.cpp; sourceTree = "<group>"; };
-		1FA8764819CA55F200AE3EF1 /* BLIT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLIT.h; sourceTree = "<group>"; };
-		1FA8764D19CA55FA00AE3EF1 /* BLITSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BLITSaw.cpp; sourceTree = "<group>"; };
-		1FA8764E19CA55FA00AE3EF1 /* BLITSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLITSaw.h; sourceTree = "<group>"; };
-		1FA8765319CA560300AE3EF1 /* BLITSquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BLITSquare.cpp; sourceTree = "<group>"; };
-		1FA8765419CA560300AE3EF1 /* BLITSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLITSquare.h; sourceTree = "<group>"; };
-		1FA8765919CA560E00AE3EF1 /* BLITTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BLITTriangle.cpp; sourceTree = "<group>"; };
-		1FA8765A19CA560E00AE3EF1 /* BLITTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLITTriangle.h; sourceTree = "<group>"; };
+		1FAB7D4719CB5F0800515633 /* libportaudio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libportaudio.dylib; path = ../../../../usr/local/lib/libportaudio.dylib; sourceTree = "<group>"; };
+		1FAB7D4919CB651700515633 /* Driver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Driver.cpp; path = src/Driver.cpp; sourceTree = SOURCE_ROOT; };
+		1FAB7D4A19CB651700515633 /* Driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Driver.h; path = src/Driver.h; sourceTree = SOURCE_ROOT; };
+		1FB9FCB819CA88C700E42C69 /* AnalogSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnalogSaw.cpp; path = src/AnalogSaw.cpp; sourceTree = "<group>"; };
+		1FB9FCB919CA88C700E42C69 /* AnalogSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnalogSaw.h; path = src/AnalogSaw.h; sourceTree = "<group>"; };
+		1FB9FCBA19CA88C700E42C69 /* AnalogSquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnalogSquare.cpp; path = src/AnalogSquare.cpp; sourceTree = "<group>"; };
+		1FB9FCBB19CA88C700E42C69 /* AnalogSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnalogSquare.h; path = src/AnalogSquare.h; sourceTree = "<group>"; };
+		1FB9FCBC19CA88C700E42C69 /* AnalogTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnalogTriangle.cpp; path = src/AnalogTriangle.cpp; sourceTree = "<group>"; };
+		1FB9FCBD19CA88C700E42C69 /* AnalogTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnalogTriangle.h; path = src/AnalogTriangle.h; sourceTree = "<group>"; };
+		1FB9FCC419CA88D500E42C69 /* FourierSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FourierSaw.cpp; path = src/FourierSaw.cpp; sourceTree = "<group>"; };
+		1FB9FCC519CA88D500E42C69 /* FourierSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FourierSaw.h; path = src/FourierSaw.h; sourceTree = "<group>"; };
+		1FB9FCC619CA88D500E42C69 /* FourierSquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FourierSquare.cpp; path = src/FourierSquare.cpp; sourceTree = "<group>"; };
+		1FB9FCC719CA88D500E42C69 /* FourierSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FourierSquare.h; path = src/FourierSquare.h; sourceTree = "<group>"; };
+		1FB9FCC819CA88D500E42C69 /* FourierTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FourierTriangle.cpp; path = src/FourierTriangle.cpp; sourceTree = "<group>"; };
+		1FB9FCC919CA88D500E42C69 /* FourierTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FourierTriangle.h; path = src/FourierTriangle.h; sourceTree = "<group>"; };
+		1FB9FCDC19CA88E900E42C69 /* BLIT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BLIT.cpp; path = src/BLIT.cpp; sourceTree = "<group>"; };
+		1FB9FCDD19CA88E900E42C69 /* BLIT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLIT.h; path = src/BLIT.h; sourceTree = "<group>"; };
+		1FB9FCDE19CA88E900E42C69 /* BLITSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BLITSaw.cpp; path = src/BLITSaw.cpp; sourceTree = "<group>"; };
+		1FB9FCDF19CA88E900E42C69 /* BLITSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLITSaw.h; path = src/BLITSaw.h; sourceTree = "<group>"; };
+		1FB9FCE019CA88E900E42C69 /* BLITSquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BLITSquare.cpp; path = src/BLITSquare.cpp; sourceTree = "<group>"; };
+		1FB9FCE119CA88E900E42C69 /* BLITSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLITSquare.h; path = src/BLITSquare.h; sourceTree = "<group>"; };
+		1FB9FCE219CA88E900E42C69 /* BLITTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BLITTriangle.cpp; path = src/BLITTriangle.cpp; sourceTree = "<group>"; };
+		1FB9FCE319CA88E900E42C69 /* BLITTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLITTriangle.h; path = src/BLITTriangle.h; sourceTree = "<group>"; };
+		1FB9FCF419CA88F800E42C69 /* AudioSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioSettings.cpp; path = src/AudioSettings.cpp; sourceTree = "<group>"; };
+		1FB9FCF519CA88F800E42C69 /* AudioSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioSettings.h; path = src/AudioSettings.h; sourceTree = "<group>"; };
+		1FB9FCF619CA88F800E42C69 /* Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Buffer.cpp; path = src/Buffer.cpp; sourceTree = "<group>"; };
+		1FB9FCF719CA88F800E42C69 /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Buffer.h; path = src/Buffer.h; sourceTree = "<group>"; };
+		1FB9FCF819CA88F800E42C69 /* DSG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSG.h; path = src/DSG.h; sourceTree = "<group>"; };
+		1FB9FCF919CA88F800E42C69 /* DSGTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSGTypes.h; path = src/DSGTypes.h; sourceTree = "<group>"; };
+		1FB9FCFA19CA88F800E42C69 /* LUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LUT.h; path = src/LUT.h; sourceTree = "<group>"; };
+		1FB9FCFB19CA88F800E42C69 /* PI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PI.h; path = src/PI.h; sourceTree = "<group>"; };
+		1FB9FCFC19CA88F800E42C69 /* RingBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RingBuffer.cpp; path = src/RingBuffer.cpp; sourceTree = "<group>"; };
+		1FB9FCFD19CA88F800E42C69 /* RingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RingBuffer.h; path = src/RingBuffer.h; sourceTree = "<group>"; };
+		1FB9FCFE19CA88F800E42C69 /* SignalGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SignalGenerator.cpp; path = src/SignalGenerator.cpp; sourceTree = "<group>"; };
+		1FB9FCFF19CA88F800E42C69 /* SignalGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignalGenerator.h; path = src/SignalGenerator.h; sourceTree = "<group>"; };
+		1FB9FD0019CA88F800E42C69 /* SignalProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SignalProcess.cpp; path = src/SignalProcess.cpp; sourceTree = "<group>"; };
+		1FB9FD0119CA88F800E42C69 /* SignalProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignalProcess.h; path = src/SignalProcess.h; sourceTree = "<group>"; };
+		1FB9FD0219CA88F800E42C69 /* Sine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sine.h; path = src/Sine.h; sourceTree = "<group>"; };
+		1FB9FD0319CA88F800E42C69 /* SineLUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SineLUT.h; path = src/SineLUT.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F43E47619C901230012C668 /* libDSG.dylib in Frameworks */,
+				1FAB7D4819CB5F0800515633 /* libportaudio.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +215,7 @@
 		1F43E41519C8D5EC0012C668 = {
 			isa = PBXGroup;
 			children = (
+				1FAB7D4719CB5F0800515633 /* libportaudio.dylib */,
 				1F43E42519C8D6140012C668 /* src */,
 				1F43E46719C900110012C668 /* DSG_TEST */,
 				1F43E41F19C8D5ED0012C668 /* Products */,
@@ -228,9 +235,13 @@
 		1F43E42519C8D6140012C668 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				1FB9FD2719CB1EAA00E42C69 /* PolyBLEP */,
+				1FB9FD2619CB1E9900E42C69 /* MinBLEP */,
+				1FB9FD2519CB1E9000E42C69 /* DSF */,
+				1FB9FD2419CB1E8B00E42C69 /* DPW */,
+				1FB9FCF819CA88F800E42C69 /* DSG.h */,
 				1FA8764619CA55DF00AE3EF1 /* BLIT */,
 				1F43E47719C901590012C668 /* Core */,
-				1F43E42A19C8D6240012C668 /* DSG.h */,
 				1FA8763019CA42AD00AE3EF1 /* Fourier */,
 				1FA8764319CA464600AE3EF1 /* Analog */,
 			);
@@ -240,6 +251,8 @@
 		1F43E46719C900110012C668 /* DSG_TEST */ = {
 			isa = PBXGroup;
 			children = (
+				1FAB7D4919CB651700515633 /* Driver.cpp */,
+				1FAB7D4A19CB651700515633 /* Driver.h */,
 				1F43E46819C900110012C668 /* main.cpp */,
 				1F43E46A19C900110012C668 /* DSG_TEST.1 */,
 			);
@@ -249,21 +262,21 @@
 		1F43E47719C901590012C668 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				1F43E48719C908EA0012C668 /* LUT.h */,
-				1F43E48819C908EA0012C668 /* SineLUT.h */,
-				1F43E43E19C8D67E0012C668 /* Buffer.cpp */,
-				1F43E43F19C8D67E0012C668 /* Buffer.h */,
-				1F43E44019C8D67E0012C668 /* RingBuffer.cpp */,
-				1F43E44119C8D67E0012C668 /* RingBuffer.h */,
-				1F43E42619C8D6240012C668 /* AudioSettings.cpp */,
-				1F43E42719C8D6240012C668 /* AudioSettings.h */,
-				1F43E42B19C8D6240012C668 /* DSGTypes.h */,
-				1F43E42E19C8D6240012C668 /* SignalGenerator.cpp */,
-				1F43E42F19C8D6240012C668 /* SignalGenerator.h */,
-				1F43E43019C8D6240012C668 /* SignalProcess.cpp */,
-				1F43E43119C8D6240012C668 /* SignalProcess.h */,
-				1F43E47E19C9038D0012C668 /* PI.h */,
-				1F43E48219C9079F0012C668 /* Sine.h */,
+				1FB9FCF419CA88F800E42C69 /* AudioSettings.cpp */,
+				1FB9FCF519CA88F800E42C69 /* AudioSettings.h */,
+				1FB9FCF619CA88F800E42C69 /* Buffer.cpp */,
+				1FB9FCF719CA88F800E42C69 /* Buffer.h */,
+				1FB9FCF919CA88F800E42C69 /* DSGTypes.h */,
+				1FB9FCFA19CA88F800E42C69 /* LUT.h */,
+				1FB9FCFB19CA88F800E42C69 /* PI.h */,
+				1FB9FCFC19CA88F800E42C69 /* RingBuffer.cpp */,
+				1FB9FCFD19CA88F800E42C69 /* RingBuffer.h */,
+				1FB9FCFE19CA88F800E42C69 /* SignalGenerator.cpp */,
+				1FB9FCFF19CA88F800E42C69 /* SignalGenerator.h */,
+				1FB9FD0019CA88F800E42C69 /* SignalProcess.cpp */,
+				1FB9FD0119CA88F800E42C69 /* SignalProcess.h */,
+				1FB9FD0219CA88F800E42C69 /* Sine.h */,
+				1FB9FD0319CA88F800E42C69 /* SineLUT.h */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -271,12 +284,12 @@
 		1FA8763019CA42AD00AE3EF1 /* Fourier */ = {
 			isa = PBXGroup;
 			children = (
-				1F43E48D19C90DB40012C668 /* FourierSaw.cpp */,
-				1F43E48E19C90DB40012C668 /* FourierSaw.h */,
-				1F43E49319C90DBD0012C668 /* FourierSquare.cpp */,
-				1F43E49419C90DBD0012C668 /* FourierSquare.h */,
-				1F43E49919C90DC70012C668 /* FourierTriangle.cpp */,
-				1F43E49A19C90DC70012C668 /* FourierTriangle.h */,
+				1FB9FCC419CA88D500E42C69 /* FourierSaw.cpp */,
+				1FB9FCC519CA88D500E42C69 /* FourierSaw.h */,
+				1FB9FCC619CA88D500E42C69 /* FourierSquare.cpp */,
+				1FB9FCC719CA88D500E42C69 /* FourierSquare.h */,
+				1FB9FCC819CA88D500E42C69 /* FourierTriangle.cpp */,
+				1FB9FCC919CA88D500E42C69 /* FourierTriangle.h */,
 			);
 			name = Fourier;
 			sourceTree = "<group>";
@@ -284,12 +297,12 @@
 		1FA8764319CA464600AE3EF1 /* Analog */ = {
 			isa = PBXGroup;
 			children = (
-				1FA8763119CA455400AE3EF1 /* AnalogSaw.cpp */,
-				1FA8763219CA455400AE3EF1 /* AnalogSaw.h */,
-				1FA8763719CA456300AE3EF1 /* AnalogSquare.cpp */,
-				1FA8763819CA456300AE3EF1 /* AnalogSquare.h */,
-				1FA8763D19CA456E00AE3EF1 /* AnalogTriangle.cpp */,
-				1FA8763E19CA456E00AE3EF1 /* AnalogTriangle.h */,
+				1FB9FCB819CA88C700E42C69 /* AnalogSaw.cpp */,
+				1FB9FCB919CA88C700E42C69 /* AnalogSaw.h */,
+				1FB9FCBA19CA88C700E42C69 /* AnalogSquare.cpp */,
+				1FB9FCBB19CA88C700E42C69 /* AnalogSquare.h */,
+				1FB9FCBC19CA88C700E42C69 /* AnalogTriangle.cpp */,
+				1FB9FCBD19CA88C700E42C69 /* AnalogTriangle.h */,
 			);
 			name = Analog;
 			sourceTree = "<group>";
@@ -297,16 +310,44 @@
 		1FA8764619CA55DF00AE3EF1 /* BLIT */ = {
 			isa = PBXGroup;
 			children = (
-				1FA8764719CA55F200AE3EF1 /* BLIT.cpp */,
-				1FA8764819CA55F200AE3EF1 /* BLIT.h */,
-				1FA8764D19CA55FA00AE3EF1 /* BLITSaw.cpp */,
-				1FA8764E19CA55FA00AE3EF1 /* BLITSaw.h */,
-				1FA8765319CA560300AE3EF1 /* BLITSquare.cpp */,
-				1FA8765419CA560300AE3EF1 /* BLITSquare.h */,
-				1FA8765919CA560E00AE3EF1 /* BLITTriangle.cpp */,
-				1FA8765A19CA560E00AE3EF1 /* BLITTriangle.h */,
+				1FB9FCDC19CA88E900E42C69 /* BLIT.cpp */,
+				1FB9FCDD19CA88E900E42C69 /* BLIT.h */,
+				1FB9FCDE19CA88E900E42C69 /* BLITSaw.cpp */,
+				1FB9FCDF19CA88E900E42C69 /* BLITSaw.h */,
+				1FB9FCE019CA88E900E42C69 /* BLITSquare.cpp */,
+				1FB9FCE119CA88E900E42C69 /* BLITSquare.h */,
+				1FB9FCE219CA88E900E42C69 /* BLITTriangle.cpp */,
+				1FB9FCE319CA88E900E42C69 /* BLITTriangle.h */,
 			);
 			name = BLIT;
+			sourceTree = "<group>";
+		};
+		1FB9FD2419CB1E8B00E42C69 /* DPW */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DPW;
+			sourceTree = "<group>";
+		};
+		1FB9FD2519CB1E9000E42C69 /* DSF */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DSF;
+			sourceTree = "<group>";
+		};
+		1FB9FD2619CB1E9900E42C69 /* MinBLEP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MinBLEP;
+			sourceTree = "<group>";
+		};
+		1FB9FD2719CB1EAA00E42C69 /* PolyBLEP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PolyBLEP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,27 +357,27 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FA8765119CA55FA00AE3EF1 /* BLITSaw.h in Headers */,
-				1F43E47F19C9038D0012C668 /* PI.h in Headers */,
-				1FA8765719CA560300AE3EF1 /* BLITSquare.h in Headers */,
-				1F43E48519C9079F0012C668 /* Sine.h in Headers */,
-				1F43E44319C8D67E0012C668 /* Buffer.h in Headers */,
-				1F43E43619C8D6240012C668 /* DSG.h in Headers */,
-				1F43E49719C90DBD0012C668 /* FourierSquare.h in Headers */,
-				1FA8764B19CA55F200AE3EF1 /* BLIT.h in Headers */,
-				1FA8765D19CA560E00AE3EF1 /* BLITTriangle.h in Headers */,
-				1F43E48919C908EA0012C668 /* LUT.h in Headers */,
-				1F43E49119C90DB40012C668 /* FourierSaw.h in Headers */,
-				1FA8763B19CA456300AE3EF1 /* AnalogSquare.h in Headers */,
-				1F43E43B19C8D6240012C668 /* SignalGenerator.h in Headers */,
-				1F43E44519C8D67E0012C668 /* RingBuffer.h in Headers */,
-				1F43E49D19C90DC70012C668 /* FourierTriangle.h in Headers */,
-				1F43E43319C8D6240012C668 /* AudioSettings.h in Headers */,
-				1F43E43719C8D6240012C668 /* DSGTypes.h in Headers */,
-				1F43E48B19C908EA0012C668 /* SineLUT.h in Headers */,
-				1F43E43D19C8D6240012C668 /* SignalProcess.h in Headers */,
-				1FA8763519CA455400AE3EF1 /* AnalogSaw.h in Headers */,
-				1FA8764119CA456E00AE3EF1 /* AnalogTriangle.h in Headers */,
+				1FB9FD0A19CA88F800E42C69 /* Buffer.h in Headers */,
+				1FB9FCEE19CA88E900E42C69 /* BLITSquare.h in Headers */,
+				1FB9FD2219CA88F800E42C69 /* SineLUT.h in Headers */,
+				1FB9FCBF19CA88C700E42C69 /* AnalogSaw.h in Headers */,
+				1FB9FD1219CA88F800E42C69 /* PI.h in Headers */,
+				1FB9FCCC19CA88D500E42C69 /* FourierSaw.h in Headers */,
+				1FB9FCC119CA88C700E42C69 /* AnalogSquare.h in Headers */,
+				1FB9FD0C19CA88F800E42C69 /* DSG.h in Headers */,
+				1FB9FCD419CA88D500E42C69 /* FourierTriangle.h in Headers */,
+				1FB9FD1E19CA88F800E42C69 /* SignalProcess.h in Headers */,
+				1FB9FCD019CA88D500E42C69 /* FourierSquare.h in Headers */,
+				1FB9FCEA19CA88E900E42C69 /* BLITSaw.h in Headers */,
+				1FB9FD1019CA88F800E42C69 /* LUT.h in Headers */,
+				1FB9FCC319CA88C700E42C69 /* AnalogTriangle.h in Headers */,
+				1FB9FCE619CA88E900E42C69 /* BLIT.h in Headers */,
+				1FB9FD0619CA88F800E42C69 /* AudioSettings.h in Headers */,
+				1FB9FD2019CA88F800E42C69 /* Sine.h in Headers */,
+				1FB9FD1A19CA88F800E42C69 /* SignalGenerator.h in Headers */,
+				1FB9FCF219CA88E900E42C69 /* BLITTriangle.h in Headers */,
+				1FB9FD1619CA88F800E42C69 /* RingBuffer.h in Headers */,
+				1FB9FD0E19CA88F800E42C69 /* DSGTypes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,27 +385,27 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FA8765219CA55FA00AE3EF1 /* BLITSaw.h in Headers */,
-				1F43E48019C9038D0012C668 /* PI.h in Headers */,
-				1FA8765819CA560300AE3EF1 /* BLITSquare.h in Headers */,
-				1F43E48619C9079F0012C668 /* Sine.h in Headers */,
-				1F43E45119C8D6F70012C668 /* RingBuffer.h in Headers */,
-				1F43E45419C8D6F70012C668 /* DSG.h in Headers */,
-				1F43E49819C90DBD0012C668 /* FourierSquare.h in Headers */,
-				1FA8764C19CA55F200AE3EF1 /* BLIT.h in Headers */,
-				1FA8765E19CA560E00AE3EF1 /* BLITTriangle.h in Headers */,
-				1F43E48A19C908EA0012C668 /* LUT.h in Headers */,
-				1F43E49219C90DB40012C668 /* FourierSaw.h in Headers */,
-				1FA8763C19CA456300AE3EF1 /* AnalogSquare.h in Headers */,
-				1F43E45719C8D6F70012C668 /* SignalGenerator.h in Headers */,
-				1F43E45319C8D6F70012C668 /* AudioSettings.h in Headers */,
-				1F43E49E19C90DC70012C668 /* FourierTriangle.h in Headers */,
-				1F43E45519C8D6F70012C668 /* DSGTypes.h in Headers */,
-				1F43E44F19C8D6F70012C668 /* Buffer.h in Headers */,
-				1F43E48C19C908EA0012C668 /* SineLUT.h in Headers */,
-				1F43E45919C8D6F70012C668 /* SignalProcess.h in Headers */,
-				1FA8763619CA455400AE3EF1 /* AnalogSaw.h in Headers */,
-				1FA8764219CA456E00AE3EF1 /* AnalogTriangle.h in Headers */,
+				1FB9FD0B19CA88F800E42C69 /* Buffer.h in Headers */,
+				1FB9FCEF19CA88E900E42C69 /* BLITSquare.h in Headers */,
+				1FB9FD2319CA88F800E42C69 /* SineLUT.h in Headers */,
+				1FB9FCD519CA88D500E42C69 /* FourierTriangle.h in Headers */,
+				1FB9FD1319CA88F800E42C69 /* PI.h in Headers */,
+				1FB9FCD119CA88D500E42C69 /* FourierSquare.h in Headers */,
+				1FB9FCDB19CA88D900E42C69 /* AnalogTriangle.h in Headers */,
+				1FB9FD0D19CA88F800E42C69 /* DSG.h in Headers */,
+				1FB9FCD719CA88D900E42C69 /* AnalogSaw.h in Headers */,
+				1FB9FD1F19CA88F800E42C69 /* SignalProcess.h in Headers */,
+				1FB9FCD919CA88D900E42C69 /* AnalogSquare.h in Headers */,
+				1FB9FCEB19CA88E900E42C69 /* BLITSaw.h in Headers */,
+				1FB9FD1119CA88F800E42C69 /* LUT.h in Headers */,
+				1FB9FCCD19CA88D500E42C69 /* FourierSaw.h in Headers */,
+				1FB9FCE719CA88E900E42C69 /* BLIT.h in Headers */,
+				1FB9FD0719CA88F800E42C69 /* AudioSettings.h in Headers */,
+				1FB9FD2119CA88F800E42C69 /* Sine.h in Headers */,
+				1FB9FD1B19CA88F800E42C69 /* SignalGenerator.h in Headers */,
+				1FB9FCF319CA88E900E42C69 /* BLITTriangle.h in Headers */,
+				1FB9FD1719CA88F800E42C69 /* RingBuffer.h in Headers */,
+				1FB9FD0F19CA88F800E42C69 /* DSGTypes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,21 +498,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FA8764919CA55F200AE3EF1 /* BLIT.cpp in Sources */,
-				1F43E49B19C90DC70012C668 /* FourierTriangle.cpp in Sources */,
-				1F43E43219C8D6240012C668 /* AudioSettings.cpp in Sources */,
-				1F43E48F19C90DB40012C668 /* FourierSaw.cpp in Sources */,
-				1F43E44219C8D67E0012C668 /* Buffer.cpp in Sources */,
-				1F43E43A19C8D6240012C668 /* SignalGenerator.cpp in Sources */,
-				1F43E43C19C8D6240012C668 /* SignalProcess.cpp in Sources */,
-				1FA8763319CA455400AE3EF1 /* AnalogSaw.cpp in Sources */,
-				1FA8763F19CA456E00AE3EF1 /* AnalogTriangle.cpp in Sources */,
-				1F43E44419C8D67E0012C668 /* RingBuffer.cpp in Sources */,
-				1FA8765B19CA560E00AE3EF1 /* BLITTriangle.cpp in Sources */,
-				1FA8763919CA456300AE3EF1 /* AnalogSquare.cpp in Sources */,
-				1FA8764F19CA55FA00AE3EF1 /* BLITSaw.cpp in Sources */,
-				1F43E49519C90DBD0012C668 /* FourierSquare.cpp in Sources */,
-				1FA8765519CA560300AE3EF1 /* BLITSquare.cpp in Sources */,
+				1FB9FCF019CA88E900E42C69 /* BLITTriangle.cpp in Sources */,
+				1FB9FD1819CA88F800E42C69 /* SignalGenerator.cpp in Sources */,
+				1FB9FD1419CA88F800E42C69 /* RingBuffer.cpp in Sources */,
+				1FB9FD0819CA88F800E42C69 /* Buffer.cpp in Sources */,
+				1FB9FCCE19CA88D500E42C69 /* FourierSquare.cpp in Sources */,
+				1FB9FCE419CA88E900E42C69 /* BLIT.cpp in Sources */,
+				1FB9FCE819CA88E900E42C69 /* BLITSaw.cpp in Sources */,
+				1FB9FCC019CA88C700E42C69 /* AnalogSquare.cpp in Sources */,
+				1FB9FCC219CA88C700E42C69 /* AnalogTriangle.cpp in Sources */,
+				1FB9FCEC19CA88E900E42C69 /* BLITSquare.cpp in Sources */,
+				1FB9FD0419CA88F800E42C69 /* AudioSettings.cpp in Sources */,
+				1FB9FCCA19CA88D500E42C69 /* FourierSaw.cpp in Sources */,
+				1FB9FCD219CA88D500E42C69 /* FourierTriangle.cpp in Sources */,
+				1FB9FCBE19CA88C700E42C69 /* AnalogSaw.cpp in Sources */,
+				1FB9FD1C19CA88F800E42C69 /* SignalProcess.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,21 +520,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FA8764A19CA55F200AE3EF1 /* BLIT.cpp in Sources */,
-				1F43E49C19C90DC70012C668 /* FourierTriangle.cpp in Sources */,
-				1F43E44E19C8D6F70012C668 /* Buffer.cpp in Sources */,
-				1F43E49019C90DB40012C668 /* FourierSaw.cpp in Sources */,
-				1F43E45619C8D6F70012C668 /* SignalGenerator.cpp in Sources */,
-				1F43E45019C8D6F70012C668 /* RingBuffer.cpp in Sources */,
-				1F43E45219C8D6F70012C668 /* AudioSettings.cpp in Sources */,
-				1FA8763419CA455400AE3EF1 /* AnalogSaw.cpp in Sources */,
-				1FA8764019CA456E00AE3EF1 /* AnalogTriangle.cpp in Sources */,
-				1F43E45819C8D6F70012C668 /* SignalProcess.cpp in Sources */,
-				1FA8765C19CA560E00AE3EF1 /* BLITTriangle.cpp in Sources */,
-				1FA8763A19CA456300AE3EF1 /* AnalogSquare.cpp in Sources */,
-				1FA8765019CA55FA00AE3EF1 /* BLITSaw.cpp in Sources */,
-				1F43E49619C90DBD0012C668 /* FourierSquare.cpp in Sources */,
-				1FA8765619CA560300AE3EF1 /* BLITSquare.cpp in Sources */,
+				1FB9FCF119CA88E900E42C69 /* BLITTriangle.cpp in Sources */,
+				1FB9FD1919CA88F800E42C69 /* SignalGenerator.cpp in Sources */,
+				1FB9FD1519CA88F800E42C69 /* RingBuffer.cpp in Sources */,
+				1FB9FD0919CA88F800E42C69 /* Buffer.cpp in Sources */,
+				1FB9FCCB19CA88D500E42C69 /* FourierSaw.cpp in Sources */,
+				1FB9FCE519CA88E900E42C69 /* BLIT.cpp in Sources */,
+				1FB9FCE919CA88E900E42C69 /* BLITSaw.cpp in Sources */,
+				1FB9FCDA19CA88D900E42C69 /* AnalogTriangle.cpp in Sources */,
+				1FB9FCD319CA88D500E42C69 /* FourierTriangle.cpp in Sources */,
+				1FB9FCED19CA88E900E42C69 /* BLITSquare.cpp in Sources */,
+				1FB9FD0519CA88F800E42C69 /* AudioSettings.cpp in Sources */,
+				1FB9FCCF19CA88D500E42C69 /* FourierSquare.cpp in Sources */,
+				1FB9FCD819CA88D900E42C69 /* AnalogSquare.cpp in Sources */,
+				1FB9FCD619CA88D900E42C69 /* AnalogSaw.cpp in Sources */,
+				1FB9FD1D19CA88F800E42C69 /* SignalProcess.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +543,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F43E46919C900110012C668 /* main.cpp in Sources */,
+				1FAB7D4B19CB651700515633 /* Driver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,9 +573,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_STATIC_ANALYZER_MODE = deep;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -543,15 +585,22 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_FAST_MATH = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = 4.9;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -560,6 +609,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-std=c++11",
+				);
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -569,9 +622,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_STATIC_ANALYZER_MODE = deep;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -583,8 +636,15 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_FAST_MATH = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = 4.9;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -592,6 +652,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-std=c++11",
+				);
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -656,6 +720,13 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"../src/**",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -663,6 +734,13 @@
 		1F43E46E19C900110012C668 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"../src/**",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
