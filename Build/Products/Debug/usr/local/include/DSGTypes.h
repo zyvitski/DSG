@@ -7,6 +7,7 @@
 //
 #ifndef DSG_DSGTypes_h
 #define DSG_DSGTypes_h
+
 namespace DSG {
     typedef float DSGFrequency;
     typedef float DSGPhase;

@@ -41,7 +41,7 @@ namespace DSG{
             }
             value*=_a;
             signal = value;
-            _pstep();
+            step();
             return true;
         }
         inline bool DSG::Fourier::FourierTriangle::Perform(DSG::RingBuffer& signal){
@@ -54,7 +54,9 @@ namespace DSG{
             }return true;
         }
         inline DSG::DSGFrequency const& DSG::Fourier::FourierTriangle::Frequency(DSG::DSGFrequency const& value){
-            _h = MaxHarms(this->SignalGenerator::Frequency(value));
+            _frequency = value;
+            _dt = _frequency/DSG::SampleRate();
+            _h = MaxHarms(_frequency);
             return _frequency;
         }
     }

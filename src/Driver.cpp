@@ -67,12 +67,12 @@ int Callback( const void *input,
              void *userData) {
     DSG::DSGSample* _out = (DSG::DSGSample*)output;
     DSG:: DSGSample _sample;
-
     DSG::SignalGenerator* _osc = (DSG::SignalGenerator*)userData;
-    
     if (_out!=nullptr) {
+        _buffer.Flush();
+        _osc->Perform(_buffer);
         for (int i=0; i<frameCount; ++i) {
-            _osc->Perform(_sample);
+            _buffer.Read(_sample);
             *_out++ = _sample;
             *_out++ = _sample;
         }

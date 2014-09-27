@@ -14,6 +14,7 @@ namespace DSG{
 #endif
     //! DSG::Analog - Namespace Containing Analog Style Oscillators
     namespace Analog{
+        //!\brief DSG::AnalogSquare - Analog Syle Square Wave Generator
         class AnalogSquare : public DSG::SignalGenerator {
         public:
             AnalogSquare();
@@ -24,7 +25,7 @@ namespace DSG{
         };
         inline bool DSG::Analog::AnalogSquare::Perform(DSG::DSGSample& signal){
             signal=_phasor < 0.5 ? 1.0:-1.0;
-            _pstep();
+            step();
             return true;
         }
         inline bool DSG::Analog::AnalogSquare::Perform(DSG::RingBuffer& signal){

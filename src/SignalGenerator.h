@@ -25,10 +25,10 @@ namespace DSG{
         virtual inline DSG::DSGPhase const& Phase();
         virtual inline DSG::DSGPhase const& Phase(DSG::DSGPhase const& value);
     protected:
-        inline void _pstep();
-        inline void _psync();
+        inline void step();
+        inline void sync();
         DSG::DSGFrequency _frequency;
-        DSG::DSGPhase _rate;
+        DSG::DSGPhase _dt;//delta time (change in phase per sample) unit: phase 0-1
         DSG::DSGPhase _offset;
         DSG::DSGPhase _phasor;
         DSG::DSGSample _storage;
@@ -52,7 +52,8 @@ inline DSG::DSGFrequency const& DSG::SignalGenerator::Frequency(){
     return _frequency;
 }
 inline DSG::DSGFrequency const& DSG::SignalGenerator::Frequency(DSG::DSGFrequency const& value){
-    _rate = _frequency/DSG::SampleRate();
+    _frequency = value;
+    _dt = _frequency/DSG::SampleRate();
     return _frequency;
 }
 inline DSG::DSGPhase const& DSG::SignalGenerator::Phase(){
@@ -64,11 +65,11 @@ inline DSG::DSGPhase const& DSG::SignalGenerator::Phase(DSG::DSGPhase const& val
     _offset=value;
     return _offset;
 }
-inline void DSG::SignalGenerator::_pstep(){
-    _phasor+=_rate;
+inline void DSG::SignalGenerator::step(){
+    _phasor+=_dt;
     _phasor>1.0 ? --_phasor:0;
 }
-inline void DSG::SignalGenerator::_psync(){
+inline void DSG::SignalGenerator::sync(){
     _phasor=_offset;
 }
 #endif /* defined(__DSG__SignalGenerator__) */

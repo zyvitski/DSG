@@ -13,6 +13,7 @@ namespace DSG{
     inline
 #endif
     namespace BLIT{
+        //!\brief DSG::BLIT::BlitSaw - Saw Wave Generator Based on BLIT Algorithm
         class BlitSaw : public Blit{
         public:
             BlitSaw();
@@ -23,8 +24,26 @@ namespace DSG{
             virtual inline DSG::DSGFrequency const& Frequency(DSG::DSGFrequency const& value);
         protected:
             virtual inline void setHarmonics();
+            DSG::DSGSample p_;
+            DSG::DSGSample C2_;
+            DSG::DSGSample state_;
+            DSG::DSGSample a_;
+            DSG::DSGSample _denominator,tmp;
         };
         inline bool DSG::BLIT::BlitSaw::Perform(DSG::DSGSample& signal){
+#warning Non-Functional DSG::BlitSaw::Perform()
+            //very broken still
+            _denominator = DSG::Sin(_phasor);
+            if (DSG::IsDenormal(fabs(_denominator))) {
+                tmp=a_;
+            }else{
+                tmp = DSG::Sin(_phasor);
+                tmp/= (SampleRate()/_frequency) * _denominator;
+            }
+            tmp+=state_-C2_;
+            state_ = tmp * 0.995;
+            signal = tmp;
+            step();
             
             return true;
         }
@@ -38,13 +57,24 @@ namespace DSG{
             }return true;
         }
         inline DSG::DSGFrequency const& DSG::BLIT::BlitSaw::Frequency(DSG::DSGFrequency const& value){
-            
+            _frequency = value;
+            _dt = SampleRate()/_frequency;
+            _h=MaxHarms(_frequency);
+            this->setHarmonics();
+            C2_ = 1.0/(SampleRate()/ _frequency);
+            state_ = -0.5 * a_;
             return _frequency;
         }
         inline void DSG::BLIT::BlitSaw::setHarmonics(){
-            
+            if ( _h <= 0 ) {
+                unsigned int maxHarmonics = (unsigned int) floor( 0.5 * (SampleRate()/ _frequency) );
+                m_ = 2 * maxHarmonics + 1;
+            }
+            else{
+                m_ = 2 * _h + 1;
+            }
+            a_ = m_ /( SampleRate()/_frequency);
         }
-
     }
 }
 #endif /* defined(__DSG__BLITSaw__) */

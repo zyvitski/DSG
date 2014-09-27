@@ -7,7 +7,8 @@
 //
 #ifndef __DSG__Sine__
 #define __DSG__Sine__
-#include "SineLUT.h"
+#include "LUT.h"
+#include "PI.h"
 #define LUT_SIZE 16384
 namespace DSG {
     typedef enum Sine_Implementations{
@@ -17,13 +18,15 @@ namespace DSG {
         Sine_Default = Sine_LUT
     }Sine_Implementations;
     
+
     /*!\brief DSG::Sin() - Templated Sin Function With Optional Implementation
      */
     template<unsigned implementation> inline double Sin(double const& x){
         return 0;
     }
+    
     template<> inline double Sin<Sine_LUT>(double const& x){
-        static DSG::SineLUT<float, LUT_SIZE> _lut;
+        static DSG::LUT<float, LUT_SIZE> _lut(&sinf,TWOPI);
         return _lut(x);
     }
     template<> inline double Sin<Sine_Taylor>(double const& x){
@@ -35,5 +38,24 @@ namespace DSG {
     inline double Sin(double const& x){
         return Sin<Sine_Default>(x);//wrap default implementation as non template
     }
+    template<unsigned implementation> inline double Cos(double const& x){
+        return 0;
+    }
+    
+    template<> inline double Cos<Sine_LUT>(double const& x){
+        static DSG::LUT<float, LUT_SIZE> _lut(&cosf,TWOPI);
+        return _lut(x);
+    }
+    template<> inline double Cos<Sine_Taylor>(double const& x){
+        //taylor series version here
+        return 0;
+    }
+    /*!\brief DSG::Cos() - General Purpose Cos Function Wraps Templated Version
+     */
+    inline double Cos(double const& x){
+        return Cos<Sine_Default>(x);//wrap default implementation as non template
+    }
+
+    
 }
 #endif /* defined(__DSG__Sine__) */

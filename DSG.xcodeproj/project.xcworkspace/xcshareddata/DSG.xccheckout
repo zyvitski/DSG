@@ -10,29 +10,29 @@
 	<string>DSG</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>B1F4582D-6F2E-4A31-BEEC-B28FEE7547C5</key>
+		<key>219857BF10B792219C0A9CAB815A6E44ED21A79F</key>
 		<string>https://github.com/zyvitski/DSG.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>DSG.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B1F4582D-6F2E-4A31-BEEC-B28FEE7547C5</key>
+		<key>219857BF10B792219C0A9CAB815A6E44ED21A79F</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/zyvitski/DSG.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B1F4582D-6F2E-4A31-BEEC-B28FEE7547C5</string>
+	<string>219857BF10B792219C0A9CAB815A6E44ED21A79F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B1F4582D-6F2E-4A31-BEEC-B28FEE7547C5</string>
+			<string>219857BF10B792219C0A9CAB815A6E44ED21A79F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>DSG</string>
 		</dict>

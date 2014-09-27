@@ -14,6 +14,7 @@ namespace DSG{
 #endif
     //! DSG::Analog - Namespace Containing Analog Style Oscillators
     namespace Analog{
+        //!\brief DSG::AnalogTriangle - Analog Syle Triangle Wave Generator
         class AnalogTriangle : public DSG::SignalGenerator {
         public:
             AnalogTriangle();
@@ -37,7 +38,7 @@ namespace DSG{
             _stor-=0.25;
             _stor*=-4.0;
             signal = _stor;
-            _pstep();//always last
+            step();//always last
             return true;
         }
         inline bool DSG::Analog::AnalogTriangle::Perform(DSG::RingBuffer& signal){

@@ -1,558 +1,0 @@
-TDSG_static
-v6
-r1
-cCheck dependencies
-cCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o /Users/alexanderzywicki/Documents/DSG/src/BLITTriangle.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-cCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/SignalGenerator.o /Users/alexanderzywicki/Documents/DSG/src/SignalGenerator.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-cCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/RingBuffer.o /Users/alexanderzywicki/Documents/DSG/src/RingBuffer.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-cCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/Buffer.o /Users/alexanderzywicki/Documents/DSG/src/Buffer.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-cCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierSaw.o /Users/alexanderzywicki/Documents/DSG/src/FourierSaw.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-cCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLIT.o /Users/alexanderzywicki/Documents/DSG/src/BLIT.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-cCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITSaw.o /Users/alexanderzywicki/Documents/DSG/src/BLITSaw.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-cCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogTriangle.o /Users/alexanderzywicki/Documents/DSG/src/AnalogTriangle.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-cCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierTriangle.o /Users/alexanderzywicki/Documents/DSG/src/FourierTriangle.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-cCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITSquare.o /Users/alexanderzywicki/Documents/DSG/src/BLITSquare.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-cCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AudioSettings.o /Users/alexanderzywicki/Documents/DSG/src/AudioSettings.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-cCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierSquare.o /Users/alexanderzywicki/Documents/DSG/src/FourierSquare.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-cCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogSquare.o /Users/alexanderzywicki/Documents/DSG/src/AnalogSquare.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-cCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogSaw.o /Users/alexanderzywicki/Documents/DSG/src/AnalogSaw.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-cCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/SignalProcess.o /Users/alexanderzywicki/Documents/DSG/src/SignalProcess.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-cLibtool /Users/alexanderzywicki/Documents/DSG/Build/Products/Release/libDSG.a normal x86_64
-cCpHeader src/DSG.h Build/Products/Release/usr/local/include/DSG.h
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
-c00000000530295C100000000000000AA
-t1392678337
-s170
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
-c0000000054186D31000000000000044C
-t1410886961
-s1100
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
-c0000000054186D3100000000000001DE
-t1410886961
-s478
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogSaw.o
-t1411078793
-s22756
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogSquare.o
-t1411078793
-s22844
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogTriangle.o
-t1411078793
-s23480
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AudioSettings.o
-t1411078793
-s3360
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLIT.o
-t1411078793
-s103280
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITSaw.o
-t1411078793
-s13336
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITSquare.o
-t1411078793
-s1976
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o
-t1411078793
-s1976
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/Buffer.o
-t1411078793
-s11808
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/DSG.LinkFileList
-c00000000541B5A89000000000000078D
-t1411078793
-s1933
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierSaw.o
-t1411078793
-s100516
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierSquare.o
-t1411078793
-s100676
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierTriangle.o
-t1411078793
-s101172
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/RingBuffer.o
-t1411078793
-s22508
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/SignalGenerator.o
-t1411078793
-s21260
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/SignalProcess.o
-t1411078793
-s5872
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/libDSG.a
-t1411078793
-s568128
-
-N/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/usr/local/include/DSG.h
-t1411078793
-s722
-
-N/Users/alexanderzywicki/Documents/DSG/src/AnalogSaw.cpp
-c00000000541A5C550000000000000195
-t1411013717
-s405
-i"AnalogSaw.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/AnalogSaw.h
-i"SignalGenerator.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/AnalogSquare.cpp
-c00000000541A5C5500000000000001AD
-t1411013717
-s429
-i"AnalogSquare.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/AnalogSquare.h
-i"SignalGenerator.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/AnalogTriangle.cpp
-c00000000541A5C5500000000000001BD
-t1411013717
-s445
-i"AnalogTriangle.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/AnalogTriangle.h
-i"SignalGenerator.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/AudioSettings.cpp
-c00000000541B303F00000000000001C3
-t1411067967
-s451
-i"AudioSettings.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/AudioSettings.h
-i"DSGTypes.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/BLIT.cpp
-c00000000541AE54200000000000001B5
-t1411048770
-s437
-i"BLIT.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/BLIT.h
-i"SignalGenerator.h"
-i<limits>
-i<math.h>
-
-N/Users/alexanderzywicki/Documents/DSG/src/BLITSaw.cpp
-c00000000541B59FA0000000000000188
-t1411078650
-s392
-i"BLITSaw.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/BLITSaw.h
-i"BLIT.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/BLITSquare.cpp
-c00000000541A1E8200000000000000A9
-t1410997890
-s169
-i"BLITSquare.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/BLITSquare.h
-i"SignalGenerator.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/BLITTriangle.cpp
-c00000000541A1E8D00000000000000AD
-t1410997901
-s173
-i"BLITTriangle.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/BLITTriangle.h
-i"SignalGenerator.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/Buffer.cpp
-c00000000541A5D3100000000000003D9
-t1411013937
-s985
-i"Buffer.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/Buffer.h
-i<stddef.h>
-i"DSGTypes.h"
-i<assert.h>
-
-N/Users/alexanderzywicki/Documents/DSG/src/DSG.h
-c00000000541AE4DD00000000000002D2
-t1411048669
-s722
-
-N/Users/alexanderzywicki/Documents/DSG/src/DSGTypes.h
-
-N/Users/alexanderzywicki/Documents/DSG/src/FourierSaw.cpp
-c00000000541A5D810000000000000202
-t1411014017
-s514
-i"FourierSaw.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/FourierSaw.h
-i"SignalGenerator.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/FourierSquare.cpp
-c00000000541A5DB60000000000000219
-t1411014070
-s537
-i"FourierSquare.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/FourierSquare.h
-i"SignalGenerator.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/FourierTriangle.cpp
-c00000000541B25470000000000000233
-t1411065159
-s563
-i"FourierTriangle.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/FourierTriangle.h
-i"SignalGenerator.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/LUT.h
-i<assert.h>
-
-N/Users/alexanderzywicki/Documents/DSG/src/PI.h
-
-N/Users/alexanderzywicki/Documents/DSG/src/RingBuffer.cpp
-c00000000541B303400000000000003CC
-t1411067956
-s972
-i"RingBuffer.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/RingBuffer.h
-i<iostream>
-i<atomic>
-i<math.h>
-i"Buffer.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/SignalGenerator.cpp
-c0000000054188D140000000000000219
-t1410895124
-s537
-i"SignalGenerator.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/SignalGenerator.h
-i"SignalProcess.h"
-i"AudioSettings.h"
-i"Sine.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/SignalProcess.cpp
-c00000000541A0D1300000000000000FA
-t1410993427
-s250
-i"SignalProcess.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/SignalProcess.h
-i"DSGTypes.h"
-i"RingBuffer.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/Sine.h
-i"SineLUT.h"
-
-N/Users/alexanderzywicki/Documents/DSG/src/SineLUT.h
-i<stdint.h>
-i<math.h>
-i"LUT.h"
-i"PI.h"
-
-CBuild AST from /Users/alexanderzywicki/Documents/DSG/src/AnalogSaw.cpp
-r0
-
-CBuild AST from /Users/alexanderzywicki/Documents/DSG/src/AnalogSquare.cpp
-r0
-
-CBuild AST from /Users/alexanderzywicki/Documents/DSG/src/AnalogTriangle.cpp
-r0
-
-CBuild AST from /Users/alexanderzywicki/Documents/DSG/src/AudioSettings.cpp
-r0
-
-CBuild AST from /Users/alexanderzywicki/Documents/DSG/src/BLIT.cpp
-r0
-
-CBuild AST from /Users/alexanderzywicki/Documents/DSG/src/BLITSaw.cpp
-r0
-
-CBuild AST from /Users/alexanderzywicki/Documents/DSG/src/BLITSquare.cpp
-r0
-
-CBuild AST from /Users/alexanderzywicki/Documents/DSG/src/BLITTriangle.cpp
-r0
-
-CBuild AST from /Users/alexanderzywicki/Documents/DSG/src/Buffer.cpp
-r0
-
-CBuild AST from /Users/alexanderzywicki/Documents/DSG/src/FourierSaw.cpp
-r0
-
-CBuild AST from /Users/alexanderzywicki/Documents/DSG/src/FourierSquare.cpp
-r0
-
-CBuild AST from /Users/alexanderzywicki/Documents/DSG/src/FourierTriangle.cpp
-r0
-
-CBuild AST from /Users/alexanderzywicki/Documents/DSG/src/RingBuffer.cpp
-r0
-
-CBuild AST from /Users/alexanderzywicki/Documents/DSG/src/SignalGenerator.cpp
-r0
-
-CBuild AST from /Users/alexanderzywicki/Documents/DSG/src/SignalProcess.cpp
-r0
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies50e4f13692cbb941^309df23692cbb941^---0#1#1#--18"Check dependencies36"97B313F1-D2B7-4458-814D-C3BF125FA58B-
-
-CCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogSaw.o /Users/alexanderzywicki/Documents/DSG/src/AnalogSaw.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-s432771593.427050
-e432771593.616739
-r1
-xCompileC
-xBuild/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogSaw.o
-x/Users/alexanderzywicki/Documents/DSG/src/AnalogSaw.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_9
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/alexanderzywicki/Documents/DSG/src/AnalogSaw.cpp161"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogSaw.o src/AnalogSaw.cpp normal x86_64 c++ com.apple.compilers.gcc.4_934676d0992cbb941^a0549f0992cbb941^---0#0#1#-19%DVTDocumentLocation2@62"file:///Users/alexanderzywicki/Documents/DSG/src/AnalogSaw.cpp0000000000000000^1220"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogSaw.o src/AnalogSaw.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /usr/local/bin/gcc-4.9 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -Os -Wunused-function -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -funroll-loops -ffast-math -ftree-vectorize -msse3 -msse4.1 -msse4.2 -mmacosx-version-min=10.9 -gdwarf-2 -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Release -std=c++11 -c /Users/alexanderzywicki/Documents/DSG/src/AnalogSaw.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogSaw.o36"70D73499-789F-4C05-919C-D845987D924F-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-
-CCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogSquare.o /Users/alexanderzywicki/Documents/DSG/src/AnalogSquare.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-s432771593.388362
-e432771593.589323
-r1
-xCompileC
-xBuild/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogSquare.o
-x/Users/alexanderzywicki/Documents/DSG/src/AnalogSquare.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_9
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/alexanderzywicki/Documents/DSG/src/AnalogSquare.cpp167"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogSquare.o src/AnalogSquare.cpp normal x86_64 c++ com.apple.compilers.gcc.4_95680630992cbb941^8ae5960992cbb941^---0#0#1#-19%DVTDocumentLocation2@65"file:///Users/alexanderzywicki/Documents/DSG/src/AnalogSquare.cpp0000000000000000^1232"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogSquare.o src/AnalogSquare.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /usr/local/bin/gcc-4.9 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -Os -Wunused-function -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -funroll-loops -ffast-math -ftree-vectorize -msse3 -msse4.1 -msse4.2 -mmacosx-version-min=10.9 -gdwarf-2 -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Release -std=c++11 -c /Users/alexanderzywicki/Documents/DSG/src/AnalogSquare.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogSquare.o36"0B9F22B0-B79F-4DA1-B8A2-6980722A62A5-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-
-CCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogTriangle.o /Users/alexanderzywicki/Documents/DSG/src/AnalogTriangle.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-s432771593.127876
-e432771593.348689
-r1
-xCompileC
-xBuild/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogTriangle.o
-x/Users/alexanderzywicki/Documents/DSG/src/AnalogTriangle.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_9
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/alexanderzywicki/Documents/DSG/src/AnalogTriangle.cpp171"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogTriangle.o src/AnalogTriangle.cpp normal x86_64 c++ com.apple.compilers.gcc.4_931cd200992cbb941^4947590992cbb941^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/alexanderzywicki/Documents/DSG/src/AnalogTriangle.cpp0000000000000000^1240"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogTriangle.o src/AnalogTriangle.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /usr/local/bin/gcc-4.9 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -Os -Wunused-function -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -funroll-loops -ffast-math -ftree-vectorize -msse3 -msse4.1 -msse4.2 -mmacosx-version-min=10.9 -gdwarf-2 -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Release -std=c++11 -c /Users/alexanderzywicki/Documents/DSG/src/AnalogTriangle.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AnalogTriangle.o36"A903C180-DDE5-4839-9AD0-CB01C1480CB7-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-
-CCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AudioSettings.o /Users/alexanderzywicki/Documents/DSG/src/AudioSettings.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-s432771593.315700
-e432771593.353694
-r1
-xCompileC
-xBuild/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AudioSettings.o
-x/Users/alexanderzywicki/Documents/DSG/src/AudioSettings.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_9
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/alexanderzywicki/Documents/DSG/src/AudioSettings.cpp169"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AudioSettings.o src/AudioSettings.cpp normal x86_64 c++ com.apple.compilers.gcc.4_965e4500992cbb941^e28f5a0992cbb941^---0#0#1#-19%DVTDocumentLocation2@66"file:///Users/alexanderzywicki/Documents/DSG/src/AudioSettings.cpp0000000000000000^1236"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AudioSettings.o src/AudioSettings.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /usr/local/bin/gcc-4.9 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -Os -Wunused-function -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -funroll-loops -ffast-math -ftree-vectorize -msse3 -msse4.1 -msse4.2 -mmacosx-version-min=10.9 -gdwarf-2 -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Release -std=c++11 -c /Users/alexanderzywicki/Documents/DSG/src/AudioSettings.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/AudioSettings.o36"759A7D5F-ABB1-4B5D-BB8C-09665E8038EE-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-
-CCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLIT.o /Users/alexanderzywicki/Documents/DSG/src/BLIT.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-s432771593.125177
-e432771593.426670
-r1
-xCompileC
-xBuild/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLIT.o
-x/Users/alexanderzywicki/Documents/DSG/src/BLIT.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_9
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Users/alexanderzywicki/Documents/DSG/src/BLIT.cpp151"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLIT.o src/BLIT.cpp normal x86_64 c++ com.apple.compilers.gcc.4_92e37200992cbb941^c93d6d0992cbb941^---0#0#1#-19%DVTDocumentLocation2@57"file:///Users/alexanderzywicki/Documents/DSG/src/BLIT.cpp0000000000000000^1200"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLIT.o src/BLIT.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /usr/local/bin/gcc-4.9 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -Os -Wunused-function -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -funroll-loops -ffast-math -ftree-vectorize -msse3 -msse4.1 -msse4.2 -mmacosx-version-min=10.9 -gdwarf-2 -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Release -std=c++11 -c /Users/alexanderzywicki/Documents/DSG/src/BLIT.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLIT.o36"C7E82802-A607-4AAB-9722-728EDA391410-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-
-CCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITSaw.o /Users/alexanderzywicki/Documents/DSG/src/BLITSaw.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-s432771593.126184
-e432771593.315495
-r1
-xCompileC
-xBuild/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITSaw.o
-x/Users/alexanderzywicki/Documents/DSG/src/BLITSaw.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_9
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile /Users/alexanderzywicki/Documents/DSG/src/BLITSaw.cpp157"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITSaw.o src/BLITSaw.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9c85d200992cbb941^890a510992cbb941^---0#0#1#-19%DVTDocumentLocation2@60"file:///Users/alexanderzywicki/Documents/DSG/src/BLITSaw.cpp0000000000000000^1212"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITSaw.o src/BLITSaw.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /usr/local/bin/gcc-4.9 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -Os -Wunused-function -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -funroll-loops -ffast-math -ftree-vectorize -msse3 -msse4.1 -msse4.2 -mmacosx-version-min=10.9 -gdwarf-2 -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Release -std=c++11 -c /Users/alexanderzywicki/Documents/DSG/src/BLITSaw.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITSaw.o36"BB09134C-8808-497B-9D7D-B3100E66AF85-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-
-CCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITSquare.o /Users/alexanderzywicki/Documents/DSG/src/BLITSquare.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-s432771593.301432
-e432771593.419882
-r1
-xCompileC
-xBuild/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITSquare.o
-x/Users/alexanderzywicki/Documents/DSG/src/BLITSquare.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_9
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/alexanderzywicki/Documents/DSG/src/BLITSquare.cpp163"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITSquare.o src/BLITSquare.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9923e4d0992cbb941^95816b0992cbb941^---0#0#1#-19%DVTDocumentLocation2@63"file:///Users/alexanderzywicki/Documents/DSG/src/BLITSquare.cpp0000000000000000^1224"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITSquare.o src/BLITSquare.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /usr/local/bin/gcc-4.9 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -Os -Wunused-function -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -funroll-loops -ffast-math -ftree-vectorize -msse3 -msse4.1 -msse4.2 -mmacosx-version-min=10.9 -gdwarf-2 -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Release -std=c++11 -c /Users/alexanderzywicki/Documents/DSG/src/BLITSquare.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITSquare.o36"52F9A4E2-2892-40AA-A3FE-9D91636EF84D-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-
-CCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o /Users/alexanderzywicki/Documents/DSG/src/BLITTriangle.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-s432771593.123741
-e432771593.238370
-r1
-xCompileC
-xBuild/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o
-x/Users/alexanderzywicki/Documents/DSG/src/BLITTriangle.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_9
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/alexanderzywicki/Documents/DSG/src/BLITTriangle.cpp167"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o src/BLITTriangle.cpp normal x86_64 c++ com.apple.compilers.gcc.4_91fbb1f0992cbb941^670a3d0992cbb941^---0#0#1#-19%DVTDocumentLocation2@65"file:///Users/alexanderzywicki/Documents/DSG/src/BLITTriangle.cpp0000000000000000^1232"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o src/BLITTriangle.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /usr/local/bin/gcc-4.9 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -Os -Wunused-function -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -funroll-loops -ffast-math -ftree-vectorize -msse3 -msse4.1 -msse4.2 -mmacosx-version-min=10.9 -gdwarf-2 -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Release -std=c++11 -c /Users/alexanderzywicki/Documents/DSG/src/BLITTriangle.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o36"AE27AB0C-12B9-41F5-AAC3-F5655B598206-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-
-CCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/Buffer.o /Users/alexanderzywicki/Documents/DSG/src/Buffer.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-s432771593.124348
-e432771593.228937
-r1
-xCompileC
-xBuild/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/Buffer.o
-x/Users/alexanderzywicki/Documents/DSG/src/Buffer.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_9
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Compile /Users/alexanderzywicki/Documents/DSG/src/Buffer.cpp155"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/Buffer.o src/Buffer.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9d9ed1f0992cbb941^6b9f3a0992cbb941^---0#0#1#-19%DVTDocumentLocation2@59"file:///Users/alexanderzywicki/Documents/DSG/src/Buffer.cpp0000000000000000^1208"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/Buffer.o src/Buffer.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /usr/local/bin/gcc-4.9 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -Os -Wunused-function -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -funroll-loops -ffast-math -ftree-vectorize -msse3 -msse4.1 -msse4.2 -mmacosx-version-min=10.9 -gdwarf-2 -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Release -std=c++11 -c /Users/alexanderzywicki/Documents/DSG/src/Buffer.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/Buffer.o36"8B9F1294-74FE-4C0A-A7DF-3CDACEDBED29-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-
-CCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierSaw.o /Users/alexanderzywicki/Documents/DSG/src/FourierSaw.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-s432771593.124740
-e432771593.386871
-r1
-xCompileC
-xBuild/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierSaw.o
-x/Users/alexanderzywicki/Documents/DSG/src/FourierSaw.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_9
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/alexanderzywicki/Documents/DSG/src/FourierSaw.cpp163"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierSaw.o src/FourierSaw.cpp normal x86_64 c++ com.apple.compilers.gcc.4_958ff1f0992cbb941^630d630992cbb941^---0#0#1#-19%DVTDocumentLocation2@63"file:///Users/alexanderzywicki/Documents/DSG/src/FourierSaw.cpp0000000000000000^1224"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierSaw.o src/FourierSaw.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /usr/local/bin/gcc-4.9 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -Os -Wunused-function -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -funroll-loops -ffast-math -ftree-vectorize -msse3 -msse4.1 -msse4.2 -mmacosx-version-min=10.9 -gdwarf-2 -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Release -std=c++11 -c /Users/alexanderzywicki/Documents/DSG/src/FourierSaw.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierSaw.o36"C11A3F12-B71F-489A-B6B3-B8B8272B1944-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-
-CCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierSquare.o /Users/alexanderzywicki/Documents/DSG/src/FourierSquare.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-s432771593.353895
-e432771593.641879
-r1
-xCompileC
-xBuild/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierSquare.o
-x/Users/alexanderzywicki/Documents/DSG/src/FourierSquare.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_9
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/alexanderzywicki/Documents/DSG/src/FourierSquare.cpp169"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierSquare.o src/FourierSquare.cpp normal x86_64 c++ com.apple.compilers.gcc.4_958ab5a0992cbb941^5c57a40992cbb941^---0#0#1#-19%DVTDocumentLocation2@66"file:///Users/alexanderzywicki/Documents/DSG/src/FourierSquare.cpp0000000000000000^1236"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierSquare.o src/FourierSquare.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /usr/local/bin/gcc-4.9 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -Os -Wunused-function -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -funroll-loops -ffast-math -ftree-vectorize -msse3 -msse4.1 -msse4.2 -mmacosx-version-min=10.9 -gdwarf-2 -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Release -std=c++11 -c /Users/alexanderzywicki/Documents/DSG/src/FourierSquare.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierSquare.o36"F09EF794-C880-4DFC-9C6B-325825918772-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-
-CCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierTriangle.o /Users/alexanderzywicki/Documents/DSG/src/FourierTriangle.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-s432771593.229558
-e432771593.519974
-r1
-xCompileC
-xBuild/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierTriangle.o
-x/Users/alexanderzywicki/Documents/DSG/src/FourierTriangle.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_9
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/alexanderzywicki/Documents/DSG/src/FourierTriangle.cpp173"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierTriangle.o src/FourierTriangle.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9a5d73a0992cbb941^2b4e850992cbb941^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/alexanderzywicki/Documents/DSG/src/FourierTriangle.cpp0000000000000000^1244"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierTriangle.o src/FourierTriangle.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /usr/local/bin/gcc-4.9 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -Os -Wunused-function -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -funroll-loops -ffast-math -ftree-vectorize -msse3 -msse4.1 -msse4.2 -mmacosx-version-min=10.9 -gdwarf-2 -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Release -std=c++11 -c /Users/alexanderzywicki/Documents/DSG/src/FourierTriangle.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/FourierTriangle.o36"CDA78860-CFF0-4540-A51C-632F569BE8B7-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-
-CCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/RingBuffer.o /Users/alexanderzywicki/Documents/DSG/src/RingBuffer.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-s432771593.124154
-e432771593.311139
-r1
-xCompileC
-xBuild/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/RingBuffer.o
-x/Users/alexanderzywicki/Documents/DSG/src/RingBuffer.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_9
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/alexanderzywicki/Documents/DSG/src/RingBuffer.cpp163"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/RingBuffer.o src/RingBuffer.cpp normal x86_64 c++ com.apple.compilers.gcc.4_973da1f0992cbb941^54ab4f0992cbb941^---0#0#1#-19%DVTDocumentLocation2@63"file:///Users/alexanderzywicki/Documents/DSG/src/RingBuffer.cpp0000000000000000^1224"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/RingBuffer.o src/RingBuffer.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /usr/local/bin/gcc-4.9 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -Os -Wunused-function -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -funroll-loops -ffast-math -ftree-vectorize -msse3 -msse4.1 -msse4.2 -mmacosx-version-min=10.9 -gdwarf-2 -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Release -std=c++11 -c /Users/alexanderzywicki/Documents/DSG/src/RingBuffer.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/RingBuffer.o36"03B02EC2-362E-42A0-B070-01C26F1522E3-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-
-CCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/SignalGenerator.o /Users/alexanderzywicki/Documents/DSG/src/SignalGenerator.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-s432771593.123893
-e432771593.300881
-r1
-xCompileC
-xBuild/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/SignalGenerator.o
-x/Users/alexanderzywicki/Documents/DSG/src/SignalGenerator.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_9
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/alexanderzywicki/Documents/DSG/src/SignalGenerator.cpp173"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/SignalGenerator.o src/SignalGenerator.cpp normal x86_64 c++ com.apple.compilers.gcc.4_993c31f0992cbb941^b70b4d0992cbb941^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/alexanderzywicki/Documents/DSG/src/SignalGenerator.cpp0000000000000000^1244"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/SignalGenerator.o src/SignalGenerator.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /usr/local/bin/gcc-4.9 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -Os -Wunused-function -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -funroll-loops -ffast-math -ftree-vectorize -msse3 -msse4.1 -msse4.2 -mmacosx-version-min=10.9 -gdwarf-2 -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Release -std=c++11 -c /Users/alexanderzywicki/Documents/DSG/src/SignalGenerator.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/SignalGenerator.o36"EE74741F-CE18-414D-AE58-76716A3E34A1-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-
-CCompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/SignalProcess.o /Users/alexanderzywicki/Documents/DSG/src/SignalProcess.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9
-s432771593.493348
-e432771593.621163
-r1
-xCompileC
-xBuild/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/SignalProcess.o
-x/Users/alexanderzywicki/Documents/DSG/src/SignalProcess.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_9
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/alexanderzywicki/Documents/DSG/src/SignalProcess.cpp169"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/SignalProcess.o src/SignalProcess.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9b75f7e0992cbb941^3e5b9f0992cbb941^---0#0#1#-19%DVTDocumentLocation2@66"file:///Users/alexanderzywicki/Documents/DSG/src/SignalProcess.cpp0000000000000000^1236"CompileC Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/SignalProcess.o src/SignalProcess.cpp normal x86_64 c++ com.apple.compilers.gcc.4_9    cd /Users/alexanderzywicki/Documents/DSG    export LANG=en_US.US-ASCII    /usr/local/bin/gcc-4.9 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -Os -Wunused-function -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -funroll-loops -ffast-math -ftree-vectorize -msse3 -msse4.1 -msse4.2 -mmacosx-version-min=10.9 -gdwarf-2 -I/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources/x86_64 -I/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/DerivedSources -F/Users/alexanderzywicki/Documents/DSG/Build/Products/Release -std=c++11 -c /Users/alexanderzywicki/Documents/DSG/src/SignalProcess.cpp -o /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/SignalProcess.o36"EE77FCCB-797A-4F5A-A1B2-478BCE59FBD7-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-
-CCpHeader src/DSG.h Build/Products/Release/usr/local/include/DSG.h
-s432771593.740385
-e432771593.741533
-r1
-xCpHeader
-xsrc/DSG.h
-xBuild/Products/Release/usr/local/include/DSG.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy Build/Products/Release/usr/local/include/DSG.h65"CpHeader src/DSG.h Build/Products/Release/usr/local/include/DSG.h499cbd0992cbb941^8f6cc20992cbb941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/alexanderzywicki/Documents/DSG/Build/Products/Release/usr/local/include/DSG.h0034b0a2dfffdf42^476"CpHeader src/DSG.h Build/Products/Release/usr/local/include/DSG.h    cd /Users/alexanderzywicki/Documents/DSG    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/alexanderzywicki/Documents/DSG/src/DSG.h /Users/alexanderzywicki/Documents/DSG/Build/Products/Release/usr/local/include36"A3610E5A-5A91-4B26-A4D6-32D2DDAD2F0E-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-
-CLibtool /Users/alexanderzywicki/Documents/DSG/Build/Products/Release/libDSG.a normal x86_64
-s432771593.716878
-e432771593.730519
-r1
-xLibtool
-x/Users/alexanderzywicki/Documents/DSG/Build/Products/Release/libDSG.a
-xnormal
-xx86_64
-o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o has no symbols
-o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITSquare.o has no symbols
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Libtool Build/Products/Release/libDSG.a normal x86_6453"Libtool Build/Products/Release/libDSG.a normal x86_649ce0b70992cbb941^d460c20992cbb941^-492"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITTriangle.o has no symbols/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/BLITSquare.o has no symbols-0#0#1#--654"Libtool Build/Products/Release/libDSG.a normal x86_64    cd /Users/alexanderzywicki/Documents/DSG    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/alexanderzywicki/Documents/DSG/Build/Products/Release -filelist /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG_static.build/Objects-normal/x86_64/DSG.LinkFileList -o /Users/alexanderzywicki/Documents/DSG/Build/Products/Release/libDSG.a36"046567B9-9E3B-4A1B-A71D-85EAA7666420-
-bB815013D-9AD4-4277-A7DF-37EFE9AA8FA7
-

@@ -39,16 +39,27 @@ namespace DSG {
         inline bool Empty()const;
         inline void Flush();
 #ifdef DEBUG
-        friend std::ostream& operator<<(std::ostream& os,RingBuffer const& buffer);
+        friend std::ostream& DSG:: operator<<(std::ostream& os,DSG:: RingBuffer const& buffer){
+            if (!buffer.Empty()) {
+                size_t index= buffer._read;
+                size_t count=buffer.Count();
+                size_t size = buffer.Size();
+                for (int i=0; i<count; ++i) {
+                    os<<index<<": "<<buffer._buffer[index]<<std::endl;
+                    index = ((index+1)%size);
+                }
+            }return os;
+        }
+
 #endif
     };
     inline bool DSG::RingBuffer::Full()const{
         return _count==this->_size;
     }
-    inline bool RingBuffer::Empty()const{
+    inline bool DSG::RingBuffer::Empty()const{
         return _count==0;
     }
-    inline void RingBuffer::Flush(){
+    inline void DSG::RingBuffer::Flush(){
         _write.store(0,std::memory_order_relaxed);
         _read.store(0,std::memory_order_relaxed);
         _count=0;

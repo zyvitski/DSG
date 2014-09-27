@@ -14,6 +14,7 @@ namespace DSG{
 #endif
     //! DSG::Analog - Namespace Containing Analog Style Oscillators
     namespace Analog{
+        //!\brief DSG::AnalogSaw - Analog Syle Saw Wave Generator
         class AnalogSaw : public DSG::SignalGenerator {
         public:
             AnalogSaw();
@@ -30,7 +31,7 @@ namespace DSG{
             _stor-=0.5;
             _stor*=2.0;
             signal=_stor;
-            _pstep();
+            step();
             return true;
         }
         inline bool DSG::Analog::AnalogSaw::Perform(DSG::RingBuffer& signal){

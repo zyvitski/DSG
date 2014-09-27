@@ -8,7 +8,8 @@
 #ifndef __DSG__BLIT__
 #define __DSG__BLIT__
 #include "SignalGenerator.h"
-#include <limits>
+#include "Denormal.h"
+#include "Sinc.h"
 #include <math.h>
 namespace DSG{
 #ifdef DSG_Short_Names
@@ -29,21 +30,14 @@ namespace DSG{
         protected:
             virtual inline void setHarmonics();
             unsigned long m_;
-            unsigned long _nHarms;
-            DSG::DSGSample _denominator;
-            DSG::DSGSample tmp;
+            unsigned long _h;
+            double a_;
         };
         inline bool DSG::BLIT::Blit::Perform(DSG::DSGSample& signal){
-            //Two Sin Calls Per Sample
-            _denominator = DSG::Sin(_phasor);
-            if (_denominator<=std::numeric_limits<float>::epsilon()) {
-                tmp=1.0;
-            }else{
-                tmp = DSG::Sin(_phasor);
-                tmp/= m_ * _denominator;
-            }
-            signal = tmp;
-            _pstep();
+#warning Non Functional DSG::BLIT::Blit::Perform
+            signal = DSG::SincM(_phasor, m_);//uses stilson and smith style SincM function- DSG::SincM(x,m);
+            
+            step();
             return true;
         }
         inline bool DSG::BLIT::Blit::Perform(DSG::RingBuffer& signal){
@@ -57,17 +51,17 @@ namespace DSG{
         }
         inline DSG::DSGFrequency const& DSG::BLIT::Blit::Frequency(DSG::DSGFrequency const& value){
             this->SignalGenerator::Frequency(value);
-            _nHarms = MaxHarms(_frequency);
+            _h = MaxHarms(_frequency);
             setHarmonics();
+            a_ = (float)m_/(DSG::SampleRate()/_frequency);
             return _frequency;
         }
         inline void DSG::BLIT::Blit::setHarmonics(){
-            if (_nHarms<=0) {
+            if (_h<=0) {
                 size_t max = (size_t)floor(0.5 * ( SampleRate()/ _frequency));
                 m_ = 2* max +1;
-            }
-            else{
-                m_ = 2* _nHarms +1;
+            }else{
+                m_ = 2* _h +1;
             }
         }
     }
