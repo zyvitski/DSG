@@ -16,11 +16,10 @@
 int main(int argc, const char * argv[])
 {
     DSG::SampleRate(44100);
-    float arr[4096];
-    DSG::GenerateMinBlep<float, 4, 1024>(arr);
-    for (int i=0; i<4096; ++i) {
-        std::cout<<arr[i]<<std::endl;
-    }
+    DSG::DPWSaw _saw(20,0);
+    DSG::RingBuffer _buff(4096);
+    _saw.Perform(_buff);
+    std::cout<<_buff;
     return 0;
 }
 

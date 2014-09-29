@@ -13,7 +13,10 @@
 #include "SignalGenerator.h"
 #include "PI.h"
 namespace DSG {
-    namespace Blep{        
+#ifdef DSG_Short_Names
+    inline
+#endif
+    namespace Blep{
         template<typename T,unsigned long  size>
         void MinimumPhase(T (&realCepstrum)[size],T (&minimumPhase)[size]){
             int i,nd2;

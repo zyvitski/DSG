@@ -42,5 +42,7 @@
 
 #include "MinBlep.h"
 
+#include "DPWSaw.h"
+
 
 #endif

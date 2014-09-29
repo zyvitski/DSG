@@ -114,6 +114,10 @@
 		1FB9FD2119CA88F800E42C69 /* Sine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FD0219CA88F800E42C69 /* Sine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1FE7AAE219D45645000B146C /* MinBlep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FE7AAE119D45645000B146C /* MinBlep.cpp */; };
 		1FE7AAE319D45645000B146C /* MinBlep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FE7AAE119D45645000B146C /* MinBlep.cpp */; };
+		1FE87D7019D7BD3C00E8377B /* DPWSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FE87D6E19D7BD3C00E8377B /* DPWSaw.cpp */; };
+		1FE87D7119D7BD3C00E8377B /* DPWSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FE87D6E19D7BD3C00E8377B /* DPWSaw.cpp */; };
+		1FE87D7219D7BD3C00E8377B /* DPWSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FE87D6F19D7BD3C00E8377B /* DPWSaw.h */; };
+		1FE87D7319D7BD3C00E8377B /* DPWSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FE87D6F19D7BD3C00E8377B /* DPWSaw.h */; };
 		1FF6ADA319D25548007887C3 /* Sinc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF6ADA019D25548007887C3 /* Sinc.h */; };
 		1FF6ADA419D25548007887C3 /* Sinc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF6ADA019D25548007887C3 /* Sinc.h */; };
 		1FF6ADA919D2594B007887C3 /* MinBlep.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF6ADA619D2594B007887C3 /* MinBlep.h */; };
@@ -225,6 +229,8 @@
 		1FB9FD0119CA88F800E42C69 /* SignalProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignalProcess.h; path = src/SignalProcess.h; sourceTree = "<group>"; };
 		1FB9FD0219CA88F800E42C69 /* Sine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sine.h; path = src/Sine.h; sourceTree = "<group>"; };
 		1FE7AAE119D45645000B146C /* MinBlep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MinBlep.cpp; path = src/MinBlep.cpp; sourceTree = "<group>"; };
+		1FE87D6E19D7BD3C00E8377B /* DPWSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DPWSaw.cpp; path = src/DPWSaw.cpp; sourceTree = "<group>"; };
+		1FE87D6F19D7BD3C00E8377B /* DPWSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPWSaw.h; path = src/DPWSaw.h; sourceTree = "<group>"; };
 		1FF6ADA019D25548007887C3 /* Sinc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sinc.h; path = src/Sinc.h; sourceTree = "<group>"; };
 		1FF6ADA619D2594B007887C3 /* MinBlep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MinBlep.h; path = src/MinBlep.h; sourceTree = "<group>"; };
 		1FFD9A4619D376140060D4DE /* Leaky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Leaky.h; path = src/Leaky.h; sourceTree = "<group>"; };
@@ -282,6 +288,7 @@
 		1F43E42519C8D6140012C668 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				1FE87D6D19D7BD2300E8377B /* EPTR */,
 				1FB9FD2719CB1EAA00E42C69 /* PolyBLEP */,
 				1FB9FD2619CB1E9900E42C69 /* MinBLEP */,
 				1FB9FD2519CB1E9000E42C69 /* DSF */,
@@ -377,6 +384,8 @@
 		1FB9FD2419CB1E8B00E42C69 /* DPW */ = {
 			isa = PBXGroup;
 			children = (
+				1FE87D6E19D7BD3C00E8377B /* DPWSaw.cpp */,
+				1FE87D6F19D7BD3C00E8377B /* DPWSaw.h */,
 			);
 			name = DPW;
 			sourceTree = "<group>";
@@ -408,6 +417,13 @@
 			name = PolyBLEP;
 			sourceTree = "<group>";
 		};
+		1FE87D6D19D7BD2300E8377B /* EPTR */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = EPTR;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -415,6 +431,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE87D7219D7BD3C00E8377B /* DPWSaw.h in Headers */,
 				1FB9FD0A19CA88F800E42C69 /* Buffer.h in Headers */,
 				1FB9FCEE19CA88E900E42C69 /* BLITSquare.h in Headers */,
 				1F7EC06D19D0E05D009BB32B /* PolyBlep.h in Headers */,
@@ -451,6 +468,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE87D7319D7BD3C00E8377B /* DPWSaw.h in Headers */,
 				1FB9FD0B19CA88F800E42C69 /* Buffer.h in Headers */,
 				1FB9FCEF19CA88E900E42C69 /* BLITSquare.h in Headers */,
 				1F7EC06E19D0E05D009BB32B /* PolyBlep.h in Headers */,
@@ -585,6 +603,7 @@
 				1FB9FCC219CA88C700E42C69 /* AnalogTriangle.cpp in Sources */,
 				1FB9FCEC19CA88E900E42C69 /* BLITSquare.cpp in Sources */,
 				1FB9FD0419CA88F800E42C69 /* AudioSettings.cpp in Sources */,
+				1FE87D7019D7BD3C00E8377B /* DPWSaw.cpp in Sources */,
 				1FB9FCCA19CA88D500E42C69 /* FourierSaw.cpp in Sources */,
 				1FB9FCD219CA88D500E42C69 /* FourierTriangle.cpp in Sources */,
 				1FB9FCBE19CA88C700E42C69 /* AnalogSaw.cpp in Sources */,
@@ -610,6 +629,7 @@
 				1FB9FCD319CA88D500E42C69 /* FourierTriangle.cpp in Sources */,
 				1FB9FCED19CA88E900E42C69 /* BLITSquare.cpp in Sources */,
 				1FB9FD0519CA88F800E42C69 /* AudioSettings.cpp in Sources */,
+				1FE87D7119D7BD3C00E8377B /* DPWSaw.cpp in Sources */,
 				1FB9FCCF19CA88D500E42C69 /* FourierSquare.cpp in Sources */,
 				1FB9FCD819CA88D900E42C69 /* AnalogSquare.cpp in Sources */,
 				1FB9FCD619CA88D900E42C69 /* AnalogSaw.cpp in Sources */,
