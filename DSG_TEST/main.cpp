@@ -9,8 +9,7 @@
 //#include "../src/DSG.h"
 #include "../src/Driver.h"
 #include <iostream>
-#include <math.h>
-#include <complex>
+
 
 
 int main(int argc, const char * argv[])

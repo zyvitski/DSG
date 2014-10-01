@@ -27,7 +27,10 @@ namespace DSG{
         };
         inline bool DSG::Analog::AnalogSaw::Perform(DSG::DSGSample& signal){
             _stor=_phasor;
-            _stor=1.0-_stor;
+            _stor+=0.5;
+            if (_stor>1.0) {
+                --_stor;
+            }
             _stor-=0.5;
             _stor*=2.0;
             signal=_stor;

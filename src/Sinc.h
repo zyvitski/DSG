@@ -12,6 +12,7 @@
 #include "PI.h"
 #include "Sine.h"
 #include "Denormal.h"
+#include <type_traits>
 namespace DSG{
     
     template<typename T>

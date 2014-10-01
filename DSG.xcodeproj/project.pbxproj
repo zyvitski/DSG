@@ -112,6 +112,14 @@
 		1FB9FD1F19CA88F800E42C69 /* SignalProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FD0119CA88F800E42C69 /* SignalProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1FB9FD2019CA88F800E42C69 /* Sine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FD0219CA88F800E42C69 /* Sine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1FB9FD2119CA88F800E42C69 /* Sine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FD0219CA88F800E42C69 /* Sine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FC3424919DA0F3E004C028E /* EPTRSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3424719DA0F3E004C028E /* EPTRSaw.cpp */; };
+		1FC3424A19DA0F3E004C028E /* EPTRSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3424719DA0F3E004C028E /* EPTRSaw.cpp */; };
+		1FC3424B19DA0F3E004C028E /* EPTRSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC3424819DA0F3E004C028E /* EPTRSaw.h */; };
+		1FC3424C19DA0F3E004C028E /* EPTRSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC3424819DA0F3E004C028E /* EPTRSaw.h */; };
+		1FDECB6D19DB8E6800B482C3 /* DPWTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FDECB6B19DB8E6800B482C3 /* DPWTriangle.cpp */; };
+		1FDECB6E19DB8E6800B482C3 /* DPWTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FDECB6B19DB8E6800B482C3 /* DPWTriangle.cpp */; };
+		1FDECB6F19DB8E6800B482C3 /* DPWTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDECB6C19DB8E6800B482C3 /* DPWTriangle.h */; };
+		1FDECB7019DB8E6800B482C3 /* DPWTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDECB6C19DB8E6800B482C3 /* DPWTriangle.h */; };
 		1FE7AAE219D45645000B146C /* MinBlep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FE7AAE119D45645000B146C /* MinBlep.cpp */; };
 		1FE7AAE319D45645000B146C /* MinBlep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FE7AAE119D45645000B146C /* MinBlep.cpp */; };
 		1FE87D7019D7BD3C00E8377B /* DPWSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FE87D6E19D7BD3C00E8377B /* DPWSaw.cpp */; };
@@ -145,12 +153,19 @@
 			remoteGlobalIDString = 1F43E44919C8D6E90012C668;
 			remoteInfo = DSG_static;
 		};
-		1F43E47419C900790012C668 /* PBXContainerItemProxy */ = {
+		1FDECB6719DB863F00B482C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F43E41619C8D5EC0012C668 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1F43E45A19C8D71C0012C668;
-			remoteInfo = "BUILD ALL";
+			remoteGlobalIDString = 1F43E44919C8D6E90012C668;
+			remoteInfo = DSG_static;
+		};
+		1FDECB6919DB864200B482C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F43E41619C8D5EC0012C668 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F43E41D19C8D5ED0012C668;
+			remoteInfo = DSG;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -228,6 +243,10 @@
 		1FB9FD0019CA88F800E42C69 /* SignalProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SignalProcess.cpp; path = src/SignalProcess.cpp; sourceTree = "<group>"; };
 		1FB9FD0119CA88F800E42C69 /* SignalProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignalProcess.h; path = src/SignalProcess.h; sourceTree = "<group>"; };
 		1FB9FD0219CA88F800E42C69 /* Sine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sine.h; path = src/Sine.h; sourceTree = "<group>"; };
+		1FC3424719DA0F3E004C028E /* EPTRSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EPTRSaw.cpp; path = src/EPTRSaw.cpp; sourceTree = "<group>"; };
+		1FC3424819DA0F3E004C028E /* EPTRSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EPTRSaw.h; path = src/EPTRSaw.h; sourceTree = "<group>"; };
+		1FDECB6B19DB8E6800B482C3 /* DPWTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DPWTriangle.cpp; path = src/DPWTriangle.cpp; sourceTree = "<group>"; };
+		1FDECB6C19DB8E6800B482C3 /* DPWTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPWTriangle.h; path = src/DPWTriangle.h; sourceTree = "<group>"; };
 		1FE7AAE119D45645000B146C /* MinBlep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MinBlep.cpp; path = src/MinBlep.cpp; sourceTree = "<group>"; };
 		1FE87D6E19D7BD3C00E8377B /* DPWSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DPWSaw.cpp; path = src/DPWSaw.cpp; sourceTree = "<group>"; };
 		1FE87D6F19D7BD3C00E8377B /* DPWSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPWSaw.h; path = src/DPWSaw.h; sourceTree = "<group>"; };
@@ -386,6 +405,8 @@
 			children = (
 				1FE87D6E19D7BD3C00E8377B /* DPWSaw.cpp */,
 				1FE87D6F19D7BD3C00E8377B /* DPWSaw.h */,
+				1FDECB6B19DB8E6800B482C3 /* DPWTriangle.cpp */,
+				1FDECB6C19DB8E6800B482C3 /* DPWTriangle.h */,
 			);
 			name = DPW;
 			sourceTree = "<group>";
@@ -420,6 +441,8 @@
 		1FE87D6D19D7BD2300E8377B /* EPTR */ = {
 			isa = PBXGroup;
 			children = (
+				1FC3424719DA0F3E004C028E /* EPTRSaw.cpp */,
+				1FC3424819DA0F3E004C028E /* EPTRSaw.h */,
 			);
 			name = EPTR;
 			sourceTree = "<group>";
@@ -435,8 +458,10 @@
 				1FB9FD0A19CA88F800E42C69 /* Buffer.h in Headers */,
 				1FB9FCEE19CA88E900E42C69 /* BLITSquare.h in Headers */,
 				1F7EC06D19D0E05D009BB32B /* PolyBlep.h in Headers */,
+				1FDECB6F19DB8E6800B482C3 /* DPWTriangle.h in Headers */,
 				1FB9FCBF19CA88C700E42C69 /* AnalogSaw.h in Headers */,
 				1FB9FD1219CA88F800E42C69 /* PI.h in Headers */,
+				1FC3424B19DA0F3E004C028E /* EPTRSaw.h in Headers */,
 				1F0A763919D267320094C6F5 /* DSGMath.h in Headers */,
 				1FFD9A5019D387800060D4DE /* Blackman.h in Headers */,
 				1FB9FCCC19CA88D500E42C69 /* FourierSaw.h in Headers */,
@@ -472,8 +497,10 @@
 				1FB9FD0B19CA88F800E42C69 /* Buffer.h in Headers */,
 				1FB9FCEF19CA88E900E42C69 /* BLITSquare.h in Headers */,
 				1F7EC06E19D0E05D009BB32B /* PolyBlep.h in Headers */,
+				1FDECB7019DB8E6800B482C3 /* DPWTriangle.h in Headers */,
 				1FB9FCD519CA88D500E42C69 /* FourierTriangle.h in Headers */,
 				1FB9FD1319CA88F800E42C69 /* PI.h in Headers */,
+				1FC3424C19DA0F3E004C028E /* EPTRSaw.h in Headers */,
 				1F0A763A19D267320094C6F5 /* DSGMath.h in Headers */,
 				1FFD9A5119D387800060D4DE /* Blackman.h in Headers */,
 				1FB9FCD119CA88D500E42C69 /* FourierSquare.h in Headers */,
@@ -549,7 +576,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				1F43E47519C900790012C668 /* PBXTargetDependency */,
+				1FDECB6A19DB864200B482C3 /* PBXTargetDependency */,
+				1FDECB6819DB863F00B482C3 /* PBXTargetDependency */,
 			);
 			name = DSG_TEST;
 			productName = DSG_TEST;
@@ -592,6 +620,7 @@
 			files = (
 				1FB9FCF019CA88E900E42C69 /* BLITTriangle.cpp in Sources */,
 				1FB9FD1819CA88F800E42C69 /* SignalGenerator.cpp in Sources */,
+				1FC3424919DA0F3E004C028E /* EPTRSaw.cpp in Sources */,
 				1FB9FD1419CA88F800E42C69 /* RingBuffer.cpp in Sources */,
 				1FB9FD0819CA88F800E42C69 /* Buffer.cpp in Sources */,
 				1F7EC06B19D0E05D009BB32B /* PolyBlep.cpp in Sources */,
@@ -603,6 +632,7 @@
 				1FB9FCC219CA88C700E42C69 /* AnalogTriangle.cpp in Sources */,
 				1FB9FCEC19CA88E900E42C69 /* BLITSquare.cpp in Sources */,
 				1FB9FD0419CA88F800E42C69 /* AudioSettings.cpp in Sources */,
+				1FDECB6D19DB8E6800B482C3 /* DPWTriangle.cpp in Sources */,
 				1FE87D7019D7BD3C00E8377B /* DPWSaw.cpp in Sources */,
 				1FB9FCCA19CA88D500E42C69 /* FourierSaw.cpp in Sources */,
 				1FB9FCD219CA88D500E42C69 /* FourierTriangle.cpp in Sources */,
@@ -618,6 +648,7 @@
 			files = (
 				1FB9FCF119CA88E900E42C69 /* BLITTriangle.cpp in Sources */,
 				1FB9FD1919CA88F800E42C69 /* SignalGenerator.cpp in Sources */,
+				1FC3424A19DA0F3E004C028E /* EPTRSaw.cpp in Sources */,
 				1FB9FD1519CA88F800E42C69 /* RingBuffer.cpp in Sources */,
 				1FB9FD0919CA88F800E42C69 /* Buffer.cpp in Sources */,
 				1F7EC06C19D0E05D009BB32B /* PolyBlep.cpp in Sources */,
@@ -629,6 +660,7 @@
 				1FB9FCD319CA88D500E42C69 /* FourierTriangle.cpp in Sources */,
 				1FB9FCED19CA88E900E42C69 /* BLITSquare.cpp in Sources */,
 				1FB9FD0519CA88F800E42C69 /* AudioSettings.cpp in Sources */,
+				1FDECB6E19DB8E6800B482C3 /* DPWTriangle.cpp in Sources */,
 				1FE87D7119D7BD3C00E8377B /* DPWSaw.cpp in Sources */,
 				1FB9FCCF19CA88D500E42C69 /* FourierSquare.cpp in Sources */,
 				1FB9FCD819CA88D900E42C69 /* AnalogSquare.cpp in Sources */,
@@ -660,10 +692,15 @@
 			target = 1F43E44919C8D6E90012C668 /* DSG_static */;
 			targetProxy = 1F43E46019C8D7260012C668 /* PBXContainerItemProxy */;
 		};
-		1F43E47519C900790012C668 /* PBXTargetDependency */ = {
+		1FDECB6819DB863F00B482C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1F43E45A19C8D71C0012C668 /* BUILD ALL */;
-			targetProxy = 1F43E47419C900790012C668 /* PBXContainerItemProxy */;
+			target = 1F43E44919C8D6E90012C668 /* DSG_static */;
+			targetProxy = 1FDECB6719DB863F00B482C3 /* PBXContainerItemProxy */;
+		};
+		1FDECB6A19DB864200B482C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F43E41D19C8D5ED0012C668 /* DSG */;
+			targetProxy = 1FDECB6919DB864200B482C3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -12,7 +12,7 @@
 namespace DSG {
     template<typename T>
     inline T Abs(T const& value){
-        return value<0 ? -1* value:value;
+        return value<0.0 ? -1.0* value:value;
     }
 }
 
