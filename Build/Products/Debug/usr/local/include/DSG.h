@@ -25,6 +25,8 @@
 #include "Blackman.h"
 #include "LUT.h"
 #include "DFT.h"
+#include "SoundFile.h"
+
 
 #include "FourierSaw.h"
 #include "FourierSquare.h"

@@ -12,6 +12,7 @@
 			buildConfigurationList = 1F43E45B19C8D71C0012C668 /* Build configuration list for PBXAggregateTarget "BUILD ALL" */;
 			buildPhases = (
 				1FAC222619D09C2C000D9052 /* CopyFiles */,
+				1FC6E7A519DE36C00082AE73 /* ShellScript */,
 			);
 			dependencies = (
 				1F43E45F19C8D7260012C668 /* PBXTargetDependency */,
@@ -40,8 +41,8 @@
 		1F7EC07419D0E28C009BB32B /* PolyBlepSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7EC07019D0E28C009BB32B /* PolyBlepSaw.h */; };
 		1FAB7D4819CB5F0800515633 /* libportaudio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAB7D4719CB5F0800515633 /* libportaudio.dylib */; };
 		1FAB7D4B19CB651700515633 /* Driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB7D4919CB651700515633 /* Driver.cpp */; };
-		1FAC222719D09C42000D9052 /* libDSG.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F43E41E19C8D5ED0012C668 /* libDSG.dylib */; };
-		1FAC222819D09C42000D9052 /* libDSG.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F43E44A19C8D6E90012C668 /* libDSG.a */; };
+		1FAC222719D09C42000D9052 /* libDSG.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F43E41E19C8D5ED0012C668 /* libDSG.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1FAC222819D09C42000D9052 /* libDSG.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F43E44A19C8D6E90012C668 /* libDSG.a */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		1FB9FCBE19CA88C700E42C69 /* AnalogSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCB819CA88C700E42C69 /* AnalogSaw.cpp */; };
 		1FB9FCBF19CA88C700E42C69 /* AnalogSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCB919CA88C700E42C69 /* AnalogSaw.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1FB9FCC019CA88C700E42C69 /* AnalogSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCBA19CA88C700E42C69 /* AnalogSquare.cpp */; };
@@ -122,6 +123,8 @@
 		1FDECB7019DB8E6800B482C3 /* DPWTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDECB6C19DB8E6800B482C3 /* DPWTriangle.h */; };
 		1FE7AAE219D45645000B146C /* MinBlep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FE7AAE119D45645000B146C /* MinBlep.cpp */; };
 		1FE7AAE319D45645000B146C /* MinBlep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FE7AAE119D45645000B146C /* MinBlep.cpp */; };
+		1FE83D5319DF52C700C6A454 /* SoundFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FE83D5219DF52C700C6A454 /* SoundFile.h */; };
+		1FE83D5419DF52C700C6A454 /* SoundFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FE83D5219DF52C700C6A454 /* SoundFile.h */; };
 		1FE87D7019D7BD3C00E8377B /* DPWSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FE87D6E19D7BD3C00E8377B /* DPWSaw.cpp */; };
 		1FE87D7119D7BD3C00E8377B /* DPWSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FE87D6E19D7BD3C00E8377B /* DPWSaw.cpp */; };
 		1FE87D7219D7BD3C00E8377B /* DPWSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FE87D6F19D7BD3C00E8377B /* DPWSaw.h */; };
@@ -248,6 +251,7 @@
 		1FDECB6B19DB8E6800B482C3 /* DPWTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DPWTriangle.cpp; path = src/DPWTriangle.cpp; sourceTree = "<group>"; };
 		1FDECB6C19DB8E6800B482C3 /* DPWTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPWTriangle.h; path = src/DPWTriangle.h; sourceTree = "<group>"; };
 		1FE7AAE119D45645000B146C /* MinBlep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MinBlep.cpp; path = src/MinBlep.cpp; sourceTree = "<group>"; };
+		1FE83D5219DF52C700C6A454 /* SoundFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundFile.h; path = src/SoundFile.h; sourceTree = "<group>"; };
 		1FE87D6E19D7BD3C00E8377B /* DPWSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DPWSaw.cpp; path = src/DPWSaw.cpp; sourceTree = "<group>"; };
 		1FE87D6F19D7BD3C00E8377B /* DPWSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPWSaw.h; path = src/DPWSaw.h; sourceTree = "<group>"; };
 		1FF6ADA019D25548007887C3 /* Sinc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sinc.h; path = src/Sinc.h; sourceTree = "<group>"; };
@@ -335,6 +339,7 @@
 		1F43E47719C901590012C668 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1FE83D5219DF52C700C6A454 /* SoundFile.h */,
 				1FFD9A5819D3AB300060D4DE /* DFT.h */,
 				1FFD9A4F19D387800060D4DE /* Blackman.h */,
 				1F0A763819D267320094C6F5 /* DSGMath.h */,
@@ -461,6 +466,7 @@
 				1FDECB6F19DB8E6800B482C3 /* DPWTriangle.h in Headers */,
 				1FB9FCBF19CA88C700E42C69 /* AnalogSaw.h in Headers */,
 				1FB9FD1219CA88F800E42C69 /* PI.h in Headers */,
+				1FE83D5319DF52C700C6A454 /* SoundFile.h in Headers */,
 				1FC3424B19DA0F3E004C028E /* EPTRSaw.h in Headers */,
 				1F0A763919D267320094C6F5 /* DSGMath.h in Headers */,
 				1FFD9A5019D387800060D4DE /* Blackman.h in Headers */,
@@ -500,6 +506,7 @@
 				1FDECB7019DB8E6800B482C3 /* DPWTriangle.h in Headers */,
 				1FB9FCD519CA88D500E42C69 /* FourierTriangle.h in Headers */,
 				1FB9FD1319CA88F800E42C69 /* PI.h in Headers */,
+				1FE83D5419DF52C700C6A454 /* SoundFile.h in Headers */,
 				1FC3424C19DA0F3E004C028E /* EPTRSaw.h in Headers */,
 				1F0A763A19D267320094C6F5 /* DSGMath.h in Headers */,
 				1FFD9A5119D387800060D4DE /* Blackman.h in Headers */,
@@ -612,6 +619,22 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FC6E7A519DE36C00082AE73 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -p /usr/local/include/DSG\nmkdir -p /usr/local/include/DSG\ncp ~/Documents/DSG/src/*.h /usr/local/include/DSG";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F43E41A19C8D5ED0012C668 /* Sources */ = {

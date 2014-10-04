@@ -33,7 +33,7 @@ namespace DSG{
         if (DSG::IsDenormal(value)) {
             return 1.0;
         }else{
-            value/= (M * value);
+            value/= DSG::Sin(M * x);
             return value;
         }
     }
