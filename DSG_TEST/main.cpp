@@ -9,21 +9,19 @@
 //#include "../src/DSG.h"
 #include "../src/Driver.h"
 
-
 #include <iostream>
-
-
-
-
 int main(int argc, const char * argv[])
 {
     DSG::SampleRate(44100);
-    DSG::BlitSaw _saw(1000,0);
-    DSG::DSGSample _buff[44100];
-    for (int i=0; i<44100; ++i) {
-        _saw.Perform(_buff[i]);
+    DSG::DPWSaw _saw(1660,0);
+    
+    DSG::DSGSample _buff[44100*4];
+    for (int i=0; i<44100*4; ++i) {
+        //_saw.Perform(_buff[i]);
+        _buff[i] = DSG::Gaussian();
     }
-    DSG::SoundFile::WavFile<DSG::DSGSample> _file("sndfile.wav",_buff,44100,44100,1);
+    DSG::SoundFile::WavFile<DSG::DSGSample> _file("sndfile.wav",_buff,44100*4,44100,1);
+    
     return 0;
 }
 

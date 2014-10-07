@@ -17,14 +17,11 @@ namespace DSG {
         Sine_LUT =2,
         Sine_Default = Sine_LUT
     }Sine_Implementations;
-    
-
     /*!\brief DSG::Sin() - Templated Sin Function With Optional Implementation
      */
     template<unsigned implementation> inline double Sin(double const& x){
         return 0;
     }
-    
     template<> inline double Sin<Sine_LUT>(double const& x){
         static DSG::LUT<float, LUT_SIZE> _lut(&sinf,TWOPI);
         return _lut(x);
@@ -41,7 +38,6 @@ namespace DSG {
     template<unsigned implementation> inline double Cos(double const& x){
         return 0;
     }
-    
     template<> inline double Cos<Sine_LUT>(double const& x){
         static DSG::LUT<float, LUT_SIZE> _lut(&cosf,TWOPI);
         return _lut(x);
@@ -55,7 +51,5 @@ namespace DSG {
     inline double Cos(double const& x){
         return Cos<Sine_Default>(x);//wrap default implementation as non template
     }
-
-    
 }
 #endif /* defined(__DSG__Sine__) */

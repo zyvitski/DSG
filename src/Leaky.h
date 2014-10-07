@@ -5,7 +5,6 @@
 //  Created by Alexander Zywicki on 9/24/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
-
 #ifndef __DSG__Leaky__
 #define __DSG__Leaky__
 #include <type_traits>

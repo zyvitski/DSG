@@ -5,7 +5,6 @@
 //  Created by Alexander Zywicki on 9/24/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
-
 #ifndef DSG_Blackman_h
 #define DSG_Blackman_h
 #include "PI.h"
@@ -25,5 +24,4 @@ namespace DSG {
         return 0.42 - (0.5 * DSG::Cos(x))+(0.08 * DSG::Cos(2.0*x));
     }
 }
-
 #endif

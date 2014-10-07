@@ -29,11 +29,13 @@ namespace DSG{
     //SincM(X) = sin(Pi*X)/M sin(Pi*X/M)
     inline double SincM(double const& x,unsigned long const& M){
         //two sin calls per SincM
-        double value = DSG::Sin(x);
-        if (DSG::IsDenormal(value)) {
+        double value=0;
+        double denom = DSG::Sin(x);
+        if (DSG::IsDenormal(denom)) {
             return 1.0;
         }else{
-            value/= DSG::Sin(M * x);
+            value= DSG::Sin(M * x);
+            value/=M * denom;
             return value;
         }
     }

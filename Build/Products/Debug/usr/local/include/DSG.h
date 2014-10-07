@@ -5,10 +5,8 @@
 //  Created by Alexander Zywicki on 9/16/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
-
 #ifndef DSG_DSG_h
 #define DSG_DSG_h
-
 #define DSG_Short_Names // enables inlining of nested namespaces to allow shorter explicit typenames
 //Example: DSG::Analog::AnalogSaw (Long Name)...DSG::AnalogSaw (Short Name)(only available with this macro enabled
 
@@ -26,7 +24,7 @@
 #include "LUT.h"
 #include "DFT.h"
 #include "SoundFile.h"
-
+#include "Sleep.h"
 
 #include "FourierSaw.h"
 #include "FourierSquare.h"
@@ -47,6 +45,8 @@
 #include "DPWSaw.h"
 
 #include "EPTRSaw.h"
+
+#include "Gaussian.h"
 
 
 #endif

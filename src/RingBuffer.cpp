@@ -25,3 +25,4 @@ DSG:: RingBuffer& DSG:: RingBuffer::operator=(RingBuffer& buffer){
     return *this;
 }
 DSG:: RingBuffer::~RingBuffer(){Flush();}
+

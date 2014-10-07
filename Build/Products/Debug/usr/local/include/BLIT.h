@@ -36,7 +36,6 @@ namespace DSG{
         inline bool DSG::BLIT::Blit::Perform(DSG::DSGSample& signal){
 #warning Non Functional DSG::BLIT::Blit::Perform
             signal = DSG::SincM(_phasor, m_);//uses stilson and smith style SincM function- DSG::SincM(x,m);
-            
             step();
             return true;
         }

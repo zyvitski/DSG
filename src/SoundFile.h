@@ -5,7 +5,6 @@
 //  Created by Alexander Zywicki on 10/2/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
-
 #ifndef __DSG_SoundFIle__SoundFile__
 #define __DSG_SoundFIle__SoundFile__
 #include <fstream>
@@ -54,5 +53,4 @@ namespace DSG{
         };
     }
 }
-
 #endif /* defined(__DSG_SoundFIle__SoundFile__) */

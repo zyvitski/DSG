@@ -38,8 +38,14 @@ namespace DSG {
         inline bool Full()const;
         inline bool Empty()const;
         inline void Flush();
+        friend bool operator>>(DSG::DSGSample const& signal,DSG::RingBuffer& buffer){
+            return buffer.Write(signal);
+        }
+        friend bool operator<<(DSG::DSGSample& signal,DSG::RingBuffer& buffer){
+            return buffer.Read(signal);
+        }
 #ifdef DEBUG
-        friend std::ostream& DSG:: operator<<(std::ostream& os,DSG:: RingBuffer const& buffer){
+        friend std::ostream& operator<<(std::ostream& os,DSG:: RingBuffer const& buffer){
             if (!buffer.Empty()) {
                 size_t index= buffer._read;
                 size_t count=buffer.Count();
@@ -50,7 +56,6 @@ namespace DSG {
                 }
             }return os;
         }
-
 #endif
     };
     inline bool DSG::RingBuffer::Full()const{

@@ -23,7 +23,7 @@ namespace DSG{
                 //example would  be 0-2pi or 0-1
                 //would be provided a 2pi or 1
                 //defaults to 1
-                double step = range/_size;
+                double step = range/(double)_size;
                 phs = 0;
                 for (int i=0; i<_size; ++i) {
                     _table[i] = fill(phs);
@@ -42,7 +42,6 @@ namespace DSG{
                     phs+=step;
                 }
             }
-
             ~LUT(){}
             element const& operator[](unsigned long const& index){
 #ifdef DEBUG

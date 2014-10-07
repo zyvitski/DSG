@@ -15,7 +15,6 @@ namespace DSG {
     public:
         static DSG::DSGFrequency const& SampleRate();
         static DSG::DSGFrequency const& SampleRate(DSG::DSGFrequency const& value);
-        
     protected:
         static DSG::DSGFrequency _sampleRate;
         static unsigned long _bufferSize;

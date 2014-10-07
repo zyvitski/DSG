@@ -5,13 +5,11 @@
 //  Created by Alexander Zywicki on 9/24/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
-
 #ifndef DSG_DFT_h
 #define DSG_DFT_h
 #include<complex>
 #include "PI.h"
 #include <math.h>
-
 namespace DSG {
     template<typename T,unsigned long size>
     void DFT(std::complex<T> (&time)[size],std::complex<T> (&freq)[size]){
@@ -70,9 +68,5 @@ namespace DSG {
             realCepstrum[i]=time[i].real();
         }
     }
-        
-    
-    
 }
-
 #endif

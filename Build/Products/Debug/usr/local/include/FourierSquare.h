@@ -29,7 +29,6 @@ namespace DSG{
             double value;
             int i;
         };
-        
         inline bool DSG::Fourier::FourierSquare::Perform(DSG::DSGSample& signal){
             //(_h/2)+1 Sine Calls Per Sample
             value=DSG::Sin(_phasor);//i=1

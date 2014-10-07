@@ -14,4 +14,3 @@ DSG::DSGFrequency const& DSG::AudioSettings::SampleRate(DSG::DSGFrequency const&
     _sampleRate = value;
     return _sampleRate;
 }
-

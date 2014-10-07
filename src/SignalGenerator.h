@@ -33,10 +33,8 @@ namespace DSG{
         DSG::DSGPhase _phasor;
         DSG::DSGSample _storage;
     };
-
     inline unsigned long MaxHarms(DSG::DSGFrequency const& frequency){
         double _s = DSG::SampleRate()*  20000.0/DSG::SampleRate();
-
         _s/=frequency;
         return _s;
     }
