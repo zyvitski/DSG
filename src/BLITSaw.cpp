@@ -8,12 +8,11 @@
 
 #include "BLITSaw.h"
 
-DSG::BLIT::BlitSaw::BlitSaw():DSG::BLIT::Blit(),p_(0),C2_(0),state_(0),a_(0){
-    setHarmonics();
+DSG::BLIT::BlitSaw::BlitSaw():DSG::BLIT::Blit(),Register_(0){
+    Frequency(0);
 }
-DSG::BLIT::BlitSaw::BlitSaw(DSG::DSGFrequency const& frequency,DSG::DSGPhase const& offset):DSG::BLIT::Blit(frequency,offset),p_(0),C2_(0),state_(0),a_(0){
-    _h = MaxHarms(_frequency);
-    setHarmonics();
+DSG::BLIT::BlitSaw::BlitSaw(DSG::DSGFrequency const& frequency,DSG::DSGPhase const& offset):DSG::BLIT::Blit(frequency,offset),Register_(0){
+    Frequency(frequency);
 }
 DSG::BLIT::BlitSaw::~BlitSaw(){
     

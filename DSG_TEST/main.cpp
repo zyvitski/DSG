@@ -13,12 +13,12 @@
 int main(int argc, const char * argv[])
 {
     DSG::SampleRate(44100);
-    DSG::DPWSaw _saw(1660,0);
+    DSG::AnalogSaw _saw(220,0);
     
     DSG::DSGSample _buff[44100*4];
     for (int i=0; i<44100*4; ++i) {
-        //_saw.Perform(_buff[i]);
-        _buff[i] = DSG::Gaussian();
+        _saw.Perform(_buff[i]);
+
     }
     DSG::SoundFile::WavFile<DSG::DSGSample> _file("sndfile.wav",_buff,44100*4,44100,1);
     

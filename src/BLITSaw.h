@@ -23,28 +23,24 @@ namespace DSG{
             virtual inline bool Perform(DSG::RingBuffer& signal);
             virtual inline DSG::DSGFrequency const& Frequency(DSG::DSGFrequency const& value);
         protected:
-            virtual inline void setHarmonics();
-            DSG::DSGSample p_;
             DSG::DSGSample C2_;
-            DSG::DSGSample state_;
-            DSG::DSGSample a_;
-            DSG::DSGSample _denominator,tmp;
+            DSG::DSGSample Register_;
         };
         inline bool DSG::BLIT::BlitSaw::Perform(DSG::DSGSample& signal){
-#warning Non-Functional DSG::BlitSaw::Perform()
-            //very broken still
-            _denominator = DSG::Sin(_phasor);
-            if (DSG::IsDenormal(fabs(_denominator))) {
-                tmp=a_;
+            denominator = m_ * sin(PI*_phasor);
+            if (DSG::IsDenormal(denominator)) {
+                signal = a_;
             }else{
-                tmp = DSG::Sin(_phasor);
-                tmp/= (SampleRate()/_frequency) * _denominator;
+                value = sin(PI*_phasor * m_);
+                value/=denominator;
+                value*=a_;
+                signal = value;
             }
-            tmp+=state_-C2_;
-            state_ = tmp * 0.995;
-            signal = tmp;
             step();
-            
+            signal += (Register_ - C2_);
+            Register_ = signal * 0.995;
+            C2_+=signal;
+            C2_*=0.5;
             return true;
         }
         inline bool DSG::BLIT::BlitSaw::Perform(DSG::RingBuffer& signal){
@@ -57,23 +53,13 @@ namespace DSG{
             }return true;
         }
         inline DSG::DSGFrequency const& DSG::BLIT::BlitSaw::Frequency(DSG::DSGFrequency const& value){
-            _frequency = value;
-            _dt = SampleRate()/_frequency;
-            _h=MaxHarms(_frequency);
-            this->setHarmonics();
-            C2_ = 1.0/(SampleRate()/ _frequency);
-            state_ = -0.5 * a_;
+            this->SignalGenerator::Frequency(value);
+            p_ = DSG::SampleRate()/_frequency;
+            _h = (unsigned)floor(p_*0.5);
+            m_ = 2 * (_h)+1;
+            a_ = m_/(double)p_;
+            C2_ = 1.0/(double)p_;
             return _frequency;
-        }
-        inline void DSG::BLIT::BlitSaw::setHarmonics(){
-            if ( _h <= 0 ) {
-                unsigned int maxHarmonics = (unsigned int) floor( 0.5 * (SampleRate()/ _frequency) );
-                m_ = 2 * maxHarmonics + 1;
-            }
-            else{
-                m_ = 2 * _h + 1;
-            }
-            a_ = m_ /( SampleRate()/_frequency);
         }
     }
 }

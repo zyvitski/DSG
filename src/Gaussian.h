@@ -5,7 +5,6 @@
 //  Created by Alexander Zywicki on 10/6/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
-
 #ifndef DSG_Gaussian_h
 #define DSG_Gaussian_h
 #include<random>
@@ -21,5 +20,4 @@ namespace DSG{
         return x;
     }
 }
-
 #endif
