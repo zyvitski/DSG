@@ -33,6 +33,12 @@
 		1F43E46919C900110012C668 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E46819C900110012C668 /* main.cpp */; };
 		1F43E46B19C900110012C668 /* DSG_TEST.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F43E46A19C900110012C668 /* DSG_TEST.1 */; };
 		1F43E47619C901230012C668 /* libDSG.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F43E41E19C8D5ED0012C668 /* libDSG.dylib */; };
+		1F49BFDA19E5EDB500EA40ED /* Pink.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F49BFD919E5EDB500EA40ED /* Pink.h */; };
+		1F49BFDB19E5EDB500EA40ED /* Pink.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F49BFD919E5EDB500EA40ED /* Pink.h */; };
+		1F707D8019EC85B100B8DACC /* Decimate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F707D7E19EC85B100B8DACC /* Decimate.cpp */; };
+		1F707D8119EC85B100B8DACC /* Decimate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F707D7E19EC85B100B8DACC /* Decimate.cpp */; };
+		1F707D8219EC85B100B8DACC /* Decimate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F707D7F19EC85B100B8DACC /* Decimate.h */; };
+		1F707D8319EC85B100B8DACC /* Decimate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F707D7F19EC85B100B8DACC /* Decimate.h */; };
 		1F7EC06B19D0E05D009BB32B /* PolyBlep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EC06919D0E05D009BB32B /* PolyBlep.cpp */; };
 		1F7EC06C19D0E05D009BB32B /* PolyBlep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EC06919D0E05D009BB32B /* PolyBlep.cpp */; };
 		1F7EC06D19D0E05D009BB32B /* PolyBlep.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7EC06A19D0E05D009BB32B /* PolyBlep.h */; };
@@ -41,6 +47,10 @@
 		1F7EC07219D0E28C009BB32B /* PolyBlepSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EC06F19D0E28C009BB32B /* PolyBlepSaw.cpp */; };
 		1F7EC07319D0E28C009BB32B /* PolyBlepSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7EC07019D0E28C009BB32B /* PolyBlepSaw.h */; };
 		1F7EC07419D0E28C009BB32B /* PolyBlepSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7EC07019D0E28C009BB32B /* PolyBlepSaw.h */; };
+		1F89D72B19EBA2EF00794DCD /* DCBlocker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F89D72919EBA2EF00794DCD /* DCBlocker.cpp */; };
+		1F89D72C19EBA2EF00794DCD /* DCBlocker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F89D72919EBA2EF00794DCD /* DCBlocker.cpp */; };
+		1F89D72D19EBA2EF00794DCD /* DCBlocker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F89D72A19EBA2EF00794DCD /* DCBlocker.h */; };
+		1F89D72E19EBA2EF00794DCD /* DCBlocker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F89D72A19EBA2EF00794DCD /* DCBlocker.h */; };
 		1FAB7D4819CB5F0800515633 /* libportaudio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAB7D4719CB5F0800515633 /* libportaudio.dylib */; };
 		1FAB7D4B19CB651700515633 /* Driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB7D4919CB651700515633 /* Driver.cpp */; };
 		1FAC222719D09C42000D9052 /* libDSG.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F43E41E19C8D5ED0012C668 /* libDSG.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -209,10 +219,15 @@
 		1F43E46619C900110012C668 /* DSG_TEST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSG_TEST; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F43E46819C900110012C668 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1F43E46A19C900110012C668 /* DSG_TEST.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DSG_TEST.1; sourceTree = "<group>"; };
+		1F49BFD919E5EDB500EA40ED /* Pink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pink.h; path = src/Pink.h; sourceTree = "<group>"; };
+		1F707D7E19EC85B100B8DACC /* Decimate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Decimate.cpp; path = src/Decimate.cpp; sourceTree = "<group>"; };
+		1F707D7F19EC85B100B8DACC /* Decimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Decimate.h; path = src/Decimate.h; sourceTree = "<group>"; };
 		1F7EC06919D0E05D009BB32B /* PolyBlep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PolyBlep.cpp; path = src/PolyBlep.cpp; sourceTree = "<group>"; };
 		1F7EC06A19D0E05D009BB32B /* PolyBlep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PolyBlep.h; path = src/PolyBlep.h; sourceTree = "<group>"; };
 		1F7EC06F19D0E28C009BB32B /* PolyBlepSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PolyBlepSaw.cpp; path = src/PolyBlepSaw.cpp; sourceTree = "<group>"; };
 		1F7EC07019D0E28C009BB32B /* PolyBlepSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PolyBlepSaw.h; path = src/PolyBlepSaw.h; sourceTree = "<group>"; };
+		1F89D72919EBA2EF00794DCD /* DCBlocker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DCBlocker.cpp; path = src/DCBlocker.cpp; sourceTree = "<group>"; };
+		1F89D72A19EBA2EF00794DCD /* DCBlocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCBlocker.h; path = src/DCBlocker.h; sourceTree = "<group>"; };
 		1FAB7D4719CB5F0800515633 /* libportaudio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libportaudio.dylib; path = ../../../../usr/local/lib/libportaudio.dylib; sourceTree = "<group>"; };
 		1FAB7D4919CB651700515633 /* Driver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Driver.cpp; path = src/Driver.cpp; sourceTree = SOURCE_ROOT; };
 		1FAB7D4A19CB651700515633 /* Driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Driver.h; path = src/Driver.h; sourceTree = SOURCE_ROOT; };
@@ -317,6 +332,7 @@
 		1F43E42519C8D6140012C668 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				1F89D72819EBA2D800794DCD /* filters */,
 				1FF3EEAC19E39996005047B6 /* Noise */,
 				1FE87D6D19D7BD2300E8377B /* EPTR */,
 				1FB9FD2719CB1EAA00E42C69 /* PolyBLEP */,
@@ -368,8 +384,19 @@
 				1FB9FD0219CA88F800E42C69 /* Sine.h */,
 				1FF6ADA019D25548007887C3 /* Sinc.h */,
 				1FFD9A4619D376140060D4DE /* Leaky.h */,
+				1F707D7E19EC85B100B8DACC /* Decimate.cpp */,
+				1F707D7F19EC85B100B8DACC /* Decimate.h */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		1F89D72819EBA2D800794DCD /* filters */ = {
+			isa = PBXGroup;
+			children = (
+				1F89D72919EBA2EF00794DCD /* DCBlocker.cpp */,
+				1F89D72A19EBA2EF00794DCD /* DCBlocker.h */,
+			);
+			name = filters;
 			sourceTree = "<group>";
 		};
 		1FA8763019CA42AD00AE3EF1 /* Fourier */ = {
@@ -464,6 +491,7 @@
 			isa = PBXGroup;
 			children = (
 				1FF3EEB019E399E5005047B6 /* Gaussian.h */,
+				1F49BFD919E5EDB500EA40ED /* Pink.h */,
 			);
 			name = Noise;
 			sourceTree = "<group>";
@@ -475,6 +503,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F89D72D19EBA2EF00794DCD /* DCBlocker.h in Headers */,
 				1FE87D7219D7BD3C00E8377B /* DPWSaw.h in Headers */,
 				1FB9FD0A19CA88F800E42C69 /* Buffer.h in Headers */,
 				1FB9FCEE19CA88E900E42C69 /* BLITSquare.h in Headers */,
@@ -485,6 +514,7 @@
 				1FE83D5319DF52C700C6A454 /* SoundFile.h in Headers */,
 				1F1092D219E148F5002DF1A2 /* Sleep.h in Headers */,
 				1FC3424B19DA0F3E004C028E /* EPTRSaw.h in Headers */,
+				1F49BFDA19E5EDB500EA40ED /* Pink.h in Headers */,
 				1F0A763919D267320094C6F5 /* DSGMath.h in Headers */,
 				1FFD9A5019D387800060D4DE /* Blackman.h in Headers */,
 				1FB9FCCC19CA88D500E42C69 /* FourierSaw.h in Headers */,
@@ -499,6 +529,7 @@
 				1FB9FCD019CA88D500E42C69 /* FourierSquare.h in Headers */,
 				1FB9FCEA19CA88E900E42C69 /* BLITSaw.h in Headers */,
 				1FB9FD1019CA88F800E42C69 /* LUT.h in Headers */,
+				1F707D8219EC85B100B8DACC /* Decimate.h in Headers */,
 				1FB9FCC319CA88C700E42C69 /* AnalogTriangle.h in Headers */,
 				1FB9FCE619CA88E900E42C69 /* BLIT.h in Headers */,
 				1FB9FD0619CA88F800E42C69 /* AudioSettings.h in Headers */,
@@ -517,6 +548,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F89D72E19EBA2EF00794DCD /* DCBlocker.h in Headers */,
 				1FE87D7319D7BD3C00E8377B /* DPWSaw.h in Headers */,
 				1FB9FD0B19CA88F800E42C69 /* Buffer.h in Headers */,
 				1FB9FCEF19CA88E900E42C69 /* BLITSquare.h in Headers */,
@@ -527,6 +559,7 @@
 				1FE83D5419DF52C700C6A454 /* SoundFile.h in Headers */,
 				1F1092D319E148F5002DF1A2 /* Sleep.h in Headers */,
 				1FC3424C19DA0F3E004C028E /* EPTRSaw.h in Headers */,
+				1F49BFDB19E5EDB500EA40ED /* Pink.h in Headers */,
 				1F0A763A19D267320094C6F5 /* DSGMath.h in Headers */,
 				1FFD9A5119D387800060D4DE /* Blackman.h in Headers */,
 				1FB9FCD119CA88D500E42C69 /* FourierSquare.h in Headers */,
@@ -541,6 +574,7 @@
 				1FB9FCD919CA88D900E42C69 /* AnalogSquare.h in Headers */,
 				1FB9FCEB19CA88E900E42C69 /* BLITSaw.h in Headers */,
 				1FB9FD1119CA88F800E42C69 /* LUT.h in Headers */,
+				1F707D8319EC85B100B8DACC /* Decimate.h in Headers */,
 				1FB9FCCD19CA88D500E42C69 /* FourierSaw.h in Headers */,
 				1FB9FCE719CA88E900E42C69 /* BLIT.h in Headers */,
 				1FB9FD0719CA88F800E42C69 /* AudioSettings.h in Headers */,
@@ -661,7 +695,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F707D8019EC85B100B8DACC /* Decimate.cpp in Sources */,
 				1FB9FCF019CA88E900E42C69 /* BLITTriangle.cpp in Sources */,
+				1F89D72B19EBA2EF00794DCD /* DCBlocker.cpp in Sources */,
 				1FB9FD1819CA88F800E42C69 /* SignalGenerator.cpp in Sources */,
 				1FC3424919DA0F3E004C028E /* EPTRSaw.cpp in Sources */,
 				1FB9FD1419CA88F800E42C69 /* RingBuffer.cpp in Sources */,
@@ -689,7 +725,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F707D8119EC85B100B8DACC /* Decimate.cpp in Sources */,
 				1FB9FCF119CA88E900E42C69 /* BLITTriangle.cpp in Sources */,
+				1F89D72C19EBA2EF00794DCD /* DCBlocker.cpp in Sources */,
 				1FB9FD1919CA88F800E42C69 /* SignalGenerator.cpp in Sources */,
 				1FC3424A19DA0F3E004C028E /* EPTRSaw.cpp in Sources */,
 				1FB9FD1519CA88F800E42C69 /* RingBuffer.cpp in Sources */,

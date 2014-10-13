@@ -47,6 +47,9 @@
 #include "EPTRSaw.h"
 
 #include "Gaussian.h"
+#include "Pink.h"
 
+#include "DCBlocker.h"
+#include "Decimate.h"
 
 #endif
