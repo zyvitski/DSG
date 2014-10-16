@@ -19,12 +19,12 @@
 #include "Sinc.h"
 #include "Denormal.h"
 #include "Math.h"
-#include "Leaky.h"
 #include "Blackman.h"
 #include "LUT.h"
-#include "DFT.h"
+
 #include "SoundFile.h"
 #include "Sleep.h"
+#include "BufferConversion.h"
 
 #include "FourierSaw.h"
 #include "FourierSquare.h"
@@ -37,10 +37,6 @@
 #include "BLIT.h"
 #include "BLITSaw.h"
 
-#include "PolyBlep.h"
-#include "PolyBlepSaw.h"
-
-#include "MinBlep.h"
 
 #include "DPWSaw.h"
 
@@ -48,6 +44,7 @@
 
 #include "Gaussian.h"
 #include "Pink.h"
+#include "White.h"
 
 #include "DCBlocker.h"
 #include "Decimate.h"

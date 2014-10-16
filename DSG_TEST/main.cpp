@@ -7,17 +7,16 @@
 //
 //#include "../src/DSG.h"
 #include "../src/Driver.h"
+
+#ifdef DEBUG
 #include <iostream>
+#endif
+
 int main(int argc, const char * argv[])
-{DSG::SampleRate(44100);
-    DSG::RingBuffer _b(256);
-    DSG::Decimator _dec(4);
-    DSG::AnalogSaw _sa(20,0);
-    _sa.Perform(_b);
-    std::cout<<_b;
-    _dec.Perform(_b);
-    std::cout<<_b;
+{
 
+    DSG::RingBuffer _buff(111);
+    std::cout<<_buff.Size();
 
-        return 0;
+    return 0;
 }

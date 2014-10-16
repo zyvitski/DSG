@@ -58,7 +58,6 @@ int DriverExit(){
     }
     return 0;
 }
-
 int Callback( const void *input,
              void *output,
              unsigned long frameCount,

@@ -12,7 +12,7 @@
 #define LUT_SIZE 16384
 namespace DSG {
     typedef enum Sine_Implementations{
-        /*!\brief DSG::Sine_Implementations - Specifies The Implementation Options For DSG::Sin<>()*/
+        /*!\brief DSG::Sine_Implementations - Specifies The Implementation Option For DSG::Sin<>()*/
         Sine_Taylor =1,
         Sine_LUT =2,
         Sine_Default = Sine_LUT

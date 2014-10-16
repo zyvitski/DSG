@@ -25,7 +25,7 @@ namespace DSG {
             DSG::DSGSample xm1;
             DSG::DSGSample ym1;
             DSG::DSGSample x;
-            float _a;
+            DSG::DSGSample _a;
         };
         inline bool DSG::Filter::DCBlocker::Perform(DSG::DSGSample& signal){
             x = signal;

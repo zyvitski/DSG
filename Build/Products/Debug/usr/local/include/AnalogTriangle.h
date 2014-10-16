@@ -51,6 +51,5 @@ namespace DSG{
             }return true;
         }
     }
-}
-
+} 
 #endif /* defined(__DSG__AnalogTriangle__) */
