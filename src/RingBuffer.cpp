@@ -25,3 +25,8 @@ DSG:: RingBuffer& DSG:: RingBuffer::operator=(RingBuffer& buffer){
     return *this;
 }
 DSG:: RingBuffer::~RingBuffer(){Flush();}
+
+DSG::DSGSample& DSG::RingBuffer::operator[](unsigned long const& index){
+    
+    return _buffer[0];
+}

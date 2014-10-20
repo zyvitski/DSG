@@ -14,7 +14,7 @@
 		<string>https://github.com/zyvitski/DSG.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>DSG.xcodeproj/project.xcworkspace</string>
+	<string>DSG.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>219857BF10B792219C0A9CAB815A6E44ED21A79F</key>

@@ -21,6 +21,7 @@
 #include "Math.h"
 #include "Blackman.h"
 #include "LUT.h"
+#include "Window.h"
 
 #include "SoundFile.h"
 #include "Sleep.h"

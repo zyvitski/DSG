@@ -45,6 +45,8 @@
 		1F89D72C19EBA2EF00794DCD /* DCBlocker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F89D72919EBA2EF00794DCD /* DCBlocker.cpp */; };
 		1F89D72D19EBA2EF00794DCD /* DCBlocker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F89D72A19EBA2EF00794DCD /* DCBlocker.h */; };
 		1F89D72E19EBA2EF00794DCD /* DCBlocker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F89D72A19EBA2EF00794DCD /* DCBlocker.h */; };
+		1F9A2E0E19F0F85A009A71CF /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F9A2E0D19F0F85A009A71CF /* Window.h */; };
+		1F9A2E0F19F0F85A009A71CF /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F9A2E0D19F0F85A009A71CF /* Window.h */; };
 		1FA5CEA619EE323400B29E71 /* White.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA5CEA519EE323400B29E71 /* White.h */; };
 		1FA5CEA719EE323400B29E71 /* White.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA5CEA519EE323400B29E71 /* White.h */; };
 		1FAB7D4819CB5F0800515633 /* libportaudio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAB7D4719CB5F0800515633 /* libportaudio.dylib */; };
@@ -209,6 +211,7 @@
 		1F7123A019ED928B0066884B /* BufferConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BufferConversion.h; path = src/BufferConversion.h; sourceTree = "<group>"; };
 		1F89D72919EBA2EF00794DCD /* DCBlocker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DCBlocker.cpp; path = src/DCBlocker.cpp; sourceTree = "<group>"; };
 		1F89D72A19EBA2EF00794DCD /* DCBlocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCBlocker.h; path = src/DCBlocker.h; sourceTree = "<group>"; };
+		1F9A2E0D19F0F85A009A71CF /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Window.h; path = src/Window.h; sourceTree = "<group>"; };
 		1FA5CEA519EE323400B29E71 /* White.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = White.h; path = src/White.h; sourceTree = "<group>"; };
 		1FAB7D4719CB5F0800515633 /* libportaudio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libportaudio.dylib; path = ../../../../usr/local/lib/libportaudio.dylib; sourceTree = "<group>"; };
 		1FAB7D4919CB651700515633 /* Driver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Driver.cpp; path = src/Driver.cpp; sourceTree = SOURCE_ROOT; };
@@ -358,6 +361,7 @@
 				1F707D7E19EC85B100B8DACC /* Decimate.cpp */,
 				1F707D7F19EC85B100B8DACC /* Decimate.h */,
 				1F7123A019ED928B0066884B /* BufferConversion.h */,
+				1F9A2E0D19F0F85A009A71CF /* Window.h */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -451,6 +455,7 @@
 				1FE87D7219D7BD3C00E8377B /* DPWSaw.h in Headers */,
 				1FB9FD0A19CA88F800E42C69 /* Buffer.h in Headers */,
 				1FB9FCEE19CA88E900E42C69 /* BLITSquare.h in Headers */,
+				1F9A2E0E19F0F85A009A71CF /* Window.h in Headers */,
 				1FA5CEA619EE323400B29E71 /* White.h in Headers */,
 				1FB9FCBF19CA88C700E42C69 /* AnalogSaw.h in Headers */,
 				1FB9FD1219CA88F800E42C69 /* PI.h in Headers */,
@@ -492,6 +497,7 @@
 				1FE87D7319D7BD3C00E8377B /* DPWSaw.h in Headers */,
 				1FB9FD0B19CA88F800E42C69 /* Buffer.h in Headers */,
 				1FB9FCEF19CA88E900E42C69 /* BLITSquare.h in Headers */,
+				1F9A2E0F19F0F85A009A71CF /* Window.h in Headers */,
 				1FA5CEA719EE323400B29E71 /* White.h in Headers */,
 				1FB9FCD519CA88D500E42C69 /* FourierTriangle.h in Headers */,
 				1FB9FD1319CA88F800E42C69 /* PI.h in Headers */,

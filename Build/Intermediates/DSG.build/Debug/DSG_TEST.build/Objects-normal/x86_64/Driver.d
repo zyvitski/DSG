@@ -15,6 +15,7 @@ dependencies: /Users/alexanderzywicki/Documents/DSG/src/Driver.cpp \
   /Users/alexanderzywicki/Documents/DSG/src/Denormal.h \
   /Users/alexanderzywicki/Documents/DSG/src/DSGMath.h \
   /Users/alexanderzywicki/Documents/DSG/src/Blackman.h \
+  /Users/alexanderzywicki/Documents/DSG/src/Window.h \
   /Users/alexanderzywicki/Documents/DSG/src/SoundFile.h \
   /Users/alexanderzywicki/Documents/DSG/src/Sleep.h \
   /Users/alexanderzywicki/Documents/DSG/src/BufferConversion.h \

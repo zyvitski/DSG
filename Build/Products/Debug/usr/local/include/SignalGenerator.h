@@ -20,18 +20,21 @@ namespace DSG{
         virtual ~SignalGenerator();
         virtual inline bool Perform(DSG::DSGSample& signal);
         virtual inline bool Perform(DSG::RingBuffer& signal);
+        //Adds interface for control rate processing
         virtual inline DSG::DSGFrequency const& Frequency();
         virtual inline DSG::DSGFrequency const& Frequency(DSG::DSGFrequency const& value);
         virtual inline DSG::DSGPhase const& Phase();
         virtual inline DSG::DSGPhase const& Phase(DSG::DSGPhase const& value);
     protected:
+        //extends sample rate interface
         inline void step();
         inline void sync();
-        DSG::DSGFrequency _frequency;
+        //-----------------------------
+        DSG::DSGFrequency _frequency;//frequency in Hz
         DSG::DSGPhase _dt;//delta time (change in phase per sample) unit: phase 0-1
-        DSG::DSGPhase _offset;
-        DSG::DSGPhase _phasor;
-        DSG::DSGSample _storage;
+        DSG::DSGPhase _offset;//phase shift
+        DSG::DSGPhase _phasor;//phase counter
+        DSG::DSGSample _storage;//storage variable for calculations
     };
     inline unsigned long MaxHarms(DSG::DSGFrequency const& frequency){
         double _s = DSG::SampleRate()*  20000.0/DSG::SampleRate();

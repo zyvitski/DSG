@@ -9,6 +9,7 @@
 #define DSG_Blackman_h
 #include "PI.h"
 #include "LUT.h"
+#include "Sine.h"
 namespace DSG {
     //!\brief DSG::Blackman - Blackman Window Function
     // Generate Blackman Window

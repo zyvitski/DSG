@@ -15,6 +15,7 @@ dependencies: /Users/alexanderzywicki/Documents/DSG/DSG_TEST/main.cpp \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Denormal.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/DSGMath.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Blackman.h \
+  /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Window.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/SoundFile.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Sleep.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/BufferConversion.h \

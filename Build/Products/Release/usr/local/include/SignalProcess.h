@@ -16,6 +16,7 @@ namespace DSG {
     public:
         SignalProcess();
         virtual ~SignalProcess();
+        //Defines Interface for sample rate processing
         virtual inline bool Perform(DSG::DSGSample& signal)=0;
         virtual inline bool Perform(DSG::RingBuffer& signal)=0;
     };

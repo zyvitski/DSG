@@ -33,8 +33,10 @@ namespace DSG {
     /*!\brief DSG::Sin() - General Purpose Sin Function Wraps Templated Version
      */
     inline double Sin(double const& x){
-        return Sin<Sine_Default>(x);//wrap default implementation as non template
+        return static_cast<double>(Sin<Sine_Default>(x));//wrap default implementation as non template
     }
+    inline float Sin(float const& x){
+        return static_cast<float>(Sin<Sine_Default>(x));    }
     template<unsigned implementation> inline double Cos(double const& x){
         return 0;
     }
@@ -49,7 +51,10 @@ namespace DSG {
     /*!\brief DSG::Cos() - General Purpose Cos Function Wraps Templated Version
      */
     inline double Cos(double const& x){
-        return Cos<Sine_Default>(x);//wrap default implementation as non template
+        return static_cast<double>(Cos<Sine_Default>(x));//wrap default implementation as non template
+    }
+    inline float Cos(float const& x){
+        return static_cast<float>(Cos<Sine_Default>(x));
     }
 }
 #endif /* defined(__DSG__Sine__) */

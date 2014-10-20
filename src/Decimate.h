@@ -8,6 +8,8 @@
 #ifndef __DSG__Decimate__
 #define __DSG__Decimate__
 #include "SignalProcess.h"
+#include "PI.h"
+#include <math.h>
 namespace DSG {
     class Decimator:public DSG::SignalProcess{
     public:
@@ -18,6 +20,7 @@ namespace DSG {
         inline unsigned long const& Factor(unsigned long const& value);
     protected:
         virtual inline bool Perform(DSG::DSGSample& signal);//not signal ready, buffer wise only right now
+        DSG::DSGSample _kernel[100];
         unsigned long count;
         unsigned long decimationFactor;
         unsigned long counter;

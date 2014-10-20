@@ -43,7 +43,13 @@ namespace DSG{
             }
         }
         ~LUT(){}
-        element const& operator[](unsigned long const& index){
+        element const& operator[](unsigned long const& index)const{
+#ifdef DEBUG
+            assert(index<_size);
+#endif
+            return _table[index];
+        }
+        element& operator[](unsigned long const& index){
 #ifdef DEBUG
             assert(index<_size);
 #endif
