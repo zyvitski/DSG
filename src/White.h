@@ -16,7 +16,10 @@ namespace DSG{
     namespace Noise{
         template<typename decimal = DSG::DSGSample>
         inline decimal White(decimal=0){
-            return rand()/(decimal)RAND_MAX;
+            decimal white =(rand()/(decimal)RAND_MAX);
+            white -=0.5;
+            white*=2.0;
+            return white;
         }
     }
 }

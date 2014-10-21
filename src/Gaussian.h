@@ -16,11 +16,17 @@ namespace DSG{
     namespace Noise{
         template<typename decimal=DSG::DSGSample>
         decimal Gaussian(decimal=0){
+            static decimal normalizer=1;//variable used to actively normalize the output
             //to enforce compatability with DSG::LUT a dummy parameter is applied
             //this parameter is useless except for compatability reasons
-            decimal R1 = DSG::Noise::White();
-            decimal R2 = DSG::Noise::White();
+            decimal R1 = (rand()/(decimal)RAND_MAX);
+            decimal R2 = (rand()/(decimal)RAND_MAX);
             decimal x= (decimal)sqrt(-2.0f * log(R1))*DSG::Cos(R2);
+            if (DSG::Abs(x)>normalizer) {
+                //store highest output
+                normalizer=DSG::Abs(x);
+            }
+            x/=normalizer;//normalize
             return x;
         }
     }
