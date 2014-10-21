@@ -22,7 +22,8 @@
 #include "Blackman.h"
 #include "LUT.h"
 #include "Window.h"
-#include "StatelessGenerator.h"
+#include "NoiseGenerator.h"
+#include "GenericGenerator.h"
 
 #include "SoundFile.h"
 #include "Sleep.h"

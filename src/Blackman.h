@@ -20,7 +20,6 @@ namespace DSG {
         /*
          Blackman(x) = 0.42f - (0.5f * cos(2pi*x)) + (0.08f * cos(2pi*2.0*x));
          }*/
-
         template<typename T>
         inline T Blackman(T const& x){
             static_assert(std::is_floating_point<T>::value==true,"DSG::Blackman Function Requires Floating Point Type");

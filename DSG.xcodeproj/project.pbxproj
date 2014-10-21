@@ -37,6 +37,10 @@
 		1F43E47619C901230012C668 /* libDSG.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F43E41E19C8D5ED0012C668 /* libDSG.dylib */; };
 		1F49BFDA19E5EDB500EA40ED /* Pink.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F49BFD919E5EDB500EA40ED /* Pink.h */; };
 		1F49BFDB19E5EDB500EA40ED /* Pink.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F49BFD919E5EDB500EA40ED /* Pink.h */; };
+		1F4CA45A19F6DEBA008CFD8C /* GenericGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CA45819F6DEBA008CFD8C /* GenericGenerator.cpp */; };
+		1F4CA45B19F6DEBA008CFD8C /* GenericGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CA45819F6DEBA008CFD8C /* GenericGenerator.cpp */; };
+		1F4CA45C19F6DEBA008CFD8C /* GenericGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4CA45919F6DEBA008CFD8C /* GenericGenerator.h */; };
+		1F4CA45D19F6DEBA008CFD8C /* GenericGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4CA45919F6DEBA008CFD8C /* GenericGenerator.h */; };
 		1F707D8019EC85B100B8DACC /* Decimate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F707D7E19EC85B100B8DACC /* Decimate.cpp */; };
 		1F707D8119EC85B100B8DACC /* Decimate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F707D7E19EC85B100B8DACC /* Decimate.cpp */; };
 		1F707D8219EC85B100B8DACC /* Decimate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F707D7F19EC85B100B8DACC /* Decimate.h */; };
@@ -55,10 +59,10 @@
 		1FAB7D4B19CB651700515633 /* Driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB7D4919CB651700515633 /* Driver.cpp */; };
 		1FAC222719D09C42000D9052 /* libDSG.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F43E41E19C8D5ED0012C668 /* libDSG.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		1FAC222819D09C42000D9052 /* libDSG.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F43E44A19C8D6E90012C668 /* libDSG.a */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		1FB525A519F5D8FF00252FDB /* StatelessGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB525A319F5D8FF00252FDB /* StatelessGenerator.cpp */; };
-		1FB525A619F5D8FF00252FDB /* StatelessGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB525A319F5D8FF00252FDB /* StatelessGenerator.cpp */; };
-		1FB525A719F5D8FF00252FDB /* StatelessGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB525A419F5D8FF00252FDB /* StatelessGenerator.h */; };
-		1FB525A819F5D8FF00252FDB /* StatelessGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB525A419F5D8FF00252FDB /* StatelessGenerator.h */; };
+		1FB525A519F5D8FF00252FDB /* NoiseGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB525A319F5D8FF00252FDB /* NoiseGenerator.cpp */; };
+		1FB525A619F5D8FF00252FDB /* NoiseGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB525A319F5D8FF00252FDB /* NoiseGenerator.cpp */; };
+		1FB525A719F5D8FF00252FDB /* NoiseGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB525A419F5D8FF00252FDB /* NoiseGenerator.h */; };
+		1FB525A819F5D8FF00252FDB /* NoiseGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB525A419F5D8FF00252FDB /* NoiseGenerator.h */; };
 		1FB9FCBE19CA88C700E42C69 /* AnalogSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCB819CA88C700E42C69 /* AnalogSaw.cpp */; };
 		1FB9FCBF19CA88C700E42C69 /* AnalogSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9FCB919CA88C700E42C69 /* AnalogSaw.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1FB9FCC019CA88C700E42C69 /* AnalogSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9FCBA19CA88C700E42C69 /* AnalogSquare.cpp */; };
@@ -213,6 +217,8 @@
 		1F43E46819C900110012C668 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1F43E46A19C900110012C668 /* DSG_TEST.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DSG_TEST.1; sourceTree = "<group>"; };
 		1F49BFD919E5EDB500EA40ED /* Pink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pink.h; path = src/Pink.h; sourceTree = "<group>"; };
+		1F4CA45819F6DEBA008CFD8C /* GenericGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GenericGenerator.cpp; path = src/GenericGenerator.cpp; sourceTree = "<group>"; };
+		1F4CA45919F6DEBA008CFD8C /* GenericGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericGenerator.h; path = src/GenericGenerator.h; sourceTree = "<group>"; };
 		1F707D7E19EC85B100B8DACC /* Decimate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Decimate.cpp; path = src/Decimate.cpp; sourceTree = "<group>"; };
 		1F707D7F19EC85B100B8DACC /* Decimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Decimate.h; path = src/Decimate.h; sourceTree = "<group>"; };
 		1F7123A019ED928B0066884B /* BufferConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BufferConversion.h; path = src/BufferConversion.h; sourceTree = "<group>"; };
@@ -223,8 +229,8 @@
 		1FAB7D4719CB5F0800515633 /* libportaudio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libportaudio.dylib; path = ../../../../usr/local/lib/libportaudio.dylib; sourceTree = "<group>"; };
 		1FAB7D4919CB651700515633 /* Driver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Driver.cpp; path = src/Driver.cpp; sourceTree = SOURCE_ROOT; };
 		1FAB7D4A19CB651700515633 /* Driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Driver.h; path = src/Driver.h; sourceTree = SOURCE_ROOT; };
-		1FB525A319F5D8FF00252FDB /* StatelessGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StatelessGenerator.cpp; path = src/StatelessGenerator.cpp; sourceTree = "<group>"; };
-		1FB525A419F5D8FF00252FDB /* StatelessGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatelessGenerator.h; path = src/StatelessGenerator.h; sourceTree = "<group>"; };
+		1FB525A319F5D8FF00252FDB /* NoiseGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NoiseGenerator.cpp; path = src/NoiseGenerator.cpp; sourceTree = "<group>"; };
+		1FB525A419F5D8FF00252FDB /* NoiseGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoiseGenerator.h; path = src/NoiseGenerator.h; sourceTree = "<group>"; };
 		1FB9FCB819CA88C700E42C69 /* AnalogSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnalogSaw.cpp; path = src/AnalogSaw.cpp; sourceTree = "<group>"; };
 		1FB9FCB919CA88C700E42C69 /* AnalogSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnalogSaw.h; path = src/AnalogSaw.h; sourceTree = "<group>"; };
 		1FB9FCBA19CA88C700E42C69 /* AnalogSquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnalogSquare.cpp; path = src/AnalogSquare.cpp; sourceTree = "<group>"; };
@@ -371,8 +377,8 @@
 				1F707D7F19EC85B100B8DACC /* Decimate.h */,
 				1F7123A019ED928B0066884B /* BufferConversion.h */,
 				1F9A2E0D19F0F85A009A71CF /* Window.h */,
-				1FB525A319F5D8FF00252FDB /* StatelessGenerator.cpp */,
-				1FB525A419F5D8FF00252FDB /* StatelessGenerator.h */,
+				1F4CA45819F6DEBA008CFD8C /* GenericGenerator.cpp */,
+				1F4CA45919F6DEBA008CFD8C /* GenericGenerator.h */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -448,6 +454,8 @@
 		1FF3EEAC19E39996005047B6 /* Noise */ = {
 			isa = PBXGroup;
 			children = (
+				1FB525A319F5D8FF00252FDB /* NoiseGenerator.cpp */,
+				1FB525A419F5D8FF00252FDB /* NoiseGenerator.h */,
 				1FF3EEB019E399E5005047B6 /* Gaussian.h */,
 				1F49BFD919E5EDB500EA40ED /* Pink.h */,
 				1FA5CEA519EE323400B29E71 /* White.h */,
@@ -471,7 +479,7 @@
 				1FA5CEA619EE323400B29E71 /* White.h in Headers */,
 				1FB9FCBF19CA88C700E42C69 /* AnalogSaw.h in Headers */,
 				1FB9FD1219CA88F800E42C69 /* PI.h in Headers */,
-				1FB525A719F5D8FF00252FDB /* StatelessGenerator.h in Headers */,
+				1FB525A719F5D8FF00252FDB /* NoiseGenerator.h in Headers */,
 				1FE83D5319DF52C700C6A454 /* SoundFile.h in Headers */,
 				1F1092D219E148F5002DF1A2 /* Sleep.h in Headers */,
 				1FC3424B19DA0F3E004C028E /* EPTRSaw.h in Headers */,
@@ -489,6 +497,7 @@
 				1FF3EEB119E399E5005047B6 /* Gaussian.h in Headers */,
 				1FB9FCD019CA88D500E42C69 /* FourierSquare.h in Headers */,
 				1FB9FCEA19CA88E900E42C69 /* BLITSaw.h in Headers */,
+				1F4CA45C19F6DEBA008CFD8C /* GenericGenerator.h in Headers */,
 				1FB9FD1019CA88F800E42C69 /* LUT.h in Headers */,
 				1F707D8219EC85B100B8DACC /* Decimate.h in Headers */,
 				1FB9FCC319CA88C700E42C69 /* AnalogTriangle.h in Headers */,
@@ -515,7 +524,7 @@
 				1FA5CEA719EE323400B29E71 /* White.h in Headers */,
 				1FB9FCD519CA88D500E42C69 /* FourierTriangle.h in Headers */,
 				1FB9FD1319CA88F800E42C69 /* PI.h in Headers */,
-				1FB525A819F5D8FF00252FDB /* StatelessGenerator.h in Headers */,
+				1FB525A819F5D8FF00252FDB /* NoiseGenerator.h in Headers */,
 				1FE83D5419DF52C700C6A454 /* SoundFile.h in Headers */,
 				1F1092D319E148F5002DF1A2 /* Sleep.h in Headers */,
 				1FC3424C19DA0F3E004C028E /* EPTRSaw.h in Headers */,
@@ -533,6 +542,7 @@
 				1FF3EEB219E399E5005047B6 /* Gaussian.h in Headers */,
 				1FB9FCD919CA88D900E42C69 /* AnalogSquare.h in Headers */,
 				1FB9FCEB19CA88E900E42C69 /* BLITSaw.h in Headers */,
+				1F4CA45D19F6DEBA008CFD8C /* GenericGenerator.h in Headers */,
 				1FB9FD1119CA88F800E42C69 /* LUT.h in Headers */,
 				1F707D8319EC85B100B8DACC /* Decimate.h in Headers */,
 				1FB9FCCD19CA88D500E42C69 /* FourierSaw.h in Headers */,
@@ -655,10 +665,11 @@
 			files = (
 				1F707D8019EC85B100B8DACC /* Decimate.cpp in Sources */,
 				1FB9FCF019CA88E900E42C69 /* BLITTriangle.cpp in Sources */,
-				1FB525A519F5D8FF00252FDB /* StatelessGenerator.cpp in Sources */,
+				1FB525A519F5D8FF00252FDB /* NoiseGenerator.cpp in Sources */,
 				1F89D72B19EBA2EF00794DCD /* DCBlocker.cpp in Sources */,
 				1FB9FD1819CA88F800E42C69 /* SignalGenerator.cpp in Sources */,
 				1FC3424919DA0F3E004C028E /* EPTRSaw.cpp in Sources */,
+				1F4CA45A19F6DEBA008CFD8C /* GenericGenerator.cpp in Sources */,
 				1FB9FD1419CA88F800E42C69 /* RingBuffer.cpp in Sources */,
 				1FB9FD0819CA88F800E42C69 /* Buffer.cpp in Sources */,
 				1FB9FCCE19CA88D500E42C69 /* FourierSquare.cpp in Sources */,
@@ -682,10 +693,11 @@
 			files = (
 				1F707D8119EC85B100B8DACC /* Decimate.cpp in Sources */,
 				1FB9FCF119CA88E900E42C69 /* BLITTriangle.cpp in Sources */,
-				1FB525A619F5D8FF00252FDB /* StatelessGenerator.cpp in Sources */,
+				1FB525A619F5D8FF00252FDB /* NoiseGenerator.cpp in Sources */,
 				1F89D72C19EBA2EF00794DCD /* DCBlocker.cpp in Sources */,
 				1FB9FD1919CA88F800E42C69 /* SignalGenerator.cpp in Sources */,
 				1FC3424A19DA0F3E004C028E /* EPTRSaw.cpp in Sources */,
+				1F4CA45B19F6DEBA008CFD8C /* GenericGenerator.cpp in Sources */,
 				1FB9FD1519CA88F800E42C69 /* RingBuffer.cpp in Sources */,
 				1FB9FD0919CA88F800E42C69 /* Buffer.cpp in Sources */,
 				1FB9FCCB19CA88D500E42C69 /* FourierSaw.cpp in Sources */,
