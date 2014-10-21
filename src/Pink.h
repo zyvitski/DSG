@@ -9,9 +9,14 @@
 #define DSG_Pink_h
 #include "White.h"
 namespace DSG{
-    template<typename decimal=DSG::DSGSample>
-    decimal Pink(decimal=0){
-        return 0;
+#ifdef DSG_Short_Names
+    inline
+#endif
+    namespace Noise{
+        template<typename decimal=DSG::DSGSample>
+        decimal Pink(decimal=0){
+            return 0;
+        }
     }
 }
 #endif

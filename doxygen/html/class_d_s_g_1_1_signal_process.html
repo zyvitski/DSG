@@ -63,6 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>DSG</b></li><li class="navelem"><a class="el" href="class_d_s_g_1_1_signal_process.html">SignalProcess</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_d_s_g.html">DSG</a></li><li class="navelem"><a class="el" href="class_d_s_g_1_1_signal_process.html">SignalProcess</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -103,37 +104,139 @@ Inheritance diagram for DSG::SignalProcess:</div>
  <div class="center">
   <img src="class_d_s_g_1_1_signal_process.png" usemap="#DSG::SignalProcess_map" alt=""/>
   <map id="DSG::SignalProcess_map" name="DSG::SignalProcess_map">
-<area href="class_d_s_g_1_1_signal_generator.html" title="DSG::SignalGenerator - Extends DSG::Signal Process With Tools For Signal Generation. " alt="DSG::SignalGenerator" shape="rect" coords="570,56,750,80"/>
-<area href="class_d_s_g_1_1_analog_1_1_analog_saw.html" title="DSG::AnalogSaw - Analog Syle Saw Wave Generator. " alt="DSG::Analog::AnalogSaw" shape="rect" coords="0,112,180,136"/>
-<area href="class_d_s_g_1_1_analog_1_1_analog_square.html" title="DSG::AnalogSquare - Analog Syle Square Wave Generator. " alt="DSG::Analog::AnalogSquare" shape="rect" coords="190,112,370,136"/>
-<area href="class_d_s_g_1_1_analog_1_1_analog_triangle.html" title="DSG::AnalogTriangle - Analog Syle Triangle Wave Generator. " alt="DSG::Analog::AnalogTriangle" shape="rect" coords="380,112,560,136"/>
-<area href="class_d_s_g_1_1_b_l_i_t_1_1_blit.html" title="DSG::BLIT::Blit - Band-Limited Impulse Train Generator. " alt="DSG::BLIT::Blit" shape="rect" coords="570,112,750,136"/>
-<area href="class_d_s_g_1_1_fourier_1_1_fourier_saw.html" title="DSG::Fourier::FourierSaw. " alt="DSG::Fourier::FourierSaw" shape="rect" coords="760,112,940,136"/>
-<area href="class_d_s_g_1_1_fourier_1_1_fourier_square.html" alt="DSG::Fourier::FourierSquare" shape="rect" coords="950,112,1130,136"/>
-<area href="class_d_s_g_1_1_fourier_1_1_fourier_triangle.html" alt="DSG::Fourier::FourierTriangle" shape="rect" coords="1140,112,1320,136"/>
-<area href="class_d_s_g_1_1_b_l_i_t_1_1_blit_saw.html" title="DSG::BLIT::BlitSaw - Saw Wave Generator Based on BLIT Algorithm. " alt="DSG::BLIT::BlitSaw" shape="rect" coords="570,168,750,192"/>
+<area href="class_d_s_g_1_1_decimator.html" alt="DSG::Decimator" shape="rect" coords="0,56,180,80"/>
+<area href="class_d_s_g_1_1_signal_generator.html" title="DSG::SignalGenerator - Extends DSG::Signal Process With Tools For Signal Generation. " alt="DSG::SignalGenerator" shape="rect" coords="190,56,370,80"/>
+<area href="class_d_s_g_1_1_analog_1_1_analog_saw.html" title="DSG::AnalogSaw - Analog Syle Saw Wave Generator. " alt="DSG::Analog::AnalogSaw" shape="rect" coords="380,112,560,136"/>
+<area href="class_d_s_g_1_1_analog_1_1_analog_square.html" title="DSG::AnalogSquare - Analog Syle Square Wave Generator. " alt="DSG::Analog::AnalogSquare" shape="rect" coords="380,168,560,192"/>
+<area href="class_d_s_g_1_1_analog_1_1_analog_triangle.html" title="DSG::AnalogTriangle - Analog Syle Triangle Wave Generator. " alt="DSG::Analog::AnalogTriangle" shape="rect" coords="380,224,560,248"/>
+<area href="class_d_s_g_1_1_b_l_i_t_1_1_blit.html" title="DSG::BLIT::Blit - Band-Limited Impulse Train Generator. " alt="DSG::BLIT::Blit" shape="rect" coords="380,280,560,304"/>
+<area href="class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw.html" alt="DSG::DPW::DPWSaw" shape="rect" coords="380,336,560,360"/>
+<area href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html" title="DSG::EPTR::EPTRSaw-Sawtooth Wave Generator Using The Efficienct Polynomial Transfer Region Algorithm..." alt="DSG::EPTR::EPTRSaw" shape="rect" coords="380,392,560,416"/>
+<area href="class_d_s_g_1_1_fourier_1_1_fourier_saw.html" title="DSG::Fourier::FourierSaw. " alt="DSG::Fourier::FourierSaw" shape="rect" coords="380,448,560,472"/>
+<area href="class_d_s_g_1_1_fourier_1_1_fourier_square.html" alt="DSG::Fourier::FourierSquare" shape="rect" coords="380,504,560,528"/>
+<area href="class_d_s_g_1_1_fourier_1_1_fourier_triangle.html" alt="DSG::Fourier::FourierTriangle" shape="rect" coords="380,560,560,584"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af73d246c460915db7a9be7e3ef36844d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af73d246c460915db7a9be7e3ef36844d"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Perform</b> (DSG::DSGSample &amp;signal)=0</td></tr>
+<tr class="memitem:a3fd4347483bcf3cc0a3d7bf98ff56218"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_process.html#a3fd4347483bcf3cc0a3d7bf98ff56218">SignalProcess</a> ()</td></tr>
+<tr class="separator:a3fd4347483bcf3cc0a3d7bf98ff56218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b6a758241a092ddc38e13effc9553f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_process.html#ad9b6a758241a092ddc38e13effc9553f">~SignalProcess</a> ()</td></tr>
+<tr class="separator:ad9b6a758241a092ddc38e13effc9553f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af73d246c460915db7a9be7e3ef36844d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_process.html#af73d246c460915db7a9be7e3ef36844d">Perform</a> (<a class="el" href="namespace_d_s_g.html#ac39a94cd27ebcd9c1e7502d0c624894a">DSG::DSGSample</a> &amp;signal)=0</td></tr>
 <tr class="separator:af73d246c460915db7a9be7e3ef36844d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c8ff3487d9c43f9eace1d9192d4a37e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c8ff3487d9c43f9eace1d9192d4a37e"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Perform</b> (<a class="el" href="class_d_s_g_1_1_ring_buffer.html">DSG::RingBuffer</a> &amp;signal)=0</td></tr>
+<tr class="memitem:a2c8ff3487d9c43f9eace1d9192d4a37e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_process.html#a2c8ff3487d9c43f9eace1d9192d4a37e">Perform</a> (<a class="el" href="class_d_s_g_1_1_ring_buffer.html">DSG::RingBuffer</a> &amp;signal)=0</td></tr>
 <tr class="separator:a2c8ff3487d9c43f9eace1d9192d4a37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_d_s_g_1_1_signal_process.html" title="DSG::SignalProcess - Defines Base Interface For Audio Processing. ">DSG::SignalProcess</a> - Defines Base Interface For Audio Processing. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+
+<p>Definition at line <a class="el" href="_signal_process_8h_source.html#l00015">15</a> of file <a class="el" href="_signal_process_8h_source.html">SignalProcess.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a3fd4347483bcf3cc0a3d7bf98ff56218"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DSG::SignalProcess::SignalProcess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_signal_process_8cpp_source.html#l00009">9</a> of file <a class="el" href="_signal_process_8cpp_source.html">SignalProcess.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9b6a758241a092ddc38e13effc9553f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DSG::SignalProcess::~SignalProcess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_signal_process_8cpp_source.html#l00010">10</a> of file <a class="el" href="_signal_process_8cpp_source.html">SignalProcess.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af73d246c460915db7a9be7e3ef36844d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool DSG::SignalProcess::Perform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_d_s_g.html#ac39a94cd27ebcd9c1e7502d0c624894a">DSG::DSGSample</a> &amp;&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_d_s_g_1_1_b_l_i_t_1_1_blit.html#adfd7c8891b4c4dbd0530a2780781b2bd">DSG::BLIT::Blit</a>, <a class="el" href="class_d_s_g_1_1_analog_1_1_analog_saw.html#a8d36e77c09ba84128e786c7bb14cddda">DSG::Analog::AnalogSaw</a>, <a class="el" href="class_d_s_g_1_1_analog_1_1_analog_square.html#a784aa17d266704647789b972cf880e9f">DSG::Analog::AnalogSquare</a>, <a class="el" href="class_d_s_g_1_1_analog_1_1_analog_triangle.html#a9b2484f3eb4c4ad545cb88b8833be124">DSG::Analog::AnalogTriangle</a>, <a class="el" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#aa253efa41cca56f334ccb0fd32c2cd56">DSG::EPTR::EPTRSaw</a>, <a class="el" href="class_d_s_g_1_1_fourier_1_1_fourier_saw.html#a33061612ff24180f12e9a2c29dfaa116">DSG::Fourier::FourierSaw</a>, <a class="el" href="class_d_s_g_1_1_b_l_i_t_1_1_blit_saw.html#ae24821c51b23b9fe9220a620e558af04">DSG::BLIT::BlitSaw</a>, <a class="el" href="class_d_s_g_1_1_decimator.html#a003cc8c3672f6ebacb8a9da1d9b5733e">DSG::Decimator</a>, <a class="el" href="class_d_s_g_1_1_fourier_1_1_fourier_square.html#a05bd0cd3e76ca22e1cede5afb47fbbc4">DSG::Fourier::FourierSquare</a>, <a class="el" href="class_d_s_g_1_1_fourier_1_1_fourier_triangle.html#ab5b947c1fc1f34a461c863b18e3e877d">DSG::Fourier::FourierTriangle</a>, <a class="el" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw.html#a03ac9a58fe44dc026da4839760cdef7a">DSG::DPW::DPWSaw</a>, and <a class="el" href="class_d_s_g_1_1_signal_generator.html#a46fe75a81a242e191c5049d33ddf4155">DSG::SignalGenerator</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c8ff3487d9c43f9eace1d9192d4a37e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool DSG::SignalProcess::Perform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_d_s_g_1_1_ring_buffer.html">DSG::RingBuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_d_s_g_1_1_b_l_i_t_1_1_blit.html#aab7c67ff8f059c8367ba316cf8cd5436">DSG::BLIT::Blit</a>, <a class="el" href="class_d_s_g_1_1_analog_1_1_analog_saw.html#a38f091059d924c9141fee3e27522e7e1">DSG::Analog::AnalogSaw</a>, <a class="el" href="class_d_s_g_1_1_analog_1_1_analog_square.html#af4d41d5894ae02e920c61e06cf041c60">DSG::Analog::AnalogSquare</a>, <a class="el" href="class_d_s_g_1_1_analog_1_1_analog_triangle.html#a568c994e0f83f6a01d813357259a8f37">DSG::Analog::AnalogTriangle</a>, <a class="el" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a9dbefaeeb74e30e722bb5d8ea767cdca">DSG::EPTR::EPTRSaw</a>, <a class="el" href="class_d_s_g_1_1_fourier_1_1_fourier_saw.html#ac890d9f0af523b63b96b07e6696a32b7">DSG::Fourier::FourierSaw</a>, <a class="el" href="class_d_s_g_1_1_b_l_i_t_1_1_blit_saw.html#ad2edba8ed83558e76afed6ec1d5cf4d6">DSG::BLIT::BlitSaw</a>, <a class="el" href="class_d_s_g_1_1_fourier_1_1_fourier_square.html#a46028a3615f26876f9c613f983141362">DSG::Fourier::FourierSquare</a>, <a class="el" href="class_d_s_g_1_1_fourier_1_1_fourier_triangle.html#a27b082e69cc7d70223dd3fbc552ba5bc">DSG::Fourier::FourierTriangle</a>, <a class="el" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw.html#aa47c22aa1c0b117db5233614d3c72782">DSG::DPW::DPWSaw</a>, <a class="el" href="class_d_s_g_1_1_signal_generator.html#ab050f80e84e6c8b3e354b56930d6a02b">DSG::SignalGenerator</a>, and <a class="el" href="class_d_s_g_1_1_decimator.html#a4705faa857cd435dc6da8e0032cd143e">DSG::Decimator</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/alexanderzywicki/Documents/DSG/src/<a class="el" href="_signal_process_8h_source.html">SignalProcess.h</a></li>
-<li>/Users/alexanderzywicki/Documents/DSG/src/SignalProcess.cpp</li>
+<li>/Users/alexanderzywicki/Documents/DSG/src/<a class="el" href="_signal_process_8cpp_source.html">SignalProcess.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 17:00:42 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 20 2014 18:12:17 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

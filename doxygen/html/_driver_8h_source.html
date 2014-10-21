@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,36 +88,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Driver.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<a href="_driver_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  Driver.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  Waveform</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Alexander Zywicki on 8/25/14.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef __Waveform__Driver__</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define __Waveform__Driver__</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;portaudio.h&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;DSG.h&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">int</span> DriverInit(<span class="keywordtype">void</span> * data);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">int</span> DriverExit();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">int</span> Callback( <span class="keyword">const</span> <span class="keywordtype">void</span> *input,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;             <span class="keywordtype">void</span> *output,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;             <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> frameCount,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;             <span class="keyword">const</span> PaStreamCallbackTimeInfo* timeInfo,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;             PaStreamCallbackFlags statusFlags,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;             <span class="keywordtype">void</span> *userData );</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(__Waveform__Driver__) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __Waveform__Driver__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __Waveform__Driver__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;portaudio.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_s_g_8h.html">DSG.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_driver_8h.html#a70105fa3a575041357534257c1bd91a7">DriverInit</a>(<span class="keywordtype">void</span> * data);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_driver_8h.html#a0e985fca408fe471f534ee98a2bd5733">DriverExit</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_driver_8h.html#a110986770da2cd49dcf3789f8cc09c28">Callback</a>( <span class="keyword">const</span> <span class="keywordtype">void</span> *input,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;             <span class="keywordtype">void</span> *output,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;             <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> frameCount,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;             <span class="keyword">const</span> PaStreamCallbackTimeInfo* timeInfo,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;             PaStreamCallbackFlags statusFlags,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;             <span class="keywordtype">void</span> *userData );</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(__Waveform__Driver__) */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="_d_s_g_8h_html"><div class="ttname"><a href="_d_s_g_8h.html">DSG.h</a></div></div>
+<div class="ttc" id="_driver_8h_html_a70105fa3a575041357534257c1bd91a7"><div class="ttname"><a href="_driver_8h.html#a70105fa3a575041357534257c1bd91a7">DriverInit</a></div><div class="ttdeci">int DriverInit(void *data)</div><div class="ttdef"><b>Definition:</b> <a href="_driver_8cpp_source.html#l00012">Driver.cpp:12</a></div></div>
+<div class="ttc" id="_driver_8h_html_a110986770da2cd49dcf3789f8cc09c28"><div class="ttname"><a href="_driver_8h.html#a110986770da2cd49dcf3789f8cc09c28">Callback</a></div><div class="ttdeci">int Callback(const void *input, void *output, unsigned long frameCount, const PaStreamCallbackTimeInfo *timeInfo, PaStreamCallbackFlags statusFlags, void *userData)</div><div class="ttdef"><b>Definition:</b> <a href="_driver_8cpp_source.html#l00061">Driver.cpp:61</a></div></div>
+<div class="ttc" id="_driver_8h_html_a0e985fca408fe471f534ee98a2bd5733"><div class="ttname"><a href="_driver_8h.html#a0e985fca408fe471f534ee98a2bd5733">DriverExit</a></div><div class="ttdeci">int DriverExit()</div><div class="ttdef"><b>Definition:</b> <a href="_driver_8cpp_source.html#l00038">Driver.cpp:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 17:00:42 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 20 2014 18:12:17 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

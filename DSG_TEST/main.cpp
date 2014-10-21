@@ -7,26 +7,15 @@
 //
 //#include "../src/DSG.h"
 #include "../src/Driver.h"
-
 #ifdef DEBUG
 #include <iostream>
 #endif
-
 int main(int argc, const char * argv[])
 {
-    DSG::RingBuffer _b(16);
-    DSG::DSGSample _s;
-    for (int i=0; i<_b.Size(); ++i) {
-        _b.Write(i);
-        //std::cout<<_b[i]<<std::endl;
-    }
-    _b.Read(_s);
-    for (int i=0; i<_b.Count(); ++i) {
-        std::cout<<_b[i]<<std::endl;
-    }
-
-
-
-
+    DSG::SampleRate(44100);
+    DSG::StatelessGenerator _gen(DSG::Gaussian<DSG::DSGSample>);
+    DriverInit(&_gen);
+    DSG::Sleep(2000);
+    DriverExit();
     return 0;
 }

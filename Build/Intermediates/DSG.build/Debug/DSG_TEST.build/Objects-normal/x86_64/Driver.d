@@ -16,6 +16,7 @@ dependencies: /Users/alexanderzywicki/Documents/DSG/src/Driver.cpp \
   /Users/alexanderzywicki/Documents/DSG/src/DSGMath.h \
   /Users/alexanderzywicki/Documents/DSG/src/Blackman.h \
   /Users/alexanderzywicki/Documents/DSG/src/Window.h \
+  /Users/alexanderzywicki/Documents/DSG/src/StatelessGenerator.h \
   /Users/alexanderzywicki/Documents/DSG/src/SoundFile.h \
   /Users/alexanderzywicki/Documents/DSG/src/Sleep.h \
   /Users/alexanderzywicki/Documents/DSG/src/BufferConversion.h \
@@ -29,8 +30,9 @@ dependencies: /Users/alexanderzywicki/Documents/DSG/src/Driver.cpp \
   /Users/alexanderzywicki/Documents/DSG/src/BLITSaw.h \
   /Users/alexanderzywicki/Documents/DSG/src/DPWSaw.h \
   /Users/alexanderzywicki/Documents/DSG/src/EPTRSaw.h \
+  /Users/alexanderzywicki/Documents/DSG/src/Noise.h \
   /Users/alexanderzywicki/Documents/DSG/src/Gaussian.h \
-  /Users/alexanderzywicki/Documents/DSG/src/Pink.h \
   /Users/alexanderzywicki/Documents/DSG/src/White.h \
+  /Users/alexanderzywicki/Documents/DSG/src/Pink.h \
   /Users/alexanderzywicki/Documents/DSG/src/DCBlocker.h \
   /Users/alexanderzywicki/Documents/DSG/src/Decimate.h

@@ -63,6 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>DSG</b></li><li class="navelem"><a class="el" href="class_d_s_g_1_1_signal_generator.html">SignalGenerator</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_d_s_g.html">DSG</a></li><li class="navelem"><a class="el" href="class_d_s_g_1_1_signal_generator.html">SignalGenerator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -105,79 +106,474 @@ Inheritance diagram for DSG::SignalGenerator:</div>
  <div class="center">
   <img src="class_d_s_g_1_1_signal_generator.png" usemap="#DSG::SignalGenerator_map" alt=""/>
   <map id="DSG::SignalGenerator_map" name="DSG::SignalGenerator_map">
-<area href="class_d_s_g_1_1_signal_process.html" title="DSG::SignalProcess - Defines Base Interface For Audio Processing. " alt="DSG::SignalProcess" shape="rect" coords="570,0,750,24"/>
-<area href="class_d_s_g_1_1_analog_1_1_analog_saw.html" title="DSG::AnalogSaw - Analog Syle Saw Wave Generator. " alt="DSG::Analog::AnalogSaw" shape="rect" coords="0,112,180,136"/>
-<area href="class_d_s_g_1_1_analog_1_1_analog_square.html" title="DSG::AnalogSquare - Analog Syle Square Wave Generator. " alt="DSG::Analog::AnalogSquare" shape="rect" coords="190,112,370,136"/>
-<area href="class_d_s_g_1_1_analog_1_1_analog_triangle.html" title="DSG::AnalogTriangle - Analog Syle Triangle Wave Generator. " alt="DSG::Analog::AnalogTriangle" shape="rect" coords="380,112,560,136"/>
-<area href="class_d_s_g_1_1_b_l_i_t_1_1_blit.html" title="DSG::BLIT::Blit - Band-Limited Impulse Train Generator. " alt="DSG::BLIT::Blit" shape="rect" coords="570,112,750,136"/>
-<area href="class_d_s_g_1_1_fourier_1_1_fourier_saw.html" title="DSG::Fourier::FourierSaw. " alt="DSG::Fourier::FourierSaw" shape="rect" coords="760,112,940,136"/>
-<area href="class_d_s_g_1_1_fourier_1_1_fourier_square.html" alt="DSG::Fourier::FourierSquare" shape="rect" coords="950,112,1130,136"/>
-<area href="class_d_s_g_1_1_fourier_1_1_fourier_triangle.html" alt="DSG::Fourier::FourierTriangle" shape="rect" coords="1140,112,1320,136"/>
-<area href="class_d_s_g_1_1_b_l_i_t_1_1_blit_saw.html" title="DSG::BLIT::BlitSaw - Saw Wave Generator Based on BLIT Algorithm. " alt="DSG::BLIT::BlitSaw" shape="rect" coords="570,168,750,192"/>
+<area href="class_d_s_g_1_1_signal_process.html" title="DSG::SignalProcess - Defines Base Interface For Audio Processing. " alt="DSG::SignalProcess" shape="rect" coords="0,0,180,24"/>
+<area href="class_d_s_g_1_1_analog_1_1_analog_saw.html" title="DSG::AnalogSaw - Analog Syle Saw Wave Generator. " alt="DSG::Analog::AnalogSaw" shape="rect" coords="190,112,370,136"/>
+<area href="class_d_s_g_1_1_analog_1_1_analog_square.html" title="DSG::AnalogSquare - Analog Syle Square Wave Generator. " alt="DSG::Analog::AnalogSquare" shape="rect" coords="190,168,370,192"/>
+<area href="class_d_s_g_1_1_analog_1_1_analog_triangle.html" title="DSG::AnalogTriangle - Analog Syle Triangle Wave Generator. " alt="DSG::Analog::AnalogTriangle" shape="rect" coords="190,224,370,248"/>
+<area href="class_d_s_g_1_1_b_l_i_t_1_1_blit.html" title="DSG::BLIT::Blit - Band-Limited Impulse Train Generator. " alt="DSG::BLIT::Blit" shape="rect" coords="190,280,370,304"/>
+<area href="class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw.html" alt="DSG::DPW::DPWSaw" shape="rect" coords="190,336,370,360"/>
+<area href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html" title="DSG::EPTR::EPTRSaw-Sawtooth Wave Generator Using The Efficienct Polynomial Transfer Region Algorithm..." alt="DSG::EPTR::EPTRSaw" shape="rect" coords="190,392,370,416"/>
+<area href="class_d_s_g_1_1_fourier_1_1_fourier_saw.html" title="DSG::Fourier::FourierSaw. " alt="DSG::Fourier::FourierSaw" shape="rect" coords="190,448,370,472"/>
+<area href="class_d_s_g_1_1_fourier_1_1_fourier_square.html" alt="DSG::Fourier::FourierSquare" shape="rect" coords="190,504,370,528"/>
+<area href="class_d_s_g_1_1_fourier_1_1_fourier_triangle.html" alt="DSG::Fourier::FourierTriangle" shape="rect" coords="190,560,370,584"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4036fceff5c05a3711b8516d850c414c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4036fceff5c05a3711b8516d850c414c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SignalGenerator</b> (DSG::DSGFrequency const &amp;frequency, DSG::DSGPhase const &amp;offset)</td></tr>
+<tr class="memitem:a13ebda67fcdc880ef41aff501cc23fc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_generator.html#a13ebda67fcdc880ef41aff501cc23fc3">SignalGenerator</a> ()</td></tr>
+<tr class="separator:a13ebda67fcdc880ef41aff501cc23fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4036fceff5c05a3711b8516d850c414c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_generator.html#a4036fceff5c05a3711b8516d850c414c">SignalGenerator</a> (<a class="el" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> const &amp;frequency, <a class="el" href="namespace_d_s_g.html#a44431ce1eb0a7300efdd207bc879e52c">DSG::DSGPhase</a> const &amp;offset)</td></tr>
 <tr class="separator:a4036fceff5c05a3711b8516d850c414c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46fe75a81a242e191c5049d33ddf4155"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46fe75a81a242e191c5049d33ddf4155"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Perform</b> (DSG::DSGSample &amp;signal)</td></tr>
+<tr class="memitem:a7b52d391974bc36a19fdcf617ad976cb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_generator.html#a7b52d391974bc36a19fdcf617ad976cb">~SignalGenerator</a> ()</td></tr>
+<tr class="separator:a7b52d391974bc36a19fdcf617ad976cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46fe75a81a242e191c5049d33ddf4155"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_generator.html#a46fe75a81a242e191c5049d33ddf4155">Perform</a> (<a class="el" href="namespace_d_s_g.html#ac39a94cd27ebcd9c1e7502d0c624894a">DSG::DSGSample</a> &amp;signal)</td></tr>
 <tr class="separator:a46fe75a81a242e191c5049d33ddf4155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab050f80e84e6c8b3e354b56930d6a02b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab050f80e84e6c8b3e354b56930d6a02b"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Perform</b> (<a class="el" href="class_d_s_g_1_1_ring_buffer.html">DSG::RingBuffer</a> &amp;signal)</td></tr>
+<tr class="memitem:ab050f80e84e6c8b3e354b56930d6a02b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_generator.html#ab050f80e84e6c8b3e354b56930d6a02b">Perform</a> (<a class="el" href="class_d_s_g_1_1_ring_buffer.html">DSG::RingBuffer</a> &amp;signal)</td></tr>
 <tr class="separator:ab050f80e84e6c8b3e354b56930d6a02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e6b3c43e76e53f8cd337ad699c464cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e6b3c43e76e53f8cd337ad699c464cb"></a>
-virtual DSG::DSGFrequency const &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Frequency</b> ()</td></tr>
+<tr class="memitem:a4e6b3c43e76e53f8cd337ad699c464cb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_generator.html#a4e6b3c43e76e53f8cd337ad699c464cb">Frequency</a> ()</td></tr>
 <tr class="separator:a4e6b3c43e76e53f8cd337ad699c464cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30a79888f209d692df3d38f53fc58dfe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30a79888f209d692df3d38f53fc58dfe"></a>
-virtual DSG::DSGFrequency const &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Frequency</b> (DSG::DSGFrequency const &amp;value)</td></tr>
+<tr class="memitem:a30a79888f209d692df3d38f53fc58dfe"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_generator.html#a30a79888f209d692df3d38f53fc58dfe">Frequency</a> (<a class="el" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> const &amp;value)</td></tr>
 <tr class="separator:a30a79888f209d692df3d38f53fc58dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17cc4287b2838c6b6194fd43d02e7c00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17cc4287b2838c6b6194fd43d02e7c00"></a>
-virtual DSG::DSGPhase const &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Phase</b> ()</td></tr>
+<tr class="memitem:a17cc4287b2838c6b6194fd43d02e7c00"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_d_s_g.html#a44431ce1eb0a7300efdd207bc879e52c">DSG::DSGPhase</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_generator.html#a17cc4287b2838c6b6194fd43d02e7c00">Phase</a> ()</td></tr>
 <tr class="separator:a17cc4287b2838c6b6194fd43d02e7c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a315a3d3fca83eab7030af77dba63a564"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a315a3d3fca83eab7030af77dba63a564"></a>
-virtual DSG::DSGPhase const &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Phase</b> (DSG::DSGPhase const &amp;value)</td></tr>
+<tr class="memitem:a315a3d3fca83eab7030af77dba63a564"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_d_s_g.html#a44431ce1eb0a7300efdd207bc879e52c">DSG::DSGPhase</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_generator.html#a315a3d3fca83eab7030af77dba63a564">Phase</a> (<a class="el" href="namespace_d_s_g.html#a44431ce1eb0a7300efdd207bc879e52c">DSG::DSGPhase</a> const &amp;value)</td></tr>
 <tr class="separator:a315a3d3fca83eab7030af77dba63a564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_d_s_g_1_1_signal_process"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_d_s_g_1_1_signal_process')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_d_s_g_1_1_signal_process.html">DSG::SignalProcess</a></td></tr>
+<tr class="memitem:a3fd4347483bcf3cc0a3d7bf98ff56218 inherit pub_methods_class_d_s_g_1_1_signal_process"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_process.html#a3fd4347483bcf3cc0a3d7bf98ff56218">SignalProcess</a> ()</td></tr>
+<tr class="separator:a3fd4347483bcf3cc0a3d7bf98ff56218 inherit pub_methods_class_d_s_g_1_1_signal_process"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b6a758241a092ddc38e13effc9553f inherit pub_methods_class_d_s_g_1_1_signal_process"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_process.html#ad9b6a758241a092ddc38e13effc9553f">~SignalProcess</a> ()</td></tr>
+<tr class="separator:ad9b6a758241a092ddc38e13effc9553f inherit pub_methods_class_d_s_g_1_1_signal_process"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a513b244d068bd0a42f79845ae0874e0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a513b244d068bd0a42f79845ae0874e0f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>_pstep</b> ()</td></tr>
-<tr class="separator:a513b244d068bd0a42f79845ae0874e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05baccb38d1e52860d4fcf7cb8430efc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05baccb38d1e52860d4fcf7cb8430efc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>_psync</b> ()</td></tr>
-<tr class="separator:a05baccb38d1e52860d4fcf7cb8430efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c034c5b9ef3dc7548839288355643d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_generator.html#a4c034c5b9ef3dc7548839288355643d5">step</a> ()</td></tr>
+<tr class="separator:a4c034c5b9ef3dc7548839288355643d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7070f6be04dfd70170328e908b759cd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_generator.html#a7070f6be04dfd70170328e908b759cd3">sync</a> ()</td></tr>
+<tr class="separator:a7070f6be04dfd70170328e908b759cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a335e7ef058848eca368be51d8544d143"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a335e7ef058848eca368be51d8544d143"></a>
-DSG::DSGFrequency&#160;</td><td class="memItemRight" valign="bottom"><b>_frequency</b></td></tr>
+<tr class="memitem:a335e7ef058848eca368be51d8544d143"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_generator.html#a335e7ef058848eca368be51d8544d143">_frequency</a></td></tr>
 <tr class="separator:a335e7ef058848eca368be51d8544d143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8a7e9cda2b0c94484477e8ee3d680e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8a7e9cda2b0c94484477e8ee3d680e0"></a>
-DSG::DSGPhase&#160;</td><td class="memItemRight" valign="bottom"><b>_rate</b></td></tr>
-<tr class="separator:aa8a7e9cda2b0c94484477e8ee3d680e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12850f2c05838e2234602bd4fde87732"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12850f2c05838e2234602bd4fde87732"></a>
-DSG::DSGPhase&#160;</td><td class="memItemRight" valign="bottom"><b>_offset</b></td></tr>
+<tr class="memitem:a01c046bb52bbb74afd789fdce7978f65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_d_s_g.html#a44431ce1eb0a7300efdd207bc879e52c">DSG::DSGPhase</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_generator.html#a01c046bb52bbb74afd789fdce7978f65">_dt</a></td></tr>
+<tr class="separator:a01c046bb52bbb74afd789fdce7978f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12850f2c05838e2234602bd4fde87732"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_d_s_g.html#a44431ce1eb0a7300efdd207bc879e52c">DSG::DSGPhase</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_generator.html#a12850f2c05838e2234602bd4fde87732">_offset</a></td></tr>
 <tr class="separator:a12850f2c05838e2234602bd4fde87732"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e23eb94e204b11db75fca030b951065"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e23eb94e204b11db75fca030b951065"></a>
-DSG::DSGPhase&#160;</td><td class="memItemRight" valign="bottom"><b>_phasor</b></td></tr>
+<tr class="memitem:a1e23eb94e204b11db75fca030b951065"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_d_s_g.html#a44431ce1eb0a7300efdd207bc879e52c">DSG::DSGPhase</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_generator.html#a1e23eb94e204b11db75fca030b951065">_phasor</a></td></tr>
 <tr class="separator:a1e23eb94e204b11db75fca030b951065"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28a9b47a1aa0783029f11a19ba0363f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28a9b47a1aa0783029f11a19ba0363f2"></a>
-DSG::DSGSample&#160;</td><td class="memItemRight" valign="bottom"><b>_storage</b></td></tr>
+<tr class="memitem:a28a9b47a1aa0783029f11a19ba0363f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_d_s_g.html#ac39a94cd27ebcd9c1e7502d0c624894a">DSG::DSGSample</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_signal_generator.html#a28a9b47a1aa0783029f11a19ba0363f2">_storage</a></td></tr>
 <tr class="separator:a28a9b47a1aa0783029f11a19ba0363f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_d_s_g_1_1_signal_generator.html" title="DSG::SignalGenerator - Extends DSG::Signal Process With Tools For Signal Generation. ">DSG::SignalGenerator</a> - Extends DSG::Signal Process With Tools For Signal Generation. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+
+<p>Definition at line <a class="el" href="_signal_generator_8h_source.html#l00016">16</a> of file <a class="el" href="_signal_generator_8h_source.html">SignalGenerator.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a13ebda67fcdc880ef41aff501cc23fc3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DSG::SignalGenerator::SignalGenerator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_signal_generator_8cpp_source.html#l00009">9</a> of file <a class="el" href="_signal_generator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4036fceff5c05a3711b8516d850c414c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DSG::SignalGenerator::SignalGenerator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> const &amp;&#160;</td>
+          <td class="paramname"><em>frequency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_d_s_g.html#a44431ce1eb0a7300efdd207bc879e52c">DSG::DSGPhase</a> const &amp;&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_signal_generator_8cpp_source.html#l00010">10</a> of file <a class="el" href="_signal_generator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b52d391974bc36a19fdcf617ad976cb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DSG::SignalGenerator::~SignalGenerator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_signal_generator_8cpp_source.html#l00014">14</a> of file <a class="el" href="_signal_generator_8cpp_source.html">SignalGenerator.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a4e6b3c43e76e53f8cd337ad699c464cb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> const &amp; DSG::SignalGenerator::Frequency </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_signal_generator_8h_source.html#l00053">53</a> of file <a class="el" href="_signal_generator_8h_source.html">SignalGenerator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a30a79888f209d692df3d38f53fc58dfe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> const &amp; DSG::SignalGenerator::Frequency </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> const &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_d_s_g_1_1_b_l_i_t_1_1_blit.html#a933f8f9f324a4fde4f9e2b69473d88ed">DSG::BLIT::Blit</a>, <a class="el" href="class_d_s_g_1_1_fourier_1_1_fourier_saw.html#afa3d86f404be3665f10c74fe9286ef10">DSG::Fourier::FourierSaw</a>, <a class="el" href="class_d_s_g_1_1_b_l_i_t_1_1_blit_saw.html#a290d01796efca84b73eb61a3bc419ebb">DSG::BLIT::BlitSaw</a>, <a class="el" href="class_d_s_g_1_1_fourier_1_1_fourier_square.html#a120cbb563a518c9412190eaa36cb269f">DSG::Fourier::FourierSquare</a>, and <a class="el" href="class_d_s_g_1_1_fourier_1_1_fourier_triangle.html#a278a51ed8af32ea371adc903b9b25039">DSG::Fourier::FourierTriangle</a>.</p>
+
+<p>Definition at line <a class="el" href="_signal_generator_8h_source.html#l00056">56</a> of file <a class="el" href="_signal_generator_8h_source.html">SignalGenerator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a46fe75a81a242e191c5049d33ddf4155"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DSG::SignalGenerator::Perform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_d_s_g.html#ac39a94cd27ebcd9c1e7502d0c624894a">DSG::DSGSample</a> &amp;&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_d_s_g_1_1_signal_process.html#af73d246c460915db7a9be7e3ef36844d">DSG::SignalProcess</a>.</p>
+
+<p>Reimplemented in <a class="el" href="class_d_s_g_1_1_b_l_i_t_1_1_blit.html#adfd7c8891b4c4dbd0530a2780781b2bd">DSG::BLIT::Blit</a>, <a class="el" href="class_d_s_g_1_1_analog_1_1_analog_saw.html#a8d36e77c09ba84128e786c7bb14cddda">DSG::Analog::AnalogSaw</a>, <a class="el" href="class_d_s_g_1_1_analog_1_1_analog_square.html#a784aa17d266704647789b972cf880e9f">DSG::Analog::AnalogSquare</a>, <a class="el" href="class_d_s_g_1_1_analog_1_1_analog_triangle.html#a9b2484f3eb4c4ad545cb88b8833be124">DSG::Analog::AnalogTriangle</a>, <a class="el" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#aa253efa41cca56f334ccb0fd32c2cd56">DSG::EPTR::EPTRSaw</a>, <a class="el" href="class_d_s_g_1_1_fourier_1_1_fourier_saw.html#a33061612ff24180f12e9a2c29dfaa116">DSG::Fourier::FourierSaw</a>, <a class="el" href="class_d_s_g_1_1_b_l_i_t_1_1_blit_saw.html#ae24821c51b23b9fe9220a620e558af04">DSG::BLIT::BlitSaw</a>, <a class="el" href="class_d_s_g_1_1_fourier_1_1_fourier_square.html#a05bd0cd3e76ca22e1cede5afb47fbbc4">DSG::Fourier::FourierSquare</a>, <a class="el" href="class_d_s_g_1_1_fourier_1_1_fourier_triangle.html#ab5b947c1fc1f34a461c863b18e3e877d">DSG::Fourier::FourierTriangle</a>, and <a class="el" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw.html#a03ac9a58fe44dc026da4839760cdef7a">DSG::DPW::DPWSaw</a>.</p>
+
+<p>Definition at line <a class="el" href="_signal_generator_8h_source.html#l00045">45</a> of file <a class="el" href="_signal_generator_8h_source.html">SignalGenerator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab050f80e84e6c8b3e354b56930d6a02b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DSG::SignalGenerator::Perform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_d_s_g_1_1_ring_buffer.html">DSG::RingBuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_d_s_g_1_1_signal_process.html#a2c8ff3487d9c43f9eace1d9192d4a37e">DSG::SignalProcess</a>.</p>
+
+<p>Reimplemented in <a class="el" href="class_d_s_g_1_1_b_l_i_t_1_1_blit.html#aab7c67ff8f059c8367ba316cf8cd5436">DSG::BLIT::Blit</a>, <a class="el" href="class_d_s_g_1_1_analog_1_1_analog_saw.html#a38f091059d924c9141fee3e27522e7e1">DSG::Analog::AnalogSaw</a>, <a class="el" href="class_d_s_g_1_1_analog_1_1_analog_square.html#af4d41d5894ae02e920c61e06cf041c60">DSG::Analog::AnalogSquare</a>, <a class="el" href="class_d_s_g_1_1_analog_1_1_analog_triangle.html#a568c994e0f83f6a01d813357259a8f37">DSG::Analog::AnalogTriangle</a>, <a class="el" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a9dbefaeeb74e30e722bb5d8ea767cdca">DSG::EPTR::EPTRSaw</a>, <a class="el" href="class_d_s_g_1_1_fourier_1_1_fourier_saw.html#ac890d9f0af523b63b96b07e6696a32b7">DSG::Fourier::FourierSaw</a>, <a class="el" href="class_d_s_g_1_1_b_l_i_t_1_1_blit_saw.html#ad2edba8ed83558e76afed6ec1d5cf4d6">DSG::BLIT::BlitSaw</a>, <a class="el" href="class_d_s_g_1_1_fourier_1_1_fourier_square.html#a46028a3615f26876f9c613f983141362">DSG::Fourier::FourierSquare</a>, <a class="el" href="class_d_s_g_1_1_fourier_1_1_fourier_triangle.html#a27b082e69cc7d70223dd3fbc552ba5bc">DSG::Fourier::FourierTriangle</a>, and <a class="el" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw.html#aa47c22aa1c0b117db5233614d3c72782">DSG::DPW::DPWSaw</a>.</p>
+
+<p>Definition at line <a class="el" href="_signal_generator_8h_source.html#l00049">49</a> of file <a class="el" href="_signal_generator_8h_source.html">SignalGenerator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a17cc4287b2838c6b6194fd43d02e7c00"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_d_s_g.html#a44431ce1eb0a7300efdd207bc879e52c">DSG::DSGPhase</a> const &amp; DSG::SignalGenerator::Phase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_signal_generator_8h_source.html#l00061">61</a> of file <a class="el" href="_signal_generator_8h_source.html">SignalGenerator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a315a3d3fca83eab7030af77dba63a564"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_d_s_g.html#a44431ce1eb0a7300efdd207bc879e52c">DSG::DSGPhase</a> const &amp; DSG::SignalGenerator::Phase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_d_s_g.html#a44431ce1eb0a7300efdd207bc879e52c">DSG::DSGPhase</a> const &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_signal_generator_8h_source.html#l00064">64</a> of file <a class="el" href="_signal_generator_8h_source.html">SignalGenerator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c034c5b9ef3dc7548839288355643d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSG::SignalGenerator::step </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_signal_generator_8h_source.html#l00070">70</a> of file <a class="el" href="_signal_generator_8h_source.html">SignalGenerator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7070f6be04dfd70170328e908b759cd3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DSG::SignalGenerator::sync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_signal_generator_8h_source.html#l00074">74</a> of file <a class="el" href="_signal_generator_8h_source.html">SignalGenerator.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a01c046bb52bbb74afd789fdce7978f65"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_d_s_g.html#a44431ce1eb0a7300efdd207bc879e52c">DSG::DSGPhase</a> DSG::SignalGenerator::_dt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_signal_generator_8h_source.html#l00034">34</a> of file <a class="el" href="_signal_generator_8h_source.html">SignalGenerator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a335e7ef058848eca368be51d8544d143"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> DSG::SignalGenerator::_frequency</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_signal_generator_8h_source.html#l00033">33</a> of file <a class="el" href="_signal_generator_8h_source.html">SignalGenerator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a12850f2c05838e2234602bd4fde87732"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_d_s_g.html#a44431ce1eb0a7300efdd207bc879e52c">DSG::DSGPhase</a> DSG::SignalGenerator::_offset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_signal_generator_8h_source.html#l00035">35</a> of file <a class="el" href="_signal_generator_8h_source.html">SignalGenerator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e23eb94e204b11db75fca030b951065"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_d_s_g.html#a44431ce1eb0a7300efdd207bc879e52c">DSG::DSGPhase</a> DSG::SignalGenerator::_phasor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_signal_generator_8h_source.html#l00036">36</a> of file <a class="el" href="_signal_generator_8h_source.html">SignalGenerator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a28a9b47a1aa0783029f11a19ba0363f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_d_s_g.html#ac39a94cd27ebcd9c1e7502d0c624894a">DSG::DSGSample</a> DSG::SignalGenerator::_storage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_signal_generator_8h_source.html#l00037">37</a> of file <a class="el" href="_signal_generator_8h_source.html">SignalGenerator.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/alexanderzywicki/Documents/DSG/src/<a class="el" href="_signal_generator_8h_source.html">SignalGenerator.h</a></li>
-<li>/Users/alexanderzywicki/Documents/DSG/src/SignalGenerator.cpp</li>
+<li>/Users/alexanderzywicki/Documents/DSG/src/<a class="el" href="_signal_generator_8cpp_source.html">SignalGenerator.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 17:00:42 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 20 2014 18:12:17 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

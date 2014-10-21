@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['fouriersaw',['FourierSaw',['../class_d_s_g_1_1_fourier_1_1_fourier_saw.html',1,'DSG::Fourier']]],
-  ['fouriersquare',['FourierSquare',['../class_d_s_g_1_1_fourier_1_1_fourier_square.html',1,'DSG::Fourier']]],
-  ['fouriertriangle',['FourierTriangle',['../class_d_s_g_1_1_fourier_1_1_fourier_triangle.html',1,'DSG::Fourier']]]
+  ['dcblocker',['DCBlocker',['../class_d_s_g_1_1_filter_1_1_d_c_blocker.html',1,'DSG::Filter']]],
+  ['decimator',['Decimator',['../class_d_s_g_1_1_decimator.html',1,'DSG']]],
+  ['dpwsaw',['DPWSaw',['../class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw.html',1,'DSG::DPW']]]
 ];

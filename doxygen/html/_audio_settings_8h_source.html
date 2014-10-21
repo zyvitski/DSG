@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">AudioSettings.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<a href="_audio_settings_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  AudioSettings.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  DSG</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
@@ -96,31 +97,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __DSG__AudioSettings__</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __DSG__AudioSettings__</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;DSGTypes.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_s_g.html">DSG</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_s_g_types_8h.html">DSGTypes.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_s_g.html">DSG</a> {<span class="comment"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">    /*!\brief DSG::AudioSettings - Global Storage For Audio Settings Such As Sample Rate</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_audio_settings.html">   14</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_d_s_g_1_1_audio_settings.html">AudioSettings</a>{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">static</span> DSG::DSGFrequency <span class="keyword">const</span>&amp; SampleRate();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">static</span> DSG::DSGFrequency <span class="keyword">const</span>&amp; SampleRate(DSG::DSGFrequency <span class="keyword">const</span>&amp; value);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">static</span> DSG::DSGFrequency _sampleRate;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _bufferSize;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    };</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">inline</span> DSG::DSGFrequency <span class="keyword">const</span>&amp; SampleRate(){</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> DSG::AudioSettings::SampleRate();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">inline</span> DSG::DSGFrequency <span class="keyword">const</span>&amp; SampleRate(DSG::DSGFrequency <span class="keyword">const</span>&amp; value){</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> DSG::AudioSettings::SampleRate(value);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(__DSG__AudioSettings__) */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="namespace_d_s_g_html"><div class="ttname"><a href="namespace_d_s_g.html">DSG</a></div><div class="ttdef"><b>Definition:</b> AnalogSaw.h:11</div></div>
-<div class="ttc" id="class_d_s_g_1_1_audio_settings_html"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html">DSG::AudioSettings</a></div><div class="ttdoc">DSG::AudioSettings - Global Storage For Audio Settings Such As Sample Rate. </div><div class="ttdef"><b>Definition:</b> AudioSettings.h:14</div></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">static</span> <a class="code" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> <span class="keyword">const</span>&amp; <a class="code" href="class_d_s_g_1_1_audio_settings.html#a4f459c389b10c11828e2f2f00c012c49">SampleRate</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">static</span> <a class="code" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> <span class="keyword">const</span>&amp; <a class="code" href="class_d_s_g_1_1_audio_settings.html#a4f459c389b10c11828e2f2f00c012c49">SampleRate</a>(<a class="code" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> <span class="keyword">const</span>&amp; value);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_audio_settings.html#a56869b51933f102b197f54001c8a1d27">   19</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> <a class="code" href="class_d_s_g_1_1_audio_settings.html#a56869b51933f102b197f54001c8a1d27">_sampleRate</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_audio_settings.html#a21c13b7013f2593c67414070700241ee">   20</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="class_d_s_g_1_1_audio_settings.html#a21c13b7013f2593c67414070700241ee">_bufferSize</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    };</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespace_d_s_g.html#a72df05177db0412c3590070923f62819">   22</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> <span class="keyword">const</span>&amp; <a class="code" href="namespace_d_s_g.html#a72df05177db0412c3590070923f62819">SampleRate</a>(){</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_d_s_g_1_1_audio_settings.html#a4f459c389b10c11828e2f2f00c012c49">DSG::AudioSettings::SampleRate</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespace_d_s_g.html#a66a464f016da1a099abea61a27a84d18">   25</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> <span class="keyword">const</span>&amp; <a class="code" href="namespace_d_s_g.html#a72df05177db0412c3590070923f62819">SampleRate</a>(<a class="code" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> <span class="keyword">const</span>&amp; value){</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_d_s_g_1_1_audio_settings.html#a4f459c389b10c11828e2f2f00c012c49">DSG::AudioSettings::SampleRate</a>(value);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(__DSG__AudioSettings__) */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_d_s_g_1_1_audio_settings_html_a56869b51933f102b197f54001c8a1d27"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html#a56869b51933f102b197f54001c8a1d27">DSG::AudioSettings::_sampleRate</a></div><div class="ttdeci">static DSG::DSGFrequency _sampleRate</div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8h_source.html#l00019">AudioSettings.h:19</a></div></div>
+<div class="ttc" id="namespace_d_s_g_html_a4315a061386fa1014fda09b15d3a6973"><div class="ttname"><a href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a></div><div class="ttdeci">float DSGFrequency</div><div class="ttdef"><b>Definition:</b> <a href="_d_s_g_types_8h_source.html#l00011">DSGTypes.h:11</a></div></div>
+<div class="ttc" id="namespace_d_s_g_html"><div class="ttname"><a href="namespace_d_s_g.html">DSG</a></div><div class="ttdef"><b>Definition:</b> <a href="_analog_saw_8h_source.html#l00011">AnalogSaw.h:11</a></div></div>
+<div class="ttc" id="_d_s_g_types_8h_html"><div class="ttname"><a href="_d_s_g_types_8h.html">DSGTypes.h</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_audio_settings_html_a21c13b7013f2593c67414070700241ee"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html#a21c13b7013f2593c67414070700241ee">DSG::AudioSettings::_bufferSize</a></div><div class="ttdeci">static unsigned long _bufferSize</div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8h_source.html#l00020">AudioSettings.h:20</a></div></div>
+<div class="ttc" id="namespace_d_s_g_html_a72df05177db0412c3590070923f62819"><div class="ttname"><a href="namespace_d_s_g.html#a72df05177db0412c3590070923f62819">DSG::SampleRate</a></div><div class="ttdeci">DSG::DSGFrequency const &amp; SampleRate()</div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8h_source.html#l00022">AudioSettings.h:22</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_audio_settings_html_a4f459c389b10c11828e2f2f00c012c49"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html#a4f459c389b10c11828e2f2f00c012c49">DSG::AudioSettings::SampleRate</a></div><div class="ttdeci">static DSG::DSGFrequency const &amp; SampleRate()</div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8cpp_source.html#l00010">AudioSettings.cpp:10</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_audio_settings_html"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html">DSG::AudioSettings</a></div><div class="ttdoc">DSG::AudioSettings - Global Storage For Audio Settings Such As Sample Rate. </div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8h_source.html#l00014">AudioSettings.h:14</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 17:00:42 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 20 2014 18:12:17 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

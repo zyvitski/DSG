@@ -16,6 +16,7 @@ dependencies: /Users/alexanderzywicki/Documents/DSG/DSG_TEST/main.cpp \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/DSGMath.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Blackman.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Window.h \
+  /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/StatelessGenerator.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/SoundFile.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Sleep.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/BufferConversion.h \
@@ -29,8 +30,9 @@ dependencies: /Users/alexanderzywicki/Documents/DSG/DSG_TEST/main.cpp \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/BLITSaw.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/DPWSaw.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/EPTRSaw.h \
+  /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Noise.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Gaussian.h \
-  /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Pink.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/White.h \
+  /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Pink.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/DCBlocker.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Decimate.h

@@ -10,9 +10,14 @@
 #include "DSGTypes.h"
 #include <random>
 namespace DSG{
-    template<typename decimal = DSG::DSGSample>
-    inline decimal White(decimal=0){
-        return 0;
+#ifdef DSG_Short_Names
+    inline
+#endif
+    namespace Noise{
+        template<typename decimal = DSG::DSGSample>
+        inline decimal White(decimal=0){
+            return rand()/(decimal)RAND_MAX;
+        }
     }
 }
 #endif

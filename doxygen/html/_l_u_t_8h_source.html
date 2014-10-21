@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">LUT.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<a href="_l_u_t_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  LUT.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  Waveform</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
@@ -99,37 +100,87 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_s_g.html">DSG</a>{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> element,<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> size&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_l_u_t.html">   15</a></span>&#160;        <span class="keyword">class </span><a class="code" href="class_d_s_g_1_1_l_u_t.html">LUT</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <a class="code" href="class_d_s_g_1_1_l_u_t.html">LUT</a>():_size(size){}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keyword">virtual</span> ~<a class="code" href="class_d_s_g_1_1_l_u_t.html">LUT</a>(){}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            element <span class="keyword">const</span>&amp; operator[](<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keyword">const</span>&amp; index){</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                assert(index&lt;_size);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keywordflow">return</span> _table[index];</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keyword">virtual</span> <span class="keyword">inline</span> element <span class="keyword">const</span>&amp;  operator()(<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; x){</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="keywordflow">return</span> _table[0];</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keyword">const</span>&amp; Size()<span class="keyword">const</span>{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keywordflow">return</span> _size;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            element _table[size];</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _size;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        };</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespace_d_s_g_html"><div class="ttname"><a href="namespace_d_s_g.html">DSG</a></div><div class="ttdef"><b>Definition:</b> AnalogSaw.h:11</div></div>
-<div class="ttc" id="class_d_s_g_1_1_l_u_t_html"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html">DSG::LUT</a></div><div class="ttdef"><b>Definition:</b> LUT.h:15</div></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_s_g.html">DSG</a>{<span class="comment"></span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">    //!\brief DSG::LUT&lt;element,size&gt; - Look Up Table</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"></span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> element,<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> size&gt;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_l_u_t.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_d_s_g_1_1_l_u_t.html">LUT</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_l_u_t.html#af2436acdd3f277cc4cac77c3c07cb4ca">   18</a></span>&#160;        <span class="keyword">typedef</span> element (*<a class="code" href="class_d_s_g_1_1_l_u_t.html#af2436acdd3f277cc4cac77c3c07cb4ca">FillFunction</a>)(element);</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_l_u_t.html#a69e1198a9a193fee92d676d33ffd3d66">   19</a></span>&#160;        <span class="keyword">typedef</span> element (*<a class="code" href="class_d_s_g_1_1_l_u_t.html#a69e1198a9a193fee92d676d33ffd3d66">FillFunctionConstRef</a>)(element <span class="keyword">const</span>&amp;);</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_l_u_t.html#a9d172f92fe9ea296efce54c9d7f8fdcc">   20</a></span>&#160;        <a class="code" href="class_d_s_g_1_1_l_u_t.html#a9d172f92fe9ea296efce54c9d7f8fdcc">LUT</a>():<a class="code" href="class_d_s_g_1_1_l_u_t.html#a87c352b5eaea2188955213c0f4ae9799">_size</a>(size){}</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_l_u_t.html#a68a44636b54a8c1b45c06e0f052d9288">   21</a></span>&#160;        <a class="code" href="class_d_s_g_1_1_l_u_t.html#a68a44636b54a8c1b45c06e0f052d9288">LUT</a>(<a class="code" href="class_d_s_g_1_1_l_u_t.html#af2436acdd3f277cc4cac77c3c07cb4ca">FillFunction</a> fill,<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; range = 1.0):<a class="code" href="class_d_s_g_1_1_l_u_t.html#a87c352b5eaea2188955213c0f4ae9799">_size</a>(size){</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="comment">//range is the expected input range for the function</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="comment">//example would  be 0-2pi or 0-1</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="comment">//would be provided a 2pi or 1</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="comment">//defaults to 1</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordtype">double</span> step = range/(double)<a class="code" href="class_d_s_g_1_1_l_u_t.html#a87c352b5eaea2188955213c0f4ae9799">_size</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="class_d_s_g_1_1_l_u_t.html#a9ab8f8e89346c759e06f6d76c5b816cc">phs</a> = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="class_d_s_g_1_1_l_u_t.html#a87c352b5eaea2188955213c0f4ae9799">_size</a>; ++i) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <a class="code" href="class_d_s_g_1_1_l_u_t.html#ac8b23bbb7ce259d4ceb1c6fa93a7f29f">_table</a>[i] = fill(<a class="code" href="class_d_s_g_1_1_l_u_t.html#a9ab8f8e89346c759e06f6d76c5b816cc">phs</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <a class="code" href="class_d_s_g_1_1_l_u_t.html#a9ab8f8e89346c759e06f6d76c5b816cc">phs</a>+=step;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_l_u_t.html#a88a213f672036c37ee7cd772cadceb3c">   33</a></span>&#160;        <a class="code" href="class_d_s_g_1_1_l_u_t.html#a88a213f672036c37ee7cd772cadceb3c">LUT</a>(<a class="code" href="class_d_s_g_1_1_l_u_t.html#a69e1198a9a193fee92d676d33ffd3d66">FillFunctionConstRef</a> fill,<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; range = 1.0):<a class="code" href="class_d_s_g_1_1_l_u_t.html#a87c352b5eaea2188955213c0f4ae9799">_size</a>(size){</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="comment">//range is the expected input range for the function</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="comment">//example would  be 0-2pi or 0-1</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="comment">//would be provided a 2pi or 1</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="comment">//defaults to 1</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordtype">double</span> step = range/<a class="code" href="class_d_s_g_1_1_l_u_t.html#a87c352b5eaea2188955213c0f4ae9799">_size</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="class_d_s_g_1_1_l_u_t.html#a9ab8f8e89346c759e06f6d76c5b816cc">phs</a> = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="class_d_s_g_1_1_l_u_t.html#a87c352b5eaea2188955213c0f4ae9799">_size</a>; ++i) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <a class="code" href="class_d_s_g_1_1_l_u_t.html#ac8b23bbb7ce259d4ceb1c6fa93a7f29f">_table</a>[i] = fill(<a class="code" href="class_d_s_g_1_1_l_u_t.html#a9ab8f8e89346c759e06f6d76c5b816cc">phs</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <a class="code" href="class_d_s_g_1_1_l_u_t.html#a9ab8f8e89346c759e06f6d76c5b816cc">phs</a>+=step;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_l_u_t.html#ad939097dc1474825c7aa5ef2c427de4d">   45</a></span>&#160;        <a class="code" href="class_d_s_g_1_1_l_u_t.html#ad939097dc1474825c7aa5ef2c427de4d">~LUT</a>(){}</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_l_u_t.html#ac6291c79e92f1e538151f3be4bcd334c">   46</a></span>&#160;        element <span class="keyword">const</span>&amp; <a class="code" href="class_d_s_g_1_1_l_u_t.html#ac6291c79e92f1e538151f3be4bcd334c">operator[]</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keyword">const</span>&amp; index)<span class="keyword">const</span>{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            assert(index&lt;<a class="code" href="class_d_s_g_1_1_l_u_t.html#a87c352b5eaea2188955213c0f4ae9799">_size</a>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_d_s_g_1_1_l_u_t.html#ac8b23bbb7ce259d4ceb1c6fa93a7f29f">_table</a>[index];</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_l_u_t.html#a734b7df17863591034393060d06db33d">   52</a></span>&#160;        element&amp; <a class="code" href="class_d_s_g_1_1_l_u_t.html#a734b7df17863591034393060d06db33d">operator[]</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keyword">const</span>&amp; index){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            assert(index&lt;<a class="code" href="class_d_s_g_1_1_l_u_t.html#a87c352b5eaea2188955213c0f4ae9799">_size</a>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_d_s_g_1_1_l_u_t.html#ac8b23bbb7ce259d4ceb1c6fa93a7f29f">_table</a>[index];</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_l_u_t.html#ab5cc091d7d74bda3fa09f6deabe15358">   58</a></span>&#160;        <span class="keyword">inline</span> element <span class="keyword">const</span>&amp;  <a class="code" href="class_d_s_g_1_1_l_u_t.html#ab5cc091d7d74bda3fa09f6deabe15358">operator()</a>(<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; x){</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="class_d_s_g_1_1_l_u_t.html#a9ab8f8e89346c759e06f6d76c5b816cc">phs</a>=x;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="comment">//need range checking on x to ensure 0-1 range</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="class_d_s_g_1_1_l_u_t.html#a9ab8f8e89346c759e06f6d76c5b816cc">phs</a>&lt;0 ? <a class="code" href="class_d_s_g_1_1_l_u_t.html#a9ab8f8e89346c759e06f6d76c5b816cc">phs</a> = 1-(phs*-1):0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            phs-=((int)phs);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_d_s_g_1_1_l_u_t.html#ac8b23bbb7ce259d4ceb1c6fa93a7f29f">_table</a>[(unsigned)(phs* (this-&gt;<a class="code" href="class_d_s_g_1_1_l_u_t.html#a87c352b5eaea2188955213c0f4ae9799">_size</a>-1))];</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_l_u_t.html#a2d1a2112f9e960c7b70882a19d670ff9">   65</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keyword">const</span>&amp; <a class="code" href="class_d_s_g_1_1_l_u_t.html#a2d1a2112f9e960c7b70882a19d670ff9">Size</a>()<span class="keyword">const</span>{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_d_s_g_1_1_l_u_t.html#a87c352b5eaea2188955213c0f4ae9799">_size</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_l_u_t.html#ac8b23bbb7ce259d4ceb1c6fa93a7f29f">   69</a></span>&#160;        element <a class="code" href="class_d_s_g_1_1_l_u_t.html#ac8b23bbb7ce259d4ceb1c6fa93a7f29f">_table</a>[size];</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_l_u_t.html#a87c352b5eaea2188955213c0f4ae9799">   70</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="class_d_s_g_1_1_l_u_t.html#a87c352b5eaea2188955213c0f4ae9799">_size</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_d_s_g_1_1_l_u_t.html#a9ab8f8e89346c759e06f6d76c5b816cc">   71</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="class_d_s_g_1_1_l_u_t.html#a9ab8f8e89346c759e06f6d76c5b816cc">phs</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    };</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_ab5cc091d7d74bda3fa09f6deabe15358"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#ab5cc091d7d74bda3fa09f6deabe15358">DSG::LUT::operator()</a></div><div class="ttdeci">element const &amp; operator()(double const &amp;x)</div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00058">LUT.h:58</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_ac6291c79e92f1e538151f3be4bcd334c"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#ac6291c79e92f1e538151f3be4bcd334c">DSG::LUT::operator[]</a></div><div class="ttdeci">element const &amp; operator[](unsigned long const &amp;index) const </div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00046">LUT.h:46</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_ad939097dc1474825c7aa5ef2c427de4d"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#ad939097dc1474825c7aa5ef2c427de4d">DSG::LUT::~LUT</a></div><div class="ttdeci">~LUT()</div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00045">LUT.h:45</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_a9d172f92fe9ea296efce54c9d7f8fdcc"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#a9d172f92fe9ea296efce54c9d7f8fdcc">DSG::LUT::LUT</a></div><div class="ttdeci">LUT()</div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00020">LUT.h:20</a></div></div>
+<div class="ttc" id="namespace_d_s_g_html"><div class="ttname"><a href="namespace_d_s_g.html">DSG</a></div><div class="ttdef"><b>Definition:</b> <a href="_analog_saw_8h_source.html#l00011">AnalogSaw.h:11</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_a87c352b5eaea2188955213c0f4ae9799"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#a87c352b5eaea2188955213c0f4ae9799">DSG::LUT::_size</a></div><div class="ttdeci">const unsigned long _size</div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00070">LUT.h:70</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_a69e1198a9a193fee92d676d33ffd3d66"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#a69e1198a9a193fee92d676d33ffd3d66">DSG::LUT::FillFunctionConstRef</a></div><div class="ttdeci">element(* FillFunctionConstRef)(element const &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00019">LUT.h:19</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_a734b7df17863591034393060d06db33d"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#a734b7df17863591034393060d06db33d">DSG::LUT::operator[]</a></div><div class="ttdeci">element &amp; operator[](unsigned long const &amp;index)</div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00052">LUT.h:52</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_a9ab8f8e89346c759e06f6d76c5b816cc"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#a9ab8f8e89346c759e06f6d76c5b816cc">DSG::LUT::phs</a></div><div class="ttdeci">double phs</div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00071">LUT.h:71</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_l_u_t_html"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html">DSG::LUT</a></div><div class="ttdoc">DSG::LUT<element,size> - Look Up Table. </div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00016">LUT.h:16</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_a68a44636b54a8c1b45c06e0f052d9288"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#a68a44636b54a8c1b45c06e0f052d9288">DSG::LUT::LUT</a></div><div class="ttdeci">LUT(FillFunction fill, double const &amp;range=1.0)</div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00021">LUT.h:21</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_a2d1a2112f9e960c7b70882a19d670ff9"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#a2d1a2112f9e960c7b70882a19d670ff9">DSG::LUT::Size</a></div><div class="ttdeci">unsigned long const &amp; Size() const </div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00065">LUT.h:65</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_af2436acdd3f277cc4cac77c3c07cb4ca"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#af2436acdd3f277cc4cac77c3c07cb4ca">DSG::LUT::FillFunction</a></div><div class="ttdeci">element(* FillFunction)(element)</div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00018">LUT.h:18</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_ac8b23bbb7ce259d4ceb1c6fa93a7f29f"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#ac8b23bbb7ce259d4ceb1c6fa93a7f29f">DSG::LUT::_table</a></div><div class="ttdeci">element _table[size]</div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00069">LUT.h:69</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_a88a213f672036c37ee7cd772cadceb3c"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#a88a213f672036c37ee7cd772cadceb3c">DSG::LUT::LUT</a></div><div class="ttdeci">LUT(FillFunctionConstRef fill, double const &amp;range=1.0)</div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00033">LUT.h:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 17:00:42 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 20 2014 18:12:17 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

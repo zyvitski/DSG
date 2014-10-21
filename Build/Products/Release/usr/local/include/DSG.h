@@ -21,6 +21,8 @@
 #include "Math.h"
 #include "Blackman.h"
 #include "LUT.h"
+#include "Window.h"
+#include "StatelessGenerator.h"
 
 #include "SoundFile.h"
 #include "Sleep.h"
@@ -42,9 +44,7 @@
 
 #include "EPTRSaw.h"
 
-#include "Gaussian.h"
-#include "Pink.h"
-#include "White.h"
+#include "Noise.h"
 
 #include "DCBlocker.h"
 #include "Decimate.h"
