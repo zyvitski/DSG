@@ -7,13 +7,13 @@
 //
 #ifndef __DSG__DCBlocker__
 #define __DSG__DCBlocker__
-#include "SignalProcess.h"
+#include "Filter.h"
 namespace DSG {
 #ifdef DSG_Short_Names
     inline
 #endif
     namespace Filter{
-        class DCBlocker {
+        class DCBlocker:public DSG::Filter::FilterBase {
         public:
             DCBlocker();
             virtual ~DCBlocker();

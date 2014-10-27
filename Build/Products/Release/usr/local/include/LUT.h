@@ -10,6 +10,7 @@
 #ifdef DEBUG
 #include <assert.h>
 #endif
+#include "Interpolate.h"
 namespace DSG{
     //!\brief DSG::LUT<element,size> - Look Up Table
     template <typename element,unsigned long size>
@@ -60,12 +61,16 @@ namespace DSG{
             //need range checking on x to ensure 0-1 range
             phs<0 ? phs = 1-(phs*-1):0;
             phs-=((int)phs);
-            return this->_table[(unsigned)(phs* (this->_size-1))];
+            //return this->_table[(unsigned)(phs*(this->_size-1))];
+            unsigned long index = phs * (this->_size-1);
+            _out=DSG::LinearInterpolate(_table[index], _table[index+1], (float)phs);
+            return _out;
         }
         unsigned long const& Size()const{
             return _size;
         }
     protected:
+        element _out;
         element _table[size];
         const unsigned long _size;
         double phs;

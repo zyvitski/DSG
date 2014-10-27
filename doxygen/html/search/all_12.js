@@ -1,9 +1,4 @@
 var searchData=
 [
-  ['wavfile',['WavFile',['../class_d_s_g_1_1_sound_file_1_1_wav_file.html',1,'DSG::SoundFile']]],
-  ['wavfile',['WavFile',['../class_d_s_g_1_1_sound_file_1_1_wav_file.html#ab1835e065f807b83a6e00bbd4e3c80f1',1,'DSG::SoundFile::WavFile']]],
-  ['white',['White',['../namespace_d_s_g_1_1_noise.html#a2979ad99d7b590ac48bbf1bd9406f350',1,'DSG::Noise']]],
-  ['white_2eh',['White.h',['../_white_8h.html',1,'']]],
-  ['window_2eh',['Window.h',['../_window_8h.html',1,'']]],
-  ['write',['Write',['../class_d_s_g_1_1_ring_buffer.html#aa5dd2caa0a270173251faee40a43d692',1,'DSG::RingBuffer::Write(const DSGSample &amp;elem)'],['../class_d_s_g_1_1_ring_buffer.html#a703434b6afb87f1f9a05750278a822e3',1,'DSG::RingBuffer::write()'],['../class_d_s_g_1_1_sound_file_1_1_wav_file.html#a152faf61dc85b3b8a7d13244a21a42ad',1,'DSG::SoundFile::WavFile::write()']]]
+  ['value',['value',['../class_d_s_g_1_1_b_l_i_t_1_1_blit.html#ac8fb9d4fb45d0697bf364bb5d6b570ce',1,'DSG::BLIT::Blit::value()'],['../class_d_s_g_1_1_fourier_1_1_fourier_saw.html#a97d69a0c03cfb66b1cf6e13fe7073c12',1,'DSG::Fourier::FourierSaw::value()'],['../class_d_s_g_1_1_fourier_1_1_fourier_square.html#a5817c7b9b793af6a76278065a67acd9c',1,'DSG::Fourier::FourierSquare::value()'],['../class_d_s_g_1_1_fourier_1_1_fourier_triangle.html#a11216186ce96fc78c7720cad3e01d025',1,'DSG::Fourier::FourierTriangle::value()']]]
 ];

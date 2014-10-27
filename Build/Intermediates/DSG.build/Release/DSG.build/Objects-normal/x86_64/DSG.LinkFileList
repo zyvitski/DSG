@@ -1,9 +1,11 @@
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/Decimate.o
+/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/Filter.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/BLITTriangle.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/NoiseGenerator.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/DCBlocker.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/SignalGenerator.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/EPTRSaw.o
+/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/Leaky.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/GenericGenerator.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/RingBuffer.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/Buffer.o
@@ -11,6 +13,7 @@
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/BLIT.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/BLITSaw.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/AnalogSquare.o
+/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/Delay.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/AnalogTriangle.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/BLITSquare.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Release/DSG.build/Objects-normal/x86_64/AudioSettings.o

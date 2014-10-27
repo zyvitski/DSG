@@ -18,7 +18,7 @@ ymax = max(y_fft);
 figure 
 plot(t, y);
 ylim([-1,1])
-xlim([0,0.1])
+xlim([0,0.5])
 xlabel('Time (s)') 
 ylabel('Amplitude') 
 title('Waveform')

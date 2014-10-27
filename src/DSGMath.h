@@ -7,6 +7,7 @@
 //
 #ifndef DSG_Math_h
 #define DSG_Math_h
+#include <math.h>
 namespace DSG {
     template<typename T>
     inline T Abs(T const& value){

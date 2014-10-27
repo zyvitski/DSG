@@ -10,7 +10,7 @@
 #include "SignalGenerator.h"
 #include "Denormal.h"
 #include "Sinc.h"
-#include <math.h>
+#include "DSGMath.h"
 namespace DSG{
 #ifdef DSG_Short_Names
     inline

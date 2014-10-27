@@ -9,7 +9,7 @@
 #define __DSG__Decimate__
 #include "SignalProcess.h"
 #include "PI.h"
-#include <math.h>
+#include "DSGMath.h"
 namespace DSG {
     class Decimator:public DSG::SignalProcess{
     public:

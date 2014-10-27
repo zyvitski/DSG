@@ -25,6 +25,8 @@
 #include "NoiseGenerator.h"
 #include "GenericGenerator.h"
 
+#include "Delay.h"
+
 #include "SoundFile.h"
 #include "Sleep.h"
 #include "BufferConversion.h"
@@ -49,5 +51,7 @@
 
 #include "DCBlocker.h"
 #include "Decimate.h"
+#include "Filter.h"
+#include "Leaky.h"
 
 #endif

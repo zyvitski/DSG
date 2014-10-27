@@ -11,7 +11,7 @@
 #include <iostream>
 #endif
 #include <atomic>
-#include <math.h>
+#include "DSGMath.h"
 #include "Buffer.h"
 namespace DSG {
     /*!\brief DSG::RingBuffer - Circular Buffer of Audio

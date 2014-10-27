@@ -10,6 +10,7 @@ dependencies: /Users/alexanderzywicki/Documents/DSG/DSG_TEST/main.cpp \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/SignalGenerator.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Sine.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/LUT.h \
+  /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Interpolate.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/PI.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Sinc.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Denormal.h \
@@ -18,6 +19,7 @@ dependencies: /Users/alexanderzywicki/Documents/DSG/DSG_TEST/main.cpp \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Window.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/NoiseGenerator.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/GenericGenerator.h \
+  /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Delay.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/SoundFile.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Sleep.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/BufferConversion.h \
@@ -36,4 +38,6 @@ dependencies: /Users/alexanderzywicki/Documents/DSG/DSG_TEST/main.cpp \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/White.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Pink.h \
   /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/DCBlocker.h \
-  /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Decimate.h
+  /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Filter.h \
+  /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Decimate.h \
+  /Users/alexanderzywicki/Documents/DSG/DSG_TEST/../src/Leaky.h

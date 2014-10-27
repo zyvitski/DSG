@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isdenormal',['IsDenormal',['../namespace_d_s_g.html#a9eee3c39a1f45d42f0b4fa7201d3ba3d',1,'DSG']]]
+  ['hermiteinterpolate',['HermiteInterpolate',['../namespace_d_s_g.html#ae1b0502c523a1a123bdde9aa33ebbb77',1,'DSG']]]
 ];

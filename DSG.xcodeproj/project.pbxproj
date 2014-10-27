@@ -32,6 +32,12 @@
 		1F0A763A19D267320094C6F5 /* DSGMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F0A763819D267320094C6F5 /* DSGMath.h */; };
 		1F1092D219E148F5002DF1A2 /* Sleep.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1092D119E148F5002DF1A2 /* Sleep.h */; };
 		1F1092D319E148F5002DF1A2 /* Sleep.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1092D119E148F5002DF1A2 /* Sleep.h */; };
+		1F27F9CD19FA08F0008D2153 /* Delay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F27F9CB19FA08F0008D2153 /* Delay.cpp */; };
+		1F27F9CE19FA08F0008D2153 /* Delay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F27F9CB19FA08F0008D2153 /* Delay.cpp */; };
+		1F27F9CF19FA08F0008D2153 /* Delay.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F27F9CC19FA08F0008D2153 /* Delay.h */; };
+		1F27F9D019FA08F0008D2153 /* Delay.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F27F9CC19FA08F0008D2153 /* Delay.h */; };
+		1F3F9F8F19F72632008D3B8B /* Interpolate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F3F9F8E19F72632008D3B8B /* Interpolate.h */; };
+		1F3F9F9019F72632008D3B8B /* Interpolate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F3F9F8E19F72632008D3B8B /* Interpolate.h */; };
 		1F43E46919C900110012C668 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F43E46819C900110012C668 /* main.cpp */; };
 		1F43E46B19C900110012C668 /* DSG_TEST.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F43E46A19C900110012C668 /* DSG_TEST.1 */; };
 		1F43E47619C901230012C668 /* libDSG.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F43E41E19C8D5ED0012C668 /* libDSG.dylib */; };
@@ -51,6 +57,14 @@
 		1F89D72C19EBA2EF00794DCD /* DCBlocker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F89D72919EBA2EF00794DCD /* DCBlocker.cpp */; };
 		1F89D72D19EBA2EF00794DCD /* DCBlocker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F89D72A19EBA2EF00794DCD /* DCBlocker.h */; };
 		1F89D72E19EBA2EF00794DCD /* DCBlocker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F89D72A19EBA2EF00794DCD /* DCBlocker.h */; };
+		1F949F9919FEF91A00C0DF7E /* Leaky.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F949F9719FEF91A00C0DF7E /* Leaky.cpp */; };
+		1F949F9A19FEF91A00C0DF7E /* Leaky.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F949F9719FEF91A00C0DF7E /* Leaky.cpp */; };
+		1F949F9B19FEF91A00C0DF7E /* Leaky.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F949F9819FEF91A00C0DF7E /* Leaky.h */; };
+		1F949F9C19FEF91A00C0DF7E /* Leaky.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F949F9819FEF91A00C0DF7E /* Leaky.h */; };
+		1F949F9F19FEFA7100C0DF7E /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F949F9D19FEFA7100C0DF7E /* Filter.cpp */; };
+		1F949FA019FEFA7100C0DF7E /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F949F9D19FEFA7100C0DF7E /* Filter.cpp */; };
+		1F949FA119FEFA7100C0DF7E /* Filter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F949F9E19FEFA7100C0DF7E /* Filter.h */; };
+		1F949FA219FEFA7100C0DF7E /* Filter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F949F9E19FEFA7100C0DF7E /* Filter.h */; };
 		1F9A2E0E19F0F85A009A71CF /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F9A2E0D19F0F85A009A71CF /* Window.h */; };
 		1F9A2E0F19F0F85A009A71CF /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F9A2E0D19F0F85A009A71CF /* Window.h */; };
 		1FA5CEA619EE323400B29E71 /* White.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA5CEA519EE323400B29E71 /* White.h */; };
@@ -211,6 +225,9 @@
 		1F0A763219D264210094C6F5 /* Denormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Denormal.h; path = src/Denormal.h; sourceTree = "<group>"; };
 		1F0A763819D267320094C6F5 /* DSGMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSGMath.h; path = src/DSGMath.h; sourceTree = "<group>"; };
 		1F1092D119E148F5002DF1A2 /* Sleep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sleep.h; path = src/Sleep.h; sourceTree = "<group>"; };
+		1F27F9CB19FA08F0008D2153 /* Delay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Delay.cpp; path = src/Delay.cpp; sourceTree = "<group>"; };
+		1F27F9CC19FA08F0008D2153 /* Delay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Delay.h; path = src/Delay.h; sourceTree = "<group>"; };
+		1F3F9F8E19F72632008D3B8B /* Interpolate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Interpolate.h; path = src/Interpolate.h; sourceTree = "<group>"; };
 		1F43E41E19C8D5ED0012C668 /* libDSG.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDSG.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F43E44A19C8D6E90012C668 /* libDSG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDSG.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F43E46619C900110012C668 /* DSG_TEST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSG_TEST; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +241,10 @@
 		1F7123A019ED928B0066884B /* BufferConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BufferConversion.h; path = src/BufferConversion.h; sourceTree = "<group>"; };
 		1F89D72919EBA2EF00794DCD /* DCBlocker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DCBlocker.cpp; path = src/DCBlocker.cpp; sourceTree = "<group>"; };
 		1F89D72A19EBA2EF00794DCD /* DCBlocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCBlocker.h; path = src/DCBlocker.h; sourceTree = "<group>"; };
+		1F949F9719FEF91A00C0DF7E /* Leaky.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Leaky.cpp; path = src/Leaky.cpp; sourceTree = "<group>"; };
+		1F949F9819FEF91A00C0DF7E /* Leaky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Leaky.h; path = src/Leaky.h; sourceTree = "<group>"; };
+		1F949F9D19FEFA7100C0DF7E /* Filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Filter.cpp; path = src/Filter.cpp; sourceTree = "<group>"; };
+		1F949F9E19FEFA7100C0DF7E /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Filter.h; path = src/Filter.h; sourceTree = "<group>"; };
 		1F9A2E0D19F0F85A009A71CF /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Window.h; path = src/Window.h; sourceTree = "<group>"; };
 		1FA5CEA519EE323400B29E71 /* White.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = White.h; path = src/White.h; sourceTree = "<group>"; };
 		1FAB7D4719CB5F0800515633 /* libportaudio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libportaudio.dylib; path = ../../../../usr/local/lib/libportaudio.dylib; sourceTree = "<group>"; };
@@ -303,6 +324,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F27F9CA19FA08D4008D2153 /* delay */ = {
+			isa = PBXGroup;
+			children = (
+				1F27F9CB19FA08F0008D2153 /* Delay.cpp */,
+				1F27F9CC19FA08F0008D2153 /* Delay.h */,
+			);
+			name = delay;
+			sourceTree = "<group>";
+		};
 		1F43E41519C8D5EC0012C668 = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +356,7 @@
 		1F43E42519C8D6140012C668 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				1F27F9CA19FA08D4008D2153 /* delay */,
 				1F89D72819EBA2D800794DCD /* filters */,
 				1FF3EEAC19E39996005047B6 /* Noise */,
 				1FE87D6D19D7BD2300E8377B /* EPTR */,
@@ -379,6 +410,7 @@
 				1F9A2E0D19F0F85A009A71CF /* Window.h */,
 				1F4CA45819F6DEBA008CFD8C /* GenericGenerator.cpp */,
 				1F4CA45919F6DEBA008CFD8C /* GenericGenerator.h */,
+				1F3F9F8E19F72632008D3B8B /* Interpolate.h */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -388,6 +420,10 @@
 			children = (
 				1F89D72919EBA2EF00794DCD /* DCBlocker.cpp */,
 				1F89D72A19EBA2EF00794DCD /* DCBlocker.h */,
+				1F949F9719FEF91A00C0DF7E /* Leaky.cpp */,
+				1F949F9819FEF91A00C0DF7E /* Leaky.h */,
+				1F949F9D19FEFA7100C0DF7E /* Filter.cpp */,
+				1F949F9E19FEFA7100C0DF7E /* Filter.h */,
 			);
 			name = filters;
 			sourceTree = "<group>";
@@ -480,13 +516,16 @@
 				1FB9FCBF19CA88C700E42C69 /* AnalogSaw.h in Headers */,
 				1FB9FD1219CA88F800E42C69 /* PI.h in Headers */,
 				1FB525A719F5D8FF00252FDB /* NoiseGenerator.h in Headers */,
+				1F949F9B19FEF91A00C0DF7E /* Leaky.h in Headers */,
 				1FE83D5319DF52C700C6A454 /* SoundFile.h in Headers */,
 				1F1092D219E148F5002DF1A2 /* Sleep.h in Headers */,
 				1FC3424B19DA0F3E004C028E /* EPTRSaw.h in Headers */,
+				1F27F9CF19FA08F0008D2153 /* Delay.h in Headers */,
 				1F49BFDA19E5EDB500EA40ED /* Pink.h in Headers */,
 				1F0A763919D267320094C6F5 /* DSGMath.h in Headers */,
 				1FFD9A5019D387800060D4DE /* Blackman.h in Headers */,
 				1FB9FCCC19CA88D500E42C69 /* FourierSaw.h in Headers */,
+				1F949FA119FEFA7100C0DF7E /* Filter.h in Headers */,
 				1F0466E019F5CD450079D03F /* Noise.h in Headers */,
 				1FB9FCC119CA88C700E42C69 /* AnalogSquare.h in Headers */,
 				1FB9FD0C19CA88F800E42C69 /* DSG.h in Headers */,
@@ -496,6 +535,7 @@
 				1F0A763319D264210094C6F5 /* Denormal.h in Headers */,
 				1FF3EEB119E399E5005047B6 /* Gaussian.h in Headers */,
 				1FB9FCD019CA88D500E42C69 /* FourierSquare.h in Headers */,
+				1F3F9F8F19F72632008D3B8B /* Interpolate.h in Headers */,
 				1FB9FCEA19CA88E900E42C69 /* BLITSaw.h in Headers */,
 				1F4CA45C19F6DEBA008CFD8C /* GenericGenerator.h in Headers */,
 				1FB9FD1019CA88F800E42C69 /* LUT.h in Headers */,
@@ -525,13 +565,16 @@
 				1FB9FCD519CA88D500E42C69 /* FourierTriangle.h in Headers */,
 				1FB9FD1319CA88F800E42C69 /* PI.h in Headers */,
 				1FB525A819F5D8FF00252FDB /* NoiseGenerator.h in Headers */,
+				1F949F9C19FEF91A00C0DF7E /* Leaky.h in Headers */,
 				1FE83D5419DF52C700C6A454 /* SoundFile.h in Headers */,
 				1F1092D319E148F5002DF1A2 /* Sleep.h in Headers */,
 				1FC3424C19DA0F3E004C028E /* EPTRSaw.h in Headers */,
+				1F27F9D019FA08F0008D2153 /* Delay.h in Headers */,
 				1F49BFDB19E5EDB500EA40ED /* Pink.h in Headers */,
 				1F0A763A19D267320094C6F5 /* DSGMath.h in Headers */,
 				1FFD9A5119D387800060D4DE /* Blackman.h in Headers */,
 				1FB9FCD119CA88D500E42C69 /* FourierSquare.h in Headers */,
+				1F949FA219FEFA7100C0DF7E /* Filter.h in Headers */,
 				1F0466E119F5CD450079D03F /* Noise.h in Headers */,
 				1FB9FCDB19CA88D900E42C69 /* AnalogTriangle.h in Headers */,
 				1FB9FD0D19CA88F800E42C69 /* DSG.h in Headers */,
@@ -541,6 +584,7 @@
 				1F0A763419D264210094C6F5 /* Denormal.h in Headers */,
 				1FF3EEB219E399E5005047B6 /* Gaussian.h in Headers */,
 				1FB9FCD919CA88D900E42C69 /* AnalogSquare.h in Headers */,
+				1F3F9F9019F72632008D3B8B /* Interpolate.h in Headers */,
 				1FB9FCEB19CA88E900E42C69 /* BLITSaw.h in Headers */,
 				1F4CA45D19F6DEBA008CFD8C /* GenericGenerator.h in Headers */,
 				1FB9FD1119CA88F800E42C69 /* LUT.h in Headers */,
@@ -619,7 +663,7 @@
 		1F43E41619C8D5EC0012C668 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Alexander Zywicki";
 			};
 			buildConfigurationList = 1F43E41919C8D5EC0012C668 /* Build configuration list for PBXProject "DSG" */;
@@ -664,11 +708,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F707D8019EC85B100B8DACC /* Decimate.cpp in Sources */,
+				1F949F9F19FEFA7100C0DF7E /* Filter.cpp in Sources */,
 				1FB9FCF019CA88E900E42C69 /* BLITTriangle.cpp in Sources */,
 				1FB525A519F5D8FF00252FDB /* NoiseGenerator.cpp in Sources */,
 				1F89D72B19EBA2EF00794DCD /* DCBlocker.cpp in Sources */,
 				1FB9FD1819CA88F800E42C69 /* SignalGenerator.cpp in Sources */,
 				1FC3424919DA0F3E004C028E /* EPTRSaw.cpp in Sources */,
+				1F949F9919FEF91A00C0DF7E /* Leaky.cpp in Sources */,
 				1F4CA45A19F6DEBA008CFD8C /* GenericGenerator.cpp in Sources */,
 				1FB9FD1419CA88F800E42C69 /* RingBuffer.cpp in Sources */,
 				1FB9FD0819CA88F800E42C69 /* Buffer.cpp in Sources */,
@@ -676,6 +722,7 @@
 				1FB9FCE419CA88E900E42C69 /* BLIT.cpp in Sources */,
 				1FB9FCE819CA88E900E42C69 /* BLITSaw.cpp in Sources */,
 				1FB9FCC019CA88C700E42C69 /* AnalogSquare.cpp in Sources */,
+				1F27F9CD19FA08F0008D2153 /* Delay.cpp in Sources */,
 				1FB9FCC219CA88C700E42C69 /* AnalogTriangle.cpp in Sources */,
 				1FB9FCEC19CA88E900E42C69 /* BLITSquare.cpp in Sources */,
 				1FB9FD0419CA88F800E42C69 /* AudioSettings.cpp in Sources */,
@@ -692,11 +739,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F707D8119EC85B100B8DACC /* Decimate.cpp in Sources */,
+				1F949FA019FEFA7100C0DF7E /* Filter.cpp in Sources */,
 				1FB9FCF119CA88E900E42C69 /* BLITTriangle.cpp in Sources */,
 				1FB525A619F5D8FF00252FDB /* NoiseGenerator.cpp in Sources */,
 				1F89D72C19EBA2EF00794DCD /* DCBlocker.cpp in Sources */,
 				1FB9FD1919CA88F800E42C69 /* SignalGenerator.cpp in Sources */,
 				1FC3424A19DA0F3E004C028E /* EPTRSaw.cpp in Sources */,
+				1F949F9A19FEF91A00C0DF7E /* Leaky.cpp in Sources */,
 				1F4CA45B19F6DEBA008CFD8C /* GenericGenerator.cpp in Sources */,
 				1FB9FD1519CA88F800E42C69 /* RingBuffer.cpp in Sources */,
 				1FB9FD0919CA88F800E42C69 /* Buffer.cpp in Sources */,
@@ -704,6 +753,7 @@
 				1FB9FCE519CA88E900E42C69 /* BLIT.cpp in Sources */,
 				1FB9FCE919CA88E900E42C69 /* BLITSaw.cpp in Sources */,
 				1FB9FCDA19CA88D900E42C69 /* AnalogTriangle.cpp in Sources */,
+				1F27F9CE19FA08F0008D2153 /* Delay.cpp in Sources */,
 				1FB9FCD319CA88D500E42C69 /* FourierTriangle.cpp in Sources */,
 				1FB9FCED19CA88E900E42C69 /* BLITSquare.cpp in Sources */,
 				1FB9FD0519CA88F800E42C69 /* AudioSettings.cpp in Sources */,
@@ -915,7 +965,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_VERSION = "";
+				GCC_VERSION = 4.9;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -938,7 +988,7 @@
 			buildSettings = {
 				CLANG_USE_OPTIMIZATION_PROFILE = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_VERSION = "";
+				GCC_VERSION = 4.9;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,

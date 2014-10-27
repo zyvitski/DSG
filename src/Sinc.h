@@ -11,7 +11,7 @@
 #include "Sine.h"
 #include "Denormal.h"
 #include <type_traits>
-#include <math.h>
+#include "DSGMath.h"
 namespace DSG{
     template<typename T>
     inline T Sinc(T const& x) {

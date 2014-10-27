@@ -126,8 +126,14 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_decimator.html">Decimator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_delay.html">Delay</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_generic_generator.html">GenericGenerator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_l_u_t.html">LUT</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSG::LUT&lt;element,size&gt; - Look Up Table.  <a href="class_d_s_g_1_1_l_u_t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_noise_generator.html">NoiseGenerator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_ring_buffer.html">RingBuffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_s_g_1_1_ring_buffer.html" title="DSG::RingBuffer - Circular Buffer of Audio. ">DSG::RingBuffer</a> - Circular <a class="el" href="class_d_s_g_1_1_buffer.html" title="DSG::Buffer - Base Class For DSG::RingBuffer. Not For Direct Use. ">Buffer</a> of Audio.  <a href="class_d_s_g_1_1_ring_buffer.html#details">More...</a><br /></td></tr>
@@ -175,6 +181,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a0af03bade7e25e8da80e3022af0e45a7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a0af03bade7e25e8da80e3022af0e45a7"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_d_s_g.html#a0af03bade7e25e8da80e3022af0e45a7">Abs</a> (T const &amp;value)</td></tr>
 <tr class="separator:a0af03bade7e25e8da80e3022af0e45a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4448472776648fb65623fd29eed262f"><td class="memTemplParams" colspan="2">template&lt;typename decimal &gt; </td></tr>
+<tr class="memitem:af4448472776648fb65623fd29eed262f"><td class="memTemplItemLeft" align="right" valign="top">decimal&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_d_s_g.html#af4448472776648fb65623fd29eed262f">LinearInterpolate</a> (decimal const &amp;y1, decimal const &amp;y2, decimal const &amp;mu)</td></tr>
+<tr class="separator:af4448472776648fb65623fd29eed262f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293229b6a440ddf9cc87e9a76d322d43"><td class="memTemplParams" colspan="2">template&lt;typename decimal &gt; </td></tr>
+<tr class="memitem:a293229b6a440ddf9cc87e9a76d322d43"><td class="memTemplItemLeft" align="right" valign="top">decimal&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_d_s_g.html#a293229b6a440ddf9cc87e9a76d322d43">CosineInterpolate</a> (decimal y1, decimal y2, decimal mu)</td></tr>
+<tr class="separator:a293229b6a440ddf9cc87e9a76d322d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c61e97fb15300de270eb32d51cdc849"><td class="memTemplParams" colspan="2">template&lt;typename decimal &gt; </td></tr>
+<tr class="memitem:a7c61e97fb15300de270eb32d51cdc849"><td class="memTemplItemLeft" align="right" valign="top">decimal&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_d_s_g.html#a7c61e97fb15300de270eb32d51cdc849">CubicInterpolate</a> (decimal const &amp;y0, decimal const &amp;y1, decimal const &amp;y2, decimal const &amp;y3, decimal const &amp;mu)</td></tr>
+<tr class="separator:a7c61e97fb15300de270eb32d51cdc849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b0502c523a1a123bdde9aa33ebbb77"><td class="memTemplParams" colspan="2">template&lt;typename decimal &gt; </td></tr>
+<tr class="memitem:ae1b0502c523a1a123bdde9aa33ebbb77"><td class="memTemplItemLeft" align="right" valign="top">decimal&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_d_s_g.html#ae1b0502c523a1a123bdde9aa33ebbb77">HermiteInterpolate</a> (decimal const &amp;y0, decimal const &amp;y1, decimal const &amp;y2, decimal const &amp;y3, decimal const &amp;mu, decimal const &amp;tension, decimal const &amp;bias)</td></tr>
+<tr class="separator:ae1b0502c523a1a123bdde9aa33ebbb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5c4eea42ea10b69cfc32afb83ff1d0d"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_s_g.html#ab5c4eea42ea10b69cfc32afb83ff1d0d">MaxHarms</a> (<a class="el" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> const &amp;frequency)</td></tr>
 <tr class="separator:ab5c4eea42ea10b69cfc32afb83ff1d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa69fabf4077f2d5d7820a39fba2ea38"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -548,6 +566,150 @@ template&lt;&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a293229b6a440ddf9cc87e9a76d322d43"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename decimal &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">decimal DSG::CosineInterpolate </td>
+          <td>(</td>
+          <td class="paramtype">decimal&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">decimal&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">decimal&#160;</td>
+          <td class="paramname"><em>mu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_interpolate_8h_source.html#l00021">21</a> of file <a class="el" href="_interpolate_8h_source.html">Interpolate.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c61e97fb15300de270eb32d51cdc849"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename decimal &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">decimal DSG::CubicInterpolate </td>
+          <td>(</td>
+          <td class="paramtype">decimal const &amp;&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">decimal const &amp;&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">decimal const &amp;&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">decimal const &amp;&#160;</td>
+          <td class="paramname"><em>y3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">decimal const &amp;&#160;</td>
+          <td class="paramname"><em>mu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_interpolate_8h_source.html#l00030">30</a> of file <a class="el" href="_interpolate_8h_source.html">Interpolate.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae1b0502c523a1a123bdde9aa33ebbb77"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename decimal &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">decimal DSG::HermiteInterpolate </td>
+          <td>(</td>
+          <td class="paramtype">decimal const &amp;&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">decimal const &amp;&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">decimal const &amp;&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">decimal const &amp;&#160;</td>
+          <td class="paramname"><em>y3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">decimal const &amp;&#160;</td>
+          <td class="paramname"><em>mu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">decimal const &amp;&#160;</td>
+          <td class="paramname"><em>tension</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">decimal const &amp;&#160;</td>
+          <td class="paramname"><em>bias</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_interpolate_8h_source.html#l00049">49</a> of file <a class="el" href="_interpolate_8h_source.html">Interpolate.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a9eee3c39a1f45d42f0b4fa7201d3ba3d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -573,6 +735,42 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="_denormal_8h_source.html#l00014">14</a> of file <a class="el" href="_denormal_8h_source.html">Denormal.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af4448472776648fb65623fd29eed262f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename decimal &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">decimal DSG::LinearInterpolate </td>
+          <td>(</td>
+          <td class="paramtype">decimal const &amp;&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">decimal const &amp;&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">decimal const &amp;&#160;</td>
+          <td class="paramname"><em>mu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_interpolate_8h_source.html#l00017">17</a> of file <a class="el" href="_interpolate_8h_source.html">Interpolate.h</a>.</p>
 
 </div>
 </div>
@@ -859,7 +1057,7 @@ template&lt;typename integer &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 20 2014 18:12:17 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 24 2014 21:18:18 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

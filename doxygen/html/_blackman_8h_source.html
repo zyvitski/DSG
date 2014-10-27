@@ -110,19 +110,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="comment">/*</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">         Blackman(x) = 0.42f - (0.5f * cos(2pi*x)) + (0.08f * cos(2pi*2.0*x));</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">         }*/</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespace_d_s_g_1_1_window.html#a5102be466eacf075586960710b815c53">   25</a></span>&#160;        <span class="keyword">inline</span> T <a class="code" href="namespace_d_s_g_1_1_window.html#a5102be466eacf075586960710b815c53">Blackman</a>(T <span class="keyword">const</span>&amp; x){</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            static_assert(std::is_floating_point&lt;T&gt;::value==<span class="keyword">true</span>,<span class="stringliteral">&quot;DSG::Blackman Function Requires Floating Point Type&quot;</span>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="comment">//we will implement the blackman window as a function as if it were sin(x)</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="comment">//cos input domain 0-1 not 0-2pi</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="comment">//range checking is handles within DSG::Cos</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">return</span> 0.42 - (0.5 * <a class="code" href="namespace_d_s_g.html#aae40da358d58557abbd1eab5eff20809">DSG::Cos</a>(x))+(0.08 * <a class="code" href="namespace_d_s_g.html#aae40da358d58557abbd1eab5eff20809">DSG::Cos</a>(2.0*x));</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespace_d_s_g_1_1_window_html_a5102be466eacf075586960710b815c53"><div class="ttname"><a href="namespace_d_s_g_1_1_window.html#a5102be466eacf075586960710b815c53">DSG::Window::Blackman</a></div><div class="ttdeci">T Blackman(T const &amp;x)</div><div class="ttdoc">DSG::Blackman - Blackman Window Function. </div><div class="ttdef"><b>Definition:</b> <a href="_blackman_8h_source.html#l00025">Blackman.h:25</a></div></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="namespace_d_s_g_1_1_window.html#a5102be466eacf075586960710b815c53">   24</a></span>&#160;        <span class="keyword">inline</span> T <a class="code" href="namespace_d_s_g_1_1_window.html#a5102be466eacf075586960710b815c53">Blackman</a>(T <span class="keyword">const</span>&amp; x){</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            static_assert(std::is_floating_point&lt;T&gt;::value==<span class="keyword">true</span>,<span class="stringliteral">&quot;DSG::Blackman Function Requires Floating Point Type&quot;</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="comment">//we will implement the blackman window as a function as if it were sin(x)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="comment">//cos input domain 0-1 not 0-2pi</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="comment">//range checking is handles within DSG::Cos</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">return</span> 0.42 - (0.5 * <a class="code" href="namespace_d_s_g.html#aae40da358d58557abbd1eab5eff20809">DSG::Cos</a>(x))+(0.08 * <a class="code" href="namespace_d_s_g.html#aae40da358d58557abbd1eab5eff20809">DSG::Cos</a>(2.0*x));</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespace_d_s_g_1_1_window_html_a5102be466eacf075586960710b815c53"><div class="ttname"><a href="namespace_d_s_g_1_1_window.html#a5102be466eacf075586960710b815c53">DSG::Window::Blackman</a></div><div class="ttdeci">T Blackman(T const &amp;x)</div><div class="ttdoc">DSG::Blackman - Blackman Window Function. </div><div class="ttdef"><b>Definition:</b> <a href="_blackman_8h_source.html#l00024">Blackman.h:24</a></div></div>
 <div class="ttc" id="namespace_d_s_g_html"><div class="ttname"><a href="namespace_d_s_g.html">DSG</a></div><div class="ttdef"><b>Definition:</b> <a href="_analog_saw_8h_source.html#l00011">AnalogSaw.h:11</a></div></div>
 <div class="ttc" id="_l_u_t_8h_html"><div class="ttname"><a href="_l_u_t_8h.html">LUT.h</a></div></div>
 <div class="ttc" id="namespace_d_s_g_html_aae40da358d58557abbd1eab5eff20809"><div class="ttname"><a href="namespace_d_s_g.html#aae40da358d58557abbd1eab5eff20809">DSG::Cos</a></div><div class="ttdeci">double Cos(double const &amp;x)</div><div class="ttdoc">DSG::Cos() - General Purpose Cos Function Wraps Templated Version. </div><div class="ttdef"><b>Definition:</b> <a href="_sine_8h_source.html#l00040">Sine.h:40</a></div></div>
@@ -131,7 +130,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 20 2014 18:12:17 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 24 2014 21:18:18 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

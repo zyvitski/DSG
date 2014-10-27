@@ -10,6 +10,7 @@ dependencies: /Users/alexanderzywicki/Documents/DSG/src/Driver.cpp \
   /Users/alexanderzywicki/Documents/DSG/src/SignalGenerator.h \
   /Users/alexanderzywicki/Documents/DSG/src/Sine.h \
   /Users/alexanderzywicki/Documents/DSG/src/LUT.h \
+  /Users/alexanderzywicki/Documents/DSG/src/Interpolate.h \
   /Users/alexanderzywicki/Documents/DSG/src/PI.h \
   /Users/alexanderzywicki/Documents/DSG/src/Sinc.h \
   /Users/alexanderzywicki/Documents/DSG/src/Denormal.h \
@@ -18,6 +19,7 @@ dependencies: /Users/alexanderzywicki/Documents/DSG/src/Driver.cpp \
   /Users/alexanderzywicki/Documents/DSG/src/Window.h \
   /Users/alexanderzywicki/Documents/DSG/src/NoiseGenerator.h \
   /Users/alexanderzywicki/Documents/DSG/src/GenericGenerator.h \
+  /Users/alexanderzywicki/Documents/DSG/src/Delay.h \
   /Users/alexanderzywicki/Documents/DSG/src/SoundFile.h \
   /Users/alexanderzywicki/Documents/DSG/src/Sleep.h \
   /Users/alexanderzywicki/Documents/DSG/src/BufferConversion.h \
@@ -36,4 +38,6 @@ dependencies: /Users/alexanderzywicki/Documents/DSG/src/Driver.cpp \
   /Users/alexanderzywicki/Documents/DSG/src/White.h \
   /Users/alexanderzywicki/Documents/DSG/src/Pink.h \
   /Users/alexanderzywicki/Documents/DSG/src/DCBlocker.h \
-  /Users/alexanderzywicki/Documents/DSG/src/Decimate.h
+  /Users/alexanderzywicki/Documents/DSG/src/Filter.h \
+  /Users/alexanderzywicki/Documents/DSG/src/Decimate.h \
+  /Users/alexanderzywicki/Documents/DSG/src/Leaky.h

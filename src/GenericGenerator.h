@@ -20,7 +20,9 @@ namespace DSG{
         DSG::DSGSample (*_callback)(DSG::DSGSample const&);
     };
     inline bool DSG::GenericGenerator::Perform(DSG::DSGSample& signal){
-        signal = _callback(_phasor);
+        if (_callback!=nullptr) {
+            signal = _callback(_phasor);
+        }else signal = 0;
         step();
         return true;
     }
