@@ -37,7 +37,7 @@ namespace DSG {
             _register*=2.0;
             if (_register > 1.0-_dt) {
                 //transition region detected
-                //appy eptr correction
+                //apply eptr correction
                 signal = _register - (_register/_dt) + (1/_dt) -1;
             }else{
                 signal = _register;

@@ -6,5 +6,6 @@ var searchData=
   ['cos_3c_20sine_5ftaylor_20_3e',['Cos&lt; Sine_Taylor &gt;',['../namespace_d_s_g.html#ad925c8e56ce20f7fa6a1926b794aa823',1,'DSG']]],
   ['cosineinterpolate',['CosineInterpolate',['../namespace_d_s_g.html#a293229b6a440ddf9cc87e9a76d322d43',1,'DSG']]],
   ['count',['Count',['../class_d_s_g_1_1_ring_buffer.html#a9bd79b0a6dff618b205e396c101ee070',1,'DSG::RingBuffer']]],
-  ['cubicinterpolate',['CubicInterpolate',['../namespace_d_s_g.html#a7c61e97fb15300de270eb32d51cdc849',1,'DSG']]]
+  ['cubicinterpolate',['CubicInterpolate',['../namespace_d_s_g.html#a7c61e97fb15300de270eb32d51cdc849',1,'DSG']]],
+  ['cutoff',['Cutoff',['../class_d_s_g_1_1_filter_1_1_filter_base.html#a1bf981bd2ca2151791d91b80dda827fe',1,'DSG::Filter::FilterBase::Cutoff()'],['../class_d_s_g_1_1_filter_1_1_leaky_integrator.html#a5f326faae2d72a6550b2e0593b00eea6',1,'DSG::Filter::LeakyIntegrator::Cutoff()']]]
 ];

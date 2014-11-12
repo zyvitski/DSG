@@ -8,6 +8,9 @@
 #ifndef __DSG_SoundFIle__SoundFile__
 #define __DSG_SoundFIle__SoundFile__
 #include <fstream>
+#ifdef DEBUG
+#include <iostream>
+#endif
 namespace DSG{
     namespace SoundFile{
         template<typename sample>
@@ -15,7 +18,7 @@ namespace DSG{
         public:
             WavFile(const char* outFile, sample* buf, size_t bufSize, int sampleRate, short channels)
             {
-                _file.open(outFile, std::ios::binary);                // Open file _file at "outFile" location
+                _file.open(outFile,std::ios::out|std::ios::binary|std::ios::trunc);// Open file _file at "outFile" location
                 if (_file.is_open()) {
                     /* Header */
                     _file.write("RIFF", 4);                                        // sGroupID (RIFF = Resource Interchange File Format)
@@ -37,6 +40,11 @@ namespace DSG{
                     _file.write((const char*)&bufSize, 4);                         // Chunk size (of Data, and thus of bufferSize)
                     _file.write((const char*)buf, bufSize);                        // The samples DATA!!!
                     _file.close();
+                }
+                else{
+#ifdef DEBUG
+                    std::cout<<"Could not open file: \""<<outFile<<"\""<<std::endl;
+#endif
                 }
             }
             ~WavFile(){

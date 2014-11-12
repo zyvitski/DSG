@@ -15,13 +15,14 @@ namespace DSG{
 #endif
     namespace Noise{
         template<typename decimal=DSG::DSGSample>
-        decimal Pink(decimal=0){
+        decimal Pink(decimal=0.0){
             //routine: Get white or gaussian, filter, return
             static decimal b0,b1,b2,b3,b4,b5,b6;
             static decimal normalizer=1;//variable used to actively normalize the output
             static DSG::DCBlocker _block;
-            decimal white = DSG::Gaussian();
-            decimal pink;//pinking filter
+            decimal white = DSG::Noise::Gaussian();
+            decimal pink;
+            //pinking filter
             b0 = 0.99886 * b0 + white * 0.0555179;
             b1 = 0.99332 * b1 + white * 0.0750759;
             b2 = 0.96900 * b2 + white * 0.1538520;

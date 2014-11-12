@@ -7,7 +7,9 @@ var searchData=
   ['_5fcount',['_count',['../class_d_s_g_1_1_ring_buffer.html#af6d0e1658a1f1aa298218b890e458f2f',1,'DSG::RingBuffer']]],
   ['_5fdelay',['_delay',['../class_d_s_g_1_1_delay.html#aad8790118689ae46c7f434b790358e3f',1,'DSG::Delay']]],
   ['_5fdelay1',['_delay1',['../class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw.html#af464a3bf58c43e8a0e3731de2b6b6813',1,'DSG::DPW::DPWSaw']]],
+  ['_5fdist',['_dist',['../_random_8h.html#aa53cdd8f9b6c3ad0d45c4880407cedca',1,'Random.h']]],
   ['_5fdt',['_dt',['../class_d_s_g_1_1_signal_generator.html#a01c046bb52bbb74afd789fdce7978f65',1,'DSG::SignalGenerator']]],
+  ['_5fengine',['_engine',['../_random_8h.html#a44f8ed05d35f32a21c613bdbf8e0096a',1,'Random.h']]],
   ['_5ffile',['_file',['../class_d_s_g_1_1_sound_file_1_1_wav_file.html#a457cd04acefcafa4904965666ce83633',1,'DSG::SoundFile::WavFile']]],
   ['_5ffrequency',['_frequency',['../class_d_s_g_1_1_signal_generator.html#a335e7ef058848eca368be51d8544d143',1,'DSG::SignalGenerator']]],
   ['_5ffunction',['_function',['../class_d_s_g_1_1_noise_generator.html#a3fe30476196e0bfa22e314ce9bbd368b',1,'DSG::NoiseGenerator']]],
@@ -26,6 +28,6 @@ var searchData=
   ['_5fstorage',['_storage',['../class_d_s_g_1_1_noise_generator.html#adb363b56bb2f621849fa457d54fc46a6',1,'DSG::NoiseGenerator::_storage()'],['../class_d_s_g_1_1_signal_generator.html#a28a9b47a1aa0783029f11a19ba0363f2',1,'DSG::SignalGenerator::_storage()']]],
   ['_5fswap',['_swap',['../class_d_s_g_1_1_delay.html#af026ee90120c5cea6a935aef6cab6624',1,'DSG::Delay']]],
   ['_5ftable',['_table',['../class_d_s_g_1_1_l_u_t.html#ac8b23bbb7ce259d4ceb1c6fa93a7f29f',1,'DSG::LUT']]],
-  ['_5ftemp',['_temp',['../class_d_s_g_1_1_filter_1_1_d_c_blocker.html#a4a698e11be27e8613f5b5146df9c4599',1,'DSG::Filter::DCBlocker::_temp()'],['../class_d_s_g_1_1_decimator.html#a907d5213bab048e706644eb31d0f49de',1,'DSG::Decimator::_temp()'],['../class_d_s_g_1_1_delay.html#a039bb7a3a39aff5841b9e808cacc1a6e',1,'DSG::Delay::_temp()']]],
+  ['_5ftemp',['_temp',['../class_d_s_g_1_1_filter_1_1_d_c_blocker.html#a4a698e11be27e8613f5b5146df9c4599',1,'DSG::Filter::DCBlocker::_temp()'],['../class_d_s_g_1_1_decimator.html#a907d5213bab048e706644eb31d0f49de',1,'DSG::Decimator::_temp()'],['../class_d_s_g_1_1_delay.html#a039bb7a3a39aff5841b9e808cacc1a6e',1,'DSG::Delay::_temp()'],['../class_d_s_g_1_1_filter_1_1_filter_base.html#a9e21e909fa2989adb88eedcb194e0150',1,'DSG::Filter::FilterBase::_temp()']]],
   ['_5fwrite',['_write',['../class_d_s_g_1_1_ring_buffer.html#a78bd7704fd059b745bc82421e1062123',1,'DSG::RingBuffer']]]
 ];

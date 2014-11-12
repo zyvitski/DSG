@@ -8,18 +8,15 @@
 #ifndef DSG_White_h
 #define DSG_White_h
 #include "DSGTypes.h"
-#include <random>
+#include "Random.h"
 namespace DSG{
 #ifdef DSG_Short_Names
     inline
 #endif
     namespace Noise{
         template<typename decimal = DSG::DSGSample>
-        inline decimal White(decimal=0){
-            decimal white =(rand()/(decimal)RAND_MAX);
-            white -=0.5;
-            white*=2.0;
-            return white;
+        inline decimal White(decimal=0.0){
+            return DSG::Random<decimal>();
         }
     }
 }

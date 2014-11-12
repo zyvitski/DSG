@@ -11,24 +11,37 @@
 #include "PI.h"
 #define LUT_SIZE 16384
 namespace DSG {
-    typedef enum Sine_Implementations{
-        /*!\brief DSG::Sine_Implementations - Specifies The Implementation Option For DSG::Sin<>()*/
-        Sine_Taylor =1,
-        Sine_LUT =2,
-        Sine_Default = Sine_LUT
-    }Sine_Implementations;
-    /*!\brief DSG::Sin() - Templated Sin Function With Optional Implementation
-     */
-    template<unsigned implementation> inline double Sin(double const& x){
-        return 0;
-    }
-    template<> inline double Sin<Sine_LUT>(double const& x){
-        static DSG::LUT<float, LUT_SIZE> _lut(&sinf,TWOPI);
-        return _lut(x);
-    }
-    template<> inline double Sin<Sine_Taylor>(double const& x){
-        //taylor serie version here
-        return 0;
+    namespace{
+        typedef enum Sine_Implementations{
+            /*!\brief DSG::Sine_Implementations - Specifies The Implementation Option For DSG::Sin<>()*/
+            Sine_Taylor =1,
+            Sine_LUT =2,
+            Sine_Default = Sine_LUT
+        }Sine_Implementations;
+        /*!\brief DSG::Sin() - Templated Sin Function With Optional Implementation
+         */
+        template<unsigned implementation> inline double Sin(double const& x){
+            return 0;
+        }
+        template<unsigned implementation> inline double Cos(double const& x){
+            return 0;
+        }
+        template<> inline double Sin<Sine_LUT>(double const& x){
+            static DSG::LUT<double, LUT_SIZE> _lut(&sin,TWOPI);
+            return _lut(x);
+        }
+        template<> inline double Cos<Sine_LUT>(double const& x){
+            static DSG::LUT<double, LUT_SIZE> _lut(&cos,TWOPI);
+            return _lut(x);
+        }
+        template<> inline double Sin<Sine_Taylor>(double const& x){
+            //taylor serie version here
+            return 0;
+        }
+        template<> inline double Cos<Sine_Taylor>(double const& x){
+            //taylor series version here
+            return 0;
+        }
     }
     /*!\brief DSG::Sin() - General Purpose Sin Function Wraps Templated Version
      */
@@ -36,17 +49,7 @@ namespace DSG {
         return static_cast<double>(Sin<Sine_Default>(x));//wrap default implementation as non template
     }
     inline float Sin(float const& x){
-        return static_cast<float>(Sin<Sine_Default>(x));    }
-    template<unsigned implementation> inline double Cos(double const& x){
-        return 0;
-    }
-    template<> inline double Cos<Sine_LUT>(double const& x){
-        static DSG::LUT<float, LUT_SIZE> _lut(&cosf,TWOPI);
-        return _lut(x);
-    }
-    template<> inline double Cos<Sine_Taylor>(double const& x){
-        //taylor series version here
-        return 0;
+        return static_cast<float>(Sin<Sine_Default>(x));
     }
     /*!\brief DSG::Cos() - General Purpose Cos Function Wraps Templated Version
      */

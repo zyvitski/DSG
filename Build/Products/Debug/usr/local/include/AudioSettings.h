@@ -15,8 +15,10 @@ namespace DSG {
     public:
         static DSG::DSGFrequency const& SampleRate();
         static DSG::DSGFrequency const& SampleRate(DSG::DSGFrequency const& value);
+        static DSG::DSGFrequency const& Nyquist();
     protected:
         static DSG::DSGFrequency _sampleRate;
+        static DSG::DSGFrequency _nyquist;
         static unsigned long _bufferSize;
     };
     inline DSG::DSGFrequency const& SampleRate(){
@@ -24,6 +26,10 @@ namespace DSG {
     }
     inline DSG::DSGFrequency const& SampleRate(DSG::DSGFrequency const& value){
         return DSG::AudioSettings::SampleRate(value);
+    }
+    //!\brief DSG::Nyquist() - Pre-Calculated Nyquist Limit. Use instead of calculating each time needed. This value will be updated whenever the sample rate changes.
+    inline DSG::DSGFrequency Nyquist(){
+        return DSG::AudioSettings::Nyquist();
     }
 }
 #endif /* defined(__DSG__AudioSettings__) */

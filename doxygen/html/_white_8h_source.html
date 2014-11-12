@@ -98,29 +98,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef DSG_White_h</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define DSG_White_h</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_s_g_types_8h.html">DSGTypes.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_random_8h.html">Random.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_s_g.html">DSG</a>{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifdef DSG_Short_Names</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">inline</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">namespace </span>Noise{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> decimal = DSG::DSGSample&gt;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespace_d_s_g_1_1_noise.html#a2979ad99d7b590ac48bbf1bd9406f350">   18</a></span>&#160;        <span class="keyword">inline</span> decimal <a class="code" href="namespace_d_s_g_1_1_noise.html#a2979ad99d7b590ac48bbf1bd9406f350">White</a>(decimal=0){</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            decimal white =(rand()/(decimal)RAND_MAX);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            white -=0.5;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            white*=2.0;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">return</span> white;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespace_d_s_g_1_1_noise.html#a0d1c4b4522d2e56b1aa604e45ab92066">   18</a></span>&#160;        <span class="keyword">inline</span> decimal <a class="code" href="namespace_d_s_g_1_1_noise.html#a0d1c4b4522d2e56b1aa604e45ab92066">White</a>(decimal=0.0){</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordflow">return</span> DSG::Random&lt;decimal&gt;();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="namespace_d_s_g_html"><div class="ttname"><a href="namespace_d_s_g.html">DSG</a></div><div class="ttdef"><b>Definition:</b> <a href="_analog_saw_8h_source.html#l00011">AnalogSaw.h:11</a></div></div>
-<div class="ttc" id="namespace_d_s_g_1_1_noise_html_a2979ad99d7b590ac48bbf1bd9406f350"><div class="ttname"><a href="namespace_d_s_g_1_1_noise.html#a2979ad99d7b590ac48bbf1bd9406f350">DSG::Noise::White</a></div><div class="ttdeci">decimal White(decimal=0)</div><div class="ttdef"><b>Definition:</b> <a href="_white_8h_source.html#l00018">White.h:18</a></div></div>
+<div class="ttc" id="namespace_d_s_g_1_1_noise_html_a0d1c4b4522d2e56b1aa604e45ab92066"><div class="ttname"><a href="namespace_d_s_g_1_1_noise.html#a0d1c4b4522d2e56b1aa604e45ab92066">DSG::Noise::White</a></div><div class="ttdeci">decimal White(decimal=0.0)</div><div class="ttdef"><b>Definition:</b> <a href="_white_8h_source.html#l00018">White.h:18</a></div></div>
 <div class="ttc" id="_d_s_g_types_8h_html"><div class="ttname"><a href="_d_s_g_types_8h.html">DSGTypes.h</a></div></div>
+<div class="ttc" id="_random_8h_html"><div class="ttname"><a href="_random_8h.html">Random.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 24 2014 21:18:18 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 28 2014 03:04:07 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -13,10 +13,10 @@
 #include <type_traits>
 #include "DSGMath.h"
 namespace DSG{
-    template<typename T>
-    inline T Sinc(T const& x) {
-        static_assert(std::is_floating_point<T>::value==true,"DSG::Sinc Function Requires Floating Point Type");
-        T pix;
+    template<typename decimal>
+    inline decimal Sinc(decimal const& x) {
+        static_assert(std::is_floating_point<decimal>::value==true,"DSG::Sinc Function Requires Floating Point Type");
+        decimal pix;
         if (DSG::IsDenormal(x)) {
             return 1.0;
         }else{

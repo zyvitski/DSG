@@ -4,7 +4,6 @@ var searchData=
   ['dcblocker_2eh',['DCBlocker.h',['../_d_c_blocker_8h.html',1,'']]],
   ['decimate_2ecpp',['Decimate.cpp',['../_decimate_8cpp.html',1,'']]],
   ['decimate_2eh',['Decimate.h',['../_decimate_8h.html',1,'']]],
-  ['delay_2ecpp',['Delay.cpp',['../_delay_8cpp.html',1,'']]],
   ['delay_2eh',['Delay.h',['../_delay_8h.html',1,'']]],
   ['denormal_2eh',['Denormal.h',['../_denormal_8h.html',1,'']]],
   ['dpwsaw_2ecpp',['DPWSaw.cpp',['../_d_p_w_saw_8cpp.html',1,'']]],

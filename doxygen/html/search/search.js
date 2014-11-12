@@ -12,10 +12,10 @@ var indexSectionsWithContent =
   2: "d",
   3: "abdefgilnprsw",
   4: "abcdefghilmnoprsw~",
-  5: "_acdimprsvwxy",
+  5: "_abcdimprsvwxy",
   6: "dfs",
   7: "s",
-  8: "s",
+  8: "sv",
   9: "o",
   10: "_bdlpt"
 };

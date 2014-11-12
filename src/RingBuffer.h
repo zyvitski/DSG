@@ -31,7 +31,6 @@ namespace DSG {
         RingBuffer(const size_t size);
         RingBuffer(RingBuffer& buffer);
         RingBuffer& operator=(RingBuffer& buffer);
-        DSG::DSGSample& operator[](unsigned long const& index);
         virtual ~RingBuffer();
         inline bool Write(const DSGSample& elem);
         inline bool Read(DSG::DSGSample& elem);

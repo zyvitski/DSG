@@ -61,10 +61,10 @@ namespace DSG{
             //need range checking on x to ensure 0-1 range
             phs<0 ? phs = 1-(phs*-1):0;
             phs-=((int)phs);
-            //return this->_table[(unsigned)(phs*(this->_size-1))];
-            unsigned long index = phs * (this->_size-1);
-            _out=DSG::LinearInterpolate(_table[index], _table[index+1], (float)phs);
-            return _out;
+            return this->_table[(unsigned)(phs*(this->_size-1))];
+            //unsigned long index = phs * (this->_size-1);
+            //_out=DSG::LinearInterpolate(_table[index], _table[index+1], (float)phs);
+            //return _out;
         }
         unsigned long const& Size()const{
             return _size;

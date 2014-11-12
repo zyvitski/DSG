@@ -5,7 +5,6 @@
 //  Created by Alexander Zywicki on 10/23/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
-
 #ifndef __DSG__Delay__
 #define __DSG__Delay__
 #include "DSGTypes.h"
@@ -83,5 +82,4 @@ namespace DSG{
         }else return false;
     }
 }
-
 #endif /* defined(__DSG__Delay__) */

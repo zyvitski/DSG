@@ -10,6 +10,7 @@
 #include "SignalProcess.h"
 #include "AudioSettings.h"
 #include "Sine.h"
+#include "Bounds.h"
 namespace DSG{
     /*!\brief DSG::SignalGenerator - Extends DSG::Signal Process With Tools For Signal Generation
      */
@@ -54,7 +55,7 @@ inline DSG::DSGFrequency const& DSG::SignalGenerator::Frequency(){
     return _frequency;
 }
 inline DSG::DSGFrequency const& DSG::SignalGenerator::Frequency(DSG::DSGFrequency const& value){
-    _frequency = value;
+    _frequency = DSG::EnforceBounds<0, 20000,DSG::DSGSample>(value);
     _dt = _frequency/DSG::SampleRate();
     return _frequency;
 }

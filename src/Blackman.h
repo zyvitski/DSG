@@ -1,4 +1,4 @@
-//
+    //
 //  Blackman.h
 //  DSG
 //
@@ -26,7 +26,11 @@ namespace DSG {
             //we will implement the blackman window as a function as if it were sin(x)
             //cos input domain 0-1 not 0-2pi
             //range checking is handles within DSG::Cos
-            return 0.42 - (0.5 * DSG::Cos(x))+(0.08 * DSG::Cos(2.0*x));
+            decimal phs=x;
+            while (phs>1.0) {
+                phs-=1.0;
+            }
+            return 0.42 - (0.5 * DSG::Cos(phs))+(0.08 * DSG::Cos(2.0*phs));
         }
     }
 }

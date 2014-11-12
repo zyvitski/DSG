@@ -12,7 +12,7 @@
 namespace DSG{
     template<typename T>
     inline bool IsDenormal(T const& value){
-        return DSG::Abs(value)<=std::numeric_limits<T>::epsilon();//return true ifb number is denormal
+        return DSG::Abs(value)<=std::numeric_limits<T>::epsilon();//return true if number is denormal
     }
 }
 #endif

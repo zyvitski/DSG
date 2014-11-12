@@ -22,7 +22,8 @@
 #include "Blackman.h"
 #include "LUT.h"
 #include "Window.h"
-#include "NoiseGenerator.h"
+#include "Bounds.h"
+
 #include "GenericGenerator.h"
 
 #include "Delay.h"
@@ -42,7 +43,9 @@
 #include "BLIT.h"
 #include "BLITSaw.h"
 
+#include "DSF.h"
 
+#include "DPW.h"
 #include "DPWSaw.h"
 
 #include "EPTRSaw.h"

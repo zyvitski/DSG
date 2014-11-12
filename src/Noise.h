@@ -7,7 +7,9 @@
 //
 #ifndef DSG_Noise_h
 #define DSG_Noise_h
+#include "Random.h"
 #include "Gaussian.h"
 #include "White.h"
 #include "Pink.h"
+#include "NoiseGenerator.h"
 #endif
