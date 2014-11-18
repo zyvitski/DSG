@@ -10,6 +10,7 @@
 #include <limits>
 #include "DSGMath.h"
 namespace DSG{
+    //!\brief DSG::IsDenormal - Returns True if number is Denormal 
     template<typename T>
     inline bool IsDenormal(T const& value){
         return DSG::Abs(value)<=std::numeric_limits<T>::epsilon();//return true if number is denormal

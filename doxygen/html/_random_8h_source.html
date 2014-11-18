@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,50 +95,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Alexander Zywicki on 10/28/14.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef DSG_Random_h</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define DSG_Random_h</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_s_g_types_8h.html">DSGTypes.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_s_g.html">DSG</a>{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifdef DSG_Short_Names</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">inline</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">namespace </span>Noise{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef DSG_Random_h</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define DSG_Random_h</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_s_g_types_8h.html">DSGTypes.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_s_g.html">DSG</a>{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifdef DSG_Short_Names</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">inline</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    //!\brief DSG::Noise - Noise Generators</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span>    <span class="keyword">namespace </span>Noise{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">namespace</span>{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keyword">template</span>&lt;<span class="keyword">typename</span> decimal&gt;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keyword">class </span>random_helper{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                random_helper(<span class="keyword">const</span> decimal&amp; min=-1.0,<span class="keyword">const</span> decimal&amp; max=1.0):<a class="code" href="_random_8h.html#aa53cdd8f9b6c3ad0d45c4880407cedca">_dist</a>(min,max){</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                    std::random_device rd{};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                    <a class="code" href="_random_8h.html#a44f8ed05d35f32a21c613bdbf8e0096a">_engine</a>.seed(rd());</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="keyword">inline</span> decimal next(){</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                    <span class="keywordflow">return</span> (<a class="code" href="_random_8h.html#aa53cdd8f9b6c3ad0d45c4880407cedca">_dist</a>(<a class="code" href="_random_8h.html#a44f8ed05d35f32a21c613bdbf8e0096a">_engine</a>));</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="_random_8h.html#a44f8ed05d35f32a21c613bdbf8e0096a">   30</a></span>&#160;                std::default_random_engine <a class="code" href="_random_8h.html#a44f8ed05d35f32a21c613bdbf8e0096a">_engine</a>{};</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="_random_8h.html#aa53cdd8f9b6c3ad0d45c4880407cedca">   31</a></span>&#160;                std::uniform_real_distribution&lt;decimal&gt; <a class="code" href="_random_8h.html#aa53cdd8f9b6c3ad0d45c4880407cedca">_dist</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            };</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> decimal = DSG::DSGSample&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespace_d_s_g_1_1_noise.html#af210d83913fada9e9474410caff25bc1">   35</a></span>&#160;        <span class="keyword">inline</span> decimal <a class="code" href="namespace_d_s_g_1_1_noise.html#af210d83913fada9e9474410caff25bc1">Random</a>(decimal=0.0){</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keyword">static</span> DSG::Noise::random_helper&lt;decimal&gt; _rand;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">return</span> _rand.next();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="comment">//return rand()/static_cast&lt;decimal&gt;(RAND_MAX);</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespace_d_s_g_html"><div class="ttname"><a href="namespace_d_s_g.html">DSG</a></div><div class="ttdef"><b>Definition:</b> <a href="_analog_saw_8h_source.html#l00011">AnalogSaw.h:11</a></div></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                random_helper(){</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                    srand(static_cast&lt;unsigned&gt;(time(NULL)));</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keyword">inline</span> decimal next(){</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>decimal<span class="keyword">&gt;</span>(rand()/<a class="code" href="_random_8h.html#adf0c2e3aed2e917753f8cca4522e205e">max</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="_random_8h.html#adf0c2e3aed2e917753f8cca4522e205e">   29</a></span>&#160;                <span class="keyword">const</span> decimal <a class="code" href="_random_8h.html#adf0c2e3aed2e917753f8cca4522e205e">max</a> = <span class="keyword">static_cast&lt;</span>decimal<span class="keyword">&gt;</span>(RAND_MAX);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            };</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }<span class="comment"></span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">        //!\brief DSG::Noise::Random - Random Number Function</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"></span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> decimal = DSG::DSGSample&gt;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="namespace_d_s_g_1_1_noise.html#af210d83913fada9e9474410caff25bc1">   34</a></span>&#160;        <span class="keyword">inline</span> decimal <a class="code" href="namespace_d_s_g_1_1_noise.html#af210d83913fada9e9474410caff25bc1">Random</a>(decimal=0.0){</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keyword">static</span> DSG::Noise::random_helper&lt;decimal&gt; _rand{};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">return</span> _rand.next();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespace_d_s_g_html"><div class="ttname"><a href="namespace_d_s_g.html">DSG</a></div><div class="ttdoc">DSG - A Collection of tools for Digital Signal Generation. </div><div class="ttdef"><b>Definition:</b> <a href="_analog_saw_8h_source.html#l00011">AnalogSaw.h:11</a></div></div>
 <div class="ttc" id="_d_s_g_types_8h_html"><div class="ttname"><a href="_d_s_g_types_8h.html">DSGTypes.h</a></div></div>
-<div class="ttc" id="_random_8h_html_aa53cdd8f9b6c3ad0d45c4880407cedca"><div class="ttname"><a href="_random_8h.html#aa53cdd8f9b6c3ad0d45c4880407cedca">_dist</a></div><div class="ttdeci">std::uniform_real_distribution&lt; decimal &gt; _dist</div><div class="ttdef"><b>Definition:</b> <a href="_random_8h_source.html#l00031">Random.h:31</a></div></div>
-<div class="ttc" id="_random_8h_html_a44f8ed05d35f32a21c613bdbf8e0096a"><div class="ttname"><a href="_random_8h.html#a44f8ed05d35f32a21c613bdbf8e0096a">_engine</a></div><div class="ttdeci">std::default_random_engine _engine</div><div class="ttdef"><b>Definition:</b> <a href="_random_8h_source.html#l00030">Random.h:30</a></div></div>
-<div class="ttc" id="namespace_d_s_g_1_1_noise_html_af210d83913fada9e9474410caff25bc1"><div class="ttname"><a href="namespace_d_s_g_1_1_noise.html#af210d83913fada9e9474410caff25bc1">DSG::Noise::Random</a></div><div class="ttdeci">decimal Random(decimal=0.0)</div><div class="ttdef"><b>Definition:</b> <a href="_random_8h_source.html#l00035">Random.h:35</a></div></div>
+<div class="ttc" id="_random_8h_html_adf0c2e3aed2e917753f8cca4522e205e"><div class="ttname"><a href="_random_8h.html#adf0c2e3aed2e917753f8cca4522e205e">max</a></div><div class="ttdeci">const decimal max</div><div class="ttdef"><b>Definition:</b> <a href="_random_8h_source.html#l00029">Random.h:29</a></div></div>
+<div class="ttc" id="namespace_d_s_g_1_1_noise_html_af210d83913fada9e9474410caff25bc1"><div class="ttname"><a href="namespace_d_s_g_1_1_noise.html#af210d83913fada9e9474410caff25bc1">DSG::Noise::Random</a></div><div class="ttdeci">decimal Random(decimal=0.0)</div><div class="ttdoc">DSG::Noise::Random - Random Number Function. </div><div class="ttdef"><b>Definition:</b> <a href="_random_8h_source.html#l00034">Random.h:34</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 28 2014 03:04:07 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 12 2014 21:04:41 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

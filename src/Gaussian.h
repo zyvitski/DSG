@@ -14,6 +14,7 @@ namespace DSG{
     inline
 #endif
     namespace Noise{
+        //!\brief DSG::Noise::Gaussian - Gaussian Noise Generator Function
         template<typename decimal=DSG::DSGSample>
         decimal Gaussian(decimal=0.0){
             static decimal normalizer=1;//variable used to actively normalize the output

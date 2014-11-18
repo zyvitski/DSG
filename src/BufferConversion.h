@@ -9,6 +9,7 @@
 #define __DSG__BufferConversion__
 #include "RingBuffer.h"
 namespace DSG {
+    //!\brief DSG::RingToArray - Move Ring Buffer data to an array
     inline bool RingToArray(DSG::RingBuffer& ring,DSG::DSGSample* array,unsigned long length){
         for (int i=0; i<length; ++i) {
             if (!ring.Empty()) {
@@ -16,6 +17,7 @@ namespace DSG {
             }
         }return true;
     }
+    //!\brief DSG::ArrayToRing - Move array data to a Ring Buffer
     inline bool ArrayToRing(DSG::RingBuffer& ring,DSG::DSGSample* array, unsigned long length){
         int i=0;
         ring.Flush();

@@ -7,9 +7,8 @@ var searchData=
   ['_7eblitsaw',['~BlitSaw',['../class_d_s_g_1_1_b_l_i_t_1_1_blit_saw.html#a4744c63b29aee896823f19965e11e515',1,'DSG::BLIT::BlitSaw']]],
   ['_7ebuffer',['~Buffer',['../class_d_s_g_1_1_buffer.html#a619fc41bf263a419da1a19254e194101',1,'DSG::Buffer']]],
   ['_7edcblocker',['~DCBlocker',['../class_d_s_g_1_1_filter_1_1_d_c_blocker.html#a5393dac29a226f5912f6d1705b69eecf',1,'DSG::Filter::DCBlocker']]],
-  ['_7edecimator',['~Decimator',['../class_d_s_g_1_1_decimator.html#a2d79901c71924dc92175243a07674ac9',1,'DSG::Decimator']]],
   ['_7edelay',['~Delay',['../class_d_s_g_1_1_delay.html#ac2df9a0120744cc8efa15556e4293a2c',1,'DSG::Delay']]],
-  ['_7edpwsaw',['~DPWSaw',['../class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw.html#a9fd0c2d68d81ce00f15a8e48f04c3c92',1,'DSG::DPW::DPWSaw']]],
+  ['_7edpwsaw',['~DPWSaw',['../class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw.html#afc78ee5a1353dec65adf963a677e95fe',1,'DSG::DPW::DPWSaw']]],
   ['_7eeptrsaw',['~EPTRSaw',['../class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a932fb8ef2df61ed06e6cca5cdc622884',1,'DSG::EPTR::EPTRSaw']]],
   ['_7efilterbase',['~FilterBase',['../class_d_s_g_1_1_filter_1_1_filter_base.html#a1e220c7fe383eba4822f3896d8b2c2b2',1,'DSG::Filter::FilterBase']]],
   ['_7efouriersaw',['~FourierSaw',['../class_d_s_g_1_1_fourier_1_1_fourier_saw.html#acd28c4942553271ed9f39e8f05b8db6d',1,'DSG::Fourier::FourierSaw']]],
@@ -21,6 +20,5 @@ var searchData=
   ['_7enoisegenerator',['~NoiseGenerator',['../class_d_s_g_1_1_noise_generator.html#a964f0af791b5e09e63470bf42ddbce79',1,'DSG::NoiseGenerator']]],
   ['_7eringbuffer',['~RingBuffer',['../class_d_s_g_1_1_ring_buffer.html#a771d30b04b6f0313c203530685fbeb3a',1,'DSG::RingBuffer']]],
   ['_7esignalgenerator',['~SignalGenerator',['../class_d_s_g_1_1_signal_generator.html#a7b52d391974bc36a19fdcf617ad976cb',1,'DSG::SignalGenerator']]],
-  ['_7esignalprocess',['~SignalProcess',['../class_d_s_g_1_1_signal_process.html#ad9b6a758241a092ddc38e13effc9553f',1,'DSG::SignalProcess']]],
-  ['_7ewavfile',['~WavFile',['../class_d_s_g_1_1_sound_file_1_1_wav_file.html#ab4a55c146b224055f40639c9a0851641',1,'DSG::SoundFile::WavFile']]]
+  ['_7esignalprocess',['~SignalProcess',['../class_d_s_g_1_1_signal_process.html#ad9b6a758241a092ddc38e13effc9553f',1,'DSG::SignalProcess']]]
 ];

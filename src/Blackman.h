@@ -15,13 +15,13 @@ namespace DSG {
     inline
 #endif
     namespace Window{
-        //!\brief DSG::Blackman - Blackman Window Function
-        // Generate Blackman Window
-        /*
-         Blackman(x) = 0.42f - (0.5f * cos(2pi*x)) + (0.08f * cos(2pi*2.0*x));
-         }*/
+        //!\brief DSG::Window::Blackman - Blackman Window Function
         template<typename decimal>
         inline decimal Blackman(decimal const& x){
+            // Generate Blackman Window
+            /*
+             Blackman(x) = 0.42f - (0.5f * cos(2pi*x)) + (0.08f * cos(2pi*2.0*x));
+             }*/
             static_assert(std::is_floating_point<decimal>::value==true,"DSG::Blackman Function Requires Floating Point Type");
             //we will implement the blackman window as a function as if it were sin(x)
             //cos input domain 0-1 not 0-2pi

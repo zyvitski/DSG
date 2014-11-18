@@ -14,7 +14,7 @@ namespace DSG{
 #endif
     //!DSG::Fourier - Namespace Containing Fourier Series Based Oscillators
     namespace Fourier{
-        //!\brief DSG::Fourier::FourierSaw
+        //!\brief DSG::Fourier::FourierSaw - Fourier Series Sawtooth Wave Generator
         class FourierSaw : public DSG::SignalGenerator {
         public:
             FourierSaw();

@@ -1,9 +1,9 @@
-/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG.build/Objects-normal/x86_64/Decimate.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG.build/Objects-normal/x86_64/Filter.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG.build/Objects-normal/x86_64/BLITTriangle.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG.build/Objects-normal/x86_64/NoiseGenerator.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG.build/Objects-normal/x86_64/DCBlocker.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG.build/Objects-normal/x86_64/SignalGenerator.o
+/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG.build/Objects-normal/x86_64/FourierSeries.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG.build/Objects-normal/x86_64/EPTRSaw.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG.build/Objects-normal/x86_64/Leaky.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG.build/Objects-normal/x86_64/GenericGenerator.o
@@ -18,6 +18,5 @@
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG.build/Objects-normal/x86_64/AudioSettings.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG.build/Objects-normal/x86_64/FourierSaw.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG.build/Objects-normal/x86_64/FourierTriangle.o
-/Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG.build/Objects-normal/x86_64/DSF.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG.build/Objects-normal/x86_64/AnalogSaw.o
 /Users/alexanderzywicki/Documents/DSG/Build/Intermediates/DSG.build/Debug/DSG.build/Objects-normal/x86_64/SignalProcess.o

@@ -12,6 +12,7 @@
 #include "Interpolate.h"
 #include "AudioSettings.h"
 namespace DSG{
+    //!\brief DSG::Delay - General purpose delay line
     template<unsigned long maxLength>
     class Delay:public DSG::SignalProcess{
     public:
@@ -52,7 +53,6 @@ namespace DSG{
         DSG::DSGSample _buffer[maxLength];
         DSG::DSGSample _swap;
         DSG::DSGSample _temp;
-
         virtual inline void increment(){
             ++_index;
             if (_index>_delay) {

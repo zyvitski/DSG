@@ -13,6 +13,7 @@
 #include <type_traits>
 #include "DSGMath.h"
 namespace DSG{
+    //!\brief DSG::Sinc - Implements the Sinc() function (sin(PI*x)/PI*x)
     template<typename decimal>
     inline decimal Sinc(decimal const& x) {
         static_assert(std::is_floating_point<decimal>::value==true,"DSG::Sinc Function Requires Floating Point Type");

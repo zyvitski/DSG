@@ -9,6 +9,7 @@
 #define __DSG__GenericGenerator__
 #include "SignalGenerator.h"
 namespace DSG{
+    //!\brief DSG::GenericGenerator - Generator designed to use a stateless generator function such as DSG::Sin()
     class GenericGenerator:public DSG::SignalGenerator{
     public:
         GenericGenerator();

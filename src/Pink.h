@@ -14,6 +14,7 @@ namespace DSG{
     inline
 #endif
     namespace Noise{
+        //!\brief DSG::Noise::Pink - Pink Noise Generator Function
         template<typename decimal=DSG::DSGSample>
         decimal Pink(decimal=0.0){
             //routine: Get white or gaussian, filter, return

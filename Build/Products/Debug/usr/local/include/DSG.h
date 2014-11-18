@@ -9,6 +9,8 @@
 #define DSG_DSG_h
 #define DSG_Short_Names // enables inlining of nested namespaces to allow shorter explicit typenames
 //Example: DSG::Analog::AnalogSaw (Long Name)...DSG::AnalogSaw (Short Name)(only available with this macro enabled
+//!\brief DSG - A Collection of tools for Digital Signal Generation
+namespace DSG {}
 
 #include "AudioSettings.h"
 #include "SignalProcess.h"
@@ -28,10 +30,11 @@
 
 #include "Delay.h"
 
-#include "SoundFile.h"
+
 #include "Sleep.h"
 #include "BufferConversion.h"
 
+#include "FourierSeries.h"
 #include "FourierSaw.h"
 #include "FourierSquare.h"
 #include "FourierTriangle.h"
@@ -53,7 +56,7 @@
 #include "Noise.h"
 
 #include "DCBlocker.h"
-#include "Decimate.h"
+
 #include "Filter.h"
 #include "Leaky.h"
 

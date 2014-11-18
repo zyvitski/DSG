@@ -14,6 +14,7 @@ namespace DSG{
 #endif
     //!DSG::Fourier - Namespace Containing Fourier Series Based Oscillators
     namespace Fourier{
+        //!\brief DSG::Fourier::FourierSquare - Fourier Series Square Wave Generator
         class FourierSquare : public DSG::SignalGenerator {
         public:
             FourierSquare();

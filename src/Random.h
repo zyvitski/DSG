@@ -13,6 +13,7 @@ namespace DSG{
 #ifdef DSG_Short_Names
     inline
 #endif
+    //!\brief DSG::Noise - Noise Generators
     namespace Noise{
         namespace{
             template<typename decimal>
@@ -28,6 +29,7 @@ namespace DSG{
                 const decimal max = static_cast<decimal>(RAND_MAX);
             };
         }
+        //!\brief DSG::Noise::Random - Random Number Function
         template<typename decimal = DSG::DSGSample>
         inline decimal Random(decimal=0.0){
             static DSG::Noise::random_helper<decimal> _rand{};

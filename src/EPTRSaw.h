@@ -12,7 +12,7 @@ namespace DSG {
 #ifdef DSG_Short_Names
     inline
 #endif
-    //!DSG::EPTR - Namespace Enclosign Generators Based On The Efficienct Polynomial Transfer Region Algorithm
+    //!DSG::EPTR - Generators Based On The Efficienct Polynomial Transfer Region Algorithm
     namespace EPTR{
         //!\brief DSG::EPTR::EPTRSaw-Sawtooth Wave Generator Using The Efficienct Polynomial Transfer Region Algorithm
         class EPTRSaw : public DSG::SignalGenerator{
@@ -38,7 +38,7 @@ namespace DSG {
             if (_register > 1.0-_dt) {
                 //transition region detected
                 //apply eptr correction
-                signal = _register - (_register/_dt) + (1/_dt) -1;
+                signal = _register - (_register/_dt) + (1.0/_dt) -1;
             }else{
                 signal = _register;
             }

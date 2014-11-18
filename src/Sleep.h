@@ -10,6 +10,7 @@
 #include <chrono>
 #include <thread>
 namespace DSG{
+    //!\brief DSG::Sleep - Millisecond Sleep Function
     template<typename integer>
     void Sleep(integer const& milliseconds){
         std::this_thread::sleep_for(std::chrono::milliseconds(milliseconds));

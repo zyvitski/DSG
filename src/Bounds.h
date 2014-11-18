@@ -9,6 +9,7 @@
 #define DSG_Bounds_h
 #include <assert.h>
 namespace DSG{
+    //!\brief DSG::EnforceBounds - Clip value to set bounds
     template<int lower,int upper,typename decimal>
     decimal EnforceBounds(decimal const& value){
         if (value<lower) {
@@ -17,10 +18,12 @@ namespace DSG{
             return upper;
         }else return value;
     }
-    template<int lower,int upper,typename T>
-    void StaticAssertBounds(T const& value){
+    //!\brief DSG::StaticAssertBounds - Fails on compile time if value is not within bounds
+    template<int lower,int upper,int value>
+    void StaticAssertBounds(){
         static_assert(value>=lower && value<=upper,"Failed Static Bounds Assert");
     }
+    //!\brief DSG::AssertBounds - Fails on runtime if value is not within bounds
     template<int lower,int upper,typename T>
     void AssertBounds(T const& value){
         assert(value>=lower && value<=upper);

@@ -13,6 +13,7 @@ namespace DSG {
     inline
 #endif
     namespace Filter{
+        //!\brief DSG::Filter::DCBlocker - DC blocking filter
         class DCBlocker:public DSG::Filter::FilterBase {
         public:
             DCBlocker();

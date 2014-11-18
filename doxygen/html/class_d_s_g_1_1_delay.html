@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,6 +95,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DSG::Delay&lt; maxLength &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="class_d_s_g_1_1_delay.html" title="DSG::Delay - General purpose delay line. ">DSG::Delay</a> - General purpose delay line.  
+ <a href="class_d_s_g_1_1_delay.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_delay_8h_source.html">Delay.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -155,8 +158,9 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;unsigned long maxLength&gt;<br />
 class DSG::Delay&lt; maxLength &gt;</h3>
 
+<p><a class="el" href="class_d_s_g_1_1_delay.html" title="DSG::Delay - General purpose delay line. ">DSG::Delay</a> - General purpose delay line. </p>
 
-<p>Definition at line <a class="el" href="_delay_8h_source.html#l00016">16</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
+<p>Definition at line <a class="el" href="_delay_8h_source.html#l00017">17</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a20fb108695dac24156aeb2143a88555a"></a>
 <div class="memitem">
@@ -181,8 +185,21 @@ template&lt;unsigned long maxLength&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_delay_8h_source.html#l00018">18</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
-
+<p>Definition at line <a class="el" href="_delay_8h_source.html#l00019">19</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;               :<a class="code" href="class_d_s_g_1_1_signal_process.html">DSG::SignalProcess</a>(),<a class="code" href="class_d_s_g_1_1_delay.html#a1751998677ff85f6580c383e17347d9c">_max</a>(maxLength),<a class="code" href="class_d_s_g_1_1_delay.html#af026ee90120c5cea6a935aef6cab6624">_swap</a>(0),<a class="code" href="class_d_s_g_1_1_delay.html#a039bb7a3a39aff5841b9e808cacc1a6e">_temp</a>(0),<a class="code" href="class_d_s_g_1_1_delay.html#a1d54836950db9724434880d859d1e3ea">count</a>(0),<a class="code" href="class_d_s_g_1_1_delay.html#ac39e72226786a3c43b231b69752431ec">_index</a>(0),<a class="code" href="class_d_s_g_1_1_delay.html#aad8790118689ae46c7f434b790358e3f">_delay</a>(0){</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="class_d_s_g_1_1_delay.html#a1751998677ff85f6580c383e17347d9c">_max</a>; ++i) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <a class="code" href="class_d_s_g_1_1_delay.html#a8c86e03e9656476371f98d049ae1c5c9">_buffer</a>[i]=0;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
+<div class="ttc" id="class_d_s_g_1_1_signal_process_html"><div class="ttname"><a href="class_d_s_g_1_1_signal_process.html">DSG::SignalProcess</a></div><div class="ttdoc">DSG::SignalProcess - Defines Base Interface For Audio Processing. </div><div class="ttdef"><b>Definition:</b> <a href="_signal_process_8h_source.html#l00015">SignalProcess.h:15</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_aad8790118689ae46c7f434b790358e3f"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#aad8790118689ae46c7f434b790358e3f">DSG::Delay::_delay</a></div><div class="ttdeci">unsigned long _delay</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00050">Delay.h:50</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_ac39e72226786a3c43b231b69752431ec"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#ac39e72226786a3c43b231b69752431ec">DSG::Delay::_index</a></div><div class="ttdeci">unsigned long _index</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00051">Delay.h:51</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_af026ee90120c5cea6a935aef6cab6624"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#af026ee90120c5cea6a935aef6cab6624">DSG::Delay::_swap</a></div><div class="ttdeci">DSG::DSGSample _swap</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00054">Delay.h:54</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_a039bb7a3a39aff5841b9e808cacc1a6e"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#a039bb7a3a39aff5841b9e808cacc1a6e">DSG::Delay::_temp</a></div><div class="ttdeci">DSG::DSGSample _temp</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00055">Delay.h:55</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_a1751998677ff85f6580c383e17347d9c"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#a1751998677ff85f6580c383e17347d9c">DSG::Delay::_max</a></div><div class="ttdeci">const unsigned long _max</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00052">Delay.h:52</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_a1d54836950db9724434880d859d1e3ea"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#a1d54836950db9724434880d859d1e3ea">DSG::Delay::count</a></div><div class="ttdeci">unsigned long count</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00049">Delay.h:49</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_a8c86e03e9656476371f98d049ae1c5c9"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#a8c86e03e9656476371f98d049ae1c5c9">DSG::Delay::_buffer</a></div><div class="ttdeci">DSG::DSGSample _buffer[maxLength]</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00053">Delay.h:53</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aecfa312690df905bbeaa8888d1bb702f"></a>
@@ -209,8 +226,26 @@ template&lt;unsigned long maxLength&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_delay_8h_source.html#l00023">23</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
-
+<p>Definition at line <a class="el" href="_delay_8h_source.html#l00024">24</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                    :<a class="code" href="class_d_s_g_1_1_signal_process.html">DSG::SignalProcess</a>(),<a class="code" href="class_d_s_g_1_1_delay.html#a1751998677ff85f6580c383e17347d9c">_max</a>(maxLength),<a class="code" href="class_d_s_g_1_1_delay.html#af026ee90120c5cea6a935aef6cab6624">_swap</a>(0),<a class="code" href="class_d_s_g_1_1_delay.html#a039bb7a3a39aff5841b9e808cacc1a6e">_temp</a>(0),<a class="code" href="class_d_s_g_1_1_delay.html#a1d54836950db9724434880d859d1e3ea">count</a>(0),<a class="code" href="class_d_s_g_1_1_delay.html#ac39e72226786a3c43b231b69752431ec">_index</a>(0),<a class="code" href="class_d_s_g_1_1_delay.html#aad8790118689ae46c7f434b790358e3f">_delay</a>(0){</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="class_d_s_g_1_1_delay.html#a1751998677ff85f6580c383e17347d9c">_max</a>; ++i) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <a class="code" href="class_d_s_g_1_1_delay.html#a8c86e03e9656476371f98d049ae1c5c9">_buffer</a>[i]=0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">if</span> (samples&gt;maxLength) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <a class="code" href="class_d_s_g_1_1_delay.html#aad8790118689ae46c7f434b790358e3f">_delay</a> = maxLength;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <a class="code" href="class_d_s_g_1_1_delay.html#aad8790118689ae46c7f434b790358e3f">_delay</a> = samples;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
+<div class="ttc" id="class_d_s_g_1_1_signal_process_html"><div class="ttname"><a href="class_d_s_g_1_1_signal_process.html">DSG::SignalProcess</a></div><div class="ttdoc">DSG::SignalProcess - Defines Base Interface For Audio Processing. </div><div class="ttdef"><b>Definition:</b> <a href="_signal_process_8h_source.html#l00015">SignalProcess.h:15</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_aad8790118689ae46c7f434b790358e3f"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#aad8790118689ae46c7f434b790358e3f">DSG::Delay::_delay</a></div><div class="ttdeci">unsigned long _delay</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00050">Delay.h:50</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_ac39e72226786a3c43b231b69752431ec"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#ac39e72226786a3c43b231b69752431ec">DSG::Delay::_index</a></div><div class="ttdeci">unsigned long _index</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00051">Delay.h:51</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_af026ee90120c5cea6a935aef6cab6624"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#af026ee90120c5cea6a935aef6cab6624">DSG::Delay::_swap</a></div><div class="ttdeci">DSG::DSGSample _swap</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00054">Delay.h:54</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_a039bb7a3a39aff5841b9e808cacc1a6e"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#a039bb7a3a39aff5841b9e808cacc1a6e">DSG::Delay::_temp</a></div><div class="ttdeci">DSG::DSGSample _temp</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00055">Delay.h:55</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_a1751998677ff85f6580c383e17347d9c"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#a1751998677ff85f6580c383e17347d9c">DSG::Delay::_max</a></div><div class="ttdeci">const unsigned long _max</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00052">Delay.h:52</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_a1d54836950db9724434880d859d1e3ea"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#a1d54836950db9724434880d859d1e3ea">DSG::Delay::count</a></div><div class="ttdeci">unsigned long count</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00049">Delay.h:49</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_a8c86e03e9656476371f98d049ae1c5c9"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#a8c86e03e9656476371f98d049ae1c5c9">DSG::Delay::_buffer</a></div><div class="ttdeci">DSG::DSGSample _buffer[maxLength]</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00053">Delay.h:53</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ac2df9a0120744cc8efa15556e4293a2c"></a>
@@ -236,8 +271,9 @@ template&lt;unsigned long maxLength&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_delay_8h_source.html#l00033">33</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
-
+<p>Definition at line <a class="el" href="_delay_8h_source.html#l00034">34</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -265,7 +301,15 @@ template&lt;unsigned long maxLength&gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="_delay_8h_source.html#l00056">56</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                       {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            ++<a class="code" href="class_d_s_g_1_1_delay.html#ac39e72226786a3c43b231b69752431ec">_index</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_d_s_g_1_1_delay.html#ac39e72226786a3c43b231b69752431ec">_index</a>&gt;<a class="code" href="class_d_s_g_1_1_delay.html#aad8790118689ae46c7f434b790358e3f">_delay</a>) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <a class="code" href="class_d_s_g_1_1_delay.html#ac39e72226786a3c43b231b69752431ec">_index</a>-=<a class="code" href="class_d_s_g_1_1_delay.html#aad8790118689ae46c7f434b790358e3f">_delay</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_aad8790118689ae46c7f434b790358e3f"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#aad8790118689ae46c7f434b790358e3f">DSG::Delay::_delay</a></div><div class="ttdeci">unsigned long _delay</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00050">Delay.h:50</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_ac39e72226786a3c43b231b69752431ec"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#ac39e72226786a3c43b231b69752431ec">DSG::Delay::_index</a></div><div class="ttdeci">unsigned long _index</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00051">Delay.h:51</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="abf8bfbd184f1e733d1b5aae0bfa408d7"></a>
@@ -291,8 +335,12 @@ template&lt;unsigned long maxLength&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_delay_8h_source.html#l00034">34</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
-
+<p>Definition at line <a class="el" href="_delay_8h_source.html#l00035">35</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                         {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_d_s_g_1_1_delay.html#aad8790118689ae46c7f434b790358e3f">_delay</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_aad8790118689ae46c7f434b790358e3f"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#aad8790118689ae46c7f434b790358e3f">DSG::Delay::_delay</a></div><div class="ttdeci">unsigned long _delay</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00050">Delay.h:50</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a7081f684727044ff1765ab6284385359"></a>
@@ -319,8 +367,17 @@ template&lt;unsigned long maxLength&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_delay_8h_source.html#l00037">37</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
-
+<p>Definition at line <a class="el" href="_delay_8h_source.html#l00038">38</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                                                                {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">if</span> (samples&gt;maxLength) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <a class="code" href="class_d_s_g_1_1_delay.html#aad8790118689ae46c7f434b790358e3f">_delay</a> = maxLength;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <a class="code" href="class_d_s_g_1_1_delay.html#aad8790118689ae46c7f434b790358e3f">_delay</a> = samples;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_d_s_g_1_1_delay.html#aad8790118689ae46c7f434b790358e3f">_delay</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_aad8790118689ae46c7f434b790358e3f"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#aad8790118689ae46c7f434b790358e3f">DSG::Delay::_delay</a></div><div class="ttdeci">unsigned long _delay</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00050">Delay.h:50</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="afe853b73a1d7d1e5720277e5d956b209"></a>
@@ -350,7 +407,18 @@ template&lt;unsigned long maxLength&gt; </div>
 <p>Implements <a class="el" href="class_d_s_g_1_1_signal_process.html#af73d246c460915db7a9be7e3ef36844d">DSG::SignalProcess</a>.</p>
 
 <p>Definition at line <a class="el" href="_delay_8h_source.html#l00064">64</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                                                {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="class_d_s_g_1_1_delay.html#af026ee90120c5cea6a935aef6cab6624">_swap</a> = <a class="code" href="class_d_s_g_1_1_delay.html#a8c86e03e9656476371f98d049ae1c5c9">_buffer</a>[<a class="code" href="class_d_s_g_1_1_delay.html#ac39e72226786a3c43b231b69752431ec">_index</a>-1];</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="class_d_s_g_1_1_delay.html#a8c86e03e9656476371f98d049ae1c5c9">_buffer</a>[<a class="code" href="class_d_s_g_1_1_delay.html#ac39e72226786a3c43b231b69752431ec">_index</a>-1]=signal;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        signal = <a class="code" href="class_d_s_g_1_1_delay.html#af026ee90120c5cea6a935aef6cab6624">_swap</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_d_s_g_1_1_delay.html#a4c800f6ce87a75d964aab53617d12664">increment</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_a4c800f6ce87a75d964aab53617d12664"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#a4c800f6ce87a75d964aab53617d12664">DSG::Delay::increment</a></div><div class="ttdeci">virtual void increment()</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00056">Delay.h:56</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_ac39e72226786a3c43b231b69752431ec"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#ac39e72226786a3c43b231b69752431ec">DSG::Delay::_index</a></div><div class="ttdeci">unsigned long _index</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00051">Delay.h:51</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_af026ee90120c5cea6a935aef6cab6624"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#af026ee90120c5cea6a935aef6cab6624">DSG::Delay::_swap</a></div><div class="ttdeci">DSG::DSGSample _swap</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00054">Delay.h:54</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_a8c86e03e9656476371f98d049ae1c5c9"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#a8c86e03e9656476371f98d049ae1c5c9">DSG::Delay::_buffer</a></div><div class="ttdeci">DSG::DSGSample _buffer[maxLength]</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00053">Delay.h:53</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a205bd6fc25ea951395943eae51128e66"></a>
@@ -380,7 +448,26 @@ template&lt;unsigned long maxLength&gt; </div>
 <p>Implements <a class="el" href="class_d_s_g_1_1_signal_process.html#a2c8ff3487d9c43f9eace1d9192d4a37e">DSG::SignalProcess</a>.</p>
 
 <p>Definition at line <a class="el" href="_delay_8h_source.html#l00072">72</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                                 {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span> (!signal.<a class="code" href="class_d_s_g_1_1_ring_buffer.html#ac1346f5842d08b988a5297abe4089b96">Empty</a>()) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="class_d_s_g_1_1_delay.html#a1d54836950db9724434880d859d1e3ea">count</a> = signal.<a class="code" href="class_d_s_g_1_1_ring_buffer.html#a9bd79b0a6dff618b205e396c101ee070">Count</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">while</span> (<a class="code" href="class_d_s_g_1_1_delay.html#a1d54836950db9724434880d859d1e3ea">count</a>-- &gt; 0) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <span class="keywordflow">if</span>(signal.<a class="code" href="class_d_s_g_1_1_ring_buffer.html#a6b2848a64f15c7b0c320779582fa0fbe">Read</a>(<a class="code" href="class_d_s_g_1_1_delay.html#a039bb7a3a39aff5841b9e808cacc1a6e">_temp</a>)){</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="class_d_s_g_1_1_delay.html#afe853b73a1d7d1e5720277e5d956b209">Perform</a>(<a class="code" href="class_d_s_g_1_1_delay.html#a039bb7a3a39aff5841b9e808cacc1a6e">_temp</a>)) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                        signal.<a class="code" href="class_d_s_g_1_1_ring_buffer.html#aa5dd2caa0a270173251faee40a43d692">Write</a>(<a class="code" href="class_d_s_g_1_1_delay.html#a039bb7a3a39aff5841b9e808cacc1a6e">_temp</a>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                    }<span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                }<span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            }<span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }<span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="ttc" id="class_d_s_g_1_1_ring_buffer_html_a9bd79b0a6dff618b205e396c101ee070"><div class="ttname"><a href="class_d_s_g_1_1_ring_buffer.html#a9bd79b0a6dff618b205e396c101ee070">DSG::RingBuffer::Count</a></div><div class="ttdeci">size_t const &amp; Count() const </div><div class="ttdef"><b>Definition:</b> <a href="_ring_buffer_8h_source.html#l00090">RingBuffer.h:90</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_a039bb7a3a39aff5841b9e808cacc1a6e"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#a039bb7a3a39aff5841b9e808cacc1a6e">DSG::Delay::_temp</a></div><div class="ttdeci">DSG::DSGSample _temp</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00055">Delay.h:55</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_ring_buffer_html_aa5dd2caa0a270173251faee40a43d692"><div class="ttname"><a href="class_d_s_g_1_1_ring_buffer.html#aa5dd2caa0a270173251faee40a43d692">DSG::RingBuffer::Write</a></div><div class="ttdeci">bool Write(const DSGSample &amp;elem)</div><div class="ttdef"><b>Definition:</b> <a href="_ring_buffer_8h_source.html#l00072">RingBuffer.h:72</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_ring_buffer_html_a6b2848a64f15c7b0c320779582fa0fbe"><div class="ttname"><a href="class_d_s_g_1_1_ring_buffer.html#a6b2848a64f15c7b0c320779582fa0fbe">DSG::RingBuffer::Read</a></div><div class="ttdeci">bool Read(DSG::DSGSample &amp;elem)</div><div class="ttdef"><b>Definition:</b> <a href="_ring_buffer_8h_source.html#l00081">RingBuffer.h:81</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_a1d54836950db9724434880d859d1e3ea"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#a1d54836950db9724434880d859d1e3ea">DSG::Delay::count</a></div><div class="ttdeci">unsigned long count</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00049">Delay.h:49</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_ring_buffer_html_ac1346f5842d08b988a5297abe4089b96"><div class="ttname"><a href="class_d_s_g_1_1_ring_buffer.html#ac1346f5842d08b988a5297abe4089b96">DSG::RingBuffer::Empty</a></div><div class="ttdeci">bool Empty() const </div><div class="ttdef"><b>Definition:</b> <a href="_ring_buffer_8h_source.html#l00064">RingBuffer.h:64</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_delay_html_afe853b73a1d7d1e5720277e5d956b209"><div class="ttname"><a href="class_d_s_g_1_1_delay.html#afe853b73a1d7d1e5720277e5d956b209">DSG::Delay::Perform</a></div><div class="ttdeci">virtual bool Perform(DSG::DSGSample &amp;signal)</div><div class="ttdef"><b>Definition:</b> <a href="_delay_8h_source.html#l00064">Delay.h:64</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -404,7 +491,7 @@ template&lt;unsigned long maxLength&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_delay_8h_source.html#l00052">52</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
+<p>Definition at line <a class="el" href="_delay_8h_source.html#l00053">53</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
 
 </div>
 </div>
@@ -428,7 +515,7 @@ template&lt;unsigned long maxLength&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_delay_8h_source.html#l00049">49</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
+<p>Definition at line <a class="el" href="_delay_8h_source.html#l00050">50</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
 
 </div>
 </div>
@@ -452,7 +539,7 @@ template&lt;unsigned long maxLength&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_delay_8h_source.html#l00050">50</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
+<p>Definition at line <a class="el" href="_delay_8h_source.html#l00051">51</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
 
 </div>
 </div>
@@ -476,7 +563,7 @@ template&lt;unsigned long maxLength&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_delay_8h_source.html#l00051">51</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
+<p>Definition at line <a class="el" href="_delay_8h_source.html#l00052">52</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
 
 </div>
 </div>
@@ -500,7 +587,7 @@ template&lt;unsigned long maxLength&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_delay_8h_source.html#l00053">53</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
+<p>Definition at line <a class="el" href="_delay_8h_source.html#l00054">54</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
 
 </div>
 </div>
@@ -524,7 +611,7 @@ template&lt;unsigned long maxLength&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_delay_8h_source.html#l00054">54</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
+<p>Definition at line <a class="el" href="_delay_8h_source.html#l00055">55</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
 
 </div>
 </div>
@@ -548,7 +635,7 @@ template&lt;unsigned long maxLength&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_delay_8h_source.html#l00048">48</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
+<p>Definition at line <a class="el" href="_delay_8h_source.html#l00049">49</a> of file <a class="el" href="_delay_8h_source.html">Delay.h</a>.</p>
 
 </div>
 </div>
@@ -558,7 +645,7 @@ template&lt;unsigned long maxLength&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 28 2014 03:04:07 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 12 2014 21:04:41 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

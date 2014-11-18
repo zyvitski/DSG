@@ -12,7 +12,9 @@ namespace DSG{
 #ifdef DSG_Short_Names
     inline
 #endif
+    //!\brief DSG::Filter - Filters
     namespace Filter{
+        //!\brief DSG::Filter::FilterBase - Filter Base Class, implements interface for cutoff frequency
         class FilterBase:public DSG::SignalProcess{
         public:
             FilterBase();

@@ -21,9 +21,11 @@ namespace DSG {
         static DSG::DSGFrequency _nyquist;
         static unsigned long _bufferSize;
     };
+    //!\brief DSG::SampleRate - Get Global Sample Rate
     inline DSG::DSGFrequency const& SampleRate(){
         return DSG::AudioSettings::SampleRate();
     }
+    //!\brief DSG::SampleRate - Set Global Sample Rate
     inline DSG::DSGFrequency const& SampleRate(DSG::DSGFrequency const& value){
         return DSG::AudioSettings::SampleRate(value);
     }

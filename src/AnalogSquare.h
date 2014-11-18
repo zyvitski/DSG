@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
 #ifndef __DSG__AnalogSquare__
-#define __DSG__AnalogSquare__namespace DSG{
+#define __DSG__AnalogSquare__
 #include "SignalGenerator.h"
 namespace DSG{
 #ifdef DSG_Short_Names

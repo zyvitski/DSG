@@ -14,6 +14,7 @@ namespace DSG{
 #endif
     //!DSG::Fourier - Namespace Containing Fourier Series Based Oscillators
     namespace Fourier{
+        //!\brief DSG::Fourier::FourierTriangle - Fourier Series Triangle Wave Generator
         class FourierTriangle : public DSG::SignalGenerator {
         public:
             FourierTriangle();

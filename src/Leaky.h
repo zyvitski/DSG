@@ -15,6 +15,7 @@ namespace DSG {
     inline
 #endif
     namespace Filter{
+        //!\brief DSG::Filter::LeakyIntegrator - Leaky integrator 
         class LeakyIntegrator:public DSG::Filter::FilterBase{
         public:
             LeakyIntegrator();

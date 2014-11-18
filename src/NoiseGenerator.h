@@ -9,7 +9,7 @@
 #define __DSG__NoiseGenerator__
 #include "SignalGenerator.h"
 namespace DSG{
-    //Stateless Generator is a class used to wrap stateless signal functions like the noise functions which produce an output with no input. This is a helpfull class because it allows us to use stateless functions as generators.
+    //!\brief DSG::NoiseGenerator - Generator that uses noise functions such as DSG::White() to generate signal
     class NoiseGenerator:public SignalProcess{
     public:
         NoiseGenerator(DSGSample (*StatelessFunction)(DSGSample));

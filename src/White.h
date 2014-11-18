@@ -14,6 +14,7 @@ namespace DSG{
     inline
 #endif
     namespace Noise{
+        //!\brief DSG::Noise::White - White Noise Generator Function
         template<typename decimal = DSG::DSGSample>
         inline decimal White(decimal=0.0){
             return DSG::Random<decimal>();

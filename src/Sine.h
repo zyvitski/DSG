@@ -9,9 +9,9 @@
 #define __DSG__Sine__
 #include "LUT.h"
 #include "PI.h"
-#define LUT_SIZE 16384
 namespace DSG {
     namespace{
+            #define LUT_SIZE 16384
         typedef enum Sine_Implementations{
             /*!\brief DSG::Sine_Implementations - Specifies The Implementation Option For DSG::Sin<>()*/
             Sine_Taylor =1,
@@ -23,6 +23,8 @@ namespace DSG {
         template<unsigned implementation> inline double Sin(double const& x){
             return 0;
         }
+        /*!\brief DSG::Sin() - Templated Cos Function With Optional Implementation
+         */
         template<unsigned implementation> inline double Cos(double const& x){
             return 0;
         }
@@ -43,19 +45,23 @@ namespace DSG {
             return 0;
         }
     }
-    /*!\brief DSG::Sin() - General Purpose Sin Function Wraps Templated Version
+    /*!\brief DSG::Sin() - General Purpose Sin Function, double precision
      */
     inline double Sin(double const& x){
         return static_cast<double>(Sin<Sine_Default>(x));//wrap default implementation as non template
     }
+    /*!\brief DSG::Sin() - General Purpose Sin Function, single precision
+     */
     inline float Sin(float const& x){
         return static_cast<float>(Sin<Sine_Default>(x));
     }
-    /*!\brief DSG::Cos() - General Purpose Cos Function Wraps Templated Version
+    /*!\brief DSG::Cos() - General Purpose Cos Function, double precision
      */
     inline double Cos(double const& x){
         return static_cast<double>(Cos<Sine_Default>(x));//wrap default implementation as non template
     }
+    /*!\brief DSG::Cos() - General Purpose Cos Function, single precision
+     */
     inline float Cos(float const& x){
         return static_cast<float>(Cos<Sine_Default>(x));
     }
