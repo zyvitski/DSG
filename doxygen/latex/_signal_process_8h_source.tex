@@ -1,0 +1,30 @@
+\hypertarget{_signal_process_8h_source}{\section{Signal\+Process.\+h}
+\label{_signal_process_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Signal\+Process.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Signal\+Process.\+h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  SignalProcess.h}
+00003 \textcolor{comment}{//  DSG}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/16/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_SignalProcess\_\_}
+00009 \textcolor{preprocessor}{#define \_\_DSG\_\_SignalProcess\_\_}
+00010 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_types_8h}{DSGTypes.h}"}
+00011 \textcolor{preprocessor}{#include "\hyperlink{_ring_buffer_8h}{RingBuffer.h}"}
+00012 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG} \{\textcolor{comment}{}
+00013 \textcolor{comment}{    /*!\(\backslash\)brief DSG::SignalProcess - Defines Base Interface For Audio Processing}
+00014 \textcolor{comment}{     */}
+\hypertarget{_signal_process_8h_source_l00015}{}\hyperlink{class_d_s_g_1_1_signal_process}{00015}     \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_signal_process}{SignalProcess}\{
+00016     \textcolor{keyword}{public}:
+00017         \hyperlink{class_d_s_g_1_1_signal_process_a3fd4347483bcf3cc0a3d7bf98ff56218}{SignalProcess}();
+00018         \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_signal_process_ad9b6a758241a092ddc38e13effc9553f}{~SignalProcess}();
+00019         \textcolor{comment}{//Defines Interface for sample rate processing}
+00020         \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_signal_process_af73d246c460915db7a9be7e3ef36844d}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal)=0;
+00021         \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_signal_process_af73d246c460915db7a9be7e3ef36844d}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal)=0;
+00022     \};
+00023 \}
+00024 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_SignalProcess\_\_) */}\textcolor{preprocessor}{}
+\end{DoxyCode}

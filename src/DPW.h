@@ -17,8 +17,6 @@ namespace DSG{
 #endif
     //!\brief DSG::DPW - Generators using the DPW method
     namespace DPW{
-
-#warning DSG::DPW - differentiators order 3-6 need verification. they cause major clipping
         //!\brief DSG::DPW::DPW_Polynomial - Polynoimal used in DPW Algorithm
         template<unsigned order>
         inline DSG::DSGSample DPW_Polynomial(DSG::DSGSample const& value){
@@ -55,7 +53,8 @@ namespace DSG{
         inline DSG::DSGSample DPW_Polynomial<6>(DSG::DSGSample const& value){
             return DSG::Pow<6>(value) - 5.0 * DSG::Pow<4>(value) + 7.0 * DPW_Polynomial<2>(value);
         }
-#warning DSG::DPW_Differentiator<order> untested
+#warning DSG::DPW - differentiators order 3-6 need verification. they cause major clipping
+        //!\todo Fix DSG::DPW::DPW_Differentiator algorithms for orders 3-6
         //differentiators
         //!\brief DSG::DPW::DPW_Differentiator - Class Performing Differentiation for the DPW Algorithm
         template<unsigned order>

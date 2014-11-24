@@ -1,0 +1,14 @@
+digraph "DSG::Fourier::FourierSaw::Frequency"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DSG::Fourier::FourierSaw\l::Frequency",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="DSG::SampleRate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_d_s_g.html#a72df05177db0412c3590070923f62819",tooltip="DSG::SampleRate - Get Global Sample Rate. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="DSG::AudioSettings\l::SampleRate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_audio_settings.html#a4f459c389b10c11828e2f2f00c012c49"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="DSG::MaxHarms",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_d_s_g.html#ab5c4eea42ea10b69cfc32afb83ff1d0d"];
+  Node4 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+}

@@ -1,0 +1,154 @@
+\hypertarget{class_d_s_g_1_1_noise_generator}{\section{D\+S\+G\+:\+:Noise\+Generator Class Reference}
+\label{class_d_s_g_1_1_noise_generator}\index{D\+S\+G\+::\+Noise\+Generator@{D\+S\+G\+::\+Noise\+Generator}}
+}
+
+
+\hyperlink{class_d_s_g_1_1_noise_generator}{D\+S\+G\+::\+Noise\+Generator} -\/ Generator that uses noise functions such as \hyperlink{namespace_d_s_g_1_1_noise_a0d1c4b4522d2e56b1aa604e45ab92066}{D\+S\+G\+::\+White()} to generate signal.  
+
+
+
+
+{\ttfamily \#include $<$Noise\+Generator.\+h$>$}
+
+Inheritance diagram for D\+S\+G\+:\+:Noise\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_d_s_g_1_1_noise_generator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_s_g_1_1_noise_generator_ac78b8347da0c0593d495d9d054821c34}{Noise\+Generator} (\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{D\+S\+G\+Sample}($\ast$Stateless\+Function)(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{D\+S\+G\+Sample}))
+\item 
+virtual \hyperlink{class_d_s_g_1_1_noise_generator_a964f0af791b5e09e63470bf42ddbce79}{$\sim$\+Noise\+Generator} ()
+\item 
+virtual bool \hyperlink{class_d_s_g_1_1_noise_generator_aa4f8426176cb0d461cbead361288f204}{Perform} (\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{D\+S\+G\+::\+D\+S\+G\+Sample} \&signal)
+\item 
+virtual bool \hyperlink{class_d_s_g_1_1_noise_generator_aee0a20c0a436c02f122a0f78664e99ec}{Perform} (\hyperlink{class_d_s_g_1_1_ring_buffer}{D\+S\+G\+::\+Ring\+Buffer} \&signal)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{D\+S\+G\+Sample}($\ast$ \hyperlink{class_d_s_g_1_1_noise_generator_a3fe30476196e0bfa22e314ce9bbd368b}{\+\_\+function} )(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{D\+S\+G\+Sample})
+\item 
+\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{D\+S\+G\+::\+D\+S\+G\+Sample} \hyperlink{class_d_s_g_1_1_noise_generator_adb363b56bb2f621849fa457d54fc46a6}{\+\_\+storage}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_d_s_g_1_1_noise_generator}{D\+S\+G\+::\+Noise\+Generator} -\/ Generator that uses noise functions such as \hyperlink{namespace_d_s_g_1_1_noise_a0d1c4b4522d2e56b1aa604e45ab92066}{D\+S\+G\+::\+White()} to generate signal. 
+
+Definition at line \hyperlink{_noise_generator_8h_source_l00013}{13} of file \hyperlink{_noise_generator_8h_source}{Noise\+Generator.\+h}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_d_s_g_1_1_noise_generator_ac78b8347da0c0593d495d9d054821c34}{\index{D\+S\+G\+::\+Noise\+Generator@{D\+S\+G\+::\+Noise\+Generator}!Noise\+Generator@{Noise\+Generator}}
+\index{Noise\+Generator@{Noise\+Generator}!D\+S\+G\+::\+Noise\+Generator@{D\+S\+G\+::\+Noise\+Generator}}
+\subsubsection[{Noise\+Generator}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Noise\+Generator\+::\+Noise\+Generator (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+Sample}($\ast$)({\bf D\+S\+G\+Sample})}]{Stateless\+Function}
+\end{DoxyParamCaption}
+)}}\label{class_d_s_g_1_1_noise_generator_ac78b8347da0c0593d495d9d054821c34}
+
+
+Definition at line \hyperlink{_noise_generator_8cpp_source_l00009}{9} of file \hyperlink{_noise_generator_8cpp_source}{Noise\+Generator.\+cpp}.
+
+
+\begin{DoxyCode}
+00009                                                                           :
+      \hyperlink{class_d_s_g_1_1_signal_process}{DSG::SignalProcess}()\{
+00010     \hyperlink{class_d_s_g_1_1_noise_generator_a3fe30476196e0bfa22e314ce9bbd368b}{\_function} = StatelessFunction;
+00011 \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_noise_generator_a964f0af791b5e09e63470bf42ddbce79}{\index{D\+S\+G\+::\+Noise\+Generator@{D\+S\+G\+::\+Noise\+Generator}!````~Noise\+Generator@{$\sim$\+Noise\+Generator}}
+\index{````~Noise\+Generator@{$\sim$\+Noise\+Generator}!D\+S\+G\+::\+Noise\+Generator@{D\+S\+G\+::\+Noise\+Generator}}
+\subsubsection[{$\sim$\+Noise\+Generator}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Noise\+Generator\+::$\sim$\+Noise\+Generator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_s_g_1_1_noise_generator_a964f0af791b5e09e63470bf42ddbce79}
+
+
+Definition at line \hyperlink{_noise_generator_8cpp_source_l00012}{12} of file \hyperlink{_noise_generator_8cpp_source}{Noise\+Generator.\+cpp}.
+
+
+\begin{DoxyCode}
+00012 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_s_g_1_1_noise_generator_aa4f8426176cb0d461cbead361288f204}{\index{D\+S\+G\+::\+Noise\+Generator@{D\+S\+G\+::\+Noise\+Generator}!Perform@{Perform}}
+\index{Perform@{Perform}!D\+S\+G\+::\+Noise\+Generator@{D\+S\+G\+::\+Noise\+Generator}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Noise\+Generator\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+D\+S\+G\+Sample} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_noise_generator_aa4f8426176cb0d461cbead361288f204}
+
+
+Implements \hyperlink{class_d_s_g_1_1_signal_process_af73d246c460915db7a9be7e3ef36844d}{D\+S\+G\+::\+Signal\+Process}.
+
+
+
+Definition at line \hyperlink{_noise_generator_8h_source_l00023}{23} of file \hyperlink{_noise_generator_8h_source}{Noise\+Generator.\+h}.
+
+
+\begin{DoxyCode}
+00023                                                               \{
+00024         signal = \hyperlink{class_d_s_g_1_1_noise_generator_a3fe30476196e0bfa22e314ce9bbd368b}{\_function}(0);
+00025         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00026     \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_noise_generator_aee0a20c0a436c02f122a0f78664e99ec}{\index{D\+S\+G\+::\+Noise\+Generator@{D\+S\+G\+::\+Noise\+Generator}!Perform@{Perform}}
+\index{Perform@{Perform}!D\+S\+G\+::\+Noise\+Generator@{D\+S\+G\+::\+Noise\+Generator}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Noise\+Generator\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+Ring\+Buffer} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_noise_generator_aee0a20c0a436c02f122a0f78664e99ec}
+
+
+Implements \hyperlink{class_d_s_g_1_1_signal_process_a2c8ff3487d9c43f9eace1d9192d4a37e}{D\+S\+G\+::\+Signal\+Process}.
+
+
+
+Definition at line \hyperlink{_noise_generator_8h_source_l00027}{27} of file \hyperlink{_noise_generator_8h_source}{Noise\+Generator.\+h}.
+
+
+\begin{DoxyCode}
+00027                                                                \{
+00028         signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
+00029         \textcolor{keywordflow}{while} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{Full}()) \{
+00030             \textcolor{keywordflow}{if} (\hyperlink{class_d_s_g_1_1_noise_generator_aa4f8426176cb0d461cbead361288f204}{Perform}(\hyperlink{class_d_s_g_1_1_noise_generator_adb363b56bb2f621849fa457d54fc46a6}{\_storage})) \{
+00031                 \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\hyperlink{class_d_s_g_1_1_noise_generator_adb363b56bb2f621849fa457d54fc46a6}{\_storage}))\{
+00032                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00033             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00034         \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00035     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_d_s_g_1_1_noise_generator_a3fe30476196e0bfa22e314ce9bbd368b}{\index{D\+S\+G\+::\+Noise\+Generator@{D\+S\+G\+::\+Noise\+Generator}!\+\_\+function@{\+\_\+function}}
+\index{\+\_\+function@{\+\_\+function}!D\+S\+G\+::\+Noise\+Generator@{D\+S\+G\+::\+Noise\+Generator}}
+\subsubsection[{\+\_\+function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+Sample}($\ast$ D\+S\+G\+::\+Noise\+Generator\+::\+\_\+function)({\bf D\+S\+G\+Sample})\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_noise_generator_a3fe30476196e0bfa22e314ce9bbd368b}
+
+
+Definition at line \hyperlink{_noise_generator_8h_source_l00020}{20} of file \hyperlink{_noise_generator_8h_source}{Noise\+Generator.\+h}.
+
+\hypertarget{class_d_s_g_1_1_noise_generator_adb363b56bb2f621849fa457d54fc46a6}{\index{D\+S\+G\+::\+Noise\+Generator@{D\+S\+G\+::\+Noise\+Generator}!\+\_\+storage@{\+\_\+storage}}
+\index{\+\_\+storage@{\+\_\+storage}!D\+S\+G\+::\+Noise\+Generator@{D\+S\+G\+::\+Noise\+Generator}}
+\subsubsection[{\+\_\+storage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Sample} D\+S\+G\+::\+Noise\+Generator\+::\+\_\+storage\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_noise_generator_adb363b56bb2f621849fa457d54fc46a6}
+
+
+Definition at line \hyperlink{_noise_generator_8h_source_l00021}{21} of file \hyperlink{_noise_generator_8h_source}{Noise\+Generator.\+h}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\hyperlink{_noise_generator_8h}{Noise\+Generator.\+h}\item 
+/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\hyperlink{_noise_generator_8cpp}{Noise\+Generator.\+cpp}\end{DoxyCompactItemize}

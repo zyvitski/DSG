@@ -1,0 +1,22 @@
+\hypertarget{_fourier_triangle_8cpp_source}{\section{Fourier\+Triangle.\+cpp}
+\label{_fourier_triangle_8cpp_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Fourier\+Triangle.\+cpp@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Fourier\+Triangle.\+cpp}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  FourierTriangle.cpp}
+00003 \textcolor{comment}{//  DSG}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/16/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#include "\hyperlink{_fourier_triangle_8h}{FourierTriangle.h}"}
+\hypertarget{_fourier_triangle_8cpp_source_l00009}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a4129c053eddd87256ae39552a06ce329}{00009} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a4129c053eddd87256ae39552a06ce329}{DSG::Fourier::FourierTriangle::FourierTriangle}():
+      \hyperlink{namespace_d_s_g}{DSG}::\hyperlink{class_d_s_g_1_1_signal_generator}{SignalGenerator}(),\_a(8.0/(\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI}*\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI})),phs(0),value(0),i(0)\{\}
+\hypertarget{_fourier_triangle_8cpp_source_l00010}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_abf887c6f5aada92780224511988cb688}{00010} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a4129c053eddd87256ae39552a06ce329}{DSG::Fourier::FourierTriangle::FourierTriangle}(
+      \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& frequency,\hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& offset):
+      \hyperlink{namespace_d_s_g}{DSG}::\hyperlink{class_d_s_g_1_1_signal_generator}{SignalGenerator}(frequency,offset),\_a(8.0/(\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI}*\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI})),phs(0),value(0),i(0)\{
+00011     \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a6fe21fae0d58d6221602e4bd74c30a80}{\_h} = \hyperlink{namespace_d_s_g_ab5c4eea42ea10b69cfc32afb83ff1d0d}{MaxHarms}(\hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\_frequency})+1;
+00012 \}
+\hypertarget{_fourier_triangle_8cpp_source_l00013}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a780bfb898d144200ff2bfb48849b4d24}{00013} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a780bfb898d144200ff2bfb48849b4d24}{DSG::Fourier::FourierTriangle::~FourierTriangle}()\{\}
+\end{DoxyCode}

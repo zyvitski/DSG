@@ -19,6 +19,7 @@ namespace DSG{
     namespace BLIT{
         /*!\brief DSG::BLIT::Blit - Band-Limited Impulse Train Generator
          */
+        //!\todo Re-write DSG::BLIT::Blit algorithm
         class Blit:public DSG::SignalGenerator{
         public:
             Blit();

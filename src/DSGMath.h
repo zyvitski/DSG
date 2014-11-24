@@ -27,14 +27,14 @@ namespace DSG {
     };
     namespace{
         template<class T, unsigned N>
-        struct pow_helper{
-            static constexpr T pow(const T x){
-                return pow_helper<T, N-1>::pow(x) * x;
+        struct power{
+            static constexpr T value(const T x){
+                return power<T, N-1>::value(x) * x;
             }
         };
         template<class T>
-        struct pow_helper<T, 0>{
-            static constexpr T pow(const T x){
+        struct power<T, 0>{
+            static constexpr T value(const T x){
                 return 1;
             }
         };
@@ -42,7 +42,7 @@ namespace DSG {
     //!\brief DSG::Pow - Any type to an integer power, i.e. N ^ I 
     template<unsigned exponent, class T>
     T constexpr Pow(T const base){
-        return pow_helper<T, exponent>::pow(base);
+        return power<T, exponent>::value(base);
     }
 }
 #endif

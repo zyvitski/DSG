@@ -1,0 +1,9 @@
+digraph "DSG::LUT::Size"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DSG::LUT::Size",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DSG::Window::ApplyWindow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_d_s_g_1_1_window.html#ab3ab521b2e0d85dc752ccc42e642b203",tooltip="DSG::Window::ApplyWindow - Apply a window function to a LUT. "];
+}

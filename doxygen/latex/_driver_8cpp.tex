@@ -1,0 +1,162 @@
+\hypertarget{_driver_8cpp}{\section{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Driver.cpp File Reference}
+\label{_driver_8cpp}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Driver.\+cpp@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Driver.\+cpp}}
+}
+{\ttfamily \#include \char`\"{}Driver.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_driver_8cpp_aa362edf6db9662acf6ef958a6db19c35}{Buffer\+Size}~512
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_driver_8cpp_a70105fa3a575041357534257c1bd91a7}{Driver\+Init} (void $\ast$data)
+\item 
+int \hyperlink{_driver_8cpp_a0e985fca408fe471f534ee98a2bd5733}{Driver\+Exit} ()
+\item 
+int \hyperlink{_driver_8cpp_a110986770da2cd49dcf3789f8cc09c28}{Callback} (const void $\ast$input, void $\ast$output, unsigned long frame\+Count, const Pa\+Stream\+Callback\+Time\+Info $\ast$time\+Info, Pa\+Stream\+Callback\+Flags status\+Flags, void $\ast$user\+Data)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Pa\+Stream $\ast$ \hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream}
+\item 
+\hyperlink{class_d_s_g_1_1_ring_buffer}{D\+S\+G\+::\+Ring\+Buffer} \hyperlink{_driver_8cpp_acce4d24812914a6b276156d1a3d3e851}{\+\_\+buffer} (\hyperlink{_driver_8cpp_aa362edf6db9662acf6ef958a6db19c35}{Buffer\+Size})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_driver_8cpp_aa362edf6db9662acf6ef958a6db19c35}{\index{Driver.\+cpp@{Driver.\+cpp}!Buffer\+Size@{Buffer\+Size}}
+\index{Buffer\+Size@{Buffer\+Size}!Driver.\+cpp@{Driver.\+cpp}}
+\subsubsection[{Buffer\+Size}]{\setlength{\rightskip}{0pt plus 5cm}\#define Buffer\+Size~512}}\label{_driver_8cpp_aa362edf6db9662acf6ef958a6db19c35}
+
+
+Definition at line \hyperlink{_driver_8cpp_source_l00010}{10} of file \hyperlink{_driver_8cpp_source}{Driver.\+cpp}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_driver_8cpp_a110986770da2cd49dcf3789f8cc09c28}{\index{Driver.\+cpp@{Driver.\+cpp}!Callback@{Callback}}
+\index{Callback@{Callback}!Driver.\+cpp@{Driver.\+cpp}}
+\subsubsection[{Callback}]{\setlength{\rightskip}{0pt plus 5cm}int Callback (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{input, }
+\item[{void $\ast$}]{output, }
+\item[{unsigned long}]{frame\+Count, }
+\item[{const Pa\+Stream\+Callback\+Time\+Info $\ast$}]{time\+Info, }
+\item[{Pa\+Stream\+Callback\+Flags}]{status\+Flags, }
+\item[{void $\ast$}]{user\+Data}
+\end{DoxyParamCaption}
+)}}\label{_driver_8cpp_a110986770da2cd49dcf3789f8cc09c28}
+
+
+Definition at line \hyperlink{_driver_8cpp_source_l00061}{61} of file \hyperlink{_driver_8cpp_source}{Driver.\+cpp}.
+
+
+\begin{DoxyCode}
+00066                              \{
+00067     \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}* \_out = (\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}*)output;
+00068     \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG:: DSGSample} \_sample;
+00069     \hyperlink{class_d_s_g_1_1_signal_generator}{DSG::SignalGenerator}* \_osc = (\hyperlink{class_d_s_g_1_1_signal_generator}{DSG::SignalGenerator}*)userData;
+00070     \textcolor{keywordflow}{if} (\_out!=\textcolor{keyword}{nullptr}) \{
+00071         \hyperlink{_driver_8cpp_acce4d24812914a6b276156d1a3d3e851}{\_buffer}.\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
+00072         \_osc->\hyperlink{class_d_s_g_1_1_signal_generator_a46fe75a81a242e191c5049d33ddf4155}{Perform}(\hyperlink{_driver_8cpp_acce4d24812914a6b276156d1a3d3e851}{\_buffer});
+00073         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<frameCount; ++i) \{
+00074             \hyperlink{_driver_8cpp_acce4d24812914a6b276156d1a3d3e851}{\_buffer}.\hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{Read}(\_sample);
+00075             *\_out++ = \_sample;
+00076             *\_out++ = \_sample;
+00077         \}
+00078     \}
+00079     \textcolor{keywordflow}{return} 0;
+00080 \}\end{DoxyCode}
+\hypertarget{_driver_8cpp_a0e985fca408fe471f534ee98a2bd5733}{\index{Driver.\+cpp@{Driver.\+cpp}!Driver\+Exit@{Driver\+Exit}}
+\index{Driver\+Exit@{Driver\+Exit}!Driver.\+cpp@{Driver.\+cpp}}
+\subsubsection[{Driver\+Exit}]{\setlength{\rightskip}{0pt plus 5cm}int Driver\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_driver_8cpp_a0e985fca408fe471f534ee98a2bd5733}
+
+
+Definition at line \hyperlink{_driver_8cpp_source_l00038}{38} of file \hyperlink{_driver_8cpp_source}{Driver.\+cpp}.
+
+
+\begin{DoxyCode}
+00038                 \{
+00039     PaError err=0;
+00040     err = Pa\_StopStream(\hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream});
+00041     \textcolor{keywordflow}{if} (err!=paNoError) \{
+00042 \textcolor{preprocessor}{#ifdef DEBUG}
+00043         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+00044 \textcolor{preprocessor}{#endif}
+00045         \textcolor{keywordflow}{return} 1;
+00046     \}
+00047     err = Pa\_CloseStream( \hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream} );
+00048     \textcolor{keywordflow}{if}( err != paNoError )\{
+00049 \textcolor{preprocessor}{#ifdef DEBUG}
+00050         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+00051 \textcolor{preprocessor}{#endif}
+00052     \}
+00053     err = Pa\_Terminate();
+00054     \textcolor{keywordflow}{if}( err != paNoError )\{
+00055 \textcolor{preprocessor}{#ifdef DEBUG}
+00056         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+00057 \textcolor{preprocessor}{#endif}
+00058     \}
+00059     \textcolor{keywordflow}{return} 0;
+00060 \}
+\end{DoxyCode}
+\hypertarget{_driver_8cpp_a70105fa3a575041357534257c1bd91a7}{\index{Driver.\+cpp@{Driver.\+cpp}!Driver\+Init@{Driver\+Init}}
+\index{Driver\+Init@{Driver\+Init}!Driver.\+cpp@{Driver.\+cpp}}
+\subsubsection[{Driver\+Init}]{\setlength{\rightskip}{0pt plus 5cm}int Driver\+Init (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{_driver_8cpp_a70105fa3a575041357534257c1bd91a7}
+
+
+Definition at line \hyperlink{_driver_8cpp_source_l00012}{12} of file \hyperlink{_driver_8cpp_source}{Driver.\+cpp}.
+
+
+\begin{DoxyCode}
+00012                            \{
+00013     PaError err=0;
+00014     
+00015     err=Pa\_Initialize();
+00016     \textcolor{keywordflow}{if} (err!=paNoError) \{
+00017 \textcolor{preprocessor}{#ifdef DEBUG}
+00018         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+00019 \textcolor{preprocessor}{#endif}
+00020         \textcolor{keywordflow}{return} 1;
+00021     \}
+00022     err = Pa\_OpenDefaultStream(&\hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream}, 0, 2, paFloat32,\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}(),
+      \hyperlink{_driver_8cpp_aa362edf6db9662acf6ef958a6db19c35}{BufferSize}, \hyperlink{_driver_8cpp_a110986770da2cd49dcf3789f8cc09c28}{Callback}, data);
+00023     \textcolor{keywordflow}{if} (err!=paNoError) \{
+00024 \textcolor{preprocessor}{#ifdef DEBUG}
+00025         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+00026 \textcolor{preprocessor}{#endif}
+00027         \textcolor{keywordflow}{return} 1;
+00028     \}
+00029     err = Pa\_StartStream(\hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream});
+00030     \textcolor{keywordflow}{if} (err!=paNoError) \{
+00031 \textcolor{preprocessor}{#ifdef DEBUG}
+00032         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+00033 \textcolor{preprocessor}{#endif}
+00034         \textcolor{keywordflow}{return} 1;
+00035     \}
+00036     \textcolor{keywordflow}{return} 0;
+00037 \}
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_driver_8cpp_acce4d24812914a6b276156d1a3d3e851}{\index{Driver.\+cpp@{Driver.\+cpp}!\+\_\+buffer@{\+\_\+buffer}}
+\index{\+\_\+buffer@{\+\_\+buffer}!Driver.\+cpp@{Driver.\+cpp}}
+\subsubsection[{\+\_\+buffer}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+:: Ring\+Buffer \+\_\+buffer({\bf Buffer\+Size})}}\label{_driver_8cpp_acce4d24812914a6b276156d1a3d3e851}
+\hypertarget{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{\index{Driver.\+cpp@{Driver.\+cpp}!stream@{stream}}
+\index{stream@{stream}!Driver.\+cpp@{Driver.\+cpp}}
+\subsubsection[{stream}]{\setlength{\rightskip}{0pt plus 5cm}Pa\+Stream$\ast$ stream}}\label{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}
+
+
+Definition at line \hyperlink{_driver_8cpp_source_l00009}{9} of file \hyperlink{_driver_8cpp_source}{Driver.\+cpp}.
+

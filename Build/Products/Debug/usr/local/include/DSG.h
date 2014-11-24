@@ -11,7 +11,6 @@
 //Example: DSG::Analog::AnalogSaw (Long Name)...DSG::AnalogSaw (Short Name)(only available with this macro enabled
 //!\brief DSG - A Collection of tools for Digital Signal Generation
 namespace DSG {}
-
 #include "AudioSettings.h"
 #include "SignalProcess.h"
 #include "Buffer.h"

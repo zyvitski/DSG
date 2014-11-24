@@ -1,0 +1,47 @@
+\hypertarget{_noise_generator_8h_source}{\section{Noise\+Generator.\+h}
+\label{_noise_generator_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Noise\+Generator.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Noise\+Generator.\+h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  NoiseGenerator.h}
+00003 \textcolor{comment}{//  DSG}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 10/20/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_NoiseGenerator\_\_}
+00009 \textcolor{preprocessor}{#define \_\_DSG\_\_NoiseGenerator\_\_}
+00010 \textcolor{preprocessor}{#include "\hyperlink{_signal_generator_8h}{SignalGenerator.h}"}
+00011 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{\textcolor{comment}{}
+00012 \textcolor{comment}{    //!\(\backslash\)brief DSG::NoiseGenerator - Generator that uses noise functions such as DSG::White() to generate
+       signal}
+\hypertarget{_noise_generator_8h_source_l00013}{}\hyperlink{class_d_s_g_1_1_noise_generator}{00013} \textcolor{comment}{}    \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_noise_generator}{NoiseGenerator}:\textcolor{keyword}{public} \hyperlink{class_d_s_g_1_1_signal_process}{SignalProcess}\{
+00014     \textcolor{keyword}{public}:
+00015         \hyperlink{class_d_s_g_1_1_noise_generator_ac78b8347da0c0593d495d9d054821c34}{NoiseGenerator}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSGSample} (*StatelessFunction)(
+      \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSGSample}));
+00016         \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_noise_generator_a964f0af791b5e09e63470bf42ddbce79}{~NoiseGenerator}();
+00017         \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_noise_generator_aa4f8426176cb0d461cbead361288f204}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal);
+00018         \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_noise_generator_aa4f8426176cb0d461cbead361288f204}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal);
+00019     \textcolor{keyword}{protected}:
+\hypertarget{_noise_generator_8h_source_l00020}{}\hyperlink{class_d_s_g_1_1_noise_generator_a3fe30476196e0bfa22e314ce9bbd368b}{00020}         \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSGSample} (*\hyperlink{class_d_s_g_1_1_noise_generator_a3fe30476196e0bfa22e314ce9bbd368b}{\_function})(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSGSample});
+\hypertarget{_noise_generator_8h_source_l00021}{}\hyperlink{class_d_s_g_1_1_noise_generator_adb363b56bb2f621849fa457d54fc46a6}{00021}         \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_noise_generator_adb363b56bb2f621849fa457d54fc46a6}{\_storage};
+00022     \};
+\hypertarget{_noise_generator_8h_source_l00023}{}\hyperlink{class_d_s_g_1_1_noise_generator_aa4f8426176cb0d461cbead361288f204}{00023}     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_noise_generator_aa4f8426176cb0d461cbead361288f204}{DSG::NoiseGenerator::Perform}(
+      \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal)\{
+00024         signal = \_function(0);
+00025         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00026     \}
+\hypertarget{_noise_generator_8h_source_l00027}{}\hyperlink{class_d_s_g_1_1_noise_generator_aee0a20c0a436c02f122a0f78664e99ec}{00027}     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_noise_generator_aa4f8426176cb0d461cbead361288f204}{DSG::NoiseGenerator::Perform}(
+      \hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal)\{
+00028         signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
+00029         \textcolor{keywordflow}{while} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{Full}()) \{
+00030             \textcolor{keywordflow}{if} (Perform(\_storage)) \{
+00031                 \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\_storage))\{
+00032                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00033             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00034         \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00035     \}
+00036 \}
+00037 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_NoiseGenerator\_\_) */}\textcolor{preprocessor}{}
+\end{DoxyCode}

@@ -1,0 +1,66 @@
+\hypertarget{_d_p_w_saw_8h_source}{\section{D\+P\+W\+Saw.\+h}
+\label{_d_p_w_saw_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+D\+P\+W\+Saw.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+D\+P\+W\+Saw.\+h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  DPWSaw.h}
+00003 \textcolor{comment}{//  DSG}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/27/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_DPWSaw\_\_}
+00009 \textcolor{preprocessor}{#define \_\_DSG\_\_DPWSaw\_\_}
+00010 \textcolor{preprocessor}{#include "\hyperlink{_d_p_w_8h}{DPW.h}"}
+00011 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG} \{
+00012 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
+00013     \textcolor{keyword}{inline}
+00014 \textcolor{preprocessor}{#endif}
+00015     \textcolor{keyword}{namespace }DPW\{\textcolor{comment}{}
+00016 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPWSaw - Sawtooth Generator using the Nth Order DPW algorithm }
+00017 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keywordtype}{unsigned} order>
+\hypertarget{_d_p_w_saw_8h_source_l00018}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw}{00018}         \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw}{DPWSaw}:\textcolor{keyword}{public} \hyperlink{class_d_s_g_1_1_signal_generator}{DSG::SignalGenerator}\{
+00019         \textcolor{keyword}{public}:
+\hypertarget{_d_p_w_saw_8h_source_l00020}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_ae9409342bec9d28c6e3e5235619f0c17}{00020}             \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_ae9409342bec9d28c6e3e5235619f0c17}{DPWSaw}():\hyperlink{namespace_d_s_g}{DSG}::\hyperlink{class_d_s_g_1_1_signal_generator}{SignalGenerator}(),\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register}(0)\{
+00021                 DSG::StaticAssertBounds<1, 6,order>();
+00022             \}
+\hypertarget{_d_p_w_saw_8h_source_l00023}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a750142d70e22ccfb961edc73b13386f6}{00023}             \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a750142d70e22ccfb961edc73b13386f6}{DPWSaw}(\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& frequency,
+      \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& offset):\hyperlink{namespace_d_s_g}{DSG}::\hyperlink{class_d_s_g_1_1_signal_generator}{SignalGenerator}(frequency,offset),
+      \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register}(0)\{DSG::StaticAssertBounds<1, 6,order>();\}
+\hypertarget{_d_p_w_saw_8h_source_l00024}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_afc78ee5a1353dec65adf963a677e95fe}{00024}             \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_afc78ee5a1353dec65adf963a677e95fe}{~DPWSaw}()\{\}
+\hypertarget{_d_p_w_saw_8h_source_l00025}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a8d0bffad58e9bce19fe737302de749ed}{00025}             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a8d0bffad58e9bce19fe737302de749ed}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal)\{
+00026                 \textcolor{comment}{//trivial saw ramping from -1 to 1}
+00027                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register} = \hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor};
+00028                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register}-=0.5;
+00029                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register}*=2.0;
+00030                 \textcolor{comment}{/*-------------------------*/}
+00031                 \textcolor{comment}{//DPW algorithm}
+00032                 \textcolor{comment}{//polynomial shaping}
+00033                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register}=DSG::DPW::DPW\_Polynomial<order>(\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register});
+00034                 \textcolor{comment}{//differentiating}
+00035                 signal = \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_af1ded15ce266aa7bd1594de38bba6890}{\_diff}(\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register},\hyperlink{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{\_dt});
+00036                 \textcolor{comment}{/*-------------------------*/}
+00037                 \textcolor{comment}{//signal = DSG::EnforceBounds<-1, 1>(signal);}
+00038                 \textcolor{comment}{//advance phase}
+00039                 \hyperlink{class_d_s_g_1_1_signal_generator_a4c034c5b9ef3dc7548839288355643d5}{step}();
+00040                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00041             \}
+\hypertarget{_d_p_w_saw_8h_source_l00042}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a03548019c5ec057f5980a4bd99a0d3f0}{00042}             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a03548019c5ec057f5980a4bd99a0d3f0}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal)\{
+00043                 signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
+00044                 \textcolor{keywordflow}{while} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{Full}()) \{
+00045                     \textcolor{keywordflow}{if} (\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a8d0bffad58e9bce19fe737302de749ed}{Perform}(\hyperlink{class_d_s_g_1_1_signal_generator_a28a9b47a1aa0783029f11a19ba0363f2}{\_storage})) \{
+00046                         \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\hyperlink{class_d_s_g_1_1_signal_generator_a28a9b47a1aa0783029f11a19ba0363f2}{\_storage}))\{
+00047                         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00048                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00049                 \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00050             \}
+00051         \textcolor{keyword}{protected}:
+\hypertarget{_d_p_w_saw_8h_source_l00052}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{00052}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register};
+\hypertarget{_d_p_w_saw_8h_source_l00053}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_af1ded15ce266aa7bd1594de38bba6890}{00053}             \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{DSG::DPW::DPW\_Differentiator<order>} 
+      \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_af1ded15ce266aa7bd1594de38bba6890}{\_diff};
+00054         \};
+00055     \}
+00056 \}
+00057 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_DPWSaw\_\_) */}\textcolor{preprocessor}{}
+\end{DoxyCode}

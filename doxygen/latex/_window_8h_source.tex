@@ -1,0 +1,47 @@
+\hypertarget{_window_8h_source}{\section{Window.\+h}
+\label{_window_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Window.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Window.\+h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  Window.h}
+00003 \textcolor{comment}{//  DSG}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 10/17/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#ifndef DSG\_Window\_h}
+00009 \textcolor{preprocessor}{#define DSG\_Window\_h}
+00010 \textcolor{preprocessor}{#include "\hyperlink{_l_u_t_8h}{LUT.h}"}
+00011 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
+00012 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
+00013     \textcolor{keyword}{inline}
+00014 \textcolor{preprocessor}{#endif}
+00015 \textcolor{comment}{    //!\(\backslash\)brief DSG::Window - Window functions and utilities}
+00016 \textcolor{comment}{}    \textcolor{keyword}{namespace }Window\{\textcolor{comment}{}
+00017 \textcolor{comment}{        //!\(\backslash\)brief DSG::Window::ApplyWindow - Apply a window function to a LUT}
+00018 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal,\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} lutsize>
+\hypertarget{_window_8h_source_l00019}{}\hyperlink{namespace_d_s_g_1_1_window_ab3ab521b2e0d85dc752ccc42e642b203}{00019}         \textcolor{keywordtype}{void} \hyperlink{namespace_d_s_g_1_1_window_ab3ab521b2e0d85dc752ccc42e642b203}{ApplyWindow}(\hyperlink{class_d_s_g_1_1_l_u_t}{DSG::LUT<decimal,lutsize>}& lut,decimal (&
+      windowFunction)(decimal \textcolor{keyword}{const}&),decimal range = 1.0)\{
+00020             decimal step = range/(decimal)lut.\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}();
+00021             decimal phs=0;
+00022             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<lut.\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}(); ++i) \{
+00023                 lut[i]*=windowFunction(phs);
+00024                 phs+=step;
+00025             \}
+00026         \}\textcolor{comment}{}
+00027 \textcolor{comment}{        //!\(\backslash\)brief DSG::Window::ApplyWindow - Apply a window function to a LUT}
+00028 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal,\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} lutsize>
+\hypertarget{_window_8h_source_l00029}{}\hyperlink{namespace_d_s_g_1_1_window_a5e559a3fa00e81c4210043fea59d8dae}{00029}         \textcolor{keywordtype}{void} \hyperlink{namespace_d_s_g_1_1_window_ab3ab521b2e0d85dc752ccc42e642b203}{ApplyWindow}(\hyperlink{class_d_s_g_1_1_l_u_t}{DSG::LUT<decimal,lutsize>}& lut,decimal (&
+      windowFunction)(decimal),decimal range = 1.0)\{
+00030             decimal step = range/(decimal)lut.\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}();
+00031             decimal phs=0;
+00032             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<lut.\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}(); ++i) \{
+00033                 lut[i]*=windowFunction(phs);
+00034                 phs+=step;
+00035             \}
+00036         \}
+00037     \}
+00038 \}
+00039 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

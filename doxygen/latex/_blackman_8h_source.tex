@@ -1,0 +1,44 @@
+\hypertarget{_blackman_8h_source}{\section{Blackman.\+h}
+\label{_blackman_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Blackman.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Blackman.\+h}}
+}
+
+\begin{DoxyCode}
+00001     \textcolor{comment}{//}
+00002 \textcolor{comment}{//  Blackman.h}
+00003 \textcolor{comment}{//  DSG}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/24/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#ifndef DSG\_Blackman\_h}
+00009 \textcolor{preprocessor}{#define DSG\_Blackman\_h}
+00010 \textcolor{preprocessor}{#include "\hyperlink{_p_i_8h}{PI.h}"}
+00011 \textcolor{preprocessor}{#include "\hyperlink{_l_u_t_8h}{LUT.h}"}
+00012 \textcolor{preprocessor}{#include "\hyperlink{_sine_8h}{Sine.h}"}
+00013 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG} \{
+00014 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
+00015     \textcolor{keyword}{inline}
+00016 \textcolor{preprocessor}{#endif}
+\hypertarget{_blackman_8h_source_l00017}{}\hyperlink{namespace_d_s_g_1_1_window}{00017}     \textcolor{keyword}{namespace }Window\{\textcolor{comment}{}
+00018 \textcolor{comment}{        //!\(\backslash\)brief DSG::Window::Blackman - Blackman Window Function}
+00019 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal>
+\hypertarget{_blackman_8h_source_l00020}{}\hyperlink{namespace_d_s_g_1_1_window_a0800636ec7008aa75ff987feef5aafdf}{00020}         \textcolor{keyword}{inline} decimal \hyperlink{namespace_d_s_g_1_1_window_a0800636ec7008aa75ff987feef5aafdf}{Blackman}(decimal \textcolor{keyword}{const}& x)\{
+00021             \textcolor{comment}{// Generate Blackman Window}
+00022             \textcolor{comment}{/*}
+00023 \textcolor{comment}{             Blackman(x) = 0.42f - (0.5f * cos(2pi*x)) + (0.08f * cos(2pi*2.0*x));}
+00024 \textcolor{comment}{             \}*/}
+00025             static\_assert(std::is\_floating\_point<decimal>::value==\textcolor{keyword}{true},\textcolor{stringliteral}{"DSG::Blackman Function Requires
+       Floating Point Type"});
+00026             \textcolor{comment}{//we will implement the blackman window as a function as if it were sin(x)}
+00027             \textcolor{comment}{//cos input domain 0-1 not 0-2pi}
+00028             \textcolor{comment}{//range checking is handles within DSG::Cos}
+00029             decimal phs=x;
+00030             \textcolor{keywordflow}{while} (phs>1.0) \{
+00031                 phs-=1.0;
+00032             \}
+00033             \textcolor{keywordflow}{return} 0.42 - (0.5 * \hyperlink{namespace_d_s_g_ade303ad15c77f534429305c3cbd90191}{DSG::Cos}(phs))+(0.08 * \hyperlink{namespace_d_s_g_ade303ad15c77f534429305c3cbd90191}{DSG::Cos}(2.0*phs));
+00034         \}
+00035     \}
+00036 \}
+00037 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

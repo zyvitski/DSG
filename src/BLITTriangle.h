@@ -10,5 +10,15 @@
 #define __DSG__BLITTriangle__
 
 #include "SignalGenerator.h"
+namespace DSG {
+#ifdef DSG_Short_Names
+    inline
+#endif
+    namespace BLIT{
+        //!\todo Write DSG::BLIT::BlitTriangle algorithm
+        class BlitTriangle:public DSG::SignalGenerator{
 
+        };
+    }
+}
 #endif /* defined(__DSG__BLITTriangle__) */

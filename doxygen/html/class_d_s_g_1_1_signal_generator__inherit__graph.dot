@@ -1,0 +1,37 @@
+digraph "DSG::SignalGenerator"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DSG::SignalGenerator",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DSG::SignalProcess",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_signal_process.html",tooltip="DSG::SignalProcess - Defines Base Interface For Audio Processing. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="DSG::Analog::AnalogSaw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_analog_1_1_analog_saw.html",tooltip="DSG::Analog::AnalogSaw - Analog Syle Saw Wave Generator. "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="DSG::Analog::AnalogSquare",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_analog_1_1_analog_square.html",tooltip="DSG::Analog::AnalogSquare - Analog Syle Square Wave Generator. "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="DSG::Analog::AnalogTriangle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_analog_1_1_analog_triangle.html",tooltip="DSG::Analog::AnalogTriangle - Analog Syle Triangle Wave Generator. "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="DSG::BLIT::Blit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_b_l_i_t_1_1_blit.html",tooltip="DSG::BLIT::Blit - Band-Limited Impulse Train Generator. "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="DSG::BLIT::BlitSaw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_b_l_i_t_1_1_blit_saw.html",tooltip="DSG::BLIT::BlitSaw - Saw Wave Generator Based on BLIT Algorithm. "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="DSG::BLIT::BlitSquare",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_b_l_i_t_1_1_blit_square.html"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="DSG::BLIT::BlitTriangle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_b_l_i_t_1_1_blit_triangle.html"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="DSG::DPW::DPWSaw\< order \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw.html",tooltip="DSG::DPW::DPWSaw - Sawtooth Generator using the Nth Order DPW algorithm. "];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="DSG::EPTR::EPTRSaw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html",tooltip="DSG::EPTR::EPTRSaw-Sawtooth Wave Generator Using The Efficienct Polynomial Transfer Region Algorithm..."];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="DSG::Fourier::FourierSaw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_fourier_1_1_fourier_saw.html",tooltip="DSG::Fourier::FourierSaw - Fourier Series Sawtooth Wave Generator. "];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="DSG::Fourier::FourierSeries\lGenerator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_fourier_1_1_fourier_series_generator.html",tooltip="DSG::Fourier::FourierSeriesGenerator - Generates a wave form using a user specified Fourier Series..."];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="DSG::Fourier::FourierSquare",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_fourier_1_1_fourier_square.html",tooltip="DSG::Fourier::FourierSquare - Fourier Series Square Wave Generator. "];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="DSG::Fourier::FourierTriangle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_fourier_1_1_fourier_triangle.html",tooltip="DSG::Fourier::FourierTriangle - Fourier Series Triangle Wave Generator. "];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="DSG::GenericGenerator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_generic_generator.html",tooltip="DSG::GenericGenerator - Generator designed to use a stateless generator function such as DSG::Sin() ..."];
+}

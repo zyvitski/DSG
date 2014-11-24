@@ -1,0 +1,30 @@
+\hypertarget{_white_8h_source}{\section{White.\+h}
+\label{_white_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+White.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+White.\+h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  White.h}
+00003 \textcolor{comment}{//  DSG}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 10/14/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#ifndef DSG\_White\_h}
+00009 \textcolor{preprocessor}{#define DSG\_White\_h}
+00010 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_types_8h}{DSGTypes.h}"}
+00011 \textcolor{preprocessor}{#include "\hyperlink{_random_8h}{Random.h}"}
+00012 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
+00013 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
+00014     \textcolor{keyword}{inline}
+00015 \textcolor{preprocessor}{#endif}
+00016     \textcolor{keyword}{namespace }Noise\{\textcolor{comment}{}
+00017 \textcolor{comment}{        //!\(\backslash\)brief DSG::Noise::White - White Noise Generator Function}
+00018 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal = DSG::DSGSample>
+\hypertarget{_white_8h_source_l00019}{}\hyperlink{namespace_d_s_g_1_1_noise_a0d1c4b4522d2e56b1aa604e45ab92066}{00019}         \textcolor{keyword}{inline} decimal \hyperlink{namespace_d_s_g_1_1_noise_a0d1c4b4522d2e56b1aa604e45ab92066}{White}(decimal=0.0)\{
+00020             \textcolor{keywordflow}{return} DSG::Random<decimal>();
+00021         \}
+00022     \}
+00023 \}
+00024 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

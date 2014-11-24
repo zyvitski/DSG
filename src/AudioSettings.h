@@ -19,7 +19,6 @@ namespace DSG {
     protected:
         static DSG::DSGFrequency _sampleRate;
         static DSG::DSGFrequency _nyquist;
-        static unsigned long _bufferSize;
     };
     //!\brief DSG::SampleRate - Get Global Sample Rate
     inline DSG::DSGFrequency const& SampleRate(){

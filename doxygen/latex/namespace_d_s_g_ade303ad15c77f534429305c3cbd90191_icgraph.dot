@@ -1,0 +1,13 @@
+digraph "DSG::Cos"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DSG::Cos",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="DSG::Window::Blackman",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_d_s_g_1_1_window.html#a0800636ec7008aa75ff987feef5aafdf",tooltip="DSG::Window::Blackman - Blackman Window Function. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="DSG::Noise::Gaussian",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_d_s_g_1_1_noise.html#a87c4bcd92a902d32df1d7f1d5acffcd4",tooltip="DSG::Noise::Gaussian - Gaussian Noise Generator Function. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="DSG::Noise::Pink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_d_s_g_1_1_noise.html#a9f0bab677a7602a8e0d40e040de8c8b2",tooltip="DSG::Noise::Pink - Pink Noise Generator Function. "];
+}

@@ -1,0 +1,115 @@
+\hypertarget{namespace_d_s_g_1_1_window}{\section{D\+S\+G\+:\+:Window Namespace Reference}
+\label{namespace_d_s_g_1_1_window}\index{D\+S\+G\+::\+Window@{D\+S\+G\+::\+Window}}
+}
+
+
+\hyperlink{namespace_d_s_g_1_1_window}{D\+S\+G\+::\+Window} -\/ \hyperlink{namespace_d_s_g_1_1_window}{Window} functions and utilities.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename decimal $>$ }\\decimal \hyperlink{namespace_d_s_g_1_1_window_a0800636ec7008aa75ff987feef5aafdf}{Blackman} (decimal const \&x)
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_1_1_window_a0800636ec7008aa75ff987feef5aafdf}{D\+S\+G\+::\+Window\+::\+Blackman} -\/ Blackman \hyperlink{namespace_d_s_g_1_1_window}{Window} Function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename decimal , unsigned long lutsize$>$ }\\void \hyperlink{namespace_d_s_g_1_1_window_ab3ab521b2e0d85dc752ccc42e642b203}{Apply\+Window} (\hyperlink{class_d_s_g_1_1_l_u_t}{D\+S\+G\+::\+L\+U\+T}$<$ decimal, lutsize $>$ \&lut, decimal(\&window\+Function)(decimal const \&), decimal range=1.\+0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_1_1_window_ab3ab521b2e0d85dc752ccc42e642b203}{D\+S\+G\+::\+Window\+::\+Apply\+Window} -\/ Apply a window function to a \hyperlink{class_d_s_g_1_1_l_u_t}{L\+U\+T}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename decimal , unsigned long lutsize$>$ }\\void \hyperlink{namespace_d_s_g_1_1_window_a5e559a3fa00e81c4210043fea59d8dae}{Apply\+Window} (\hyperlink{class_d_s_g_1_1_l_u_t}{D\+S\+G\+::\+L\+U\+T}$<$ decimal, lutsize $>$ \&lut, decimal(\&window\+Function)(decimal), decimal range=1.\+0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_1_1_window_ab3ab521b2e0d85dc752ccc42e642b203}{D\+S\+G\+::\+Window\+::\+Apply\+Window} -\/ Apply a window function to a \hyperlink{class_d_s_g_1_1_l_u_t}{L\+U\+T}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{namespace_d_s_g_1_1_window}{D\+S\+G\+::\+Window} -\/ \hyperlink{namespace_d_s_g_1_1_window}{Window} functions and utilities. 
+
+\subsection{Function Documentation}
+\hypertarget{namespace_d_s_g_1_1_window_ab3ab521b2e0d85dc752ccc42e642b203}{\index{D\+S\+G\+::\+Window@{D\+S\+G\+::\+Window}!Apply\+Window@{Apply\+Window}}
+\index{Apply\+Window@{Apply\+Window}!D\+S\+G\+::\+Window@{D\+S\+G\+::\+Window}}
+\subsubsection[{Apply\+Window}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename decimal , unsigned long lutsize$>$ void D\+S\+G\+::\+Window\+::\+Apply\+Window (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+L\+U\+T}$<$ decimal, lutsize $>$ \&}]{lut, }
+\item[{decimal(\&)(decimal const \&)}]{window\+Function, }
+\item[{decimal}]{range = {\ttfamily 1.0}}
+\end{DoxyParamCaption}
+)}}\label{namespace_d_s_g_1_1_window_ab3ab521b2e0d85dc752ccc42e642b203}
+
+
+\hyperlink{namespace_d_s_g_1_1_window_ab3ab521b2e0d85dc752ccc42e642b203}{D\+S\+G\+::\+Window\+::\+Apply\+Window} -\/ Apply a window function to a \hyperlink{class_d_s_g_1_1_l_u_t}{L\+U\+T}. 
+
+
+
+Definition at line \hyperlink{_window_8h_source_l00019}{19} of file \hyperlink{_window_8h_source}{Window.\+h}.
+
+
+\begin{DoxyCode}
+00019                                                                                                            
+               \{
+00020             decimal step = range/(decimal)lut.\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}();
+00021             decimal phs=0;
+00022             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<lut.\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}(); ++i) \{
+00023                 lut[i]*=windowFunction(phs);
+00024                 phs+=step;
+00025             \}
+00026         \}
+\end{DoxyCode}
+\hypertarget{namespace_d_s_g_1_1_window_a5e559a3fa00e81c4210043fea59d8dae}{\index{D\+S\+G\+::\+Window@{D\+S\+G\+::\+Window}!Apply\+Window@{Apply\+Window}}
+\index{Apply\+Window@{Apply\+Window}!D\+S\+G\+::\+Window@{D\+S\+G\+::\+Window}}
+\subsubsection[{Apply\+Window}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename decimal , unsigned long lutsize$>$ void D\+S\+G\+::\+Window\+::\+Apply\+Window (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+L\+U\+T}$<$ decimal, lutsize $>$ \&}]{lut, }
+\item[{decimal(\&)(decimal)}]{window\+Function, }
+\item[{decimal}]{range = {\ttfamily 1.0}}
+\end{DoxyParamCaption}
+)}}\label{namespace_d_s_g_1_1_window_a5e559a3fa00e81c4210043fea59d8dae}
+
+
+\hyperlink{namespace_d_s_g_1_1_window_ab3ab521b2e0d85dc752ccc42e642b203}{D\+S\+G\+::\+Window\+::\+Apply\+Window} -\/ Apply a window function to a \hyperlink{class_d_s_g_1_1_l_u_t}{L\+U\+T}. 
+
+
+
+Definition at line \hyperlink{_window_8h_source_l00029}{29} of file \hyperlink{_window_8h_source}{Window.\+h}.
+
+
+\begin{DoxyCode}
+00029                                                                                                            
+        \{
+00030             decimal step = range/(decimal)lut.\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}();
+00031             decimal phs=0;
+00032             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<lut.\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}(); ++i) \{
+00033                 lut[i]*=windowFunction(phs);
+00034                 phs+=step;
+00035             \}
+00036         \}
+\end{DoxyCode}
+\hypertarget{namespace_d_s_g_1_1_window_a0800636ec7008aa75ff987feef5aafdf}{\index{D\+S\+G\+::\+Window@{D\+S\+G\+::\+Window}!Blackman@{Blackman}}
+\index{Blackman@{Blackman}!D\+S\+G\+::\+Window@{D\+S\+G\+::\+Window}}
+\subsubsection[{Blackman}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename decimal $>$ decimal D\+S\+G\+::\+Window\+::\+Blackman (
+\begin{DoxyParamCaption}
+\item[{decimal const \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespace_d_s_g_1_1_window_a0800636ec7008aa75ff987feef5aafdf}
+
+
+\hyperlink{namespace_d_s_g_1_1_window_a0800636ec7008aa75ff987feef5aafdf}{D\+S\+G\+::\+Window\+::\+Blackman} -\/ Blackman \hyperlink{namespace_d_s_g_1_1_window}{Window} Function. 
+
+
+
+Definition at line \hyperlink{_blackman_8h_source_l00020}{20} of file \hyperlink{_blackman_8h_source}{Blackman.\+h}.
+
+
+\begin{DoxyCode}
+00020                                                  \{
+00021             \textcolor{comment}{// Generate Blackman Window}
+00022             \textcolor{comment}{/*}
+00023 \textcolor{comment}{             Blackman(x) = 0.42f - (0.5f * cos(2pi*x)) + (0.08f * cos(2pi*2.0*x));}
+00024 \textcolor{comment}{             \}*/}
+00025             static\_assert(std::is\_floating\_point<decimal>::value==\textcolor{keyword}{true},\textcolor{stringliteral}{"DSG::Blackman Function Requires
+       Floating Point Type"});
+00026             \textcolor{comment}{//we will implement the blackman window as a function as if it were sin(x)}
+00027             \textcolor{comment}{//cos input domain 0-1 not 0-2pi}
+00028             \textcolor{comment}{//range checking is handles within DSG::Cos}
+00029             decimal phs=x;
+00030             \textcolor{keywordflow}{while} (phs>1.0) \{
+00031                 phs-=1.0;
+00032             \}
+00033             \textcolor{keywordflow}{return} 0.42 - (0.5 * \hyperlink{namespace_d_s_g_ade303ad15c77f534429305c3cbd90191}{DSG::Cos}(phs))+(0.08 * \hyperlink{namespace_d_s_g_ade303ad15c77f534429305c3cbd90191}{DSG::Cos}(2.0*phs));
+00034         \}
+\end{DoxyCode}

@@ -1,0 +1,87 @@
+\hypertarget{_driver_8cpp_source}{\section{Driver.\+cpp}
+\label{_driver_8cpp_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Driver.\+cpp@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Driver.\+cpp}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  Driver.cpp}
+00003 \textcolor{comment}{//  Waveform}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 8/25/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#include "\hyperlink{_driver_8h}{Driver.h}"}
+\hypertarget{_driver_8cpp_source_l00009}{}\hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{00009} PaStream* \hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream};
+\hypertarget{_driver_8cpp_source_l00010}{}\hyperlink{_driver_8cpp_aa362edf6db9662acf6ef958a6db19c35}{00010} \textcolor{preprocessor}{#define BufferSize 512}
+00011 \hyperlink{class_d_s_g_1_1_ring_buffer}{DSG:: RingBuffer} \hyperlink{_driver_8cpp_acce4d24812914a6b276156d1a3d3e851}{\_buffer}(\hyperlink{_driver_8cpp_aa362edf6db9662acf6ef958a6db19c35}{BufferSize});
+\hypertarget{_driver_8cpp_source_l00012}{}\hyperlink{_driver_8h_a70105fa3a575041357534257c1bd91a7}{00012} \textcolor{keywordtype}{int} \hyperlink{_driver_8cpp_a70105fa3a575041357534257c1bd91a7}{DriverInit}(\textcolor{keywordtype}{void} * data)\{
+00013     PaError err=0;
+00014     
+00015     err=Pa\_Initialize();
+00016     \textcolor{keywordflow}{if} (err!=paNoError) \{
+00017 \textcolor{preprocessor}{#ifdef DEBUG}
+00018         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+00019 \textcolor{preprocessor}{#endif}
+00020         \textcolor{keywordflow}{return} 1;
+00021     \}
+00022     err = Pa\_OpenDefaultStream(&\hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream}, 0, 2, paFloat32,\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}(),
+      \hyperlink{_driver_8cpp_aa362edf6db9662acf6ef958a6db19c35}{BufferSize}, \hyperlink{_driver_8cpp_a110986770da2cd49dcf3789f8cc09c28}{Callback}, data);
+00023     \textcolor{keywordflow}{if} (err!=paNoError) \{
+00024 \textcolor{preprocessor}{#ifdef DEBUG}
+00025         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+00026 \textcolor{preprocessor}{#endif}
+00027         \textcolor{keywordflow}{return} 1;
+00028     \}
+00029     err = Pa\_StartStream(\hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream});
+00030     \textcolor{keywordflow}{if} (err!=paNoError) \{
+00031 \textcolor{preprocessor}{#ifdef DEBUG}
+00032         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+00033 \textcolor{preprocessor}{#endif}
+00034         \textcolor{keywordflow}{return} 1;
+00035     \}
+00036     \textcolor{keywordflow}{return} 0;
+00037 \}
+\hypertarget{_driver_8cpp_source_l00038}{}\hyperlink{_driver_8h_a0e985fca408fe471f534ee98a2bd5733}{00038} \textcolor{keywordtype}{int} \hyperlink{_driver_8cpp_a0e985fca408fe471f534ee98a2bd5733}{DriverExit}()\{
+00039     PaError err=0;
+00040     err = Pa\_StopStream(\hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream});
+00041     \textcolor{keywordflow}{if} (err!=paNoError) \{
+00042 \textcolor{preprocessor}{#ifdef DEBUG}
+00043         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+00044 \textcolor{preprocessor}{#endif}
+00045         \textcolor{keywordflow}{return} 1;
+00046     \}
+00047     err = Pa\_CloseStream( \hyperlink{_driver_8cpp_aa2fbdaf8db29dee4b723a45b890cd92a}{stream} );
+00048     \textcolor{keywordflow}{if}( err != paNoError )\{
+00049 \textcolor{preprocessor}{#ifdef DEBUG}
+00050         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+00051 \textcolor{preprocessor}{#endif}
+00052     \}
+00053     err = Pa\_Terminate();
+00054     \textcolor{keywordflow}{if}( err != paNoError )\{
+00055 \textcolor{preprocessor}{#ifdef DEBUG}
+00056         printf(  \textcolor{stringliteral}{"PortAudio error: %s\(\backslash\)n"}, Pa\_GetErrorText( err ) );
+00057 \textcolor{preprocessor}{#endif}
+00058     \}
+00059     \textcolor{keywordflow}{return} 0;
+00060 \}
+\hypertarget{_driver_8cpp_source_l00061}{}\hyperlink{_driver_8h_a110986770da2cd49dcf3789f8cc09c28}{00061} \textcolor{keywordtype}{int} \hyperlink{_driver_8cpp_a110986770da2cd49dcf3789f8cc09c28}{Callback}(\textcolor{keyword}{const} \textcolor{keywordtype}{void} *input,
+00062              \textcolor{keywordtype}{void} *output,
+00063              \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} frameCount,
+00064              \textcolor{keyword}{const} PaStreamCallbackTimeInfo* timeInfo,
+00065              PaStreamCallbackFlags statusFlags,
+00066              \textcolor{keywordtype}{void} *userData) \{
+00067     \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}* \_out = (\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}*)output;
+00068     \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG:: DSGSample} \_sample;
+00069     \hyperlink{class_d_s_g_1_1_signal_generator}{DSG::SignalGenerator}* \_osc = (\hyperlink{class_d_s_g_1_1_signal_generator}{DSG::SignalGenerator}*)userData;
+00070     \textcolor{keywordflow}{if} (\_out!=\textcolor{keyword}{nullptr}) \{
+00071         \hyperlink{_driver_8cpp_acce4d24812914a6b276156d1a3d3e851}{\_buffer}.\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
+00072         \_osc->\hyperlink{class_d_s_g_1_1_signal_generator_a46fe75a81a242e191c5049d33ddf4155}{Perform}(\hyperlink{_driver_8cpp_acce4d24812914a6b276156d1a3d3e851}{\_buffer});
+00073         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<frameCount; ++i) \{
+00074             \hyperlink{_driver_8cpp_acce4d24812914a6b276156d1a3d3e851}{\_buffer}.\hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{Read}(\_sample);
+00075             *\_out++ = \_sample;
+00076             *\_out++ = \_sample;
+00077         \}
+00078     \}
+00079     \textcolor{keywordflow}{return} 0;
+00080 \}
+\end{DoxyCode}

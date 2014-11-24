@@ -14,6 +14,7 @@ namespace DSG{
     inline
 #endif
     namespace Fourier{
+        //!\brief DSG::Fourier::Harmonic - Represents a single harmonic in a Fourier Series.
         class Harmonic{
         public:
             Harmonic();
@@ -27,6 +28,7 @@ namespace DSG{
             DSG::DSGSample _ratio;
             DSG::DSGSample _amplitude;
         };
+        //!\brief DSG::Fourier::FourierSeriesGenerator - Generates a wave form using a user specified Fourier Series
         class FourierSeriesGenerator: public DSG::SignalGenerator{
         public:
             typedef std::vector<Harmonic> FourierSeries;

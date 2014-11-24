@@ -1,0 +1,73 @@
+\hypertarget{_fourier_saw_8h_source}{\section{Fourier\+Saw.\+h}
+\label{_fourier_saw_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Fourier\+Saw.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Fourier\+Saw.\+h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  FourierSaw.h}
+00003 \textcolor{comment}{//  DSG}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/16/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_FourierSaw\_\_}
+00009 \textcolor{preprocessor}{#define \_\_DSG\_\_FourierSaw\_\_}
+00010 \textcolor{preprocessor}{#include "\hyperlink{_signal_generator_8h}{SignalGenerator.h}"}
+00011 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
+00012 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
+00013     \textcolor{keyword}{inline}
+00014 \textcolor{preprocessor}{#endif}
+00015 \textcolor{comment}{    //!DSG::Fourier - Namespace Containing Fourier Series Based Oscillators}
+\hypertarget{_fourier_saw_8h_source_l00016}{}\hyperlink{namespace_d_s_g_1_1_fourier}{00016} \textcolor{comment}{}    \textcolor{keyword}{namespace }Fourier\{\textcolor{comment}{}
+00017 \textcolor{comment}{        //!\(\backslash\)brief DSG::Fourier::FourierSaw - Fourier Series Sawtooth Wave Generator}
+\hypertarget{_fourier_saw_8h_source_l00018}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw}{00018} \textcolor{comment}{}        \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw}{FourierSaw} : \textcolor{keyword}{public} \hyperlink{class_d_s_g_1_1_signal_generator}{DSG::SignalGenerator} \{
+00019         \textcolor{keyword}{public}:
+00020             \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_acfef03c4384ef656110c51102e346c49}{FourierSaw}();
+00021             \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_acfef03c4384ef656110c51102e346c49}{FourierSaw}(\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& frequency,
+      \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& offset);
+00022             \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_acd28c4942553271ed9f39e8f05b8db6d}{~FourierSaw}();
+00023             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_a33061612ff24180f12e9a2c29dfaa116}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal);
+00024             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_a33061612ff24180f12e9a2c29dfaa116}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal);
+00025             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{Frequency}(
+      \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_a97d69a0c03cfb66b1cf6e13fe7073c12}{value});
+00026         \textcolor{keyword}{protected}:
+\hypertarget{_fourier_saw_8h_source_l00027}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_a78d30240b7eb99fcb249b5aafe3d55b2}{00027}             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_a78d30240b7eb99fcb249b5aafe3d55b2}{\_h};
+\hypertarget{_fourier_saw_8h_source_l00028}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_a54895160b61b8d84dc967e7815d07869}{00028}             \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_a54895160b61b8d84dc967e7815d07869}{\_a};
+\hypertarget{_fourier_saw_8h_source_l00029}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_a5df3e5b00224924e106ffdc1d0b6a3cc}{00029}             \textcolor{keywordtype}{double} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_a5df3e5b00224924e106ffdc1d0b6a3cc}{phs};
+\hypertarget{_fourier_saw_8h_source_l00030}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_a97d69a0c03cfb66b1cf6e13fe7073c12}{00030}             \textcolor{keywordtype}{double} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_a97d69a0c03cfb66b1cf6e13fe7073c12}{value};
+\hypertarget{_fourier_saw_8h_source_l00031}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_a261b19d0082558b6e1bb128d267c400d}{00031}             \textcolor{keywordtype}{int} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_a261b19d0082558b6e1bb128d267c400d}{i};
+00032         \};
+\hypertarget{_fourier_saw_8h_source_l00033}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_a33061612ff24180f12e9a2c29dfaa116}{00033}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_a33061612ff24180f12e9a2c29dfaa116}{DSG::Fourier::FourierSaw::Perform}(
+      \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal)\{
+00034             \textcolor{comment}{//\_h Sine Calls Per Sample where \_h  is theoretically nyquist / frequency}
+00035             value=\hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{DSG::Sin}(\_phasor);
+00036             \textcolor{keywordflow}{for} (i=2; i<\_h; ++i) \{
+00037                 value += (1.0/i) * \hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{DSG::Sin}(\_phasor*i);
+00038             \}
+00039             value*=\_a;
+00040             signal = value;
+00041             step();
+00042             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00043         \}
+\hypertarget{_fourier_saw_8h_source_l00044}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_ac890d9f0af523b63b96b07e6696a32b7}{00044}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_a33061612ff24180f12e9a2c29dfaa116}{DSG::Fourier::FourierSaw::Perform}(
+      \hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal)\{
+00045             signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
+00046             \textcolor{keywordflow}{while} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{Full}()) \{
+00047                 \textcolor{keywordflow}{if} (Perform(\_storage)) \{
+00048                     \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\_storage))\{
+00049                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00050                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00051             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00052         \}
+\hypertarget{_fourier_saw_8h_source_l00053}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_afa3d86f404be3665f10c74fe9286ef10}{00053}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& 
+      \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{DSG::Fourier::FourierSaw::Frequency}(
+      \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& value)\{
+00054             \_frequency = value;
+00055             \_dt = \_frequency/\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}();
+00056             \_h = \hyperlink{namespace_d_s_g_ab5c4eea42ea10b69cfc32afb83ff1d0d}{MaxHarms}(\_frequency);
+00057             \textcolor{keywordflow}{return} \_frequency;
+00058         \}
+00059     \}
+00060 \}
+00061 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_FourierSaw\_\_) */}\textcolor{preprocessor}{}
+\end{DoxyCode}

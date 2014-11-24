@@ -14,6 +14,7 @@ namespace DSG{
 #endif
     namespace BLIT{
         //!\brief DSG::BLIT::BlitSaw - Saw Wave Generator Based on BLIT Algorithm
+        //!\todo Re-write DSG::BLIT::BlitSaw algorithm
         class BlitSaw : public Blit{
         public:
             BlitSaw();

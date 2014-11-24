@@ -4,6 +4,8 @@ var searchData=
   ['filter_2eh',['Filter.h',['../_filter_8h.html',1,'']]],
   ['fouriersaw_2ecpp',['FourierSaw.cpp',['../_fourier_saw_8cpp.html',1,'']]],
   ['fouriersaw_2eh',['FourierSaw.h',['../_fourier_saw_8h.html',1,'']]],
+  ['fourierseries_2ecpp',['FourierSeries.cpp',['../_fourier_series_8cpp.html',1,'']]],
+  ['fourierseries_2eh',['FourierSeries.h',['../_fourier_series_8h.html',1,'']]],
   ['fouriersquare_2ecpp',['FourierSquare.cpp',['../_fourier_square_8cpp.html',1,'']]],
   ['fouriersquare_2eh',['FourierSquare.h',['../_fourier_square_8h.html',1,'']]],
   ['fouriertriangle_2ecpp',['FourierTriangle.cpp',['../_fourier_triangle_8cpp.html',1,'']]],
