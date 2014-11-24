@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -69,8 +70,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="namespacemembers.html"><span>All</span></a></li>
       <li><a href="namespacemembers_func.html"><span>Functions</span></a></li>
       <li><a href="namespacemembers_type.html"><span>Typedefs</span></a></li>
-      <li><a href="namespacemembers_enum.html"><span>Enumerations</span></a></li>
-      <li><a href="namespacemembers_eval.html"><span>Enumerator</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -79,11 +78,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_b"><span>b</span></a></li>
       <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_g"><span>g</span></a></li>
       <li><a href="#index_h"><span>h</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_l"><span>l</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
@@ -96,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -113,30 +114,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="namespace_d_s_g.html#a0af03bade7e25e8da80e3022af0e45a7">DSG</a>
 </li>
 <li>ApplyWindow()
-: <a class="el" href="namespace_d_s_g.html#a82d8bf5eb72eef0d3ff35446c72be819">DSG</a>
+: <a class="el" href="namespace_d_s_g_1_1_window.html#ab3ab521b2e0d85dc752ccc42e642b203">DSG::Window</a>
 </li>
 <li>ArrayToRing()
 : <a class="el" href="namespace_d_s_g.html#a608643638b3a678c17b14c406d7edc85">DSG</a>
+</li>
+<li>AssertBounds()
+: <a class="el" href="namespace_d_s_g.html#a386b0133be9f4c7cb1ba014170ce294d">DSG</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
 <li>Blackman()
-: <a class="el" href="namespace_d_s_g_1_1_window.html#a5102be466eacf075586960710b815c53">DSG::Window</a>
+: <a class="el" href="namespace_d_s_g_1_1_window.html#a0800636ec7008aa75ff987feef5aafdf">DSG::Window</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>Cos()
-: <a class="el" href="namespace_d_s_g.html#aae40da358d58557abbd1eab5eff20809">DSG</a>
-</li>
-<li>Cos&lt; Sine_LUT &gt;()
-: <a class="el" href="namespace_d_s_g.html#a7a69ef90beb254a3e41f22023861c02e">DSG</a>
-</li>
-<li>Cos&lt; Sine_Taylor &gt;()
-: <a class="el" href="namespace_d_s_g.html#ad925c8e56ce20f7fa6a1926b794aa823">DSG</a>
+: <a class="el" href="namespace_d_s_g.html#ade303ad15c77f534429305c3cbd90191">DSG</a>
 </li>
 <li>CosineInterpolate()
 : <a class="el" href="namespace_d_s_g.html#a293229b6a440ddf9cc87e9a76d322d43">DSG</a>
@@ -148,6 +146,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>DPW_Polynomial()
+: <a class="el" href="namespace_d_s_g_1_1_d_p_w.html#a1677c6fedac376f3e9b284bc9a4a227c">DSG::DPW</a>
+</li>
+<li>DPW_Polynomial&lt; 1 &gt;()
+: <a class="el" href="namespace_d_s_g_1_1_d_p_w.html#a8330d5b0b7bdf2247cdd357f9707eaaf">DSG::DPW</a>
+</li>
+<li>DPW_Polynomial&lt; 2 &gt;()
+: <a class="el" href="namespace_d_s_g_1_1_d_p_w.html#a140753401d8518aa64bbcd7496a65b45">DSG::DPW</a>
+</li>
+<li>DPW_Polynomial&lt; 3 &gt;()
+: <a class="el" href="namespace_d_s_g_1_1_d_p_w.html#a6f20dd7808a5e5bf3df682ce92eeb520">DSG::DPW</a>
+</li>
+<li>DPW_Polynomial&lt; 4 &gt;()
+: <a class="el" href="namespace_d_s_g_1_1_d_p_w.html#a56e019e6b80abdc8d0d9d63e69b65da0">DSG::DPW</a>
+</li>
+<li>DPW_Polynomial&lt; 5 &gt;()
+: <a class="el" href="namespace_d_s_g_1_1_d_p_w.html#a1b04cfea475babd2006c84ba118c1909">DSG::DPW</a>
+</li>
+<li>DPW_Polynomial&lt; 6 &gt;()
+: <a class="el" href="namespace_d_s_g_1_1_d_p_w.html#a0c0f87dd5176cd98f69c5ec46db50369">DSG::DPW</a>
+</li>
+<li>DSF()
+: <a class="el" href="namespace_d_s_g.html#aac6959add6359f512191ddcd17fd6373">DSG</a>
+</li>
 <li>DSGFrequency
 : <a class="el" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG</a>
 </li>
@@ -160,9 +182,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ul>
 
 
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>EnforceBounds()
+: <a class="el" href="namespace_d_s_g.html#a8bc6af8f213f4f713bd634ec8545491c">DSG</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
 <li>Gaussian()
-: <a class="el" href="namespace_d_s_g_1_1_noise.html#ac9e288407dea7494030df8ca7b452494">DSG::Noise</a>
+: <a class="el" href="namespace_d_s_g_1_1_noise.html#a87c4bcd92a902d32df1d7f1d5acffcd4">DSG::Noise</a>
 </li>
 </ul>
 
@@ -195,14 +224,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ul>
 
 
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>Nyquist()
+: <a class="el" href="namespace_d_s_g.html#acb23c320b74d21f203081a25e1b5d134">DSG</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
 <li>Pink()
-: <a class="el" href="namespace_d_s_g_1_1_noise.html#a1d37e733d72b4a536c9bf15e95ba4cba">DSG::Noise</a>
+: <a class="el" href="namespace_d_s_g_1_1_noise.html#a9f0bab677a7602a8e0d40e040de8c8b2">DSG::Noise</a>
+</li>
+<li>Pow()
+: <a class="el" href="namespace_d_s_g.html#a34372a42acb2d6d62d18effc379857bc">DSG</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>Random()
+: <a class="el" href="namespace_d_s_g_1_1_noise.html#af210d83913fada9e9474410caff25bc1">DSG::Noise</a>
+</li>
 <li>RingToArray()
 : <a class="el" href="namespace_d_s_g.html#a4049a445d7cb9ee4f9140bdfdbd5e11c">DSG</a>
 </li>
@@ -216,42 +258,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>Sin()
 : <a class="el" href="namespace_d_s_g.html#aa2f9baa8896fff266c5e7ee73fb5c3d5">DSG</a>
 </li>
-<li>Sin&lt; Sine_LUT &gt;()
-: <a class="el" href="namespace_d_s_g.html#a4ad936b18d3a6d44b4182bdfde12d450">DSG</a>
-</li>
-<li>Sin&lt; Sine_Taylor &gt;()
-: <a class="el" href="namespace_d_s_g.html#ab1b1292275abf1a6b6e7fd7f9983b283">DSG</a>
-</li>
 <li>Sinc()
-: <a class="el" href="namespace_d_s_g.html#aaa69fabf4077f2d5d7820a39fba2ea38">DSG</a>
-</li>
-<li>Sine_Default
-: <a class="el" href="namespace_d_s_g.html#a2a459e3b534a66772912b245d6d3256daeb4d2fa60bb82a23657bc2a1d25695c0">DSG</a>
-</li>
-<li>Sine_Implementations
-: <a class="el" href="namespace_d_s_g.html#a2a459e3b534a66772912b245d6d3256d">DSG</a>
-</li>
-<li>Sine_LUT
-: <a class="el" href="namespace_d_s_g.html#a2a459e3b534a66772912b245d6d3256daa8b7ec0e34ba018db2f51a983e8eec90">DSG</a>
-</li>
-<li>Sine_Taylor
-: <a class="el" href="namespace_d_s_g.html#a2a459e3b534a66772912b245d6d3256dae49c235c693ebb41f02a66e809a5f2e8">DSG</a>
+: <a class="el" href="namespace_d_s_g.html#a6a99a1c242cddf18f4387f51ec8606b4">DSG</a>
 </li>
 <li>Sleep()
 : <a class="el" href="namespace_d_s_g.html#a012c968132bda114752f8ae012a1f441">DSG</a>
+</li>
+<li>StaticAssertBounds()
+: <a class="el" href="namespace_d_s_g.html#a3fa12557d889e704f2e33d88929ec67a">DSG</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
 <li>White()
-: <a class="el" href="namespace_d_s_g_1_1_noise.html#a2979ad99d7b590ac48bbf1bd9406f350">DSG::Noise</a>
+: <a class="el" href="namespace_d_s_g_1_1_noise.html#a0d1c4b4522d2e56b1aa604e45ab92066">DSG::Noise</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 24 2014 21:18:18 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 23 2014 21:27:48 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

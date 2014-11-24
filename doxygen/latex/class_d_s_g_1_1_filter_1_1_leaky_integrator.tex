@@ -1,0 +1,249 @@
+\hypertarget{class_d_s_g_1_1_filter_1_1_leaky_integrator}{\section{D\+S\+G\+:\+:Filter\+:\+:Leaky\+Integrator Class Reference}
+\label{class_d_s_g_1_1_filter_1_1_leaky_integrator}\index{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}}
+}
+
+
+\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator}{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator} -\/ Leaky integrator.  
+
+
+
+
+{\ttfamily \#include $<$Leaky.\+h$>$}
+
+Inheritance diagram for D\+S\+G\+:\+:Filter\+:\+:Leaky\+Integrator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_d_s_g_1_1_filter_1_1_leaky_integrator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_af0d204e3c2f5f844dc4355810f6515c2}{Leaky\+Integrator} ()
+\item 
+\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_ae50d8e7817b06cc64a45a6bc7aa657ff}{Leaky\+Integrator} (\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} const \&cutoff)
+\item 
+virtual \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a3a79cdbcf90a7924c05ec87b89fca83d}{$\sim$\+Leaky\+Integrator} ()
+\item 
+virtual bool \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a14ffd2f68de0cb9941d3295307ef13f0}{Perform} (\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{D\+S\+G\+::\+D\+S\+G\+Sample} \&signal)
+\item 
+virtual bool \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7f094493387222422b9f283ec199dfd0}{Perform} (\hyperlink{class_d_s_g_1_1_ring_buffer}{D\+S\+G\+::\+Ring\+Buffer} \&signal)
+\item 
+virtual bool \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a5f326faae2d72a6550b2e0593b00eea6}{Cutoff} (\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} const \&cutoff)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a052c709de4d6cddfdc0fb0441275ce98}{x1}
+\item 
+double \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}{y1}
+\item 
+double \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a9a321b7650923119fda60595a7659aef}{a}
+\item 
+double \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_abb7e9fc15eef17836979b98b8b50880d}{b}
+\item 
+double \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}{y}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator}{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator} -\/ Leaky integrator. 
+
+Definition at line \hyperlink{_leaky_8h_source_l00019}{19} of file \hyperlink{_leaky_8h_source}{Leaky.\+h}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_d_s_g_1_1_filter_1_1_leaky_integrator_af0d204e3c2f5f844dc4355810f6515c2}{\index{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}!Leaky\+Integrator@{Leaky\+Integrator}}
+\index{Leaky\+Integrator@{Leaky\+Integrator}!D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}}
+\subsubsection[{Leaky\+Integrator}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator\+::\+Leaky\+Integrator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_d_s_g_1_1_filter_1_1_leaky_integrator_af0d204e3c2f5f844dc4355810f6515c2}
+
+
+Definition at line \hyperlink{_leaky_8cpp_source_l00009}{9} of file \hyperlink{_leaky_8cpp_source}{Leaky.\+cpp}.
+
+
+\begin{DoxyCode}
+00009                                          :\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base}{DSG::Filter::FilterBase}()\{
+00010     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a052c709de4d6cddfdc0fb0441275ce98}{x1}=0;
+00011     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}{y1}=0;
+00012     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a9a321b7650923119fda60595a7659aef}{a}=0;
+00013     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_abb7e9fc15eef17836979b98b8b50880d}{b}=0;
+00014     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}{y}=0;
+00015 \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_filter_1_1_leaky_integrator_ae50d8e7817b06cc64a45a6bc7aa657ff}{\index{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}!Leaky\+Integrator@{Leaky\+Integrator}}
+\index{Leaky\+Integrator@{Leaky\+Integrator}!D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}}
+\subsubsection[{Leaky\+Integrator}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator\+::\+Leaky\+Integrator (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} const \&}]{cutoff}
+\end{DoxyParamCaption}
+)}}\label{class_d_s_g_1_1_filter_1_1_leaky_integrator_ae50d8e7817b06cc64a45a6bc7aa657ff}
+
+
+Definition at line \hyperlink{_leaky_8cpp_source_l00016}{16} of file \hyperlink{_leaky_8cpp_source}{Leaky.\+cpp}.
+
+
+\begin{DoxyCode}
+00016                                                                       :
+      \hyperlink{class_d_s_g_1_1_filter_1_1_filter_base}{DSG::Filter::FilterBase}()\{
+00017     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a052c709de4d6cddfdc0fb0441275ce98}{x1}=0;
+00018     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}{y1}=0;
+00019     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a9a321b7650923119fda60595a7659aef}{a}=0;
+00020     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_abb7e9fc15eef17836979b98b8b50880d}{b}=0;
+00021     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}{y}=0;
+00022     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a5f326faae2d72a6550b2e0593b00eea6}{Cutoff}(cutoff);
+00023 \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_filter_1_1_leaky_integrator_a3a79cdbcf90a7924c05ec87b89fca83d}{\index{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}!````~Leaky\+Integrator@{$\sim$\+Leaky\+Integrator}}
+\index{````~Leaky\+Integrator@{$\sim$\+Leaky\+Integrator}!D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}}
+\subsubsection[{$\sim$\+Leaky\+Integrator}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator\+::$\sim$\+Leaky\+Integrator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_s_g_1_1_filter_1_1_leaky_integrator_a3a79cdbcf90a7924c05ec87b89fca83d}
+
+
+Definition at line \hyperlink{_leaky_8cpp_source_l00024}{24} of file \hyperlink{_leaky_8cpp_source}{Leaky.\+cpp}.
+
+
+\begin{DoxyCode}
+00024                                           \{
+00025     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a052c709de4d6cddfdc0fb0441275ce98}{x1}=0;
+00026     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}{y1}=0;
+00027     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a9a321b7650923119fda60595a7659aef}{a}=0;
+00028     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_abb7e9fc15eef17836979b98b8b50880d}{b}=0;
+00029     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}{y}=0;
+00030 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_s_g_1_1_filter_1_1_leaky_integrator_a5f326faae2d72a6550b2e0593b00eea6}{\index{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}!Cutoff@{Cutoff}}
+\index{Cutoff@{Cutoff}!D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}}
+\subsubsection[{Cutoff}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator\+::\+Cutoff (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} const \&}]{cutoff}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_filter_1_1_leaky_integrator_a5f326faae2d72a6550b2e0593b00eea6}
+
+
+Reimplemented from \hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a1bf981bd2ca2151791d91b80dda827fe}{D\+S\+G\+::\+Filter\+::\+Filter\+Base}.
+
+
+
+Definition at line \hyperlink{_leaky_8h_source_l00050}{50} of file \hyperlink{_leaky_8h_source}{Leaky.\+h}.
+
+
+\begin{DoxyCode}
+00050                                                                                  \{
+00051             \textcolor{keywordtype}{double} Omega;
+00052             \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a052c709de4d6cddfdc0fb0441275ce98}{x1} = \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}{y1} = 0.0;
+00053             Omega = atan(\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI} * cutoff);
+00054             \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a9a321b7650923119fda60595a7659aef}{a} = -(1.0 - Omega) / (1.0 + Omega);
+00055             \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_abb7e9fc15eef17836979b98b8b50880d}{b} = (1.0 - \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_abb7e9fc15eef17836979b98b8b50880d}{b}) / 2.0;
+00056             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00057         \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_filter_1_1_leaky_integrator_a14ffd2f68de0cb9941d3295307ef13f0}{\index{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}!Perform@{Perform}}
+\index{Perform@{Perform}!D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+D\+S\+G\+Sample} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_filter_1_1_leaky_integrator_a14ffd2f68de0cb9941d3295307ef13f0}
+
+
+Reimplemented from \hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_ae7b6f59f5408ecab3ccd6c4e723c70b4}{D\+S\+G\+::\+Filter\+::\+Filter\+Base}.
+
+
+
+Definition at line \hyperlink{_leaky_8h_source_l00031}{31} of file \hyperlink{_leaky_8h_source}{Leaky.\+h}.
+
+
+\begin{DoxyCode}
+00031                                                                          \{
+00032             \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}{y} = \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_abb7e9fc15eef17836979b98b8b50880d}{b} * (signal + \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a052c709de4d6cddfdc0fb0441275ce98}{x1}) - \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a9a321b7650923119fda60595a7659aef}{a} * \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}{y1};
+00033             \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a052c709de4d6cddfdc0fb0441275ce98}{x1}=signal;
+00034             \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}{y1}=\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}{y};
+00035             signal=\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}{y};
+00036             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00037         \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7f094493387222422b9f283ec199dfd0}{\index{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}!Perform@{Perform}}
+\index{Perform@{Perform}!D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+Ring\+Buffer} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7f094493387222422b9f283ec199dfd0}
+
+
+Reimplemented from \hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_aef58742a1362b7ef94574a16036b7109}{D\+S\+G\+::\+Filter\+::\+Filter\+Base}.
+
+
+
+Definition at line \hyperlink{_leaky_8h_source_l00038}{38} of file \hyperlink{_leaky_8h_source}{Leaky.\+h}.
+
+
+\begin{DoxyCode}
+00038                                                                           \{
+00039             \textcolor{keywordflow}{if} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{Empty}()) \{
+00040                 \hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a74068413169f9acb3fcf8276074e3b1d}{count} = signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{Count}();
+00041                 \textcolor{keywordflow}{while} (\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a74068413169f9acb3fcf8276074e3b1d}{count}-- > 0) \{
+00042                     \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{Read}(\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a9e21e909fa2989adb88eedcb194e0150}{\_temp}))\{
+00043                         \textcolor{keywordflow}{if} (\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a14ffd2f68de0cb9941d3295307ef13f0}{Perform}(\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a9e21e909fa2989adb88eedcb194e0150}{\_temp})) \{
+00044                             signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a9e21e909fa2989adb88eedcb194e0150}{\_temp});
+00045                         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00046                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00047                 \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00048             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00049         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_d_s_g_1_1_filter_1_1_leaky_integrator_a9a321b7650923119fda60595a7659aef}{\index{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}!a@{a}}
+\index{a@{a}!D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}}
+\subsubsection[{a}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator\+::a\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_filter_1_1_leaky_integrator_a9a321b7650923119fda60595a7659aef}
+
+
+Definition at line \hyperlink{_leaky_8h_source_l00028}{28} of file \hyperlink{_leaky_8h_source}{Leaky.\+h}.
+
+\hypertarget{class_d_s_g_1_1_filter_1_1_leaky_integrator_abb7e9fc15eef17836979b98b8b50880d}{\index{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}!b@{b}}
+\index{b@{b}!D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}}
+\subsubsection[{b}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator\+::b\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_filter_1_1_leaky_integrator_abb7e9fc15eef17836979b98b8b50880d}
+
+
+Definition at line \hyperlink{_leaky_8h_source_l00028}{28} of file \hyperlink{_leaky_8h_source}{Leaky.\+h}.
+
+\hypertarget{class_d_s_g_1_1_filter_1_1_leaky_integrator_a052c709de4d6cddfdc0fb0441275ce98}{\index{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}!x1@{x1}}
+\index{x1@{x1}!D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}}
+\subsubsection[{x1}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator\+::x1\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_filter_1_1_leaky_integrator_a052c709de4d6cddfdc0fb0441275ce98}
+
+
+Definition at line \hyperlink{_leaky_8h_source_l00028}{28} of file \hyperlink{_leaky_8h_source}{Leaky.\+h}.
+
+\hypertarget{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}{\index{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}!y@{y}}
+\index{y@{y}!D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator\+::y\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}
+
+
+Definition at line \hyperlink{_leaky_8h_source_l00029}{29} of file \hyperlink{_leaky_8h_source}{Leaky.\+h}.
+
+\hypertarget{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}{\index{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}!y1@{y1}}
+\index{y1@{y1}!D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator@{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}}
+\subsubsection[{y1}]{\setlength{\rightskip}{0pt plus 5cm}double D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator\+::y1\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}
+
+
+Definition at line \hyperlink{_leaky_8h_source_l00028}{28} of file \hyperlink{_leaky_8h_source}{Leaky.\+h}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\hyperlink{_leaky_8h}{Leaky.\+h}\item 
+/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\hyperlink{_leaky_8cpp}{Leaky.\+cpp}\end{DoxyCompactItemize}

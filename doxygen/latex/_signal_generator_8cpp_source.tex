@@ -1,0 +1,23 @@
+\hypertarget{_signal_generator_8cpp_source}{\section{Signal\+Generator.\+cpp}
+\label{_signal_generator_8cpp_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Signal\+Generator.\+cpp@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Signal\+Generator.\+cpp}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  SignalGenerator.cpp}
+00003 \textcolor{comment}{//  DSG}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/16/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#include "\hyperlink{_signal_generator_8h}{SignalGenerator.h}"}
+\hypertarget{_signal_generator_8cpp_source_l00009}{}\hyperlink{class_d_s_g_1_1_signal_generator_a13ebda67fcdc880ef41aff501cc23fc3}{00009} \hyperlink{class_d_s_g_1_1_signal_generator_a13ebda67fcdc880ef41aff501cc23fc3}{DSG::SignalGenerator::SignalGenerator}():\hyperlink{namespace_d_s_g}{DSG}::
+      \hyperlink{class_d_s_g_1_1_signal_process}{SignalProcess}(),\_phasor(0),\_frequency(0),\_dt(0),\_offset(0)\{\}
+\hypertarget{_signal_generator_8cpp_source_l00010}{}\hyperlink{class_d_s_g_1_1_signal_generator_a4036fceff5c05a3711b8516d850c414c}{00010} \hyperlink{class_d_s_g_1_1_signal_generator_a13ebda67fcdc880ef41aff501cc23fc3}{DSG::SignalGenerator::SignalGenerator}(
+      \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& frequency,\hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& offset):\_phasor(0),
+      \_frequency(frequency),\_dt(0),\_offset(offset)\{
+00011     \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{Frequency}(frequency);
+00012     \hyperlink{class_d_s_g_1_1_signal_generator_a17cc4287b2838c6b6194fd43d02e7c00}{Phase}(offset);
+00013 \}
+\hypertarget{_signal_generator_8cpp_source_l00014}{}\hyperlink{class_d_s_g_1_1_signal_generator_a7b52d391974bc36a19fdcf617ad976cb}{00014} \hyperlink{class_d_s_g_1_1_signal_generator_a7b52d391974bc36a19fdcf617ad976cb}{DSG::SignalGenerator::~SignalGenerator}()\{\}
+\end{DoxyCode}

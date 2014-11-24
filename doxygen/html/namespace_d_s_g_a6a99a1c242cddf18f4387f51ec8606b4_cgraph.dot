@@ -1,0 +1,13 @@
+digraph "DSG::Sinc"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DSG::Sinc",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DSG::IsDenormal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_d_s_g.html#a9eee3c39a1f45d42f0b4fa7201d3ba3d",tooltip="DSG::IsDenormal - Returns True if number is Denormal. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="DSG::Abs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_d_s_g.html#a0af03bade7e25e8da80e3022af0e45a7",tooltip="DSG::Abs - Calculate absolute value. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="DSG::Sin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_d_s_g.html#aad63d316081c7d13a551acf346ee2749",tooltip="DSG::Sin() - General Purpose Sin Function, double precision. "];
+}

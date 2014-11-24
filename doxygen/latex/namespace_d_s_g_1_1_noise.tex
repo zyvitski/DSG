@@ -1,0 +1,142 @@
+\hypertarget{namespace_d_s_g_1_1_noise}{\section{D\+S\+G\+:\+:Noise Namespace Reference}
+\label{namespace_d_s_g_1_1_noise}\index{D\+S\+G\+::\+Noise@{D\+S\+G\+::\+Noise}}
+}
+
+
+\hyperlink{namespace_d_s_g_1_1_noise}{D\+S\+G\+::\+Noise} -\/ \hyperlink{namespace_d_s_g_1_1_noise}{Noise} Generators.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename decimal  = D\+S\+G\+::\+D\+S\+G\+Sample$>$ }\\decimal \hyperlink{namespace_d_s_g_1_1_noise_a87c4bcd92a902d32df1d7f1d5acffcd4}{Gaussian} (decimal=0.\+0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_1_1_noise_a87c4bcd92a902d32df1d7f1d5acffcd4}{D\+S\+G\+::\+Noise\+::\+Gaussian} -\/ Gaussian \hyperlink{namespace_d_s_g_1_1_noise}{Noise} Generator Function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename decimal  = D\+S\+G\+::\+D\+S\+G\+Sample$>$ }\\decimal \hyperlink{namespace_d_s_g_1_1_noise_a9f0bab677a7602a8e0d40e040de8c8b2}{Pink} (decimal=0.\+0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_1_1_noise_a9f0bab677a7602a8e0d40e040de8c8b2}{D\+S\+G\+::\+Noise\+::\+Pink} -\/ Pink \hyperlink{namespace_d_s_g_1_1_noise}{Noise} Generator Function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename decimal  = D\+S\+G\+::\+D\+S\+G\+Sample$>$ }\\decimal \hyperlink{namespace_d_s_g_1_1_noise_af210d83913fada9e9474410caff25bc1}{Random} (decimal=0.\+0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_1_1_noise_af210d83913fada9e9474410caff25bc1}{D\+S\+G\+::\+Noise\+::\+Random} -\/ Random Number Function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename decimal  = D\+S\+G\+::\+D\+S\+G\+Sample$>$ }\\decimal \hyperlink{namespace_d_s_g_1_1_noise_a0d1c4b4522d2e56b1aa604e45ab92066}{White} (decimal=0.\+0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_1_1_noise_a0d1c4b4522d2e56b1aa604e45ab92066}{D\+S\+G\+::\+Noise\+::\+White} -\/ White \hyperlink{namespace_d_s_g_1_1_noise}{Noise} Generator Function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{namespace_d_s_g_1_1_noise}{D\+S\+G\+::\+Noise} -\/ \hyperlink{namespace_d_s_g_1_1_noise}{Noise} Generators. 
+
+\subsection{Function Documentation}
+\hypertarget{namespace_d_s_g_1_1_noise_a87c4bcd92a902d32df1d7f1d5acffcd4}{\index{D\+S\+G\+::\+Noise@{D\+S\+G\+::\+Noise}!Gaussian@{Gaussian}}
+\index{Gaussian@{Gaussian}!D\+S\+G\+::\+Noise@{D\+S\+G\+::\+Noise}}
+\subsubsection[{Gaussian}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename decimal  = D\+S\+G\+::\+D\+S\+G\+Sample$>$ decimal D\+S\+G\+::\+Noise\+::\+Gaussian (
+\begin{DoxyParamCaption}
+\item[{decimal}]{ = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}}\label{namespace_d_s_g_1_1_noise_a87c4bcd92a902d32df1d7f1d5acffcd4}
+
+
+\hyperlink{namespace_d_s_g_1_1_noise_a87c4bcd92a902d32df1d7f1d5acffcd4}{D\+S\+G\+::\+Noise\+::\+Gaussian} -\/ Gaussian \hyperlink{namespace_d_s_g_1_1_noise}{Noise} Generator Function. 
+
+
+
+Definition at line \hyperlink{_gaussian_8h_source_l00019}{19} of file \hyperlink{_gaussian_8h_source}{Gaussian.\+h}.
+
+
+\begin{DoxyCode}
+00019                                      \{
+00020             \textcolor{keyword}{static} decimal normalizer=1;\textcolor{comment}{//variable used to actively normalize the output}
+00021             \textcolor{comment}{//to enforce compatability with DSG::LUT a dummy parameter is applied}
+00022             \textcolor{comment}{//this parameter is useless except for compatability reasons}
+00023             decimal R1 = \hyperlink{namespace_d_s_g_1_1_noise_a0d1c4b4522d2e56b1aa604e45ab92066}{DSG::Noise::White}();
+00024             decimal R2 = \hyperlink{namespace_d_s_g_1_1_noise_a0d1c4b4522d2e56b1aa604e45ab92066}{DSG::Noise::White}();
+00025             decimal x= (decimal)sqrt(-2.0f * log(R1))*\hyperlink{namespace_d_s_g_ade303ad15c77f534429305c3cbd90191}{DSG::Cos}(R2);
+00026             \textcolor{keywordflow}{if} (\hyperlink{namespace_d_s_g_a0af03bade7e25e8da80e3022af0e45a7}{DSG::Abs}(x)>normalizer) \{
+00027                 \textcolor{comment}{//store highest output}
+00028                 normalizer=\hyperlink{namespace_d_s_g_a0af03bade7e25e8da80e3022af0e45a7}{DSG::Abs}(x);
+00029             \}
+00030             x/=normalizer;\textcolor{comment}{//normalize}
+00031             \textcolor{keywordflow}{return} x;
+00032         \}
+\end{DoxyCode}
+\hypertarget{namespace_d_s_g_1_1_noise_a9f0bab677a7602a8e0d40e040de8c8b2}{\index{D\+S\+G\+::\+Noise@{D\+S\+G\+::\+Noise}!Pink@{Pink}}
+\index{Pink@{Pink}!D\+S\+G\+::\+Noise@{D\+S\+G\+::\+Noise}}
+\subsubsection[{Pink}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename decimal  = D\+S\+G\+::\+D\+S\+G\+Sample$>$ decimal D\+S\+G\+::\+Noise\+::\+Pink (
+\begin{DoxyParamCaption}
+\item[{decimal}]{ = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}}\label{namespace_d_s_g_1_1_noise_a9f0bab677a7602a8e0d40e040de8c8b2}
+
+
+\hyperlink{namespace_d_s_g_1_1_noise_a9f0bab677a7602a8e0d40e040de8c8b2}{D\+S\+G\+::\+Noise\+::\+Pink} -\/ Pink \hyperlink{namespace_d_s_g_1_1_noise}{Noise} Generator Function. 
+
+
+
+Definition at line \hyperlink{_pink_8h_source_l00019}{19} of file \hyperlink{_pink_8h_source}{Pink.\+h}.
+
+
+\begin{DoxyCode}
+00019                                  \{
+00020             \textcolor{comment}{//routine: Get white or gaussian, filter, return}
+00021             \textcolor{keyword}{static} decimal b0,b1,b2,b3,b4,b5,b6;
+00022             \textcolor{keyword}{static} decimal normalizer=1;\textcolor{comment}{//variable used to actively normalize the output}
+00023             \textcolor{keyword}{static} DSG::DCBlocker \_block;
+00024             decimal white = \hyperlink{namespace_d_s_g_1_1_noise_a87c4bcd92a902d32df1d7f1d5acffcd4}{DSG::Noise::Gaussian}();
+00025             decimal pink;
+00026             \textcolor{comment}{//pinking filter}
+00027             b0 = 0.99886 * b0 + white * 0.0555179;
+00028             b1 = 0.99332 * b1 + white * 0.0750759;
+00029             b2 = 0.96900 * b2 + white * 0.1538520;
+00030             b3 = 0.86650 * b3 + white * 0.3104856;
+00031             b4 = 0.55000 * b4 + white * 0.5329522;
+00032             b5 = -0.7616 * b5 - white * 0.0168980;
+00033             pink = b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362;
+00034             b6 = white * 0.115926;
+00035             \textcolor{keywordflow}{if} (\hyperlink{namespace_d_s_g_a0af03bade7e25e8da80e3022af0e45a7}{DSG::Abs}(pink)>normalizer) \{
+00036                 \textcolor{comment}{//store highest output}
+00037                 normalizer=\hyperlink{namespace_d_s_g_a0af03bade7e25e8da80e3022af0e45a7}{DSG::Abs}(pink);
+00038             \}
+00039             pink/=normalizer;
+00040             \_block.Perform(pink);
+00041             \textcolor{keywordflow}{return} pink;
+00042         \}
+\end{DoxyCode}
+\hypertarget{namespace_d_s_g_1_1_noise_af210d83913fada9e9474410caff25bc1}{\index{D\+S\+G\+::\+Noise@{D\+S\+G\+::\+Noise}!Random@{Random}}
+\index{Random@{Random}!D\+S\+G\+::\+Noise@{D\+S\+G\+::\+Noise}}
+\subsubsection[{Random}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename decimal  = D\+S\+G\+::\+D\+S\+G\+Sample$>$ decimal D\+S\+G\+::\+Noise\+::\+Random (
+\begin{DoxyParamCaption}
+\item[{decimal}]{ = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespace_d_s_g_1_1_noise_af210d83913fada9e9474410caff25bc1}
+
+
+\hyperlink{namespace_d_s_g_1_1_noise_af210d83913fada9e9474410caff25bc1}{D\+S\+G\+::\+Noise\+::\+Random} -\/ Random Number Function. 
+
+
+
+Definition at line \hyperlink{_random_8h_source_l00034}{34} of file \hyperlink{_random_8h_source}{Random.\+h}.
+
+
+\begin{DoxyCode}
+00034                                           \{
+00035             \textcolor{keyword}{static} DSG::Noise::random\_helper<decimal> \_rand\{\};
+00036             \textcolor{keywordflow}{return} \_rand.next();
+00037         \}
+\end{DoxyCode}
+\hypertarget{namespace_d_s_g_1_1_noise_a0d1c4b4522d2e56b1aa604e45ab92066}{\index{D\+S\+G\+::\+Noise@{D\+S\+G\+::\+Noise}!White@{White}}
+\index{White@{White}!D\+S\+G\+::\+Noise@{D\+S\+G\+::\+Noise}}
+\subsubsection[{White}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename decimal  = D\+S\+G\+::\+D\+S\+G\+Sample$>$ decimal D\+S\+G\+::\+Noise\+::\+White (
+\begin{DoxyParamCaption}
+\item[{decimal}]{ = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespace_d_s_g_1_1_noise_a0d1c4b4522d2e56b1aa604e45ab92066}
+
+
+\hyperlink{namespace_d_s_g_1_1_noise_a0d1c4b4522d2e56b1aa604e45ab92066}{D\+S\+G\+::\+Noise\+::\+White} -\/ White \hyperlink{namespace_d_s_g_1_1_noise}{Noise} Generator Function. 
+
+
+
+Definition at line \hyperlink{_white_8h_source_l00019}{19} of file \hyperlink{_white_8h_source}{White.\+h}.
+
+
+\begin{DoxyCode}
+00019                                          \{
+00020             \textcolor{keywordflow}{return} DSG::Random<decimal>();
+00021         \}
+\end{DoxyCode}

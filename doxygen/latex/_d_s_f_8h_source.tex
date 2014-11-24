@@ -1,0 +1,28 @@
+\hypertarget{_d_s_f_8h_source}{\section{D\+S\+F.\+h}
+\label{_d_s_f_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+D\+S\+F.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+D\+S\+F.\+h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  DSF.h}
+00003 \textcolor{comment}{//  DSG}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 11/5/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_DSF\_\_}
+00009 \textcolor{preprocessor}{#define \_\_DSG\_\_DSF\_\_}
+00010 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_math_8h}{DSGMath.h}"}
+00011 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_types_8h}{DSGTypes.h}"}
+00012 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
+00013     \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal=DSG::DSGSample>
+\hypertarget{_d_s_f_8h_source_l00014}{}\hyperlink{namespace_d_s_g_aac6959add6359f512191ddcd17fd6373}{00014}     decimal \hyperlink{namespace_d_s_g_aac6959add6359f512191ddcd17fd6373}{DSF}(decimal \textcolor{keyword}{const}& beta,decimal \textcolor{keyword}{const}& theta,decimal \textcolor{keyword}{const}& N,decimal \textcolor{keyword}{const}& a)\{
+00015 \textcolor{preprocessor}{#warning Untested DSG::DSF()}
+00016         decimal denominator = 1 + DSG::Pow<2>(a) - (2.0*a*cos(beta));
+00017         decimal numerator = sin(theta) - a * sin(theta-beta) - pow(a, N+1) * (sin(theta + (N+1)*beta) - a*
+      sin(theta + (N*beta)));
+00018         \textcolor{keywordflow}{return} numerator/denominator;
+00019     \}
+00020 \}
+00021 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_DSF\_\_) */}\textcolor{preprocessor}{}
+\end{DoxyCode}

@@ -5,11 +5,28 @@
 //  Created by Alexander Zywicki on 9/16/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
+/*
+ This file is part of the Digital Signal Generation Project or “DSG”.
+
+ DSG is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ DSG is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with DSG.  If not, see <http://www.gnu.org/licenses/>.
+ */
 #ifndef __DSG__SignalGenerator__
 #define __DSG__SignalGenerator__
 #include "SignalProcess.h"
 #include "AudioSettings.h"
 #include "Sine.h"
+#include "Bounds.h"
 namespace DSG{
     /*!\brief DSG::SignalGenerator - Extends DSG::Signal Process With Tools For Signal Generation
      */
@@ -54,7 +71,7 @@ inline DSG::DSGFrequency const& DSG::SignalGenerator::Frequency(){
     return _frequency;
 }
 inline DSG::DSGFrequency const& DSG::SignalGenerator::Frequency(DSG::DSGFrequency const& value){
-    _frequency = value;
+    _frequency = DSG::EnforceBounds<0, 20000,DSG::DSGSample>(value);
     _dt = _frequency/DSG::SampleRate();
     return _frequency;
 }

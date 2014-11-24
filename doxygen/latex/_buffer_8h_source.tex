@@ -1,0 +1,41 @@
+\hypertarget{_buffer_8h_source}{\section{Buffer.\+h}
+\label{_buffer_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Buffer.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Buffer.\+h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  Buffer.h}
+00003 \textcolor{comment}{//  DSG}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/16/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_Buffer\_\_}
+00009 \textcolor{preprocessor}{#define \_\_DSG\_\_Buffer\_\_}
+00010 \textcolor{preprocessor}{#include <stddef.h>}
+00011 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_types_8h}{DSGTypes.h}"}
+00012 \textcolor{preprocessor}{#ifdef DEBUG}
+00013 \textcolor{preprocessor}{#include <assert.h>}
+00014 \textcolor{preprocessor}{#endif}
+00015 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{\textcolor{comment}{}
+00016 \textcolor{comment}{    /*!\(\backslash\)brief DSG::Buffer - Base Class For DSG::RingBuffer. Not For Direct Use}
+00017 \textcolor{comment}{     */}
+\hypertarget{_buffer_8h_source_l00018}{}\hyperlink{class_d_s_g_1_1_buffer}{00018}     \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_buffer}{Buffer} \{
+00019     \textcolor{keyword}{public}:
+00020         \hyperlink{class_d_s_g_1_1_buffer_aa764dd8c389dcff51de08cb81fafeb86}{Buffer}();
+00021         \hyperlink{class_d_s_g_1_1_buffer_aa764dd8c389dcff51de08cb81fafeb86}{Buffer}(\textcolor{keywordtype}{size\_t} size);
+00022         \hyperlink{class_d_s_g_1_1_buffer_aa764dd8c389dcff51de08cb81fafeb86}{Buffer}(\hyperlink{class_d_s_g_1_1_buffer}{Buffer} \textcolor{keyword}{const}& other);
+00023         \hyperlink{class_d_s_g_1_1_buffer}{Buffer}& \hyperlink{class_d_s_g_1_1_buffer_a977d572a7d402ff6bf991d7c5c0cc6a7}{operator=}(\hyperlink{class_d_s_g_1_1_buffer}{Buffer} \textcolor{keyword}{const}& other);
+00024         \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_buffer_a619fc41bf263a419da1a19254e194101}{~Buffer}();
+00025         \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& \hyperlink{class_d_s_g_1_1_buffer_a5358d81096cd0801e4fce7851809b3ef}{operator[]}(\textcolor{keywordtype}{size\_t} \textcolor{keyword}{const}& index);
+00026         \textcolor{keyword}{inline} \textcolor{keywordtype}{size\_t} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_buffer_a4acea659d9cd0be652ec55d21e5b0262}{Size}()\textcolor{keyword}{const};
+00027     \textcolor{keyword}{protected}:
+\hypertarget{_buffer_8h_source_l00028}{}\hyperlink{class_d_s_g_1_1_buffer_ae4a4db8fe44b62db18d6a7855b5773f9}{00028}         \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}* \hyperlink{class_d_s_g_1_1_buffer_ae4a4db8fe44b62db18d6a7855b5773f9}{\_buffer};
+\hypertarget{_buffer_8h_source_l00029}{}\hyperlink{class_d_s_g_1_1_buffer_a4e2fef9ed617af2554b25c999def8f71}{00029}         \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size};
+00030     \};
+\hypertarget{_buffer_8h_source_l00031}{}\hyperlink{class_d_s_g_1_1_buffer_a4acea659d9cd0be652ec55d21e5b0262}{00031}     \textcolor{keyword}{inline} \textcolor{keywordtype}{size\_t} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_buffer_a4acea659d9cd0be652ec55d21e5b0262}{DSG::Buffer::Size}()\textcolor{keyword}{const}\{
+00032         \textcolor{keywordflow}{return} \_size;
+00033     \}
+00034 \}
+00035 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_Buffer\_\_) */}\textcolor{preprocessor}{}
+\end{DoxyCode}

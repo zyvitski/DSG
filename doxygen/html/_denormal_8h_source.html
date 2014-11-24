@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,21 +100,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define DSG_Denormal_h</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_s_g_math_8h.html">DSGMath.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_s_g.html">DSG</a>{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespace_d_s_g.html#a9eee3c39a1f45d42f0b4fa7201d3ba3d">   14</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespace_d_s_g.html#a9eee3c39a1f45d42f0b4fa7201d3ba3d">IsDenormal</a>(T <span class="keyword">const</span>&amp; value){</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespace_d_s_g.html#a0af03bade7e25e8da80e3022af0e45a7">DSG::Abs</a>(value)&lt;=std::numeric_limits&lt;T&gt;::epsilon();<span class="comment">//return true ifb number is denormal</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespace_d_s_g_html_a0af03bade7e25e8da80e3022af0e45a7"><div class="ttname"><a href="namespace_d_s_g.html#a0af03bade7e25e8da80e3022af0e45a7">DSG::Abs</a></div><div class="ttdeci">T Abs(T const &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="_d_s_g_math_8h_source.html#l00012">DSGMath.h:12</a></div></div>
-<div class="ttc" id="namespace_d_s_g_html"><div class="ttname"><a href="namespace_d_s_g.html">DSG</a></div><div class="ttdef"><b>Definition:</b> <a href="_analog_saw_8h_source.html#l00011">AnalogSaw.h:11</a></div></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_s_g.html">DSG</a>{<span class="comment"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">    //!\brief DSG::IsDenormal - Returns True if number is Denormal </span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"></span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespace_d_s_g.html#a9eee3c39a1f45d42f0b4fa7201d3ba3d">   15</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespace_d_s_g.html#a9eee3c39a1f45d42f0b4fa7201d3ba3d">IsDenormal</a>(T <span class="keyword">const</span>&amp; value){</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespace_d_s_g.html#a0af03bade7e25e8da80e3022af0e45a7">DSG::Abs</a>(value)&lt;=std::numeric_limits&lt;T&gt;::epsilon();<span class="comment">//return true if number is denormal</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespace_d_s_g_html_a0af03bade7e25e8da80e3022af0e45a7"><div class="ttname"><a href="namespace_d_s_g.html#a0af03bade7e25e8da80e3022af0e45a7">DSG::Abs</a></div><div class="ttdeci">T Abs(T const &amp;value)</div><div class="ttdoc">DSG::Abs - Calculate absolute value. </div><div class="ttdef"><b>Definition:</b> <a href="_d_s_g_math_8h_source.html#l00015">DSGMath.h:15</a></div></div>
+<div class="ttc" id="namespace_d_s_g_html"><div class="ttname"><a href="namespace_d_s_g.html">DSG</a></div><div class="ttdoc">DSG - A Collection of tools for Digital Signal Generation. </div><div class="ttdef"><b>Definition:</b> <a href="_analog_saw_8h_source.html#l00011">AnalogSaw.h:11</a></div></div>
 <div class="ttc" id="_d_s_g_math_8h_html"><div class="ttname"><a href="_d_s_g_math_8h.html">DSGMath.h</a></div></div>
-<div class="ttc" id="namespace_d_s_g_html_a9eee3c39a1f45d42f0b4fa7201d3ba3d"><div class="ttname"><a href="namespace_d_s_g.html#a9eee3c39a1f45d42f0b4fa7201d3ba3d">DSG::IsDenormal</a></div><div class="ttdeci">bool IsDenormal(T const &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="_denormal_8h_source.html#l00014">Denormal.h:14</a></div></div>
+<div class="ttc" id="namespace_d_s_g_html_a9eee3c39a1f45d42f0b4fa7201d3ba3d"><div class="ttname"><a href="namespace_d_s_g.html#a9eee3c39a1f45d42f0b4fa7201d3ba3d">DSG::IsDenormal</a></div><div class="ttdeci">bool IsDenormal(T const &amp;value)</div><div class="ttdoc">DSG::IsDenormal - Returns True if number is Denormal. </div><div class="ttdef"><b>Definition:</b> <a href="_denormal_8h_source.html#l00015">Denormal.h:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 24 2014 21:18:18 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 23 2014 21:27:47 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

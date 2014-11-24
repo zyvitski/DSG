@@ -1,0 +1,9 @@
+digraph "DSG::DPW::DPW_Polynomial&lt; 6 &gt;"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DSG::DPW::DPW_Polynomial\< 6 \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DSG::DPW::DPW_Polynomial\< 2 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_d_s_g_1_1_d_p_w.html#a140753401d8518aa64bbcd7496a65b45",tooltip="DSG::DPW::DPW_Polynomial - 2nd order Polynoimal used in DPW Algorithm. "];
+}

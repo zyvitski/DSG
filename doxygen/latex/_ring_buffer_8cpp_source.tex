@@ -1,0 +1,38 @@
+\hypertarget{_ring_buffer_8cpp_source}{\section{Ring\+Buffer.\+cpp}
+\label{_ring_buffer_8cpp_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Ring\+Buffer.\+cpp@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Ring\+Buffer.\+cpp}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  RingBuffer.cpp}
+00003 \textcolor{comment}{//  DSG}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/16/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#include "\hyperlink{_ring_buffer_8h}{RingBuffer.h}"}
+\hypertarget{_ring_buffer_8cpp_source_l00009}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a3136c9debb3c422adb1d5835e11b2b99}{00009} \hyperlink{class_d_s_g_1_1_ring_buffer_a3136c9debb3c422adb1d5835e11b2b99}{DSG:: RingBuffer::RingBuffer}():\hyperlink{class_d_s_g_1_1_buffer}{Buffer}(0),\_read(0),\_write(0),\_count(0),
+      MASK(0)\{\}
+\hypertarget{_ring_buffer_8cpp_source_l00010}{}\hyperlink{class_d_s_g_1_1_ring_buffer_ae9859fd3ad18961de494d8b50fe4763e}{00010} \hyperlink{class_d_s_g_1_1_ring_buffer_a3136c9debb3c422adb1d5835e11b2b99}{DSG:: RingBuffer::RingBuffer}(\textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} size):
+      \hyperlink{class_d_s_g_1_1_buffer}{Buffer}(make\_pow\_2(size)),\_read(0),\_write(0),\_count(0)\{
+00011     \hyperlink{class_d_s_g_1_1_ring_buffer_a2fba2ff6ee3886101f0f58b0fd7f3641}{MASK} = this->\hyperlink{class_d_s_g_1_1_buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size}-1;
+00012 \}
+\hypertarget{_ring_buffer_8cpp_source_l00013}{}\hyperlink{class_d_s_g_1_1_ring_buffer_ab09f32dacee49df3281c6701b7a4d737}{00013} \hyperlink{class_d_s_g_1_1_ring_buffer_a3136c9debb3c422adb1d5835e11b2b99}{DSG:: RingBuffer::RingBuffer}(\hyperlink{class_d_s_g_1_1_ring_buffer}{RingBuffer}& buffer):
+      \hyperlink{class_d_s_g_1_1_buffer}{Buffer}(buffer)\{
+00014     \hyperlink{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{\_write}.store(buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{\_write}.load(std::memory\_order\_acquire));
+00015     \hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{\_read}.store(buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{\_read}.load(std::memory\_order\_acquire));
+00016     \hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\_count} = buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\_count};
+00017     \hyperlink{class_d_s_g_1_1_ring_buffer_a2fba2ff6ee3886101f0f58b0fd7f3641}{MASK} = buffer.\hyperlink{class_d_s_g_1_1_buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size}-1;
+00018 \}
+\hypertarget{_ring_buffer_8cpp_source_l00019}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a892fbcc12b2dca5b04ead96a09299e73}{00019} \hyperlink{class_d_s_g_1_1_ring_buffer}{DSG:: RingBuffer}& \hyperlink{class_d_s_g_1_1_ring_buffer_a892fbcc12b2dca5b04ead96a09299e73}{DSG:: RingBuffer::operator=}(
+      \hyperlink{class_d_s_g_1_1_ring_buffer}{RingBuffer}& buffer)\{
+00020     \hyperlink{class_d_s_g_1_1_buffer_a977d572a7d402ff6bf991d7c5c0cc6a7}{Buffer::operator=}(buffer);
+00021     \_write.store(buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{\_write}.load(std::memory\_order\_acquire));
+00022     \_read.store(buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{\_read}.load(std::memory\_order\_acquire));
+00023     \_count = buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\_count};
+00024     MASK = buffer.\hyperlink{class_d_s_g_1_1_buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size}-1;
+00025     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+00026 \}
+\hypertarget{_ring_buffer_8cpp_source_l00027}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a771d30b04b6f0313c203530685fbeb3a}{00027} \hyperlink{class_d_s_g_1_1_ring_buffer_a771d30b04b6f0313c203530685fbeb3a}{DSG:: RingBuffer::~RingBuffer}()\{Flush();\}
+00028 
+\end{DoxyCode}

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['value',['value',['../class_d_s_g_1_1_b_l_i_t_1_1_blit.html#ac8fb9d4fb45d0697bf364bb5d6b570ce',1,'DSG::BLIT::Blit::value()'],['../class_d_s_g_1_1_fourier_1_1_fourier_saw.html#a97d69a0c03cfb66b1cf6e13fe7073c12',1,'DSG::Fourier::FourierSaw::value()'],['../class_d_s_g_1_1_fourier_1_1_fourier_square.html#a5817c7b9b793af6a76278065a67acd9c',1,'DSG::Fourier::FourierSquare::value()'],['../class_d_s_g_1_1_fourier_1_1_fourier_triangle.html#a11216186ce96fc78c7720cad3e01d025',1,'DSG::Fourier::FourierTriangle::value()']]]
+  ['read',['read',['../class_d_s_g_1_1_ring_buffer.html#a34bc659c286c8913e318c0e8c0777204',1,'DSG::RingBuffer']]],
+  ['register_5f',['Register_',['../class_d_s_g_1_1_b_l_i_t_1_1_blit_saw.html#a15da9acffc369dd3c5233c05d37ee488',1,'DSG::BLIT::BlitSaw']]]
 ];

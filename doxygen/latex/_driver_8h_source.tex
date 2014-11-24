@@ -1,0 +1,29 @@
+\hypertarget{_driver_8h_source}{\section{Driver.\+h}
+\label{_driver_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Driver.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Driver.\+h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  Driver.h}
+00003 \textcolor{comment}{//  Waveform}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 8/25/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#ifndef \_\_Waveform\_\_Driver\_\_}
+00009 \textcolor{preprocessor}{#define \_\_Waveform\_\_Driver\_\_}
+00010 \textcolor{preprocessor}{#ifdef DEBUG}
+00011 \textcolor{preprocessor}{#include <iostream>}
+00012 \textcolor{preprocessor}{#endif}
+00013 \textcolor{preprocessor}{#include <portaudio.h>}
+00014 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_8h}{DSG.h}"}
+00015 \textcolor{keywordtype}{int} \hyperlink{_driver_8h_a70105fa3a575041357534257c1bd91a7}{DriverInit}(\textcolor{keywordtype}{void} * data);
+00016 \textcolor{keywordtype}{int} \hyperlink{_driver_8h_a0e985fca408fe471f534ee98a2bd5733}{DriverExit}();
+00017 \textcolor{keywordtype}{int} \hyperlink{_driver_8h_a110986770da2cd49dcf3789f8cc09c28}{Callback}( \textcolor{keyword}{const} \textcolor{keywordtype}{void} *input,
+00018              \textcolor{keywordtype}{void} *output,
+00019              \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} frameCount,
+00020              \textcolor{keyword}{const} PaStreamCallbackTimeInfo* timeInfo,
+00021              PaStreamCallbackFlags statusFlags,
+00022              \textcolor{keywordtype}{void} *userData );
+00023 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_Waveform\_\_Driver\_\_) */}\textcolor{preprocessor}{}
+\end{DoxyCode}

@@ -1,0 +1,13 @@
+digraph "DSG::Analog::AnalogSquare::Perform"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DSG::Analog::AnalogSquare\l::Perform",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="DSG::RingBuffer::Flush",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_ring_buffer.html#ab23c8003d2857809a816068eeb209d60"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="DSG::RingBuffer::Full",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_ring_buffer.html#a53ddb04ffcbb5470a8d2b0a3c65b70cb"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="DSG::RingBuffer::Write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_ring_buffer.html#aa5dd2caa0a270173251faee40a43d692"];
+}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lut',['LUT',['../class_d_s_g_1_1_l_u_t.html',1,'DSG']]]
+  ['harmonic',['Harmonic',['../class_d_s_g_1_1_fourier_1_1_harmonic.html',1,'DSG::Fourier']]]
 ];

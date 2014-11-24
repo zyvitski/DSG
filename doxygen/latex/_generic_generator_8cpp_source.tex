@@ -1,0 +1,21 @@
+\hypertarget{_generic_generator_8cpp_source}{\section{Generic\+Generator.\+cpp}
+\label{_generic_generator_8cpp_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Generic\+Generator.\+cpp@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Generic\+Generator.\+cpp}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  GenericGenerator.cpp}
+00003 \textcolor{comment}{//  DSG}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 10/21/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#include "\hyperlink{_generic_generator_8h}{GenericGenerator.h}"}
+\hypertarget{_generic_generator_8cpp_source_l00009}{}\hyperlink{class_d_s_g_1_1_generic_generator_a560df325ce43fa9a1baf4463ccaed2d3}{00009} \hyperlink{class_d_s_g_1_1_generic_generator_a560df325ce43fa9a1baf4463ccaed2d3}{DSG::GenericGenerator::GenericGenerator}():
+      \hyperlink{namespace_d_s_g}{DSG}::\hyperlink{class_d_s_g_1_1_signal_generator}{SignalGenerator}()\{\}
+\hypertarget{_generic_generator_8cpp_source_l00010}{}\hyperlink{class_d_s_g_1_1_generic_generator_a1dbab25aa71cb7bce7e4b02be5122244}{00010} \hyperlink{class_d_s_g_1_1_generic_generator_a560df325ce43fa9a1baf4463ccaed2d3}{DSG::GenericGenerator::GenericGenerator}(
+      \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& frequency,\hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& offset,
+      \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} (*signalFunction)(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}&)):
+      \hyperlink{namespace_d_s_g}{DSG}::\hyperlink{class_d_s_g_1_1_signal_generator}{SignalGenerator}(frequency,offset),\_callback(signalFunction)\{\}
+\hypertarget{_generic_generator_8cpp_source_l00011}{}\hyperlink{class_d_s_g_1_1_generic_generator_aeaca1efdba7186a8b3b1879b092e7bec}{00011} \hyperlink{class_d_s_g_1_1_generic_generator_aeaca1efdba7186a8b3b1879b092e7bec}{DSG::GenericGenerator::~GenericGenerator}()\{\}
+\end{DoxyCode}

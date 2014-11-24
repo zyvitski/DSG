@@ -1,0 +1,38 @@
+\hypertarget{_bounds_8h_source}{\section{Bounds.\+h}
+\label{_bounds_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Bounds.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Bounds.\+h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  Bounds.h}
+00003 \textcolor{comment}{//  DSG}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 11/11/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#ifndef DSG\_Bounds\_h}
+00009 \textcolor{preprocessor}{#define DSG\_Bounds\_h}
+00010 \textcolor{preprocessor}{#include <assert.h>}
+00011 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{\textcolor{comment}{}
+00012 \textcolor{comment}{    //!\(\backslash\)brief DSG::EnforceBounds - Clip value to set bounds}
+00013 \textcolor{comment}{}    \textcolor{keyword}{template}<\textcolor{keywordtype}{int} lower,\textcolor{keywordtype}{int} upper,\textcolor{keyword}{typename} decimal>
+\hypertarget{_bounds_8h_source_l00014}{}\hyperlink{namespace_d_s_g_a8bc6af8f213f4f713bd634ec8545491c}{00014}     decimal \hyperlink{namespace_d_s_g_a8bc6af8f213f4f713bd634ec8545491c}{EnforceBounds}(decimal \textcolor{keyword}{const}& value)\{
+00015         \textcolor{keywordflow}{if} (value<lower) \{
+00016             \textcolor{keywordflow}{return} lower;
+00017         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(value> upper)\{
+00018             \textcolor{keywordflow}{return} upper;
+00019         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} value;
+00020     \}\textcolor{comment}{}
+00021 \textcolor{comment}{    //!\(\backslash\)brief DSG::StaticAssertBounds - Fails on compile time if value is not within bounds}
+00022 \textcolor{comment}{}    \textcolor{keyword}{template}<\textcolor{keywordtype}{int} lower,\textcolor{keywordtype}{int} upper,\textcolor{keywordtype}{int} value>
+\hypertarget{_bounds_8h_source_l00023}{}\hyperlink{namespace_d_s_g_a3fa12557d889e704f2e33d88929ec67a}{00023}     \textcolor{keywordtype}{void} \hyperlink{namespace_d_s_g_a3fa12557d889e704f2e33d88929ec67a}{StaticAssertBounds}()\{
+00024         static\_assert(value>=lower && value<=upper,\textcolor{stringliteral}{"Failed Static Bounds Assert"});
+00025     \}\textcolor{comment}{}
+00026 \textcolor{comment}{    //!\(\backslash\)brief DSG::AssertBounds - Fails on runtime if value is not within bounds}
+00027 \textcolor{comment}{}    \textcolor{keyword}{template}<\textcolor{keywordtype}{int} lower,\textcolor{keywordtype}{int} upper,\textcolor{keyword}{typename} T>
+\hypertarget{_bounds_8h_source_l00028}{}\hyperlink{namespace_d_s_g_a386b0133be9f4c7cb1ba014170ce294d}{00028}     \textcolor{keywordtype}{void} \hyperlink{namespace_d_s_g_a386b0133be9f4c7cb1ba014170ce294d}{AssertBounds}(T \textcolor{keyword}{const}& value)\{
+00029         assert(value>=lower && value<=upper);
+00030     \}
+00031 \}
+00032 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

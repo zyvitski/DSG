@@ -1,0 +1,183 @@
+\hypertarget{class_d_s_g_1_1_filter_1_1_filter_base}{\section{D\+S\+G\+:\+:Filter\+:\+:Filter\+Base Class Reference}
+\label{class_d_s_g_1_1_filter_1_1_filter_base}\index{D\+S\+G\+::\+Filter\+::\+Filter\+Base@{D\+S\+G\+::\+Filter\+::\+Filter\+Base}}
+}
+
+
+\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base}{D\+S\+G\+::\+Filter\+::\+Filter\+Base} -\/ \hyperlink{namespace_d_s_g_1_1_filter}{Filter} Base Class, implements interface for cutoff frequency.  
+
+
+
+
+{\ttfamily \#include $<$Filter.\+h$>$}
+
+Inheritance diagram for D\+S\+G\+:\+:Filter\+:\+:Filter\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_d_s_g_1_1_filter_1_1_filter_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_accc0a6729e252abaa24ad7f72b2f351d}{Filter\+Base} ()
+\item 
+virtual \hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a1e220c7fe383eba4822f3896d8b2c2b2}{$\sim$\+Filter\+Base} ()
+\item 
+virtual bool \hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_ae7b6f59f5408ecab3ccd6c4e723c70b4}{Perform} (\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{D\+S\+G\+::\+D\+S\+G\+Sample} \&signal)
+\item 
+virtual bool \hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_aef58742a1362b7ef94574a16036b7109}{Perform} (\hyperlink{class_d_s_g_1_1_ring_buffer}{D\+S\+G\+::\+Ring\+Buffer} \&signal)
+\item 
+virtual bool \hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a1bf981bd2ca2151791d91b80dda827fe}{Cutoff} (\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} const \&cutoff)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{D\+S\+G\+::\+D\+S\+G\+Sample} \hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a9e21e909fa2989adb88eedcb194e0150}{\+\_\+temp}
+\item 
+unsigned long \hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a74068413169f9acb3fcf8276074e3b1d}{count}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base}{D\+S\+G\+::\+Filter\+::\+Filter\+Base} -\/ \hyperlink{namespace_d_s_g_1_1_filter}{Filter} Base Class, implements interface for cutoff frequency. 
+
+Definition at line \hyperlink{_filter_8h_source_l00018}{18} of file \hyperlink{_filter_8h_source}{Filter.\+h}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_d_s_g_1_1_filter_1_1_filter_base_accc0a6729e252abaa24ad7f72b2f351d}{\index{D\+S\+G\+::\+Filter\+::\+Filter\+Base@{D\+S\+G\+::\+Filter\+::\+Filter\+Base}!Filter\+Base@{Filter\+Base}}
+\index{Filter\+Base@{Filter\+Base}!D\+S\+G\+::\+Filter\+::\+Filter\+Base@{D\+S\+G\+::\+Filter\+::\+Filter\+Base}}
+\subsubsection[{Filter\+Base}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Filter\+::\+Filter\+Base\+::\+Filter\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_d_s_g_1_1_filter_1_1_filter_base_accc0a6729e252abaa24ad7f72b2f351d}
+
+
+Definition at line \hyperlink{_filter_8cpp_source_l00009}{9} of file \hyperlink{_filter_8cpp_source}{Filter.\+cpp}.
+
+
+\begin{DoxyCode}
+00009 :\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a9e21e909fa2989adb88eedcb194e0150}{\_temp}(0),\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a74068413169f9acb3fcf8276074e3b1d}{count}(0)\{\}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_filter_1_1_filter_base_a1e220c7fe383eba4822f3896d8b2c2b2}{\index{D\+S\+G\+::\+Filter\+::\+Filter\+Base@{D\+S\+G\+::\+Filter\+::\+Filter\+Base}!````~Filter\+Base@{$\sim$\+Filter\+Base}}
+\index{````~Filter\+Base@{$\sim$\+Filter\+Base}!D\+S\+G\+::\+Filter\+::\+Filter\+Base@{D\+S\+G\+::\+Filter\+::\+Filter\+Base}}
+\subsubsection[{$\sim$\+Filter\+Base}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Filter\+::\+Filter\+Base\+::$\sim$\+Filter\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_s_g_1_1_filter_1_1_filter_base_a1e220c7fe383eba4822f3896d8b2c2b2}
+
+
+Definition at line \hyperlink{_filter_8cpp_source_l00010}{10} of file \hyperlink{_filter_8cpp_source}{Filter.\+cpp}.
+
+
+\begin{DoxyCode}
+00010 \{\}\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_s_g_1_1_filter_1_1_filter_base_a1bf981bd2ca2151791d91b80dda827fe}{\index{D\+S\+G\+::\+Filter\+::\+Filter\+Base@{D\+S\+G\+::\+Filter\+::\+Filter\+Base}!Cutoff@{Cutoff}}
+\index{Cutoff@{Cutoff}!D\+S\+G\+::\+Filter\+::\+Filter\+Base@{D\+S\+G\+::\+Filter\+::\+Filter\+Base}}
+\subsubsection[{Cutoff}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Filter\+::\+Filter\+Base\+::\+Cutoff (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} const \&}]{cutoff}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_filter_1_1_filter_base_a1bf981bd2ca2151791d91b80dda827fe}
+
+
+Reimplemented in \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a5f326faae2d72a6550b2e0593b00eea6}{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}.
+
+
+
+Definition at line \hyperlink{_filter_8h_source_l00044}{44} of file \hyperlink{_filter_8h_source}{Filter.\+h}.
+
+
+\begin{DoxyCode}
+00044                                                                             \{
+00045             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00046         \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_filter_1_1_filter_base_ae7b6f59f5408ecab3ccd6c4e723c70b4}{\index{D\+S\+G\+::\+Filter\+::\+Filter\+Base@{D\+S\+G\+::\+Filter\+::\+Filter\+Base}!Perform@{Perform}}
+\index{Perform@{Perform}!D\+S\+G\+::\+Filter\+::\+Filter\+Base@{D\+S\+G\+::\+Filter\+::\+Filter\+Base}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Filter\+::\+Filter\+Base\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+D\+S\+G\+Sample} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_filter_1_1_filter_base_ae7b6f59f5408ecab3ccd6c4e723c70b4}
+
+
+Implements \hyperlink{class_d_s_g_1_1_signal_process_af73d246c460915db7a9be7e3ef36844d}{D\+S\+G\+::\+Signal\+Process}.
+
+
+
+Reimplemented in \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a14ffd2f68de0cb9941d3295307ef13f0}{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}, and \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a9757794b5f9b7789132e5eaa44e07cef}{D\+S\+G\+::\+Filter\+::\+D\+C\+Blocker}.
+
+
+
+Definition at line \hyperlink{_filter_8h_source_l00029}{29} of file \hyperlink{_filter_8h_source}{Filter.\+h}.
+
+
+\begin{DoxyCode}
+00029                                                                     \{
+00030             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00031         \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_filter_1_1_filter_base_aef58742a1362b7ef94574a16036b7109}{\index{D\+S\+G\+::\+Filter\+::\+Filter\+Base@{D\+S\+G\+::\+Filter\+::\+Filter\+Base}!Perform@{Perform}}
+\index{Perform@{Perform}!D\+S\+G\+::\+Filter\+::\+Filter\+Base@{D\+S\+G\+::\+Filter\+::\+Filter\+Base}}
+\subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Filter\+::\+Filter\+Base\+::\+Perform (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+Ring\+Buffer} \&}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_filter_1_1_filter_base_aef58742a1362b7ef94574a16036b7109}
+
+
+Implements \hyperlink{class_d_s_g_1_1_signal_process_a2c8ff3487d9c43f9eace1d9192d4a37e}{D\+S\+G\+::\+Signal\+Process}.
+
+
+
+Reimplemented in \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7f094493387222422b9f283ec199dfd0}{D\+S\+G\+::\+Filter\+::\+Leaky\+Integrator}, and \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a690b2fdc8fdb749d9832d8d744b8cb2f}{D\+S\+G\+::\+Filter\+::\+D\+C\+Blocker}.
+
+
+
+Definition at line \hyperlink{_filter_8h_source_l00032}{32} of file \hyperlink{_filter_8h_source}{Filter.\+h}.
+
+
+\begin{DoxyCode}
+00032                                                                      \{
+00033             \textcolor{keywordflow}{if} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{Empty}()) \{
+00034                 \hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a74068413169f9acb3fcf8276074e3b1d}{count} = signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{Count}();
+00035                 \textcolor{keywordflow}{while} (\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a74068413169f9acb3fcf8276074e3b1d}{count}-- > 0) \{
+00036                     \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{Read}(\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a9e21e909fa2989adb88eedcb194e0150}{\_temp}))\{
+00037                         \textcolor{keywordflow}{if} (\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_ae7b6f59f5408ecab3ccd6c4e723c70b4}{Perform}(\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a9e21e909fa2989adb88eedcb194e0150}{\_temp})) \{
+00038                             signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base_a9e21e909fa2989adb88eedcb194e0150}{\_temp});
+00039                         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00040                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00041                 \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00042             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00043         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_d_s_g_1_1_filter_1_1_filter_base_a9e21e909fa2989adb88eedcb194e0150}{\index{D\+S\+G\+::\+Filter\+::\+Filter\+Base@{D\+S\+G\+::\+Filter\+::\+Filter\+Base}!\+\_\+temp@{\+\_\+temp}}
+\index{\+\_\+temp@{\+\_\+temp}!D\+S\+G\+::\+Filter\+::\+Filter\+Base@{D\+S\+G\+::\+Filter\+::\+Filter\+Base}}
+\subsubsection[{\+\_\+temp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Sample} D\+S\+G\+::\+Filter\+::\+Filter\+Base\+::\+\_\+temp\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_filter_1_1_filter_base_a9e21e909fa2989adb88eedcb194e0150}
+
+
+Definition at line \hyperlink{_filter_8h_source_l00026}{26} of file \hyperlink{_filter_8h_source}{Filter.\+h}.
+
+\hypertarget{class_d_s_g_1_1_filter_1_1_filter_base_a74068413169f9acb3fcf8276074e3b1d}{\index{D\+S\+G\+::\+Filter\+::\+Filter\+Base@{D\+S\+G\+::\+Filter\+::\+Filter\+Base}!count@{count}}
+\index{count@{count}!D\+S\+G\+::\+Filter\+::\+Filter\+Base@{D\+S\+G\+::\+Filter\+::\+Filter\+Base}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long D\+S\+G\+::\+Filter\+::\+Filter\+Base\+::count\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_filter_1_1_filter_base_a74068413169f9acb3fcf8276074e3b1d}
+
+
+Definition at line \hyperlink{_filter_8h_source_l00027}{27} of file \hyperlink{_filter_8h_source}{Filter.\+h}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\hyperlink{_filter_8h}{Filter.\+h}\item 
+/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\hyperlink{_filter_8cpp}{Filter.\+cpp}\end{DoxyCompactItemize}

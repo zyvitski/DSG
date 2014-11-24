@@ -6,6 +6,5 @@ var searchData=
   ['signalprocess_2eh',['SignalProcess.h',['../_signal_process_8h.html',1,'']]],
   ['sinc_2eh',['Sinc.h',['../_sinc_8h.html',1,'']]],
   ['sine_2eh',['Sine.h',['../_sine_8h.html',1,'']]],
-  ['sleep_2eh',['Sleep.h',['../_sleep_8h.html',1,'']]],
-  ['soundfile_2eh',['SoundFile.h',['../_sound_file_8h.html',1,'']]]
+  ['sleep_2eh',['Sleep.h',['../_sleep_8h.html',1,'']]]
 ];

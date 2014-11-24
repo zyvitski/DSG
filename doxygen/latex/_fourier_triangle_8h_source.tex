@@ -1,0 +1,75 @@
+\hypertarget{_fourier_triangle_8h_source}{\section{Fourier\+Triangle.\+h}
+\label{_fourier_triangle_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Fourier\+Triangle.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Fourier\+Triangle.\+h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  FourierTriangle.h}
+00003 \textcolor{comment}{//  DSG}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/16/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_FourierTriangle\_\_}
+00009 \textcolor{preprocessor}{#define \_\_DSG\_\_FourierTriangle\_\_}
+00010 \textcolor{preprocessor}{#include "\hyperlink{_signal_generator_8h}{SignalGenerator.h}"}
+00011 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
+00012 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
+00013     \textcolor{keyword}{inline}
+00014 \textcolor{preprocessor}{#endif}
+00015 \textcolor{comment}{    //!DSG::Fourier - Namespace Containing Fourier Series Based Oscillators}
+00016 \textcolor{comment}{}    \textcolor{keyword}{namespace }Fourier\{\textcolor{comment}{}
+00017 \textcolor{comment}{        //!\(\backslash\)brief DSG::Fourier::FourierTriangle - Fourier Series Triangle Wave Generator}
+\hypertarget{_fourier_triangle_8h_source_l00018}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle}{00018} \textcolor{comment}{}        \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle}{FourierTriangle} : \textcolor{keyword}{public} \hyperlink{class_d_s_g_1_1_signal_generator}{DSG::SignalGenerator} \{
+00019         \textcolor{keyword}{public}:
+00020             \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a4129c053eddd87256ae39552a06ce329}{FourierTriangle}();
+00021             \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a4129c053eddd87256ae39552a06ce329}{FourierTriangle}(\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& frequency,
+      \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& offset);
+00022             \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a780bfb898d144200ff2bfb48849b4d24}{~FourierTriangle}();
+00023             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_ab5b947c1fc1f34a461c863b18e3e877d}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal);
+00024             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_ab5b947c1fc1f34a461c863b18e3e877d}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal);
+00025             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{Frequency}(
+      \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a11216186ce96fc78c7720cad3e01d025}{value});
+00026         \textcolor{keyword}{protected}:
+\hypertarget{_fourier_triangle_8h_source_l00027}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a6fe21fae0d58d6221602e4bd74c30a80}{00027}             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a6fe21fae0d58d6221602e4bd74c30a80}{\_h};
+\hypertarget{_fourier_triangle_8h_source_l00028}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a64263fc3fa98179d57d34a3f105d8c97}{00028}             \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a64263fc3fa98179d57d34a3f105d8c97}{\_a};
+\hypertarget{_fourier_triangle_8h_source_l00029}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a274fb09e2f14f88ec969dcaa7ad423f4}{00029}             \textcolor{keywordtype}{double} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a274fb09e2f14f88ec969dcaa7ad423f4}{phs};
+\hypertarget{_fourier_triangle_8h_source_l00030}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a11216186ce96fc78c7720cad3e01d025}{00030}             \textcolor{keywordtype}{double} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a11216186ce96fc78c7720cad3e01d025}{value};
+\hypertarget{_fourier_triangle_8h_source_l00031}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a041154af261bce33f4764f60b6606ea4}{00031}             \textcolor{keywordtype}{int} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a041154af261bce33f4764f60b6606ea4}{i};
+00032         \};
+\hypertarget{_fourier_triangle_8h_source_l00033}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_ab5b947c1fc1f34a461c863b18e3e877d}{00033}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_ab5b947c1fc1f34a461c863b18e3e877d}{DSG::Fourier::FourierTriangle::Perform}(
+      \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal)\{
+00034             \textcolor{comment}{//(\_h/2)+1 Sine Calls Per Sample}
+00035             value=\hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{DSG::Sin}(\_phasor);\textcolor{comment}{//i=1}
+00036             \textcolor{keywordtype}{double} sgn = -1;
+00037             \textcolor{keywordflow}{for} (i=3; i<\_h; i+=2) \{\textcolor{comment}{//i=3..5..7..}
+00038                 value += sgn * (1.0/(i*i)) * \hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{DSG::Sin}(\_phasor*i);
+00039                 sgn*=-1;
+00040             \}
+00041             value*=\_a;
+00042             signal = value;
+00043             step();
+00044             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00045         \}
+\hypertarget{_fourier_triangle_8h_source_l00046}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a27b082e69cc7d70223dd3fbc552ba5bc}{00046}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_ab5b947c1fc1f34a461c863b18e3e877d}{DSG::Fourier::FourierTriangle::Perform}(
+      \hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal)\{
+00047             signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
+00048             \textcolor{keywordflow}{while} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{Full}()) \{
+00049                 \textcolor{keywordflow}{if} (Perform(\_storage)) \{
+00050                     \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\_storage))\{
+00051                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00052                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00053             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00054         \}
+\hypertarget{_fourier_triangle_8h_source_l00055}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a278a51ed8af32ea371adc903b9b25039}{00055}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& 
+      \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{DSG::Fourier::FourierTriangle::Frequency}(
+      \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& value)\{
+00056             \_frequency = value;
+00057             \_dt = \_frequency/\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}();
+00058             \_h = \hyperlink{namespace_d_s_g_ab5c4eea42ea10b69cfc32afb83ff1d0d}{MaxHarms}(\_frequency);
+00059             \textcolor{keywordflow}{return} \_frequency;
+00060         \}
+00061     \}
+00062 \}
+00063 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_FourierTriangle\_\_) */}\textcolor{preprocessor}{}
+\end{DoxyCode}

@@ -19,69 +19,395 @@ Inheritance diagram for D\+S\+G\+:\+:Ring\+Buffer\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_ae9859fd3ad18961de494d8b50fe4763e}{{\bfseries Ring\+Buffer} (const size\+\_\+t size)}\label{class_d_s_g_1_1_ring_buffer_ae9859fd3ad18961de494d8b50fe4763e}
-
+\hyperlink{class_d_s_g_1_1_ring_buffer_a3136c9debb3c422adb1d5835e11b2b99}{Ring\+Buffer} ()
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_ab09f32dacee49df3281c6701b7a4d737}{{\bfseries Ring\+Buffer} (\hyperlink{class_d_s_g_1_1_ring_buffer}{Ring\+Buffer} \&buffer)}\label{class_d_s_g_1_1_ring_buffer_ab09f32dacee49df3281c6701b7a4d737}
-
+\hyperlink{class_d_s_g_1_1_ring_buffer_ae9859fd3ad18961de494d8b50fe4763e}{Ring\+Buffer} (const size\+\_\+t size)
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_a892fbcc12b2dca5b04ead96a09299e73}{\hyperlink{class_d_s_g_1_1_ring_buffer}{Ring\+Buffer} \& {\bfseries operator=} (\hyperlink{class_d_s_g_1_1_ring_buffer}{Ring\+Buffer} \&buffer)}\label{class_d_s_g_1_1_ring_buffer_a892fbcc12b2dca5b04ead96a09299e73}
-
+\hyperlink{class_d_s_g_1_1_ring_buffer_ab09f32dacee49df3281c6701b7a4d737}{Ring\+Buffer} (\hyperlink{class_d_s_g_1_1_ring_buffer}{Ring\+Buffer} \&buffer)
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{bool {\bfseries Write} (const D\+S\+G\+Sample \&elem)}\label{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}
-
+\hyperlink{class_d_s_g_1_1_ring_buffer}{Ring\+Buffer} \& \hyperlink{class_d_s_g_1_1_ring_buffer_a892fbcc12b2dca5b04ead96a09299e73}{operator=} (\hyperlink{class_d_s_g_1_1_ring_buffer}{Ring\+Buffer} \&buffer)
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{bool {\bfseries Read} (D\+S\+G\+::\+D\+S\+G\+Sample \&elem)}\label{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}
-
+virtual \hyperlink{class_d_s_g_1_1_ring_buffer_a771d30b04b6f0313c203530685fbeb3a}{$\sim$\+Ring\+Buffer} ()
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{size\+\_\+t const \& {\bfseries Count} () const }\label{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}
-
+bool \hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write} (const \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{D\+S\+G\+Sample} \&elem)
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{bool {\bfseries Full} () const }\label{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}
-
+bool \hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{Read} (\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{D\+S\+G\+::\+D\+S\+G\+Sample} \&elem)
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{bool {\bfseries Empty} () const }\label{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}
-
+size\+\_\+t const \& \hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{Count} () const 
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{void {\bfseries Flush} ()}\label{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}
-
+bool \hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{Full} () const 
+\item 
+bool \hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{Empty} () const 
+\item 
+void \hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush} ()
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_a6d7a76a4c9b38ccde46344662e08c9e5}{size\+\_\+t {\bfseries next} (size\+\_\+t current)}\label{class_d_s_g_1_1_ring_buffer_a6d7a76a4c9b38ccde46344662e08c9e5}
-
+size\+\_\+t \hyperlink{class_d_s_g_1_1_ring_buffer_a6d7a76a4c9b38ccde46344662e08c9e5}{next} (size\+\_\+t current)
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_aaf481e139011e91b111cc048e726cafb}{size\+\_\+t {\bfseries make\+\_\+pow\+\_\+2} (size\+\_\+t number)}\label{class_d_s_g_1_1_ring_buffer_aaf481e139011e91b111cc048e726cafb}
-
+size\+\_\+t \hyperlink{class_d_s_g_1_1_ring_buffer_aaf481e139011e91b111cc048e726cafb}{make\+\_\+pow\+\_\+2} (size\+\_\+t number)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{std\+::atomic$<$ size\+\_\+t $>$ {\bfseries \+\_\+write}}\label{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}
-
+std\+::atomic$<$ size\+\_\+t $>$ \hyperlink{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{\+\_\+write}
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{std\+::atomic$<$ size\+\_\+t $>$ {\bfseries \+\_\+read}}\label{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}
-
+std\+::atomic$<$ size\+\_\+t $>$ \hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{\+\_\+read}
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{size\+\_\+t {\bfseries \+\_\+count}}\label{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}
-
+size\+\_\+t \hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\+\_\+count}
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_a2fba2ff6ee3886101f0f58b0fd7f3641}{size\+\_\+t {\bfseries M\+A\+S\+K}}\label{class_d_s_g_1_1_ring_buffer_a2fba2ff6ee3886101f0f58b0fd7f3641}
-
+size\+\_\+t \hyperlink{class_d_s_g_1_1_ring_buffer_a2fba2ff6ee3886101f0f58b0fd7f3641}{M\+A\+S\+K}
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_a703434b6afb87f1f9a05750278a822e3}{size\+\_\+t {\bfseries write}}\label{class_d_s_g_1_1_ring_buffer_a703434b6afb87f1f9a05750278a822e3}
-
+size\+\_\+t \hyperlink{class_d_s_g_1_1_ring_buffer_a703434b6afb87f1f9a05750278a822e3}{write}
 \item 
-\hypertarget{class_d_s_g_1_1_ring_buffer_a34bc659c286c8913e318c0e8c0777204}{size\+\_\+t {\bfseries read}}\label{class_d_s_g_1_1_ring_buffer_a34bc659c286c8913e318c0e8c0777204}
-
+size\+\_\+t \hyperlink{class_d_s_g_1_1_ring_buffer_a34bc659c286c8913e318c0e8c0777204}{read}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_d_s_g_1_1_ring_buffer_ab2e393fa39dc9b012eee8fe461e506cc}{operator$>$$>$} (\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{D\+S\+G\+::\+D\+S\+G\+Sample} const \&signal, \hyperlink{class_d_s_g_1_1_ring_buffer}{D\+S\+G\+::\+Ring\+Buffer} \&buffer)
+\item 
+bool \hyperlink{class_d_s_g_1_1_ring_buffer_a9eaa68fffdd0fcdccdccc0ee4a1ac711}{operator$<$$<$} (\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{D\+S\+G\+::\+D\+S\+G\+Sample} \&signal, \hyperlink{class_d_s_g_1_1_ring_buffer}{D\+S\+G\+::\+Ring\+Buffer} \&buffer)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 \hyperlink{class_d_s_g_1_1_ring_buffer}{D\+S\+G\+::\+Ring\+Buffer} -\/ Circular \hyperlink{class_d_s_g_1_1_buffer}{Buffer} of Audio. 
 
+Definition at line \hyperlink{_ring_buffer_8h_source_l00019}{19} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_d_s_g_1_1_ring_buffer_a3136c9debb3c422adb1d5835e11b2b99}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!Ring\+Buffer@{Ring\+Buffer}}
+\index{Ring\+Buffer@{Ring\+Buffer}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{Ring\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Ring\+Buffer\+::\+Ring\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_d_s_g_1_1_ring_buffer_a3136c9debb3c422adb1d5835e11b2b99}
+
+
+Definition at line \hyperlink{_ring_buffer_8cpp_source_l00009}{9} of file \hyperlink{_ring_buffer_8cpp_source}{Ring\+Buffer.\+cpp}.
+
+
+\begin{DoxyCode}
+00009 :\hyperlink{class_d_s_g_1_1_buffer_aa764dd8c389dcff51de08cb81fafeb86}{Buffer}(0),\hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{\_read}(0),\hyperlink{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{\_write}(0),\hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\_count}(0),\hyperlink{class_d_s_g_1_1_ring_buffer_a2fba2ff6ee3886101f0f58b0fd7f3641}{MASK}(0)\{\}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_ring_buffer_ae9859fd3ad18961de494d8b50fe4763e}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!Ring\+Buffer@{Ring\+Buffer}}
+\index{Ring\+Buffer@{Ring\+Buffer}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{Ring\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Ring\+Buffer\+::\+Ring\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}}\label{class_d_s_g_1_1_ring_buffer_ae9859fd3ad18961de494d8b50fe4763e}
+
+
+Definition at line \hyperlink{_ring_buffer_8cpp_source_l00010}{10} of file \hyperlink{_ring_buffer_8cpp_source}{Ring\+Buffer.\+cpp}.
+
+
+\begin{DoxyCode}
+00010                                            :\hyperlink{class_d_s_g_1_1_buffer_aa764dd8c389dcff51de08cb81fafeb86}{Buffer}(\hyperlink{class_d_s_g_1_1_ring_buffer_aaf481e139011e91b111cc048e726cafb}{make\_pow\_2}(size)),
+      \hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{\_read}(0),\hyperlink{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{\_write}(0),\hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\_count}(0)\{
+00011     \hyperlink{class_d_s_g_1_1_ring_buffer_a2fba2ff6ee3886101f0f58b0fd7f3641}{MASK} = this->\hyperlink{class_d_s_g_1_1_buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size}-1;
+00012 \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_ring_buffer_ab09f32dacee49df3281c6701b7a4d737}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!Ring\+Buffer@{Ring\+Buffer}}
+\index{Ring\+Buffer@{Ring\+Buffer}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{Ring\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Ring\+Buffer\+::\+Ring\+Buffer (
+\begin{DoxyParamCaption}
+\item[{{\bf Ring\+Buffer} \&}]{buffer}
+\end{DoxyParamCaption}
+)}}\label{class_d_s_g_1_1_ring_buffer_ab09f32dacee49df3281c6701b7a4d737}
+
+
+Definition at line \hyperlink{_ring_buffer_8cpp_source_l00013}{13} of file \hyperlink{_ring_buffer_8cpp_source}{Ring\+Buffer.\+cpp}.
+
+
+\begin{DoxyCode}
+00013                                             :\hyperlink{class_d_s_g_1_1_buffer_aa764dd8c389dcff51de08cb81fafeb86}{Buffer}(buffer)\{
+00014     \hyperlink{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{\_write}.store(buffer.\_write.load(std::memory\_order\_acquire));
+00015     \hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{\_read}.store(buffer.\_read.load(std::memory\_order\_acquire));
+00016     \hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\_count} = buffer.\_count;
+00017     \hyperlink{class_d_s_g_1_1_ring_buffer_a2fba2ff6ee3886101f0f58b0fd7f3641}{MASK} = buffer.\_size-1;
+00018 \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_ring_buffer_a771d30b04b6f0313c203530685fbeb3a}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!````~Ring\+Buffer@{$\sim$\+Ring\+Buffer}}
+\index{````~Ring\+Buffer@{$\sim$\+Ring\+Buffer}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{$\sim$\+Ring\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Ring\+Buffer\+::$\sim$\+Ring\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_s_g_1_1_ring_buffer_a771d30b04b6f0313c203530685fbeb3a}
+
+
+Definition at line \hyperlink{_ring_buffer_8cpp_source_l00027}{27} of file \hyperlink{_ring_buffer_8cpp_source}{Ring\+Buffer.\+cpp}.
+
+
+\begin{DoxyCode}
+00027 \{\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!Count@{Count}}
+\index{Count@{Count}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{Count}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t const \& D\+S\+G\+::\+Ring\+Buffer\+::\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}
+
+
+Definition at line \hyperlink{_ring_buffer_8h_source_l00090}{90} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+
+\begin{DoxyCode}
+00090                                                   \{
+00091         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\_count};
+00092     \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!Empty@{Empty}}
+\index{Empty@{Empty}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Ring\+Buffer\+::\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}
+
+
+Definition at line \hyperlink{_ring_buffer_8h_source_l00064}{64} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+
+\begin{DoxyCode}
+00064                                          \{
+00065         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\_count}==0;
+00066     \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!Flush@{Flush}}
+\index{Flush@{Flush}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{Flush}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S\+G\+::\+Ring\+Buffer\+::\+Flush (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}
+
+
+Definition at line \hyperlink{_ring_buffer_8h_source_l00067}{67} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+
+\begin{DoxyCode}
+00067                                     \{
+00068         \hyperlink{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{\_write}.store(0,std::memory\_order\_relaxed);
+00069         \hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{\_read}.store(0,std::memory\_order\_relaxed);
+00070         \hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\_count}=0;
+00071     \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!Full@{Full}}
+\index{Full@{Full}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{Full}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Ring\+Buffer\+::\+Full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}
+
+
+Definition at line \hyperlink{_ring_buffer_8h_source_l00061}{61} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+
+\begin{DoxyCode}
+00061                                         \{
+00062         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\_count}==this->\hyperlink{class_d_s_g_1_1_buffer_a4e2fef9ed617af2554b25c999def8f71}{\_size};
+00063     \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_ring_buffer_aaf481e139011e91b111cc048e726cafb}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!make\+\_\+pow\+\_\+2@{make\+\_\+pow\+\_\+2}}
+\index{make\+\_\+pow\+\_\+2@{make\+\_\+pow\+\_\+2}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{make\+\_\+pow\+\_\+2}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t D\+S\+G\+::\+Ring\+Buffer\+::make\+\_\+pow\+\_\+2 (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_d_s_g_1_1_ring_buffer_aaf481e139011e91b111cc048e726cafb}
+
+
+Definition at line \hyperlink{_ring_buffer_8h_source_l00095}{95} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+
+\begin{DoxyCode}
+00095                                                         \{
+00096         \textcolor{keywordflow}{return} pow(2, ceil(log(number)/log(2)));
+00097     \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_ring_buffer_a6d7a76a4c9b38ccde46344662e08c9e5}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!next@{next}}
+\index{next@{next}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{next}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t D\+S\+G\+::\+Ring\+Buffer\+::next (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{current}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_d_s_g_1_1_ring_buffer_a6d7a76a4c9b38ccde46344662e08c9e5}
+
+
+Definition at line \hyperlink{_ring_buffer_8h_source_l00094}{94} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+
+\begin{DoxyCode}
+00094 \{\textcolor{keywordflow}{return} (current+1) & \hyperlink{class_d_s_g_1_1_ring_buffer_a2fba2ff6ee3886101f0f58b0fd7f3641}{MASK};\}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_ring_buffer_a892fbcc12b2dca5b04ead96a09299e73}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!operator=@{operator=}}
+\index{operator=@{operator=}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+Ring\+Buffer} \& D\+S\+G\+::\+Ring\+Buffer\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Ring\+Buffer} \&}]{buffer}
+\end{DoxyParamCaption}
+)}}\label{class_d_s_g_1_1_ring_buffer_a892fbcc12b2dca5b04ead96a09299e73}
+
+
+Definition at line \hyperlink{_ring_buffer_8cpp_source_l00019}{19} of file \hyperlink{_ring_buffer_8cpp_source}{Ring\+Buffer.\+cpp}.
+
+
+\begin{DoxyCode}
+00019                                                            \{
+00020     \hyperlink{class_d_s_g_1_1_buffer_a977d572a7d402ff6bf991d7c5c0cc6a7}{Buffer::operator=}(buffer);
+00021     \hyperlink{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{\_write}.store(buffer.\_write.load(std::memory\_order\_acquire));
+00022     \hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{\_read}.store(buffer.\_read.load(std::memory\_order\_acquire));
+00023     \hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\_count} = buffer.\_count;
+00024     \hyperlink{class_d_s_g_1_1_ring_buffer_a2fba2ff6ee3886101f0f58b0fd7f3641}{MASK} = buffer.\_size-1;
+00025     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+00026 \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!Read@{Read}}
+\index{Read@{Read}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Ring\+Buffer\+::\+Read (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+D\+S\+G\+Sample} \&}]{elem}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}
+
+
+Definition at line \hyperlink{_ring_buffer_8h_source_l00081}{81} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+
+\begin{DoxyCode}
+00081                                                   \{
+00082         \textcolor{keywordflow}{if} (!\hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{Empty}()) \{
+00083             \hyperlink{class_d_s_g_1_1_ring_buffer_a34bc659c286c8913e318c0e8c0777204}{read} = \hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{\_read}.load(std::memory\_order\_acquire);
+00084             \hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{\_read}.store(\hyperlink{class_d_s_g_1_1_ring_buffer_a6d7a76a4c9b38ccde46344662e08c9e5}{next}(\hyperlink{class_d_s_g_1_1_ring_buffer_a34bc659c286c8913e318c0e8c0777204}{read}),std::memory\_order\_release);
+00085             elem = this->\hyperlink{class_d_s_g_1_1_buffer_ae4a4db8fe44b62db18d6a7855b5773f9}{\_buffer}[\hyperlink{class_d_s_g_1_1_ring_buffer_a34bc659c286c8913e318c0e8c0777204}{read}];
+00086             --\hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\_count};
+00087             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00088         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00089     \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!Write@{Write}}
+\index{Write@{Write}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Ring\+Buffer\+::\+Write (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\+S\+G\+Sample} \&}]{elem}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}
+
+
+Definition at line \hyperlink{_ring_buffer_8h_source_l00072}{72} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+
+\begin{DoxyCode}
+00072                                                          \{
+00073         \textcolor{keywordflow}{if} (!\hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{Full}()) \{
+00074             \hyperlink{class_d_s_g_1_1_ring_buffer_a703434b6afb87f1f9a05750278a822e3}{write} = \hyperlink{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{\_write}.load(std::memory\_order\_acquire);
+00075             \hyperlink{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{\_write}.store(\hyperlink{class_d_s_g_1_1_ring_buffer_a6d7a76a4c9b38ccde46344662e08c9e5}{next}(\hyperlink{class_d_s_g_1_1_ring_buffer_a703434b6afb87f1f9a05750278a822e3}{write}),std::memory\_order\_release);
+00076             this->\hyperlink{class_d_s_g_1_1_buffer_ae4a4db8fe44b62db18d6a7855b5773f9}{\_buffer}[\hyperlink{class_d_s_g_1_1_ring_buffer_a703434b6afb87f1f9a05750278a822e3}{write}] = elem;
+00077             ++\hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\_count};
+00078             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00079         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00080     \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_d_s_g_1_1_ring_buffer_a9eaa68fffdd0fcdccdccc0ee4a1ac711}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+D\+S\+G\+Sample} \&}]{signal, }
+\item[{{\bf D\+S\+G\+::\+Ring\+Buffer} \&}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_d_s_g_1_1_ring_buffer_a9eaa68fffdd0fcdccdccc0ee4a1ac711}
+
+
+Definition at line \hyperlink{_ring_buffer_8h_source_l00044}{44} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+
+\begin{DoxyCode}
+00044                                                                           \{
+00045             \textcolor{keywordflow}{return} buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{Read}(signal);
+00046         \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_ring_buffer_ab2e393fa39dc9b012eee8fe461e506cc}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+D\+S\+G\+Sample} const \&}]{signal, }
+\item[{{\bf D\+S\+G\+::\+Ring\+Buffer} \&}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_d_s_g_1_1_ring_buffer_ab2e393fa39dc9b012eee8fe461e506cc}
+
+
+Definition at line \hyperlink{_ring_buffer_8h_source_l00041}{41} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+
+\begin{DoxyCode}
+00041                                                                                 \{
+00042             \textcolor{keywordflow}{return} buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(signal);
+00043         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!\+\_\+count@{\+\_\+count}}
+\index{\+\_\+count@{\+\_\+count}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{\+\_\+count}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t D\+S\+G\+::\+Ring\+Buffer\+::\+\_\+count\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}
+
+
+Definition at line \hyperlink{_ring_buffer_8h_source_l00023}{23} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+\hypertarget{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!\+\_\+read@{\+\_\+read}}
+\index{\+\_\+read@{\+\_\+read}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{\+\_\+read}]{\setlength{\rightskip}{0pt plus 5cm}std\+::atomic$<$size\+\_\+t$>$ D\+S\+G\+::\+Ring\+Buffer\+::\+\_\+read\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}
+
+
+Definition at line \hyperlink{_ring_buffer_8h_source_l00022}{22} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+\hypertarget{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!\+\_\+write@{\+\_\+write}}
+\index{\+\_\+write@{\+\_\+write}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{\+\_\+write}]{\setlength{\rightskip}{0pt plus 5cm}std\+::atomic$<$size\+\_\+t$>$ D\+S\+G\+::\+Ring\+Buffer\+::\+\_\+write\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}
+
+
+Definition at line \hyperlink{_ring_buffer_8h_source_l00021}{21} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+\hypertarget{class_d_s_g_1_1_ring_buffer_a2fba2ff6ee3886101f0f58b0fd7f3641}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!M\+A\+S\+K@{M\+A\+S\+K}}
+\index{M\+A\+S\+K@{M\+A\+S\+K}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{M\+A\+S\+K}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t D\+S\+G\+::\+Ring\+Buffer\+::\+M\+A\+S\+K\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_ring_buffer_a2fba2ff6ee3886101f0f58b0fd7f3641}
+
+
+Definition at line \hyperlink{_ring_buffer_8h_source_l00024}{24} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+\hypertarget{class_d_s_g_1_1_ring_buffer_a34bc659c286c8913e318c0e8c0777204}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!read@{read}}
+\index{read@{read}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t D\+S\+G\+::\+Ring\+Buffer\+::read\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_ring_buffer_a34bc659c286c8913e318c0e8c0777204}
+
+
+Definition at line \hyperlink{_ring_buffer_8h_source_l00026}{26} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+\hypertarget{class_d_s_g_1_1_ring_buffer_a703434b6afb87f1f9a05750278a822e3}{\index{D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}!write@{write}}
+\index{write@{write}!D\+S\+G\+::\+Ring\+Buffer@{D\+S\+G\+::\+Ring\+Buffer}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t D\+S\+G\+::\+Ring\+Buffer\+::write\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_ring_buffer_a703434b6afb87f1f9a05750278a822e3}
+
+
+Definition at line \hyperlink{_ring_buffer_8h_source_l00025}{25} of file \hyperlink{_ring_buffer_8h_source}{Ring\+Buffer.\+h}.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/Ring\+Buffer.\+h\item 
-/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/Ring\+Buffer.\+cpp\end{DoxyCompactItemize}
+/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\hyperlink{_ring_buffer_8h}{Ring\+Buffer.\+h}\item 
+/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\hyperlink{_ring_buffer_8cpp}{Ring\+Buffer.\+cpp}\end{DoxyCompactItemize}

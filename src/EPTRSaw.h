@@ -5,6 +5,22 @@
 //  Created by Alexander Zywicki on 9/29/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
+/*
+ This file is part of the Digital Signal Generation Project or “DSG”.
+
+ DSG is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ DSG is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with DSG.  If not, see <http://www.gnu.org/licenses/>.
+ */
 #ifndef __DSG__EPTRSaw__
 #define __DSG__EPTRSaw__
 #include "SignalGenerator.h"
@@ -12,9 +28,10 @@ namespace DSG {
 #ifdef DSG_Short_Names
     inline
 #endif
-    //!DSG::EPTR - Namespace Enclosign Generators Based On The Efficienct Polynomial Transfer Region Algorithm
+    //!DSG::EPTR - Generators Based On The Efficienct Polynomial Transfer Region Algorithm
     namespace EPTR{
         //!\brief DSG::EPTR::EPTRSaw-Sawtooth Wave Generator Using The Efficienct Polynomial Transfer Region Algorithm
+        //!\todo Test and Possibly Re-Write DSG::EPTR::EPTRSaw algorithm 
         class EPTRSaw : public DSG::SignalGenerator{
         public:
             EPTRSaw();
@@ -37,8 +54,8 @@ namespace DSG {
             _register*=2.0;
             if (_register > 1.0-_dt) {
                 //transition region detected
-                //appy eptr correction
-                signal = _register - (_register/_dt) + (1/_dt) -1;
+                //apply eptr correction
+                signal = _register - (_register/_dt) + (1.0/_dt) -1;
             }else{
                 signal = _register;
             }

@@ -1,0 +1,17 @@
+digraph "DSG::Sin"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DSG::Sin",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="DSG::Fourier::FourierSaw\l::Perform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_fourier_1_1_fourier_saw.html#a33061612ff24180f12e9a2c29dfaa116"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="DSG::Fourier::FourierSeries\lGenerator::Perform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_fourier_1_1_fourier_series_generator.html#aa4768d44397b5fab5a30cb86068e161a"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="DSG::Fourier::FourierSquare\l::Perform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_fourier_1_1_fourier_square.html#a05bd0cd3e76ca22e1cede5afb47fbbc4"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="DSG::Fourier::FourierTriangle\l::Perform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_fourier_1_1_fourier_triangle.html#ab5b947c1fc1f34a461c863b18e3e877d"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="DSG::Sinc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_d_s_g.html#a6a99a1c242cddf18f4387f51ec8606b4",tooltip="DSG::Sinc - Implements the Sinc() function (sin(PI*x)/PI*x) "];
+}

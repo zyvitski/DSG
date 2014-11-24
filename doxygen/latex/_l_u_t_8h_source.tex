@@ -1,0 +1,82 @@
+\hypertarget{_l_u_t_8h_source}{\section{L\+U\+T.\+h}
+\label{_l_u_t_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+L\+U\+T.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+L\+U\+T.\+h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  LUT.h}
+00003 \textcolor{comment}{//  Waveform}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 8/25/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{preprocessor}{#ifndef Waveform\_LUT\_h}
+00009 \textcolor{preprocessor}{#define Waveform\_LUT\_h}
+00010 \textcolor{preprocessor}{#ifdef DEBUG}
+00011 \textcolor{preprocessor}{#include <assert.h>}
+00012 \textcolor{preprocessor}{#endif}
+00013 \textcolor{preprocessor}{#include "\hyperlink{_interpolate_8h}{Interpolate.h}"}
+00014 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{\textcolor{comment}{}
+00015 \textcolor{comment}{    //!\(\backslash\)brief DSG::LUT - Look Up Table}
+00016 \textcolor{comment}{}    \textcolor{keyword}{template} <\textcolor{keyword}{typename} element,\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} size>
+\hypertarget{_l_u_t_8h_source_l00017}{}\hyperlink{class_d_s_g_1_1_l_u_t}{00017}     \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_l_u_t}{LUT} \{
+00018     \textcolor{keyword}{public}:
+\hypertarget{_l_u_t_8h_source_l00019}{}\hyperlink{class_d_s_g_1_1_l_u_t_af2436acdd3f277cc4cac77c3c07cb4ca}{00019}         \textcolor{keyword}{typedef} element (*\hyperlink{class_d_s_g_1_1_l_u_t_af2436acdd3f277cc4cac77c3c07cb4ca}{FillFunction})(element);
+\hypertarget{_l_u_t_8h_source_l00020}{}\hyperlink{class_d_s_g_1_1_l_u_t_a69e1198a9a193fee92d676d33ffd3d66}{00020}         \textcolor{keyword}{typedef} element (*\hyperlink{class_d_s_g_1_1_l_u_t_a69e1198a9a193fee92d676d33ffd3d66}{FillFunctionConstRef})(element \textcolor{keyword}{const}&);
+\hypertarget{_l_u_t_8h_source_l00021}{}\hyperlink{class_d_s_g_1_1_l_u_t_a9d172f92fe9ea296efce54c9d7f8fdcc}{00021}         \hyperlink{class_d_s_g_1_1_l_u_t_a9d172f92fe9ea296efce54c9d7f8fdcc}{LUT}():\hyperlink{class_d_s_g_1_1_l_u_t_a87c352b5eaea2188955213c0f4ae9799}{\_size}(size)\{\}
+\hypertarget{_l_u_t_8h_source_l00022}{}\hyperlink{class_d_s_g_1_1_l_u_t_a68a44636b54a8c1b45c06e0f052d9288}{00022}         \hyperlink{class_d_s_g_1_1_l_u_t_a68a44636b54a8c1b45c06e0f052d9288}{LUT}(\hyperlink{class_d_s_g_1_1_l_u_t_af2436acdd3f277cc4cac77c3c07cb4ca}{FillFunction} fill,\textcolor{keywordtype}{double} \textcolor{keyword}{const}& range = 1.0):\hyperlink{class_d_s_g_1_1_l_u_t_a87c352b5eaea2188955213c0f4ae9799}{\_size}(size)\{
+00023             \textcolor{comment}{//range is the expected input range for the function}
+00024             \textcolor{comment}{//example would  be 0-2pi or 0-1}
+00025             \textcolor{comment}{//would be provided a 2pi or 1}
+00026             \textcolor{comment}{//defaults to 1}
+00027             \textcolor{keywordtype}{double} step = range/(double)\hyperlink{class_d_s_g_1_1_l_u_t_a87c352b5eaea2188955213c0f4ae9799}{\_size};
+00028             \hyperlink{class_d_s_g_1_1_l_u_t_a9ab8f8e89346c759e06f6d76c5b816cc}{phs} = 0;
+00029             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<\hyperlink{class_d_s_g_1_1_l_u_t_a87c352b5eaea2188955213c0f4ae9799}{\_size}; ++i) \{
+00030                 \hyperlink{class_d_s_g_1_1_l_u_t_ac8b23bbb7ce259d4ceb1c6fa93a7f29f}{\_table}[i] = fill(\hyperlink{class_d_s_g_1_1_l_u_t_a9ab8f8e89346c759e06f6d76c5b816cc}{phs});
+00031                 \hyperlink{class_d_s_g_1_1_l_u_t_a9ab8f8e89346c759e06f6d76c5b816cc}{phs}+=step;
+00032             \}
+00033         \}
+\hypertarget{_l_u_t_8h_source_l00034}{}\hyperlink{class_d_s_g_1_1_l_u_t_a88a213f672036c37ee7cd772cadceb3c}{00034}         \hyperlink{class_d_s_g_1_1_l_u_t_a88a213f672036c37ee7cd772cadceb3c}{LUT}(\hyperlink{class_d_s_g_1_1_l_u_t_a69e1198a9a193fee92d676d33ffd3d66}{FillFunctionConstRef} fill,\textcolor{keywordtype}{double} \textcolor{keyword}{const}& range = 1.0):
+      \hyperlink{class_d_s_g_1_1_l_u_t_a87c352b5eaea2188955213c0f4ae9799}{\_size}(size)\{
+00035             \textcolor{comment}{//range is the expected input range for the function}
+00036             \textcolor{comment}{//example would  be 0-2pi or 0-1}
+00037             \textcolor{comment}{//would be provided a 2pi or 1}
+00038             \textcolor{comment}{//defaults to 1}
+00039             \textcolor{keywordtype}{double} step = range/\hyperlink{class_d_s_g_1_1_l_u_t_a87c352b5eaea2188955213c0f4ae9799}{\_size};
+00040             \hyperlink{class_d_s_g_1_1_l_u_t_a9ab8f8e89346c759e06f6d76c5b816cc}{phs} = 0;
+00041             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<\hyperlink{class_d_s_g_1_1_l_u_t_a87c352b5eaea2188955213c0f4ae9799}{\_size}; ++i) \{
+00042                 \hyperlink{class_d_s_g_1_1_l_u_t_ac8b23bbb7ce259d4ceb1c6fa93a7f29f}{\_table}[i] = fill(\hyperlink{class_d_s_g_1_1_l_u_t_a9ab8f8e89346c759e06f6d76c5b816cc}{phs});
+00043                 \hyperlink{class_d_s_g_1_1_l_u_t_a9ab8f8e89346c759e06f6d76c5b816cc}{phs}+=step;
+00044             \}
+00045         \}
+\hypertarget{_l_u_t_8h_source_l00046}{}\hyperlink{class_d_s_g_1_1_l_u_t_ad939097dc1474825c7aa5ef2c427de4d}{00046}         \hyperlink{class_d_s_g_1_1_l_u_t_ad939097dc1474825c7aa5ef2c427de4d}{~LUT}()\{\}
+\hypertarget{_l_u_t_8h_source_l00047}{}\hyperlink{class_d_s_g_1_1_l_u_t_ac6291c79e92f1e538151f3be4bcd334c}{00047}         element \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_l_u_t_ac6291c79e92f1e538151f3be4bcd334c}{operator[]}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \textcolor{keyword}{const}& index)\textcolor{keyword}{const}\{
+00048 \textcolor{preprocessor}{#ifdef DEBUG}
+00049             assert(index<\hyperlink{class_d_s_g_1_1_l_u_t_a87c352b5eaea2188955213c0f4ae9799}{\_size});
+00050 \textcolor{preprocessor}{#endif}
+00051             \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_l_u_t_ac8b23bbb7ce259d4ceb1c6fa93a7f29f}{\_table}[index];
+00052         \}
+\hypertarget{_l_u_t_8h_source_l00053}{}\hyperlink{class_d_s_g_1_1_l_u_t_a734b7df17863591034393060d06db33d}{00053}         element& \hyperlink{class_d_s_g_1_1_l_u_t_a734b7df17863591034393060d06db33d}{operator[]}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \textcolor{keyword}{const}& index)\{
+00054 \textcolor{preprocessor}{#ifdef DEBUG}
+00055             assert(index<\hyperlink{class_d_s_g_1_1_l_u_t_a87c352b5eaea2188955213c0f4ae9799}{\_size});
+00056 \textcolor{preprocessor}{#endif}
+00057             \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_l_u_t_ac8b23bbb7ce259d4ceb1c6fa93a7f29f}{\_table}[index];
+00058         \}
+\hypertarget{_l_u_t_8h_source_l00059}{}\hyperlink{class_d_s_g_1_1_l_u_t_ab5cc091d7d74bda3fa09f6deabe15358}{00059}         \textcolor{keyword}{inline} element \textcolor{keyword}{const}&  \hyperlink{class_d_s_g_1_1_l_u_t_ab5cc091d7d74bda3fa09f6deabe15358}{operator()}(\textcolor{keywordtype}{double} \textcolor{keyword}{const}& x)\{
+00060             \hyperlink{class_d_s_g_1_1_l_u_t_a9ab8f8e89346c759e06f6d76c5b816cc}{phs}=x;
+00061             \textcolor{comment}{//need range checking on x to ensure 0-1 range}
+00062             \hyperlink{class_d_s_g_1_1_l_u_t_a9ab8f8e89346c759e06f6d76c5b816cc}{phs}<0 ? \hyperlink{class_d_s_g_1_1_l_u_t_a9ab8f8e89346c759e06f6d76c5b816cc}{phs} = 1-(phs*-1):0;
+00063             phs-=((int)phs);
+00064             \textcolor{keywordflow}{return} this->\hyperlink{class_d_s_g_1_1_l_u_t_ac8b23bbb7ce259d4ceb1c6fa93a7f29f}{\_table}[(unsigned)(phs*(this->\hyperlink{class_d_s_g_1_1_l_u_t_a87c352b5eaea2188955213c0f4ae9799}{\_size}-1))];
+00065         \}
+\hypertarget{_l_u_t_8h_source_l00066}{}\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{00066}         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}()\textcolor{keyword}{const}\{
+00067             \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_l_u_t_a87c352b5eaea2188955213c0f4ae9799}{\_size};
+00068         \}
+00069     \textcolor{keyword}{protected}:
+\hypertarget{_l_u_t_8h_source_l00070}{}\hyperlink{class_d_s_g_1_1_l_u_t_ac8b23bbb7ce259d4ceb1c6fa93a7f29f}{00070}         element \hyperlink{class_d_s_g_1_1_l_u_t_ac8b23bbb7ce259d4ceb1c6fa93a7f29f}{\_table}[size];
+\hypertarget{_l_u_t_8h_source_l00071}{}\hyperlink{class_d_s_g_1_1_l_u_t_a87c352b5eaea2188955213c0f4ae9799}{00071}         \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \hyperlink{class_d_s_g_1_1_l_u_t_a87c352b5eaea2188955213c0f4ae9799}{\_size};
+\hypertarget{_l_u_t_8h_source_l00072}{}\hyperlink{class_d_s_g_1_1_l_u_t_a9ab8f8e89346c759e06f6d76c5b816cc}{00072}         \textcolor{keywordtype}{double} \hyperlink{class_d_s_g_1_1_l_u_t_a9ab8f8e89346c759e06f6d76c5b816cc}{phs};
+00073     \};
+00074 \}
+00075 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}
