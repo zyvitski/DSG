@@ -157,6 +157,10 @@
 		1FC3424A19DA0F3E004C028E /* EPTRSaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3424719DA0F3E004C028E /* EPTRSaw.cpp */; };
 		1FC3424B19DA0F3E004C028E /* EPTRSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC3424819DA0F3E004C028E /* EPTRSaw.h */; };
 		1FC3424C19DA0F3E004C028E /* EPTRSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC3424819DA0F3E004C028E /* EPTRSaw.h */; };
+		1FC95FCC1A252AAC003088F2 /* MTOF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FC95FCA1A252AAC003088F2 /* MTOF.cpp */; };
+		1FC95FCD1A252AAC003088F2 /* MTOF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FC95FCA1A252AAC003088F2 /* MTOF.cpp */; };
+		1FC95FCE1A252AAC003088F2 /* MTOF.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC95FCB1A252AAC003088F2 /* MTOF.h */; };
+		1FC95FCF1A252AAC003088F2 /* MTOF.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC95FCB1A252AAC003088F2 /* MTOF.h */; };
 		1FE87D7219D7BD3C00E8377B /* DPWSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FE87D6F19D7BD3C00E8377B /* DPWSaw.h */; };
 		1FE87D7319D7BD3C00E8377B /* DPWSaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FE87D6F19D7BD3C00E8377B /* DPWSaw.h */; };
 		1FF3EEB119E399E5005047B6 /* Gaussian.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF3EEB019E399E5005047B6 /* Gaussian.h */; };
@@ -294,6 +298,8 @@
 		1FB9FD0219CA88F800E42C69 /* Sine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sine.h; path = src/Sine.h; sourceTree = "<group>"; };
 		1FC3424719DA0F3E004C028E /* EPTRSaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EPTRSaw.cpp; path = src/EPTRSaw.cpp; sourceTree = "<group>"; };
 		1FC3424819DA0F3E004C028E /* EPTRSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EPTRSaw.h; path = src/EPTRSaw.h; sourceTree = "<group>"; };
+		1FC95FCA1A252AAC003088F2 /* MTOF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MTOF.cpp; path = src/MTOF.cpp; sourceTree = "<group>"; };
+		1FC95FCB1A252AAC003088F2 /* MTOF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTOF.h; path = src/MTOF.h; sourceTree = "<group>"; };
 		1FE87D6F19D7BD3C00E8377B /* DPWSaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPWSaw.h; path = src/DPWSaw.h; sourceTree = "<group>"; };
 		1FF3EEB019E399E5005047B6 /* Gaussian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gaussian.h; path = src/Gaussian.h; sourceTree = "<group>"; };
 		1FF6ADA019D25548007887C3 /* Sinc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sinc.h; path = src/Sinc.h; sourceTree = "<group>"; };
@@ -412,6 +418,8 @@
 				1F4CA45919F6DEBA008CFD8C /* GenericGenerator.h */,
 				1F3F9F8E19F72632008D3B8B /* Interpolate.h */,
 				1FAB5FA61A128E3400F99417 /* Bounds.h */,
+				1FC95FCA1A252AAC003088F2 /* MTOF.cpp */,
+				1FC95FCB1A252AAC003088F2 /* MTOF.h */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -555,6 +563,7 @@
 				1FB9FCEA19CA88E900E42C69 /* BLITSaw.h in Headers */,
 				1F4CA45C19F6DEBA008CFD8C /* GenericGenerator.h in Headers */,
 				1FB9FD1019CA88F800E42C69 /* LUT.h in Headers */,
+				1FC95FCE1A252AAC003088F2 /* MTOF.h in Headers */,
 				1FB9FCC319CA88C700E42C69 /* AnalogTriangle.h in Headers */,
 				1FB9FCE619CA88E900E42C69 /* BLIT.h in Headers */,
 				1FB9FD0619CA88F800E42C69 /* AudioSettings.h in Headers */,
@@ -607,6 +616,7 @@
 				1FB9FCEB19CA88E900E42C69 /* BLITSaw.h in Headers */,
 				1F4CA45D19F6DEBA008CFD8C /* GenericGenerator.h in Headers */,
 				1FB9FD1119CA88F800E42C69 /* LUT.h in Headers */,
+				1FC95FCF1A252AAC003088F2 /* MTOF.h in Headers */,
 				1FB9FCCD19CA88D500E42C69 /* FourierSaw.h in Headers */,
 				1FB9FCE719CA88E900E42C69 /* BLIT.h in Headers */,
 				1FB9FD0719CA88F800E42C69 /* AudioSettings.h in Headers */,
@@ -727,6 +737,7 @@
 			files = (
 				1F949F9F19FEFA7100C0DF7E /* Filter.cpp in Sources */,
 				1FB9FCF019CA88E900E42C69 /* BLITTriangle.cpp in Sources */,
+				1FC95FCC1A252AAC003088F2 /* MTOF.cpp in Sources */,
 				1FB525A519F5D8FF00252FDB /* NoiseGenerator.cpp in Sources */,
 				1F89D72B19EBA2EF00794DCD /* DCBlocker.cpp in Sources */,
 				1FB9FD1819CA88F800E42C69 /* SignalGenerator.cpp in Sources */,
@@ -756,6 +767,7 @@
 			files = (
 				1F949FA019FEFA7100C0DF7E /* Filter.cpp in Sources */,
 				1FB9FCF119CA88E900E42C69 /* BLITTriangle.cpp in Sources */,
+				1FC95FCD1A252AAC003088F2 /* MTOF.cpp in Sources */,
 				1FB525A619F5D8FF00252FDB /* NoiseGenerator.cpp in Sources */,
 				1F89D72C19EBA2EF00794DCD /* DCBlocker.cpp in Sources */,
 				1FB9FD1919CA88F800E42C69 /* SignalGenerator.cpp in Sources */,

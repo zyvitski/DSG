@@ -1,5 +1,5 @@
 \hypertarget{_d_s_f_8h_source}{\section{D\+S\+F.\+h}
-\label{_d_s_f_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+D\+S\+F.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+D\+S\+F.\+h}}
+\label{_d_s_f_8h_source}\index{D\+S\+F.\+h@{D\+S\+F.\+h}}
 }
 
 \begin{DoxyCode}
@@ -10,19 +10,37 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 11/5/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_DSF\_\_}
-00009 \textcolor{preprocessor}{#define \_\_DSG\_\_DSF\_\_}
-00010 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_math_8h}{DSGMath.h}"}
-00011 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_types_8h}{DSGTypes.h}"}
-00012 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
-00013     \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal=DSG::DSGSample>
-\hypertarget{_d_s_f_8h_source_l00014}{}\hyperlink{namespace_d_s_g_aac6959add6359f512191ddcd17fd6373}{00014}     decimal \hyperlink{namespace_d_s_g_aac6959add6359f512191ddcd17fd6373}{DSF}(decimal \textcolor{keyword}{const}& beta,decimal \textcolor{keyword}{const}& theta,decimal \textcolor{keyword}{const}& N,decimal \textcolor{keyword}{const}& a)\{
-00015 \textcolor{preprocessor}{#warning Untested DSG::DSF()}
-00016         decimal denominator = 1 + DSG::Pow<2>(a) - (2.0*a*cos(beta));
-00017         decimal numerator = sin(theta) - a * sin(theta-beta) - pow(a, N+1) * (sin(theta + (N+1)*beta) - a*
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_DSF\_\_}
+00025 \textcolor{preprocessor}{#define \_\_DSG\_\_DSF\_\_}
+00026 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_math_8h}{DSGMath.h}"}
+00027 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_types_8h}{DSGTypes.h}"}
+00028 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
+00029     \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal=DSG::DSGSample>
+\hypertarget{_d_s_f_8h_source_l00030}{}\hyperlink{namespace_d_s_g_aac6959add6359f512191ddcd17fd6373}{00030}     decimal \hyperlink{namespace_d_s_g_aac6959add6359f512191ddcd17fd6373}{DSF}(decimal \textcolor{keyword}{const}& beta,decimal \textcolor{keyword}{const}& theta,decimal \textcolor{keyword}{const}& N,decimal \textcolor{keyword}{const}& a)\{
+00031 \textcolor{preprocessor}{#ifdef \_\_APPLE\_\_}
+00032 \textcolor{preprocessor}{#warning Untested DSG::DSF()}
+00033 \textcolor{preprocessor}{#endif}
+00034         decimal denominator = 1 + DSG::Pow<2>(a) - (2.0*a*cos(beta));
+00035         decimal numerator = sin(theta) - a * sin(theta-beta) - pow(a, N+1) * (sin(theta + (N+1)*beta) - a*
       sin(theta + (N*beta)));
-00018         \textcolor{keywordflow}{return} numerator/denominator;
-00019     \}
-00020 \}
-00021 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_DSF\_\_) */}\textcolor{preprocessor}{}
+00036         \textcolor{keywordflow}{return} numerator/denominator;
+00037     \}
+00038 \}
+00039 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_DSF\_\_) */}\textcolor{preprocessor}{}
 \end{DoxyCode}

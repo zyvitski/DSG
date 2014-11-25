@@ -1,5 +1,5 @@
 \hypertarget{_denormal_8h_source}{\section{Denormal.\+h}
-\label{_denormal_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Denormal.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Denormal.\+h}}
+\label{_denormal_8h_source}\index{Denormal.\+h@{Denormal.\+h}}
 }
 
 \begin{DoxyCode}
@@ -10,17 +10,33 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/23/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{preprocessor}{#ifndef DSG\_Denormal\_h}
-00009 \textcolor{preprocessor}{#define DSG\_Denormal\_h}
-00010 \textcolor{preprocessor}{#include <limits>}
-00011 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_math_8h}{DSGMath.h}"}
-00012 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{\textcolor{comment}{}
-00013 \textcolor{comment}{    //!\(\backslash\)brief DSG::IsDenormal - Returns True if number is Denormal }
-00014 \textcolor{comment}{}    \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>
-\hypertarget{_denormal_8h_source_l00015}{}\hyperlink{namespace_d_s_g_a9eee3c39a1f45d42f0b4fa7201d3ba3d}{00015}     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{namespace_d_s_g_a9eee3c39a1f45d42f0b4fa7201d3ba3d}{IsDenormal}(T \textcolor{keyword}{const}& value)\{
-00016         \textcolor{keywordflow}{return} \hyperlink{namespace_d_s_g_a0af03bade7e25e8da80e3022af0e45a7}{DSG::Abs}(value)<=std::numeric\_limits<T>::epsilon();\textcolor{comment}{//return true if number is
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#ifndef DSG\_Denormal\_h}
+00025 \textcolor{preprocessor}{#define DSG\_Denormal\_h}
+00026 \textcolor{preprocessor}{#include <limits>}
+00027 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_math_8h}{DSGMath.h}"}
+00028 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{\textcolor{comment}{}
+00029 \textcolor{comment}{    //!\(\backslash\)brief DSG::IsDenormal - Returns True if number is Denormal }
+00030 \textcolor{comment}{}    \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>
+\hypertarget{_denormal_8h_source_l00031}{}\hyperlink{namespace_d_s_g_a9eee3c39a1f45d42f0b4fa7201d3ba3d}{00031}     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{namespace_d_s_g_a9eee3c39a1f45d42f0b4fa7201d3ba3d}{IsDenormal}(T \textcolor{keyword}{const}& value)\{
+00032         \textcolor{keywordflow}{return} \hyperlink{namespace_d_s_g_a0af03bade7e25e8da80e3022af0e45a7}{DSG::Abs}(value)<=std::numeric\_limits<T>::epsilon();\textcolor{comment}{//return true if number is
        denormal}
-00017     \}
-00018 \}
-00019 \textcolor{preprocessor}{#endif}
+00033     \}
+00034 \}
+00035 \textcolor{preprocessor}{#endif}
 \end{DoxyCode}

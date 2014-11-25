@@ -147,16 +147,16 @@ template&lt;typename decimal , unsigned long lutsize&gt; </div>
 
 <p><a class="el" href="namespace_d_s_g_1_1_window.html#ab3ab521b2e0d85dc752ccc42e642b203" title="DSG::Window::ApplyWindow - Apply a window function to a LUT. ">DSG::Window::ApplyWindow</a> - Apply a window function to a <a class="el" href="class_d_s_g_1_1_l_u_t.html" title="DSG::LUT - Look Up Table. ">LUT</a>. </p>
 
-<p>Definition at line <a class="el" href="_window_8h_source.html#l00019">19</a> of file <a class="el" href="_window_8h_source.html">Window.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                                                                                                    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            decimal step = range/(decimal)lut.<a class="code" href="class_d_s_g_1_1_l_u_t.html#a2d1a2112f9e960c7b70882a19d670ff9">Size</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            decimal phs=0;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;lut.<a class="code" href="class_d_s_g_1_1_l_u_t.html#a2d1a2112f9e960c7b70882a19d670ff9">Size</a>(); ++i) {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                lut[i]*=windowFunction(phs);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                phs+=step;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
-<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_a2d1a2112f9e960c7b70882a19d670ff9"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#a2d1a2112f9e960c7b70882a19d670ff9">DSG::LUT::Size</a></div><div class="ttdeci">unsigned long const &amp; Size() const </div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00066">LUT.h:66</a></div></div>
+<p>Definition at line <a class="el" href="_window_8h_source.html#l00035">35</a> of file <a class="el" href="_window_8h_source.html">Window.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                                                                                    {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            decimal step = range/(decimal)lut.<a class="code" href="class_d_s_g_1_1_l_u_t.html#a2d1a2112f9e960c7b70882a19d670ff9">Size</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            decimal phs=0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;lut.<a class="code" href="class_d_s_g_1_1_l_u_t.html#a2d1a2112f9e960c7b70882a19d670ff9">Size</a>(); ++i) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                lut[i]*=windowFunction(phs);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                phs+=step;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
+<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_a2d1a2112f9e960c7b70882a19d670ff9"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#a2d1a2112f9e960c7b70882a19d670ff9">DSG::LUT::Size</a></div><div class="ttdeci">unsigned long const &amp; Size() const </div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00082">LUT.h:82</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -194,16 +194,16 @@ template&lt;typename decimal , unsigned long lutsize&gt; </div>
 
 <p><a class="el" href="namespace_d_s_g_1_1_window.html#ab3ab521b2e0d85dc752ccc42e642b203" title="DSG::Window::ApplyWindow - Apply a window function to a LUT. ">DSG::Window::ApplyWindow</a> - Apply a window function to a <a class="el" href="class_d_s_g_1_1_l_u_t.html" title="DSG::LUT - Look Up Table. ">LUT</a>. </p>
 
-<p>Definition at line <a class="el" href="_window_8h_source.html#l00029">29</a> of file <a class="el" href="_window_8h_source.html">Window.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                                                                                             {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            decimal step = range/(decimal)lut.<a class="code" href="class_d_s_g_1_1_l_u_t.html#a2d1a2112f9e960c7b70882a19d670ff9">Size</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            decimal phs=0;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;lut.<a class="code" href="class_d_s_g_1_1_l_u_t.html#a2d1a2112f9e960c7b70882a19d670ff9">Size</a>(); ++i) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                lut[i]*=windowFunction(phs);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                phs+=step;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
-<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_a2d1a2112f9e960c7b70882a19d670ff9"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#a2d1a2112f9e960c7b70882a19d670ff9">DSG::LUT::Size</a></div><div class="ttdeci">unsigned long const &amp; Size() const </div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00066">LUT.h:66</a></div></div>
+<p>Definition at line <a class="el" href="_window_8h_source.html#l00045">45</a> of file <a class="el" href="_window_8h_source.html">Window.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                                                                             {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            decimal step = range/(decimal)lut.<a class="code" href="class_d_s_g_1_1_l_u_t.html#a2d1a2112f9e960c7b70882a19d670ff9">Size</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            decimal phs=0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;lut.<a class="code" href="class_d_s_g_1_1_l_u_t.html#a2d1a2112f9e960c7b70882a19d670ff9">Size</a>(); ++i) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                lut[i]*=windowFunction(phs);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                phs+=step;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
+<div class="ttc" id="class_d_s_g_1_1_l_u_t_html_a2d1a2112f9e960c7b70882a19d670ff9"><div class="ttname"><a href="class_d_s_g_1_1_l_u_t.html#a2d1a2112f9e960c7b70882a19d670ff9">DSG::LUT::Size</a></div><div class="ttdeci">unsigned long const &amp; Size() const </div><div class="ttdef"><b>Definition:</b> <a href="_l_u_t_8h_source.html#l00082">LUT.h:82</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -233,30 +233,30 @@ template&lt;typename decimal &gt; </div>
 
 <p><a class="el" href="namespace_d_s_g_1_1_window.html#a0800636ec7008aa75ff987feef5aafdf" title="DSG::Window::Blackman - Blackman Window Function. ">DSG::Window::Blackman</a> - Blackman <a class="el" href="namespace_d_s_g_1_1_window.html" title="DSG::Window - Window functions and utilities. ">Window</a> Function. </p>
 
-<p>Definition at line <a class="el" href="_blackman_8h_source.html#l00020">20</a> of file <a class="el" href="_blackman_8h_source.html">Blackman.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                                 {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="comment">// Generate Blackman Window</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="comment">/*</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">             Blackman(x) = 0.42f - (0.5f * cos(2pi*x)) + (0.08f * cos(2pi*2.0*x));</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">             }*/</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            static_assert(std::is_floating_point&lt;decimal&gt;::value==<span class="keyword">true</span>,<span class="stringliteral">&quot;DSG::Blackman Function Requires Floating Point Type&quot;</span>);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="comment">//we will implement the blackman window as a function as if it were sin(x)</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="comment">//cos input domain 0-1 not 0-2pi</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="comment">//range checking is handles within DSG::Cos</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            decimal phs=x;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">while</span> (phs&gt;1.0) {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                phs-=1.0;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">return</span> 0.42 - (0.5 * <a class="code" href="namespace_d_s_g.html#ade303ad15c77f534429305c3cbd90191">DSG::Cos</a>(phs))+(0.08 * <a class="code" href="namespace_d_s_g.html#ade303ad15c77f534429305c3cbd90191">DSG::Cos</a>(2.0*phs));</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
-<div class="ttc" id="namespace_d_s_g_html_ade303ad15c77f534429305c3cbd90191"><div class="ttname"><a href="namespace_d_s_g.html#ade303ad15c77f534429305c3cbd90191">DSG::Cos</a></div><div class="ttdeci">double Cos(double const &amp;x)</div><div class="ttdoc">DSG::Cos() - General Purpose Cos Function, double precision. </div><div class="ttdef"><b>Definition:</b> <a href="_sine_8h_source.html#l00060">Sine.h:60</a></div></div>
+<p>Definition at line <a class="el" href="_blackman_8h_source.html#l00036">36</a> of file <a class="el" href="_blackman_8h_source.html">Blackman.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                 {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="comment">// Generate Blackman Window</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="comment">/*</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">             Blackman(x) = 0.42f - (0.5f * cos(2pi*x)) + (0.08f * cos(2pi*2.0*x));</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">             }*/</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            static_assert(std::is_floating_point&lt;decimal&gt;::value==<span class="keyword">true</span>,<span class="stringliteral">&quot;DSG::Blackman Function Requires Floating Point Type&quot;</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="comment">//we will implement the blackman window as a function as if it were sin(x)</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="comment">//cos input domain 0-1 not 0-2pi</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="comment">//range checking is handles within DSG::Cos</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            decimal phs=x;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">while</span> (phs&gt;1.0) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                phs-=1.0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">return</span> 0.42 - (0.5 * <a class="code" href="namespace_d_s_g.html#ade303ad15c77f534429305c3cbd90191">DSG::Cos</a>(phs))+(0.08 * <a class="code" href="namespace_d_s_g.html#ade303ad15c77f534429305c3cbd90191">DSG::Cos</a>(2.0*phs));</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="ttc" id="namespace_d_s_g_html_ade303ad15c77f534429305c3cbd90191"><div class="ttname"><a href="namespace_d_s_g.html#ade303ad15c77f534429305c3cbd90191">DSG::Cos</a></div><div class="ttdeci">double Cos(double const &amp;x)</div><div class="ttdoc">DSG::Cos() - General Purpose Cos Function, double precision. </div><div class="ttdef"><b>Definition:</b> <a href="_sine_8h_source.html#l00076">Sine.h:76</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 23 2014 21:27:48 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 24 2014 22:55:28 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

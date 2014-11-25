@@ -1,5 +1,5 @@
 \hypertarget{_leaky_8h_source}{\section{Leaky.\+h}
-\label{_leaky_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Leaky.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Leaky.\+h}}
+\label{_leaky_8h_source}\index{Leaky.\+h@{Leaky.\+h}}
 }
 
 \begin{DoxyCode}
@@ -10,60 +10,75 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 10/27/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 
-00009 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_Leaky\_\_}
-00010 \textcolor{preprocessor}{#define \_\_DSG\_\_Leaky\_\_}
-00011 \textcolor{preprocessor}{#include "\hyperlink{_filter_8h}{Filter.h}"}
-00012 \textcolor{preprocessor}{#include "\hyperlink{_p_i_8h}{PI.h}"}
-00013 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG} \{
-00014 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
-00015     \textcolor{keyword}{inline}
-00016 \textcolor{preprocessor}{#endif}
-00017     \textcolor{keyword}{namespace }Filter\{\textcolor{comment}{}
-00018 \textcolor{comment}{        //!\(\backslash\)brief DSG::Filter::LeakyIntegrator - Leaky integrator }
-\hypertarget{_leaky_8h_source_l00019}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator}{00019} \textcolor{comment}{}        \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator}{LeakyIntegrator}:\textcolor{keyword}{public} \hyperlink{class_d_s_g_1_1_filter_1_1_filter_base}{DSG::Filter::FilterBase}\{
-00020         \textcolor{keyword}{public}:
-00021             \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_af0d204e3c2f5f844dc4355810f6515c2}{LeakyIntegrator}();
-00022             \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_af0d204e3c2f5f844dc4355810f6515c2}{LeakyIntegrator}(\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& cutoff);
-00023             \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a3a79cdbcf90a7924c05ec87b89fca83d}{~LeakyIntegrator}();
-00024             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a14ffd2f68de0cb9941d3295307ef13f0}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal);
-00025             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a14ffd2f68de0cb9941d3295307ef13f0}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal);
-00026             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a5f326faae2d72a6550b2e0593b00eea6}{Cutoff}(\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& cutoff);
-00027         \textcolor{keyword}{protected}:
-\hypertarget{_leaky_8h_source_l00028}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}{00028}             \textcolor{keywordtype}{double} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a052c709de4d6cddfdc0fb0441275ce98}{x1},\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}{y1},\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a9a321b7650923119fda60595a7659aef}{a},\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_abb7e9fc15eef17836979b98b8b50880d}{b};
-\hypertarget{_leaky_8h_source_l00029}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}{00029}             \textcolor{keywordtype}{double} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}{y};
-00030         \};
-\hypertarget{_leaky_8h_source_l00031}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a14ffd2f68de0cb9941d3295307ef13f0}{00031}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a14ffd2f68de0cb9941d3295307ef13f0}{DSG::Filter::LeakyIntegrator::Perform}(
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_Leaky\_\_}
+00025 \textcolor{preprocessor}{#define \_\_DSG\_\_Leaky\_\_}
+00026 \textcolor{preprocessor}{#include "\hyperlink{_filter_8h}{Filter.h}"}
+00027 \textcolor{preprocessor}{#include "\hyperlink{_p_i_8h}{PI.h}"}
+00028 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG} \{
+00029 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
+00030     \textcolor{keyword}{inline}
+00031 \textcolor{preprocessor}{#endif}
+00032     \textcolor{keyword}{namespace }Filter\{\textcolor{comment}{}
+00033 \textcolor{comment}{        //!\(\backslash\)brief DSG::Filter::LeakyIntegrator - Leaky integrator }
+\hypertarget{_leaky_8h_source_l00034}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator}{00034} \textcolor{comment}{}        \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator}{LeakyIntegrator}:\textcolor{keyword}{public} \hyperlink{class_d_s_g_1_1_filter_1_1_filter_base}{DSG::Filter::FilterBase}\{
+00035         \textcolor{keyword}{public}:
+00036             \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_af0d204e3c2f5f844dc4355810f6515c2}{LeakyIntegrator}();
+00037             \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_af0d204e3c2f5f844dc4355810f6515c2}{LeakyIntegrator}(\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& cutoff);
+00038             \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a3a79cdbcf90a7924c05ec87b89fca83d}{~LeakyIntegrator}();
+00039             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a14ffd2f68de0cb9941d3295307ef13f0}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal);
+00040             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a14ffd2f68de0cb9941d3295307ef13f0}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal);
+00041             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a5f326faae2d72a6550b2e0593b00eea6}{Cutoff}(\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& cutoff);
+00042         \textcolor{keyword}{protected}:
+\hypertarget{_leaky_8h_source_l00043}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}{00043}             \textcolor{keywordtype}{double} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a052c709de4d6cddfdc0fb0441275ce98}{x1},\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}{y1},\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a9a321b7650923119fda60595a7659aef}{a},\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_abb7e9fc15eef17836979b98b8b50880d}{b};
+\hypertarget{_leaky_8h_source_l00044}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}{00044}             \textcolor{keywordtype}{double} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}{y};
+00045         \};
+\hypertarget{_leaky_8h_source_l00046}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a14ffd2f68de0cb9941d3295307ef13f0}{00046}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a14ffd2f68de0cb9941d3295307ef13f0}{DSG::Filter::LeakyIntegrator::Perform}(
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal)\{
-00032             y = b * (signal + x1) - a * y1;
-00033             x1=signal;
-00034             y1=y;
-00035             signal=y;
-00036             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-00037         \}
-\hypertarget{_leaky_8h_source_l00038}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7f094493387222422b9f283ec199dfd0}{00038}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a14ffd2f68de0cb9941d3295307ef13f0}{DSG::Filter::LeakyIntegrator::Perform}(
+00047             y = b * (signal + x1) - a * y1;
+00048             x1=signal;
+00049             y1=y;
+00050             signal=y;
+00051             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00052         \}
+\hypertarget{_leaky_8h_source_l00053}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7f094493387222422b9f283ec199dfd0}{00053}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a14ffd2f68de0cb9941d3295307ef13f0}{DSG::Filter::LeakyIntegrator::Perform}(
       \hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal)\{
-00039             \textcolor{keywordflow}{if} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{Empty}()) \{
-00040                 count = signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{Count}();
-00041                 \textcolor{keywordflow}{while} (count-- > 0) \{
-00042                     \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{Read}(\_temp))\{
-00043                         \textcolor{keywordflow}{if} (Perform(\_temp)) \{
-00044                             signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\_temp);
-00045                         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00046                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00047                 \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
-00048             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00049         \}
-\hypertarget{_leaky_8h_source_l00050}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a5f326faae2d72a6550b2e0593b00eea6}{00050}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a5f326faae2d72a6550b2e0593b00eea6}{DSG::Filter::LeakyIntegrator::Cutoff}(
+00054             \textcolor{keywordflow}{if} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{Empty}()) \{
+00055                 count = signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{Count}();
+00056                 \textcolor{keywordflow}{while} (count-- > 0) \{
+00057                     \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{Read}(\_temp))\{
+00058                         \textcolor{keywordflow}{if} (Perform(\_temp)) \{
+00059                             signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\_temp);
+00060                         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00061                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00062                 \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00063             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00064         \}
+\hypertarget{_leaky_8h_source_l00065}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a5f326faae2d72a6550b2e0593b00eea6}{00065}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a5f326faae2d72a6550b2e0593b00eea6}{DSG::Filter::LeakyIntegrator::Cutoff}(
       \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& cutoff)\{
-00051             \textcolor{keywordtype}{double} Omega;
-00052             x1 = y1 = 0.0;
-00053             Omega = atan(\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI} * cutoff);
-00054             a = -(1.0 - Omega) / (1.0 + Omega);
-00055             b = (1.0 - b) / 2.0;
-00056             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-00057         \}
-00058     \}
-00059 \}
-00060 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_Leaky\_\_) */}\textcolor{preprocessor}{}
+00066             \textcolor{keywordtype}{double} Omega;
+00067             x1 = y1 = 0.0;
+00068             Omega = atan(\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI} * cutoff);
+00069             a = -(1.0 - Omega) / (1.0 + Omega);
+00070             b = (1.0 - b) / 2.0;
+00071             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00072         \}
+00073     \}
+00074 \}
+00075 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_Leaky\_\_) */}\textcolor{preprocessor}{}
 \end{DoxyCode}

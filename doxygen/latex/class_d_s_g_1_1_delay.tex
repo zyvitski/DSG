@@ -62,7 +62,7 @@ const unsigned long \hyperlink{class_d_s_g_1_1_delay_a1751998677ff85f6580c383e17
 
 \hyperlink{class_d_s_g_1_1_delay}{D\+S\+G\+::\+Delay} -\/ General purpose delay line. 
 
-Definition at line \hyperlink{_delay_8h_source_l00017}{17} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
+Definition at line \hyperlink{_delay_8h_source_l00033}{33} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
 
 
 
@@ -76,16 +76,16 @@ Definition at line \hyperlink{_delay_8h_source_l00017}{17} of file \hyperlink{_d
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_s_g_1_1_delay_a20fb108695dac24156aeb2143a88555a}
 
 
-Definition at line \hyperlink{_delay_8h_source_l00019}{19} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
+Definition at line \hyperlink{_delay_8h_source_l00035}{35} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
 
 
 \begin{DoxyCode}
-00019                :\hyperlink{class_d_s_g_1_1_signal_process}{DSG::SignalProcess}(),\hyperlink{class_d_s_g_1_1_delay_a1751998677ff85f6580c383e17347d9c}{\_max}(maxLength),\hyperlink{class_d_s_g_1_1_delay_af026ee90120c5cea6a935aef6cab6624}{\_swap}(0),
+00035                :\hyperlink{class_d_s_g_1_1_signal_process}{DSG::SignalProcess}(),\hyperlink{class_d_s_g_1_1_delay_a1751998677ff85f6580c383e17347d9c}{\_max}(maxLength),\hyperlink{class_d_s_g_1_1_delay_af026ee90120c5cea6a935aef6cab6624}{\_swap}(0),
       \hyperlink{class_d_s_g_1_1_delay_a039bb7a3a39aff5841b9e808cacc1a6e}{\_temp}(0),\hyperlink{class_d_s_g_1_1_delay_a1d54836950db9724434880d859d1e3ea}{count}(0),\hyperlink{class_d_s_g_1_1_delay_ac39e72226786a3c43b231b69752431ec}{\_index}(0),\hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay}(0)\{
-00020             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<\hyperlink{class_d_s_g_1_1_delay_a1751998677ff85f6580c383e17347d9c}{\_max}; ++i) \{
-00021                 \hyperlink{class_d_s_g_1_1_delay_a8c86e03e9656476371f98d049ae1c5c9}{\_buffer}[i]=0;
-00022             \}
-00023         \}
+00036             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<\hyperlink{class_d_s_g_1_1_delay_a1751998677ff85f6580c383e17347d9c}{\_max}; ++i) \{
+00037                 \hyperlink{class_d_s_g_1_1_delay_a8c86e03e9656476371f98d049ae1c5c9}{\_buffer}[i]=0;
+00038             \}
+00039         \}
 \end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_delay_aecfa312690df905bbeaa8888d1bb702f}{\index{D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}!Delay@{Delay}}
 \index{Delay@{Delay}!D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}}
@@ -96,21 +96,21 @@ Definition at line \hyperlink{_delay_8h_source_l00019}{19} of file \hyperlink{_d
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_s_g_1_1_delay_aecfa312690df905bbeaa8888d1bb702f}
 
 
-Definition at line \hyperlink{_delay_8h_source_l00024}{24} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
+Definition at line \hyperlink{_delay_8h_source_l00040}{40} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
 
 
 \begin{DoxyCode}
-00024                                     :\hyperlink{class_d_s_g_1_1_signal_process}{DSG::SignalProcess}(),\hyperlink{class_d_s_g_1_1_delay_a1751998677ff85f6580c383e17347d9c}{\_max}(maxLength),
+00040                                     :\hyperlink{class_d_s_g_1_1_signal_process}{DSG::SignalProcess}(),\hyperlink{class_d_s_g_1_1_delay_a1751998677ff85f6580c383e17347d9c}{\_max}(maxLength),
       \hyperlink{class_d_s_g_1_1_delay_af026ee90120c5cea6a935aef6cab6624}{\_swap}(0),\hyperlink{class_d_s_g_1_1_delay_a039bb7a3a39aff5841b9e808cacc1a6e}{\_temp}(0),\hyperlink{class_d_s_g_1_1_delay_a1d54836950db9724434880d859d1e3ea}{count}(0),\hyperlink{class_d_s_g_1_1_delay_ac39e72226786a3c43b231b69752431ec}{\_index}(0),\hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay}(0)\{
-00025             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<\hyperlink{class_d_s_g_1_1_delay_a1751998677ff85f6580c383e17347d9c}{\_max}; ++i) \{
-00026                 \hyperlink{class_d_s_g_1_1_delay_a8c86e03e9656476371f98d049ae1c5c9}{\_buffer}[i]=0;
-00027             \}
-00028             \textcolor{keywordflow}{if} (samples>maxLength) \{
-00029                 \hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay} = maxLength;
-00030             \}\textcolor{keywordflow}{else}\{
-00031                 \hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay} = samples;
-00032             \}
-00033         \}
+00041             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<\hyperlink{class_d_s_g_1_1_delay_a1751998677ff85f6580c383e17347d9c}{\_max}; ++i) \{
+00042                 \hyperlink{class_d_s_g_1_1_delay_a8c86e03e9656476371f98d049ae1c5c9}{\_buffer}[i]=0;
+00043             \}
+00044             \textcolor{keywordflow}{if} (samples>maxLength) \{
+00045                 \hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay} = maxLength;
+00046             \}\textcolor{keywordflow}{else}\{
+00047                 \hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay} = samples;
+00048             \}
+00049         \}
 \end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_delay_ac2df9a0120744cc8efa15556e4293a2c}{\index{D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}!````~Delay@{$\sim$\+Delay}}
 \index{````~Delay@{$\sim$\+Delay}!D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}}
@@ -121,11 +121,11 @@ Definition at line \hyperlink{_delay_8h_source_l00024}{24} of file \hyperlink{_d
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_delay_ac2df9a0120744cc8efa15556e4293a2c}
 
 
-Definition at line \hyperlink{_delay_8h_source_l00034}{34} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
+Definition at line \hyperlink{_delay_8h_source_l00050}{50} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
 
 
 \begin{DoxyCode}
-00034 \{\}
+00050 \{\}
 \end{DoxyCode}
 
 
@@ -139,16 +139,16 @@ Definition at line \hyperlink{_delay_8h_source_l00034}{34} of file \hyperlink{_d
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_delay_a4c800f6ce87a75d964aab53617d12664}
 
 
-Definition at line \hyperlink{_delay_8h_source_l00056}{56} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
+Definition at line \hyperlink{_delay_8h_source_l00072}{72} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
 
 
 \begin{DoxyCode}
-00056                                        \{
-00057             ++\hyperlink{class_d_s_g_1_1_delay_ac39e72226786a3c43b231b69752431ec}{\_index};
-00058             \textcolor{keywordflow}{if} (\hyperlink{class_d_s_g_1_1_delay_ac39e72226786a3c43b231b69752431ec}{\_index}>\hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay}) \{
-00059                 \hyperlink{class_d_s_g_1_1_delay_ac39e72226786a3c43b231b69752431ec}{\_index}-=\hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay};
-00060             \}
-00061         \}
+00072                                        \{
+00073             ++\hyperlink{class_d_s_g_1_1_delay_ac39e72226786a3c43b231b69752431ec}{\_index};
+00074             \textcolor{keywordflow}{if} (\hyperlink{class_d_s_g_1_1_delay_ac39e72226786a3c43b231b69752431ec}{\_index}>\hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay}) \{
+00075                 \hyperlink{class_d_s_g_1_1_delay_ac39e72226786a3c43b231b69752431ec}{\_index}-=\hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay};
+00076             \}
+00077         \}
 \end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_delay_abf8bfbd184f1e733d1b5aae0bfa408d7}{\index{D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}!Length@{Length}}
 \index{Length@{Length}!D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}}
@@ -159,13 +159,13 @@ Definition at line \hyperlink{_delay_8h_source_l00056}{56} of file \hyperlink{_d
 ) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_delay_abf8bfbd184f1e733d1b5aae0bfa408d7}
 
 
-Definition at line \hyperlink{_delay_8h_source_l00035}{35} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
+Definition at line \hyperlink{_delay_8h_source_l00051}{51} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
 
 
 \begin{DoxyCode}
-00035                                                          \{
-00036             \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay};
-00037         \}
+00051                                                          \{
+00052             \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay};
+00053         \}
 \end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_delay_a7081f684727044ff1765ab6284385359}{\index{D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}!Length@{Length}}
 \index{Length@{Length}!D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}}
@@ -176,18 +176,18 @@ Definition at line \hyperlink{_delay_8h_source_l00035}{35} of file \hyperlink{_d
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_delay_a7081f684727044ff1765ab6284385359}
 
 
-Definition at line \hyperlink{_delay_8h_source_l00038}{38} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
+Definition at line \hyperlink{_delay_8h_source_l00054}{54} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
 
 
 \begin{DoxyCode}
-00038                                                                                 \{
-00039             \textcolor{keywordflow}{if} (samples>maxLength) \{
-00040                 \hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay} = maxLength;
-00041             \}\textcolor{keywordflow}{else}\{
-00042                 \hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay} = samples;
-00043             \}
-00044             \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay};
-00045         \}
+00054                                                                                 \{
+00055             \textcolor{keywordflow}{if} (samples>maxLength) \{
+00056                 \hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay} = maxLength;
+00057             \}\textcolor{keywordflow}{else}\{
+00058                 \hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay} = samples;
+00059             \}
+00060             \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\_delay};
+00061         \}
 \end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_delay_afe853b73a1d7d1e5720277e5d956b209}{\index{D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}!Perform@{Perform}}
 \index{Perform@{Perform}!D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}}
@@ -202,17 +202,17 @@ Implements \hyperlink{class_d_s_g_1_1_signal_process_af73d246c460915db7a9be7e3ef
 
 
 
-Definition at line \hyperlink{_delay_8h_source_l00064}{64} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
+Definition at line \hyperlink{_delay_8h_source_l00080}{80} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
 
 
 \begin{DoxyCode}
-00064                                                                 \{
-00065         \hyperlink{class_d_s_g_1_1_delay_af026ee90120c5cea6a935aef6cab6624}{\_swap} = \hyperlink{class_d_s_g_1_1_delay_a8c86e03e9656476371f98d049ae1c5c9}{\_buffer}[\hyperlink{class_d_s_g_1_1_delay_ac39e72226786a3c43b231b69752431ec}{\_index}-1];
-00066         \hyperlink{class_d_s_g_1_1_delay_a8c86e03e9656476371f98d049ae1c5c9}{\_buffer}[\hyperlink{class_d_s_g_1_1_delay_ac39e72226786a3c43b231b69752431ec}{\_index}-1]=signal;
-00067         signal = \hyperlink{class_d_s_g_1_1_delay_af026ee90120c5cea6a935aef6cab6624}{\_swap};
-00068         \hyperlink{class_d_s_g_1_1_delay_a4c800f6ce87a75d964aab53617d12664}{increment}();
-00069         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-00070     \}
+00080                                                                 \{
+00081         \hyperlink{class_d_s_g_1_1_delay_af026ee90120c5cea6a935aef6cab6624}{\_swap} = \hyperlink{class_d_s_g_1_1_delay_a8c86e03e9656476371f98d049ae1c5c9}{\_buffer}[\hyperlink{class_d_s_g_1_1_delay_ac39e72226786a3c43b231b69752431ec}{\_index}-1];
+00082         \hyperlink{class_d_s_g_1_1_delay_a8c86e03e9656476371f98d049ae1c5c9}{\_buffer}[\hyperlink{class_d_s_g_1_1_delay_ac39e72226786a3c43b231b69752431ec}{\_index}-1]=signal;
+00083         signal = \hyperlink{class_d_s_g_1_1_delay_af026ee90120c5cea6a935aef6cab6624}{\_swap};
+00084         \hyperlink{class_d_s_g_1_1_delay_a4c800f6ce87a75d964aab53617d12664}{increment}();
+00085         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00086     \}
 \end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_delay_a205bd6fc25ea951395943eae51128e66}{\index{D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}!Perform@{Perform}}
 \index{Perform@{Perform}!D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}}
@@ -227,22 +227,22 @@ Implements \hyperlink{class_d_s_g_1_1_signal_process_a2c8ff3487d9c43f9eace1d9192
 
 
 
-Definition at line \hyperlink{_delay_8h_source_l00072}{72} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
+Definition at line \hyperlink{_delay_8h_source_l00088}{88} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
 
 
 \begin{DoxyCode}
-00072                                                                  \{
-00073         \textcolor{keywordflow}{if} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{Empty}()) \{
-00074             \hyperlink{class_d_s_g_1_1_delay_a1d54836950db9724434880d859d1e3ea}{count} = signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{Count}();
-00075             \textcolor{keywordflow}{while} (\hyperlink{class_d_s_g_1_1_delay_a1d54836950db9724434880d859d1e3ea}{count}-- > 0) \{
-00076                 \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{Read}(\hyperlink{class_d_s_g_1_1_delay_a039bb7a3a39aff5841b9e808cacc1a6e}{\_temp}))\{
-00077                     \textcolor{keywordflow}{if} (\hyperlink{class_d_s_g_1_1_delay_afe853b73a1d7d1e5720277e5d956b209}{Perform}(\hyperlink{class_d_s_g_1_1_delay_a039bb7a3a39aff5841b9e808cacc1a6e}{\_temp})) \{
-00078                         signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\hyperlink{class_d_s_g_1_1_delay_a039bb7a3a39aff5841b9e808cacc1a6e}{\_temp});
-00079                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00080                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00081             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
-00082         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00083     \}
+00088                                                                  \{
+00089         \textcolor{keywordflow}{if} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{Empty}()) \{
+00090             \hyperlink{class_d_s_g_1_1_delay_a1d54836950db9724434880d859d1e3ea}{count} = signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{Count}();
+00091             \textcolor{keywordflow}{while} (\hyperlink{class_d_s_g_1_1_delay_a1d54836950db9724434880d859d1e3ea}{count}-- > 0) \{
+00092                 \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{Read}(\hyperlink{class_d_s_g_1_1_delay_a039bb7a3a39aff5841b9e808cacc1a6e}{\_temp}))\{
+00093                     \textcolor{keywordflow}{if} (\hyperlink{class_d_s_g_1_1_delay_afe853b73a1d7d1e5720277e5d956b209}{Perform}(\hyperlink{class_d_s_g_1_1_delay_a039bb7a3a39aff5841b9e808cacc1a6e}{\_temp})) \{
+00094                         signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\hyperlink{class_d_s_g_1_1_delay_a039bb7a3a39aff5841b9e808cacc1a6e}{\_temp});
+00095                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00096                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00097             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00098         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00099     \}
 \end{DoxyCode}
 
 
@@ -252,52 +252,52 @@ Definition at line \hyperlink{_delay_8h_source_l00072}{72} of file \hyperlink{_d
 \subsubsection[{\+\_\+buffer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned long max\+Length$>$ {\bf D\+S\+G\+::\+D\+S\+G\+Sample} {\bf D\+S\+G\+::\+Delay}$<$ max\+Length $>$\+::\+\_\+buffer\mbox{[}max\+Length\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_delay_a8c86e03e9656476371f98d049ae1c5c9}
 
 
-Definition at line \hyperlink{_delay_8h_source_l00053}{53} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
+Definition at line \hyperlink{_delay_8h_source_l00069}{69} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
 
 \hypertarget{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}{\index{D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}!\+\_\+delay@{\+\_\+delay}}
 \index{\+\_\+delay@{\+\_\+delay}!D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}}
 \subsubsection[{\+\_\+delay}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned long max\+Length$>$ unsigned long {\bf D\+S\+G\+::\+Delay}$<$ max\+Length $>$\+::\+\_\+delay\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_delay_aad8790118689ae46c7f434b790358e3f}
 
 
-Definition at line \hyperlink{_delay_8h_source_l00050}{50} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
+Definition at line \hyperlink{_delay_8h_source_l00066}{66} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
 
 \hypertarget{class_d_s_g_1_1_delay_ac39e72226786a3c43b231b69752431ec}{\index{D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}!\+\_\+index@{\+\_\+index}}
 \index{\+\_\+index@{\+\_\+index}!D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}}
 \subsubsection[{\+\_\+index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned long max\+Length$>$ unsigned long {\bf D\+S\+G\+::\+Delay}$<$ max\+Length $>$\+::\+\_\+index\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_delay_ac39e72226786a3c43b231b69752431ec}
 
 
-Definition at line \hyperlink{_delay_8h_source_l00051}{51} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
+Definition at line \hyperlink{_delay_8h_source_l00067}{67} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
 
 \hypertarget{class_d_s_g_1_1_delay_a1751998677ff85f6580c383e17347d9c}{\index{D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}!\+\_\+max@{\+\_\+max}}
 \index{\+\_\+max@{\+\_\+max}!D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}}
 \subsubsection[{\+\_\+max}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned long max\+Length$>$ const unsigned long {\bf D\+S\+G\+::\+Delay}$<$ max\+Length $>$\+::\+\_\+max\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_delay_a1751998677ff85f6580c383e17347d9c}
 
 
-Definition at line \hyperlink{_delay_8h_source_l00052}{52} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
+Definition at line \hyperlink{_delay_8h_source_l00068}{68} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
 
 \hypertarget{class_d_s_g_1_1_delay_af026ee90120c5cea6a935aef6cab6624}{\index{D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}!\+\_\+swap@{\+\_\+swap}}
 \index{\+\_\+swap@{\+\_\+swap}!D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}}
 \subsubsection[{\+\_\+swap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned long max\+Length$>$ {\bf D\+S\+G\+::\+D\+S\+G\+Sample} {\bf D\+S\+G\+::\+Delay}$<$ max\+Length $>$\+::\+\_\+swap\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_delay_af026ee90120c5cea6a935aef6cab6624}
 
 
-Definition at line \hyperlink{_delay_8h_source_l00054}{54} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
+Definition at line \hyperlink{_delay_8h_source_l00070}{70} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
 
 \hypertarget{class_d_s_g_1_1_delay_a039bb7a3a39aff5841b9e808cacc1a6e}{\index{D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}!\+\_\+temp@{\+\_\+temp}}
 \index{\+\_\+temp@{\+\_\+temp}!D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}}
 \subsubsection[{\+\_\+temp}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned long max\+Length$>$ {\bf D\+S\+G\+::\+D\+S\+G\+Sample} {\bf D\+S\+G\+::\+Delay}$<$ max\+Length $>$\+::\+\_\+temp\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_delay_a039bb7a3a39aff5841b9e808cacc1a6e}
 
 
-Definition at line \hyperlink{_delay_8h_source_l00055}{55} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
+Definition at line \hyperlink{_delay_8h_source_l00071}{71} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
 
 \hypertarget{class_d_s_g_1_1_delay_a1d54836950db9724434880d859d1e3ea}{\index{D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}!count@{count}}
 \index{count@{count}!D\+S\+G\+::\+Delay@{D\+S\+G\+::\+Delay}}
 \subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned long max\+Length$>$ unsigned long {\bf D\+S\+G\+::\+Delay}$<$ max\+Length $>$\+::count\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_delay_a1d54836950db9724434880d859d1e3ea}
 
 
-Definition at line \hyperlink{_delay_8h_source_l00049}{49} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
+Definition at line \hyperlink{_delay_8h_source_l00065}{65} of file \hyperlink{_delay_8h_source}{Delay.\+h}.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\hyperlink{_delay_8h}{Delay.\+h}\end{DoxyCompactItemize}
+\hyperlink{_delay_8h}{Delay.\+h}\end{DoxyCompactItemize}

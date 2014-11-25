@@ -1,5 +1,5 @@
 \hypertarget{_d_c_blocker_8h_source}{\section{D\+C\+Blocker.\+h}
-\label{_d_c_blocker_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+D\+C\+Blocker.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+D\+C\+Blocker.\+h}}
+\label{_d_c_blocker_8h_source}\index{D\+C\+Blocker.\+h@{D\+C\+Blocker.\+h}}
 }
 
 \begin{DoxyCode}
@@ -10,51 +10,67 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 10/13/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_DCBlocker\_\_}
-00009 \textcolor{preprocessor}{#define \_\_DSG\_\_DCBlocker\_\_}
-00010 \textcolor{preprocessor}{#include "\hyperlink{_filter_8h}{Filter.h}"}
-00011 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG} \{
-00012 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
-00013     \textcolor{keyword}{inline}
-00014 \textcolor{preprocessor}{#endif}
-\hypertarget{_d_c_blocker_8h_source_l00015}{}\hyperlink{namespace_d_s_g_1_1_filter}{00015}     \textcolor{keyword}{namespace }Filter\{\textcolor{comment}{}
-00016 \textcolor{comment}{        //!\(\backslash\)brief DSG::Filter::DCBlocker - DC blocking filter}
-\hypertarget{_d_c_blocker_8h_source_l00017}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker}{00017} \textcolor{comment}{}        \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker}{DCBlocker}:\textcolor{keyword}{public} \hyperlink{class_d_s_g_1_1_filter_1_1_filter_base}{DSG::Filter::FilterBase} \{
-00018         \textcolor{keyword}{public}:
-00019             \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a71cb7abe6fca10f64402971d8b4a6eb3}{DCBlocker}();
-00020             \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a5393dac29a226f5912f6d1705b69eecf}{~DCBlocker}();
-00021             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a9757794b5f9b7789132e5eaa44e07cef}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal);
-00022             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a9757794b5f9b7789132e5eaa44e07cef}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal);
-00023         \textcolor{keyword}{protected}:
-\hypertarget{_d_c_blocker_8h_source_l00024}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a2a045707b5b79e7a4330c87156f7b344}{00024}             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a2a045707b5b79e7a4330c87156f7b344}{count};
-\hypertarget{_d_c_blocker_8h_source_l00025}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a4a698e11be27e8613f5b5146df9c4599}{00025}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a4a698e11be27e8613f5b5146df9c4599}{\_temp};
-\hypertarget{_d_c_blocker_8h_source_l00026}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_aace7bdafac8d0b4acf9d09bb368f6486}{00026}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_aace7bdafac8d0b4acf9d09bb368f6486}{xm1};
-\hypertarget{_d_c_blocker_8h_source_l00027}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a61689c80d7fb0f25144fc84996396d71}{00027}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a61689c80d7fb0f25144fc84996396d71}{ym1};
-\hypertarget{_d_c_blocker_8h_source_l00028}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_aacb82cec9c34b8afe19fe2c7830eb05a}{00028}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_aacb82cec9c34b8afe19fe2c7830eb05a}{x};
-\hypertarget{_d_c_blocker_8h_source_l00029}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_ac048fff815764f3ad6d73b27553234c8}{00029}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_ac048fff815764f3ad6d73b27553234c8}{\_a};
-00030         \};
-\hypertarget{_d_c_blocker_8h_source_l00031}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a9757794b5f9b7789132e5eaa44e07cef}{00031}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a9757794b5f9b7789132e5eaa44e07cef}{DSG::Filter::DCBlocker::Perform}(
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_DCBlocker\_\_}
+00025 \textcolor{preprocessor}{#define \_\_DSG\_\_DCBlocker\_\_}
+00026 \textcolor{preprocessor}{#include "\hyperlink{_filter_8h}{Filter.h}"}
+00027 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG} \{
+00028 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
+00029     \textcolor{keyword}{inline}
+00030 \textcolor{preprocessor}{#endif}
+\hypertarget{_d_c_blocker_8h_source_l00031}{}\hyperlink{namespace_d_s_g_1_1_filter}{00031}     \textcolor{keyword}{namespace }Filter\{\textcolor{comment}{}
+00032 \textcolor{comment}{        //!\(\backslash\)brief DSG::Filter::DCBlocker - DC blocking filter}
+\hypertarget{_d_c_blocker_8h_source_l00033}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker}{00033} \textcolor{comment}{}        \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker}{DCBlocker}:\textcolor{keyword}{public} \hyperlink{class_d_s_g_1_1_filter_1_1_filter_base}{DSG::Filter::FilterBase} \{
+00034         \textcolor{keyword}{public}:
+00035             \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a71cb7abe6fca10f64402971d8b4a6eb3}{DCBlocker}();
+00036             \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a5393dac29a226f5912f6d1705b69eecf}{~DCBlocker}();
+00037             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a9757794b5f9b7789132e5eaa44e07cef}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal);
+00038             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a9757794b5f9b7789132e5eaa44e07cef}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal);
+00039         \textcolor{keyword}{protected}:
+\hypertarget{_d_c_blocker_8h_source_l00040}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a2a045707b5b79e7a4330c87156f7b344}{00040}             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a2a045707b5b79e7a4330c87156f7b344}{count};
+\hypertarget{_d_c_blocker_8h_source_l00041}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a4a698e11be27e8613f5b5146df9c4599}{00041}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a4a698e11be27e8613f5b5146df9c4599}{\_temp};
+\hypertarget{_d_c_blocker_8h_source_l00042}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_aace7bdafac8d0b4acf9d09bb368f6486}{00042}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_aace7bdafac8d0b4acf9d09bb368f6486}{xm1};
+\hypertarget{_d_c_blocker_8h_source_l00043}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a61689c80d7fb0f25144fc84996396d71}{00043}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a61689c80d7fb0f25144fc84996396d71}{ym1};
+\hypertarget{_d_c_blocker_8h_source_l00044}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_aacb82cec9c34b8afe19fe2c7830eb05a}{00044}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_aacb82cec9c34b8afe19fe2c7830eb05a}{x};
+\hypertarget{_d_c_blocker_8h_source_l00045}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_ac048fff815764f3ad6d73b27553234c8}{00045}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_ac048fff815764f3ad6d73b27553234c8}{\_a};
+00046         \};
+\hypertarget{_d_c_blocker_8h_source_l00047}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a9757794b5f9b7789132e5eaa44e07cef}{00047}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a9757794b5f9b7789132e5eaa44e07cef}{DSG::Filter::DCBlocker::Perform}(
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal)\{
-00032             x = signal;
-00033             signal= x - xm1+ (\_a * ym1);
-00034             xm1 = x;
-00035             ym1=signal;
-00036             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-00037         \}
-\hypertarget{_d_c_blocker_8h_source_l00038}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a690b2fdc8fdb749d9832d8d744b8cb2f}{00038}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a9757794b5f9b7789132e5eaa44e07cef}{DSG::Filter::DCBlocker::Perform}(
+00048             x = signal;
+00049             signal= x - xm1+ (\_a * ym1);
+00050             xm1 = x;
+00051             ym1=signal;
+00052             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00053         \}
+\hypertarget{_d_c_blocker_8h_source_l00054}{}\hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a690b2fdc8fdb749d9832d8d744b8cb2f}{00054}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_filter_1_1_d_c_blocker_a9757794b5f9b7789132e5eaa44e07cef}{DSG::Filter::DCBlocker::Perform}(
       \hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal)\{
-00039             \textcolor{keywordflow}{if} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{Empty}()) \{
-00040                 count = signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{Count}();
-00041                 \textcolor{keywordflow}{while} (count-- > 0) \{
-00042                     \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{Read}(\_temp))\{
-00043                         \textcolor{keywordflow}{if} (Perform(\_temp)) \{
-00044                             signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\_temp);
-00045                         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00046                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00047                 \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
-00048             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00049         \}
-00050     \}
-00051 \}
-00052 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_DCBlocker\_\_) */}\textcolor{preprocessor}{}
+00055             \textcolor{keywordflow}{if} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{Empty}()) \{
+00056                 count = signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{Count}();
+00057                 \textcolor{keywordflow}{while} (count-- > 0) \{
+00058                     \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{Read}(\_temp))\{
+00059                         \textcolor{keywordflow}{if} (Perform(\_temp)) \{
+00060                             signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\_temp);
+00061                         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00062                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00063                 \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00064             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00065         \}
+00066     \}
+00067 \}
+00068 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_DCBlocker\_\_) */}\textcolor{preprocessor}{}
 \end{DoxyCode}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.9.22)  23 NOV 2014 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.9.22)  24 NOV 2014 22:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1175,8 +1175,8 @@ LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
 (Font)              using `T1/pcr/m/n' instead on input line 159.
 
 [14]
-Overfull \hbox (15.15555pt too wide) in paragraph at lines 340--340
-[]\T1/pcr/m/n/7 00017         decimal numerator = sin(theta) - a * sin(theta-be
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 342--342
+[]\T1/pcr/m/n/7 00035         decimal numerator = sin(theta) - a * sin(theta-be
 ta) - pow(a, N+1) * (sin(theta + (N+1)*beta) - a*[] 
  []
 
@@ -1297,11 +1297,11 @@ Chapter 7.
 (./class_d_s_g_1_1_analog_1_1_analog_saw.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_analog_1_1_analog_saw.eps>
 
-(epstopdf)                    date: 2014-11-23 21:27:47
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 3953 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_analog_1_1_analog_saw-eps-
 converted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:15
+(epstopdf)                    date: 2014-11-24 22:55:56
 (epstopdf)                    size: 5729 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_analog_1_1
 _analog_saw-eps-converted-to.pdf class_d_s_g_1_1_analog_1_1_analog_saw.eps>
@@ -1333,11 +1333,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [28]) (./class_d_s_g_1_1_analog_1_1_analog_square.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_analog_1_1_analog_square.e
 ps>
-(epstopdf)                    date: 2014-11-23 21:27:48
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 3959 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_analog_1_1_analog_square-e
 ps-converted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:16
+(epstopdf)                    date: 2014-11-24 22:55:57
 (epstopdf)                    size: 5889 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_analog_1_1
 _analog_square-eps-converted-to.pdf class_d_s_g_1_1_analog_1_1_analog_square.ep
@@ -1370,11 +1370,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ) (./class_d_s_g_1_1_analog_1_1_analog_triangle.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_analog_1_1_analog_triangle
 .eps>
-(epstopdf)                    date: 2014-11-23 21:27:48
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 3963 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_analog_1_1_analog_triangle
 -eps-converted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:18
+(epstopdf)                    date: 2014-11-24 22:55:58
 (epstopdf)                    size: 5734 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_analog_1_1
 _analog_triangle-eps-converted-to.pdf class_d_s_g_1_1_analog_1_1_analog_triangl
@@ -1408,11 +1408,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (./class_d_s_g_1_1_audio_settings.tex [32])
 (./class_d_s_g_1_1_b_l_i_t_1_1_blit.tex [33]
 Package epstopdf Info: Source file: <class_d_s_g_1_1_b_l_i_t_1_1_blit.eps>
-(epstopdf)                    date: 2014-11-23 21:27:48
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 4066 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_b_l_i_t_1_1_blit-eps-conve
 rted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:19
+(epstopdf)                    date: 2014-11-24 22:55:59
 (epstopdf)                    size: 6144 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_b_l_i_t_1_
 1_blit-eps-converted-to.pdf class_d_s_g_1_1_b_l_i_t_1_1_blit.eps>
@@ -1442,11 +1442,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [35]) (./class_d_s_g_1_1_b_l_i_t_1_1_blit_saw.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_b_l_i_t_1_1_blit_saw.eps>
-(epstopdf)                    date: 2014-11-23 21:27:48
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 4066 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_b_l_i_t_1_1_blit_saw-eps-c
 onverted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:20
+(epstopdf)                    date: 2014-11-24 22:56:00
 (epstopdf)                    size: 6144 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_b_l_i_t_1_
 1_blit_saw-eps-converted-to.pdf class_d_s_g_1_1_b_l_i_t_1_1_blit_saw.eps>
@@ -1479,11 +1479,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (./class_d_s_g_1_1_b_l_i_t_1_1_blit_square.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_b_l_i_t_1_1_blit_square.ep
 s>
-(epstopdf)                    date: 2014-11-23 21:27:48
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 3951 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_b_l_i_t_1_1_blit_square-ep
 s-converted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:21
+(epstopdf)                    date: 2014-11-24 22:56:01
 (epstopdf)                    size: 6059 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_b_l_i_t_1_
 1_blit_square-eps-converted-to.pdf class_d_s_g_1_1_b_l_i_t_1_1_blit_square.eps>
@@ -1504,11 +1504,11 @@ to.pdf used on input line 11.
 (./class_d_s_g_1_1_b_l_i_t_1_1_blit_triangle.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_b_l_i_t_1_1_blit_triangle.
 eps>
-(epstopdf)                    date: 2014-11-23 21:27:48
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 3955 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_b_l_i_t_1_1_blit_triangle-
 eps-converted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:23
+(epstopdf)                    date: 2014-11-24 22:56:02
 (epstopdf)                    size: 5837 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_b_l_i_t_1_
 1_blit_triangle-eps-converted-to.pdf class_d_s_g_1_1_b_l_i_t_1_1_blit_triangle.
@@ -1529,11 +1529,11 @@ d-to.pdf used on input line 11.
 d_s_g_1_1_b_l_i_t_1_1_blit_triangle-eps-converted-to.pdf>]) (./class_d_s_g_1_1_
 buffer.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_buffer.eps>
-(epstopdf)                    date: 2014-11-23 21:27:47
+(epstopdf)                    date: 2014-11-24 22:55:27
 (epstopdf)                    size: 3794 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_buffer-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2014-11-23 21:28:24
+(epstopdf)                    date: 2014-11-24 22:56:03
 (epstopdf)                    size: 5194 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_buffer-eps
 -converted-to.pdf class_d_s_g_1_1_buffer.eps>
@@ -1563,11 +1563,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [41]) (./class_d_s_g_1_1_filter_1_1_d_c_blocker.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_filter_1_1_d_c_blocker.eps
 >
-(epstopdf)                    date: 2014-11-23 21:27:48
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 3959 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_filter_1_1_d_c_blocker-eps
 -converted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:25
+(epstopdf)                    date: 2014-11-24 22:56:05
 (epstopdf)                    size: 6052 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_filter_1_1
 _d_c_blocker-eps-converted-to.pdf class_d_s_g_1_1_filter_1_1_d_c_blocker.eps>
@@ -1619,11 +1619,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
 Package epstopdf Info: Source file: <class_d_s_g_1_1_delay.eps>
-(epstopdf)                    date: 2014-11-23 21:27:47
+(epstopdf)                    date: 2014-11-24 22:55:27
 (epstopdf)                    size: 3824 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_delay-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2014-11-23 21:28:26
+(epstopdf)                    date: 2014-11-24 22:56:06
 (epstopdf)                    size: 6247 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_delay-eps-
 converted-to.pdf class_d_s_g_1_1_delay.eps>
@@ -1788,11 +1788,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [53]
 Package epstopdf Info: Source file: <class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw.eps>
-(epstopdf)                    date: 2014-11-23 21:27:48
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 3959 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw-eps-co
 nverted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:28
+(epstopdf)                    date: 2014-11-24 22:56:07
 (epstopdf)                    size: 6034 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_d_p_w_1_1_
 d_p_w_saw-eps-converted-to.pdf class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw.eps>
@@ -1824,11 +1824,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [55]) (./class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.ep
 s>
-(epstopdf)                    date: 2014-11-23 21:27:48
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 3945 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw-ep
 s-converted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:29
+(epstopdf)                    date: 2014-11-24 22:56:08
 (epstopdf)                    size: 5922 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_e_p_t_r_1_
 1_e_p_t_r_saw-eps-converted-to.pdf class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.eps>
@@ -1911,11 +1911,11 @@ Underfull \hbox (badness 10000) detected at line 33
 ) (./class_d_s_g_1_1_filter_1_1_filter_base.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_filter_1_1_filter_base.eps
 >
-(epstopdf)                    date: 2014-11-23 21:27:48
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 4114 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_filter_1_1_filter_base-eps
 -converted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:30
+(epstopdf)                    date: 2014-11-24 22:56:09
 (epstopdf)                    size: 6290 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_filter_1_1
 _filter_base-eps-converted-to.pdf class_d_s_g_1_1_filter_1_1_filter_base.eps>
@@ -1947,11 +1947,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [60]) (./class_d_s_g_1_1_fourier_1_1_fourier_saw.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_fourier_1_1_fourier_saw.ep
 s>
-(epstopdf)                    date: 2014-11-23 21:27:48
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 3957 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_fourier_1_1_fourier_saw-ep
 s-converted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:32
+(epstopdf)                    date: 2014-11-24 22:56:10
 (epstopdf)                    size: 5906 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_fourier_1_
 1_fourier_saw-eps-converted-to.pdf class_d_s_g_1_1_fourier_1_1_fourier_saw.eps>
@@ -1984,11 +1984,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [62]) (./class_d_s_g_1_1_fourier_1_1_fourier_series_generator.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_fourier_1_1_fourier_series
 _generator.eps>
-(epstopdf)                    date: 2014-11-23 21:27:48
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 3981 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_fourier_1_1_fourier_series
 _generator-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:33
+(epstopdf)                    date: 2014-11-24 22:56:11
 (epstopdf)                    size: 5680 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_fourier_1_
 1_fourier_series_generator-eps-converted-to.pdf class_d_s_g_1_1_fourier_1_1_fou
@@ -2022,11 +2022,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [65]) (./class_d_s_g_1_1_fourier_1_1_fourier_square.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_fourier_1_1_fourier_square
 .eps>
-(epstopdf)                    date: 2014-11-23 21:27:48
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 3963 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_fourier_1_1_fourier_square
 -eps-converted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:34
+(epstopdf)                    date: 2014-11-24 22:56:12
 (epstopdf)                    size: 5808 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_fourier_1_
 1_fourier_square-eps-converted-to.pdf class_d_s_g_1_1_fourier_1_1_fourier_squar
@@ -2059,11 +2059,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [67]) (./class_d_s_g_1_1_fourier_1_1_fourier_triangle.tex [68]
 Package epstopdf Info: Source file: <class_d_s_g_1_1_fourier_1_1_fourier_triang
 le.eps>
-(epstopdf)                    date: 2014-11-23 21:27:48
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 3967 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_fourier_1_1_fourier_triang
 le-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:35
+(epstopdf)                    date: 2014-11-24 22:56:13
 (epstopdf)                    size: 5754 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_fourier_1_
 1_fourier_triangle-eps-converted-to.pdf class_d_s_g_1_1_fourier_1_1_fourier_tri
@@ -2096,11 +2096,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [70]) (./class_d_s_g_1_1_generic_generator.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_generic_generator.eps>
-(epstopdf)                    date: 2014-11-23 21:27:47
+(epstopdf)                    date: 2014-11-24 22:55:27
 (epstopdf)                    size: 3951 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_generic_generator-eps-conv
 erted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:37
+(epstopdf)                    date: 2014-11-24 22:56:14
 (epstopdf)                    size: 5558 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_generic_ge
 nerator-eps-converted-to.pdf class_d_s_g_1_1_generic_generator.eps>
@@ -2145,11 +2145,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [74]) (./class_d_s_g_1_1_filter_1_1_leaky_integrator.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_filter_1_1_leaky_integrato
 r.eps>
-(epstopdf)                    date: 2014-11-23 21:27:48
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 3971 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_filter_1_1_leaky_integrato
 r-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:38
+(epstopdf)                    date: 2014-11-24 22:56:15
 (epstopdf)                    size: 6200 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_filter_1_1
 _leaky_integrator-eps-converted-to.pdf class_d_s_g_1_1_filter_1_1_leaky_integra
@@ -2211,11 +2211,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [79]) (./class_d_s_g_1_1_noise_generator.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_noise_generator.eps>
-(epstopdf)                    date: 2014-11-23 21:27:47
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 3816 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_noise_generator-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:39
+(epstopdf)                    date: 2014-11-24 22:56:17
 (epstopdf)                    size: 5517 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_noise_gene
 rator-eps-converted-to.pdf class_d_s_g_1_1_noise_generator.eps>
@@ -2246,11 +2246,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [81 <./class_d_s_g_1_1_noise_generator-eps-converted-to.pdf>])
 (./class_d_s_g_1_1_ring_buffer.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_ring_buffer.eps>
-(epstopdf)                    date: 2014-11-23 21:27:47
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 3794 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_ring_buffer-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:40
+(epstopdf)                    date: 2014-11-24 22:56:18
 (epstopdf)                    size: 5194 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_ring_buffe
 r-eps-converted-to.pdf class_d_s_g_1_1_ring_buffer.eps>
@@ -2312,11 +2312,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [85]) (./class_d_s_g_1_1_signal_generator.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_signal_generator.eps>
-(epstopdf)                    date: 2014-11-23 21:27:47
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 5381 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_signal_generator-eps-conve
 rted-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:42
+(epstopdf)                    date: 2014-11-24 22:56:19
 (epstopdf)                    size: 7794 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_signal_gen
 erator-eps-converted-to.pdf class_d_s_g_1_1_signal_generator.eps>
@@ -2350,11 +2350,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [88] [89]) (./class_d_s_g_1_1_signal_process.tex
 Package epstopdf Info: Source file: <class_d_s_g_1_1_signal_process.eps>
-(epstopdf)                    date: 2014-11-23 21:27:47
+(epstopdf)                    date: 2014-11-24 22:55:28
 (epstopdf)                    size: 6043 bytes
 (epstopdf)             Output file: <class_d_s_g_1_1_signal_process-eps-convert
 ed-to.pdf>
-(epstopdf)                    date: 2014-11-23 21:28:43
+(epstopdf)                    date: 2014-11-24 22:56:20
 (epstopdf)                    size: 9001 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_d_s_g_1_1_signal_pro
 cess-eps-converted-to.pdf class_d_s_g_1_1_signal_process.eps>
@@ -2392,122 +2392,122 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) (./_analog_saw_8h_source.tex [93
+[93
 
-]) (./_analog_square_8cpp.tex)
-(./_analog_square_8cpp_source.tex [94]) (./_analog_square_8h.tex
+]) (./_analog_saw_8h_source.tex) (./_analog_square_8cpp.tex [94])
+(./_analog_square_8cpp_source.tex) (./_analog_square_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) (./_analog_square_8h_source.tex) (./_analog_triangle_8cpp.tex)
-(./_analog_triangle_8cpp_source.tex [95]) (./_analog_triangle_8h.tex
+) (./_analog_square_8h_source.tex [95]) (./_analog_triangle_8cpp.tex)
+(./_analog_triangle_8cpp_source.tex [96]) (./_analog_triangle_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) (./_analog_triangle_8h_source.tex [96]) (./_audio_settings_8cpp.tex)
-(./_audio_settings_8cpp_source.tex) (./_audio_settings_8h.tex
+) (./_analog_triangle_8h_source.tex [97]) (./_audio_settings_8cpp.tex)
+(./_audio_settings_8cpp_source.tex [98]) (./_audio_settings_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-[97]) (./_audio_settings_8h_source.tex) (./_blackman_8h.tex
+) (./_audio_settings_8h_source.tex [99]) (./_blackman_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
  []
 
-[98]) (./_blackman_8h_source.tex) (./_b_l_i_t_8cpp.tex)
-(./_b_l_i_t_8cpp_source.tex [99]) (./_b_l_i_t_8h.tex
+) (./_blackman_8h_source.tex [100]) (./_b_l_i_t_8cpp.tex)
+(./_b_l_i_t_8cpp_source.tex [101]) (./_b_l_i_t_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
 
-) (./_b_l_i_t_8h_source.tex [100]) (./_b_l_i_t_saw_8cpp.tex)
-(./_b_l_i_t_saw_8cpp_source.tex) (./_b_l_i_t_saw_8h.tex [101]
+) (./_b_l_i_t_8h_source.tex [102]) (./_b_l_i_t_saw_8cpp.tex)
+(./_b_l_i_t_saw_8cpp_source.tex [103]) (./_b_l_i_t_saw_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) (./_b_l_i_t_saw_8h_source.tex [102]) (./_b_l_i_t_square_8cpp.tex)
-(./_b_l_i_t_square_8cpp_source.tex) (./_b_l_i_t_square_8h.tex
+) (./_b_l_i_t_saw_8h_source.tex [104]) (./_b_l_i_t_square_8cpp.tex)
+(./_b_l_i_t_square_8cpp_source.tex [105]) (./_b_l_i_t_square_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) (./_b_l_i_t_square_8h_source.tex [103]) (./_b_l_i_t_triangle_8cpp.tex)
-(./_b_l_i_t_triangle_8cpp_source.tex) (./_b_l_i_t_triangle_8h.tex
+) (./_b_l_i_t_square_8h_source.tex) (./_b_l_i_t_triangle_8cpp.tex)
+(./_b_l_i_t_triangle_8cpp_source.tex [106]) (./_b_l_i_t_triangle_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) (./_b_l_i_t_triangle_8h_source.tex [104]) (./_bounds_8h.tex
+) (./_b_l_i_t_triangle_8h_source.tex [107]) (./_bounds_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) (./_bounds_8h_source.tex [105]) (./_buffer_8cpp.tex)
-(./_buffer_8cpp_source.tex) (./_buffer_8h.tex
+) (./_bounds_8h_source.tex [108]) (./_buffer_8cpp.tex)
+(./_buffer_8cpp_source.tex [109]) (./_buffer_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-[106]) (./_buffer_8h_source.tex) (./_buffer_conversion_8h.tex
+) (./_buffer_8h_source.tex [110]) (./_buffer_conversion_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) (./_buffer_conversion_8h_source.tex [107]) (./_d_c_blocker_8cpp.tex)
+) (./_buffer_conversion_8h_source.tex [111]) (./_d_c_blocker_8cpp.tex)
 (./_d_c_blocker_8cpp_source.tex) (./_d_c_blocker_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-[108]) (./_d_c_blocker_8h_source.tex) (./_delay_8h.tex
+[112]) (./_d_c_blocker_8h_source.tex) (./_delay_8h.tex [113]
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
 
-[109]) (./_delay_8h_source.tex [110]) (./_denormal_8h.tex
+) (./_delay_8h_source.tex [114]) (./_denormal_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-) (./_denormal_8h_source.tex) (./_d_p_w_8h.tex
+) (./_denormal_8h_source.tex [115]) (./_d_p_w_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
 
-[111]) (./_d_p_w_8h_source.tex [112]
+[116]) (./_d_p_w_8h_source.tex [117]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [113]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [114])
+ [118])
 (./_d_p_w_saw_8h.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [119]
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) (./_d_p_w_saw_8h_source.tex [115]) (./_driver_8cpp.tex
+) (./_d_p_w_saw_8h_source.tex [120]) (./_driver_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-[116] [117]) (./_driver_8cpp_source.tex [118]) (./_driver_8h.tex
+[121] [122]) (./_driver_8cpp_source.tex [123]) (./_driver_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-[119]) (./_driver_8h_source.tex) (./_d_s_f_8h.tex
+[124]) (./_driver_8h_source.tex) (./_d_s_f_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-[120]) (./_d_s_f_8h_source.tex
-Overfull \hbox (15.15555pt too wide) in paragraph at lines 22--22
-[]\T1/pcr/m/n/7 00017         decimal numerator = sin(theta) - a * sin(theta-be
+[125]) (./_d_s_f_8h_source.tex
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 40--40
+[]\T1/pcr/m/n/7 00035         decimal numerator = sin(theta) - a * sin(theta-be
 ta) - pow(a, N+1) * (sin(theta + (N+1)*beta) - a*[] 
  []
 
@@ -2519,10 +2519,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--38
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [121])
-(./_d_s_g_8h_source.tex [122]
-Overfull \hbox (15.15555pt too wide) in paragraph at lines 16--17
-[]\T1/pcr/m/n/7 00011 []//Example: DSG::Analog::AnalogSaw (Long Name)...DSG::An
+ [126])
+(./_d_s_g_8h_source.tex [127]
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 32--33
+[]\T1/pcr/m/n/7 00027 []//Example: DSG::Analog::AnalogSaw (Long Name)...DSG::An
 alogSaw (Short Name)(only available with this macro[] 
  []
 
@@ -2531,136 +2531,151 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-[123]) (./_d_s_g_math_8h_source.tex) (./_d_s_g_types_8h.tex [124])
-(./_d_s_g_types_8h_source.tex) (./_e_p_t_r_saw_8cpp.tex)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [128])
+(./_d_s_g_math_8h_source.tex [129]) (./_d_s_g_types_8h.tex)
+(./_d_s_g_types_8h_source.tex [130]) (./_e_p_t_r_saw_8cpp.tex)
 (./_e_p_t_r_saw_8cpp_source.tex) (./_e_p_t_r_saw_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-[125]) (./_e_p_t_r_saw_8h_source.tex [126]) (./_filter_8cpp.tex)
+[131]) (./_e_p_t_r_saw_8h_source.tex [132]) (./_filter_8cpp.tex)
 (./_filter_8cpp_source.tex) (./_filter_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) (./_filter_8h_source.tex [127]) (./_fourier_saw_8cpp.tex)
-(./_fourier_saw_8cpp_source.tex) (./_fourier_saw_8h.tex
+) (./_filter_8h_source.tex [133]) (./_fourier_saw_8cpp.tex)
+(./_fourier_saw_8cpp_source.tex [134]) (./_fourier_saw_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-[128]) (./_fourier_saw_8h_source.tex [129]) (./_fourier_series_8cpp.tex)
-(./_fourier_series_8cpp_source.tex) (./_fourier_series_8h.tex
+) (./_fourier_saw_8h_source.tex [135]) (./_fourier_series_8cpp.tex)
+(./_fourier_series_8cpp_source.tex [136]) (./_fourier_series_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-[130]) (./_fourier_series_8h_source.tex [131]) (./_fourier_square_8cpp.tex)
-(./_fourier_square_8cpp_source.tex) (./_fourier_square_8h.tex
+) (./_fourier_series_8h_source.tex [137]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [138])
+(./_fourier_square_8cpp.tex) (./_fourier_square_8cpp_source.tex)
+(./_fourier_square_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) (./_fourier_square_8h_source.tex [132]) (./_fourier_triangle_8cpp.tex)
-(./_fourier_triangle_8cpp_source.tex [133]) (./_fourier_triangle_8h.tex
+[139]) (./_fourier_square_8h_source.tex [140]) (./_fourier_triangle_8cpp.tex)
+(./_fourier_triangle_8cpp_source.tex) (./_fourier_triangle_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) (./_fourier_triangle_8h_source.tex [134]) (./_gaussian_8h.tex
+[141]) (./_fourier_triangle_8h_source.tex [142]) (./_gaussian_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-) (./_gaussian_8h_source.tex [135]) (./_generic_generator_8cpp.tex)
+) (./_gaussian_8h_source.tex [143]) (./_generic_generator_8cpp.tex)
 (./_generic_generator_8cpp_source.tex) (./_generic_generator_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) (./_generic_generator_8h_source.tex [136]) (./_interpolate_8h.tex
+[144]) (./_generic_generator_8h_source.tex) (./_interpolate_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-[137]) (./_interpolate_8h_source.tex) (./_leaky_8cpp.tex [138])
-(./_leaky_8cpp_source.tex) (./_leaky_8h.tex
+[145]) (./_interpolate_8h_source.tex [146]) (./_leaky_8cpp.tex)
+(./_leaky_8cpp_source.tex [147]) (./_leaky_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-) (./_leaky_8h_source.tex [139]) (./_l_u_t_8h.tex
+) (./_leaky_8h_source.tex [148]) (./_l_u_t_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-[140]) (./_l_u_t_8h_source.tex) (./_noise_8h.tex) (./_noise_8h_source.tex
-[141]) (./_noise_generator_8cpp.tex) (./_noise_generator_8cpp_source.tex)
-(./_noise_generator_8h.tex
+) (./_l_u_t_8h_source.tex [149]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [150])
+(./_noise_8h.tex) (./_noise_8h_source.tex) (./_noise_generator_8cpp.tex)
+(./_noise_generator_8cpp_source.tex [151]) (./_noise_generator_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-[142]) (./_noise_generator_8h_source.tex) (./_p_i_8h.tex) (./_p_i_8h_source.tex
-[143]) (./_pink_8h.tex
+) (./_noise_generator_8h_source.tex [152]) (./_p_i_8h.tex)
+(./_p_i_8h_source.tex [153]) (./_pink_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-) (./_pink_8h_source.tex [144]) (./_random_8h.tex
+) (./_pink_8h_source.tex [154]) (./_random_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-) (./_random_8h_source.tex [145]) (./_ring_buffer_8cpp.tex)
-(./_ring_buffer_8cpp_source.tex) (./_ring_buffer_8h.tex
+) (./_random_8h_source.tex [155]) (./_ring_buffer_8cpp.tex)
+(./_ring_buffer_8cpp_source.tex [156]) (./_ring_buffer_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
  []
 
+) (./_ring_buffer_8h_source.tex [157]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \vbox (badness 3199) has occurred while \output is active []
-
- [146])
-(./_ring_buffer_8h_source.tex [147]) (./_signal_generator_8cpp.tex)
-(./_signal_generator_8cpp_source.tex) (./_signal_generator_8h.tex
+ [158])
+(./_signal_generator_8cpp.tex) (./_signal_generator_8cpp_source.tex)
+(./_signal_generator_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
 
-[148]) (./_signal_generator_8h_source.tex [149]) (./_signal_process_8cpp.tex)
+[159]) (./_signal_generator_8h_source.tex [160]) (./_signal_process_8cpp.tex)
 (./_signal_process_8cpp_source.tex) (./_signal_process_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-[150]) (./_signal_process_8h_source.tex) (./_sinc_8h.tex
+
+Underfull \vbox (badness 4713) has occurred while \output is active []
+
+ [161])
+(./_signal_process_8h_source.tex) (./_sinc_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 
  []
 
-) (./_sinc_8h_source.tex [151]) (./_sine_8h.tex
+[162]) (./_sinc_8h_source.tex) (./_sine_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-) (./_sine_8h_source.tex [152]) (./_sleep_8h.tex
+[163]) (./_sine_8h_source.tex [164]) (./_sleep_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-[153]) (./_sleep_8h_source.tex) (./_white_8h.tex
+[165]) (./_sleep_8h_source.tex) (./_white_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-) (./_white_8h_source.tex [154]) (./_window_8h.tex
+) (./_white_8h_source.tex [166]) (./_window_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) (./_window_8h_source.tex [155]) [156] (./refman.ind [157
+) (./_window_8h_source.tex [167]) [168] (./refman.ind [169
 
 
 ])
@@ -2670,7 +2685,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 346.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 346.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 346.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 09EA6E754065949499F9F19467B521BD;137156.
+(rerunfilecheck)             Checksum: 14A6041B2711DAB787C55AC1297D09A0;122666.
 
 
 
@@ -2679,9 +2694,9 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 346.
  ) 
 Here is how much of TeX's memory you used:
- 15863 strings out of 493108
- 273467 string characters out of 6134847
- 313211 words of memory out of 5000000
+ 15875 strings out of 493108
+ 273563 string characters out of 6134847
+ 303972 words of memory out of 5000000
  16875 multiletter control sequences out of 15000+600000
  109053 words of font info for 166 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2696,10 +2711,10 @@ fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/
 type1/urw/helvetic/uhvbo8ac.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
 /urw/helvetic/uhvr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/he
 lvetic/uhvro8a.pfb>
-Output written on refman.pdf (177 pages, 739898 bytes).
+Output written on refman.pdf (189 pages, 778310 bytes).
 PDF statistics:
- 10415 PDF objects out of 10688 (max. 8388607)
- 10074 compressed objects within 101 object streams
- 1820 named destinations out of 2073 (max. 500000)
+ 10469 PDF objects out of 10688 (max. 8388607)
+ 10115 compressed objects within 102 object streams
+ 1832 named destinations out of 2073 (max. 500000)
  5204 words of extra memory for PDF output out of 10000 (max. 10000000)
 

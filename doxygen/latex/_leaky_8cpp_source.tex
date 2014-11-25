@@ -1,5 +1,5 @@
 \hypertarget{_leaky_8cpp_source}{\section{Leaky.\+cpp}
-\label{_leaky_8cpp_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Leaky.\+cpp@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Leaky.\+cpp}}
+\label{_leaky_8cpp_source}\index{Leaky.\+cpp@{Leaky.\+cpp}}
 }
 
 \begin{DoxyCode}
@@ -10,29 +10,45 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 10/27/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{preprocessor}{#include "\hyperlink{_leaky_8h}{Leaky.h}"}
-\hypertarget{_leaky_8cpp_source_l00009}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_af0d204e3c2f5f844dc4355810f6515c2}{00009} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_af0d204e3c2f5f844dc4355810f6515c2}{DSG::Filter::LeakyIntegrator::LeakyIntegrator}():
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#include "\hyperlink{_leaky_8h}{Leaky.h}"}
+\hypertarget{_leaky_8cpp_source_l00025}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_af0d204e3c2f5f844dc4355810f6515c2}{00025} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_af0d204e3c2f5f844dc4355810f6515c2}{DSG::Filter::LeakyIntegrator::LeakyIntegrator}():
       \hyperlink{namespace_d_s_g}{DSG}::Filter::\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base}{FilterBase}()\{
-00010     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a052c709de4d6cddfdc0fb0441275ce98}{x1}=0;
-00011     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}{y1}=0;
-00012     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a9a321b7650923119fda60595a7659aef}{a}=0;
-00013     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_abb7e9fc15eef17836979b98b8b50880d}{b}=0;
-00014     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}{y}=0;
-00015 \}
-\hypertarget{_leaky_8cpp_source_l00016}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_ae50d8e7817b06cc64a45a6bc7aa657ff}{00016} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_af0d204e3c2f5f844dc4355810f6515c2}{DSG::Filter::LeakyIntegrator::LeakyIntegrator}(
+00026     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a052c709de4d6cddfdc0fb0441275ce98}{x1}=0;
+00027     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}{y1}=0;
+00028     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a9a321b7650923119fda60595a7659aef}{a}=0;
+00029     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_abb7e9fc15eef17836979b98b8b50880d}{b}=0;
+00030     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}{y}=0;
+00031 \}
+\hypertarget{_leaky_8cpp_source_l00032}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_ae50d8e7817b06cc64a45a6bc7aa657ff}{00032} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_af0d204e3c2f5f844dc4355810f6515c2}{DSG::Filter::LeakyIntegrator::LeakyIntegrator}(
       \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& cutoff):\hyperlink{namespace_d_s_g}{DSG}::Filter::\hyperlink{class_d_s_g_1_1_filter_1_1_filter_base}{FilterBase}()\{
-00017     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a052c709de4d6cddfdc0fb0441275ce98}{x1}=0;
-00018     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}{y1}=0;
-00019     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a9a321b7650923119fda60595a7659aef}{a}=0;
-00020     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_abb7e9fc15eef17836979b98b8b50880d}{b}=0;
-00021     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}{y}=0;
-00022     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a5f326faae2d72a6550b2e0593b00eea6}{Cutoff}(cutoff);
-00023 \}
-\hypertarget{_leaky_8cpp_source_l00024}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a3a79cdbcf90a7924c05ec87b89fca83d}{00024} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a3a79cdbcf90a7924c05ec87b89fca83d}{DSG::Filter::LeakyIntegrator::~LeakyIntegrator}()\{
-00025     x1=0;
-00026     y1=0;
-00027     a=0;
-00028     b=0;
-00029     y=0;
-00030 \}
+00033     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a052c709de4d6cddfdc0fb0441275ce98}{x1}=0;
+00034     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a338246cc32a709070753696cf827624c}{y1}=0;
+00035     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a9a321b7650923119fda60595a7659aef}{a}=0;
+00036     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_abb7e9fc15eef17836979b98b8b50880d}{b}=0;
+00037     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a7b2591c401f8ee5196924de9c006ed74}{y}=0;
+00038     \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a5f326faae2d72a6550b2e0593b00eea6}{Cutoff}(cutoff);
+00039 \}
+\hypertarget{_leaky_8cpp_source_l00040}{}\hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a3a79cdbcf90a7924c05ec87b89fca83d}{00040} \hyperlink{class_d_s_g_1_1_filter_1_1_leaky_integrator_a3a79cdbcf90a7924c05ec87b89fca83d}{DSG::Filter::LeakyIntegrator::~LeakyIntegrator}()\{
+00041     x1=0;
+00042     y1=0;
+00043     a=0;
+00044     b=0;
+00045     y=0;
+00046 \}
 \end{DoxyCode}

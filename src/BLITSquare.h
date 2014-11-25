@@ -30,9 +30,7 @@ namespace DSG {
 #endif
     namespace BLIT{
         //!\todo Write DSG::BLIT::BlitSquare algorithm
-        class BlitSquare:public DSG::SignalGenerator{
-
-        };
+        class BlitSquare:public DSG::SignalGenerator{};
     }
 }
 #endif /* defined(__DSG__BLITSquare__) */

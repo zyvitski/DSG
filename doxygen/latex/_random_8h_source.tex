@@ -1,5 +1,5 @@
 \hypertarget{_random_8h_source}{\section{Random.\+h}
-\label{_random_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Random.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Random.\+h}}
+\label{_random_8h_source}\index{Random.\+h@{Random.\+h}}
 }
 
 \begin{DoxyCode}
@@ -10,37 +10,53 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 10/28/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{preprocessor}{#ifndef DSG\_Random\_h}
-00009 \textcolor{preprocessor}{#define DSG\_Random\_h}
-00010 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_types_8h}{DSGTypes.h}"}
-00011 \textcolor{preprocessor}{#include <random>}
-00012 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
-00013 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
-00014     \textcolor{keyword}{inline}
-00015 \textcolor{preprocessor}{#endif}
-00016 \textcolor{comment}{    //!\(\backslash\)brief DSG::Noise - Noise Generators}
-00017 \textcolor{comment}{}    \textcolor{keyword}{namespace }Noise\{
-00018         \textcolor{keyword}{namespace}\{
-00019             \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal>
-00020             \textcolor{keyword}{class }random\_helper\{
-00021             \textcolor{keyword}{public}:
-00022                 random\_helper()\{
-00023                     srand(static\_cast<unsigned>(time(NULL)));
-00024                 \}
-00025                 \textcolor{keyword}{inline} decimal next()\{
-00026                     \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}decimal\textcolor{keyword}{>}(rand()/\hyperlink{_random_8h_adf0c2e3aed2e917753f8cca4522e205e}{max});
-00027                 \}
-00028             \textcolor{keyword}{protected}:
-\hypertarget{_random_8h_source_l00029}{}\hyperlink{_random_8h_adf0c2e3aed2e917753f8cca4522e205e}{00029}                 \textcolor{keyword}{const} decimal \hyperlink{_random_8h_adf0c2e3aed2e917753f8cca4522e205e}{max} = \textcolor{keyword}{static\_cast<}decimal\textcolor{keyword}{>}(RAND\_MAX);
-00030             \};
-00031         \}\textcolor{comment}{}
-00032 \textcolor{comment}{        //!\(\backslash\)brief DSG::Noise::Random - Random Number Function}
-00033 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal = DSG::DSGSample>
-\hypertarget{_random_8h_source_l00034}{}\hyperlink{namespace_d_s_g_1_1_noise_af210d83913fada9e9474410caff25bc1}{00034}         \textcolor{keyword}{inline} decimal \hyperlink{namespace_d_s_g_1_1_noise_af210d83913fada9e9474410caff25bc1}{Random}(decimal=0.0)\{
-00035             \textcolor{keyword}{static} DSG::Noise::random\_helper<decimal> \_rand\{\};
-00036             \textcolor{keywordflow}{return} \_rand.next();
-00037         \}
-00038     \}
-00039 \}
-00040 \textcolor{preprocessor}{#endif}
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#ifndef DSG\_Random\_h}
+00025 \textcolor{preprocessor}{#define DSG\_Random\_h}
+00026 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_types_8h}{DSGTypes.h}"}
+00027 \textcolor{preprocessor}{#include <random>}
+00028 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
+00029 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
+00030     \textcolor{keyword}{inline}
+00031 \textcolor{preprocessor}{#endif}
+00032 \textcolor{comment}{    //!\(\backslash\)brief DSG::Noise - Noise Generators}
+00033 \textcolor{comment}{}    \textcolor{keyword}{namespace }Noise\{
+00034         \textcolor{keyword}{namespace}\{
+00035             \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal>
+00036             \textcolor{keyword}{class }random\_helper\{
+00037             \textcolor{keyword}{public}:
+00038                 random\_helper()\{
+00039                     srand(static\_cast<unsigned>(time(NULL)));
+00040                 \}
+00041                 \textcolor{keyword}{inline} decimal next()\{
+00042                     \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}decimal\textcolor{keyword}{>}(rand()/\hyperlink{_random_8h_adf0c2e3aed2e917753f8cca4522e205e}{max});
+00043                 \}
+00044             \textcolor{keyword}{protected}:
+\hypertarget{_random_8h_source_l00045}{}\hyperlink{_random_8h_adf0c2e3aed2e917753f8cca4522e205e}{00045}                 \textcolor{keyword}{const} decimal \hyperlink{_random_8h_adf0c2e3aed2e917753f8cca4522e205e}{max} = \textcolor{keyword}{static\_cast<}decimal\textcolor{keyword}{>}(RAND\_MAX);
+00046             \};
+00047         \}\textcolor{comment}{}
+00048 \textcolor{comment}{        //!\(\backslash\)brief DSG::Noise::Random - Random Number Function}
+00049 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal = DSG::DSGSample>
+\hypertarget{_random_8h_source_l00050}{}\hyperlink{namespace_d_s_g_1_1_noise_af210d83913fada9e9474410caff25bc1}{00050}         \textcolor{keyword}{inline} decimal \hyperlink{namespace_d_s_g_1_1_noise_af210d83913fada9e9474410caff25bc1}{Random}(decimal=0.0)\{
+00051             \textcolor{keyword}{static} DSG::Noise::random\_helper<decimal> \_rand\{\};
+00052             \textcolor{keywordflow}{return} \_rand.next();
+00053         \}
+00054     \}
+00055 \}
+00056 \textcolor{preprocessor}{#endif}
 \end{DoxyCode}

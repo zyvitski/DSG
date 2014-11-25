@@ -31,9 +31,7 @@ namespace DSG {
 #endif
     namespace BLIT{
         //!\todo Write DSG::BLIT::BlitTriangle algorithm
-        class BlitTriangle:public DSG::SignalGenerator{
-
-        };
+        class BlitTriangle:public DSG::SignalGenerator{};
     }
 }
 #endif /* defined(__DSG__BLITTriangle__) */

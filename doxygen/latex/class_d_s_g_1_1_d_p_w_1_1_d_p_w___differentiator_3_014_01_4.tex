@@ -29,7 +29,7 @@
 
 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{D\+S\+G\+::\+D\+P\+W\+::\+D\+P\+W\+\_\+\+Differentiator} -\/ Class Performing Differentiation for the 4th order \hyperlink{namespace_d_s_g_1_1_d_p_w}{D\+P\+W} Algorithm. 
 
-Definition at line \hyperlink{_d_p_w_8h_source_l00106}{106} of file \hyperlink{_d_p_w_8h_source}{D\+P\+W.\+h}.
+Definition at line \hyperlink{_d_p_w_8h_source_l00124}{124} of file \hyperlink{_d_p_w_8h_source}{D\+P\+W.\+h}.
 
 
 
@@ -44,20 +44,20 @@ Definition at line \hyperlink{_d_p_w_8h_source_l00106}{106} of file \hyperlink{_
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aa86877ca4c21091864246dd825575f7c}
 
 
-Definition at line \hyperlink{_d_p_w_8h_source_l00108}{108} of file \hyperlink{_d_p_w_8h_source}{D\+P\+W.\+h}.
+Definition at line \hyperlink{_d_p_w_8h_source_l00126}{126} of file \hyperlink{_d_p_w_8h_source}{D\+P\+W.\+h}.
 
 
 \begin{DoxyCode}
-00108                                                                                              \{
-00109                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_a5fd7e2dc19c470cacb8e23942c1afdbb}{output}  = (signal - \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aacd153f49201708823a05aad2506ede9}{\_delay}[0]);
-00110                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_a5fd7e2dc19c470cacb8e23942c1afdbb}{output} -= (\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aacd153f49201708823a05aad2506ede9}{\_delay}[0] - \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aacd153f49201708823a05aad2506ede9}{\_delay}[1]);
-00111                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_a5fd7e2dc19c470cacb8e23942c1afdbb}{output} -= (\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aacd153f49201708823a05aad2506ede9}{\_delay}[1] - \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aacd153f49201708823a05aad2506ede9}{\_delay}[2]);
-00112                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_a5fd7e2dc19c470cacb8e23942c1afdbb}{output} /= 144*DSG::Pow<3>(dt);
-00113                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aacd153f49201708823a05aad2506ede9}{\_delay}[2]=\_delay[1];
-00114                 \_delay[1]=\_delay[0];
-00115                 \_delay[0]=signal;
-00116                 \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_a5fd7e2dc19c470cacb8e23942c1afdbb}{output};
-00117             \}
+00126                                                                                              \{
+00127                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_a5fd7e2dc19c470cacb8e23942c1afdbb}{output}  = (signal - \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aacd153f49201708823a05aad2506ede9}{\_delay}[0]);
+00128                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_a5fd7e2dc19c470cacb8e23942c1afdbb}{output} -= (\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aacd153f49201708823a05aad2506ede9}{\_delay}[0] - \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aacd153f49201708823a05aad2506ede9}{\_delay}[1]);
+00129                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_a5fd7e2dc19c470cacb8e23942c1afdbb}{output} -= (\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aacd153f49201708823a05aad2506ede9}{\_delay}[1] - \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aacd153f49201708823a05aad2506ede9}{\_delay}[2]);
+00130                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_a5fd7e2dc19c470cacb8e23942c1afdbb}{output} /= 144*DSG::Pow<3>(dt);
+00131                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aacd153f49201708823a05aad2506ede9}{\_delay}[2]=\_delay[1];
+00132                 \_delay[1]=\_delay[0];
+00133                 \_delay[0]=signal;
+00134                 \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_a5fd7e2dc19c470cacb8e23942c1afdbb}{output};
+00135             \}
 \end{DoxyCode}
 
 
@@ -67,17 +67,17 @@ Definition at line \hyperlink{_d_p_w_8h_source_l00108}{108} of file \hyperlink{_
 \subsubsection[{\+\_\+delay}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Sample} {\bf D\+S\+G\+::\+D\+P\+W\+::\+D\+P\+W\+\_\+\+Differentiator}$<$ 4 $>$\+::\+\_\+delay\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aacd153f49201708823a05aad2506ede9}
 
 
-Definition at line \hyperlink{_d_p_w_8h_source_l00120}{120} of file \hyperlink{_d_p_w_8h_source}{D\+P\+W.\+h}.
+Definition at line \hyperlink{_d_p_w_8h_source_l00138}{138} of file \hyperlink{_d_p_w_8h_source}{D\+P\+W.\+h}.
 
 \hypertarget{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_a5fd7e2dc19c470cacb8e23942c1afdbb}{\index{D\+S\+G\+::\+D\+P\+W\+::\+D\+P\+W\+\_\+\+Differentiator$<$ 4 $>$@{D\+S\+G\+::\+D\+P\+W\+::\+D\+P\+W\+\_\+\+Differentiator$<$ 4 $>$}!output@{output}}
 \index{output@{output}!D\+S\+G\+::\+D\+P\+W\+::\+D\+P\+W\+\_\+\+Differentiator$<$ 4 $>$@{D\+S\+G\+::\+D\+P\+W\+::\+D\+P\+W\+\_\+\+Differentiator$<$ 4 $>$}}
 \subsubsection[{output}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Sample} {\bf D\+S\+G\+::\+D\+P\+W\+::\+D\+P\+W\+\_\+\+Differentiator}$<$ 4 $>$\+::output\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_a5fd7e2dc19c470cacb8e23942c1afdbb}
 
 
-Definition at line \hyperlink{_d_p_w_8h_source_l00119}{119} of file \hyperlink{_d_p_w_8h_source}{D\+P\+W.\+h}.
+Definition at line \hyperlink{_d_p_w_8h_source_l00137}{137} of file \hyperlink{_d_p_w_8h_source}{D\+P\+W.\+h}.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\hyperlink{_d_p_w_8h}{D\+P\+W.\+h}\end{DoxyCompactItemize}
+\hyperlink{_d_p_w_8h}{D\+P\+W.\+h}\end{DoxyCompactItemize}

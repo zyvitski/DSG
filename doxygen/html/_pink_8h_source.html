@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>DSG: /Users/alexanderzywicki/Documents/DSG/src/Pink.h Source File</title>
+<title>DSG: Pink.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,54 +96,70 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Alexander Zywicki on 10/8/14.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef DSG_Pink_h</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define DSG_Pink_h</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_gaussian_8h.html">Gaussian.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_c_blocker_8h.html">DCBlocker.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_s_g.html">DSG</a>{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifdef DSG_Short_Names</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">inline</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">namespace </span>Noise{<span class="comment"></span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">        //!\brief DSG::Noise::Pink - Pink Noise Generator Function</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"></span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> decimal=DSG::DSGSample&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespace_d_s_g_1_1_noise.html#a9f0bab677a7602a8e0d40e040de8c8b2">   19</a></span>&#160;        decimal <a class="code" href="namespace_d_s_g_1_1_noise.html#a9f0bab677a7602a8e0d40e040de8c8b2">Pink</a>(decimal=0.0){</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="comment">//routine: Get white or gaussian, filter, return</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keyword">static</span> decimal b0,b1,b2,b3,b4,b5,b6;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keyword">static</span> decimal normalizer=1;<span class="comment">//variable used to actively normalize the output</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keyword">static</span> DSG::DCBlocker _block;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            decimal white = <a class="code" href="namespace_d_s_g_1_1_noise.html#a87c4bcd92a902d32df1d7f1d5acffcd4">DSG::Noise::Gaussian</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            decimal pink;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="comment">//pinking filter</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            b0 = 0.99886 * b0 + white * 0.0555179;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            b1 = 0.99332 * b1 + white * 0.0750759;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            b2 = 0.96900 * b2 + white * 0.1538520;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            b3 = 0.86650 * b3 + white * 0.3104856;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            b4 = 0.55000 * b4 + white * 0.5329522;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            b5 = -0.7616 * b5 - white * 0.0168980;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            pink = b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            b6 = white * 0.115926;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="namespace_d_s_g.html#a0af03bade7e25e8da80e3022af0e45a7">DSG::Abs</a>(pink)&gt;normalizer) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="comment">//store highest output</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                normalizer=<a class="code" href="namespace_d_s_g.html#a0af03bade7e25e8da80e3022af0e45a7">DSG::Abs</a>(pink);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            pink/=normalizer;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            _block.Perform(pink);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">return</span> pink;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> This file is part of the Digital Signal Generation Project or “DSG”.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> DSG is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> (at your option) any later version.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> DSG is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> along with DSG.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef DSG_Pink_h</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define DSG_Pink_h</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_gaussian_8h.html">Gaussian.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_c_blocker_8h.html">DCBlocker.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_s_g.html">DSG</a>{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifdef DSG_Short_Names</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">inline</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">namespace </span>Noise{<span class="comment"></span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">        //!\brief DSG::Noise::Pink - Pink Noise Generator Function</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> decimal=DSG::DSGSample&gt;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespace_d_s_g_1_1_noise.html#a9f0bab677a7602a8e0d40e040de8c8b2">   35</a></span>&#160;        decimal <a class="code" href="namespace_d_s_g_1_1_noise.html#a9f0bab677a7602a8e0d40e040de8c8b2">Pink</a>(decimal=0.0){</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="comment">//routine: Get white or gaussian, filter, return</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keyword">static</span> decimal b0,b1,b2,b3,b4,b5,b6;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keyword">static</span> decimal normalizer=1;<span class="comment">//variable used to actively normalize the output</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keyword">static</span> DSG::DCBlocker _block;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            decimal white = <a class="code" href="namespace_d_s_g_1_1_noise.html#a87c4bcd92a902d32df1d7f1d5acffcd4">DSG::Noise::Gaussian</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            decimal pink;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="comment">//pinking filter</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            b0 = 0.99886 * b0 + white * 0.0555179;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            b1 = 0.99332 * b1 + white * 0.0750759;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            b2 = 0.96900 * b2 + white * 0.1538520;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            b3 = 0.86650 * b3 + white * 0.3104856;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            b4 = 0.55000 * b4 + white * 0.5329522;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            b5 = -0.7616 * b5 - white * 0.0168980;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            pink = b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            b6 = white * 0.115926;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="namespace_d_s_g.html#a0af03bade7e25e8da80e3022af0e45a7">DSG::Abs</a>(pink)&gt;normalizer) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="comment">//store highest output</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                normalizer=<a class="code" href="namespace_d_s_g.html#a0af03bade7e25e8da80e3022af0e45a7">DSG::Abs</a>(pink);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            pink/=normalizer;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            _block.Perform(pink);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">return</span> pink;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="_d_c_blocker_8h_html"><div class="ttname"><a href="_d_c_blocker_8h.html">DCBlocker.h</a></div></div>
-<div class="ttc" id="namespace_d_s_g_html_a0af03bade7e25e8da80e3022af0e45a7"><div class="ttname"><a href="namespace_d_s_g.html#a0af03bade7e25e8da80e3022af0e45a7">DSG::Abs</a></div><div class="ttdeci">T Abs(T const &amp;value)</div><div class="ttdoc">DSG::Abs - Calculate absolute value. </div><div class="ttdef"><b>Definition:</b> <a href="_d_s_g_math_8h_source.html#l00015">DSGMath.h:15</a></div></div>
-<div class="ttc" id="namespace_d_s_g_html"><div class="ttname"><a href="namespace_d_s_g.html">DSG</a></div><div class="ttdoc">DSG - A Collection of tools for Digital Signal Generation. </div><div class="ttdef"><b>Definition:</b> <a href="_analog_saw_8h_source.html#l00011">AnalogSaw.h:11</a></div></div>
-<div class="ttc" id="namespace_d_s_g_1_1_noise_html_a9f0bab677a7602a8e0d40e040de8c8b2"><div class="ttname"><a href="namespace_d_s_g_1_1_noise.html#a9f0bab677a7602a8e0d40e040de8c8b2">DSG::Noise::Pink</a></div><div class="ttdeci">decimal Pink(decimal=0.0)</div><div class="ttdoc">DSG::Noise::Pink - Pink Noise Generator Function. </div><div class="ttdef"><b>Definition:</b> <a href="_pink_8h_source.html#l00019">Pink.h:19</a></div></div>
-<div class="ttc" id="namespace_d_s_g_1_1_noise_html_a87c4bcd92a902d32df1d7f1d5acffcd4"><div class="ttname"><a href="namespace_d_s_g_1_1_noise.html#a87c4bcd92a902d32df1d7f1d5acffcd4">DSG::Noise::Gaussian</a></div><div class="ttdeci">decimal Gaussian(decimal=0.0)</div><div class="ttdoc">DSG::Noise::Gaussian - Gaussian Noise Generator Function. </div><div class="ttdef"><b>Definition:</b> <a href="_gaussian_8h_source.html#l00019">Gaussian.h:19</a></div></div>
+<div class="ttc" id="namespace_d_s_g_html_a0af03bade7e25e8da80e3022af0e45a7"><div class="ttname"><a href="namespace_d_s_g.html#a0af03bade7e25e8da80e3022af0e45a7">DSG::Abs</a></div><div class="ttdeci">T Abs(T const &amp;value)</div><div class="ttdoc">DSG::Abs - Calculate absolute value. </div><div class="ttdef"><b>Definition:</b> <a href="_d_s_g_math_8h_source.html#l00031">DSGMath.h:31</a></div></div>
+<div class="ttc" id="namespace_d_s_g_html"><div class="ttname"><a href="namespace_d_s_g.html">DSG</a></div><div class="ttdoc">DSG - A Collection of tools for Digital Signal Generation. </div><div class="ttdef"><b>Definition:</b> <a href="_analog_saw_8h_source.html#l00027">AnalogSaw.h:27</a></div></div>
+<div class="ttc" id="namespace_d_s_g_1_1_noise_html_a9f0bab677a7602a8e0d40e040de8c8b2"><div class="ttname"><a href="namespace_d_s_g_1_1_noise.html#a9f0bab677a7602a8e0d40e040de8c8b2">DSG::Noise::Pink</a></div><div class="ttdeci">decimal Pink(decimal=0.0)</div><div class="ttdoc">DSG::Noise::Pink - Pink Noise Generator Function. </div><div class="ttdef"><b>Definition:</b> <a href="_pink_8h_source.html#l00035">Pink.h:35</a></div></div>
+<div class="ttc" id="namespace_d_s_g_1_1_noise_html_a87c4bcd92a902d32df1d7f1d5acffcd4"><div class="ttname"><a href="namespace_d_s_g_1_1_noise.html#a87c4bcd92a902d32df1d7f1d5acffcd4">DSG::Noise::Gaussian</a></div><div class="ttdeci">decimal Gaussian(decimal=0.0)</div><div class="ttdoc">DSG::Noise::Gaussian - Gaussian Noise Generator Function. </div><div class="ttdef"><b>Definition:</b> <a href="_gaussian_8h_source.html#l00035">Gaussian.h:35</a></div></div>
 <div class="ttc" id="_gaussian_8h_html"><div class="ttname"><a href="_gaussian_8h.html">Gaussian.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 23 2014 21:27:47 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 24 2014 22:55:27 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

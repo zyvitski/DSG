@@ -1,5 +1,5 @@
 \hypertarget{_fourier_series_8cpp_source}{\section{Fourier\+Series.\+cpp}
-\label{_fourier_series_8cpp_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Fourier\+Series.\+cpp@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Fourier\+Series.\+cpp}}
+\label{_fourier_series_8cpp_source}\index{Fourier\+Series.\+cpp@{Fourier\+Series.\+cpp}}
 }
 
 \begin{DoxyCode}
@@ -10,36 +10,52 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 11/18/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{preprocessor}{#include "\hyperlink{_fourier_series_8h}{FourierSeries.h}"}
-\hypertarget{_fourier_series_8cpp_source_l00009}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a5433617eaac39402d27ce24634140940}{00009} \hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a5433617eaac39402d27ce24634140940}{DSG::Fourier::Harmonic::Harmonic}():\_ratio(0),\_amplitude(0)\{\}
-\hypertarget{_fourier_series_8cpp_source_l00010}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a1dbca63f18e7271f78ad466bacdad394}{00010} \hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a5433617eaac39402d27ce24634140940}{DSG::Fourier::Harmonic::Harmonic}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& ratio,
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#include "\hyperlink{_fourier_series_8h}{FourierSeries.h}"}
+\hypertarget{_fourier_series_8cpp_source_l00025}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a5433617eaac39402d27ce24634140940}{00025} \hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a5433617eaac39402d27ce24634140940}{DSG::Fourier::Harmonic::Harmonic}():\_ratio(0),\_amplitude(0)\{\}
+\hypertarget{_fourier_series_8cpp_source_l00026}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a1dbca63f18e7271f78ad466bacdad394}{00026} \hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a5433617eaac39402d27ce24634140940}{DSG::Fourier::Harmonic::Harmonic}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& ratio,
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& amplitude):\_ratio(ratio),\_amplitude(amplitude)\{\}
-\hypertarget{_fourier_series_8cpp_source_l00011}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_aad4e5d3e4ef8cd53bf01b0624246b826}{00011} \hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_aad4e5d3e4ef8cd53bf01b0624246b826}{DSG::Fourier::Harmonic::~Harmonic}()\{
-00012     \_ratio=0;
-00013     \_amplitude=0;
-00014 \}
-\hypertarget{_fourier_series_8cpp_source_l00015}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a26b2ccbb2f25f72040a555c51dc43672}{00015} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a26b2ccbb2f25f72040a555c51dc43672}{DSG::Fourier::Harmonic::Ratio}()\textcolor{keyword}{const}\{
-00016     \textcolor{keywordflow}{return} \_ratio;
-00017 \}
-\hypertarget{_fourier_series_8cpp_source_l00018}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a013dc7cae9bd09dbc26193f5b501776f}{00018} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a26b2ccbb2f25f72040a555c51dc43672}{DSG::Fourier::Harmonic::Ratio}(
+\hypertarget{_fourier_series_8cpp_source_l00027}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_aad4e5d3e4ef8cd53bf01b0624246b826}{00027} \hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_aad4e5d3e4ef8cd53bf01b0624246b826}{DSG::Fourier::Harmonic::~Harmonic}()\{
+00028     \_ratio=0;
+00029     \_amplitude=0;
+00030 \}
+\hypertarget{_fourier_series_8cpp_source_l00031}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a26b2ccbb2f25f72040a555c51dc43672}{00031} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a26b2ccbb2f25f72040a555c51dc43672}{DSG::Fourier::Harmonic::Ratio}()\textcolor{keyword}{const}\{
+00032     \textcolor{keywordflow}{return} \_ratio;
+00033 \}
+\hypertarget{_fourier_series_8cpp_source_l00034}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a013dc7cae9bd09dbc26193f5b501776f}{00034} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a26b2ccbb2f25f72040a555c51dc43672}{DSG::Fourier::Harmonic::Ratio}(
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& value)\{
-00019     \_ratio = value;
-00020     \textcolor{keywordflow}{return} \_ratio;
-00021 \}
-\hypertarget{_fourier_series_8cpp_source_l00022}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a99175479a12ca8b6103eb58179777775}{00022} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a99175479a12ca8b6103eb58179777775}{DSG::Fourier::Harmonic::Amplitude}()\textcolor{keyword}{
+00035     \_ratio = value;
+00036     \textcolor{keywordflow}{return} \_ratio;
+00037 \}
+\hypertarget{_fourier_series_8cpp_source_l00038}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a99175479a12ca8b6103eb58179777775}{00038} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a99175479a12ca8b6103eb58179777775}{DSG::Fourier::Harmonic::Amplitude}()\textcolor{keyword}{
       const}\{
-00023     \textcolor{keywordflow}{return} \_amplitude;
-00024 \}
-\hypertarget{_fourier_series_8cpp_source_l00025}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_ae94f1868dfe70a1ea90cb86a5cc31a15}{00025} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a99175479a12ca8b6103eb58179777775}{DSG::Fourier::Harmonic::Amplitude}(
+00039     \textcolor{keywordflow}{return} \_amplitude;
+00040 \}
+\hypertarget{_fourier_series_8cpp_source_l00041}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_ae94f1868dfe70a1ea90cb86a5cc31a15}{00041} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_fourier_1_1_harmonic_a99175479a12ca8b6103eb58179777775}{DSG::Fourier::Harmonic::Amplitude}(
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& value)\{
-00026     \_amplitude=value;
-00027     \textcolor{keywordflow}{return} \_amplitude;
-00028 \}
-\hypertarget{_fourier_series_8cpp_source_l00029}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator_a0b73d1fc587d7d22464294b6276c2ec7}{00029} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator_a0b73d1fc587d7d22464294b6276c2ec7}{DSG::Fourier::FourierSeriesGenerator::FourierSeriesGenerator}
+00042     \_amplitude=value;
+00043     \textcolor{keywordflow}{return} \_amplitude;
+00044 \}
+\hypertarget{_fourier_series_8cpp_source_l00045}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator_a0b73d1fc587d7d22464294b6276c2ec7}{00045} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator_a0b73d1fc587d7d22464294b6276c2ec7}{DSG::Fourier::FourierSeriesGenerator::FourierSeriesGenerator}
       ():\hyperlink{namespace_d_s_g}{DSG}::\hyperlink{class_d_s_g_1_1_signal_generator}{SignalGenerator}()\{\}
-\hypertarget{_fourier_series_8cpp_source_l00030}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator_a9227438eb78f40b656ae4f6880fba7d8}{00030} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator_a0b73d1fc587d7d22464294b6276c2ec7}{DSG::Fourier::FourierSeriesGenerator::FourierSeriesGenerator}
+\hypertarget{_fourier_series_8cpp_source_l00046}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator_a9227438eb78f40b656ae4f6880fba7d8}{00046} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator_a0b73d1fc587d7d22464294b6276c2ec7}{DSG::Fourier::FourierSeriesGenerator::FourierSeriesGenerator}
       (\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& frequency, \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& offset):
       \hyperlink{namespace_d_s_g}{DSG}::\hyperlink{class_d_s_g_1_1_signal_generator}{SignalGenerator}(frequency,offset)\{\}
-\hypertarget{_fourier_series_8cpp_source_l00031}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator_a6e5b0a582b040035a47a0855456d71c1}{00031} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator_a6e5b0a582b040035a47a0855456d71c1}{DSG::Fourier::FourierSeriesGenerator::~FourierSeriesGenerator}
+\hypertarget{_fourier_series_8cpp_source_l00047}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator_a6e5b0a582b040035a47a0855456d71c1}{00047} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator_a6e5b0a582b040035a47a0855456d71c1}{DSG::Fourier::FourierSeriesGenerator::~FourierSeriesGenerator}
       ()\{\}
 \end{DoxyCode}

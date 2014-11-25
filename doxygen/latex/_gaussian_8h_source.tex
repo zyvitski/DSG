@@ -1,5 +1,5 @@
 \hypertarget{_gaussian_8h_source}{\section{Gaussian.\+h}
-\label{_gaussian_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Gaussian.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Gaussian.\+h}}
+\label{_gaussian_8h_source}\index{Gaussian.\+h@{Gaussian.\+h}}
 }
 
 \begin{DoxyCode}
@@ -10,32 +10,48 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 10/6/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{preprocessor}{#ifndef DSG\_Gaussian\_h}
-00009 \textcolor{preprocessor}{#define DSG\_Gaussian\_h}
-00010 \textcolor{preprocessor}{#include "\hyperlink{_sine_8h}{Sine.h}"}
-00011 \textcolor{preprocessor}{#include "\hyperlink{_white_8h}{White.h}"}
-00012 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
-00013 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
-00014     \textcolor{keyword}{inline}
-00015 \textcolor{preprocessor}{#endif}
-\hypertarget{_gaussian_8h_source_l00016}{}\hyperlink{namespace_d_s_g_1_1_noise}{00016}     \textcolor{keyword}{namespace }Noise\{\textcolor{comment}{}
-00017 \textcolor{comment}{        //!\(\backslash\)brief DSG::Noise::Gaussian - Gaussian Noise Generator Function}
-00018 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal=DSG::DSGSample>
-\hypertarget{_gaussian_8h_source_l00019}{}\hyperlink{namespace_d_s_g_1_1_noise_a87c4bcd92a902d32df1d7f1d5acffcd4}{00019}         decimal \hyperlink{namespace_d_s_g_1_1_noise_a87c4bcd92a902d32df1d7f1d5acffcd4}{Gaussian}(decimal=0.0)\{
-00020             \textcolor{keyword}{static} decimal normalizer=1;\textcolor{comment}{//variable used to actively normalize the output}
-00021             \textcolor{comment}{//to enforce compatability with DSG::LUT a dummy parameter is applied}
-00022             \textcolor{comment}{//this parameter is useless except for compatability reasons}
-00023             decimal R1 = \hyperlink{namespace_d_s_g_1_1_noise_a0d1c4b4522d2e56b1aa604e45ab92066}{DSG::Noise::White}();
-00024             decimal R2 = \hyperlink{namespace_d_s_g_1_1_noise_a0d1c4b4522d2e56b1aa604e45ab92066}{DSG::Noise::White}();
-00025             decimal x= (decimal)sqrt(-2.0f * log(R1))*\hyperlink{namespace_d_s_g_ade303ad15c77f534429305c3cbd90191}{DSG::Cos}(R2);
-00026             \textcolor{keywordflow}{if} (\hyperlink{namespace_d_s_g_a0af03bade7e25e8da80e3022af0e45a7}{DSG::Abs}(x)>normalizer) \{
-00027                 \textcolor{comment}{//store highest output}
-00028                 normalizer=\hyperlink{namespace_d_s_g_a0af03bade7e25e8da80e3022af0e45a7}{DSG::Abs}(x);
-00029             \}
-00030             x/=normalizer;\textcolor{comment}{//normalize}
-00031             \textcolor{keywordflow}{return} x;
-00032         \}
-00033     \}
-00034 \}
-00035 \textcolor{preprocessor}{#endif}
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#ifndef DSG\_Gaussian\_h}
+00025 \textcolor{preprocessor}{#define DSG\_Gaussian\_h}
+00026 \textcolor{preprocessor}{#include "\hyperlink{_sine_8h}{Sine.h}"}
+00027 \textcolor{preprocessor}{#include "\hyperlink{_white_8h}{White.h}"}
+00028 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
+00029 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
+00030     \textcolor{keyword}{inline}
+00031 \textcolor{preprocessor}{#endif}
+\hypertarget{_gaussian_8h_source_l00032}{}\hyperlink{namespace_d_s_g_1_1_noise}{00032}     \textcolor{keyword}{namespace }Noise\{\textcolor{comment}{}
+00033 \textcolor{comment}{        //!\(\backslash\)brief DSG::Noise::Gaussian - Gaussian Noise Generator Function}
+00034 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal=DSG::DSGSample>
+\hypertarget{_gaussian_8h_source_l00035}{}\hyperlink{namespace_d_s_g_1_1_noise_a87c4bcd92a902d32df1d7f1d5acffcd4}{00035}         decimal \hyperlink{namespace_d_s_g_1_1_noise_a87c4bcd92a902d32df1d7f1d5acffcd4}{Gaussian}(decimal=0.0)\{
+00036             \textcolor{keyword}{static} decimal normalizer=1;\textcolor{comment}{//variable used to actively normalize the output}
+00037             \textcolor{comment}{//to enforce compatability with DSG::LUT a dummy parameter is applied}
+00038             \textcolor{comment}{//this parameter is useless except for compatability reasons}
+00039             decimal R1 = \hyperlink{namespace_d_s_g_1_1_noise_a0d1c4b4522d2e56b1aa604e45ab92066}{DSG::Noise::White}();
+00040             decimal R2 = \hyperlink{namespace_d_s_g_1_1_noise_a0d1c4b4522d2e56b1aa604e45ab92066}{DSG::Noise::White}();
+00041             decimal x= (decimal)sqrt(-2.0f * log(R1))*\hyperlink{namespace_d_s_g_ade303ad15c77f534429305c3cbd90191}{DSG::Cos}(R2);
+00042             \textcolor{keywordflow}{if} (\hyperlink{namespace_d_s_g_a0af03bade7e25e8da80e3022af0e45a7}{DSG::Abs}(x)>normalizer) \{
+00043                 \textcolor{comment}{//store highest output}
+00044                 normalizer=\hyperlink{namespace_d_s_g_a0af03bade7e25e8da80e3022af0e45a7}{DSG::Abs}(x);
+00045             \}
+00046             x/=normalizer;\textcolor{comment}{//normalize}
+00047             \textcolor{keywordflow}{return} x;
+00048         \}
+00049     \}
+00050 \}
+00051 \textcolor{preprocessor}{#endif}
 \end{DoxyCode}

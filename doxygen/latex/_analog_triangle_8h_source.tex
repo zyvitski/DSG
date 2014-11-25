@@ -1,5 +1,5 @@
 \hypertarget{_analog_triangle_8h_source}{\section{Analog\+Triangle.\+h}
-\label{_analog_triangle_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Analog\+Triangle.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Analog\+Triangle.\+h}}
+\label{_analog_triangle_8h_source}\index{Analog\+Triangle.\+h@{Analog\+Triangle.\+h}}
 }
 
 \begin{DoxyCode}
@@ -10,55 +10,71 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/17/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_AnalogTriangle\_\_}
-00009 \textcolor{preprocessor}{#define \_\_DSG\_\_AnalogTriangle\_\_}
-00010 \textcolor{preprocessor}{#include "\hyperlink{_signal_generator_8h}{SignalGenerator.h}"}
-00011 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
-00012 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
-00013     \textcolor{keyword}{inline}
-00014 \textcolor{preprocessor}{#endif}
-00015 \textcolor{comment}{    //! DSG::Analog - Namespace Containing Analog Style Oscillators}
-00016 \textcolor{comment}{}    \textcolor{keyword}{namespace }Analog\{\textcolor{comment}{}
-00017 \textcolor{comment}{        //!\(\backslash\)brief DSG::Analog::AnalogTriangle - Analog Syle Triangle Wave Generator}
-\hypertarget{_analog_triangle_8h_source_l00018}{}\hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle}{00018} \textcolor{comment}{}        \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle}{AnalogTriangle} : \textcolor{keyword}{public} \hyperlink{class_d_s_g_1_1_signal_generator}{DSG::SignalGenerator} \{
-00019         \textcolor{keyword}{public}:
-00020             \hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_a2fe1a7a29eb9472323a2a1c0d0696e55}{AnalogTriangle}();
-00021             \hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_a2fe1a7a29eb9472323a2a1c0d0696e55}{AnalogTriangle}(\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& frequency,
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_AnalogTriangle\_\_}
+00025 \textcolor{preprocessor}{#define \_\_DSG\_\_AnalogTriangle\_\_}
+00026 \textcolor{preprocessor}{#include "\hyperlink{_signal_generator_8h}{SignalGenerator.h}"}
+00027 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
+00028 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
+00029     \textcolor{keyword}{inline}
+00030 \textcolor{preprocessor}{#endif}
+00031 \textcolor{comment}{    //! DSG::Analog - Namespace Containing Analog Style Oscillators}
+00032 \textcolor{comment}{}    \textcolor{keyword}{namespace }Analog\{\textcolor{comment}{}
+00033 \textcolor{comment}{        //!\(\backslash\)brief DSG::Analog::AnalogTriangle - Analog Syle Triangle Wave Generator}
+\hypertarget{_analog_triangle_8h_source_l00034}{}\hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle}{00034} \textcolor{comment}{}        \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle}{AnalogTriangle} : \textcolor{keyword}{public} \hyperlink{class_d_s_g_1_1_signal_generator}{DSG::SignalGenerator} \{
+00035         \textcolor{keyword}{public}:
+00036             \hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_a2fe1a7a29eb9472323a2a1c0d0696e55}{AnalogTriangle}();
+00037             \hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_a2fe1a7a29eb9472323a2a1c0d0696e55}{AnalogTriangle}(\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& frequency,
       \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& offset);
-00022             \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_af6e127d2fb623afad9b172e7c8b3c656}{~AnalogTriangle}();
-00023             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_a9b2484f3eb4c4ad545cb88b8833be124}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal);
-00024             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_a9b2484f3eb4c4ad545cb88b8833be124}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal);
-00025         \textcolor{keyword}{protected}:
-\hypertarget{_analog_triangle_8h_source_l00026}{}\hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_ac93bccb7e366491f45ea9c3af04072ae}{00026}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_ac93bccb7e366491f45ea9c3af04072ae}{\_stor};
-00027         \};
-\hypertarget{_analog_triangle_8h_source_l00028}{}\hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_a9b2484f3eb4c4ad545cb88b8833be124}{00028}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_a9b2484f3eb4c4ad545cb88b8833be124}{DSG::Analog::AnalogTriangle::Perform}(
+00038             \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_af6e127d2fb623afad9b172e7c8b3c656}{~AnalogTriangle}();
+00039             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_a9b2484f3eb4c4ad545cb88b8833be124}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal);
+00040             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_a9b2484f3eb4c4ad545cb88b8833be124}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal);
+00041         \textcolor{keyword}{protected}:
+\hypertarget{_analog_triangle_8h_source_l00042}{}\hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_ac93bccb7e366491f45ea9c3af04072ae}{00042}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_ac93bccb7e366491f45ea9c3af04072ae}{\_stor};
+00043         \};
+\hypertarget{_analog_triangle_8h_source_l00044}{}\hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_a9b2484f3eb4c4ad545cb88b8833be124}{00044}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_a9b2484f3eb4c4ad545cb88b8833be124}{DSG::Analog::AnalogTriangle::Perform}(
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal)\{
-00029             \_stor = \_phasor;
-00030             \_stor+=0.25;
-00031             \textcolor{keywordflow}{while} (\_stor>1.0) \{
-00032                 \_stor-=1.0;
-00033             \}
-00034             \_stor-=0.5;
-00035             \textcolor{keywordflow}{if} (\_stor<0) \{
-00036                 \_stor*=-1.0;
-00037             \}
-00038             \_stor-=0.25;
-00039             \_stor*=-4.0;
-00040             signal = \_stor;
-00041             step();\textcolor{comment}{//always last}
-00042             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-00043         \}
-\hypertarget{_analog_triangle_8h_source_l00044}{}\hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_a568c994e0f83f6a01d813357259a8f37}{00044}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_a9b2484f3eb4c4ad545cb88b8833be124}{DSG::Analog::AnalogTriangle::Perform}(
+00045             \_stor = \_phasor;
+00046             \_stor+=0.25;
+00047             \textcolor{keywordflow}{while} (\_stor>1.0) \{
+00048                 \_stor-=1.0;
+00049             \}
+00050             \_stor-=0.5;
+00051             \textcolor{keywordflow}{if} (\_stor<0) \{
+00052                 \_stor*=-1.0;
+00053             \}
+00054             \_stor-=0.25;
+00055             \_stor*=-4.0;
+00056             signal = \_stor;
+00057             step();\textcolor{comment}{//always last}
+00058             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00059         \}
+\hypertarget{_analog_triangle_8h_source_l00060}{}\hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_a568c994e0f83f6a01d813357259a8f37}{00060}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_triangle_a9b2484f3eb4c4ad545cb88b8833be124}{DSG::Analog::AnalogTriangle::Perform}(
       \hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal)\{
-00045             signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
-00046             \textcolor{keywordflow}{while} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{Full}()) \{
-00047                 \textcolor{keywordflow}{if} (Perform(\_storage)) \{
-00048                     \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\_storage))\{
-00049                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00050                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00051             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
-00052         \}
-00053     \}
-00054 \} 
-00055 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_AnalogTriangle\_\_) */}\textcolor{preprocessor}{}
+00061             signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
+00062             \textcolor{keywordflow}{while} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{Full}()) \{
+00063                 \textcolor{keywordflow}{if} (Perform(\_storage)) \{
+00064                     \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\_storage))\{
+00065                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00066                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00067             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00068         \}
+00069     \}
+00070 \} 
+00071 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_AnalogTriangle\_\_) */}\textcolor{preprocessor}{}
 \end{DoxyCode}

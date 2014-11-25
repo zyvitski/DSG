@@ -1,5 +1,5 @@
 \hypertarget{_sinc_8h_source}{\section{Sinc.\+h}
-\label{_sinc_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Sinc.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Sinc.\+h}}
+\label{_sinc_8h_source}\index{Sinc.\+h@{Sinc.\+h}}
 }
 
 \begin{DoxyCode}
@@ -10,27 +10,43 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/23/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_Sinc\_\_}
-00009 \textcolor{preprocessor}{#define \_\_DSG\_\_Sinc\_\_}
-00010 \textcolor{preprocessor}{#include "\hyperlink{_p_i_8h}{PI.h}"}
-00011 \textcolor{preprocessor}{#include "\hyperlink{_sine_8h}{Sine.h}"}
-00012 \textcolor{preprocessor}{#include "\hyperlink{_denormal_8h}{Denormal.h}"}
-00013 \textcolor{preprocessor}{#include <type\_traits>}
-00014 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_math_8h}{DSGMath.h}"}
-00015 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{\textcolor{comment}{}
-00016 \textcolor{comment}{    //!\(\backslash\)brief DSG::Sinc - Implements the Sinc() function (sin(PI*x)/PI*x)}
-00017 \textcolor{comment}{}    \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal>
-\hypertarget{_sinc_8h_source_l00018}{}\hyperlink{namespace_d_s_g_a6a99a1c242cddf18f4387f51ec8606b4}{00018}     \textcolor{keyword}{inline} decimal \hyperlink{namespace_d_s_g_a6a99a1c242cddf18f4387f51ec8606b4}{Sinc}(decimal \textcolor{keyword}{const}& x) \{
-00019         static\_assert(std::is\_floating\_point<decimal>::value==\textcolor{keyword}{true},\textcolor{stringliteral}{"DSG::Sinc Function Requires Floating
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_Sinc\_\_}
+00025 \textcolor{preprocessor}{#define \_\_DSG\_\_Sinc\_\_}
+00026 \textcolor{preprocessor}{#include "\hyperlink{_p_i_8h}{PI.h}"}
+00027 \textcolor{preprocessor}{#include "\hyperlink{_sine_8h}{Sine.h}"}
+00028 \textcolor{preprocessor}{#include "\hyperlink{_denormal_8h}{Denormal.h}"}
+00029 \textcolor{preprocessor}{#include <type\_traits>}
+00030 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_math_8h}{DSGMath.h}"}
+00031 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{\textcolor{comment}{}
+00032 \textcolor{comment}{    //!\(\backslash\)brief DSG::Sinc - Implements the Sinc() function (sin(PI*x)/PI*x)}
+00033 \textcolor{comment}{}    \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal>
+\hypertarget{_sinc_8h_source_l00034}{}\hyperlink{namespace_d_s_g_a6a99a1c242cddf18f4387f51ec8606b4}{00034}     \textcolor{keyword}{inline} decimal \hyperlink{namespace_d_s_g_a6a99a1c242cddf18f4387f51ec8606b4}{Sinc}(decimal \textcolor{keyword}{const}& x) \{
+00035         static\_assert(std::is\_floating\_point<decimal>::value==\textcolor{keyword}{true},\textcolor{stringliteral}{"DSG::Sinc Function Requires Floating
        Point Type"});
-00020         decimal pix;
-00021         \textcolor{keywordflow}{if} (\hyperlink{namespace_d_s_g_a9eee3c39a1f45d42f0b4fa7201d3ba3d}{DSG::IsDenormal}(x)) \{
-00022             \textcolor{keywordflow}{return} 1.0;
-00023         \}\textcolor{keywordflow}{else}\{
-00024             pix = \hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI}*x;
-00025             \textcolor{keywordflow}{return} \hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{DSG::Sin}(pix)/pix;
-00026         \}
-00027     \}
-00028 \}
-00029 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_Sinc\_\_) */}\textcolor{preprocessor}{}
+00036         decimal pix;
+00037         \textcolor{keywordflow}{if} (\hyperlink{namespace_d_s_g_a9eee3c39a1f45d42f0b4fa7201d3ba3d}{DSG::IsDenormal}(x)) \{
+00038             \textcolor{keywordflow}{return} 1.0;
+00039         \}\textcolor{keywordflow}{else}\{
+00040             pix = \hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI}*x;
+00041             \textcolor{keywordflow}{return} \hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{DSG::Sin}(pix)/pix;
+00042         \}
+00043     \}
+00044 \}
+00045 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_Sinc\_\_) */}\textcolor{preprocessor}{}
 \end{DoxyCode}

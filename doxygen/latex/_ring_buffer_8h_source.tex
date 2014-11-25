@@ -1,5 +1,5 @@
 \hypertarget{_ring_buffer_8h_source}{\section{Ring\+Buffer.\+h}
-\label{_ring_buffer_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Ring\+Buffer.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Ring\+Buffer.\+h}}
+\label{_ring_buffer_8h_source}\index{Ring\+Buffer.\+h@{Ring\+Buffer.\+h}}
 }
 
 \begin{DoxyCode}
@@ -10,99 +10,115 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/16/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_RingBuffer\_\_}
-00009 \textcolor{preprocessor}{#define \_\_DSG\_\_RingBuffer\_\_}
-00010 \textcolor{preprocessor}{#ifdef DEBUG}
-00011 \textcolor{preprocessor}{#include <iostream>}
-00012 \textcolor{preprocessor}{#endif}
-00013 \textcolor{preprocessor}{#include <atomic>}
-00014 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_math_8h}{DSGMath.h}"}
-00015 \textcolor{preprocessor}{#include "\hyperlink{_buffer_8h}{Buffer.h}"}
-00016 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG} \{\textcolor{comment}{}
-00017 \textcolor{comment}{    /*!\(\backslash\)brief DSG::RingBuffer - Circular Buffer of Audio}
-00018 \textcolor{comment}{     */}
-\hypertarget{_ring_buffer_8h_source_l00019}{}\hyperlink{class_d_s_g_1_1_ring_buffer}{00019}     \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_ring_buffer}{RingBuffer}:\textcolor{keyword}{public} \hyperlink{class_d_s_g_1_1_buffer}{DSG::Buffer} \{
-00020     \textcolor{keyword}{protected}:
-\hypertarget{_ring_buffer_8h_source_l00021}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{00021}         std::atomic<size\_t> \hyperlink{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{\_write};
-\hypertarget{_ring_buffer_8h_source_l00022}{}\hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{00022}         std::atomic<size\_t> \hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{\_read};
-\hypertarget{_ring_buffer_8h_source_l00023}{}\hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{00023}         \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\_count};
-\hypertarget{_ring_buffer_8h_source_l00024}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a2fba2ff6ee3886101f0f58b0fd7f3641}{00024}         \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_ring_buffer_a2fba2ff6ee3886101f0f58b0fd7f3641}{MASK};
-\hypertarget{_ring_buffer_8h_source_l00025}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a703434b6afb87f1f9a05750278a822e3}{00025}         \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_ring_buffer_a703434b6afb87f1f9a05750278a822e3}{write};
-\hypertarget{_ring_buffer_8h_source_l00026}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a34bc659c286c8913e318c0e8c0777204}{00026}         \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_ring_buffer_a34bc659c286c8913e318c0e8c0777204}{read};
-00027         \textcolor{keyword}{inline} \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_ring_buffer_a6d7a76a4c9b38ccde46344662e08c9e5}{next}(\textcolor{keywordtype}{size\_t} current);
-00028         \textcolor{keyword}{inline} \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_ring_buffer_aaf481e139011e91b111cc048e726cafb}{make\_pow\_2}(\textcolor{keywordtype}{size\_t} number);
-00029     \textcolor{keyword}{public}:
-00030         \hyperlink{class_d_s_g_1_1_ring_buffer_a3136c9debb3c422adb1d5835e11b2b99}{RingBuffer}();
-00031         \hyperlink{class_d_s_g_1_1_ring_buffer_a3136c9debb3c422adb1d5835e11b2b99}{RingBuffer}(\textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} size);
-00032         \hyperlink{class_d_s_g_1_1_ring_buffer_a3136c9debb3c422adb1d5835e11b2b99}{RingBuffer}(\hyperlink{class_d_s_g_1_1_ring_buffer}{RingBuffer}& buffer);
-00033         \hyperlink{class_d_s_g_1_1_ring_buffer}{RingBuffer}& \hyperlink{class_d_s_g_1_1_ring_buffer_a892fbcc12b2dca5b04ead96a09299e73}{operator=}(\hyperlink{class_d_s_g_1_1_ring_buffer}{RingBuffer}& buffer);
-00034         \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_ring_buffer_a771d30b04b6f0313c203530685fbeb3a}{~RingBuffer}();
-00035         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\textcolor{keyword}{const} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSGSample}& elem);
-00036         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{Read}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& elem);
-00037         \textcolor{keyword}{inline} \textcolor{keywordtype}{size\_t} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{Count}()\textcolor{keyword}{const};
-00038         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{Full}()\textcolor{keyword}{const};
-00039         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{Empty}()\textcolor{keyword}{const};
-00040         \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
-\hypertarget{_ring_buffer_8h_source_l00041}{}\hyperlink{class_d_s_g_1_1_ring_buffer_ab2e393fa39dc9b012eee8fe461e506cc}{00041}         \textcolor{keyword}{friend} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_ab2e393fa39dc9b012eee8fe461e506cc}{operator>>}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& signal,
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_RingBuffer\_\_}
+00025 \textcolor{preprocessor}{#define \_\_DSG\_\_RingBuffer\_\_}
+00026 \textcolor{preprocessor}{#ifdef DEBUG}
+00027 \textcolor{preprocessor}{#include <iostream>}
+00028 \textcolor{preprocessor}{#endif}
+00029 \textcolor{preprocessor}{#include <atomic>}
+00030 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_math_8h}{DSGMath.h}"}
+00031 \textcolor{preprocessor}{#include "\hyperlink{_buffer_8h}{Buffer.h}"}
+00032 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG} \{\textcolor{comment}{}
+00033 \textcolor{comment}{    /*!\(\backslash\)brief DSG::RingBuffer - Circular Buffer of Audio}
+00034 \textcolor{comment}{     */}
+\hypertarget{_ring_buffer_8h_source_l00035}{}\hyperlink{class_d_s_g_1_1_ring_buffer}{00035}     \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_ring_buffer}{RingBuffer}:\textcolor{keyword}{public} \hyperlink{class_d_s_g_1_1_buffer}{DSG::Buffer} \{
+00036     \textcolor{keyword}{protected}:
+\hypertarget{_ring_buffer_8h_source_l00037}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{00037}         std::atomic<size\_t> \hyperlink{class_d_s_g_1_1_ring_buffer_a78bd7704fd059b745bc82421e1062123}{\_write};
+\hypertarget{_ring_buffer_8h_source_l00038}{}\hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{00038}         std::atomic<size\_t> \hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{\_read};
+\hypertarget{_ring_buffer_8h_source_l00039}{}\hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{00039}         \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_ring_buffer_af6d0e1658a1f1aa298218b890e458f2f}{\_count};
+\hypertarget{_ring_buffer_8h_source_l00040}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a2fba2ff6ee3886101f0f58b0fd7f3641}{00040}         \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_ring_buffer_a2fba2ff6ee3886101f0f58b0fd7f3641}{MASK};
+\hypertarget{_ring_buffer_8h_source_l00041}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a703434b6afb87f1f9a05750278a822e3}{00041}         \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_ring_buffer_a703434b6afb87f1f9a05750278a822e3}{write};
+\hypertarget{_ring_buffer_8h_source_l00042}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a34bc659c286c8913e318c0e8c0777204}{00042}         \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_ring_buffer_a34bc659c286c8913e318c0e8c0777204}{read};
+00043         \textcolor{keyword}{inline} \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_ring_buffer_a6d7a76a4c9b38ccde46344662e08c9e5}{next}(\textcolor{keywordtype}{size\_t} current);
+00044         \textcolor{keyword}{inline} \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_ring_buffer_aaf481e139011e91b111cc048e726cafb}{make\_pow\_2}(\textcolor{keywordtype}{size\_t} number);
+00045     \textcolor{keyword}{public}:
+00046         \hyperlink{class_d_s_g_1_1_ring_buffer_a3136c9debb3c422adb1d5835e11b2b99}{RingBuffer}();
+00047         \hyperlink{class_d_s_g_1_1_ring_buffer_a3136c9debb3c422adb1d5835e11b2b99}{RingBuffer}(\textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} size);
+00048         \hyperlink{class_d_s_g_1_1_ring_buffer_a3136c9debb3c422adb1d5835e11b2b99}{RingBuffer}(\hyperlink{class_d_s_g_1_1_ring_buffer}{RingBuffer}& buffer);
+00049         \hyperlink{class_d_s_g_1_1_ring_buffer}{RingBuffer}& \hyperlink{class_d_s_g_1_1_ring_buffer_a892fbcc12b2dca5b04ead96a09299e73}{operator=}(\hyperlink{class_d_s_g_1_1_ring_buffer}{RingBuffer}& buffer);
+00050         \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_ring_buffer_a771d30b04b6f0313c203530685fbeb3a}{~RingBuffer}();
+00051         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\textcolor{keyword}{const} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSGSample}& elem);
+00052         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{Read}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& elem);
+00053         \textcolor{keyword}{inline} \textcolor{keywordtype}{size\_t} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{Count}()\textcolor{keyword}{const};
+00054         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{Full}()\textcolor{keyword}{const};
+00055         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{Empty}()\textcolor{keyword}{const};
+00056         \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
+\hypertarget{_ring_buffer_8h_source_l00057}{}\hyperlink{class_d_s_g_1_1_ring_buffer_ab2e393fa39dc9b012eee8fe461e506cc}{00057}         \textcolor{keyword}{friend} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_ab2e393fa39dc9b012eee8fe461e506cc}{operator>>}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& signal,
       \hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& buffer)\{
-00042             \textcolor{keywordflow}{return} buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(signal);
-00043         \}
-\hypertarget{_ring_buffer_8h_source_l00044}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a9eaa68fffdd0fcdccdccc0ee4a1ac711}{00044}         \textcolor{keyword}{friend} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_a9eaa68fffdd0fcdccdccc0ee4a1ac711}{operator<<}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal,
+00058             \textcolor{keywordflow}{return} buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(signal);
+00059         \}
+\hypertarget{_ring_buffer_8h_source_l00060}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a9eaa68fffdd0fcdccdccc0ee4a1ac711}{00060}         \textcolor{keyword}{friend} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_a9eaa68fffdd0fcdccdccc0ee4a1ac711}{operator<<}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal,
       \hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& buffer)\{
-00045             \textcolor{keywordflow}{return} buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{Read}(signal);
-00046         \}
-00047 \textcolor{preprocessor}{#ifdef DEBUG}
-00048         \textcolor{keyword}{friend} std::ostream& \hyperlink{class_d_s_g_1_1_ring_buffer_a9eaa68fffdd0fcdccdccc0ee4a1ac711}{operator<<}(std::ostream& os,
+00061             \textcolor{keywordflow}{return} buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{Read}(signal);
+00062         \}
+00063 \textcolor{preprocessor}{#ifdef DEBUG}
+00064         \textcolor{keyword}{friend} std::ostream& \hyperlink{class_d_s_g_1_1_ring_buffer_a9eaa68fffdd0fcdccdccc0ee4a1ac711}{operator<<}(std::ostream& os,
       \hyperlink{class_d_s_g_1_1_ring_buffer}{DSG:: RingBuffer} \textcolor{keyword}{const}& buffer)\{
-00049             \textcolor{keywordflow}{if} (!buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{Empty}()) \{
-00050                 \textcolor{keywordtype}{size\_t} index= buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{\_read};
-00051                 \textcolor{keywordtype}{size\_t} count=buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{Count}();
-00052                 \textcolor{keywordtype}{size\_t} size = buffer.\hyperlink{class_d_s_g_1_1_buffer_a4acea659d9cd0be652ec55d21e5b0262}{Size}();
-00053                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<count; ++i) \{
-00054                     os<<index<<\textcolor{stringliteral}{": "}<<buffer.\hyperlink{class_d_s_g_1_1_buffer_ae4a4db8fe44b62db18d6a7855b5773f9}{\_buffer}[index]<<std::endl;
-00055                     index = ((index+1)%size);
-00056                 \}
-00057             \}\textcolor{keywordflow}{return} os;
-00058         \}
-00059 \textcolor{preprocessor}{#endif}
-00060     \};
-\hypertarget{_ring_buffer_8h_source_l00061}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{00061}     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{DSG::RingBuffer::Full}()\textcolor{keyword}{const}\{
-00062         \textcolor{keywordflow}{return} \_count==this->\_size;
-00063     \}
-\hypertarget{_ring_buffer_8h_source_l00064}{}\hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{00064}     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{DSG::RingBuffer::Empty}()\textcolor{keyword}{const}\{
-00065         \textcolor{keywordflow}{return} \_count==0;
-00066     \}
-\hypertarget{_ring_buffer_8h_source_l00067}{}\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{00067}     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{DSG::RingBuffer::Flush}()\{
-00068         \_write.store(0,std::memory\_order\_relaxed);
-00069         \_read.store(0,std::memory\_order\_relaxed);
-00070         \_count=0;
-00071     \}
-\hypertarget{_ring_buffer_8h_source_l00072}{}\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{00072}     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{DSG::RingBuffer::Write}(\textcolor{keyword}{const} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSGSample}& elem)\{
-00073         \textcolor{keywordflow}{if} (!Full()) \{
-00074             write = \_write.load(std::memory\_order\_acquire);
-00075             \_write.store(next(write),std::memory\_order\_release);
-00076             this->\hyperlink{_driver_8cpp_acce4d24812914a6b276156d1a3d3e851}{\_buffer}[write] = elem;
-00077             ++\_count;
-00078             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-00079         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00080     \}
-\hypertarget{_ring_buffer_8h_source_l00081}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{00081}     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{DSG::RingBuffer::Read}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSGSample}& elem)\{
-00082         \textcolor{keywordflow}{if} (!Empty()) \{
-00083             read = \_read.load(std::memory\_order\_acquire);
-00084             \_read.store(next(read),std::memory\_order\_release);
-00085             elem = this->\hyperlink{_driver_8cpp_acce4d24812914a6b276156d1a3d3e851}{\_buffer}[read];
-00086             --\_count;
-00087             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-00088         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00089     \}
-\hypertarget{_ring_buffer_8h_source_l00090}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{00090}     \textcolor{keyword}{inline} \textcolor{keywordtype}{size\_t} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{DSG::RingBuffer::Count}()\textcolor{keyword}{const}\{
-00091         \textcolor{keywordflow}{return} \_count;
-00092     \}
-00093     \textcolor{comment}{//note: RingBuffer implementation will force a power of 2 size to allow use of bitwise increment.}
-\hypertarget{_ring_buffer_8h_source_l00094}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a6d7a76a4c9b38ccde46344662e08c9e5}{00094}     \textcolor{keyword}{inline} \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_ring_buffer_a6d7a76a4c9b38ccde46344662e08c9e5}{DSG::RingBuffer::next}(\textcolor{keywordtype}{size\_t} current)\{\textcolor{keywordflow}{return} (current+1) & MASK;\}
-\hypertarget{_ring_buffer_8h_source_l00095}{}\hyperlink{class_d_s_g_1_1_ring_buffer_aaf481e139011e91b111cc048e726cafb}{00095}     \textcolor{keyword}{inline} \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_ring_buffer_aaf481e139011e91b111cc048e726cafb}{DSG::RingBuffer::make\_pow\_2}(\textcolor{keywordtype}{size\_t} number)\{
-00096         \textcolor{keywordflow}{return} pow(2, ceil(log(number)/log(2)));
-00097     \}
-00098 \}
-00099 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_RingBuffer\_\_) */}\textcolor{preprocessor}{}
+00065             \textcolor{keywordflow}{if} (!buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{Empty}()) \{
+00066                 \textcolor{keywordtype}{size\_t} index= buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_aa71bb75a5d24700be795a30e1a135a54}{\_read};
+00067                 \textcolor{keywordtype}{size\_t} count=buffer.\hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{Count}();
+00068                 \textcolor{keywordtype}{size\_t} size = buffer.\hyperlink{class_d_s_g_1_1_buffer_a4acea659d9cd0be652ec55d21e5b0262}{Size}();
+00069                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<count; ++i) \{
+00070                     os<<index<<\textcolor{stringliteral}{": "}<<buffer.\hyperlink{class_d_s_g_1_1_buffer_ae4a4db8fe44b62db18d6a7855b5773f9}{\_buffer}[index]<<std::endl;
+00071                     index = ((index+1)%size);
+00072                 \}
+00073             \}\textcolor{keywordflow}{return} os;
+00074         \}
+00075 \textcolor{preprocessor}{#endif}
+00076     \};
+\hypertarget{_ring_buffer_8h_source_l00077}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{00077}     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{DSG::RingBuffer::Full}()\textcolor{keyword}{const}\{
+00078         \textcolor{keywordflow}{return} \_count==this->\_size;
+00079     \}
+\hypertarget{_ring_buffer_8h_source_l00080}{}\hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{00080}     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_ac1346f5842d08b988a5297abe4089b96}{DSG::RingBuffer::Empty}()\textcolor{keyword}{const}\{
+00081         \textcolor{keywordflow}{return} \_count==0;
+00082     \}
+\hypertarget{_ring_buffer_8h_source_l00083}{}\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{00083}     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{DSG::RingBuffer::Flush}()\{
+00084         \_write.store(0,std::memory\_order\_relaxed);
+00085         \_read.store(0,std::memory\_order\_relaxed);
+00086         \_count=0;
+00087     \}
+\hypertarget{_ring_buffer_8h_source_l00088}{}\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{00088}     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{DSG::RingBuffer::Write}(\textcolor{keyword}{const} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSGSample}& elem)\{
+00089         \textcolor{keywordflow}{if} (!Full()) \{
+00090             write = \_write.load(std::memory\_order\_acquire);
+00091             \_write.store(next(write),std::memory\_order\_release);
+00092             this->\hyperlink{_driver_8cpp_acce4d24812914a6b276156d1a3d3e851}{\_buffer}[write] = elem;
+00093             ++\_count;
+00094             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00095         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00096     \}
+\hypertarget{_ring_buffer_8h_source_l00097}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{00097}     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_ring_buffer_a6b2848a64f15c7b0c320779582fa0fbe}{DSG::RingBuffer::Read}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSGSample}& elem)\{
+00098         \textcolor{keywordflow}{if} (!Empty()) \{
+00099             read = \_read.load(std::memory\_order\_acquire);
+00100             \_read.store(next(read),std::memory\_order\_release);
+00101             elem = this->\hyperlink{_driver_8cpp_acce4d24812914a6b276156d1a3d3e851}{\_buffer}[read];
+00102             --\_count;
+00103             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00104         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00105     \}
+\hypertarget{_ring_buffer_8h_source_l00106}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{00106}     \textcolor{keyword}{inline} \textcolor{keywordtype}{size\_t} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_ring_buffer_a9bd79b0a6dff618b205e396c101ee070}{DSG::RingBuffer::Count}()\textcolor{keyword}{const}\{
+00107         \textcolor{keywordflow}{return} \_count;
+00108     \}
+00109     \textcolor{comment}{//note: RingBuffer implementation will force a power of 2 size to allow use of bitwise increment.}
+\hypertarget{_ring_buffer_8h_source_l00110}{}\hyperlink{class_d_s_g_1_1_ring_buffer_a6d7a76a4c9b38ccde46344662e08c9e5}{00110}     \textcolor{keyword}{inline} \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_ring_buffer_a6d7a76a4c9b38ccde46344662e08c9e5}{DSG::RingBuffer::next}(\textcolor{keywordtype}{size\_t} current)\{\textcolor{keywordflow}{return} (current+1) & MASK;\}
+\hypertarget{_ring_buffer_8h_source_l00111}{}\hyperlink{class_d_s_g_1_1_ring_buffer_aaf481e139011e91b111cc048e726cafb}{00111}     \textcolor{keyword}{inline} \textcolor{keywordtype}{size\_t} \hyperlink{class_d_s_g_1_1_ring_buffer_aaf481e139011e91b111cc048e726cafb}{DSG::RingBuffer::make\_pow\_2}(\textcolor{keywordtype}{size\_t} number)\{
+00112         \textcolor{keywordflow}{return} pow(2, ceil(log(number)/log(2)));
+00113     \}
+00114 \}
+00115 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_RingBuffer\_\_) */}\textcolor{preprocessor}{}
 \end{DoxyCode}

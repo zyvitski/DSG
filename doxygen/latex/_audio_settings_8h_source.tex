@@ -1,5 +1,5 @@
 \hypertarget{_audio_settings_8h_source}{\section{Audio\+Settings.\+h}
-\label{_audio_settings_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Audio\+Settings.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Audio\+Settings.\+h}}
+\label{_audio_settings_8h_source}\index{Audio\+Settings.\+h@{Audio\+Settings.\+h}}
 }
 
 \begin{DoxyCode}
@@ -10,36 +10,52 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/16/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_AudioSettings\_\_}
-00009 \textcolor{preprocessor}{#define \_\_DSG\_\_AudioSettings\_\_}
-00010 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_types_8h}{DSGTypes.h}"}
-00011 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG} \{\textcolor{comment}{}
-00012 \textcolor{comment}{    /*!\(\backslash\)brief DSG::AudioSettings - Global Storage For Audio Settings Such As Sample Rate}
-00013 \textcolor{comment}{     */}
-\hypertarget{_audio_settings_8h_source_l00014}{}\hyperlink{class_d_s_g_1_1_audio_settings}{00014}     \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_audio_settings}{AudioSettings}\{
-00015     \textcolor{keyword}{public}:
-00016         \textcolor{keyword}{static} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_audio_settings_a4f459c389b10c11828e2f2f00c012c49}{SampleRate}();
-00017         \textcolor{keyword}{static} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_audio_settings_a4f459c389b10c11828e2f2f00c012c49}{SampleRate}(
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_AudioSettings\_\_}
+00025 \textcolor{preprocessor}{#define \_\_DSG\_\_AudioSettings\_\_}
+00026 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_types_8h}{DSGTypes.h}"}
+00027 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG} \{\textcolor{comment}{}
+00028 \textcolor{comment}{    /*!\(\backslash\)brief DSG::AudioSettings - Global Storage For Audio Settings Such As Sample Rate}
+00029 \textcolor{comment}{     */}
+\hypertarget{_audio_settings_8h_source_l00030}{}\hyperlink{class_d_s_g_1_1_audio_settings}{00030}     \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_audio_settings}{AudioSettings}\{
+00031     \textcolor{keyword}{public}:
+00032         \textcolor{keyword}{static} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_audio_settings_a4f459c389b10c11828e2f2f00c012c49}{SampleRate}();
+00033         \textcolor{keyword}{static} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_audio_settings_a4f459c389b10c11828e2f2f00c012c49}{SampleRate}(
       \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& value);
-00018         \textcolor{keyword}{static} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_audio_settings_a8cb4afd7b58e927300ff46fbeb71bec7}{Nyquist}();
-00019     \textcolor{keyword}{protected}:
-\hypertarget{_audio_settings_8h_source_l00020}{}\hyperlink{class_d_s_g_1_1_audio_settings_a56869b51933f102b197f54001c8a1d27}{00020}         \textcolor{keyword}{static} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \hyperlink{class_d_s_g_1_1_audio_settings_a56869b51933f102b197f54001c8a1d27}{\_sampleRate};
-\hypertarget{_audio_settings_8h_source_l00021}{}\hyperlink{class_d_s_g_1_1_audio_settings_af3c7cbd15390d9bcbe39983c069390b5}{00021}         \textcolor{keyword}{static} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \hyperlink{class_d_s_g_1_1_audio_settings_af3c7cbd15390d9bcbe39983c069390b5}{\_nyquist};
-00022     \};\textcolor{comment}{}
-00023 \textcolor{comment}{    //!\(\backslash\)brief DSG::SampleRate - Get Global Sample Rate}
-\hypertarget{_audio_settings_8h_source_l00024}{}\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{00024} \textcolor{comment}{}    \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{SampleRate}()\{
-00025         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_a4f459c389b10c11828e2f2f00c012c49}{DSG::AudioSettings::SampleRate}();
-00026     \}\textcolor{comment}{}
-00027 \textcolor{comment}{    //!\(\backslash\)brief DSG::SampleRate - Set Global Sample Rate}
-\hypertarget{_audio_settings_8h_source_l00028}{}\hyperlink{namespace_d_s_g_a66a464f016da1a099abea61a27a84d18}{00028} \textcolor{comment}{}    \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{SampleRate}(
+00034         \textcolor{keyword}{static} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_audio_settings_a8cb4afd7b58e927300ff46fbeb71bec7}{Nyquist}();
+00035     \textcolor{keyword}{protected}:
+\hypertarget{_audio_settings_8h_source_l00036}{}\hyperlink{class_d_s_g_1_1_audio_settings_a56869b51933f102b197f54001c8a1d27}{00036}         \textcolor{keyword}{static} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \hyperlink{class_d_s_g_1_1_audio_settings_a56869b51933f102b197f54001c8a1d27}{\_sampleRate};
+\hypertarget{_audio_settings_8h_source_l00037}{}\hyperlink{class_d_s_g_1_1_audio_settings_af3c7cbd15390d9bcbe39983c069390b5}{00037}         \textcolor{keyword}{static} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \hyperlink{class_d_s_g_1_1_audio_settings_af3c7cbd15390d9bcbe39983c069390b5}{\_nyquist};
+00038     \};\textcolor{comment}{}
+00039 \textcolor{comment}{    //!\(\backslash\)brief DSG::SampleRate - Get Global Sample Rate}
+\hypertarget{_audio_settings_8h_source_l00040}{}\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{00040} \textcolor{comment}{}    \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{SampleRate}()\{
+00041         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_a4f459c389b10c11828e2f2f00c012c49}{DSG::AudioSettings::SampleRate}();
+00042     \}\textcolor{comment}{}
+00043 \textcolor{comment}{    //!\(\backslash\)brief DSG::SampleRate - Set Global Sample Rate}
+\hypertarget{_audio_settings_8h_source_l00044}{}\hyperlink{namespace_d_s_g_a66a464f016da1a099abea61a27a84d18}{00044} \textcolor{comment}{}    \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{SampleRate}(
       \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& value)\{
-00029         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_a4f459c389b10c11828e2f2f00c012c49}{DSG::AudioSettings::SampleRate}(value);
-00030     \}\textcolor{comment}{}
-00031 \textcolor{comment}{    //!\(\backslash\)brief DSG::Nyquist() - Pre-Calculated Nyquist Limit. Use instead of calculating each time needed.
+00045         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_a4f459c389b10c11828e2f2f00c012c49}{DSG::AudioSettings::SampleRate}(value);
+00046     \}\textcolor{comment}{}
+00047 \textcolor{comment}{    //!\(\backslash\)brief DSG::Nyquist() - Pre-Calculated Nyquist Limit. Use instead of calculating each time needed.
        This value will be updated whenever the sample rate changes.}
-\hypertarget{_audio_settings_8h_source_l00032}{}\hyperlink{namespace_d_s_g_acb23c320b74d21f203081a25e1b5d134}{00032} \textcolor{comment}{}    \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \hyperlink{namespace_d_s_g_acb23c320b74d21f203081a25e1b5d134}{Nyquist}()\{
-00033         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_a8cb4afd7b58e927300ff46fbeb71bec7}{DSG::AudioSettings::Nyquist}();
-00034     \}
-00035 \}
-00036 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_AudioSettings\_\_) */}\textcolor{preprocessor}{}
+\hypertarget{_audio_settings_8h_source_l00048}{}\hyperlink{namespace_d_s_g_acb23c320b74d21f203081a25e1b5d134}{00048} \textcolor{comment}{}    \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \hyperlink{namespace_d_s_g_acb23c320b74d21f203081a25e1b5d134}{Nyquist}()\{
+00049         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_a8cb4afd7b58e927300ff46fbeb71bec7}{DSG::AudioSettings::Nyquist}();
+00050     \}
+00051 \}
+00052 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_AudioSettings\_\_) */}\textcolor{preprocessor}{}
 \end{DoxyCode}

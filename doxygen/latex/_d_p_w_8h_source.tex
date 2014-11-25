@@ -1,5 +1,5 @@
 \hypertarget{_d_p_w_8h_source}{\section{D\+P\+W.\+h}
-\label{_d_p_w_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+D\+P\+W.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+D\+P\+W.\+h}}
+\label{_d_p_w_8h_source}\index{D\+P\+W.\+h@{D\+P\+W.\+h}}
 }
 
 \begin{DoxyCode}
@@ -10,183 +10,201 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 11/11/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{preprocessor}{#ifndef DSG\_DPW\_h}
-00009 \textcolor{preprocessor}{#define DSG\_DPW\_h}
-00010 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_types_8h}{DSGTypes.h}"}
-00011 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_math_8h}{DSGMath.h}"}
-00012 \textcolor{preprocessor}{#include "\hyperlink{_signal_generator_8h}{SignalGenerator.h}"}
-00013 \textcolor{preprocessor}{#include "\hyperlink{_bounds_8h}{Bounds.h}"}
-00014 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
-00015 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
-00016     \textcolor{keyword}{inline}
-00017 \textcolor{preprocessor}{#endif}
-00018 \textcolor{comment}{    //!\(\backslash\)brief DSG::DPW - Generators using the DPW method}
-\hypertarget{_d_p_w_8h_source_l00019}{}\hyperlink{namespace_d_s_g_1_1_d_p_w}{00019} \textcolor{comment}{}    \textcolor{keyword}{namespace }DPW\{\textcolor{comment}{}
-00020 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Polynomial - Polynoimal used in DPW Algorithm}
-00021 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keywordtype}{unsigned} order>
-\hypertarget{_d_p_w_8h_source_l00022}{}\hyperlink{namespace_d_s_g_1_1_d_p_w_a1677c6fedac376f3e9b284bc9a4a227c}{00022}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{namespace_d_s_g_1_1_d_p_w_a1677c6fedac376f3e9b284bc9a4a227c}{DPW\_Polynomial}(
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#ifndef DSG\_DPW\_h}
+00025 \textcolor{preprocessor}{#define DSG\_DPW\_h}
+00026 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_types_8h}{DSGTypes.h}"}
+00027 \textcolor{preprocessor}{#include "\hyperlink{_d_s_g_math_8h}{DSGMath.h}"}
+00028 \textcolor{preprocessor}{#include "\hyperlink{_signal_generator_8h}{SignalGenerator.h}"}
+00029 \textcolor{preprocessor}{#include "\hyperlink{_bounds_8h}{Bounds.h}"}
+00030 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
+00031 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
+00032     \textcolor{keyword}{inline}
+00033 \textcolor{preprocessor}{#endif}
+00034 \textcolor{comment}{    //!\(\backslash\)brief DSG::DPW - Generators using the DPW method}
+\hypertarget{_d_p_w_8h_source_l00035}{}\hyperlink{namespace_d_s_g_1_1_d_p_w}{00035} \textcolor{comment}{}    \textcolor{keyword}{namespace }DPW\{\textcolor{comment}{}
+00036 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Polynomial - Polynoimal used in DPW Algorithm}
+00037 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keywordtype}{unsigned} order>
+\hypertarget{_d_p_w_8h_source_l00038}{}\hyperlink{namespace_d_s_g_1_1_d_p_w_a1677c6fedac376f3e9b284bc9a4a227c}{00038}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{namespace_d_s_g_1_1_d_p_w_a1677c6fedac376f3e9b284bc9a4a227c}{DPW\_Polynomial}(
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& value)\{
-00023             DSG::StaticAssertBounds<1,6,order>();\textcolor{comment}{//must be 1-6 order}
-00024             \textcolor{keywordflow}{return} value;
-00025         \}\textcolor{comment}{}
-00026 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Polynomial - 1st Order Polynoimal used in DPW Algorithm}
-00027 \textcolor{comment}{}        \textcolor{keyword}{template}<>
-\hypertarget{_d_p_w_8h_source_l00028}{}\hyperlink{namespace_d_s_g_1_1_d_p_w_a8330d5b0b7bdf2247cdd357f9707eaaf}{00028}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{namespace_d_s_g_1_1_d_p_w_a8330d5b0b7bdf2247cdd357f9707eaaf}{DPW\_Polynomial<1>}(
+00039             DSG::StaticAssertBounds<1,6,order>();\textcolor{comment}{//must be 1-6 order}
+00040             \textcolor{keywordflow}{return} value;
+00041         \}\textcolor{comment}{}
+00042 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Polynomial - 1st Order Polynoimal used in DPW Algorithm}
+00043 \textcolor{comment}{}        \textcolor{keyword}{template}<>
+\hypertarget{_d_p_w_8h_source_l00044}{}\hyperlink{namespace_d_s_g_1_1_d_p_w_a8330d5b0b7bdf2247cdd357f9707eaaf}{00044}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{namespace_d_s_g_1_1_d_p_w_a8330d5b0b7bdf2247cdd357f9707eaaf}{DPW\_Polynomial<1>}(
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& value)\{
-00029             \textcolor{keywordflow}{return} value;
-00030         \}\textcolor{comment}{}
-00031 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Polynomial - 2nd order Polynoimal used in DPW Algorithm}
-00032 \textcolor{comment}{}        \textcolor{keyword}{template}<>
-\hypertarget{_d_p_w_8h_source_l00033}{}\hyperlink{namespace_d_s_g_1_1_d_p_w_a140753401d8518aa64bbcd7496a65b45}{00033}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{namespace_d_s_g_1_1_d_p_w_a140753401d8518aa64bbcd7496a65b45}{DPW\_Polynomial<2>}(
+00045             \textcolor{keywordflow}{return} value;
+00046         \}\textcolor{comment}{}
+00047 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Polynomial - 2nd order Polynoimal used in DPW Algorithm}
+00048 \textcolor{comment}{}        \textcolor{keyword}{template}<>
+\hypertarget{_d_p_w_8h_source_l00049}{}\hyperlink{namespace_d_s_g_1_1_d_p_w_a140753401d8518aa64bbcd7496a65b45}{00049}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{namespace_d_s_g_1_1_d_p_w_a140753401d8518aa64bbcd7496a65b45}{DPW\_Polynomial<2>}(
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& value)\{
-00034             \textcolor{keywordflow}{return} DSG::Pow<2>(value);
-00035         \}\textcolor{comment}{}
-00036 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Polynomial - 3rd order Polynoimal used in DPW Algorithm}
-00037 \textcolor{comment}{}        \textcolor{keyword}{template}<>
-\hypertarget{_d_p_w_8h_source_l00038}{}\hyperlink{namespace_d_s_g_1_1_d_p_w_a6f20dd7808a5e5bf3df682ce92eeb520}{00038}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{namespace_d_s_g_1_1_d_p_w_a6f20dd7808a5e5bf3df682ce92eeb520}{DPW\_Polynomial<3>}(
+00050             \textcolor{keywordflow}{return} DSG::Pow<2>(value);
+00051         \}\textcolor{comment}{}
+00052 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Polynomial - 3rd order Polynoimal used in DPW Algorithm}
+00053 \textcolor{comment}{}        \textcolor{keyword}{template}<>
+\hypertarget{_d_p_w_8h_source_l00054}{}\hyperlink{namespace_d_s_g_1_1_d_p_w_a6f20dd7808a5e5bf3df682ce92eeb520}{00054}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{namespace_d_s_g_1_1_d_p_w_a6f20dd7808a5e5bf3df682ce92eeb520}{DPW\_Polynomial<3>}(
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& value)\{
-00039             \textcolor{keywordflow}{return} DSG::Pow<3>(value)-value;
-00040         \}\textcolor{comment}{}
-00041 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Polynomial - 4th order Polynoimal used in DPW Algorithm}
-00042 \textcolor{comment}{}        \textcolor{keyword}{template}<>
-\hypertarget{_d_p_w_8h_source_l00043}{}\hyperlink{namespace_d_s_g_1_1_d_p_w_a56e019e6b80abdc8d0d9d63e69b65da0}{00043}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{namespace_d_s_g_1_1_d_p_w_a56e019e6b80abdc8d0d9d63e69b65da0}{DPW\_Polynomial<4>}(
+00055             \textcolor{keywordflow}{return} DSG::Pow<3>(value)-value;
+00056         \}\textcolor{comment}{}
+00057 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Polynomial - 4th order Polynoimal used in DPW Algorithm}
+00058 \textcolor{comment}{}        \textcolor{keyword}{template}<>
+\hypertarget{_d_p_w_8h_source_l00059}{}\hyperlink{namespace_d_s_g_1_1_d_p_w_a56e019e6b80abdc8d0d9d63e69b65da0}{00059}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{namespace_d_s_g_1_1_d_p_w_a56e019e6b80abdc8d0d9d63e69b65da0}{DPW\_Polynomial<4>}(
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& value)\{
-00044             \textcolor{keywordflow}{return} DSG::Pow<2>(value) * (DSG::Pow<2>(value) - 2.0);
-00045         \}\textcolor{comment}{}
-00046 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Polynomial - 5th order Polynoimal used in DPW Algorithm}
-00047 \textcolor{comment}{}        \textcolor{keyword}{template}<>
-\hypertarget{_d_p_w_8h_source_l00048}{}\hyperlink{namespace_d_s_g_1_1_d_p_w_a1b04cfea475babd2006c84ba118c1909}{00048}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{namespace_d_s_g_1_1_d_p_w_a1b04cfea475babd2006c84ba118c1909}{DPW\_Polynomial<5>}(
+00060             \textcolor{keywordflow}{return} DSG::Pow<2>(value) * (DSG::Pow<2>(value) - 2.0);
+00061         \}\textcolor{comment}{}
+00062 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Polynomial - 5th order Polynoimal used in DPW Algorithm}
+00063 \textcolor{comment}{}        \textcolor{keyword}{template}<>
+\hypertarget{_d_p_w_8h_source_l00064}{}\hyperlink{namespace_d_s_g_1_1_d_p_w_a1b04cfea475babd2006c84ba118c1909}{00064}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{namespace_d_s_g_1_1_d_p_w_a1b04cfea475babd2006c84ba118c1909}{DPW\_Polynomial<5>}(
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& value)\{
-00049             \textcolor{keywordflow}{return} DSG::Pow<5>(value) - DSG::Pow<3>(value) * 10.0/3.0 + value * 7.0/3.0;
-00050         \}\textcolor{comment}{}
-00051 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Polynomial - 6th order Polynoimal used in DPW Algorithm}
-00052 \textcolor{comment}{}        \textcolor{keyword}{template}<>
-\hypertarget{_d_p_w_8h_source_l00053}{}\hyperlink{namespace_d_s_g_1_1_d_p_w_a0c0f87dd5176cd98f69c5ec46db50369}{00053}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{namespace_d_s_g_1_1_d_p_w_a0c0f87dd5176cd98f69c5ec46db50369}{DPW\_Polynomial<6>}(
-      \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& value)\{
-00054             \textcolor{keywordflow}{return} DSG::Pow<6>(value) - 5.0 * DSG::Pow<4>(value) + 7.0 * 
-      \hyperlink{namespace_d_s_g_1_1_d_p_w_a140753401d8518aa64bbcd7496a65b45}{DPW\_Polynomial<2>}(value);
-00055         \}
-00056 \textcolor{preprocessor}{#warning DSG::DPW - differentiators order 3-6 need verification. they cause major clipping}
-00057 \textcolor{comment}{        //!\(\backslash\)todo Fix DSG::DPW::DPW\_Differentiator algorithms for orders 3-6}
-00058 \textcolor{comment}{}        \textcolor{comment}{//differentiators}\textcolor{comment}{}
-00059 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Differentiator - Class Performing Differentiation for the DPW Algorithm}
-00060 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keywordtype}{unsigned} order>
-\hypertarget{_d_p_w_8h_source_l00061}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{00061}         \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{DPW\_Differentiator}\{
-00062         \textcolor{keyword}{public}:
-\hypertarget{_d_p_w_8h_source_l00063}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_acff6769e1c7555fea5e74f1e15bdecd9}{00063}             \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_acff6769e1c7555fea5e74f1e15bdecd9}{DPW\_Differentiator}()\{
-00064                 DSG::StaticAssertBounds<1, 6,order>();\textcolor{comment}{//order must be 1-6}
-00065             \}
-00066         \};\textcolor{comment}{}
-00067 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Differentiator - Class Performing Differentiation for the 1st order DPW
-       Algorithm}
+00065             \textcolor{keywordflow}{return} DSG::Pow<5>(value) - DSG::Pow<3>(value) * 10.0/3.0 + value * 7.0/3.0;
+00066         \}\textcolor{comment}{}
+00067 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Polynomial - 6th order Polynoimal used in DPW Algorithm}
 00068 \textcolor{comment}{}        \textcolor{keyword}{template}<>
-\hypertarget{_d_p_w_8h_source_l00069}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_011_01_4}{00069}         \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{DPW\_Differentiator}<1>\{
-00070         \textcolor{keyword}{public}:
-\hypertarget{_d_p_w_8h_source_l00071}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_011_01_4_a17a8d0b7f400a776fafaa5639b8a0ef2}{00071}             \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_011_01_4_a17a8d0b7f400a776fafaa5639b8a0ef2}{operator()}(
-      \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& signal,\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& dt)\{
-00072                 \textcolor{keywordflow}{return} signal;
-00073             \}
-00074         \};\textcolor{comment}{}
-00075 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Differentiator - Class Performing Differentiation for the 2nd order DPW
-       Algorithm}
-00076 \textcolor{comment}{}        \textcolor{keyword}{template}<>
-\hypertarget{_d_p_w_8h_source_l00077}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_012_01_4}{00077}         \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{DPW\_Differentiator}<2>\{
-00078         \textcolor{keyword}{public}:
-\hypertarget{_d_p_w_8h_source_l00079}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_012_01_4_a061a606ab224b1b0904e617454a36daa}{00079}             \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_012_01_4_a061a606ab224b1b0904e617454a36daa}{operator()}(
-      \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& signal,\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& dt)\{
-00080                 output = (signal - \_delay)/(4.0 * dt);
-00081                 \_delay = signal;
-00082                 \textcolor{keywordflow}{return} output;
+\hypertarget{_d_p_w_8h_source_l00069}{}\hyperlink{namespace_d_s_g_1_1_d_p_w_a0c0f87dd5176cd98f69c5ec46db50369}{00069}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{namespace_d_s_g_1_1_d_p_w_a0c0f87dd5176cd98f69c5ec46db50369}{DPW\_Polynomial<6>}(
+      \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& value)\{
+00070             \textcolor{keywordflow}{return} DSG::Pow<6>(value) - 5.0 * DSG::Pow<4>(value) + 7.0 * 
+      \hyperlink{namespace_d_s_g_1_1_d_p_w_a140753401d8518aa64bbcd7496a65b45}{DPW\_Polynomial<2>}(value);
+00071         \}
+00072 \textcolor{preprocessor}{#ifdef \_\_APPLE\_\_}
+00073 \textcolor{preprocessor}{#warning DSG::DPW - differentiators order 3-6 need verification. they cause major clipping}
+00074 \textcolor{preprocessor}{#endif}
+00075 \textcolor{comment}{        //!\(\backslash\)todo Fix DSG::DPW::DPW\_Differentiator algorithms for orders 3-6}
+00076 \textcolor{comment}{}        \textcolor{comment}{//differentiators}\textcolor{comment}{}
+00077 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Differentiator - Class Performing Differentiation for the DPW Algorithm}
+00078 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keywordtype}{unsigned} order>
+\hypertarget{_d_p_w_8h_source_l00079}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{00079}         \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{DPW\_Differentiator}\{
+00080         \textcolor{keyword}{public}:
+\hypertarget{_d_p_w_8h_source_l00081}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_acff6769e1c7555fea5e74f1e15bdecd9}{00081}             \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_acff6769e1c7555fea5e74f1e15bdecd9}{DPW\_Differentiator}()\{
+00082                 DSG::StaticAssertBounds<1, 6,order>();\textcolor{comment}{//order must be 1-6}
 00083             \}
-00084         \textcolor{keyword}{protected}:
-\hypertarget{_d_p_w_8h_source_l00085}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_012_01_4_a44f6c656f15cea65b622fe333dba14e8}{00085}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_012_01_4_a44f6c656f15cea65b622fe333dba14e8}{output};
-\hypertarget{_d_p_w_8h_source_l00086}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_012_01_4_a80ecadb399d776c9d38babbeb3d84332}{00086}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_012_01_4_a80ecadb399d776c9d38babbeb3d84332}{\_delay};
-00087         \};\textcolor{comment}{}
-00088 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Differentiator - Class Performing Differentiation for the 3rd order DPW
+00084         \};\textcolor{comment}{}
+00085 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Differentiator - Class Performing Differentiation for the 1st order DPW
        Algorithm}
-00089 \textcolor{comment}{}        \textcolor{keyword}{template}<>
-\hypertarget{_d_p_w_8h_source_l00090}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_013_01_4}{00090}         \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{DPW\_Differentiator}<3>\{
-00091         \textcolor{keyword}{public}:
-\hypertarget{_d_p_w_8h_source_l00092}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_013_01_4_af17617ff237bf4d56161ffb5ee4e320b}{00092}             \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_013_01_4_af17617ff237bf4d56161ffb5ee4e320b}{operator()}(
+00086 \textcolor{comment}{}        \textcolor{keyword}{template}<>
+\hypertarget{_d_p_w_8h_source_l00087}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_011_01_4}{00087}         \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{DPW\_Differentiator}<1>\{
+00088         \textcolor{keyword}{public}:
+\hypertarget{_d_p_w_8h_source_l00089}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_011_01_4_a17a8d0b7f400a776fafaa5639b8a0ef2}{00089}             \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_011_01_4_a17a8d0b7f400a776fafaa5639b8a0ef2}{operator()}(
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& signal,\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& dt)\{
-00093                 output  = (signal - \_delay[0]);
-00094                 output -= (\_delay[0] - \_delay[1]);
-00095                 output /= (24.*DSG::Pow<2>(dt));
-00096                 \_delay[1]=\_delay[0];
-00097                 \_delay[0]=signal;
-00098                 \textcolor{keywordflow}{return} output;
-00099             \}
-00100         \textcolor{keyword}{protected}:
-\hypertarget{_d_p_w_8h_source_l00101}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_013_01_4_a09eeb701309aa1f1034964921417a904}{00101}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_013_01_4_a09eeb701309aa1f1034964921417a904}{output};
-\hypertarget{_d_p_w_8h_source_l00102}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_013_01_4_a65e5486785a5007e15837e0891e24d81}{00102}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \_delay[2];
-00103         \};\textcolor{comment}{}
-00104 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Differentiator - Class Performing Differentiation for the 4th order DPW
+00090                 \textcolor{keywordflow}{return} signal;
+00091             \}
+00092         \};\textcolor{comment}{}
+00093 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Differentiator - Class Performing Differentiation for the 2nd order DPW
        Algorithm}
-00105 \textcolor{comment}{}        \textcolor{keyword}{template}<>
-\hypertarget{_d_p_w_8h_source_l00106}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4}{00106}         \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{DPW\_Differentiator}<4>\{
-00107         \textcolor{keyword}{public}:
-\hypertarget{_d_p_w_8h_source_l00108}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aa86877ca4c21091864246dd825575f7c}{00108}             \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aa86877ca4c21091864246dd825575f7c}{operator()}(
+00094 \textcolor{comment}{}        \textcolor{keyword}{template}<>
+\hypertarget{_d_p_w_8h_source_l00095}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_012_01_4}{00095}         \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{DPW\_Differentiator}<2>\{
+00096         \textcolor{keyword}{public}:
+\hypertarget{_d_p_w_8h_source_l00097}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_012_01_4_a061a606ab224b1b0904e617454a36daa}{00097}             \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_012_01_4_a061a606ab224b1b0904e617454a36daa}{operator()}(
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& signal,\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& dt)\{
-00109                 output  = (signal - \_delay[0]);
-00110                 output -= (\_delay[0] - \_delay[1]);
-00111                 output -= (\_delay[1] - \_delay[2]);
-00112                 output /= 144*DSG::Pow<3>(dt);
-00113                 \_delay[2]=\_delay[1];
+00098                 output = (signal - \_delay)/(4.0 * dt);
+00099                 \_delay = signal;
+00100                 \textcolor{keywordflow}{return} output;
+00101             \}
+00102         \textcolor{keyword}{protected}:
+\hypertarget{_d_p_w_8h_source_l00103}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_012_01_4_a44f6c656f15cea65b622fe333dba14e8}{00103}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_012_01_4_a44f6c656f15cea65b622fe333dba14e8}{output};
+\hypertarget{_d_p_w_8h_source_l00104}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_012_01_4_a80ecadb399d776c9d38babbeb3d84332}{00104}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_012_01_4_a80ecadb399d776c9d38babbeb3d84332}{\_delay};
+00105         \};\textcolor{comment}{}
+00106 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Differentiator - Class Performing Differentiation for the 3rd order DPW
+       Algorithm}
+00107 \textcolor{comment}{}        \textcolor{keyword}{template}<>
+\hypertarget{_d_p_w_8h_source_l00108}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_013_01_4}{00108}         \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{DPW\_Differentiator}<3>\{
+00109         \textcolor{keyword}{public}:
+\hypertarget{_d_p_w_8h_source_l00110}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_013_01_4_af17617ff237bf4d56161ffb5ee4e320b}{00110}             \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_013_01_4_af17617ff237bf4d56161ffb5ee4e320b}{operator()}(
+      \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& signal,\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& dt)\{
+00111                 output  = (signal - \_delay[0]);
+00112                 output -= (\_delay[0] - \_delay[1]);
+00113                 output /= (24.*DSG::Pow<2>(dt));
 00114                 \_delay[1]=\_delay[0];
 00115                 \_delay[0]=signal;
 00116                 \textcolor{keywordflow}{return} output;
 00117             \}
 00118         \textcolor{keyword}{protected}:
-\hypertarget{_d_p_w_8h_source_l00119}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_a5fd7e2dc19c470cacb8e23942c1afdbb}{00119}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_a5fd7e2dc19c470cacb8e23942c1afdbb}{output};
-\hypertarget{_d_p_w_8h_source_l00120}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aacd153f49201708823a05aad2506ede9}{00120}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \_delay[3];
+\hypertarget{_d_p_w_8h_source_l00119}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_013_01_4_a09eeb701309aa1f1034964921417a904}{00119}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_013_01_4_a09eeb701309aa1f1034964921417a904}{output};
+\hypertarget{_d_p_w_8h_source_l00120}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_013_01_4_a65e5486785a5007e15837e0891e24d81}{00120}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \_delay[2];
 00121         \};\textcolor{comment}{}
-00122 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Differentiator - Class Performing Differentiation for the 5th order DPW
+00122 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Differentiator - Class Performing Differentiation for the 4th order DPW
        Algorithm}
 00123 \textcolor{comment}{}        \textcolor{keyword}{template}<>
-\hypertarget{_d_p_w_8h_source_l00124}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_015_01_4}{00124}         \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{DPW\_Differentiator}<5>\{
+\hypertarget{_d_p_w_8h_source_l00124}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4}{00124}         \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{DPW\_Differentiator}<4>\{
 00125         \textcolor{keyword}{public}:
-\hypertarget{_d_p_w_8h_source_l00126}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_015_01_4_a58aa0475d87f841e656f725f7206fe1c}{00126}             \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_015_01_4_a58aa0475d87f841e656f725f7206fe1c}{operator()}(
+\hypertarget{_d_p_w_8h_source_l00126}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aa86877ca4c21091864246dd825575f7c}{00126}             \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aa86877ca4c21091864246dd825575f7c}{operator()}(
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& signal,\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& dt)\{
 00127                 output  = (signal - \_delay[0]);
 00128                 output -= (\_delay[0] - \_delay[1]);
 00129                 output -= (\_delay[1] - \_delay[2]);
-00130                 output -= (\_delay[2] - \_delay[3]);
-00131                 output /= 960*DSG::Pow<4>(dt);
-00132                 \_delay[3]=\_delay[2];
-00133                 \_delay[2]=\_delay[1];
-00134                 \_delay[1]=\_delay[0];
-00135                 \_delay[0]=signal;
-00136                 \textcolor{keywordflow}{return} output;
-00137             \}
-00138         \textcolor{keyword}{protected}:
-\hypertarget{_d_p_w_8h_source_l00139}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_015_01_4_ae69bdfd7eb71c3c44691bda6067bda0c}{00139}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_015_01_4_ae69bdfd7eb71c3c44691bda6067bda0c}{output};
-\hypertarget{_d_p_w_8h_source_l00140}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_015_01_4_afc272a1eb4f3240b4148a64c7c9ccfc1}{00140}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \_delay[4];
-00141         \};\textcolor{comment}{}
-00142 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Differentiator - Class Performing Differentiation for the 6th order DPW
+00130                 output /= 144*DSG::Pow<3>(dt);
+00131                 \_delay[2]=\_delay[1];
+00132                 \_delay[1]=\_delay[0];
+00133                 \_delay[0]=signal;
+00134                 \textcolor{keywordflow}{return} output;
+00135             \}
+00136         \textcolor{keyword}{protected}:
+\hypertarget{_d_p_w_8h_source_l00137}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_a5fd7e2dc19c470cacb8e23942c1afdbb}{00137}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_a5fd7e2dc19c470cacb8e23942c1afdbb}{output};
+\hypertarget{_d_p_w_8h_source_l00138}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_aacd153f49201708823a05aad2506ede9}{00138}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \_delay[3];
+00139         \};\textcolor{comment}{}
+00140 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Differentiator - Class Performing Differentiation for the 5th order DPW
        Algorithm}
-00143 \textcolor{comment}{}        \textcolor{keyword}{template}<>
-\hypertarget{_d_p_w_8h_source_l00144}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4}{00144}         \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{DPW\_Differentiator}<6>\{
-00145         \textcolor{keyword}{public}:
-\hypertarget{_d_p_w_8h_source_l00146}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a82356846abaeef0ed76e9803a7863f3c}{00146}             \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a82356846abaeef0ed76e9803a7863f3c}{operator()}(
+00141 \textcolor{comment}{}        \textcolor{keyword}{template}<>
+\hypertarget{_d_p_w_8h_source_l00142}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_015_01_4}{00142}         \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{DPW\_Differentiator}<5>\{
+00143         \textcolor{keyword}{public}:
+\hypertarget{_d_p_w_8h_source_l00144}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_015_01_4_a58aa0475d87f841e656f725f7206fe1c}{00144}             \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_015_01_4_a58aa0475d87f841e656f725f7206fe1c}{operator()}(
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& signal,\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& dt)\{
-00147                 output  = (signal - \_delay[0]);
-00148                 output -= (\_delay[0] - \_delay[1]);
-00149                 output -= (\_delay[1] - \_delay[2]);
-00150                 output -= (\_delay[2] - \_delay[3]);
-00151                 output -= (\_delay[3] - \_delay[4]);
-00152                 output /= 7200*DSG::Pow<5>(dt);
-00153                 \_delay[4]=\_delay[3];
-00154                 \_delay[3]=\_delay[2];
-00155                 \_delay[2]=\_delay[1];
-00156                 \_delay[1]=\_delay[0];
-00157                 \_delay[0]=signal;
-00158                 \textcolor{keywordflow}{return} output;
-00159             \}
-00160         \textcolor{keyword}{protected}:
-\hypertarget{_d_p_w_8h_source_l00161}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{00161}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{output};
-\hypertarget{_d_p_w_8h_source_l00162}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{00162}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \_delay[5];
-00163         \};
-00164     \}
-00165 \}
-00166 \textcolor{preprocessor}{#endif}
+00145                 output  = (signal - \_delay[0]);
+00146                 output -= (\_delay[0] - \_delay[1]);
+00147                 output -= (\_delay[1] - \_delay[2]);
+00148                 output -= (\_delay[2] - \_delay[3]);
+00149                 output /= 960*DSG::Pow<4>(dt);
+00150                 \_delay[3]=\_delay[2];
+00151                 \_delay[2]=\_delay[1];
+00152                 \_delay[1]=\_delay[0];
+00153                 \_delay[0]=signal;
+00154                 \textcolor{keywordflow}{return} output;
+00155             \}
+00156         \textcolor{keyword}{protected}:
+\hypertarget{_d_p_w_8h_source_l00157}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_015_01_4_ae69bdfd7eb71c3c44691bda6067bda0c}{00157}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_015_01_4_ae69bdfd7eb71c3c44691bda6067bda0c}{output};
+\hypertarget{_d_p_w_8h_source_l00158}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_015_01_4_afc272a1eb4f3240b4148a64c7c9ccfc1}{00158}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \_delay[4];
+00159         \};\textcolor{comment}{}
+00160 \textcolor{comment}{        //!\(\backslash\)brief DSG::DPW::DPW\_Differentiator - Class Performing Differentiation for the 6th order DPW
+       Algorithm}
+00161 \textcolor{comment}{}        \textcolor{keyword}{template}<>
+\hypertarget{_d_p_w_8h_source_l00162}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4}{00162}         \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{DPW\_Differentiator}<6>\{
+00163         \textcolor{keyword}{public}:
+\hypertarget{_d_p_w_8h_source_l00164}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a82356846abaeef0ed76e9803a7863f3c}{00164}             \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a82356846abaeef0ed76e9803a7863f3c}{operator()}(
+      \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& signal,\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \textcolor{keyword}{const}& dt)\{
+00165                 output  = (signal - \_delay[0]);
+00166                 output -= (\_delay[0] - \_delay[1]);
+00167                 output -= (\_delay[1] - \_delay[2]);
+00168                 output -= (\_delay[2] - \_delay[3]);
+00169                 output -= (\_delay[3] - \_delay[4]);
+00170                 output /= 7200*DSG::Pow<5>(dt);
+00171                 \_delay[4]=\_delay[3];
+00172                 \_delay[3]=\_delay[2];
+00173                 \_delay[2]=\_delay[1];
+00174                 \_delay[1]=\_delay[0];
+00175                 \_delay[0]=signal;
+00176                 \textcolor{keywordflow}{return} output;
+00177             \}
+00178         \textcolor{keyword}{protected}:
+\hypertarget{_d_p_w_8h_source_l00179}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{00179}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{output};
+\hypertarget{_d_p_w_8h_source_l00180}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{00180}             \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \_delay[5];
+00181         \};
+00182     \}
+00183 \}
+00184 \textcolor{preprocessor}{#endif}
 \end{DoxyCode}

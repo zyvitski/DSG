@@ -1,5 +1,5 @@
 \hypertarget{_analog_square_8h_source}{\section{Analog\+Square.\+h}
-\label{_analog_square_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Analog\+Square.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Analog\+Square.\+h}}
+\label{_analog_square_8h_source}\index{Analog\+Square.\+h@{Analog\+Square.\+h}}
 }
 
 \begin{DoxyCode}
@@ -10,42 +10,58 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/17/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_AnalogSquare\_\_}
-00009 \textcolor{preprocessor}{#define \_\_DSG\_\_AnalogSquare\_\_}
-00010 \textcolor{preprocessor}{#include "\hyperlink{_signal_generator_8h}{SignalGenerator.h}"}
-00011 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
-00012 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
-00013     \textcolor{keyword}{inline}
-00014 \textcolor{preprocessor}{#endif}
-00015 \textcolor{comment}{    //! DSG::Analog - Namespace Containing Analog Style Oscillators}
-00016 \textcolor{comment}{}    \textcolor{keyword}{namespace }Analog\{\textcolor{comment}{}
-00017 \textcolor{comment}{        //!\(\backslash\)brief DSG::Analog::AnalogSquare - Analog Syle Square Wave Generator}
-\hypertarget{_analog_square_8h_source_l00018}{}\hyperlink{class_d_s_g_1_1_analog_1_1_analog_square}{00018} \textcolor{comment}{}        \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_analog_1_1_analog_square}{AnalogSquare} : \textcolor{keyword}{public} \hyperlink{class_d_s_g_1_1_signal_generator}{DSG::SignalGenerator} \{
-00019         \textcolor{keyword}{public}:
-00020             \hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_a7425ebd7e39129178eb050a04cd9d5d6}{AnalogSquare}();
-00021             \hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_a7425ebd7e39129178eb050a04cd9d5d6}{AnalogSquare}(\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& frequency,
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_AnalogSquare\_\_}
+00025 \textcolor{preprocessor}{#define \_\_DSG\_\_AnalogSquare\_\_}
+00026 \textcolor{preprocessor}{#include "\hyperlink{_signal_generator_8h}{SignalGenerator.h}"}
+00027 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
+00028 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
+00029     \textcolor{keyword}{inline}
+00030 \textcolor{preprocessor}{#endif}
+00031 \textcolor{comment}{    //! DSG::Analog - Namespace Containing Analog Style Oscillators}
+00032 \textcolor{comment}{}    \textcolor{keyword}{namespace }Analog\{\textcolor{comment}{}
+00033 \textcolor{comment}{        //!\(\backslash\)brief DSG::Analog::AnalogSquare - Analog Syle Square Wave Generator}
+\hypertarget{_analog_square_8h_source_l00034}{}\hyperlink{class_d_s_g_1_1_analog_1_1_analog_square}{00034} \textcolor{comment}{}        \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_analog_1_1_analog_square}{AnalogSquare} : \textcolor{keyword}{public} \hyperlink{class_d_s_g_1_1_signal_generator}{DSG::SignalGenerator} \{
+00035         \textcolor{keyword}{public}:
+00036             \hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_a7425ebd7e39129178eb050a04cd9d5d6}{AnalogSquare}();
+00037             \hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_a7425ebd7e39129178eb050a04cd9d5d6}{AnalogSquare}(\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& frequency,
       \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& offset);
-00022             \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_a17b3928f19cb6bf0c151b5e1159de1db}{~AnalogSquare}();
-00023             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_a784aa17d266704647789b972cf880e9f}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal);
-00024             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_a784aa17d266704647789b972cf880e9f}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal);
-00025         \};
-\hypertarget{_analog_square_8h_source_l00026}{}\hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_a784aa17d266704647789b972cf880e9f}{00026}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_a784aa17d266704647789b972cf880e9f}{DSG::Analog::AnalogSquare::Perform}(
+00038             \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_a17b3928f19cb6bf0c151b5e1159de1db}{~AnalogSquare}();
+00039             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_a784aa17d266704647789b972cf880e9f}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal);
+00040             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_a784aa17d266704647789b972cf880e9f}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal);
+00041         \};
+\hypertarget{_analog_square_8h_source_l00042}{}\hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_a784aa17d266704647789b972cf880e9f}{00042}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_a784aa17d266704647789b972cf880e9f}{DSG::Analog::AnalogSquare::Perform}(
       \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal)\{
-00027             signal=\_phasor < 0.5 ? 1.0:-1.0;
-00028             step();
-00029             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-00030         \}
-\hypertarget{_analog_square_8h_source_l00031}{}\hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_af4d41d5894ae02e920c61e06cf041c60}{00031}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_a784aa17d266704647789b972cf880e9f}{DSG::Analog::AnalogSquare::Perform}(
+00043             signal=\_phasor < 0.5 ? 1.0:-1.0;
+00044             step();
+00045             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00046         \}
+\hypertarget{_analog_square_8h_source_l00047}{}\hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_af4d41d5894ae02e920c61e06cf041c60}{00047}         \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_analog_1_1_analog_square_a784aa17d266704647789b972cf880e9f}{DSG::Analog::AnalogSquare::Perform}(
       \hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal)\{
-00032             signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
-00033             \textcolor{keywordflow}{while} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{Full}()) \{
-00034                 \textcolor{keywordflow}{if} (Perform(\_storage)) \{
-00035                     \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\_storage))\{
-00036                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00037                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00038             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
-00039         \}
-00040     \}
-00041 \}
-00042 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_AnalogSquare\_\_) */}\textcolor{preprocessor}{}
+00048             signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
+00049             \textcolor{keywordflow}{while} (!signal.\hyperlink{class_d_s_g_1_1_ring_buffer_a53ddb04ffcbb5470a8d2b0a3c65b70cb}{Full}()) \{
+00050                 \textcolor{keywordflow}{if} (Perform(\_storage)) \{
+00051                     \textcolor{keywordflow}{if}(signal.\hyperlink{class_d_s_g_1_1_ring_buffer_aa5dd2caa0a270173251faee40a43d692}{Write}(\_storage))\{
+00052                     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00053                 \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00054             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00055         \}
+00056     \}
+00057 \}
+00058 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_AnalogSquare\_\_) */}\textcolor{preprocessor}{}
 \end{DoxyCode}

@@ -1,5 +1,5 @@
 \hypertarget{_window_8h_source}{\section{Window.\+h}
-\label{_window_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Window.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Window.\+h}}
+\label{_window_8h_source}\index{Window.\+h@{Window.\+h}}
 }
 
 \begin{DoxyCode}
@@ -10,38 +10,54 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 10/17/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{preprocessor}{#ifndef DSG\_Window\_h}
-00009 \textcolor{preprocessor}{#define DSG\_Window\_h}
-00010 \textcolor{preprocessor}{#include "\hyperlink{_l_u_t_8h}{LUT.h}"}
-00011 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
-00012 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
-00013     \textcolor{keyword}{inline}
-00014 \textcolor{preprocessor}{#endif}
-00015 \textcolor{comment}{    //!\(\backslash\)brief DSG::Window - Window functions and utilities}
-00016 \textcolor{comment}{}    \textcolor{keyword}{namespace }Window\{\textcolor{comment}{}
-00017 \textcolor{comment}{        //!\(\backslash\)brief DSG::Window::ApplyWindow - Apply a window function to a LUT}
-00018 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal,\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} lutsize>
-\hypertarget{_window_8h_source_l00019}{}\hyperlink{namespace_d_s_g_1_1_window_ab3ab521b2e0d85dc752ccc42e642b203}{00019}         \textcolor{keywordtype}{void} \hyperlink{namespace_d_s_g_1_1_window_ab3ab521b2e0d85dc752ccc42e642b203}{ApplyWindow}(\hyperlink{class_d_s_g_1_1_l_u_t}{DSG::LUT<decimal,lutsize>}& lut,decimal (&
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#ifndef DSG\_Window\_h}
+00025 \textcolor{preprocessor}{#define DSG\_Window\_h}
+00026 \textcolor{preprocessor}{#include "\hyperlink{_l_u_t_8h}{LUT.h}"}
+00027 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{
+00028 \textcolor{preprocessor}{#ifdef DSG\_Short\_Names}
+00029     \textcolor{keyword}{inline}
+00030 \textcolor{preprocessor}{#endif}
+00031 \textcolor{comment}{    //!\(\backslash\)brief DSG::Window - Window functions and utilities}
+00032 \textcolor{comment}{}    \textcolor{keyword}{namespace }Window\{\textcolor{comment}{}
+00033 \textcolor{comment}{        //!\(\backslash\)brief DSG::Window::ApplyWindow - Apply a window function to a LUT}
+00034 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal,\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} lutsize>
+\hypertarget{_window_8h_source_l00035}{}\hyperlink{namespace_d_s_g_1_1_window_ab3ab521b2e0d85dc752ccc42e642b203}{00035}         \textcolor{keywordtype}{void} \hyperlink{namespace_d_s_g_1_1_window_ab3ab521b2e0d85dc752ccc42e642b203}{ApplyWindow}(\hyperlink{class_d_s_g_1_1_l_u_t}{DSG::LUT<decimal,lutsize>}& lut,decimal (&
       windowFunction)(decimal \textcolor{keyword}{const}&),decimal range = 1.0)\{
-00020             decimal step = range/(decimal)lut.\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}();
-00021             decimal phs=0;
-00022             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<lut.\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}(); ++i) \{
-00023                 lut[i]*=windowFunction(phs);
-00024                 phs+=step;
-00025             \}
-00026         \}\textcolor{comment}{}
-00027 \textcolor{comment}{        //!\(\backslash\)brief DSG::Window::ApplyWindow - Apply a window function to a LUT}
-00028 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal,\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} lutsize>
-\hypertarget{_window_8h_source_l00029}{}\hyperlink{namespace_d_s_g_1_1_window_a5e559a3fa00e81c4210043fea59d8dae}{00029}         \textcolor{keywordtype}{void} \hyperlink{namespace_d_s_g_1_1_window_ab3ab521b2e0d85dc752ccc42e642b203}{ApplyWindow}(\hyperlink{class_d_s_g_1_1_l_u_t}{DSG::LUT<decimal,lutsize>}& lut,decimal (&
+00036             decimal step = range/(decimal)lut.\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}();
+00037             decimal phs=0;
+00038             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<lut.\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}(); ++i) \{
+00039                 lut[i]*=windowFunction(phs);
+00040                 phs+=step;
+00041             \}
+00042         \}\textcolor{comment}{}
+00043 \textcolor{comment}{        //!\(\backslash\)brief DSG::Window::ApplyWindow - Apply a window function to a LUT}
+00044 \textcolor{comment}{}        \textcolor{keyword}{template}<\textcolor{keyword}{typename} decimal,\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} lutsize>
+\hypertarget{_window_8h_source_l00045}{}\hyperlink{namespace_d_s_g_1_1_window_a5e559a3fa00e81c4210043fea59d8dae}{00045}         \textcolor{keywordtype}{void} \hyperlink{namespace_d_s_g_1_1_window_ab3ab521b2e0d85dc752ccc42e642b203}{ApplyWindow}(\hyperlink{class_d_s_g_1_1_l_u_t}{DSG::LUT<decimal,lutsize>}& lut,decimal (&
       windowFunction)(decimal),decimal range = 1.0)\{
-00030             decimal step = range/(decimal)lut.\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}();
-00031             decimal phs=0;
-00032             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<lut.\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}(); ++i) \{
-00033                 lut[i]*=windowFunction(phs);
-00034                 phs+=step;
-00035             \}
-00036         \}
-00037     \}
-00038 \}
-00039 \textcolor{preprocessor}{#endif}
+00046             decimal step = range/(decimal)lut.\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}();
+00047             decimal phs=0;
+00048             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<lut.\hyperlink{class_d_s_g_1_1_l_u_t_a2d1a2112f9e960c7b70882a19d670ff9}{Size}(); ++i) \{
+00049                 lut[i]*=windowFunction(phs);
+00050                 phs+=step;
+00051             \}
+00052         \}
+00053     \}
+00054 \}
+00055 \textcolor{preprocessor}{#endif}
 \end{DoxyCode}

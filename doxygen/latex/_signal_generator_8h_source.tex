@@ -1,5 +1,5 @@
 \hypertarget{_signal_generator_8h_source}{\section{Signal\+Generator.\+h}
-\label{_signal_generator_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Signal\+Generator.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+Signal\+Generator.\+h}}
+\label{_signal_generator_8h_source}\index{Signal\+Generator.\+h@{Signal\+Generator.\+h}}
 }
 
 \begin{DoxyCode}
@@ -10,83 +10,99 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/16/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_SignalGenerator\_\_}
-00009 \textcolor{preprocessor}{#define \_\_DSG\_\_SignalGenerator\_\_}
-00010 \textcolor{preprocessor}{#include "\hyperlink{_signal_process_8h}{SignalProcess.h}"}
-00011 \textcolor{preprocessor}{#include "\hyperlink{_audio_settings_8h}{AudioSettings.h}"}
-00012 \textcolor{preprocessor}{#include "\hyperlink{_sine_8h}{Sine.h}"}
-00013 \textcolor{preprocessor}{#include "\hyperlink{_bounds_8h}{Bounds.h}"}
-00014 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{\textcolor{comment}{}
-00015 \textcolor{comment}{    /*!\(\backslash\)brief DSG::SignalGenerator - Extends DSG::Signal Process With Tools For Signal Generation}
-00016 \textcolor{comment}{     */}
-\hypertarget{_signal_generator_8h_source_l00017}{}\hyperlink{class_d_s_g_1_1_signal_generator}{00017}     \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_signal_generator}{SignalGenerator}:\textcolor{keyword}{public} \hyperlink{class_d_s_g_1_1_signal_process}{DSG::SignalProcess}\{
-00018     \textcolor{keyword}{public}:
-00019         \hyperlink{class_d_s_g_1_1_signal_generator_a13ebda67fcdc880ef41aff501cc23fc3}{SignalGenerator}();
-00020         \hyperlink{class_d_s_g_1_1_signal_generator_a13ebda67fcdc880ef41aff501cc23fc3}{SignalGenerator}(\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& frequency,
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_SignalGenerator\_\_}
+00025 \textcolor{preprocessor}{#define \_\_DSG\_\_SignalGenerator\_\_}
+00026 \textcolor{preprocessor}{#include "\hyperlink{_signal_process_8h}{SignalProcess.h}"}
+00027 \textcolor{preprocessor}{#include "\hyperlink{_audio_settings_8h}{AudioSettings.h}"}
+00028 \textcolor{preprocessor}{#include "\hyperlink{_sine_8h}{Sine.h}"}
+00029 \textcolor{preprocessor}{#include "\hyperlink{_bounds_8h}{Bounds.h}"}
+00030 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG}\{\textcolor{comment}{}
+00031 \textcolor{comment}{    /*!\(\backslash\)brief DSG::SignalGenerator - Extends DSG::Signal Process With Tools For Signal Generation}
+00032 \textcolor{comment}{     */}
+\hypertarget{_signal_generator_8h_source_l00033}{}\hyperlink{class_d_s_g_1_1_signal_generator}{00033}     \textcolor{keyword}{class }\hyperlink{class_d_s_g_1_1_signal_generator}{SignalGenerator}:\textcolor{keyword}{public} \hyperlink{class_d_s_g_1_1_signal_process}{DSG::SignalProcess}\{
+00034     \textcolor{keyword}{public}:
+00035         \hyperlink{class_d_s_g_1_1_signal_generator_a13ebda67fcdc880ef41aff501cc23fc3}{SignalGenerator}();
+00036         \hyperlink{class_d_s_g_1_1_signal_generator_a13ebda67fcdc880ef41aff501cc23fc3}{SignalGenerator}(\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& frequency,
       \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& offset);
-00021         \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_signal_generator_a7b52d391974bc36a19fdcf617ad976cb}{~SignalGenerator}();
-00022         \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_signal_generator_a46fe75a81a242e191c5049d33ddf4155}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal);
-00023         \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_signal_generator_a46fe75a81a242e191c5049d33ddf4155}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal);
-00024         \textcolor{comment}{//Adds interface for control rate processing}
-00025         \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{Frequency}();
-00026         \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{Frequency}(
+00037         \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_signal_generator_a7b52d391974bc36a19fdcf617ad976cb}{~SignalGenerator}();
+00038         \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_signal_generator_a46fe75a81a242e191c5049d33ddf4155}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal);
+00039         \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_signal_generator_a46fe75a81a242e191c5049d33ddf4155}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal);
+00040         \textcolor{comment}{//Adds interface for control rate processing}
+00041         \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{Frequency}();
+00042         \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{Frequency}(
       \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& value);
-00027         \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a17cc4287b2838c6b6194fd43d02e7c00}{Phase}();
-00028         \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a17cc4287b2838c6b6194fd43d02e7c00}{Phase}(
+00043         \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a17cc4287b2838c6b6194fd43d02e7c00}{Phase}();
+00044         \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a17cc4287b2838c6b6194fd43d02e7c00}{Phase}(
       \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& value);
-00029     \textcolor{keyword}{protected}:
-00030         \textcolor{comment}{//extends sample rate interface}
-00031         \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \hyperlink{class_d_s_g_1_1_signal_generator_a4c034c5b9ef3dc7548839288355643d5}{step}();
-00032         \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \hyperlink{class_d_s_g_1_1_signal_generator_a7070f6be04dfd70170328e908b759cd3}{sync}();
-00033         \textcolor{comment}{//-----------------------------}
-\hypertarget{_signal_generator_8h_source_l00034}{}\hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{00034}         \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\_frequency};\textcolor{comment}{//frequency in Hz}
-\hypertarget{_signal_generator_8h_source_l00035}{}\hyperlink{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{00035}         \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \hyperlink{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{\_dt};\textcolor{comment}{//delta time (change in phase per sample) unit: phase 0-1}
-\hypertarget{_signal_generator_8h_source_l00036}{}\hyperlink{class_d_s_g_1_1_signal_generator_a12850f2c05838e2234602bd4fde87732}{00036}         \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \hyperlink{class_d_s_g_1_1_signal_generator_a12850f2c05838e2234602bd4fde87732}{\_offset};\textcolor{comment}{//phase shift}
-\hypertarget{_signal_generator_8h_source_l00037}{}\hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{00037}         \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor};\textcolor{comment}{//phase counter}
-\hypertarget{_signal_generator_8h_source_l00038}{}\hyperlink{class_d_s_g_1_1_signal_generator_a28a9b47a1aa0783029f11a19ba0363f2}{00038}         \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_signal_generator_a28a9b47a1aa0783029f11a19ba0363f2}{\_storage};\textcolor{comment}{//storage variable for calculations}
-00039     \};
-\hypertarget{_signal_generator_8h_source_l00040}{}\hyperlink{namespace_d_s_g_ab5c4eea42ea10b69cfc32afb83ff1d0d}{00040}     \textcolor{keyword}{inline} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \hyperlink{namespace_d_s_g_ab5c4eea42ea10b69cfc32afb83ff1d0d}{MaxHarms}(\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& frequency)\{
-00041         \textcolor{keywordtype}{double} \_s = \hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}()*  20000.0/\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}();
-00042         \_s/=frequency;
-00043         \textcolor{keywordflow}{return} \_s;
-00044     \}
-00045 \}
-\hypertarget{_signal_generator_8h_source_l00046}{}\hyperlink{class_d_s_g_1_1_signal_generator_a46fe75a81a242e191c5049d33ddf4155}{00046} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_signal_generator_a46fe75a81a242e191c5049d33ddf4155}{DSG::SignalGenerator::Perform}(
-      \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal)\{
-00047     signal=0;
-00048     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00049 \}
-\hypertarget{_signal_generator_8h_source_l00050}{}\hyperlink{class_d_s_g_1_1_signal_generator_ab050f80e84e6c8b3e354b56930d6a02b}{00050} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_signal_generator_a46fe75a81a242e191c5049d33ddf4155}{DSG::SignalGenerator::Perform}(
-      \hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal)\{
-00051     signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
-00052     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00053 \}
-\hypertarget{_signal_generator_8h_source_l00054}{}\hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{00054} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{DSG::SignalGenerator::Frequency}
-      ()\{
-00055     \textcolor{keywordflow}{return} \_frequency;
-00056 \}
-\hypertarget{_signal_generator_8h_source_l00057}{}\hyperlink{class_d_s_g_1_1_signal_generator_a30a79888f209d692df3d38f53fc58dfe}{00057} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{DSG::SignalGenerator::Frequency}
-      (\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& value)\{
-00058     \_frequency = DSG::EnforceBounds<0, 20000,DSG::DSGSample>(value);
-00059     \_dt = \_frequency/\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}();
-00060     \textcolor{keywordflow}{return} \_frequency;
+00045     \textcolor{keyword}{protected}:
+00046         \textcolor{comment}{//extends sample rate interface}
+00047         \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \hyperlink{class_d_s_g_1_1_signal_generator_a4c034c5b9ef3dc7548839288355643d5}{step}();
+00048         \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \hyperlink{class_d_s_g_1_1_signal_generator_a7070f6be04dfd70170328e908b759cd3}{sync}();
+00049         \textcolor{comment}{//-----------------------------}
+\hypertarget{_signal_generator_8h_source_l00050}{}\hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{00050}         \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\_frequency};\textcolor{comment}{//frequency in Hz}
+\hypertarget{_signal_generator_8h_source_l00051}{}\hyperlink{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{00051}         \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \hyperlink{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{\_dt};\textcolor{comment}{//delta time (change in phase per sample) unit: phase 0-1}
+\hypertarget{_signal_generator_8h_source_l00052}{}\hyperlink{class_d_s_g_1_1_signal_generator_a12850f2c05838e2234602bd4fde87732}{00052}         \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \hyperlink{class_d_s_g_1_1_signal_generator_a12850f2c05838e2234602bd4fde87732}{\_offset};\textcolor{comment}{//phase shift}
+\hypertarget{_signal_generator_8h_source_l00053}{}\hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{00053}         \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor};\textcolor{comment}{//phase counter}
+\hypertarget{_signal_generator_8h_source_l00054}{}\hyperlink{class_d_s_g_1_1_signal_generator_a28a9b47a1aa0783029f11a19ba0363f2}{00054}         \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample} \hyperlink{class_d_s_g_1_1_signal_generator_a28a9b47a1aa0783029f11a19ba0363f2}{\_storage};\textcolor{comment}{//storage variable for calculations}
+00055     \};
+\hypertarget{_signal_generator_8h_source_l00056}{}\hyperlink{namespace_d_s_g_ab5c4eea42ea10b69cfc32afb83ff1d0d}{00056}     \textcolor{keyword}{inline} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \hyperlink{namespace_d_s_g_ab5c4eea42ea10b69cfc32afb83ff1d0d}{MaxHarms}(\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& frequency)\{
+00057         \textcolor{keywordtype}{double} \_s = \hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}()*  20000.0/\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}();
+00058         \_s/=frequency;
+00059         \textcolor{keywordflow}{return} \_s;
+00060     \}
 00061 \}
-\hypertarget{_signal_generator_8h_source_l00062}{}\hyperlink{class_d_s_g_1_1_signal_generator_a17cc4287b2838c6b6194fd43d02e7c00}{00062} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a17cc4287b2838c6b6194fd43d02e7c00}{DSG::SignalGenerator::Phase}()\{
-00063     \textcolor{keywordflow}{return} \_offset;
-00064 \}
-\hypertarget{_signal_generator_8h_source_l00065}{}\hyperlink{class_d_s_g_1_1_signal_generator_a315a3d3fca83eab7030af77dba63a564}{00065} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a17cc4287b2838c6b6194fd43d02e7c00}{DSG::SignalGenerator::Phase}(
-      \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& value)\{
-00066     \_offset-=value;
-00067     \_phasor-=\_offset;
-00068     \_offset=value;
-00069     \textcolor{keywordflow}{return} \_offset;
-00070 \}
-\hypertarget{_signal_generator_8h_source_l00071}{}\hyperlink{class_d_s_g_1_1_signal_generator_a4c034c5b9ef3dc7548839288355643d5}{00071} \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \hyperlink{class_d_s_g_1_1_signal_generator_a4c034c5b9ef3dc7548839288355643d5}{DSG::SignalGenerator::step}()\{
-00072     \_phasor+=\_dt;
-00073     \_phasor>1.0 ? --\_phasor:0;
-00074 \}
-\hypertarget{_signal_generator_8h_source_l00075}{}\hyperlink{class_d_s_g_1_1_signal_generator_a7070f6be04dfd70170328e908b759cd3}{00075} \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \hyperlink{class_d_s_g_1_1_signal_generator_a7070f6be04dfd70170328e908b759cd3}{DSG::SignalGenerator::sync}()\{
-00076     \_phasor=\_offset;
+\hypertarget{_signal_generator_8h_source_l00062}{}\hyperlink{class_d_s_g_1_1_signal_generator_a46fe75a81a242e191c5049d33ddf4155}{00062} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_signal_generator_a46fe75a81a242e191c5049d33ddf4155}{DSG::SignalGenerator::Perform}(
+      \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal)\{
+00063     signal=0;
+00064     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00065 \}
+\hypertarget{_signal_generator_8h_source_l00066}{}\hyperlink{class_d_s_g_1_1_signal_generator_ab050f80e84e6c8b3e354b56930d6a02b}{00066} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_signal_generator_a46fe75a81a242e191c5049d33ddf4155}{DSG::SignalGenerator::Perform}(
+      \hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal)\{
+00067     signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
+00068     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00069 \}
+\hypertarget{_signal_generator_8h_source_l00070}{}\hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{00070} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{DSG::SignalGenerator::Frequency}
+      ()\{
+00071     \textcolor{keywordflow}{return} \_frequency;
+00072 \}
+\hypertarget{_signal_generator_8h_source_l00073}{}\hyperlink{class_d_s_g_1_1_signal_generator_a30a79888f209d692df3d38f53fc58dfe}{00073} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{DSG::SignalGenerator::Frequency}
+      (\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& value)\{
+00074     \_frequency = DSG::EnforceBounds<0, 20000,DSG::DSGSample>(value);
+00075     \_dt = \_frequency/\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}();
+00076     \textcolor{keywordflow}{return} \_frequency;
 00077 \}
-00078 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_SignalGenerator\_\_) */}\textcolor{preprocessor}{}
+\hypertarget{_signal_generator_8h_source_l00078}{}\hyperlink{class_d_s_g_1_1_signal_generator_a17cc4287b2838c6b6194fd43d02e7c00}{00078} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a17cc4287b2838c6b6194fd43d02e7c00}{DSG::SignalGenerator::Phase}()\{
+00079     \textcolor{keywordflow}{return} \_offset;
+00080 \}
+\hypertarget{_signal_generator_8h_source_l00081}{}\hyperlink{class_d_s_g_1_1_signal_generator_a315a3d3fca83eab7030af77dba63a564}{00081} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a17cc4287b2838c6b6194fd43d02e7c00}{DSG::SignalGenerator::Phase}(
+      \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& value)\{
+00082     \_offset-=value;
+00083     \_phasor-=\_offset;
+00084     \_offset=value;
+00085     \textcolor{keywordflow}{return} \_offset;
+00086 \}
+\hypertarget{_signal_generator_8h_source_l00087}{}\hyperlink{class_d_s_g_1_1_signal_generator_a4c034c5b9ef3dc7548839288355643d5}{00087} \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \hyperlink{class_d_s_g_1_1_signal_generator_a4c034c5b9ef3dc7548839288355643d5}{DSG::SignalGenerator::step}()\{
+00088     \_phasor+=\_dt;
+00089     \_phasor>1.0 ? --\_phasor:0;
+00090 \}
+\hypertarget{_signal_generator_8h_source_l00091}{}\hyperlink{class_d_s_g_1_1_signal_generator_a7070f6be04dfd70170328e908b759cd3}{00091} \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \hyperlink{class_d_s_g_1_1_signal_generator_a7070f6be04dfd70170328e908b759cd3}{DSG::SignalGenerator::sync}()\{
+00092     \_phasor=\_offset;
+00093 \}
+00094 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_SignalGenerator\_\_) */}\textcolor{preprocessor}{}
 \end{DoxyCode}

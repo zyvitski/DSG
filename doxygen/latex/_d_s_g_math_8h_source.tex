@@ -1,5 +1,5 @@
 \hypertarget{_d_s_g_math_8h_source}{\section{D\+S\+G\+Math.\+h}
-\label{_d_s_g_math_8h_source}\index{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+D\+S\+G\+Math.\+h@{/\+Users/alexanderzywicki/\+Documents/\+D\+S\+G/src/\+D\+S\+G\+Math.\+h}}
+\label{_d_s_g_math_8h_source}\index{D\+S\+G\+Math.\+h@{D\+S\+G\+Math.\+h}}
 }
 
 \begin{DoxyCode}
@@ -10,45 +10,61 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/23/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{preprocessor}{#ifndef DSG\_Math\_h}
-00009 \textcolor{preprocessor}{#define DSG\_Math\_h}
-00010 \textcolor{preprocessor}{#include <math.h>}
-00011 \textcolor{preprocessor}{#include <type\_traits>}
-00012 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG} \{\textcolor{comment}{}
-00013 \textcolor{comment}{    //!\(\backslash\)brief DSG::Abs - Calculate absolute value}
-00014 \textcolor{comment}{}    \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>
-\hypertarget{_d_s_g_math_8h_source_l00015}{}\hyperlink{namespace_d_s_g_a0af03bade7e25e8da80e3022af0e45a7}{00015}     \textcolor{keyword}{inline} T \hyperlink{namespace_d_s_g_a0af03bade7e25e8da80e3022af0e45a7}{Abs}(T \textcolor{keyword}{const}& value)\{
-00016         \textcolor{keywordflow}{return} value < 0.0 ? -1.0 * value : value;
-00017     \}\textcolor{comment}{}
-00018 \textcolor{comment}{    //!\(\backslash\)brief DSG::Factorial - Compute integer factorial}
-00019 \textcolor{comment}{}    \textcolor{keyword}{template}<\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} N>
-\hypertarget{_d_s_g_math_8h_source_l00020}{}\hyperlink{struct_d_s_g_1_1_factorial}{00020}     \textcolor{keyword}{struct }\hyperlink{struct_d_s_g_1_1_factorial}{Factorial}\{
-\hypertarget{_d_s_g_math_8h_source_l00021}{}\hyperlink{struct_d_s_g_1_1_factorial_a2443a477420ba8fc5494b186a58dcaccaebc078d57d6fc1fbd5953d284c9cde04}{00021}         \textcolor{keyword}{enum} \{\hyperlink{struct_d_s_g_1_1_factorial_a2443a477420ba8fc5494b186a58dcaccaebc078d57d6fc1fbd5953d284c9cde04}{value} = N * \hyperlink{struct_d_s_g_1_1_factorial}{Factorial}<N-1>\hyperlink{struct_d_s_g_1_1_factorial_a2443a477420ba8fc5494b186a58dcaccaebc078d57d6fc1fbd5953d284c9cde04}{::value}\};
-00022     \};\textcolor{comment}{}
-00023 \textcolor{comment}{    //!\(\backslash\)brief DSG::Factorial - Compute integer factorial}
-00024 \textcolor{comment}{}    \textcolor{keyword}{template}<>
-\hypertarget{_d_s_g_math_8h_source_l00025}{}\hyperlink{struct_d_s_g_1_1_factorial_3_010_01_4}{00025}     \textcolor{keyword}{struct }\hyperlink{struct_d_s_g_1_1_factorial}{Factorial}<0>\{
-\hypertarget{_d_s_g_math_8h_source_l00026}{}\hyperlink{struct_d_s_g_1_1_factorial_3_010_01_4_a6bfe1b9c1bfc0bdeaceb03842acb1927abba93a0ae84b21f3c62dd8baa14039eb}{00026}         \textcolor{keyword}{enum}\{ \hyperlink{struct_d_s_g_1_1_factorial_a2443a477420ba8fc5494b186a58dcaccaebc078d57d6fc1fbd5953d284c9cde04}{value} = 1 \};
-00027     \};
-00028     \textcolor{keyword}{namespace}\{
-00029         \textcolor{keyword}{template}<\textcolor{keyword}{class} T, \textcolor{keywordtype}{unsigned} N>
-00030         \textcolor{keyword}{struct }power\{
-00031             \textcolor{keyword}{static} constexpr T value(\textcolor{keyword}{const} T x)\{
-00032                 \textcolor{keywordflow}{return} power<T, N-1>::value(x) * x;
-00033             \}
-00034         \};
-00035         \textcolor{keyword}{template}<\textcolor{keyword}{class} T>
-00036         \textcolor{keyword}{struct }power<T, 0>\{
-00037             \textcolor{keyword}{static} constexpr T value(\textcolor{keyword}{const} T x)\{
-00038                 \textcolor{keywordflow}{return} 1;
-00039             \}
-00040         \};
-00041     \}\textcolor{comment}{}
-00042 \textcolor{comment}{    //!\(\backslash\)brief DSG::Pow - Any type to an integer power, i.e. N ^ I }
-00043 \textcolor{comment}{}    \textcolor{keyword}{template}<\textcolor{keywordtype}{unsigned} exponent, \textcolor{keyword}{class} T>
-\hypertarget{_d_s_g_math_8h_source_l00044}{}\hyperlink{namespace_d_s_g_a34372a42acb2d6d62d18effc379857bc}{00044}     T constexpr \hyperlink{namespace_d_s_g_a34372a42acb2d6d62d18effc379857bc}{Pow}(T \textcolor{keyword}{const} base)\{
-00045         \textcolor{keywordflow}{return} power<T, exponent>::value(base);
-00046     \}
-00047 \}
-00048 \textcolor{preprocessor}{#endif}
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#ifndef DSG\_Math\_h}
+00025 \textcolor{preprocessor}{#define DSG\_Math\_h}
+00026 \textcolor{preprocessor}{#include <math.h>}
+00027 \textcolor{preprocessor}{#include <type\_traits>}
+00028 \textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG} \{\textcolor{comment}{}
+00029 \textcolor{comment}{    //!\(\backslash\)brief DSG::Abs - Calculate absolute value}
+00030 \textcolor{comment}{}    \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>
+\hypertarget{_d_s_g_math_8h_source_l00031}{}\hyperlink{namespace_d_s_g_a0af03bade7e25e8da80e3022af0e45a7}{00031}     \textcolor{keyword}{inline} T \hyperlink{namespace_d_s_g_a0af03bade7e25e8da80e3022af0e45a7}{Abs}(T \textcolor{keyword}{const}& value)\{
+00032         \textcolor{keywordflow}{return} value < 0.0 ? -1.0 * value : value;
+00033     \}\textcolor{comment}{}
+00034 \textcolor{comment}{    //!\(\backslash\)brief DSG::Factorial - Compute integer factorial}
+00035 \textcolor{comment}{}    \textcolor{keyword}{template}<\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} N>
+\hypertarget{_d_s_g_math_8h_source_l00036}{}\hyperlink{struct_d_s_g_1_1_factorial}{00036}     \textcolor{keyword}{struct }\hyperlink{struct_d_s_g_1_1_factorial}{Factorial}\{
+\hypertarget{_d_s_g_math_8h_source_l00037}{}\hyperlink{struct_d_s_g_1_1_factorial_a2443a477420ba8fc5494b186a58dcaccaebc078d57d6fc1fbd5953d284c9cde04}{00037}         \textcolor{keyword}{enum} \{\hyperlink{struct_d_s_g_1_1_factorial_a2443a477420ba8fc5494b186a58dcaccaebc078d57d6fc1fbd5953d284c9cde04}{value} = N * \hyperlink{struct_d_s_g_1_1_factorial}{Factorial}<N-1>\hyperlink{struct_d_s_g_1_1_factorial_a2443a477420ba8fc5494b186a58dcaccaebc078d57d6fc1fbd5953d284c9cde04}{::value}\};
+00038     \};\textcolor{comment}{}
+00039 \textcolor{comment}{    //!\(\backslash\)brief DSG::Factorial - Compute integer factorial}
+00040 \textcolor{comment}{}    \textcolor{keyword}{template}<>
+\hypertarget{_d_s_g_math_8h_source_l00041}{}\hyperlink{struct_d_s_g_1_1_factorial_3_010_01_4}{00041}     \textcolor{keyword}{struct }\hyperlink{struct_d_s_g_1_1_factorial}{Factorial}<0>\{
+\hypertarget{_d_s_g_math_8h_source_l00042}{}\hyperlink{struct_d_s_g_1_1_factorial_3_010_01_4_a6bfe1b9c1bfc0bdeaceb03842acb1927abba93a0ae84b21f3c62dd8baa14039eb}{00042}         \textcolor{keyword}{enum}\{ \hyperlink{struct_d_s_g_1_1_factorial_a2443a477420ba8fc5494b186a58dcaccaebc078d57d6fc1fbd5953d284c9cde04}{value} = 1 \};
+00043     \};
+00044     \textcolor{keyword}{namespace}\{
+00045         \textcolor{keyword}{template}<\textcolor{keyword}{class} T, \textcolor{keywordtype}{unsigned} N>
+00046         \textcolor{keyword}{struct }power\{
+00047             \textcolor{keyword}{static} constexpr T value(\textcolor{keyword}{const} T x)\{
+00048                 \textcolor{keywordflow}{return} power<T, N-1>::value(x) * x;
+00049             \}
+00050         \};
+00051         \textcolor{keyword}{template}<\textcolor{keyword}{class} T>
+00052         \textcolor{keyword}{struct }power<T, 0>\{
+00053             \textcolor{keyword}{static} constexpr T value(\textcolor{keyword}{const} T x)\{
+00054                 \textcolor{keywordflow}{return} 1;
+00055             \}
+00056         \};
+00057     \}\textcolor{comment}{}
+00058 \textcolor{comment}{    //!\(\backslash\)brief DSG::Pow - Any type to an integer power, i.e. N ^ I }
+00059 \textcolor{comment}{}    \textcolor{keyword}{template}<\textcolor{keywordtype}{unsigned} exponent, \textcolor{keyword}{class} T>
+\hypertarget{_d_s_g_math_8h_source_l00060}{}\hyperlink{namespace_d_s_g_a34372a42acb2d6d62d18effc379857bc}{00060}     T constexpr \hyperlink{namespace_d_s_g_a34372a42acb2d6d62d18effc379857bc}{Pow}(T \textcolor{keyword}{const} base)\{
+00061         \textcolor{keywordflow}{return} power<T, exponent>::value(base);
+00062     \}
+00063 \}
+00064 \textcolor{preprocessor}{#endif}
 \end{DoxyCode}

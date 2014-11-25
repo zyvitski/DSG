@@ -28,7 +28,9 @@
 namespace DSG{
     template<typename decimal=DSG::DSGSample>
     decimal DSF(decimal const& beta,decimal const& theta,decimal const& N,decimal const& a){
+#ifdef __APPLE__
 #warning Untested DSG::DSF()
+#endif
         decimal denominator = 1 + DSG::Pow<2>(a) - (2.0*a*cos(beta));
         decimal numerator = sin(theta) - a * sin(theta-beta) - pow(a, N+1) * (sin(theta + (N+1)*beta) - a*sin(theta + (N*beta)));
         return numerator/denominator;
