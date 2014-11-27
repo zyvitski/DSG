@@ -27,6 +27,7 @@
 #include "Bounds.h"
 #include "AudioSettings.h"
 namespace DSG{
+    //!\brief DSG::Phasor - Linear Phase Generator
     class Phasor{
     public:
         Phasor();
@@ -40,7 +41,7 @@ namespace DSG{
         //extends sample rate interface
         inline void step();
         inline void sync();
-        //-----------------------------
+        //-----------------------------//
         DSG::DSGFrequency _frequency;//frequency in Hz
         DSG::DSGPhase _dt;//delta time (change in phase per sample) unit: phase 0-1
         DSG::DSGPhase _offset;//phase shift
@@ -70,6 +71,5 @@ namespace DSG{
     inline void DSG::Phasor::sync(){
         _phasor=_offset;
     }
-
 }
 #endif /* defined(__DSG__Phasor__) */

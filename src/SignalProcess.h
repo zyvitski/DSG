@@ -25,6 +25,7 @@
 #define __DSG__SignalProcess__
 #include "DSGTypes.h"
 #include "RingBuffer.h"
+#include "AudioSettings.h"
 namespace DSG {
     /*!\brief DSG::SignalProcess - Defines Base Interface For Audio Processing
      */
@@ -35,6 +36,10 @@ namespace DSG {
         //Defines Interface for sample rate processing
         virtual inline bool Perform(DSG::DSGSample& signal)=0;
         virtual inline bool Perform(DSG::RingBuffer& signal)=0;
+        virtual inline bool SampleRateChanged(DSG::DSGFrequency const& sampleRate)=0;
     };
+    inline bool DSG::SignalProcess::SampleRateChanged(DSG::DSGFrequency const& sampleRate){
+        return true;
+    }
 }
 #endif /* defined(__DSG__SignalProcess__) */

@@ -22,5 +22,8 @@
  along with DSG.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "SignalProcess.h"
-DSG::SignalProcess::SignalProcess(){}
+DSG::SignalProcess::SignalProcess(){
+    VerifySampleRateSet();//ensure that there is a valid sample rate set
+    AddSampleRateListener(this);//listen for changes in the sample rate
+}
 DSG::SignalProcess::~SignalProcess(){}

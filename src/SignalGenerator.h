@@ -24,9 +24,7 @@
 #ifndef __DSG__SignalGenerator__
 #define __DSG__SignalGenerator__
 #include "SignalProcess.h"
-#include "AudioSettings.h"
 #include "Sine.h"
-#include "Bounds.h"
 #include "Phasor.h"
 namespace DSG{
     /*!\brief DSG::SignalGenerator - Extends DSG::Signal Process With Tools For Signal Generation
@@ -38,6 +36,7 @@ namespace DSG{
         virtual ~SignalGenerator();
         virtual inline bool Perform(DSG::DSGSample& signal);
         virtual inline bool Perform(DSG::RingBuffer& signal);
+        virtual inline bool SampleRateChanged(DSG::DSGFrequency const& sampleRate);
     protected:
         DSG::DSGSample _storage;//storage variable for calculations
     };
@@ -55,4 +54,9 @@ inline bool DSG::SignalGenerator::Perform(DSG::RingBuffer& signal){
     signal.Flush();
     return false;
 }
+inline bool DSG::SignalGenerator::SampleRateChanged(DSG::DSGFrequency const& sampleRate){
+    Frequency(_frequency);
+    return true;
+}
+
 #endif /* defined(__DSG__SignalGenerator__) */

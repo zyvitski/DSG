@@ -12,10 +12,7 @@
 #endif
 int main(int argc, const char * argv[])
 {
-    DSG::SampleRate(44100);
-    DSG::DPWSaw<2> _blit(40,0);
-    DriverInit(&_blit);
-    DSG::Sleep(4000);
-    DriverExit();
+    DSG::AnalogSaw _gen(40,0);
+    std::cout<<DSG::SampleRate();
 
 }
