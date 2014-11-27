@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="DSG::DPW::DPW_Differentiator\< 5 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_015_01_4.html",tooltip="DSG::DPW::DPW_Differentiator - Class Performing Differentiation for the 5th order DPW Algorithm..."];
-}

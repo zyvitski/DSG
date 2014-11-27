@@ -14,16 +14,16 @@
 00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
 00010 \textcolor{comment}{}
 00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
-00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00012 \textcolor{comment}{ it under the terms of the GNU Lesser General Public License as published by}
 00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
 00014 \textcolor{comment}{ (at your option) any later version.}
 00015 \textcolor{comment}{}
 00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
 00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
 00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
-00019 \textcolor{comment}{ GNU General Public License for more details.}
+00019 \textcolor{comment}{ GNU Lesser General Public License for more details.}
 00020 \textcolor{comment}{}
-00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00021 \textcolor{comment}{ You should have received a copy of the GNU Lesser General Public License}
 00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
 00023 \textcolor{comment}{ */}
 00024 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_FourierTriangle\_\_}
@@ -44,7 +44,7 @@
 00038             \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a780bfb898d144200ff2bfb48849b4d24}{~FourierTriangle}();
 00039             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_ab5b947c1fc1f34a461c863b18e3e877d}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal);
 00040             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_ab5b947c1fc1f34a461c863b18e3e877d}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal);
-00041             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{Frequency}(
+00041             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_phasor_a6bdec1d2722e2fa5c7173ac5f7adf682}{Frequency}(
       \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a11216186ce96fc78c7720cad3e01d025}{value});
 00042         \textcolor{keyword}{protected}:
 \hypertarget{_fourier_triangle_8h_source_l00043}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a6fe21fae0d58d6221602e4bd74c30a80}{00043}             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a6fe21fae0d58d6221602e4bd74c30a80}{\_h};
@@ -78,7 +78,7 @@
 00069             \}\textcolor{keywordflow}{return} \textcolor{keyword}{true};
 00070         \}
 \hypertarget{_fourier_triangle_8h_source_l00071}{}\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a278a51ed8af32ea371adc903b9b25039}{00071}         \textcolor{keyword}{inline} \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& 
-      \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{DSG::Fourier::FourierTriangle::Frequency}(
+      \hyperlink{class_d_s_g_1_1_phasor_a6bdec1d2722e2fa5c7173ac5f7adf682}{DSG::Fourier::FourierTriangle::Frequency}(
       \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& value)\{
 00072             \_frequency = value;
 00073             \_dt = \_frequency/\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}();

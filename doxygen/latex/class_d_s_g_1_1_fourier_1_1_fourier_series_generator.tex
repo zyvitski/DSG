@@ -132,12 +132,12 @@ Definition at line \hyperlink{_fourier_series_8h_source_l00062}{62} of file \hyp
 
 \begin{DoxyCode}
 00062                                                                                  \{
-00063             \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator_a1785e78e21decfc65f650a5e3a435ed8}{value} = \hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor};
+00063             \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator_a1785e78e21decfc65f650a5e3a435ed8}{value} = \hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\_phasor};
 00064             signal=0;
 00065             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} i = \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator_ac66c0907c6daa57f0e33f6b82cc7131d}{\_series}.begin(); i!=\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator_ac66c0907c6daa57f0e33f6b82cc7131d}{\_series}.end(); ++i) \{
-00066                 signal += \hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{DSG::Sin}(\hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor} * i->Ratio())*i->Amplitude();
+00066                 signal += \hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{DSG::Sin}(\hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\_phasor} * i->Ratio())*i->Amplitude();
 00067             \}
-00068             \hyperlink{class_d_s_g_1_1_signal_generator_a4c034c5b9ef3dc7548839288355643d5}{step}();
+00068             \hyperlink{class_d_s_g_1_1_phasor_a6a088b29e506fb5e99d73f4f0160c583}{step}();
 00069             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
 00070         \}
 \end{DoxyCode}

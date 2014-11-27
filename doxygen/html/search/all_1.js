@@ -3,6 +3,7 @@ var searchData=
   ['a',['a',['../class_d_s_g_1_1_filter_1_1_leaky_integrator.html#a9a321b7650923119fda60595a7659aef',1,'DSG::Filter::LeakyIntegrator']]],
   ['a_5f',['a_',['../class_d_s_g_1_1_b_l_i_t_1_1_blit.html#a66e2a97840ad0772daaaa9aea63b77b4',1,'DSG::BLIT::Blit']]],
   ['abs',['Abs',['../namespace_d_s_g.html#a0af03bade7e25e8da80e3022af0e45a7',1,'DSG']]],
+  ['addsampleratelistener',['AddSampleRateListener',['../class_d_s_g_1_1_audio_settings.html#ad60a89fec20cf5fd19d90fec1768dbae',1,'DSG::AudioSettings::AddSampleRateListener()'],['../namespace_d_s_g.html#a66af6119635fe556dc5f840bf78dec56',1,'DSG::AddSampleRateListener()']]],
   ['amplitude',['Amplitude',['../class_d_s_g_1_1_fourier_1_1_harmonic.html#a99175479a12ca8b6103eb58179777775',1,'DSG::Fourier::Harmonic::Amplitude() const '],['../class_d_s_g_1_1_fourier_1_1_harmonic.html#ae94f1868dfe70a1ea90cb86a5cc31a15',1,'DSG::Fourier::Harmonic::Amplitude(DSG::DSGSample const &amp;value)']]],
   ['analogsaw',['AnalogSaw',['../class_d_s_g_1_1_analog_1_1_analog_saw.html#abcb0b997be32413da0d14b93aeeb9c17',1,'DSG::Analog::AnalogSaw::AnalogSaw()'],['../class_d_s_g_1_1_analog_1_1_analog_saw.html#ad110da0b337948fb70ecdfad7dbb5ddf',1,'DSG::Analog::AnalogSaw::AnalogSaw(DSG::DSGFrequency const &amp;frequency, DSG::DSGPhase const &amp;offset)']]],
   ['analogsaw',['AnalogSaw',['../class_d_s_g_1_1_analog_1_1_analog_saw.html',1,'DSG::Analog']]],

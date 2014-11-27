@@ -1,9 +1,0 @@
-digraph "DSG::RingBuffer::operator="
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="DSG::RingBuffer::operator=",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
-  Node2 [label="DSG::Buffer::operator=",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_buffer.html#a977d572a7d402ff6bf991d7c5c0cc6a7"];
-}

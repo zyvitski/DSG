@@ -121,7 +121,7 @@ Definition at line \hyperlink{_d_p_w_saw_8h_source_l00041}{41} of file \hyperlin
 \begin{DoxyCode}
 00041                                                              \{
 00042                 \textcolor{comment}{//trivial saw ramping from -1 to 1}
-00043                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register} = \hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor};
+00043                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register} = \hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\_phasor};
 00044                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register}-=0.5;
 00045                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register}*=2.0;
 00046                 \textcolor{comment}{/*-------------------------*/}
@@ -129,11 +129,11 @@ Definition at line \hyperlink{_d_p_w_saw_8h_source_l00041}{41} of file \hyperlin
 00048                 \textcolor{comment}{//polynomial shaping}
 00049                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register}=DSG::DPW::DPW\_Polynomial<order>(\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register});
 00050                 \textcolor{comment}{//differentiating}
-00051                 signal = \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_af1ded15ce266aa7bd1594de38bba6890}{\_diff}(\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register},\hyperlink{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{\_dt});
+00051                 signal = \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_af1ded15ce266aa7bd1594de38bba6890}{\_diff}(\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register},\hyperlink{class_d_s_g_1_1_phasor_afaaa3559b6cd84535c10ff896148c6bd}{\_dt});
 00052                 \textcolor{comment}{/*-------------------------*/}
 00053                 \textcolor{comment}{//signal = DSG::EnforceBounds<-1, 1>(signal);}
 00054                 \textcolor{comment}{//advance phase}
-00055                 \hyperlink{class_d_s_g_1_1_signal_generator_a4c034c5b9ef3dc7548839288355643d5}{step}();
+00055                 \hyperlink{class_d_s_g_1_1_phasor_a6a088b29e506fb5e99d73f4f0160c583}{step}();
 00056                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
 00057             \}
 \end{DoxyCode}

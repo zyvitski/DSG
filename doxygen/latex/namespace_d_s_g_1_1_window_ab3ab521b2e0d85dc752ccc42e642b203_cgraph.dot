@@ -1,9 +1,0 @@
-digraph "DSG::Window::ApplyWindow"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="DSG::Window::ApplyWindow",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
-  Node2 [label="DSG::LUT::Size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_d_s_g_1_1_l_u_t.html#a2d1a2112f9e960c7b70882a19d670ff9"];
-}

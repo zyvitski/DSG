@@ -20,6 +20,7 @@ var searchData=
   ['_7eleakyintegrator',['~LeakyIntegrator',['../class_d_s_g_1_1_filter_1_1_leaky_integrator.html#a3a79cdbcf90a7924c05ec87b89fca83d',1,'DSG::Filter::LeakyIntegrator']]],
   ['_7elut',['~LUT',['../class_d_s_g_1_1_l_u_t.html#ad939097dc1474825c7aa5ef2c427de4d',1,'DSG::LUT']]],
   ['_7enoisegenerator',['~NoiseGenerator',['../class_d_s_g_1_1_noise_generator.html#a964f0af791b5e09e63470bf42ddbce79',1,'DSG::NoiseGenerator']]],
+  ['_7ephasor',['~Phasor',['../class_d_s_g_1_1_phasor.html#a37b72afd6bd58cebf10cc937e73ef094',1,'DSG::Phasor']]],
   ['_7eringbuffer',['~RingBuffer',['../class_d_s_g_1_1_ring_buffer.html#a771d30b04b6f0313c203530685fbeb3a',1,'DSG::RingBuffer']]],
   ['_7esignalgenerator',['~SignalGenerator',['../class_d_s_g_1_1_signal_generator.html#a7b52d391974bc36a19fdcf617ad976cb',1,'DSG::SignalGenerator']]],
   ['_7esignalprocess',['~SignalProcess',['../class_d_s_g_1_1_signal_process.html#ad9b6a758241a092ddc38e13effc9553f',1,'DSG::SignalProcess']]]

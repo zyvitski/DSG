@@ -18,6 +18,10 @@ static \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::
 static \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} const \& \hyperlink{class_d_s_g_1_1_audio_settings_a9c5640e47b6eaa4331a0e5053abb1314}{Sample\+Rate} (\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} const \&value)
 \item 
 static \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} const \& \hyperlink{class_d_s_g_1_1_audio_settings_a8cb4afd7b58e927300ff46fbeb71bec7}{Nyquist} ()
+\item 
+static bool \hyperlink{class_d_s_g_1_1_audio_settings_ad60a89fec20cf5fd19d90fec1768dbae}{Add\+Sample\+Rate\+Listener} (\hyperlink{class_d_s_g_1_1_signal_process}{Signal\+Process} $\ast$listener)
+\item 
+static bool const \& \hyperlink{class_d_s_g_1_1_audio_settings_a5ff952756264670e4f3ca3661b4f9144}{Is\+Sample\+Rate\+Set} ()
 \end{DoxyCompactItemize}
 \subsection*{Static Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -25,17 +29,56 @@ static \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::
 static \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} \hyperlink{class_d_s_g_1_1_audio_settings_a56869b51933f102b197f54001c8a1d27}{\+\_\+sample\+Rate}
 \item 
 static \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} \hyperlink{class_d_s_g_1_1_audio_settings_af3c7cbd15390d9bcbe39983c069390b5}{\+\_\+nyquist}
+\item 
+static std\+::vector\\*
+$<$ \hyperlink{class_d_s_g_1_1_signal_process}{D\+S\+G\+::\+Signal\+Process} $\ast$ $>$ \hyperlink{class_d_s_g_1_1_audio_settings_ab4e90df02910d9b84b0054457af5d5fa}{\+\_\+listeners}
+\item 
+static bool \hyperlink{class_d_s_g_1_1_audio_settings_abd6bfacf2a290d84b3e20487dbf71fa3}{\+\_\+set} =false
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 \hyperlink{class_d_s_g_1_1_audio_settings}{D\+S\+G\+::\+Audio\+Settings} -\/ Global Storage For Audio Settings Such As Sample Rate. 
 
-Definition at line \hyperlink{_audio_settings_8h_source_l00030}{30} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
+Definition at line \hyperlink{_audio_settings_8h_source_l00032}{32} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
 
 
 
 \subsection{Member Function Documentation}
+\hypertarget{class_d_s_g_1_1_audio_settings_ad60a89fec20cf5fd19d90fec1768dbae}{\index{D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}!Add\+Sample\+Rate\+Listener@{Add\+Sample\+Rate\+Listener}}
+\index{Add\+Sample\+Rate\+Listener@{Add\+Sample\+Rate\+Listener}!D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}}
+\subsubsection[{Add\+Sample\+Rate\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Audio\+Settings\+::\+Add\+Sample\+Rate\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+Signal\+Process} $\ast$}]{listener}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_d_s_g_1_1_audio_settings_ad60a89fec20cf5fd19d90fec1768dbae}
+
+
+Definition at line \hyperlink{_audio_settings_8cpp_source_l00047}{47} of file \hyperlink{_audio_settings_8cpp_source}{Audio\+Settings.\+cpp}.
+
+
+\begin{DoxyCode}
+00047                                                                       \{
+00048     \hyperlink{class_d_s_g_1_1_audio_settings_ab4e90df02910d9b84b0054457af5d5fa}{\_listeners}.push\_back(listener);
+00049     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00050 \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_audio_settings_a5ff952756264670e4f3ca3661b4f9144}{\index{D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}!Is\+Sample\+Rate\+Set@{Is\+Sample\+Rate\+Set}}
+\index{Is\+Sample\+Rate\+Set@{Is\+Sample\+Rate\+Set}!D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}}
+\subsubsection[{Is\+Sample\+Rate\+Set}]{\setlength{\rightskip}{0pt plus 5cm}bool const \& D\+S\+G\+::\+Audio\+Settings\+::\+Is\+Sample\+Rate\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_d_s_g_1_1_audio_settings_a5ff952756264670e4f3ca3661b4f9144}
+
+
+Definition at line \hyperlink{_audio_settings_8cpp_source_l00051}{51} of file \hyperlink{_audio_settings_8cpp_source}{Audio\+Settings.\+cpp}.
+
+
+\begin{DoxyCode}
+00051                                              \{
+00052     \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_abd6bfacf2a290d84b3e20487dbf71fa3}{\_set};
+00053 \}\end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_audio_settings_a8cb4afd7b58e927300ff46fbeb71bec7}{\index{D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}!Nyquist@{Nyquist}}
 \index{Nyquist@{Nyquist}!D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}}
 \subsubsection[{Nyquist}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} const \& D\+S\+G\+::\+Audio\+Settings\+::\+Nyquist (
@@ -45,13 +88,14 @@ Definition at line \hyperlink{_audio_settings_8h_source_l00030}{30} of file \hyp
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_d_s_g_1_1_audio_settings_a8cb4afd7b58e927300ff46fbeb71bec7}
 
 
-Definition at line \hyperlink{_audio_settings_8cpp_source_l00035}{35} of file \hyperlink{_audio_settings_8cpp_source}{Audio\+Settings.\+cpp}.
+Definition at line \hyperlink{_audio_settings_8cpp_source_l00044}{44} of file \hyperlink{_audio_settings_8cpp_source}{Audio\+Settings.\+cpp}.
 
 
 \begin{DoxyCode}
-00035                                                 \{
-00036     \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_af3c7cbd15390d9bcbe39983c069390b5}{\_nyquist};
-00037 \}\end{DoxyCode}
+00044                                                 \{
+00045     \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_af3c7cbd15390d9bcbe39983c069390b5}{\_nyquist};
+00046 \}
+\end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_audio_settings_a4f459c389b10c11828e2f2f00c012c49}{\index{D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}!Sample\+Rate@{Sample\+Rate}}
 \index{Sample\+Rate@{Sample\+Rate}!D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}}
 \subsubsection[{Sample\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} const \& D\+S\+G\+::\+Audio\+Settings\+::\+Sample\+Rate (
@@ -61,13 +105,13 @@ Definition at line \hyperlink{_audio_settings_8cpp_source_l00035}{35} of file \h
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_d_s_g_1_1_audio_settings_a4f459c389b10c11828e2f2f00c012c49}
 
 
-Definition at line \hyperlink{_audio_settings_8cpp_source_l00027}{27} of file \hyperlink{_audio_settings_8cpp_source}{Audio\+Settings.\+cpp}.
+Definition at line \hyperlink{_audio_settings_8cpp_source_l00030}{30} of file \hyperlink{_audio_settings_8cpp_source}{Audio\+Settings.\+cpp}.
 
 
 \begin{DoxyCode}
-00027                                                    \{
-00028     \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_a56869b51933f102b197f54001c8a1d27}{\_sampleRate};
-00029 \}
+00030                                                    \{
+00031     \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_a56869b51933f102b197f54001c8a1d27}{\_sampleRate};
+00032 \}
 \end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_audio_settings_a9c5640e47b6eaa4331a0e5053abb1314}{\index{D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}!Sample\+Rate@{Sample\+Rate}}
 \index{Sample\+Rate@{Sample\+Rate}!D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}}
@@ -78,32 +122,52 @@ Definition at line \hyperlink{_audio_settings_8cpp_source_l00027}{27} of file \h
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_d_s_g_1_1_audio_settings_a9c5640e47b6eaa4331a0e5053abb1314}
 
 
-Definition at line \hyperlink{_audio_settings_8cpp_source_l00030}{30} of file \hyperlink{_audio_settings_8cpp_source}{Audio\+Settings.\+cpp}.
+Definition at line \hyperlink{_audio_settings_8cpp_source_l00033}{33} of file \hyperlink{_audio_settings_8cpp_source}{Audio\+Settings.\+cpp}.
 
 
 \begin{DoxyCode}
-00030                                                                                \{
-00031     \hyperlink{class_d_s_g_1_1_audio_settings_a56869b51933f102b197f54001c8a1d27}{\_sampleRate} = value;
-00032     \hyperlink{class_d_s_g_1_1_audio_settings_af3c7cbd15390d9bcbe39983c069390b5}{\_nyquist} = \hyperlink{class_d_s_g_1_1_audio_settings_a56869b51933f102b197f54001c8a1d27}{\_sampleRate}*0.5;
-00033     \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_a56869b51933f102b197f54001c8a1d27}{\_sampleRate};
-00034 \}
+00033                                                                                \{
+00034     \textcolor{keywordflow}{if} (!\hyperlink{class_d_s_g_1_1_audio_settings_abd6bfacf2a290d84b3e20487dbf71fa3}{\_set}) \{
+00035         \hyperlink{class_d_s_g_1_1_audio_settings_abd6bfacf2a290d84b3e20487dbf71fa3}{\_set}=\textcolor{keyword}{true};
+00036     \}
+00037     \hyperlink{class_d_s_g_1_1_audio_settings_a56869b51933f102b197f54001c8a1d27}{\_sampleRate} = value;
+00038     \hyperlink{class_d_s_g_1_1_audio_settings_af3c7cbd15390d9bcbe39983c069390b5}{\_nyquist} = \hyperlink{class_d_s_g_1_1_audio_settings_a56869b51933f102b197f54001c8a1d27}{\_sampleRate}*0.5;
+00039     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} i:\hyperlink{class_d_s_g_1_1_audio_settings_ab4e90df02910d9b84b0054457af5d5fa}{\_listeners}) \{
+00040         i->SampleRateChanged(\hyperlink{class_d_s_g_1_1_audio_settings_a56869b51933f102b197f54001c8a1d27}{\_sampleRate});
+00041     \}
+00042     \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_a56869b51933f102b197f54001c8a1d27}{\_sampleRate};
+00043 \}
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
+\hypertarget{class_d_s_g_1_1_audio_settings_ab4e90df02910d9b84b0054457af5d5fa}{\index{D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}!\+\_\+listeners@{\+\_\+listeners}}
+\index{\+\_\+listeners@{\+\_\+listeners}!D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}}
+\subsubsection[{\+\_\+listeners}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf D\+S\+G\+::\+Signal\+Process} $\ast$ $>$ D\+S\+G\+::\+Audio\+Settings\+::\+\_\+listeners\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_d_s_g_1_1_audio_settings_ab4e90df02910d9b84b0054457af5d5fa}
+
+
+Definition at line \hyperlink{_audio_settings_8h_source_l00042}{42} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
+
 \hypertarget{class_d_s_g_1_1_audio_settings_af3c7cbd15390d9bcbe39983c069390b5}{\index{D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}!\+\_\+nyquist@{\+\_\+nyquist}}
 \index{\+\_\+nyquist@{\+\_\+nyquist}!D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}}
 \subsubsection[{\+\_\+nyquist}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} D\+S\+G\+::\+Audio\+Settings\+::\+\_\+nyquist\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_d_s_g_1_1_audio_settings_af3c7cbd15390d9bcbe39983c069390b5}
 
 
-Definition at line \hyperlink{_audio_settings_8h_source_l00037}{37} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
+Definition at line \hyperlink{_audio_settings_8h_source_l00041}{41} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
 
 \hypertarget{class_d_s_g_1_1_audio_settings_a56869b51933f102b197f54001c8a1d27}{\index{D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}!\+\_\+sample\+Rate@{\+\_\+sample\+Rate}}
 \index{\+\_\+sample\+Rate@{\+\_\+sample\+Rate}!D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}}
 \subsubsection[{\+\_\+sample\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} D\+S\+G\+::\+Audio\+Settings\+::\+\_\+sample\+Rate\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_d_s_g_1_1_audio_settings_a56869b51933f102b197f54001c8a1d27}
 
 
-Definition at line \hyperlink{_audio_settings_8h_source_l00036}{36} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
+Definition at line \hyperlink{_audio_settings_8h_source_l00040}{40} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
+
+\hypertarget{class_d_s_g_1_1_audio_settings_abd6bfacf2a290d84b3e20487dbf71fa3}{\index{D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}!\+\_\+set@{\+\_\+set}}
+\index{\+\_\+set@{\+\_\+set}!D\+S\+G\+::\+Audio\+Settings@{D\+S\+G\+::\+Audio\+Settings}}
+\subsubsection[{\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Audio\+Settings\+::\+\_\+set =false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_d_s_g_1_1_audio_settings_abd6bfacf2a290d84b3e20487dbf71fa3}
+
+
+Definition at line \hyperlink{_audio_settings_8h_source_l00043}{43} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
 
 
 

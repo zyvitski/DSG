@@ -28,12 +28,11 @@ namespace DSG{
 #ifdef DSG_Short_Names
     inline
 #endif
+    //!\brief DSG::MIDI - Namespace enclosing MIDI processing tools
     namespace MIDI{
-        namespace{
-#define NOTES_PER_OCTAVE 12.0
-#define MTOF_FTOM_Center_Note 69.0
-        }
+        //!\brief DSG::MIDI:MTOF - MIDI to Frequency Conversion
         double   MTOF(unsigned char const& MIDI_Number);
+        //!\brief DSG::MIDI:FTOM - Frequency to MIDI Conversion
         unsigned char FTOM(double const& Frequency);
     }
 }

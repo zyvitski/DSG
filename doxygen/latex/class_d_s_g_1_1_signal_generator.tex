@@ -13,7 +13,7 @@
 Inheritance diagram for D\+S\+G\+:\+:Signal\+Generator\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=12.000000cm]{class_d_s_g_1_1_signal_generator}
+\includegraphics[height=11.914893cm]{class_d_s_g_1_1_signal_generator}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -29,40 +29,20 @@ virtual bool \hyperlink{class_d_s_g_1_1_signal_generator_a46fe75a81a242e191c5049
 \item 
 virtual bool \hyperlink{class_d_s_g_1_1_signal_generator_ab050f80e84e6c8b3e354b56930d6a02b}{Perform} (\hyperlink{class_d_s_g_1_1_ring_buffer}{D\+S\+G\+::\+Ring\+Buffer} \&signal)
 \item 
-virtual \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} const \& \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{Frequency} ()
-\item 
-virtual \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} const \& \hyperlink{class_d_s_g_1_1_signal_generator_a30a79888f209d692df3d38f53fc58dfe}{Frequency} (\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} const \&value)
-\item 
-virtual \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{D\+S\+G\+::\+D\+S\+G\+Phase} const \& \hyperlink{class_d_s_g_1_1_signal_generator_a17cc4287b2838c6b6194fd43d02e7c00}{Phase} ()
-\item 
-virtual \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{D\+S\+G\+::\+D\+S\+G\+Phase} const \& \hyperlink{class_d_s_g_1_1_signal_generator_a315a3d3fca83eab7030af77dba63a564}{Phase} (\hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{D\+S\+G\+::\+D\+S\+G\+Phase} const \&value)
-\end{DoxyCompactItemize}
-\subsection*{Protected Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-void \hyperlink{class_d_s_g_1_1_signal_generator_a4c034c5b9ef3dc7548839288355643d5}{step} ()
-\item 
-void \hyperlink{class_d_s_g_1_1_signal_generator_a7070f6be04dfd70170328e908b759cd3}{sync} ()
+virtual bool \hyperlink{class_d_s_g_1_1_signal_generator_ab878f70be78d7b61beb2c6787845457a}{Sample\+Rate\+Changed} (\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} const \&sample\+Rate)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} \hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\+\_\+frequency}
-\item 
-\hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{D\+S\+G\+::\+D\+S\+G\+Phase} \hyperlink{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{\+\_\+dt}
-\item 
-\hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{D\+S\+G\+::\+D\+S\+G\+Phase} \hyperlink{class_d_s_g_1_1_signal_generator_a12850f2c05838e2234602bd4fde87732}{\+\_\+offset}
-\item 
-\hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{D\+S\+G\+::\+D\+S\+G\+Phase} \hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\+\_\+phasor}
-\item 
 \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{D\+S\+G\+::\+D\+S\+G\+Sample} \hyperlink{class_d_s_g_1_1_signal_generator_a28a9b47a1aa0783029f11a19ba0363f2}{\+\_\+storage}
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 \hyperlink{class_d_s_g_1_1_signal_generator}{D\+S\+G\+::\+Signal\+Generator} -\/ Extends D\+S\+G\+::\+Signal Process With Tools For Signal Generation. 
 
-Definition at line \hyperlink{_signal_generator_8h_source_l00033}{33} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
+Definition at line \hyperlink{_signal_generator_8h_source_l00032}{32} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
 
 
 
@@ -80,8 +60,7 @@ Definition at line \hyperlink{_signal_generator_8cpp_source_l00025}{25} of file 
 
 
 \begin{DoxyCode}
-00025 :\hyperlink{class_d_s_g_1_1_signal_process}{DSG::SignalProcess}(),\hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor}(0),\hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\_frequency}(0),
-      \hyperlink{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{\_dt}(0),\hyperlink{class_d_s_g_1_1_signal_generator_a12850f2c05838e2234602bd4fde87732}{\_offset}(0)\{\}
+00025 :\hyperlink{class_d_s_g_1_1_signal_process}{DSG::SignalProcess}(),\hyperlink{class_d_s_g_1_1_phasor}{DSG::Phasor}()\{\}
 \end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_signal_generator_a4036fceff5c05a3711b8516d850c414c}{\index{D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}!Signal\+Generator@{Signal\+Generator}}
 \index{Signal\+Generator@{Signal\+Generator}!D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}}
@@ -97,11 +76,7 @@ Definition at line \hyperlink{_signal_generator_8cpp_source_l00026}{26} of file 
 
 
 \begin{DoxyCode}
-00026                                                                                              :
-      \hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor}(0),\hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\_frequency}(frequency),\hyperlink{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{\_dt}(0),\hyperlink{class_d_s_g_1_1_signal_generator_a12850f2c05838e2234602bd4fde87732}{\_offset}(offset)\{
-00027     \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{Frequency}(frequency);
-00028     \hyperlink{class_d_s_g_1_1_signal_generator_a17cc4287b2838c6b6194fd43d02e7c00}{Phase}(offset);
-00029 \}
+00026 :\hyperlink{class_d_s_g_1_1_signal_process}{DSG::SignalProcess}(),\hyperlink{class_d_s_g_1_1_phasor}{DSG::Phasor}(frequency,offset)\{\}
 \end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_signal_generator_a7b52d391974bc36a19fdcf617ad976cb}{\index{D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}!````~Signal\+Generator@{$\sim$\+Signal\+Generator}}
 \index{````~Signal\+Generator@{$\sim$\+Signal\+Generator}!D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}}
@@ -112,54 +87,14 @@ Definition at line \hyperlink{_signal_generator_8cpp_source_l00026}{26} of file 
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_s_g_1_1_signal_generator_a7b52d391974bc36a19fdcf617ad976cb}
 
 
-Definition at line \hyperlink{_signal_generator_8cpp_source_l00030}{30} of file \hyperlink{_signal_generator_8cpp_source}{Signal\+Generator.\+cpp}.
+Definition at line \hyperlink{_signal_generator_8cpp_source_l00027}{27} of file \hyperlink{_signal_generator_8cpp_source}{Signal\+Generator.\+cpp}.
 
 
 \begin{DoxyCode}
-00030 \{\}\end{DoxyCode}
+00027 \{\}\end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{\index{D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}!Frequency@{Frequency}}
-\index{Frequency@{Frequency}!D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}}
-\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} const \& D\+S\+G\+::\+Signal\+Generator\+::\+Frequency (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}
-
-
-Definition at line \hyperlink{_signal_generator_8h_source_l00070}{70} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
-
-
-\begin{DoxyCode}
-00070                                                            \{
-00071     \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\_frequency};
-00072 \}
-\end{DoxyCode}
-\hypertarget{class_d_s_g_1_1_signal_generator_a30a79888f209d692df3d38f53fc58dfe}{\index{D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}!Frequency@{Frequency}}
-\index{Frequency@{Frequency}!D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}}
-\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} const \& D\+S\+G\+::\+Signal\+Generator\+::\+Frequency (
-\begin{DoxyParamCaption}
-\item[{{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} const \&}]{value}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_signal_generator_a30a79888f209d692df3d38f53fc58dfe}
-
-
-Reimplemented in \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_a933f8f9f324a4fde4f9e2b69473d88ed}{D\+S\+G\+::\+B\+L\+I\+T\+::\+Blit}, \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_saw_a290d01796efca84b73eb61a3bc419ebb}{D\+S\+G\+::\+B\+L\+I\+T\+::\+Blit\+Saw}, \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_afa3d86f404be3665f10c74fe9286ef10}{D\+S\+G\+::\+Fourier\+::\+Fourier\+Saw}, \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_a120cbb563a518c9412190eaa36cb269f}{D\+S\+G\+::\+Fourier\+::\+Fourier\+Square}, and \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a278a51ed8af32ea371adc903b9b25039}{D\+S\+G\+::\+Fourier\+::\+Fourier\+Triangle}.
-
-
-
-Definition at line \hyperlink{_signal_generator_8h_source_l00073}{73} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
-
-
-\begin{DoxyCode}
-00073                                                                                        \{
-00074     \hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\_frequency} = DSG::EnforceBounds<0, 20000,DSG::DSGSample>(value);
-00075     \hyperlink{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{\_dt} = \hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\_frequency}/\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}();
-00076     \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\_frequency};
-00077 \}
-\end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_signal_generator_a46fe75a81a242e191c5049d33ddf4155}{\index{D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}!Perform@{Perform}}
 \index{Perform@{Perform}!D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}}
 \subsubsection[{Perform}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Signal\+Generator\+::\+Perform (
@@ -177,14 +112,14 @@ Reimplemented in \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_series_generator
 
 
 
-Definition at line \hyperlink{_signal_generator_8h_source_l00062}{62} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
+Definition at line \hyperlink{_signal_generator_8h_source_l00049}{49} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
 
 
 \begin{DoxyCode}
-00062                                                            \{
-00063     signal=0;
-00064     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00065 \}
+00049                                                            \{
+00050     signal=0;
+00051     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00052 \}
 \end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_signal_generator_ab050f80e84e6c8b3e354b56930d6a02b}{\index{D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}!Perform@{Perform}}
 \index{Perform@{Perform}!D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}}
@@ -203,124 +138,46 @@ Reimplemented in \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a03548019c5ec057
 
 
 
-Definition at line \hyperlink{_signal_generator_8h_source_l00066}{66} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
+Definition at line \hyperlink{_signal_generator_8h_source_l00053}{53} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
 
 
 \begin{DoxyCode}
-00066                                                             \{
-00067     signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
-00068     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-00069 \}
+00053                                                             \{
+00054     signal.\hyperlink{class_d_s_g_1_1_ring_buffer_ab23c8003d2857809a816068eeb209d60}{Flush}();
+00055     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00056 \}
 \end{DoxyCode}
-\hypertarget{class_d_s_g_1_1_signal_generator_a17cc4287b2838c6b6194fd43d02e7c00}{\index{D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}!Phase@{Phase}}
-\index{Phase@{Phase}!D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}}
-\subsubsection[{Phase}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Phase} const \& D\+S\+G\+::\+Signal\+Generator\+::\+Phase (
+\hypertarget{class_d_s_g_1_1_signal_generator_ab878f70be78d7b61beb2c6787845457a}{\index{D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}!Sample\+Rate\+Changed@{Sample\+Rate\+Changed}}
+\index{Sample\+Rate\+Changed@{Sample\+Rate\+Changed}!D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}}
+\subsubsection[{Sample\+Rate\+Changed}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Signal\+Generator\+::\+Sample\+Rate\+Changed (
 \begin{DoxyParamCaption}
-{}
+\item[{{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} const \&}]{sample\+Rate}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_signal_generator_a17cc4287b2838c6b6194fd43d02e7c00}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_signal_generator_ab878f70be78d7b61beb2c6787845457a}
 
 
-Definition at line \hyperlink{_signal_generator_8h_source_l00078}{78} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
+Implements \hyperlink{class_d_s_g_1_1_signal_process_adf3ad4aff1486a1566120cc63e402fcf}{D\+S\+G\+::\+Signal\+Process}.
+
+
+
+Definition at line \hyperlink{_signal_generator_8h_source_l00057}{57} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
 
 
 \begin{DoxyCode}
-00078                                                    \{
-00079     \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_signal_generator_a12850f2c05838e2234602bd4fde87732}{\_offset};
-00080 \}
-\end{DoxyCode}
-\hypertarget{class_d_s_g_1_1_signal_generator_a315a3d3fca83eab7030af77dba63a564}{\index{D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}!Phase@{Phase}}
-\index{Phase@{Phase}!D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}}
-\subsubsection[{Phase}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Phase} const \& D\+S\+G\+::\+Signal\+Generator\+::\+Phase (
-\begin{DoxyParamCaption}
-\item[{{\bf D\+S\+G\+::\+D\+S\+G\+Phase} const \&}]{value}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_signal_generator_a315a3d3fca83eab7030af77dba63a564}
-
-
-Definition at line \hyperlink{_signal_generator_8h_source_l00081}{81} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
-
-
-\begin{DoxyCode}
-00081                                                                            \{
-00082     \hyperlink{class_d_s_g_1_1_signal_generator_a12850f2c05838e2234602bd4fde87732}{\_offset}-=value;
-00083     \hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor}-=\hyperlink{class_d_s_g_1_1_signal_generator_a12850f2c05838e2234602bd4fde87732}{\_offset};
-00084     \hyperlink{class_d_s_g_1_1_signal_generator_a12850f2c05838e2234602bd4fde87732}{\_offset}=value;
-00085     \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_signal_generator_a12850f2c05838e2234602bd4fde87732}{\_offset};
-00086 \}
-\end{DoxyCode}
-\hypertarget{class_d_s_g_1_1_signal_generator_a4c034c5b9ef3dc7548839288355643d5}{\index{D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}!step@{step}}
-\index{step@{step}!D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}}
-\subsubsection[{step}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S\+G\+::\+Signal\+Generator\+::step (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_d_s_g_1_1_signal_generator_a4c034c5b9ef3dc7548839288355643d5}
-
-
-Definition at line \hyperlink{_signal_generator_8h_source_l00087}{87} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
-
-
-\begin{DoxyCode}
-00087                                     \{
-00088     \hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor}+=\hyperlink{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{\_dt};
-00089     \hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor}>1.0 ? --\hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor}:0;
-00090 \}
-\end{DoxyCode}
-\hypertarget{class_d_s_g_1_1_signal_generator_a7070f6be04dfd70170328e908b759cd3}{\index{D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}!sync@{sync}}
-\index{sync@{sync}!D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}}
-\subsubsection[{sync}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S\+G\+::\+Signal\+Generator\+::sync (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_d_s_g_1_1_signal_generator_a7070f6be04dfd70170328e908b759cd3}
-
-
-Definition at line \hyperlink{_signal_generator_8h_source_l00091}{91} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
-
-
-\begin{DoxyCode}
-00091                                     \{
-00092     \hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor}=\hyperlink{class_d_s_g_1_1_signal_generator_a12850f2c05838e2234602bd4fde87732}{\_offset};
-00093 \}
+00057                                                                                   \{
+00058     \hyperlink{class_d_s_g_1_1_phasor_a6bdec1d2722e2fa5c7173ac5f7adf682}{Frequency}(\hyperlink{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}{\_frequency});
+00059     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00060 \}
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
-\hypertarget{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{\index{D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}!\+\_\+dt@{\+\_\+dt}}
-\index{\+\_\+dt@{\+\_\+dt}!D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}}
-\subsubsection[{\+\_\+dt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Phase} D\+S\+G\+::\+Signal\+Generator\+::\+\_\+dt\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}
-
-
-Definition at line \hyperlink{_signal_generator_8h_source_l00051}{51} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
-
-\hypertarget{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\index{D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}!\+\_\+frequency@{\+\_\+frequency}}
-\index{\+\_\+frequency@{\+\_\+frequency}!D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}}
-\subsubsection[{\+\_\+frequency}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} D\+S\+G\+::\+Signal\+Generator\+::\+\_\+frequency\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}
-
-
-Definition at line \hyperlink{_signal_generator_8h_source_l00050}{50} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
-
-\hypertarget{class_d_s_g_1_1_signal_generator_a12850f2c05838e2234602bd4fde87732}{\index{D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}!\+\_\+offset@{\+\_\+offset}}
-\index{\+\_\+offset@{\+\_\+offset}!D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}}
-\subsubsection[{\+\_\+offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Phase} D\+S\+G\+::\+Signal\+Generator\+::\+\_\+offset\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_signal_generator_a12850f2c05838e2234602bd4fde87732}
-
-
-Definition at line \hyperlink{_signal_generator_8h_source_l00052}{52} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
-
-\hypertarget{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\index{D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}!\+\_\+phasor@{\+\_\+phasor}}
-\index{\+\_\+phasor@{\+\_\+phasor}!D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}}
-\subsubsection[{\+\_\+phasor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Phase} D\+S\+G\+::\+Signal\+Generator\+::\+\_\+phasor\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}
-
-
-Definition at line \hyperlink{_signal_generator_8h_source_l00053}{53} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
-
 \hypertarget{class_d_s_g_1_1_signal_generator_a28a9b47a1aa0783029f11a19ba0363f2}{\index{D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}!\+\_\+storage@{\+\_\+storage}}
 \index{\+\_\+storage@{\+\_\+storage}!D\+S\+G\+::\+Signal\+Generator@{D\+S\+G\+::\+Signal\+Generator}}
 \subsubsection[{\+\_\+storage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Sample} D\+S\+G\+::\+Signal\+Generator\+::\+\_\+storage\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_signal_generator_a28a9b47a1aa0783029f11a19ba0363f2}
 
 
-Definition at line \hyperlink{_signal_generator_8h_source_l00054}{54} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
+Definition at line \hyperlink{_signal_generator_8h_source_l00041}{41} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
 
 
 

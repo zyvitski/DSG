@@ -14,19 +14,22 @@
 00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
 00010 \textcolor{comment}{}
 00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
-00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00012 \textcolor{comment}{ it under the terms of the GNU Lesser General Public License as published by}
 00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
 00014 \textcolor{comment}{ (at your option) any later version.}
 00015 \textcolor{comment}{}
 00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
 00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
 00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
-00019 \textcolor{comment}{ GNU General Public License for more details.}
+00019 \textcolor{comment}{ GNU Lesser General Public License for more details.}
 00020 \textcolor{comment}{}
-00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00021 \textcolor{comment}{ You should have received a copy of the GNU Lesser General Public License}
 00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
 00023 \textcolor{comment}{ */}
 00024 \textcolor{preprocessor}{#include "\hyperlink{_signal_process_8h}{SignalProcess.h}"}
-\hypertarget{_signal_process_8cpp_source_l00025}{}\hyperlink{class_d_s_g_1_1_signal_process_a3fd4347483bcf3cc0a3d7bf98ff56218}{00025} \hyperlink{class_d_s_g_1_1_signal_process_a3fd4347483bcf3cc0a3d7bf98ff56218}{DSG::SignalProcess::SignalProcess}()\{\}
-\hypertarget{_signal_process_8cpp_source_l00026}{}\hyperlink{class_d_s_g_1_1_signal_process_ad9b6a758241a092ddc38e13effc9553f}{00026} \hyperlink{class_d_s_g_1_1_signal_process_ad9b6a758241a092ddc38e13effc9553f}{DSG::SignalProcess::~SignalProcess}()\{\}
+\hypertarget{_signal_process_8cpp_source_l00025}{}\hyperlink{class_d_s_g_1_1_signal_process_a3fd4347483bcf3cc0a3d7bf98ff56218}{00025} \hyperlink{class_d_s_g_1_1_signal_process_a3fd4347483bcf3cc0a3d7bf98ff56218}{DSG::SignalProcess::SignalProcess}()\{
+00026     \hyperlink{namespace_d_s_g_a0749755eb0ed01894adc60fab768dfa5}{VerifySampleRateSet}();\textcolor{comment}{//ensure that there is a valid sample rate set}
+00027     \hyperlink{namespace_d_s_g_a66af6119635fe556dc5f840bf78dec56}{AddSampleRateListener}(\textcolor{keyword}{this});\textcolor{comment}{//listen for changes in the sample rate}
+00028 \}
+\hypertarget{_signal_process_8cpp_source_l00029}{}\hyperlink{class_d_s_g_1_1_signal_process_ad9b6a758241a092ddc38e13effc9553f}{00029} \hyperlink{class_d_s_g_1_1_signal_process_ad9b6a758241a092ddc38e13effc9553f}{DSG::SignalProcess::~SignalProcess}()\{\}
 \end{DoxyCode}

@@ -14,16 +14,16 @@
 00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
 00010 \textcolor{comment}{}
 00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
-00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00012 \textcolor{comment}{ it under the terms of the GNU Lesser General Public License as published by}
 00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
 00014 \textcolor{comment}{ (at your option) any later version.}
 00015 \textcolor{comment}{}
 00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
 00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
 00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
-00019 \textcolor{comment}{ GNU General Public License for more details.}
+00019 \textcolor{comment}{ GNU Lesser General Public License for more details.}
 00020 \textcolor{comment}{}
-00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00021 \textcolor{comment}{ You should have received a copy of the GNU Lesser General Public License}
 00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
 00023 \textcolor{comment}{ */}
 00024 \textcolor{preprocessor}{#ifndef \_\_DSG\_\_DPWSaw\_\_}
@@ -47,7 +47,7 @@
 \hypertarget{_d_p_w_saw_8h_source_l00040}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_afc78ee5a1353dec65adf963a677e95fe}{00040}             \textcolor{keyword}{virtual} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_afc78ee5a1353dec65adf963a677e95fe}{~DPWSaw}()\{\}
 \hypertarget{_d_p_w_saw_8h_source_l00041}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a8d0bffad58e9bce19fe737302de749ed}{00041}             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a8d0bffad58e9bce19fe737302de749ed}{Perform}(\hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{DSG::DSGSample}& signal)\{
 00042                 \textcolor{comment}{//trivial saw ramping from -1 to 1}
-00043                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register} = \hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor};
+00043                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register} = \hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\_phasor};
 00044                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register}-=0.5;
 00045                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register}*=2.0;
 00046                 \textcolor{comment}{/*-------------------------*/}
@@ -55,11 +55,11 @@
 00048                 \textcolor{comment}{//polynomial shaping}
 00049                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register}=DSG::DPW::DPW\_Polynomial<order>(\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register});
 00050                 \textcolor{comment}{//differentiating}
-00051                 signal = \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_af1ded15ce266aa7bd1594de38bba6890}{\_diff}(\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register},\hyperlink{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{\_dt});
+00051                 signal = \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_af1ded15ce266aa7bd1594de38bba6890}{\_diff}(\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a5b9fcbe7361f56358afd2728c5de4014}{\_register},\hyperlink{class_d_s_g_1_1_phasor_afaaa3559b6cd84535c10ff896148c6bd}{\_dt});
 00052                 \textcolor{comment}{/*-------------------------*/}
 00053                 \textcolor{comment}{//signal = DSG::EnforceBounds<-1, 1>(signal);}
 00054                 \textcolor{comment}{//advance phase}
-00055                 \hyperlink{class_d_s_g_1_1_signal_generator_a4c034c5b9ef3dc7548839288355643d5}{step}();
+00055                 \hyperlink{class_d_s_g_1_1_phasor_a6a088b29e506fb5e99d73f4f0160c583}{step}();
 00056                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
 00057             \}
 \hypertarget{_d_p_w_saw_8h_source_l00058}{}\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a03548019c5ec057f5980a4bd99a0d3f0}{00058}             \textcolor{keyword}{virtual} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w_saw_a03548019c5ec057f5980a4bd99a0d3f0}{Perform}(\hyperlink{class_d_s_g_1_1_ring_buffer}{DSG::RingBuffer}& signal)\{

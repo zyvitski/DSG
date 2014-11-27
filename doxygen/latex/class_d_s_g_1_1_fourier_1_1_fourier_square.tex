@@ -88,7 +88,7 @@ Definition at line \hyperlink{_fourier_square_8cpp_source_l00026}{26} of file \h
 00026                                                                                                 :
       \hyperlink{class_d_s_g_1_1_signal_generator}{DSG::SignalGenerator}(frequency,offset),\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_a974287b077bd7bff2b028dd1af75e3d0}{\_a}(3.6/\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI}),\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_a6e20ab344501c18d79d594ec83f34164}{phs}(0),
       \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_a5817c7b9b793af6a76278065a67acd9c}{value}(0),\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_ad52c23216a09d1933e5b3289f2d54db2}{i}(0)\{
-00027     \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_ac482ccc644bac01f3491503a755b453c}{\_h} = \hyperlink{namespace_d_s_g_ab5c4eea42ea10b69cfc32afb83ff1d0d}{MaxHarms}(\hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\_frequency})+1;
+00027     \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_ac482ccc644bac01f3491503a755b453c}{\_h} = \hyperlink{namespace_d_s_g_ab5c4eea42ea10b69cfc32afb83ff1d0d}{MaxHarms}(\hyperlink{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}{\_frequency})+1;
 00028 \}
 \end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_fourier_1_1_fourier_square_af78565a799ebfd4be03cc0294dff1f85}{\index{D\+S\+G\+::\+Fourier\+::\+Fourier\+Square@{D\+S\+G\+::\+Fourier\+::\+Fourier\+Square}!````~Fourier\+Square@{$\sim$\+Fourier\+Square}}
@@ -117,7 +117,7 @@ Definition at line \hyperlink{_fourier_square_8cpp_source_l00029}{29} of file \h
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_fourier_1_1_fourier_square_a120cbb563a518c9412190eaa36cb269f}
 
 
-Reimplemented from \hyperlink{class_d_s_g_1_1_signal_generator_a30a79888f209d692df3d38f53fc58dfe}{D\+S\+G\+::\+Signal\+Generator}.
+Reimplemented from \hyperlink{class_d_s_g_1_1_phasor_a8162456ae44291008159acd89bfa7b1b}{D\+S\+G\+::\+Phasor}.
 
 
 
@@ -126,10 +126,10 @@ Definition at line \hyperlink{_fourier_square_8h_source_l00069}{69} of file \hyp
 
 \begin{DoxyCode}
 00069                                                                                                     \{
-00070             \hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\_frequency} = \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_a5817c7b9b793af6a76278065a67acd9c}{value};
-00071             \hyperlink{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{\_dt} = \hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\_frequency}/\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}();
-00072             \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_ac482ccc644bac01f3491503a755b453c}{\_h} = \hyperlink{namespace_d_s_g_ab5c4eea42ea10b69cfc32afb83ff1d0d}{MaxHarms}(\hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\_frequency});
-00073             \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\_frequency};
+00070             \hyperlink{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}{\_frequency} = \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_a5817c7b9b793af6a76278065a67acd9c}{value};
+00071             \hyperlink{class_d_s_g_1_1_phasor_afaaa3559b6cd84535c10ff896148c6bd}{\_dt} = \hyperlink{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}{\_frequency}/\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}();
+00072             \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_ac482ccc644bac01f3491503a755b453c}{\_h} = \hyperlink{namespace_d_s_g_ab5c4eea42ea10b69cfc32afb83ff1d0d}{MaxHarms}(\hyperlink{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}{\_frequency});
+00073             \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}{\_frequency};
 00074         \}
 \end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_fourier_1_1_fourier_square_a05bd0cd3e76ca22e1cede5afb47fbbc4}{\index{D\+S\+G\+::\+Fourier\+::\+Fourier\+Square@{D\+S\+G\+::\+Fourier\+::\+Fourier\+Square}!Perform@{Perform}}
@@ -151,13 +151,13 @@ Definition at line \hyperlink{_fourier_square_8h_source_l00049}{49} of file \hyp
 \begin{DoxyCode}
 00049                                                                         \{
 00050             \textcolor{comment}{//(\_h/2)+1 Sine Calls Per Sample}
-00051             \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_a5817c7b9b793af6a76278065a67acd9c}{value}=\hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{DSG::Sin}(\hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor});\textcolor{comment}{//i=1}
+00051             \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_a5817c7b9b793af6a76278065a67acd9c}{value}=\hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{DSG::Sin}(\hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\_phasor});\textcolor{comment}{//i=1}
 00052             \textcolor{keywordflow}{for} (\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_ad52c23216a09d1933e5b3289f2d54db2}{i}=3; \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_ad52c23216a09d1933e5b3289f2d54db2}{i}<\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_ac482ccc644bac01f3491503a755b453c}{\_h}; \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_ad52c23216a09d1933e5b3289f2d54db2}{i}+=2) \{\textcolor{comment}{//i=3..5..7..}
-00053                 \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_a5817c7b9b793af6a76278065a67acd9c}{value} += (1.0/\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_ad52c23216a09d1933e5b3289f2d54db2}{i}) * \hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{DSG::Sin}(\hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor}*\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_ad52c23216a09d1933e5b3289f2d54db2}{i});
+00053                 \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_a5817c7b9b793af6a76278065a67acd9c}{value} += (1.0/\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_ad52c23216a09d1933e5b3289f2d54db2}{i}) * \hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{DSG::Sin}(\hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\_phasor}*\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_ad52c23216a09d1933e5b3289f2d54db2}{i});
 00054             \}
 00055             \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_a5817c7b9b793af6a76278065a67acd9c}{value}*=\hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_a974287b077bd7bff2b028dd1af75e3d0}{\_a};
 00056             signal = \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_a5817c7b9b793af6a76278065a67acd9c}{value};
-00057             \hyperlink{class_d_s_g_1_1_signal_generator_a4c034c5b9ef3dc7548839288355643d5}{step}();
+00057             \hyperlink{class_d_s_g_1_1_phasor_a6a088b29e506fb5e99d73f4f0160c583}{step}();
 00058             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
 00059         \}
 \end{DoxyCode}

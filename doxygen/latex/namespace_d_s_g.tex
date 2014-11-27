@@ -21,6 +21,8 @@
 \begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_1_1_filter}{D\+S\+G\+::\+Filter} -\/ Filters. \end{DoxyCompactList}\item 
  \hyperlink{namespace_d_s_g_1_1_fourier}{Fourier}
 \begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_1_1_fourier}{D\+S\+G\+::\+Fourier} -\/ Namespace Containing \hyperlink{namespace_d_s_g_1_1_fourier}{Fourier} Series Based Oscillators. \end{DoxyCompactList}\item 
+ \hyperlink{namespace_d_s_g_1_1_m_i_d_i}{M\+I\+D\+I}
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_1_1_m_i_d_i}{D\+S\+G\+::\+M\+I\+D\+I} -\/ Namespace enclosing \hyperlink{namespace_d_s_g_1_1_m_i_d_i}{M\+I\+D\+I} processing tools. \end{DoxyCompactList}\item 
  \hyperlink{namespace_d_s_g_1_1_noise}{Noise}
 \begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_1_1_noise}{D\+S\+G\+::\+Noise} -\/ \hyperlink{namespace_d_s_g_1_1_noise}{Noise} Generators. \end{DoxyCompactList}\item 
  \hyperlink{namespace_d_s_g_1_1_window}{Window}
@@ -44,6 +46,8 @@ class \hyperlink{class_d_s_g_1_1_l_u_t}{L\+U\+T}
 \begin{DoxyCompactList}\small\item\em \hyperlink{class_d_s_g_1_1_l_u_t}{D\+S\+G\+::\+L\+U\+T} -\/ Look Up Table. \end{DoxyCompactList}\item 
 class \hyperlink{class_d_s_g_1_1_noise_generator}{Noise\+Generator}
 \begin{DoxyCompactList}\small\item\em \hyperlink{class_d_s_g_1_1_noise_generator}{D\+S\+G\+::\+Noise\+Generator} -\/ Generator that uses noise functions such as \hyperlink{namespace_d_s_g_1_1_noise_a0d1c4b4522d2e56b1aa604e45ab92066}{D\+S\+G\+::\+White()} to generate signal. \end{DoxyCompactList}\item 
+class \hyperlink{class_d_s_g_1_1_phasor}{Phasor}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_d_s_g_1_1_phasor}{D\+S\+G\+::\+Phasor} -\/ Linear Phase Generator. \end{DoxyCompactList}\item 
 class \hyperlink{class_d_s_g_1_1_ring_buffer}{Ring\+Buffer}
 \begin{DoxyCompactList}\small\item\em \hyperlink{class_d_s_g_1_1_ring_buffer}{D\+S\+G\+::\+Ring\+Buffer} -\/ Circular \hyperlink{class_d_s_g_1_1_buffer}{Buffer} of Audio. \end{DoxyCompactList}\item 
 class \hyperlink{class_d_s_g_1_1_signal_generator}{Signal\+Generator}
@@ -68,6 +72,10 @@ typedef float \hyperlink{namespace_d_s_g_ac39a94cd27ebcd9c1e7502d0c624894a}{D\+S
 \begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{D\+S\+G\+::\+Sample\+Rate} -\/ Set Global Sample Rate. \end{DoxyCompactList}\item 
 \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} \hyperlink{namespace_d_s_g_acb23c320b74d21f203081a25e1b5d134}{Nyquist} ()
 \begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_acb23c320b74d21f203081a25e1b5d134}{D\+S\+G\+::\+Nyquist()} -\/ Pre-\/\+Calculated Nyquist Limit. Use instead of calculating each time needed. This value will be updated whenever the sample rate changes. \end{DoxyCompactList}\item 
+bool \hyperlink{namespace_d_s_g_a66af6119635fe556dc5f840bf78dec56}{Add\+Sample\+Rate\+Listener} (\hyperlink{class_d_s_g_1_1_signal_process}{D\+S\+G\+::\+Signal\+Process} $\ast$listner)
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_a66af6119635fe556dc5f840bf78dec56}{D\+S\+G\+::\+Add\+Sample\+Rate\+Listener()} -\/ Allows Generators to be notified if the sample rate changes. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_d_s_g_a0749755eb0ed01894adc60fab768dfa5}{Verify\+Sample\+Rate\+Set} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_a0749755eb0ed01894adc60fab768dfa5}{D\+S\+G\+::\+Verify\+Sample\+Rate\+Set()} -\/ Allows a Generator to ask if a valid sample rate has been set. \end{DoxyCompactList}\item 
 {\footnotesize template$<$int lower, int upper, typename decimal $>$ }\\decimal \hyperlink{namespace_d_s_g_a8bc6af8f213f4f713bd634ec8545491c}{Enforce\+Bounds} (decimal const \&value)
 \begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_a8bc6af8f213f4f713bd634ec8545491c}{D\+S\+G\+::\+Enforce\+Bounds} -\/ Clip value to set bounds. \end{DoxyCompactList}\item 
 {\footnotesize template$<$int lower, int upper, int value$>$ }\\void \hyperlink{namespace_d_s_g_a3fa12557d889e704f2e33d88929ec67a}{Static\+Assert\+Bounds} ()
@@ -170,6 +178,27 @@ Definition at line \hyperlink{_d_s_g_math_8h_source_l00031}{31} of file \hyperli
 00031                                 \{
 00032         \textcolor{keywordflow}{return} value < 0.0 ? -1.0 * value : value;
 00033     \}
+\end{DoxyCode}
+\hypertarget{namespace_d_s_g_a66af6119635fe556dc5f840bf78dec56}{\index{D\+S\+G@{D\+S\+G}!Add\+Sample\+Rate\+Listener@{Add\+Sample\+Rate\+Listener}}
+\index{Add\+Sample\+Rate\+Listener@{Add\+Sample\+Rate\+Listener}!D\+S\+G@{D\+S\+G}}
+\subsubsection[{Add\+Sample\+Rate\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S\+G\+::\+Add\+Sample\+Rate\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+Signal\+Process} $\ast$}]{listner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespace_d_s_g_a66af6119635fe556dc5f840bf78dec56}
+
+
+\hyperlink{namespace_d_s_g_a66af6119635fe556dc5f840bf78dec56}{D\+S\+G\+::\+Add\+Sample\+Rate\+Listener()} -\/ Allows Generators to be notified if the sample rate changes. 
+
+
+
+Definition at line \hyperlink{_audio_settings_8h_source_l00061}{61} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
+
+
+\begin{DoxyCode}
+00061                                                                 \{
+00062         \textcolor{keywordflow}{return} \hyperlink{namespace_d_s_g_a66af6119635fe556dc5f840bf78dec56}{AudioSettings::AddSampleRateListener}(listner);
+00063     \}
 \end{DoxyCode}
 \hypertarget{namespace_d_s_g_a608643638b3a678c17b14c406d7edc85}{\index{D\+S\+G@{D\+S\+G}!Array\+To\+Ring@{Array\+To\+Ring}}
 \index{Array\+To\+Ring@{Array\+To\+Ring}!D\+S\+G@{D\+S\+G}}
@@ -468,15 +497,15 @@ Definition at line \hyperlink{_interpolate_8h_source_l00034}{34} of file \hyperl
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespace_d_s_g_ab5c4eea42ea10b69cfc32afb83ff1d0d}
 
 
-Definition at line \hyperlink{_signal_generator_8h_source_l00056}{56} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
+Definition at line \hyperlink{_signal_generator_8h_source_l00043}{43} of file \hyperlink{_signal_generator_8h_source}{Signal\+Generator.\+h}.
 
 
 \begin{DoxyCode}
-00056                                                                    \{
-00057         \textcolor{keywordtype}{double} \_s = \hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}()*  20000.0/\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}();
-00058         \_s/=frequency;
-00059         \textcolor{keywordflow}{return} \_s;
-00060     \}
+00043                                                                    \{
+00044         \textcolor{keywordtype}{double} \_s = \hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}()*  20000.0/\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}();
+00045         \_s/=frequency;
+00046         \textcolor{keywordflow}{return} \_s;
+00047     \}
 \end{DoxyCode}
 \hypertarget{namespace_d_s_g_acb23c320b74d21f203081a25e1b5d134}{\index{D\+S\+G@{D\+S\+G}!Nyquist@{Nyquist}}
 \index{Nyquist@{Nyquist}!D\+S\+G@{D\+S\+G}}
@@ -491,13 +520,13 @@ Definition at line \hyperlink{_signal_generator_8h_source_l00056}{56} of file \h
 
 
 
-Definition at line \hyperlink{_audio_settings_8h_source_l00048}{48} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
+Definition at line \hyperlink{_audio_settings_8h_source_l00057}{57} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
 
 
 \begin{DoxyCode}
-00048                                     \{
-00049         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_a8cb4afd7b58e927300ff46fbeb71bec7}{DSG::AudioSettings::Nyquist}();
-00050     \}
+00057                                     \{
+00058         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_a8cb4afd7b58e927300ff46fbeb71bec7}{DSG::AudioSettings::Nyquist}();
+00059     \}
 \end{DoxyCode}
 \hypertarget{namespace_d_s_g_a34372a42acb2d6d62d18effc379857bc}{\index{D\+S\+G@{D\+S\+G}!Pow@{Pow}}
 \index{Pow@{Pow}!D\+S\+G@{D\+S\+G}}
@@ -560,13 +589,13 @@ Definition at line \hyperlink{_buffer_conversion_8h_source_l00029}{29} of file \
 
 
 
-Definition at line \hyperlink{_audio_settings_8h_source_l00040}{40} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
+Definition at line \hyperlink{_audio_settings_8h_source_l00049}{49} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
 
 
 \begin{DoxyCode}
-00040                                               \{
-00041         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_a4f459c389b10c11828e2f2f00c012c49}{DSG::AudioSettings::SampleRate}();
-00042     \}
+00049                                               \{
+00050         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_a4f459c389b10c11828e2f2f00c012c49}{DSG::AudioSettings::SampleRate}();
+00051     \}
 \end{DoxyCode}
 \hypertarget{namespace_d_s_g_a66a464f016da1a099abea61a27a84d18}{\index{D\+S\+G@{D\+S\+G}!Sample\+Rate@{Sample\+Rate}}
 \index{Sample\+Rate@{Sample\+Rate}!D\+S\+G@{D\+S\+G}}
@@ -581,13 +610,13 @@ Definition at line \hyperlink{_audio_settings_8h_source_l00040}{40} of file \hyp
 
 
 
-Definition at line \hyperlink{_audio_settings_8h_source_l00044}{44} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
+Definition at line \hyperlink{_audio_settings_8h_source_l00053}{53} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
 
 
 \begin{DoxyCode}
-00044                                                                           \{
-00045         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_a4f459c389b10c11828e2f2f00c012c49}{DSG::AudioSettings::SampleRate}(value);
-00046     \}
+00053                                                                           \{
+00054         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_audio_settings_a4f459c389b10c11828e2f2f00c012c49}{DSG::AudioSettings::SampleRate}(value);
+00055     \}
 \end{DoxyCode}
 \hypertarget{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{\index{D\+S\+G@{D\+S\+G}!Sin@{Sin}}
 \index{Sin@{Sin}!D\+S\+G@{D\+S\+G}}
@@ -701,4 +730,27 @@ Definition at line \hyperlink{_bounds_8h_source_l00039}{39} of file \hyperlink{_
 00039                              \{
 00040         static\_assert(value>=lower && value<=upper,\textcolor{stringliteral}{"Failed Static Bounds Assert"});
 00041     \}
+\end{DoxyCode}
+\hypertarget{namespace_d_s_g_a0749755eb0ed01894adc60fab768dfa5}{\index{D\+S\+G@{D\+S\+G}!Verify\+Sample\+Rate\+Set@{Verify\+Sample\+Rate\+Set}}
+\index{Verify\+Sample\+Rate\+Set@{Verify\+Sample\+Rate\+Set}!D\+S\+G@{D\+S\+G}}
+\subsubsection[{Verify\+Sample\+Rate\+Set}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S\+G\+::\+Verify\+Sample\+Rate\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespace_d_s_g_a0749755eb0ed01894adc60fab768dfa5}
+
+
+\hyperlink{namespace_d_s_g_a0749755eb0ed01894adc60fab768dfa5}{D\+S\+G\+::\+Verify\+Sample\+Rate\+Set()} -\/ Allows a Generator to ask if a valid sample rate has been set. 
+
+
+
+Definition at line \hyperlink{_audio_settings_8h_source_l00065}{65} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
+
+
+\begin{DoxyCode}
+00065                                      \{
+00066         \textcolor{keywordflow}{if} (!\hyperlink{class_d_s_g_1_1_audio_settings_a5ff952756264670e4f3ca3661b4f9144}{DSG::AudioSettings::IsSampleRateSet}()) \{
+00067             \hyperlink{namespace_d_s_g_a66a464f016da1a099abea61a27a84d18}{SampleRate}(\hyperlink{_audio_settings_8h_ad9d89453f9b7b69bd9beb58946863dd4}{SampleRateDefault});
+00068         \}
+00069     \}
 \end{DoxyCode}

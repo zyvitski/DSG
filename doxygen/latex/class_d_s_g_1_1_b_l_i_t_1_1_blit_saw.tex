@@ -67,7 +67,7 @@ Definition at line \hyperlink{_b_l_i_t_saw_8cpp_source_l00025}{25} of file \hype
 
 \begin{DoxyCode}
 00025                        :\hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit}{DSG::BLIT::Blit}(),\hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_saw_a15da9acffc369dd3c5233c05d37ee488}{Register\_}(0)\{
-00026     \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{Frequency}(0);
+00026     \hyperlink{class_d_s_g_1_1_phasor_a6bdec1d2722e2fa5c7173ac5f7adf682}{Frequency}(0);
 00027 \}
 \end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_b_l_i_t_1_1_blit_saw_a3d7e4379c00970fa89085ed2c945a2b7}{\index{D\+S\+G\+::\+B\+L\+I\+T\+::\+Blit\+Saw@{D\+S\+G\+::\+B\+L\+I\+T\+::\+Blit\+Saw}!Blit\+Saw@{Blit\+Saw}}
@@ -86,7 +86,7 @@ Definition at line \hyperlink{_b_l_i_t_saw_8cpp_source_l00028}{28} of file \hype
 \begin{DoxyCode}
 00028                                                                                  :
       \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit}{DSG::BLIT::Blit}(frequency,offset),\hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_saw_a15da9acffc369dd3c5233c05d37ee488}{Register\_}(0)\{
-00029     \hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{Frequency}(frequency);
+00029     \hyperlink{class_d_s_g_1_1_phasor_a6bdec1d2722e2fa5c7173ac5f7adf682}{Frequency}(frequency);
 00030 \}
 \end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_b_l_i_t_1_1_blit_saw_a4744c63b29aee896823f19965e11e515}{\index{D\+S\+G\+::\+B\+L\+I\+T\+::\+Blit\+Saw@{D\+S\+G\+::\+B\+L\+I\+T\+::\+Blit\+Saw}!````~Blit\+Saw@{$\sim$\+Blit\+Saw}}
@@ -124,13 +124,13 @@ Definition at line \hyperlink{_b_l_i_t_saw_8h_source_l00072}{72} of file \hyperl
 
 \begin{DoxyCode}
 00072                                                                                            \{
-00073             this->\hyperlink{class_d_s_g_1_1_signal_generator_a4e6b3c43e76e53f8cd337ad699c464cb}{SignalGenerator::Frequency}(\hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_ac8fb9d4fb45d0697bf364bb5d6b570ce}{value});
-00074             \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_a04d7d6b22a386428e5c25668e1587794}{p\_} = \hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}()/\hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\_frequency};
+00073             this->\hyperlink{class_d_s_g_1_1_phasor_a6bdec1d2722e2fa5c7173ac5f7adf682}{SignalGenerator::Frequency}(\hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_ac8fb9d4fb45d0697bf364bb5d6b570ce}{value});
+00074             \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_a04d7d6b22a386428e5c25668e1587794}{p\_} = \hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}()/\hyperlink{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}{\_frequency};
 00075             \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_a632c6f070187969b90c70b65668b82bc}{\_h} = (unsigned)floor(\hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_a04d7d6b22a386428e5c25668e1587794}{p\_}*0.5);
 00076             \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_afa6e4d46efdbfa032762610601ed42a0}{m\_} = 2 * (\hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_a632c6f070187969b90c70b65668b82bc}{\_h})+1;
 00077             \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_a66e2a97840ad0772daaaa9aea63b77b4}{a\_} = \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_afa6e4d46efdbfa032762610601ed42a0}{m\_}/(double)\hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_a04d7d6b22a386428e5c25668e1587794}{p\_};
 00078             \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_saw_a39ff301ab1f690c070b2045d4a2c40bf}{C2\_} = 1.0/(double)\hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_a04d7d6b22a386428e5c25668e1587794}{p\_};
-00079             \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_signal_generator_a335e7ef058848eca368be51d8544d143}{\_frequency};
+00079             \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}{\_frequency};
 00080         \}
 \end{DoxyCode}
 \hypertarget{class_d_s_g_1_1_b_l_i_t_1_1_blit_saw_ae24821c51b23b9fe9220a620e558af04}{\index{D\+S\+G\+::\+B\+L\+I\+T\+::\+Blit\+Saw@{D\+S\+G\+::\+B\+L\+I\+T\+::\+Blit\+Saw}!Perform@{Perform}}
@@ -151,16 +151,16 @@ Definition at line \hyperlink{_b_l_i_t_saw_8h_source_l00046}{46} of file \hyperl
 
 \begin{DoxyCode}
 00046                                                                \{
-00047             \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_a6de89a5a240f226c940aef97661c9cee}{denominator} = \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_afa6e4d46efdbfa032762610601ed42a0}{m\_} * sin(\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI}*\hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor});
+00047             \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_a6de89a5a240f226c940aef97661c9cee}{denominator} = \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_afa6e4d46efdbfa032762610601ed42a0}{m\_} * sin(\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI}*\hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\_phasor});
 00048             \textcolor{keywordflow}{if} (\hyperlink{namespace_d_s_g_a9eee3c39a1f45d42f0b4fa7201d3ba3d}{DSG::IsDenormal}(\hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_a6de89a5a240f226c940aef97661c9cee}{denominator})) \{
 00049                 signal = \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_a66e2a97840ad0772daaaa9aea63b77b4}{a\_};
 00050             \}\textcolor{keywordflow}{else}\{
-00051                 \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_ac8fb9d4fb45d0697bf364bb5d6b570ce}{value} = sin(\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI}*\hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor} * \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_afa6e4d46efdbfa032762610601ed42a0}{m\_});
+00051                 \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_ac8fb9d4fb45d0697bf364bb5d6b570ce}{value} = sin(\hyperlink{_p_i_8h_a598a3330b3c21701223ee0ca14316eca}{PI}*\hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\_phasor} * \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_afa6e4d46efdbfa032762610601ed42a0}{m\_});
 00052                 \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_ac8fb9d4fb45d0697bf364bb5d6b570ce}{value}/=\hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_a6de89a5a240f226c940aef97661c9cee}{denominator};
 00053                 \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_ac8fb9d4fb45d0697bf364bb5d6b570ce}{value}*=\hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_a66e2a97840ad0772daaaa9aea63b77b4}{a\_};
 00054                 signal = \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_ac8fb9d4fb45d0697bf364bb5d6b570ce}{value};
 00055             \}
-00056             \hyperlink{class_d_s_g_1_1_signal_generator_a4c034c5b9ef3dc7548839288355643d5}{step}();
+00056             \hyperlink{class_d_s_g_1_1_phasor_a6a088b29e506fb5e99d73f4f0160c583}{step}();
 00057             signal += (\hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_saw_a15da9acffc369dd3c5233c05d37ee488}{Register\_} - \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_saw_a39ff301ab1f690c070b2045d4a2c40bf}{C2\_});
 00058             \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_saw_a15da9acffc369dd3c5233c05d37ee488}{Register\_} = signal * 0.995;
 00059             \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_saw_a39ff301ab1f690c070b2045d4a2c40bf}{C2\_}+=signal;

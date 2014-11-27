@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['pi_2eh',['PI.h',['../_p_i_8h.html',1,'']]],
-  ['pink_2eh',['Pink.h',['../_pink_8h.html',1,'']]]
+  ['noise_2eh',['Noise.h',['../_noise_8h.html',1,'']]],
+  ['noisegenerator_2ecpp',['NoiseGenerator.cpp',['../_noise_generator_8cpp.html',1,'']]],
+  ['noisegenerator_2eh',['NoiseGenerator.h',['../_noise_generator_8h.html',1,'']]]
 ];

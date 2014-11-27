@@ -14,16 +14,16 @@
 00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
 00010 \textcolor{comment}{}
 00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
-00012 \textcolor{comment}{ it under the terms of the GNU General Public License as published by}
+00012 \textcolor{comment}{ it under the terms of the GNU Lesser General Public License as published by}
 00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
 00014 \textcolor{comment}{ (at your option) any later version.}
 00015 \textcolor{comment}{}
 00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
 00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
 00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
-00019 \textcolor{comment}{ GNU General Public License for more details.}
+00019 \textcolor{comment}{ GNU Lesser General Public License for more details.}
 00020 \textcolor{comment}{}
-00021 \textcolor{comment}{ You should have received a copy of the GNU General Public License}
+00021 \textcolor{comment}{ You should have received a copy of the GNU Lesser General Public License}
 00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
 00023 \textcolor{comment}{ */}
 00024 \textcolor{preprocessor}{#ifndef DSG\_DSG\_h}
@@ -46,40 +46,26 @@
 00040 \textcolor{preprocessor}{#include "\hyperlink{_l_u_t_8h}{LUT.h}"}
 00041 \textcolor{preprocessor}{#include "\hyperlink{_window_8h}{Window.h}"}
 00042 \textcolor{preprocessor}{#include "\hyperlink{_bounds_8h}{Bounds.h}"}
-00043 
-00044 \textcolor{preprocessor}{#include "\hyperlink{_generic_generator_8h}{GenericGenerator.h}"}
-00045 
-00046 \textcolor{preprocessor}{#include "\hyperlink{_delay_8h}{Delay.h}"}
-00047 
-00048 
-00049 \textcolor{preprocessor}{#include "\hyperlink{_sleep_8h}{Sleep.h}"}
-00050 \textcolor{preprocessor}{#include "\hyperlink{_buffer_conversion_8h}{BufferConversion.h}"}
-00051 
-00052 \textcolor{preprocessor}{#include "\hyperlink{_fourier_series_8h}{FourierSeries.h}"}
-00053 \textcolor{preprocessor}{#include "\hyperlink{_fourier_saw_8h}{FourierSaw.h}"}
-00054 \textcolor{preprocessor}{#include "\hyperlink{_fourier_square_8h}{FourierSquare.h}"}
-00055 \textcolor{preprocessor}{#include "\hyperlink{_fourier_triangle_8h}{FourierTriangle.h}"}
-00056 
-00057 \textcolor{preprocessor}{#include "\hyperlink{_analog_saw_8h}{AnalogSaw.h}"}
-00058 \textcolor{preprocessor}{#include "\hyperlink{_analog_square_8h}{AnalogSquare.h}"}
-00059 \textcolor{preprocessor}{#include "\hyperlink{_analog_triangle_8h}{AnalogTriangle.h}"}
-00060 
-00061 \textcolor{preprocessor}{#include "\hyperlink{_b_l_i_t_8h}{BLIT.h}"}
-00062 \textcolor{preprocessor}{#include "\hyperlink{_b_l_i_t_saw_8h}{BLITSaw.h}"}
-00063 
-00064 \textcolor{preprocessor}{#include "\hyperlink{_d_s_f_8h}{DSF.h}"}
-00065 
-00066 \textcolor{preprocessor}{#include "\hyperlink{_d_p_w_8h}{DPW.h}"}
-00067 \textcolor{preprocessor}{#include "\hyperlink{_d_p_w_saw_8h}{DPWSaw.h}"}
-00068 
-00069 \textcolor{preprocessor}{#include "\hyperlink{_e_p_t_r_saw_8h}{EPTRSaw.h}"}
-00070 
-00071 \textcolor{preprocessor}{#include "\hyperlink{_noise_8h}{Noise.h}"}
-00072 
-00073 \textcolor{preprocessor}{#include "\hyperlink{_d_c_blocker_8h}{DCBlocker.h}"}
-00074 
-00075 \textcolor{preprocessor}{#include "\hyperlink{_filter_8h}{Filter.h}"}
-00076 \textcolor{preprocessor}{#include "\hyperlink{_leaky_8h}{Leaky.h}"}
-00077 
-00078 \textcolor{preprocessor}{#endif}
+00043 \textcolor{preprocessor}{#include "\hyperlink{_generic_generator_8h}{GenericGenerator.h}"}
+00044 \textcolor{preprocessor}{#include "\hyperlink{_delay_8h}{Delay.h}"}
+00045 \textcolor{preprocessor}{#include "\hyperlink{_sleep_8h}{Sleep.h}"}
+00046 \textcolor{preprocessor}{#include "\hyperlink{_buffer_conversion_8h}{BufferConversion.h}"}
+00047 \textcolor{preprocessor}{#include "\hyperlink{_fourier_series_8h}{FourierSeries.h}"}
+00048 \textcolor{preprocessor}{#include "\hyperlink{_fourier_saw_8h}{FourierSaw.h}"}
+00049 \textcolor{preprocessor}{#include "\hyperlink{_fourier_square_8h}{FourierSquare.h}"}
+00050 \textcolor{preprocessor}{#include "\hyperlink{_fourier_triangle_8h}{FourierTriangle.h}"}
+00051 \textcolor{preprocessor}{#include "\hyperlink{_analog_saw_8h}{AnalogSaw.h}"}
+00052 \textcolor{preprocessor}{#include "\hyperlink{_analog_square_8h}{AnalogSquare.h}"}
+00053 \textcolor{preprocessor}{#include "\hyperlink{_analog_triangle_8h}{AnalogTriangle.h}"}
+00054 \textcolor{preprocessor}{#include "\hyperlink{_b_l_i_t_8h}{BLIT.h}"}
+00055 \textcolor{preprocessor}{#include "\hyperlink{_b_l_i_t_saw_8h}{BLITSaw.h}"}
+00056 \textcolor{preprocessor}{#include "\hyperlink{_d_s_f_8h}{DSF.h}"}
+00057 \textcolor{preprocessor}{#include "\hyperlink{_d_p_w_8h}{DPW.h}"}
+00058 \textcolor{preprocessor}{#include "\hyperlink{_d_p_w_saw_8h}{DPWSaw.h}"}
+00059 \textcolor{preprocessor}{#include "\hyperlink{_e_p_t_r_saw_8h}{EPTRSaw.h}"}
+00060 \textcolor{preprocessor}{#include "\hyperlink{_noise_8h}{Noise.h}"}
+00061 \textcolor{preprocessor}{#include "\hyperlink{_d_c_blocker_8h}{DCBlocker.h}"}
+00062 \textcolor{preprocessor}{#include "\hyperlink{_filter_8h}{Filter.h}"}
+00063 \textcolor{preprocessor}{#include "\hyperlink{_leaky_8h}{Leaky.h}"}
+00064 \textcolor{preprocessor}{#endif}
 \end{DoxyCode}

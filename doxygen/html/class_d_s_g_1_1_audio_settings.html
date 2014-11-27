@@ -109,6 +109,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a9c5640e47b6eaa4331a0e5053abb1314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cb4afd7b58e927300ff46fbeb71bec7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_audio_settings.html#a8cb4afd7b58e927300ff46fbeb71bec7">Nyquist</a> ()</td></tr>
 <tr class="separator:a8cb4afd7b58e927300ff46fbeb71bec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60a89fec20cf5fd19d90fec1768dbae"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_audio_settings.html#ad60a89fec20cf5fd19d90fec1768dbae">AddSampleRateListener</a> (<a class="el" href="class_d_s_g_1_1_signal_process.html">SignalProcess</a> *listener)</td></tr>
+<tr class="separator:ad60a89fec20cf5fd19d90fec1768dbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff952756264670e4f3ca3661b4f9144"><td class="memItemLeft" align="right" valign="top">static bool const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_audio_settings.html#a5ff952756264670e4f3ca3661b4f9144">IsSampleRateSet</a> ()</td></tr>
+<tr class="separator:a5ff952756264670e4f3ca3661b4f9144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -116,12 +120,76 @@ Static Protected Attributes</h2></td></tr>
 <tr class="separator:a56869b51933f102b197f54001c8a1d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3c7cbd15390d9bcbe39983c069390b5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespace_d_s_g.html#a4315a061386fa1014fda09b15d3a6973">DSG::DSGFrequency</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_audio_settings.html#af3c7cbd15390d9bcbe39983c069390b5">_nyquist</a></td></tr>
 <tr class="separator:af3c7cbd15390d9bcbe39983c069390b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e90df02910d9b84b0054457af5d5fa"><td class="memItemLeft" align="right" valign="top">static std::vector<br class="typebreak" />
+&lt; <a class="el" href="class_d_s_g_1_1_signal_process.html">DSG::SignalProcess</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_audio_settings.html#ab4e90df02910d9b84b0054457af5d5fa">_listeners</a></td></tr>
+<tr class="separator:ab4e90df02910d9b84b0054457af5d5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd6bfacf2a290d84b3e20487dbf71fa3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_s_g_1_1_audio_settings.html#abd6bfacf2a290d84b3e20487dbf71fa3">_set</a> =false</td></tr>
+<tr class="separator:abd6bfacf2a290d84b3e20487dbf71fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_d_s_g_1_1_audio_settings.html" title="DSG::AudioSettings - Global Storage For Audio Settings Such As Sample Rate. ">DSG::AudioSettings</a> - Global Storage For Audio Settings Such As Sample Rate. </p>
 
-<p>Definition at line <a class="el" href="_audio_settings_8h_source.html#l00030">30</a> of file <a class="el" href="_audio_settings_8h_source.html">AudioSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="_audio_settings_8h_source.html#l00032">32</a> of file <a class="el" href="_audio_settings_8h_source.html">AudioSettings.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad60a89fec20cf5fd19d90fec1768dbae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DSG::AudioSettings::AddSampleRateListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_d_s_g_1_1_signal_process.html">DSG::SignalProcess</a> *&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_audio_settings_8cpp_source.html#l00047">47</a> of file <a class="el" href="_audio_settings_8cpp_source.html">AudioSettings.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                                      {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_d_s_g_1_1_audio_settings.html#ab4e90df02910d9b84b0054457af5d5fa">_listeners</a>.push_back(listener);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="ttc" id="class_d_s_g_1_1_audio_settings_html_ab4e90df02910d9b84b0054457af5d5fa"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html#ab4e90df02910d9b84b0054457af5d5fa">DSG::AudioSettings::_listeners</a></div><div class="ttdeci">static std::vector&lt; DSG::SignalProcess * &gt; _listeners</div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8h_source.html#l00042">AudioSettings.h:42</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5ff952756264670e4f3ca3661b4f9144"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool const &amp; DSG::AudioSettings::IsSampleRateSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_audio_settings_8cpp_source.html#l00051">51</a> of file <a class="el" href="_audio_settings_8cpp_source.html">AudioSettings.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                             {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_d_s_g_1_1_audio_settings.html#abd6bfacf2a290d84b3e20487dbf71fa3">_set</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}<div class="ttc" id="class_d_s_g_1_1_audio_settings_html_abd6bfacf2a290d84b3e20487dbf71fa3"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html#abd6bfacf2a290d84b3e20487dbf71fa3">DSG::AudioSettings::_set</a></div><div class="ttdeci">static bool _set</div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8h_source.html#l00043">AudioSettings.h:43</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="a8cb4afd7b58e927300ff46fbeb71bec7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -143,10 +211,11 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_settings_8cpp_source.html#l00035">35</a> of file <a class="el" href="_audio_settings_8cpp_source.html">AudioSettings.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_d_s_g_1_1_audio_settings.html#af3c7cbd15390d9bcbe39983c069390b5">_nyquist</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}<div class="ttc" id="class_d_s_g_1_1_audio_settings_html_af3c7cbd15390d9bcbe39983c069390b5"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html#af3c7cbd15390d9bcbe39983c069390b5">DSG::AudioSettings::_nyquist</a></div><div class="ttdeci">static DSG::DSGFrequency _nyquist</div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8h_source.html#l00037">AudioSettings.h:37</a></div></div>
+<p>Definition at line <a class="el" href="_audio_settings_8cpp_source.html#l00044">44</a> of file <a class="el" href="_audio_settings_8cpp_source.html">AudioSettings.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_d_s_g_1_1_audio_settings.html#af3c7cbd15390d9bcbe39983c069390b5">_nyquist</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="ttc" id="class_d_s_g_1_1_audio_settings_html_af3c7cbd15390d9bcbe39983c069390b5"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html#af3c7cbd15390d9bcbe39983c069390b5">DSG::AudioSettings::_nyquist</a></div><div class="ttdeci">static DSG::DSGFrequency _nyquist</div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8h_source.html#l00041">AudioSettings.h:41</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -171,11 +240,11 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_settings_8cpp_source.html#l00027">27</a> of file <a class="el" href="_audio_settings_8cpp_source.html">AudioSettings.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                   {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_d_s_g_1_1_audio_settings.html#a56869b51933f102b197f54001c8a1d27">_sampleRate</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-<div class="ttc" id="class_d_s_g_1_1_audio_settings_html_a56869b51933f102b197f54001c8a1d27"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html#a56869b51933f102b197f54001c8a1d27">DSG::AudioSettings::_sampleRate</a></div><div class="ttdeci">static DSG::DSGFrequency _sampleRate</div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8h_source.html#l00036">AudioSettings.h:36</a></div></div>
+<p>Definition at line <a class="el" href="_audio_settings_8cpp_source.html#l00030">30</a> of file <a class="el" href="_audio_settings_8cpp_source.html">AudioSettings.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                                   {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_d_s_g_1_1_audio_settings.html#a56869b51933f102b197f54001c8a1d27">_sampleRate</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="ttc" id="class_d_s_g_1_1_audio_settings_html_a56869b51933f102b197f54001c8a1d27"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html#a56869b51933f102b197f54001c8a1d27">DSG::AudioSettings::_sampleRate</a></div><div class="ttdeci">static DSG::DSGFrequency _sampleRate</div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8h_source.html#l00040">AudioSettings.h:40</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -201,18 +270,48 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_settings_8cpp_source.html#l00030">30</a> of file <a class="el" href="_audio_settings_8cpp_source.html">AudioSettings.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                                                               {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_d_s_g_1_1_audio_settings.html#a56869b51933f102b197f54001c8a1d27">_sampleRate</a> = value;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_d_s_g_1_1_audio_settings.html#af3c7cbd15390d9bcbe39983c069390b5">_nyquist</a> = <a class="code" href="class_d_s_g_1_1_audio_settings.html#a56869b51933f102b197f54001c8a1d27">_sampleRate</a>*0.5;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_d_s_g_1_1_audio_settings.html#a56869b51933f102b197f54001c8a1d27">_sampleRate</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="ttc" id="class_d_s_g_1_1_audio_settings_html_a56869b51933f102b197f54001c8a1d27"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html#a56869b51933f102b197f54001c8a1d27">DSG::AudioSettings::_sampleRate</a></div><div class="ttdeci">static DSG::DSGFrequency _sampleRate</div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8h_source.html#l00036">AudioSettings.h:36</a></div></div>
-<div class="ttc" id="class_d_s_g_1_1_audio_settings_html_af3c7cbd15390d9bcbe39983c069390b5"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html#af3c7cbd15390d9bcbe39983c069390b5">DSG::AudioSettings::_nyquist</a></div><div class="ttdeci">static DSG::DSGFrequency _nyquist</div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8h_source.html#l00037">AudioSettings.h:37</a></div></div>
+<p>Definition at line <a class="el" href="_audio_settings_8cpp_source.html#l00033">33</a> of file <a class="el" href="_audio_settings_8cpp_source.html">AudioSettings.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                                                               {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="class_d_s_g_1_1_audio_settings.html#abd6bfacf2a290d84b3e20487dbf71fa3">_set</a>) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="class_d_s_g_1_1_audio_settings.html#abd6bfacf2a290d84b3e20487dbf71fa3">_set</a>=<span class="keyword">true</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_d_s_g_1_1_audio_settings.html#a56869b51933f102b197f54001c8a1d27">_sampleRate</a> = value;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_d_s_g_1_1_audio_settings.html#af3c7cbd15390d9bcbe39983c069390b5">_nyquist</a> = <a class="code" href="class_d_s_g_1_1_audio_settings.html#a56869b51933f102b197f54001c8a1d27">_sampleRate</a>*0.5;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i:<a class="code" href="class_d_s_g_1_1_audio_settings.html#ab4e90df02910d9b84b0054457af5d5fa">_listeners</a>) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        i-&gt;SampleRateChanged(<a class="code" href="class_d_s_g_1_1_audio_settings.html#a56869b51933f102b197f54001c8a1d27">_sampleRate</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_d_s_g_1_1_audio_settings.html#a56869b51933f102b197f54001c8a1d27">_sampleRate</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="ttc" id="class_d_s_g_1_1_audio_settings_html_abd6bfacf2a290d84b3e20487dbf71fa3"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html#abd6bfacf2a290d84b3e20487dbf71fa3">DSG::AudioSettings::_set</a></div><div class="ttdeci">static bool _set</div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8h_source.html#l00043">AudioSettings.h:43</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_audio_settings_html_a56869b51933f102b197f54001c8a1d27"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html#a56869b51933f102b197f54001c8a1d27">DSG::AudioSettings::_sampleRate</a></div><div class="ttdeci">static DSG::DSGFrequency _sampleRate</div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8h_source.html#l00040">AudioSettings.h:40</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_audio_settings_html_ab4e90df02910d9b84b0054457af5d5fa"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html#ab4e90df02910d9b84b0054457af5d5fa">DSG::AudioSettings::_listeners</a></div><div class="ttdeci">static std::vector&lt; DSG::SignalProcess * &gt; _listeners</div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8h_source.html#l00042">AudioSettings.h:42</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_audio_settings_html_af3c7cbd15390d9bcbe39983c069390b5"><div class="ttname"><a href="class_d_s_g_1_1_audio_settings.html#af3c7cbd15390d9bcbe39983c069390b5">DSG::AudioSettings::_nyquist</a></div><div class="ttdeci">static DSG::DSGFrequency _nyquist</div><div class="ttdef"><b>Definition:</b> <a href="_audio_settings_8h_source.html#l00041">AudioSettings.h:41</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ab4e90df02910d9b84b0054457af5d5fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_d_s_g_1_1_signal_process.html">DSG::SignalProcess</a> * &gt; DSG::AudioSettings::_listeners</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_audio_settings_8h_source.html#l00042">42</a> of file <a class="el" href="_audio_settings_8h_source.html">AudioSettings.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af3c7cbd15390d9bcbe39983c069390b5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -231,7 +330,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_settings_8h_source.html#l00037">37</a> of file <a class="el" href="_audio_settings_8h_source.html">AudioSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="_audio_settings_8h_source.html#l00041">41</a> of file <a class="el" href="_audio_settings_8h_source.html">AudioSettings.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +352,29 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_audio_settings_8h_source.html#l00036">36</a> of file <a class="el" href="_audio_settings_8h_source.html">AudioSettings.h</a>.</p>
+<p>Definition at line <a class="el" href="_audio_settings_8h_source.html#l00040">40</a> of file <a class="el" href="_audio_settings_8h_source.html">AudioSettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abd6bfacf2a290d84b3e20487dbf71fa3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DSG::AudioSettings::_set =false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_audio_settings_8h_source.html#l00043">43</a> of file <a class="el" href="_audio_settings_8h_source.html">AudioSettings.h</a>.</p>
 
 </div>
 </div>
@@ -264,7 +385,7 @@ Static Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 24 2014 22:55:27 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 26 2014 23:30:40 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -119,22 +119,22 @@ Definition at line \hyperlink{_e_p_t_r_saw_8h_source_l00045}{45} of file \hyperl
 00047 \textcolor{preprocessor}{#warning Untested For Aliasing DSG::EPTR::EPTRSaw::Perform()}
 00048 \textcolor{preprocessor}{#endif}
 00049             \textcolor{comment}{//generate trivial saw}
-00050             \hyperlink{class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_a38d89a4557f487e0e447e1da6acf7e5f}{\_register} = \hyperlink{class_d_s_g_1_1_signal_generator_a1e23eb94e204b11db75fca030b951065}{\_phasor};
+00050             \hyperlink{class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_a38d89a4557f487e0e447e1da6acf7e5f}{\_register} = \hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\_phasor};
 00051             \hyperlink{class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_a38d89a4557f487e0e447e1da6acf7e5f}{\_register}+=0.5;
 00052             \textcolor{keywordflow}{if} (\hyperlink{class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_a38d89a4557f487e0e447e1da6acf7e5f}{\_register}>1.0) \{
 00053                 --\hyperlink{class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_a38d89a4557f487e0e447e1da6acf7e5f}{\_register};
 00054             \}
 00055             \hyperlink{class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_a38d89a4557f487e0e447e1da6acf7e5f}{\_register}-=0.5;
 00056             \hyperlink{class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_a38d89a4557f487e0e447e1da6acf7e5f}{\_register}*=2.0;
-00057             \textcolor{keywordflow}{if} (\hyperlink{class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_a38d89a4557f487e0e447e1da6acf7e5f}{\_register} > 1.0-\hyperlink{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{\_dt}) \{
+00057             \textcolor{keywordflow}{if} (\hyperlink{class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_a38d89a4557f487e0e447e1da6acf7e5f}{\_register} > 1.0-\hyperlink{class_d_s_g_1_1_phasor_afaaa3559b6cd84535c10ff896148c6bd}{\_dt}) \{
 00058                 \textcolor{comment}{//transition region detected}
 00059                 \textcolor{comment}{//apply eptr correction}
-00060                 signal = \hyperlink{class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_a38d89a4557f487e0e447e1da6acf7e5f}{\_register} - (\hyperlink{class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_a38d89a4557f487e0e447e1da6acf7e5f}{\_register}/\hyperlink{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{\_dt}) + (1.0/
-      \hyperlink{class_d_s_g_1_1_signal_generator_a01c046bb52bbb74afd789fdce7978f65}{\_dt}) -1;
+00060                 signal = \hyperlink{class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_a38d89a4557f487e0e447e1da6acf7e5f}{\_register} - (\hyperlink{class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_a38d89a4557f487e0e447e1da6acf7e5f}{\_register}/\hyperlink{class_d_s_g_1_1_phasor_afaaa3559b6cd84535c10ff896148c6bd}{\_dt}) + (1.0/
+      \hyperlink{class_d_s_g_1_1_phasor_afaaa3559b6cd84535c10ff896148c6bd}{\_dt}) -1;
 00061             \}\textcolor{keywordflow}{else}\{
 00062                 signal = \hyperlink{class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_a38d89a4557f487e0e447e1da6acf7e5f}{\_register};
 00063             \}
-00064             \hyperlink{class_d_s_g_1_1_signal_generator_a4c034c5b9ef3dc7548839288355643d5}{step}();\textcolor{comment}{//avance phase}
+00064             \hyperlink{class_d_s_g_1_1_phasor_a6a088b29e506fb5e99d73f4f0160c583}{step}();\textcolor{comment}{//avance phase}
 00065             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
 00066         \}
 \end{DoxyCode}

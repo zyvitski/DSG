@@ -2,6 +2,7 @@
 \label{_audio_settings_8h}\index{Audio\+Settings.\+h@{Audio\+Settings.\+h}}
 }
 {\ttfamily \#include \char`\"{}D\+S\+G\+Types.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$vector$>$}\\*
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -12,6 +13,11 @@ class \hyperlink{class_d_s_g_1_1_audio_settings}{D\+S\+G\+::\+Audio\+Settings}
 \item 
  \hyperlink{namespace_d_s_g}{D\+S\+G}
 \begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g}{D\+S\+G} -\/ A Collection of tools for Digital Signal Generation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_audio_settings_8h_ad9d89453f9b7b69bd9beb58946863dd4}{Sample\+Rate\+Default}~44100
+\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -20,4 +26,18 @@ class \hyperlink{class_d_s_g_1_1_audio_settings}{D\+S\+G\+::\+Audio\+Settings}
 \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} const \& \hyperlink{namespace_d_s_g_a66a464f016da1a099abea61a27a84d18}{D\+S\+G\+::\+Sample\+Rate} (\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} const \&value)
 \begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{D\+S\+G\+::\+Sample\+Rate} -\/ Set Global Sample Rate. \end{DoxyCompactList}\item 
 \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} \hyperlink{namespace_d_s_g_acb23c320b74d21f203081a25e1b5d134}{D\+S\+G\+::\+Nyquist} ()
-\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_acb23c320b74d21f203081a25e1b5d134}{D\+S\+G\+::\+Nyquist()} -\/ Pre-\/\+Calculated Nyquist Limit. Use instead of calculating each time needed. This value will be updated whenever the sample rate changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_acb23c320b74d21f203081a25e1b5d134}{D\+S\+G\+::\+Nyquist()} -\/ Pre-\/\+Calculated Nyquist Limit. Use instead of calculating each time needed. This value will be updated whenever the sample rate changes. \end{DoxyCompactList}\item 
+bool \hyperlink{namespace_d_s_g_a66af6119635fe556dc5f840bf78dec56}{D\+S\+G\+::\+Add\+Sample\+Rate\+Listener} (\hyperlink{class_d_s_g_1_1_signal_process}{D\+S\+G\+::\+Signal\+Process} $\ast$listner)
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_a66af6119635fe556dc5f840bf78dec56}{D\+S\+G\+::\+Add\+Sample\+Rate\+Listener()} -\/ Allows Generators to be notified if the sample rate changes. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_d_s_g_a0749755eb0ed01894adc60fab768dfa5}{D\+S\+G\+::\+Verify\+Sample\+Rate\+Set} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespace_d_s_g_a0749755eb0ed01894adc60fab768dfa5}{D\+S\+G\+::\+Verify\+Sample\+Rate\+Set()} -\/ Allows a Generator to ask if a valid sample rate has been set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_audio_settings_8h_ad9d89453f9b7b69bd9beb58946863dd4}{\index{Audio\+Settings.\+h@{Audio\+Settings.\+h}!Sample\+Rate\+Default@{Sample\+Rate\+Default}}
+\index{Sample\+Rate\+Default@{Sample\+Rate\+Default}!Audio\+Settings.\+h@{Audio\+Settings.\+h}}
+\subsubsection[{Sample\+Rate\+Default}]{\setlength{\rightskip}{0pt plus 5cm}\#define Sample\+Rate\+Default~44100}}\label{_audio_settings_8h_ad9d89453f9b7b69bd9beb58946863dd4}
+
+
+Definition at line \hyperlink{_audio_settings_8h_source_l00046}{46} of file \hyperlink{_audio_settings_8h_source}{Audio\+Settings.\+h}.
+

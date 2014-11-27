@@ -7,6 +7,7 @@ var searchData=
   ['eptr',['EPTR',['../namespace_d_s_g_1_1_e_p_t_r.html',1,'DSG']]],
   ['filter',['Filter',['../namespace_d_s_g_1_1_filter.html',1,'DSG']]],
   ['fourier',['Fourier',['../namespace_d_s_g_1_1_fourier.html',1,'DSG']]],
+  ['midi',['MIDI',['../namespace_d_s_g_1_1_m_i_d_i.html',1,'DSG']]],
   ['noise',['Noise',['../namespace_d_s_g_1_1_noise.html',1,'DSG']]],
   ['window',['Window',['../namespace_d_s_g_1_1_window.html',1,'DSG']]]
 ];

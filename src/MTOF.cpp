@@ -23,8 +23,8 @@
  */
 #include "MTOF.h"
 double DSG::MIDI::MTOF(unsigned char const& MIDI_Number){
-    return 440.0 *pow(2.0, (MIDI_Number-MTOF_FTOM_Center_Note)/NOTES_PER_OCTAVE);
+    return 440.0 *pow(2.0, (MIDI_Number-69.0)/12.0);
 }
 unsigned char DSG::MIDI::FTOM(double const& Frequency){
-    return((log2((Frequency/440.0)))*NOTES_PER_OCTAVE)+MTOF_FTOM_Center_Note;
+    return((log2((Frequency/440.0)))*12.0)+69.0;
 }

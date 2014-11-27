@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 638.297872
+%%BoundingBox: 0 0 500 425.531915
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,13 +19,13 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 0.783333 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 1.175000 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
 /rows 15 def
-/cols 2 def
+/cols 3 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
 
@@ -175,6 +175,7 @@ boxfont setfont
 1 boundaspect scale
 (DSG::SignalGenerator) cw
 (DSG::SignalProcess) cw
+(DSG::Phasor) cw
 (DSG::Analog::AnalogSaw) cw
 (DSG::Analog::AnalogSquare) cw
 (DSG::Analog::AnalogTriangle) cw
@@ -199,56 +200,61 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (DSG::SignalGenerator) 0.000000 13.000000 box
+ (DSG::SignalGenerator) 0.500000 13.000000 box
  (DSG::SignalProcess) 0.000000 14.000000 box
- (DSG::Analog::AnalogSaw) 1.000000 12.000000 box
- (DSG::Analog::AnalogSquare) 1.000000 11.000000 box
- (DSG::Analog::AnalogTriangle) 1.000000 10.000000 box
- (DSG::BLIT::Blit) 1.000000 9.000000 box
-1.000000 9.000000 mark
- (DSG::BLIT::BlitSquare) 1.000000 8.000000 box
- (DSG::BLIT::BlitTriangle) 1.000000 7.000000 box
- (DSG::DPW::DPWSaw< order >) 1.000000 6.000000 box
- (DSG::EPTR::EPTRSaw) 1.000000 5.000000 box
- (DSG::Fourier::FourierSaw) 1.000000 4.000000 box
- (DSG::Fourier::FourierSeriesGenerator) 1.000000 3.000000 box
- (DSG::Fourier::FourierSquare) 1.000000 2.000000 box
- (DSG::Fourier::FourierTriangle) 1.000000 1.000000 box
- (DSG::GenericGenerator) 1.000000 0.000000 box
+ (DSG::Phasor) 1.000000 14.000000 box
+ (DSG::Analog::AnalogSaw) 1.500000 12.000000 box
+ (DSG::Analog::AnalogSquare) 1.500000 11.000000 box
+ (DSG::Analog::AnalogTriangle) 1.500000 10.000000 box
+ (DSG::BLIT::Blit) 1.500000 9.000000 box
+1.500000 9.000000 mark
+ (DSG::BLIT::BlitSquare) 1.500000 8.000000 box
+ (DSG::BLIT::BlitTriangle) 1.500000 7.000000 box
+ (DSG::DPW::DPWSaw< order >) 1.500000 6.000000 box
+ (DSG::EPTR::EPTRSaw) 1.500000 5.000000 box
+ (DSG::Fourier::FourierSaw) 1.500000 4.000000 box
+ (DSG::Fourier::FourierSeriesGenerator) 1.500000 3.000000 box
+ (DSG::Fourier::FourierSquare) 1.500000 2.000000 box
+ (DSG::Fourier::FourierTriangle) 1.500000 1.000000 box
+ (DSG::GenericGenerator) 1.500000 0.000000 box
 
 % ----- relations -----
 
 solid
-0 0.000000 13.000000 out
+0 0.500000 13.000000 out
+solid
+0.000000 1.000000 14.000000 conn
 solid
 1 0.000000 14.000000 in
 solid
-1 0.000000 12.250000 out
+1 1.000000 14.000000 in
 solid
-0 0.000000 12.500000 hedge
+1 0.500000 12.250000 out
 solid
-0 0.000000 11.500000 hedge
+0 0.500000 12.500000 hedge
 solid
-0 0.000000 10.500000 hedge
+0 0.500000 11.500000 hedge
 solid
-0 0.000000 9.500000 hedge
+0 0.500000 10.500000 hedge
 solid
-0 0.000000 8.500000 hedge
+0 0.500000 9.500000 hedge
 solid
-0 0.000000 7.500000 hedge
+0 0.500000 8.500000 hedge
 solid
-0 0.000000 6.500000 hedge
+0 0.500000 7.500000 hedge
 solid
-0 0.000000 5.500000 hedge
+0 0.500000 6.500000 hedge
 solid
-0 0.000000 4.500000 hedge
+0 0.500000 5.500000 hedge
 solid
-0 0.000000 3.500000 hedge
+0 0.500000 4.500000 hedge
 solid
-0 0.000000 2.500000 hedge
+0 0.500000 3.500000 hedge
 solid
-0 0.000000 1.500000 hedge
+0 0.500000 2.500000 hedge
 solid
-0 0.000000 0.500000 hedge
+0 0.500000 1.500000 hedge
 solid
-0.000000 13.000000 0.500000 vedge
+0 0.500000 0.500000 hedge
+solid
+0.500000 13.000000 0.500000 vedge
