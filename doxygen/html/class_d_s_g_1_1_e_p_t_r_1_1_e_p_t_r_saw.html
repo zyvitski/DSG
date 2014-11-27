@@ -181,9 +181,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html" title="DSG::EPTR::EPTRSaw-Sawtooth Wave Generator Using The Efficienct Polynomial Transfer Region Algorithm...">DSG::EPTR::EPTRSaw</a>-Sawtooth Wave Generator Using The Efficienct Polynomial Transfer Region Algorithm. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Test and Possibly Re-Write <a class="el" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html" title="DSG::EPTR::EPTRSaw-Sawtooth Wave Generator Using The Efficienct Polynomial Transfer Region Algorithm...">DSG::EPTR::EPTRSaw</a> algorithm </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Test and Possibly Re-Write <a class="el" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html" title="DSG::EPTR::EPTRSaw-Sawtooth Wave Generator Using The Efficienct Polynomial Transfer Region Algorithm...">DSG::EPTR::EPTRSaw</a> algorithm </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000004">Bug:</a></b></dt><dd>Algorithm is not performing in a band limited manor </dd></dl>
 
-<p>Definition at line <a class="el" href="_e_p_t_r_saw_8h_source.html#l00035">35</a> of file <a class="el" href="_e_p_t_r_saw_8h_source.html">EPTRSaw.h</a>.</p>
+<p>Definition at line <a class="el" href="_e_p_t_r_saw_8h_source.html#l00036">36</a> of file <a class="el" href="_e_p_t_r_saw_8h_source.html">EPTRSaw.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a65c2009548fb7f946d48ea794c830501"></a>
 <div class="memitem">
@@ -284,31 +285,31 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_d_s_g_1_1_signal_generator.html#a46fe75a81a242e191c5049d33ddf4155">DSG::SignalGenerator</a>.</p>
 
-<p>Definition at line <a class="el" href="_e_p_t_r_saw_8h_source.html#l00045">45</a> of file <a class="el" href="_e_p_t_r_saw_8h_source.html">EPTRSaw.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                               {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#ifdef __APPLE__</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#warning Untested For Aliasing DSG::EPTR::EPTRSaw::Perform()</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="comment">//generate trivial saw</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a> = <a class="code" href="class_d_s_g_1_1_phasor.html#a82c148d71128cfc518fc8e7e131c3a38">_phasor</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a>+=0.5;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a>&gt;1.0) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                --<a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a>-=0.5;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a>*=2.0;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a> &gt; 1.0-<a class="code" href="class_d_s_g_1_1_phasor.html#afaaa3559b6cd84535c10ff896148c6bd">_dt</a>) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="comment">//transition region detected</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="comment">//apply eptr correction</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                signal = <a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a> - (<a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a>/<a class="code" href="class_d_s_g_1_1_phasor.html#afaaa3559b6cd84535c10ff896148c6bd">_dt</a>) + (1.0/<a class="code" href="class_d_s_g_1_1_phasor.html#afaaa3559b6cd84535c10ff896148c6bd">_dt</a>) -1;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }<span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                signal = <a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="class_d_s_g_1_1_phasor.html#a6a088b29e506fb5e99d73f4f0160c583">step</a>();<span class="comment">//avance phase</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<p>Definition at line <a class="el" href="_e_p_t_r_saw_8h_source.html#l00046">46</a> of file <a class="el" href="_e_p_t_r_saw_8h_source.html">EPTRSaw.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                               {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#ifdef __APPLE__</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#warning Untested For Aliasing DSG::EPTR::EPTRSaw::Perform()</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="comment">//generate trivial saw</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a> = <a class="code" href="class_d_s_g_1_1_phasor.html#a82c148d71128cfc518fc8e7e131c3a38">_phasor</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a>+=0.5;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a>&gt;1.0) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                --<a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a>-=0.5;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a>*=2.0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a> &gt; 1.0-<a class="code" href="class_d_s_g_1_1_phasor.html#afaaa3559b6cd84535c10ff896148c6bd">_dt</a>) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="comment">//transition region detected</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="comment">//apply eptr correction</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                signal = <a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a> - (<a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a>/<a class="code" href="class_d_s_g_1_1_phasor.html#afaaa3559b6cd84535c10ff896148c6bd">_dt</a>) + (1.0/<a class="code" href="class_d_s_g_1_1_phasor.html#afaaa3559b6cd84535c10ff896148c6bd">_dt</a>) -1;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                signal = <a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">_register</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="class_d_s_g_1_1_phasor.html#a6a088b29e506fb5e99d73f4f0160c583">step</a>();<span class="comment">//avance phase</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
 <div class="ttc" id="class_d_s_g_1_1_phasor_html_afaaa3559b6cd84535c10ff896148c6bd"><div class="ttname"><a href="class_d_s_g_1_1_phasor.html#afaaa3559b6cd84535c10ff896148c6bd">DSG::Phasor::_dt</a></div><div class="ttdeci">DSG::DSGPhase _dt</div><div class="ttdef"><b>Definition:</b> <a href="_phasor_8h_source.html#l00046">Phasor.h:46</a></div></div>
-<div class="ttc" id="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_html_a38d89a4557f487e0e447e1da6acf7e5f"><div class="ttname"><a href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">DSG::EPTR::EPTRSaw::_register</a></div><div class="ttdeci">DSG::DSGSample _register</div><div class="ttdef"><b>Definition:</b> <a href="_e_p_t_r_saw_8h_source.html#l00043">EPTRSaw.h:43</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_html_a38d89a4557f487e0e447e1da6acf7e5f"><div class="ttname"><a href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#a38d89a4557f487e0e447e1da6acf7e5f">DSG::EPTR::EPTRSaw::_register</a></div><div class="ttdeci">DSG::DSGSample _register</div><div class="ttdef"><b>Definition:</b> <a href="_e_p_t_r_saw_8h_source.html#l00044">EPTRSaw.h:44</a></div></div>
 <div class="ttc" id="class_d_s_g_1_1_phasor_html_a82c148d71128cfc518fc8e7e131c3a38"><div class="ttname"><a href="class_d_s_g_1_1_phasor.html#a82c148d71128cfc518fc8e7e131c3a38">DSG::Phasor::_phasor</a></div><div class="ttdeci">DSG::DSGPhase _phasor</div><div class="ttdef"><b>Definition:</b> <a href="_phasor_8h_source.html#l00048">Phasor.h:48</a></div></div>
 <div class="ttc" id="class_d_s_g_1_1_phasor_html_a6a088b29e506fb5e99d73f4f0160c583"><div class="ttname"><a href="class_d_s_g_1_1_phasor.html#a6a088b29e506fb5e99d73f4f0160c583">DSG::Phasor::step</a></div><div class="ttdeci">void step()</div><div class="ttdef"><b>Definition:</b> <a href="_phasor_8h_source.html#l00067">Phasor.h:67</a></div></div>
 </div><!-- fragment -->
@@ -338,17 +339,17 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_d_s_g_1_1_signal_generator.html#ab050f80e84e6c8b3e354b56930d6a02b">DSG::SignalGenerator</a>.</p>
 
-<p>Definition at line <a class="el" href="_e_p_t_r_saw_8h_source.html#l00067">67</a> of file <a class="el" href="_e_p_t_r_saw_8h_source.html">EPTRSaw.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                                {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            signal.<a class="code" href="class_d_s_g_1_1_ring_buffer.html#ab23c8003d2857809a816068eeb209d60">Flush</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">while</span> (!signal.<a class="code" href="class_d_s_g_1_1_ring_buffer.html#a53ddb04ffcbb5470a8d2b0a3c65b70cb">Full</a>()) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#aa253efa41cca56f334ccb0fd32c2cd56">Perform</a>(<a class="code" href="class_d_s_g_1_1_signal_generator.html#a28a9b47a1aa0783029f11a19ba0363f2">_storage</a>)) {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    <span class="keywordflow">if</span>(signal.<a class="code" href="class_d_s_g_1_1_ring_buffer.html#aa5dd2caa0a270173251faee40a43d692">Write</a>(<a class="code" href="class_d_s_g_1_1_signal_generator.html#a28a9b47a1aa0783029f11a19ba0363f2">_storage</a>)){</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    }<span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                }<span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            }<span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
-<div class="ttc" id="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_html_aa253efa41cca56f334ccb0fd32c2cd56"><div class="ttname"><a href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#aa253efa41cca56f334ccb0fd32c2cd56">DSG::EPTR::EPTRSaw::Perform</a></div><div class="ttdeci">virtual bool Perform(DSG::DSGSample &amp;signal)</div><div class="ttdef"><b>Definition:</b> <a href="_e_p_t_r_saw_8h_source.html#l00045">EPTRSaw.h:45</a></div></div>
+<p>Definition at line <a class="el" href="_e_p_t_r_saw_8h_source.html#l00068">68</a> of file <a class="el" href="_e_p_t_r_saw_8h_source.html">EPTRSaw.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                                {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            signal.<a class="code" href="class_d_s_g_1_1_ring_buffer.html#ab23c8003d2857809a816068eeb209d60">Flush</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">while</span> (!signal.<a class="code" href="class_d_s_g_1_1_ring_buffer.html#a53ddb04ffcbb5470a8d2b0a3c65b70cb">Full</a>()) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#aa253efa41cca56f334ccb0fd32c2cd56">Perform</a>(<a class="code" href="class_d_s_g_1_1_signal_generator.html#a28a9b47a1aa0783029f11a19ba0363f2">_storage</a>)) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    <span class="keywordflow">if</span>(signal.<a class="code" href="class_d_s_g_1_1_ring_buffer.html#aa5dd2caa0a270173251faee40a43d692">Write</a>(<a class="code" href="class_d_s_g_1_1_signal_generator.html#a28a9b47a1aa0783029f11a19ba0363f2">_storage</a>)){</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    }<span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                }<span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            }<span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="ttc" id="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw_html_aa253efa41cca56f334ccb0fd32c2cd56"><div class="ttname"><a href="class_d_s_g_1_1_e_p_t_r_1_1_e_p_t_r_saw.html#aa253efa41cca56f334ccb0fd32c2cd56">DSG::EPTR::EPTRSaw::Perform</a></div><div class="ttdeci">virtual bool Perform(DSG::DSGSample &amp;signal)</div><div class="ttdef"><b>Definition:</b> <a href="_e_p_t_r_saw_8h_source.html#l00046">EPTRSaw.h:46</a></div></div>
 <div class="ttc" id="class_d_s_g_1_1_ring_buffer_html_ab23c8003d2857809a816068eeb209d60"><div class="ttname"><a href="class_d_s_g_1_1_ring_buffer.html#ab23c8003d2857809a816068eeb209d60">DSG::RingBuffer::Flush</a></div><div class="ttdeci">void Flush()</div><div class="ttdef"><b>Definition:</b> <a href="_ring_buffer_8h_source.html#l00083">RingBuffer.h:83</a></div></div>
 <div class="ttc" id="class_d_s_g_1_1_ring_buffer_html_aa5dd2caa0a270173251faee40a43d692"><div class="ttname"><a href="class_d_s_g_1_1_ring_buffer.html#aa5dd2caa0a270173251faee40a43d692">DSG::RingBuffer::Write</a></div><div class="ttdeci">bool Write(const DSGSample &amp;elem)</div><div class="ttdef"><b>Definition:</b> <a href="_ring_buffer_8h_source.html#l00088">RingBuffer.h:88</a></div></div>
 <div class="ttc" id="class_d_s_g_1_1_signal_generator_html_a28a9b47a1aa0783029f11a19ba0363f2"><div class="ttname"><a href="class_d_s_g_1_1_signal_generator.html#a28a9b47a1aa0783029f11a19ba0363f2">DSG::SignalGenerator::_storage</a></div><div class="ttdeci">DSG::DSGSample _storage</div><div class="ttdef"><b>Definition:</b> <a href="_signal_generator_8h_source.html#l00041">SignalGenerator.h:41</a></div></div>
@@ -375,7 +376,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_e_p_t_r_saw_8h_source.html#l00043">43</a> of file <a class="el" href="_e_p_t_r_saw_8h_source.html">EPTRSaw.h</a>.</p>
+<p>Definition at line <a class="el" href="_e_p_t_r_saw_8h_source.html#l00044">44</a> of file <a class="el" href="_e_p_t_r_saw_8h_source.html">EPTRSaw.h</a>.</p>
 
 </div>
 </div>
@@ -386,7 +387,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 26 2014 23:30:41 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 26 2014 23:56:31 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

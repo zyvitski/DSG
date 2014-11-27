@@ -118,8 +118,9 @@ Protected Attributes</h2></td></tr>
 class DSG::DPW::DPW_Differentiator&lt; 4 &gt;</h3>
 
 <p><a class="el" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator.html" title="DSG::DPW::DPW_Differentiator - Class Performing Differentiation for the DPW Algorithm. ">DSG::DPW::DPW_Differentiator</a> - Class Performing Differentiation for the 4th order <a class="el" href="namespace_d_s_g_1_1_d_p_w.html" title="DSG::DPW - Generators using the DPW method. ">DPW</a> Algorithm. </p>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>Causes major clipping </dd></dl>
 
-<p>Definition at line <a class="el" href="_d_p_w_8h_source.html#l00124">124</a> of file <a class="el" href="_d_p_w_8h_source.html">DPW.h</a>.</p>
+<p>Definition at line <a class="el" href="_d_p_w_8h_source.html#l00126">126</a> of file <a class="el" href="_d_p_w_8h_source.html">DPW.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aa86877ca4c21091864246dd825575f7c"></a>
 <div class="memitem">
@@ -153,19 +154,19 @@ class DSG::DPW::DPW_Differentiator&lt; 4 &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_d_p_w_8h_source.html#l00126">126</a> of file <a class="el" href="_d_p_w_8h_source.html">DPW.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                                                                             {</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#a5fd7e2dc19c470cacb8e23942c1afdbb">output</a>  = (signal - <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#aacd153f49201708823a05aad2506ede9">_delay</a>[0]);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#a5fd7e2dc19c470cacb8e23942c1afdbb">output</a> -= (<a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#aacd153f49201708823a05aad2506ede9">_delay</a>[0] - <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#aacd153f49201708823a05aad2506ede9">_delay</a>[1]);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#a5fd7e2dc19c470cacb8e23942c1afdbb">output</a> -= (<a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#aacd153f49201708823a05aad2506ede9">_delay</a>[1] - <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#aacd153f49201708823a05aad2506ede9">_delay</a>[2]);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#a5fd7e2dc19c470cacb8e23942c1afdbb">output</a> /= 144*DSG::Pow&lt;3&gt;(dt);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#aacd153f49201708823a05aad2506ede9">_delay</a>[2]=_delay[1];</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                _delay[1]=_delay[0];</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                _delay[0]=signal;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#a5fd7e2dc19c470cacb8e23942c1afdbb">output</a>;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            }</div>
-<div class="ttc" id="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_html_a5fd7e2dc19c470cacb8e23942c1afdbb"><div class="ttname"><a href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#a5fd7e2dc19c470cacb8e23942c1afdbb">DSG::DPW::DPW_Differentiator&lt; 4 &gt;::output</a></div><div class="ttdeci">DSG::DSGSample output</div><div class="ttdef"><b>Definition:</b> <a href="_d_p_w_8h_source.html#l00137">DPW.h:137</a></div></div>
-<div class="ttc" id="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_html_aacd153f49201708823a05aad2506ede9"><div class="ttname"><a href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#aacd153f49201708823a05aad2506ede9">DSG::DPW::DPW_Differentiator&lt; 4 &gt;::_delay</a></div><div class="ttdeci">DSG::DSGSample _delay[3]</div><div class="ttdef"><b>Definition:</b> <a href="_d_p_w_8h_source.html#l00138">DPW.h:138</a></div></div>
+<p>Definition at line <a class="el" href="_d_p_w_8h_source.html#l00128">128</a> of file <a class="el" href="_d_p_w_8h_source.html">DPW.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                                                                                             {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#a5fd7e2dc19c470cacb8e23942c1afdbb">output</a>  = (signal - <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#aacd153f49201708823a05aad2506ede9">_delay</a>[0]);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#a5fd7e2dc19c470cacb8e23942c1afdbb">output</a> -= (<a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#aacd153f49201708823a05aad2506ede9">_delay</a>[0] - <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#aacd153f49201708823a05aad2506ede9">_delay</a>[1]);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#a5fd7e2dc19c470cacb8e23942c1afdbb">output</a> -= (<a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#aacd153f49201708823a05aad2506ede9">_delay</a>[1] - <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#aacd153f49201708823a05aad2506ede9">_delay</a>[2]);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#a5fd7e2dc19c470cacb8e23942c1afdbb">output</a> /= 144*DSG::Pow&lt;3&gt;(dt);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#aacd153f49201708823a05aad2506ede9">_delay</a>[2]=_delay[1];</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                _delay[1]=_delay[0];</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                _delay[0]=signal;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#a5fd7e2dc19c470cacb8e23942c1afdbb">output</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            }</div>
+<div class="ttc" id="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_html_a5fd7e2dc19c470cacb8e23942c1afdbb"><div class="ttname"><a href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#a5fd7e2dc19c470cacb8e23942c1afdbb">DSG::DPW::DPW_Differentiator&lt; 4 &gt;::output</a></div><div class="ttdeci">DSG::DSGSample output</div><div class="ttdef"><b>Definition:</b> <a href="_d_p_w_8h_source.html#l00139">DPW.h:139</a></div></div>
+<div class="ttc" id="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4_html_aacd153f49201708823a05aad2506ede9"><div class="ttname"><a href="class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_014_01_4.html#aacd153f49201708823a05aad2506ede9">DSG::DPW::DPW_Differentiator&lt; 4 &gt;::_delay</a></div><div class="ttdeci">DSG::DSGSample _delay[3]</div><div class="ttdef"><b>Definition:</b> <a href="_d_p_w_8h_source.html#l00140">DPW.h:140</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -188,7 +189,7 @@ class DSG::DPW::DPW_Differentiator&lt; 4 &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_d_p_w_8h_source.html#l00138">138</a> of file <a class="el" href="_d_p_w_8h_source.html">DPW.h</a>.</p>
+<p>Definition at line <a class="el" href="_d_p_w_8h_source.html#l00140">140</a> of file <a class="el" href="_d_p_w_8h_source.html">DPW.h</a>.</p>
 
 </div>
 </div>
@@ -210,7 +211,7 @@ class DSG::DPW::DPW_Differentiator&lt; 4 &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_d_p_w_8h_source.html#l00137">137</a> of file <a class="el" href="_d_p_w_8h_source.html">DPW.h</a>.</p>
+<p>Definition at line <a class="el" href="_d_p_w_8h_source.html#l00139">139</a> of file <a class="el" href="_d_p_w_8h_source.html">DPW.h</a>.</p>
 
 </div>
 </div>
@@ -220,7 +221,7 @@ class DSG::DPW::DPW_Differentiator&lt; 4 &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 26 2014 23:30:41 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 26 2014 23:56:31 for DSG by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

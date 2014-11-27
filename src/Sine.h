@@ -63,6 +63,7 @@ namespace DSG {
     }
     /*!\brief DSG::Sin() - General Purpose Sin Function, double precision
      */
+    //!\todo Implement Taylor Series implementation of Sin Function
     inline double Sin(double const& x){
         return static_cast<double>(Sin<Sine_Default>(x));//wrap default implementation as non template
     }
@@ -73,6 +74,7 @@ namespace DSG {
     }
     /*!\brief DSG::Cos() - General Purpose Cos Function, double precision
      */
+    //!\todo Implement Taylor Series implementation of Cos Function
     inline double Cos(double const& x){
         return static_cast<double>(Cos<Sine_Default>(x));//wrap default implementation as non template
     }

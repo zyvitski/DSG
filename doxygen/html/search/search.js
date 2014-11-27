@@ -17,7 +17,7 @@ var indexSectionsWithContent =
   7: "v",
   8: "o",
   9: "bdlpst",
-  10: "t"
+  10: "bt"
 };
 
 var indexSectionNames =

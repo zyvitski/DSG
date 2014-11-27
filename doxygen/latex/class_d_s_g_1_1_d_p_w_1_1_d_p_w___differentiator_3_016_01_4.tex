@@ -29,7 +29,11 @@
 
 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator}{D\+S\+G\+::\+D\+P\+W\+::\+D\+P\+W\+\_\+\+Differentiator} -\/ Class Performing Differentiation for the 6th order \hyperlink{namespace_d_s_g_1_1_d_p_w}{D\+P\+W} Algorithm. 
 
-Definition at line \hyperlink{_d_p_w_8h_source_l00162}{162} of file \hyperlink{_d_p_w_8h_source}{D\+P\+W.\+h}.
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000003}{Bug}]Causes major clipping \end{DoxyRefDesc}
+
+
+Definition at line \hyperlink{_d_p_w_8h_source_l00168}{168} of file \hyperlink{_d_p_w_8h_source}{D\+P\+W.\+h}.
 
 
 
@@ -44,24 +48,24 @@ Definition at line \hyperlink{_d_p_w_8h_source_l00162}{162} of file \hyperlink{_
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a82356846abaeef0ed76e9803a7863f3c}
 
 
-Definition at line \hyperlink{_d_p_w_8h_source_l00164}{164} of file \hyperlink{_d_p_w_8h_source}{D\+P\+W.\+h}.
+Definition at line \hyperlink{_d_p_w_8h_source_l00170}{170} of file \hyperlink{_d_p_w_8h_source}{D\+P\+W.\+h}.
 
 
 \begin{DoxyCode}
-00164                                                                                              \{
-00165                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{output}  = (signal - \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[0]);
-00166                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{output} -= (\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[0] - \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[1]);
-00167                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{output} -= (\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[1] - \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[2]);
-00168                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{output} -= (\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[2] - \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[3]);
-00169                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{output} -= (\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[3] - \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[4]);
-00170                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{output} /= 7200*DSG::Pow<5>(dt);
-00171                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[4]=\_delay[3];
-00172                 \_delay[3]=\_delay[2];
-00173                 \_delay[2]=\_delay[1];
-00174                 \_delay[1]=\_delay[0];
-00175                 \_delay[0]=signal;
-00176                 \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{output};
-00177             \}
+00170                                                                                              \{
+00171                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{output}  = (signal - \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[0]);
+00172                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{output} -= (\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[0] - \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[1]);
+00173                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{output} -= (\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[1] - \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[2]);
+00174                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{output} -= (\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[2] - \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[3]);
+00175                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{output} -= (\hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[3] - \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[4]);
+00176                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{output} /= 7200*DSG::Pow<5>(dt);
+00177                 \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}{\_delay}[4]=\_delay[3];
+00178                 \_delay[3]=\_delay[2];
+00179                 \_delay[2]=\_delay[1];
+00180                 \_delay[1]=\_delay[0];
+00181                 \_delay[0]=signal;
+00182                 \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{output};
+00183             \}
 \end{DoxyCode}
 
 
@@ -71,14 +75,14 @@ Definition at line \hyperlink{_d_p_w_8h_source_l00164}{164} of file \hyperlink{_
 \subsubsection[{\+\_\+delay}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Sample} {\bf D\+S\+G\+::\+D\+P\+W\+::\+D\+P\+W\+\_\+\+Differentiator}$<$ 6 $>$\+::\+\_\+delay\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a8f3e45aa44791b711f6e71aff92505ca}
 
 
-Definition at line \hyperlink{_d_p_w_8h_source_l00180}{180} of file \hyperlink{_d_p_w_8h_source}{D\+P\+W.\+h}.
+Definition at line \hyperlink{_d_p_w_8h_source_l00186}{186} of file \hyperlink{_d_p_w_8h_source}{D\+P\+W.\+h}.
 
 \hypertarget{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}{\index{D\+S\+G\+::\+D\+P\+W\+::\+D\+P\+W\+\_\+\+Differentiator$<$ 6 $>$@{D\+S\+G\+::\+D\+P\+W\+::\+D\+P\+W\+\_\+\+Differentiator$<$ 6 $>$}!output@{output}}
 \index{output@{output}!D\+S\+G\+::\+D\+P\+W\+::\+D\+P\+W\+\_\+\+Differentiator$<$ 6 $>$@{D\+S\+G\+::\+D\+P\+W\+::\+D\+P\+W\+\_\+\+Differentiator$<$ 6 $>$}}
 \subsubsection[{output}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Sample} {\bf D\+S\+G\+::\+D\+P\+W\+::\+D\+P\+W\+\_\+\+Differentiator}$<$ 6 $>$\+::output\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_d_p_w_1_1_d_p_w___differentiator_3_016_01_4_a6939d53801d66571b5935bcd5561548a}
 
 
-Definition at line \hyperlink{_d_p_w_8h_source_l00179}{179} of file \hyperlink{_d_p_w_8h_source}{D\+P\+W.\+h}.
+Definition at line \hyperlink{_d_p_w_8h_source_l00185}{185} of file \hyperlink{_d_p_w_8h_source}{D\+P\+W.\+h}.
 
 
 

@@ -29,6 +29,7 @@
 #include "Interpolate.h"
 namespace DSG{
     //!\brief DSG::LUT - Look Up Table
+    //!\todo Implement interploation into lookup algorithm
     template <typename element,unsigned long size>
     class LUT {
     public:

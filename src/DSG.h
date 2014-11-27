@@ -26,6 +26,8 @@
 #define DSG_Short_Names // enables inlining of nested namespaces to allow shorter explicit typenames
 //Example: DSG::Analog::AnalogSaw (Long Name)...DSG::AnalogSaw (Short Name)(only available with this macro enabled
 //!\brief DSG - A Collection of tools for Digital Signal Generation
+//!\copyright Lesser GNU Public License
+//!\todo Increase documentation level. Add documentation for every variable, parameter...
 namespace DSG {}
 #include "AudioSettings.h"
 #include "SignalProcess.h"

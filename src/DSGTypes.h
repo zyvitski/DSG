@@ -24,10 +24,13 @@
 #ifndef DSG_DSGTypes_h
 #define DSG_DSGTypes_h
 namespace DSG {
+    //!\typedef DSG::DSGFrequency - Type for representing a frequency value
     //!\brief DSG::DSGFrequency - Type for representing a frequency value
     typedef float DSGFrequency;
+    //!\typedef DSG::DSGPhase - Type for representing a phase value
     //!\brief DSG::DSGPhase - Type for representing a phase value
     typedef float DSGPhase;
+    //!\typedef DSG::DSGSample - Type for representing an audio sample
     //!\brief DSG::DSGSample - Type for representing an audio sample
     typedef float DSGSample;
 }

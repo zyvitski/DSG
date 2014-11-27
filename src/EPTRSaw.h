@@ -32,6 +32,7 @@ namespace DSG {
     namespace EPTR{
         //!\brief DSG::EPTR::EPTRSaw-Sawtooth Wave Generator Using The Efficienct Polynomial Transfer Region Algorithm
         //!\todo Test and Possibly Re-Write DSG::EPTR::EPTRSaw algorithm
+        //!\bug Algorithm is not performing in a band limited manor
         class EPTRSaw : public DSG::SignalGenerator{
         public:
             EPTRSaw();

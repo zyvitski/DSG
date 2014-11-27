@@ -69,25 +69,27 @@
 00062         \}
 00063     \}\textcolor{comment}{}
 00064 \textcolor{comment}{    /*!\(\backslash\)brief DSG::Sin() - General Purpose Sin Function, double precision}
-00065 \textcolor{comment}{     */}
-\hypertarget{_sine_8h_source_l00066}{}\hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{00066}     \textcolor{keyword}{inline} \textcolor{keywordtype}{double} \hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{Sin}(\textcolor{keywordtype}{double} \textcolor{keyword}{const}& x)\{
-00067         \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{double}\textcolor{keyword}{>}(Sin<Sine\_Default>(x));\textcolor{comment}{//wrap default implementation as non template}
-00068     \}\textcolor{comment}{}
-00069 \textcolor{comment}{    /*!\(\backslash\)brief DSG::Sin() - General Purpose Sin Function, single precision}
-00070 \textcolor{comment}{     */}
-\hypertarget{_sine_8h_source_l00071}{}\hyperlink{namespace_d_s_g_aa2f9baa8896fff266c5e7ee73fb5c3d5}{00071}     \textcolor{keyword}{inline} \textcolor{keywordtype}{float} \hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{Sin}(\textcolor{keywordtype}{float} \textcolor{keyword}{const}& x)\{
-00072         \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(Sin<Sine\_Default>(x));
-00073     \}\textcolor{comment}{}
-00074 \textcolor{comment}{    /*!\(\backslash\)brief DSG::Cos() - General Purpose Cos Function, double precision}
-00075 \textcolor{comment}{     */}
-\hypertarget{_sine_8h_source_l00076}{}\hyperlink{namespace_d_s_g_ade303ad15c77f534429305c3cbd90191}{00076}     \textcolor{keyword}{inline} \textcolor{keywordtype}{double} \hyperlink{namespace_d_s_g_ade303ad15c77f534429305c3cbd90191}{Cos}(\textcolor{keywordtype}{double} \textcolor{keyword}{const}& x)\{
-00077         \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{double}\textcolor{keyword}{>}(Cos<Sine\_Default>(x));\textcolor{comment}{//wrap default implementation as non template}
-00078     \}\textcolor{comment}{}
-00079 \textcolor{comment}{    /*!\(\backslash\)brief DSG::Cos() - General Purpose Cos Function, single precision}
-00080 \textcolor{comment}{     */}
-\hypertarget{_sine_8h_source_l00081}{}\hyperlink{namespace_d_s_g_a214b00c1735dd1976757f284dfe6fb1f}{00081}     \textcolor{keyword}{inline} \textcolor{keywordtype}{float} \hyperlink{namespace_d_s_g_ade303ad15c77f534429305c3cbd90191}{Cos}(\textcolor{keywordtype}{float} \textcolor{keyword}{const}& x)\{
-00082         \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(Cos<Sine\_Default>(x));
-00083     \}
-00084 \}
-00085 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_Sine\_\_) */}\textcolor{preprocessor}{}
+00065 \textcolor{comment}{     */}\textcolor{comment}{}
+00066 \textcolor{comment}{    //!\(\backslash\)todo Implement Taylor Series implementation of Sin Function}
+\hypertarget{_sine_8h_source_l00067}{}\hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{00067} \textcolor{comment}{}    \textcolor{keyword}{inline} \textcolor{keywordtype}{double} \hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{Sin}(\textcolor{keywordtype}{double} \textcolor{keyword}{const}& x)\{
+00068         \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{double}\textcolor{keyword}{>}(Sin<Sine\_Default>(x));\textcolor{comment}{//wrap default implementation as non template}
+00069     \}\textcolor{comment}{}
+00070 \textcolor{comment}{    /*!\(\backslash\)brief DSG::Sin() - General Purpose Sin Function, single precision}
+00071 \textcolor{comment}{     */}
+\hypertarget{_sine_8h_source_l00072}{}\hyperlink{namespace_d_s_g_aa2f9baa8896fff266c5e7ee73fb5c3d5}{00072}     \textcolor{keyword}{inline} \textcolor{keywordtype}{float} \hyperlink{namespace_d_s_g_aad63d316081c7d13a551acf346ee2749}{Sin}(\textcolor{keywordtype}{float} \textcolor{keyword}{const}& x)\{
+00073         \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(Sin<Sine\_Default>(x));
+00074     \}\textcolor{comment}{}
+00075 \textcolor{comment}{    /*!\(\backslash\)brief DSG::Cos() - General Purpose Cos Function, double precision}
+00076 \textcolor{comment}{     */}\textcolor{comment}{}
+00077 \textcolor{comment}{    //!\(\backslash\)todo Implement Taylor Series implementation of Cos Function}
+\hypertarget{_sine_8h_source_l00078}{}\hyperlink{namespace_d_s_g_ade303ad15c77f534429305c3cbd90191}{00078} \textcolor{comment}{}    \textcolor{keyword}{inline} \textcolor{keywordtype}{double} \hyperlink{namespace_d_s_g_ade303ad15c77f534429305c3cbd90191}{Cos}(\textcolor{keywordtype}{double} \textcolor{keyword}{const}& x)\{
+00079         \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{double}\textcolor{keyword}{>}(Cos<Sine\_Default>(x));\textcolor{comment}{//wrap default implementation as non template}
+00080     \}\textcolor{comment}{}
+00081 \textcolor{comment}{    /*!\(\backslash\)brief DSG::Cos() - General Purpose Cos Function, single precision}
+00082 \textcolor{comment}{     */}
+\hypertarget{_sine_8h_source_l00083}{}\hyperlink{namespace_d_s_g_a214b00c1735dd1976757f284dfe6fb1f}{00083}     \textcolor{keyword}{inline} \textcolor{keywordtype}{float} \hyperlink{namespace_d_s_g_ade303ad15c77f534429305c3cbd90191}{Cos}(\textcolor{keywordtype}{float} \textcolor{keyword}{const}& x)\{
+00084         \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(Cos<Sine\_Default>(x));
+00085     \}
+00086 \}
+00087 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* defined(\_\_DSG\_\_Sine\_\_) */}\textcolor{preprocessor}{}
 \end{DoxyCode}

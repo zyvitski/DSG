@@ -119,7 +119,9 @@ namespace DSG{
             DSG::DSGSample output;
             DSG::DSGSample _delay[2];
         };
-        //!\brief DSG::DPW::DPW_Differentiator - Class Performing Differentiation for the 4th order DPW Algorithm
+        /*!\brief DSG::DPW::DPW_Differentiator - Class Performing Differentiation for the 4th order DPW Algorithm
+         * \bug Causes major clipping
+         */
         template<>
         class DPW_Differentiator<4>{
         public:
@@ -137,7 +139,9 @@ namespace DSG{
             DSG::DSGSample output;
             DSG::DSGSample _delay[3];
         };
-        //!\brief DSG::DPW::DPW_Differentiator - Class Performing Differentiation for the 5th order DPW Algorithm
+        /*!\brief DSG::DPW::DPW_Differentiator - Class Performing Differentiation for the 5th order DPW Algorithm
+         * \bug Causes major clipping
+         */
         template<>
         class DPW_Differentiator<5>{
         public:
@@ -157,7 +161,9 @@ namespace DSG{
             DSG::DSGSample output;
             DSG::DSGSample _delay[4];
         };
-        //!\brief DSG::DPW::DPW_Differentiator - Class Performing Differentiation for the 6th order DPW Algorithm
+        /*!\brief DSG::DPW::DPW_Differentiator - Class Performing Differentiation for the 6th order DPW Algorithm
+         * \bug Causes major clipping
+         */
         template<>
         class DPW_Differentiator<6>{
         public:
