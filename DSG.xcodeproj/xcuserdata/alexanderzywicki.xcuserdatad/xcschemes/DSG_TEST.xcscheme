@@ -45,7 +45,7 @@
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
       customWorkingDirectory = "~/Desktop"
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">

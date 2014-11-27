@@ -22,9 +22,6 @@
  along with DSG.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "SignalGenerator.h"
-DSG::SignalGenerator::SignalGenerator():DSG::SignalProcess(),_phasor(0),_frequency(0),_dt(0),_offset(0){}
-DSG::SignalGenerator::SignalGenerator(DSG::DSGFrequency const& frequency,DSG::DSGPhase const& offset):_phasor(0),_frequency(frequency),_dt(0),_offset(offset){
-    Frequency(frequency);
-    Phase(offset);
-}
+DSG::SignalGenerator::SignalGenerator():DSG::SignalProcess(),DSG::Phasor(){}
+DSG::SignalGenerator::SignalGenerator(DSG::DSGFrequency const& frequency,DSG::DSGPhase const& offset):DSG::SignalProcess(),DSG::Phasor(frequency,offset){}
 DSG::SignalGenerator::~SignalGenerator(){}

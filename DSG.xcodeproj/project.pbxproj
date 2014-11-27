@@ -34,6 +34,10 @@
 		1F1092D319E148F5002DF1A2 /* Sleep.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1092D119E148F5002DF1A2 /* Sleep.h */; };
 		1F12355619FF791000E63D40 /* Random.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F12355519FF791000E63D40 /* Random.h */; };
 		1F12355719FF791000E63D40 /* Random.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F12355519FF791000E63D40 /* Random.h */; };
+		1F1D29F91A26D13300C89E5E /* Phasor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1D29F71A26D13300C89E5E /* Phasor.cpp */; };
+		1F1D29FA1A26D13300C89E5E /* Phasor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1D29F71A26D13300C89E5E /* Phasor.cpp */; };
+		1F1D29FB1A26D13300C89E5E /* Phasor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1D29F81A26D13300C89E5E /* Phasor.h */; };
+		1F1D29FC1A26D13300C89E5E /* Phasor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1D29F81A26D13300C89E5E /* Phasor.h */; };
 		1F27F9CF19FA08F0008D2153 /* Delay.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F27F9CC19FA08F0008D2153 /* Delay.h */; };
 		1F27F9D019FA08F0008D2153 /* Delay.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F27F9CC19FA08F0008D2153 /* Delay.h */; };
 		1F3F9F8F19F72632008D3B8B /* Interpolate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F3F9F8E19F72632008D3B8B /* Interpolate.h */; };
@@ -232,6 +236,8 @@
 		1F0A763819D267320094C6F5 /* DSGMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSGMath.h; path = src/DSGMath.h; sourceTree = "<group>"; };
 		1F1092D119E148F5002DF1A2 /* Sleep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sleep.h; path = src/Sleep.h; sourceTree = "<group>"; };
 		1F12355519FF791000E63D40 /* Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Random.h; path = src/Random.h; sourceTree = "<group>"; };
+		1F1D29F71A26D13300C89E5E /* Phasor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Phasor.cpp; path = src/Phasor.cpp; sourceTree = "<group>"; };
+		1F1D29F81A26D13300C89E5E /* Phasor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Phasor.h; path = src/Phasor.h; sourceTree = "<group>"; };
 		1F27F9CC19FA08F0008D2153 /* Delay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Delay.h; path = src/Delay.h; sourceTree = "<group>"; };
 		1F3F9F8E19F72632008D3B8B /* Interpolate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Interpolate.h; path = src/Interpolate.h; sourceTree = "<group>"; };
 		1F43E41E19C8D5ED0012C668 /* libDSG.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDSG.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -420,6 +426,8 @@
 				1FAB5FA61A128E3400F99417 /* Bounds.h */,
 				1FC95FCA1A252AAC003088F2 /* MTOF.cpp */,
 				1FC95FCB1A252AAC003088F2 /* MTOF.h */,
+				1F1D29F71A26D13300C89E5E /* Phasor.cpp */,
+				1F1D29F81A26D13300C89E5E /* Phasor.h */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -527,6 +535,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1D29FB1A26D13300C89E5E /* Phasor.h in Headers */,
 				1F7548DC1A0ABB410078A1F6 /* DSF.h in Headers */,
 				1F89D72D19EBA2EF00794DCD /* DCBlocker.h in Headers */,
 				1FE87D7219D7BD3C00E8377B /* DPWSaw.h in Headers */,
@@ -580,6 +589,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1D29FC1A26D13300C89E5E /* Phasor.h in Headers */,
 				1F7548DD1A0ABB410078A1F6 /* DSF.h in Headers */,
 				1F89D72E19EBA2EF00794DCD /* DCBlocker.h in Headers */,
 				1FE87D7319D7BD3C00E8377B /* DPWSaw.h in Headers */,
@@ -735,6 +745,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1D29F91A26D13300C89E5E /* Phasor.cpp in Sources */,
 				1F949F9F19FEFA7100C0DF7E /* Filter.cpp in Sources */,
 				1FB9FCF019CA88E900E42C69 /* BLITTriangle.cpp in Sources */,
 				1FC95FCC1A252AAC003088F2 /* MTOF.cpp in Sources */,
@@ -765,6 +776,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1D29FA1A26D13300C89E5E /* Phasor.cpp in Sources */,
 				1F949FA019FEFA7100C0DF7E /* Filter.cpp in Sources */,
 				1FB9FCF119CA88E900E42C69 /* BLITTriangle.cpp in Sources */,
 				1FC95FCD1A252AAC003088F2 /* MTOF.cpp in Sources */,

@@ -70,9 +70,9 @@ namespace DSG{
             return DSG::Pow<6>(value) - 5.0 * DSG::Pow<4>(value) + 7.0 * DPW_Polynomial<2>(value);
         }
 #ifdef __APPLE__
-#warning DSG::DPW - differentiators order 3-6 need verification. they cause major clipping
+#warning DSG::DPW - differentiators order 4-6 need verification. they cause major clipping
 #endif
-        //!\todo Fix DSG::DPW::DPW_Differentiator algorithms for orders 3-6
+        //!\todo Fix DSG::DPW::DPW_Differentiator algorithms for orders 4-6
         //differentiators
         //!\brief DSG::DPW::DPW_Differentiator - Class Performing Differentiation for the DPW Algorithm
         template<unsigned order>

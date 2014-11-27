@@ -54,7 +54,7 @@ namespace DSG{
         };
         inline bool DSG::BLIT::Blit::Perform(DSG::DSGSample& signal){
             //found better results in this case with built in sine function. not performance wise but algorithmically
-            denominator = m_ * sin(PI*_phasor);
+            denominator = m_ * sin(_phasor);
             if (DSG::IsDenormal(denominator)) {
                 signal = a_;
             }else{

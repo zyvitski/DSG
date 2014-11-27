@@ -13,15 +13,9 @@
 int main(int argc, const char * argv[])
 {
     DSG::SampleRate(44100);
-    DSG::FourierSeriesGenerator _f(20,0);
-    DSG::FourierSeriesGenerator::FourierSeries _series;
-    for (int i=1; i<1000; ++i) {
-        DSG::Harmonic _h((double)i,1.0/(double)i);
-        _series.push_back(_h);
-    }
-    _f.Series(_series);
-    DSG::RingBuffer _buff(4096);
-    _f.Perform(_buff);
-    std::cout<<_buff;
-        
+    DSG::DPWSaw<2> _blit(40,0);
+    DriverInit(&_blit);
+    DSG::Sleep(4000);
+    DriverExit();
+
 }

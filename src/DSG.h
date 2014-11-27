@@ -40,39 +40,25 @@ namespace DSG {}
 #include "LUT.h"
 #include "Window.h"
 #include "Bounds.h"
-
 #include "GenericGenerator.h"
-
 #include "Delay.h"
-
-
 #include "Sleep.h"
 #include "BufferConversion.h"
-
 #include "FourierSeries.h"
 #include "FourierSaw.h"
 #include "FourierSquare.h"
 #include "FourierTriangle.h"
-
 #include "AnalogSaw.h"
 #include "AnalogSquare.h"
 #include "AnalogTriangle.h"
-
 #include "BLIT.h"
 #include "BLITSaw.h"
-
 #include "DSF.h"
-
 #include "DPW.h"
 #include "DPWSaw.h"
-
 #include "EPTRSaw.h"
-
 #include "Noise.h"
-
 #include "DCBlocker.h"
-
 #include "Filter.h"
 #include "Leaky.h"
-
 #endif
