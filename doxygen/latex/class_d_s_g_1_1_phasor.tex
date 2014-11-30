@@ -1,0 +1,264 @@
+\hypertarget{class_d_s_g_1_1_phasor}{\section{D\+S\+G\+:\+:Phasor Class Reference}
+\label{class_d_s_g_1_1_phasor}\index{D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}}
+}
+
+
+\hyperlink{class_d_s_g_1_1_phasor}{D\+S\+G\+::\+Phasor} -\/ Linear Phase Generator.  
+
+
+
+
+{\ttfamily \#include $<$Phasor.\+h$>$}
+
+Inheritance diagram for D\+S\+G\+:\+:Phasor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_d_s_g_1_1_phasor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_s_g_1_1_phasor_adc6b13ffdb208286a689a5aeab0fb342}{Phasor} ()
+\item 
+\hyperlink{class_d_s_g_1_1_phasor_a34511b38200e71b6d3bb95872da91dbd}{Phasor} (\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} const \&frequency, \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{D\+S\+G\+::\+D\+S\+G\+Phase} const \&offset)
+\item 
+virtual \hyperlink{class_d_s_g_1_1_phasor_a37b72afd6bd58cebf10cc937e73ef094}{$\sim$\+Phasor} ()
+\item 
+virtual \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} const \& \hyperlink{class_d_s_g_1_1_phasor_a6bdec1d2722e2fa5c7173ac5f7adf682}{Frequency} ()
+\item 
+virtual \hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} const \& \hyperlink{class_d_s_g_1_1_phasor_a8162456ae44291008159acd89bfa7b1b}{Frequency} (\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} const \&value)
+\item 
+virtual \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{D\+S\+G\+::\+D\+S\+G\+Phase} const \& \hyperlink{class_d_s_g_1_1_phasor_af8eb0ff79a11ae02186505ff6ac085dd}{Phase} ()
+\item 
+virtual \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{D\+S\+G\+::\+D\+S\+G\+Phase} const \& \hyperlink{class_d_s_g_1_1_phasor_a0b25bc87161096ae08a8e8d1f5eb3913}{Phase} (\hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{D\+S\+G\+::\+D\+S\+G\+Phase} const \&value)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_d_s_g_1_1_phasor_a6a088b29e506fb5e99d73f4f0160c583}{step} ()
+\item 
+void \hyperlink{class_d_s_g_1_1_phasor_a3e9022f8264d4b2ffc485ef725d331e8}{sync} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{D\+S\+G\+::\+D\+S\+G\+Frequency} \hyperlink{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}{\+\_\+frequency}
+\item 
+\hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{D\+S\+G\+::\+D\+S\+G\+Phase} \hyperlink{class_d_s_g_1_1_phasor_afaaa3559b6cd84535c10ff896148c6bd}{\+\_\+dt}
+\item 
+\hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{D\+S\+G\+::\+D\+S\+G\+Phase} \hyperlink{class_d_s_g_1_1_phasor_acc15f4073d74daa532e018654e1ad820}{\+\_\+offset}
+\item 
+\hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{D\+S\+G\+::\+D\+S\+G\+Phase} \hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\+\_\+phasor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_d_s_g_1_1_phasor}{D\+S\+G\+::\+Phasor} -\/ Linear Phase Generator. 
+
+Definition at line \hyperlink{_phasor_8h_source_l00031}{31} of file \hyperlink{_phasor_8h_source}{Phasor.\+h}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_d_s_g_1_1_phasor_adc6b13ffdb208286a689a5aeab0fb342}{\index{D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}!Phasor@{Phasor}}
+\index{Phasor@{Phasor}!D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}}
+\subsubsection[{Phasor}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Phasor\+::\+Phasor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_d_s_g_1_1_phasor_adc6b13ffdb208286a689a5aeab0fb342}
+
+
+Definition at line \hyperlink{_phasor_8cpp_source_l00025}{25} of file \hyperlink{_phasor_8cpp_source}{Phasor.\+cpp}.
+
+
+\begin{DoxyCode}
+00025 :\hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\_phasor}(0),\hyperlink{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}{\_frequency}(0),\hyperlink{class_d_s_g_1_1_phasor_afaaa3559b6cd84535c10ff896148c6bd}{\_dt}(0),\hyperlink{class_d_s_g_1_1_phasor_acc15f4073d74daa532e018654e1ad820}{\_offset}(0)\{\}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_phasor_a34511b38200e71b6d3bb95872da91dbd}{\index{D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}!Phasor@{Phasor}}
+\index{Phasor@{Phasor}!D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}}
+\subsubsection[{Phasor}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Phasor\+::\+Phasor (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} const \&}]{frequency, }
+\item[{{\bf D\+S\+G\+::\+D\+S\+G\+Phase} const \&}]{offset}
+\end{DoxyParamCaption}
+)}}\label{class_d_s_g_1_1_phasor_a34511b38200e71b6d3bb95872da91dbd}
+
+
+Definition at line \hyperlink{_phasor_8cpp_source_l00026}{26} of file \hyperlink{_phasor_8cpp_source}{Phasor.\+cpp}.
+
+
+\begin{DoxyCode}
+00026                                                                             :
+      \hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\_phasor}(0),\hyperlink{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}{\_frequency}(frequency),\hyperlink{class_d_s_g_1_1_phasor_afaaa3559b6cd84535c10ff896148c6bd}{\_dt}(0),\hyperlink{class_d_s_g_1_1_phasor_acc15f4073d74daa532e018654e1ad820}{\_offset}(offset)\{
+00027     \hyperlink{class_d_s_g_1_1_phasor_a6bdec1d2722e2fa5c7173ac5f7adf682}{Frequency}(frequency);
+00028     \hyperlink{class_d_s_g_1_1_phasor_af8eb0ff79a11ae02186505ff6ac085dd}{Phase}(offset);
+00029 \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_phasor_a37b72afd6bd58cebf10cc937e73ef094}{\index{D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}!````~Phasor@{$\sim$\+Phasor}}
+\index{````~Phasor@{$\sim$\+Phasor}!D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}}
+\subsubsection[{$\sim$\+Phasor}]{\setlength{\rightskip}{0pt plus 5cm}D\+S\+G\+::\+Phasor\+::$\sim$\+Phasor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_s_g_1_1_phasor_a37b72afd6bd58cebf10cc937e73ef094}
+
+
+Definition at line \hyperlink{_phasor_8cpp_source_l00030}{30} of file \hyperlink{_phasor_8cpp_source}{Phasor.\+cpp}.
+
+
+\begin{DoxyCode}
+00030 \{\}\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_s_g_1_1_phasor_a6bdec1d2722e2fa5c7173ac5f7adf682}{\index{D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}!Frequency@{Frequency}}
+\index{Frequency@{Frequency}!D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}}
+\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} const \& D\+S\+G\+::\+Phasor\+::\+Frequency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_phasor_a6bdec1d2722e2fa5c7173ac5f7adf682}
+
+
+Definition at line \hyperlink{_phasor_8h_source_l00050}{50} of file \hyperlink{_phasor_8h_source}{Phasor.\+h}.
+
+
+\begin{DoxyCode}
+00050                                                       \{
+00051         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}{\_frequency};
+00052     \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_phasor_a8162456ae44291008159acd89bfa7b1b}{\index{D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}!Frequency@{Frequency}}
+\index{Frequency@{Frequency}!D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}}
+\subsubsection[{Frequency}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} const \& D\+S\+G\+::\+Phasor\+::\+Frequency (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} const \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_phasor_a8162456ae44291008159acd89bfa7b1b}
+
+
+Reimplemented in \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_a933f8f9f324a4fde4f9e2b69473d88ed}{D\+S\+G\+::\+B\+L\+I\+T\+::\+Blit}, \hyperlink{class_d_s_g_1_1_b_l_i_t_1_1_blit_saw_a290d01796efca84b73eb61a3bc419ebb}{D\+S\+G\+::\+B\+L\+I\+T\+::\+Blit\+Saw}, \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_saw_afa3d86f404be3665f10c74fe9286ef10}{D\+S\+G\+::\+Fourier\+::\+Fourier\+Saw}, \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_square_a120cbb563a518c9412190eaa36cb269f}{D\+S\+G\+::\+Fourier\+::\+Fourier\+Square}, and \hyperlink{class_d_s_g_1_1_fourier_1_1_fourier_triangle_a278a51ed8af32ea371adc903b9b25039}{D\+S\+G\+::\+Fourier\+::\+Fourier\+Triangle}.
+
+
+
+Definition at line \hyperlink{_phasor_8h_source_l00053}{53} of file \hyperlink{_phasor_8h_source}{Phasor.\+h}.
+
+
+\begin{DoxyCode}
+00053                                                                                   \{
+00054         \hyperlink{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}{\_frequency} = DSG::EnforceBounds<0, 20000,DSG::DSGSample>(value);
+00055         \hyperlink{class_d_s_g_1_1_phasor_afaaa3559b6cd84535c10ff896148c6bd}{\_dt} = \hyperlink{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}{\_frequency}/\hyperlink{namespace_d_s_g_a72df05177db0412c3590070923f62819}{DSG::SampleRate}();
+00056         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}{\_frequency};
+00057     \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_phasor_af8eb0ff79a11ae02186505ff6ac085dd}{\index{D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}!Phase@{Phase}}
+\index{Phase@{Phase}!D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}}
+\subsubsection[{Phase}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Phase} const \& D\+S\+G\+::\+Phasor\+::\+Phase (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_phasor_af8eb0ff79a11ae02186505ff6ac085dd}
+
+
+Definition at line \hyperlink{_phasor_8h_source_l00058}{58} of file \hyperlink{_phasor_8h_source}{Phasor.\+h}.
+
+
+\begin{DoxyCode}
+00058                                               \{
+00059         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_phasor_acc15f4073d74daa532e018654e1ad820}{\_offset};
+00060     \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_phasor_a0b25bc87161096ae08a8e8d1f5eb3913}{\index{D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}!Phase@{Phase}}
+\index{Phase@{Phase}!D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}}
+\subsubsection[{Phase}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Phase} const \& D\+S\+G\+::\+Phasor\+::\+Phase (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S\+G\+::\+D\+S\+G\+Phase} const \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_d_s_g_1_1_phasor_a0b25bc87161096ae08a8e8d1f5eb3913}
+
+
+Definition at line \hyperlink{_phasor_8h_source_l00061}{61} of file \hyperlink{_phasor_8h_source}{Phasor.\+h}.
+
+
+\begin{DoxyCode}
+00061                                                                       \{
+00062         \hyperlink{class_d_s_g_1_1_phasor_acc15f4073d74daa532e018654e1ad820}{\_offset}-=value;
+00063         \hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\_phasor}-=\hyperlink{class_d_s_g_1_1_phasor_acc15f4073d74daa532e018654e1ad820}{\_offset};
+00064         \hyperlink{class_d_s_g_1_1_phasor_acc15f4073d74daa532e018654e1ad820}{\_offset}=value;
+00065         \textcolor{keywordflow}{return} \hyperlink{class_d_s_g_1_1_phasor_acc15f4073d74daa532e018654e1ad820}{\_offset};
+00066     \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_phasor_a6a088b29e506fb5e99d73f4f0160c583}{\index{D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}!step@{step}}
+\index{step@{step}!D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}}
+\subsubsection[{step}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S\+G\+::\+Phasor\+::step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_d_s_g_1_1_phasor_a6a088b29e506fb5e99d73f4f0160c583}
+
+
+Definition at line \hyperlink{_phasor_8h_source_l00067}{67} of file \hyperlink{_phasor_8h_source}{Phasor.\+h}.
+
+
+\begin{DoxyCode}
+00067                                \{
+00068         \hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\_phasor}+=\hyperlink{class_d_s_g_1_1_phasor_afaaa3559b6cd84535c10ff896148c6bd}{\_dt};
+00069         \hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\_phasor}>1.0 ? --\hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\_phasor}:0;
+00070     \}
+\end{DoxyCode}
+\hypertarget{class_d_s_g_1_1_phasor_a3e9022f8264d4b2ffc485ef725d331e8}{\index{D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}!sync@{sync}}
+\index{sync@{sync}!D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}}
+\subsubsection[{sync}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S\+G\+::\+Phasor\+::sync (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_d_s_g_1_1_phasor_a3e9022f8264d4b2ffc485ef725d331e8}
+
+
+Definition at line \hyperlink{_phasor_8h_source_l00071}{71} of file \hyperlink{_phasor_8h_source}{Phasor.\+h}.
+
+
+\begin{DoxyCode}
+00071                                \{
+00072         \hyperlink{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\_phasor}=\hyperlink{class_d_s_g_1_1_phasor_acc15f4073d74daa532e018654e1ad820}{\_offset};
+00073     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_d_s_g_1_1_phasor_afaaa3559b6cd84535c10ff896148c6bd}{\index{D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}!\+\_\+dt@{\+\_\+dt}}
+\index{\+\_\+dt@{\+\_\+dt}!D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}}
+\subsubsection[{\+\_\+dt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Phase} D\+S\+G\+::\+Phasor\+::\+\_\+dt\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_phasor_afaaa3559b6cd84535c10ff896148c6bd}
+
+
+Definition at line \hyperlink{_phasor_8h_source_l00046}{46} of file \hyperlink{_phasor_8h_source}{Phasor.\+h}.
+
+\hypertarget{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}{\index{D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}!\+\_\+frequency@{\+\_\+frequency}}
+\index{\+\_\+frequency@{\+\_\+frequency}!D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}}
+\subsubsection[{\+\_\+frequency}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Frequency} D\+S\+G\+::\+Phasor\+::\+\_\+frequency\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_phasor_a85a00065d4445c33fef69eae0ce926df}
+
+
+Definition at line \hyperlink{_phasor_8h_source_l00045}{45} of file \hyperlink{_phasor_8h_source}{Phasor.\+h}.
+
+\hypertarget{class_d_s_g_1_1_phasor_acc15f4073d74daa532e018654e1ad820}{\index{D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}!\+\_\+offset@{\+\_\+offset}}
+\index{\+\_\+offset@{\+\_\+offset}!D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}}
+\subsubsection[{\+\_\+offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Phase} D\+S\+G\+::\+Phasor\+::\+\_\+offset\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_phasor_acc15f4073d74daa532e018654e1ad820}
+
+
+Definition at line \hyperlink{_phasor_8h_source_l00047}{47} of file \hyperlink{_phasor_8h_source}{Phasor.\+h}.
+
+\hypertarget{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}{\index{D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}!\+\_\+phasor@{\+\_\+phasor}}
+\index{\+\_\+phasor@{\+\_\+phasor}!D\+S\+G\+::\+Phasor@{D\+S\+G\+::\+Phasor}}
+\subsubsection[{\+\_\+phasor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S\+G\+::\+D\+S\+G\+Phase} D\+S\+G\+::\+Phasor\+::\+\_\+phasor\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_d_s_g_1_1_phasor_a82c148d71128cfc518fc8e7e131c3a38}
+
+
+Definition at line \hyperlink{_phasor_8h_source_l00048}{48} of file \hyperlink{_phasor_8h_source}{Phasor.\+h}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_phasor_8h}{Phasor.\+h}\item 
+\hyperlink{_phasor_8cpp}{Phasor.\+cpp}\end{DoxyCompactItemize}

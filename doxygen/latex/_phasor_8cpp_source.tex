@@ -1,0 +1,37 @@
+\hypertarget{_phasor_8cpp_source}{\section{Phasor.\+cpp}
+\label{_phasor_8cpp_source}\index{Phasor.\+cpp@{Phasor.\+cpp}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  Phasor.cpp}
+00003 \textcolor{comment}{//  DSG}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by Alexander Zywicki on 11/26/14.}
+00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 \textcolor{comment}{/*}
+00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00010 \textcolor{comment}{}
+00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00012 \textcolor{comment}{ it under the terms of the GNU Lesser General Public License as published by}
+00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00014 \textcolor{comment}{ (at your option) any later version.}
+00015 \textcolor{comment}{}
+00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00019 \textcolor{comment}{ GNU Lesser General Public License for more details.}
+00020 \textcolor{comment}{}
+00021 \textcolor{comment}{ You should have received a copy of the GNU Lesser General Public License}
+00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00023 \textcolor{comment}{ */}
+00024 \textcolor{preprocessor}{#include "\hyperlink{_phasor_8h}{Phasor.h}"}
+\hypertarget{_phasor_8cpp_source_l00025}{}\hyperlink{class_d_s_g_1_1_phasor_adc6b13ffdb208286a689a5aeab0fb342}{00025} \hyperlink{class_d_s_g_1_1_phasor_adc6b13ffdb208286a689a5aeab0fb342}{DSG::Phasor::Phasor}():\_phasor(0),\_frequency(0),\_dt(0),\_offset(0)\{\}
+\hypertarget{_phasor_8cpp_source_l00026}{}\hyperlink{class_d_s_g_1_1_phasor_a34511b38200e71b6d3bb95872da91dbd}{00026} \hyperlink{class_d_s_g_1_1_phasor_adc6b13ffdb208286a689a5aeab0fb342}{DSG::Phasor::Phasor}(\hyperlink{namespace_d_s_g_a4315a061386fa1014fda09b15d3a6973}{DSG::DSGFrequency} \textcolor{keyword}{const}& frequency, 
+      \hyperlink{namespace_d_s_g_a44431ce1eb0a7300efdd207bc879e52c}{DSG::DSGPhase} \textcolor{keyword}{const}& offset):\_phasor(0),\_frequency(frequency),\_dt(0),\_offset(offset)\{
+00027     \hyperlink{class_d_s_g_1_1_phasor_a6bdec1d2722e2fa5c7173ac5f7adf682}{Frequency}(frequency);
+00028     \hyperlink{class_d_s_g_1_1_phasor_af8eb0ff79a11ae02186505ff6ac085dd}{Phase}(offset);
+00029 \}
+\hypertarget{_phasor_8cpp_source_l00030}{}\hyperlink{class_d_s_g_1_1_phasor_a37b72afd6bd58cebf10cc937e73ef094}{00030} \hyperlink{class_d_s_g_1_1_phasor_a37b72afd6bd58cebf10cc937e73ef094}{DSG::Phasor::~Phasor}()\{\}
+\end{DoxyCode}

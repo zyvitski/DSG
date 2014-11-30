@@ -10,64 +10,83 @@
 00005 \textcolor{comment}{//  Created by Alexander Zywicki on 9/16/14.}
 00006 \textcolor{comment}{//  Copyright (c) 2014 Alexander Zywicki. All rights reserved.}
 00007 \textcolor{comment}{//}
-00008 \textcolor{comment}{/*}
-00009 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
-00010 \textcolor{comment}{}
-00011 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
-00012 \textcolor{comment}{ it under the terms of the GNU Lesser General Public License as published by}
-00013 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
-00014 \textcolor{comment}{ (at your option) any later version.}
-00015 \textcolor{comment}{}
-00016 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
-00017 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
-00018 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
-00019 \textcolor{comment}{ GNU Lesser General Public License for more details.}
-00020 \textcolor{comment}{}
-00021 \textcolor{comment}{ You should have received a copy of the GNU Lesser General Public License}
-00022 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
-00023 \textcolor{comment}{ */}
-00024 \textcolor{preprocessor}{#ifndef DSG\_DSG\_h}
-00025 \textcolor{preprocessor}{#define DSG\_DSG\_h}
-\hypertarget{_d_s_g_8h_source_l00026}{}\hyperlink{_d_s_g_8h_a83f0da18914977ca7a09b93cb1f57a05}{00026} \textcolor{preprocessor}{#define DSG\_Short\_Names // enables inlining of nested namespaces to allow shorter explicit typenames}
-00027 \textcolor{comment}{//Example: DSG::Analog::AnalogSaw (Long Name)...DSG::AnalogSaw (Short Name)(only available with this macro
+00008 \textcolor{preprocessor}{#ifndef DSG\_DSG\_h}
+00009 \textcolor{preprocessor}{#define DSG\_DSG\_h}
+00010 \textcolor{comment}{/*!\(\backslash\)mainpage DSG - A Collection Of Tools For Digital Signal Generation}
+00011 \textcolor{comment}{ *\(\backslash\)section intro\_sec Intoduction}
+00012 \textcolor{comment}{ The Digital Signal Generation Project or DSG is a collection of tools used for the generation of digital
+       signals, more specifically the generation of band-limited waveforms.}
+00013 \textcolor{comment}{ *\(\backslash\)subsection Scope}
+00014 \textcolor{comment}{ Though DSG has a focus on Bandlimited Waveform Generation it is not limited to it. }
+00015 \textcolor{comment}{ DSG defines a signal processing interface that is compatable with any form fo audio based signal
+       processing work.}
+00016 \textcolor{comment}{ The interface defined in DSG::SignalProcess is the base interface for signal processing in DSG, It is
+       further expanded by DSG::SignalGenerator which adds functionality geared towards waveform generation.}
+00017 \textcolor{comment}{ See the doumentation for each for their specifics.}
+00018 \textcolor{comment}{ *\(\backslash\)section License}
+00019 \textcolor{comment}{    DSG is released under the Lesser GNU Public License (LGPL).}
+00020 \textcolor{comment}{  }
+00021 \textcolor{comment}{ A copy of the LGPL and the GNU Public License should be included with the distrobution in the files:
+       COPYING (GPL), and COPYING.LESSER (LGPL)}
+00022 \textcolor{comment}{Additionally each source file should contain a copy of the license notice which reads as follows:}
+00023 \textcolor{comment}{ \(\backslash\)copyright}
+00024 \textcolor{comment}{ This file is part of the Digital Signal Generation Project or “DSG”.}
+00025 \textcolor{comment}{}
+00026 \textcolor{comment}{ DSG is free software: you can redistribute it and/or modify}
+00027 \textcolor{comment}{ it under the terms of the GNU Lesser General Public License as published by}
+00028 \textcolor{comment}{ the Free Software Foundation, either version 3 of the License, or}
+00029 \textcolor{comment}{ (at your option) any later version.}
+00030 \textcolor{comment}{}
+00031 \textcolor{comment}{ DSG is distributed in the hope that it will be useful,}
+00032 \textcolor{comment}{ but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00033 \textcolor{comment}{ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+00034 \textcolor{comment}{ GNU Lesser General Public License for more details.}
+00035 \textcolor{comment}{}
+00036 \textcolor{comment}{ You should have received a copy of the GNU Lesser General Public License}
+00037 \textcolor{comment}{ along with DSG.  If not, see <http://www.gnu.org/licenses/>.}
+00038 \textcolor{comment}{}
+00039 \textcolor{comment}{ */}
+\hypertarget{_d_s_g_8h_source_l00040}{}\hyperlink{_d_s_g_8h_a83f0da18914977ca7a09b93cb1f57a05}{00040} \textcolor{preprocessor}{#define DSG\_Short\_Names // enables inlining of nested namespaces to allow shorter explicit typenames}
+00041 \textcolor{comment}{//Example: DSG::Analog::AnalogSaw (Long Name)...DSG::AnalogSaw (Short Name)(only available with this macro
        enabled}\textcolor{comment}{}
-00028 \textcolor{comment}{//!\(\backslash\)brief DSG - A Collection of tools for Digital Signal Generation}
-00029 \textcolor{comment}{//!\(\backslash\)copyright Lesser GNU Public License}
-00030 \textcolor{comment}{//!\(\backslash\)todo Increase documentation level. Add documentation for every variable, parameter...}
-00031 \textcolor{comment}{}\textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG} \{\}
-00032 \textcolor{preprocessor}{#include "\hyperlink{_audio_settings_8h}{AudioSettings.h}"}
-00033 \textcolor{preprocessor}{#include "\hyperlink{_signal_process_8h}{SignalProcess.h}"}
-00034 \textcolor{preprocessor}{#include "\hyperlink{_buffer_8h}{Buffer.h}"}
-00035 \textcolor{preprocessor}{#include "\hyperlink{_ring_buffer_8h}{RingBuffer.h}"}
-00036 \textcolor{preprocessor}{#include "\hyperlink{_signal_generator_8h}{SignalGenerator.h}"}
-00037 \textcolor{preprocessor}{#include "\hyperlink{_sine_8h}{Sine.h}"}
-00038 \textcolor{preprocessor}{#include "\hyperlink{_sinc_8h}{Sinc.h}"}
-00039 \textcolor{preprocessor}{#include "\hyperlink{_denormal_8h}{Denormal.h}"}
-00040 \textcolor{preprocessor}{#include "Math.h"}
-00041 \textcolor{preprocessor}{#include "\hyperlink{_blackman_8h}{Blackman.h}"}
-00042 \textcolor{preprocessor}{#include "\hyperlink{_l_u_t_8h}{LUT.h}"}
-00043 \textcolor{preprocessor}{#include "\hyperlink{_window_8h}{Window.h}"}
-00044 \textcolor{preprocessor}{#include "\hyperlink{_bounds_8h}{Bounds.h}"}
-00045 \textcolor{preprocessor}{#include "\hyperlink{_generic_generator_8h}{GenericGenerator.h}"}
-00046 \textcolor{preprocessor}{#include "\hyperlink{_delay_8h}{Delay.h}"}
-00047 \textcolor{preprocessor}{#include "\hyperlink{_sleep_8h}{Sleep.h}"}
-00048 \textcolor{preprocessor}{#include "\hyperlink{_buffer_conversion_8h}{BufferConversion.h}"}
-00049 \textcolor{preprocessor}{#include "\hyperlink{_fourier_series_8h}{FourierSeries.h}"}
-00050 \textcolor{preprocessor}{#include "\hyperlink{_fourier_saw_8h}{FourierSaw.h}"}
-00051 \textcolor{preprocessor}{#include "\hyperlink{_fourier_square_8h}{FourierSquare.h}"}
-00052 \textcolor{preprocessor}{#include "\hyperlink{_fourier_triangle_8h}{FourierTriangle.h}"}
-00053 \textcolor{preprocessor}{#include "\hyperlink{_analog_saw_8h}{AnalogSaw.h}"}
-00054 \textcolor{preprocessor}{#include "\hyperlink{_analog_square_8h}{AnalogSquare.h}"}
-00055 \textcolor{preprocessor}{#include "\hyperlink{_analog_triangle_8h}{AnalogTriangle.h}"}
-00056 \textcolor{preprocessor}{#include "\hyperlink{_b_l_i_t_8h}{BLIT.h}"}
-00057 \textcolor{preprocessor}{#include "\hyperlink{_b_l_i_t_saw_8h}{BLITSaw.h}"}
-00058 \textcolor{preprocessor}{#include "\hyperlink{_d_s_f_8h}{DSF.h}"}
-00059 \textcolor{preprocessor}{#include "\hyperlink{_d_p_w_8h}{DPW.h}"}
-00060 \textcolor{preprocessor}{#include "\hyperlink{_d_p_w_saw_8h}{DPWSaw.h}"}
-00061 \textcolor{preprocessor}{#include "\hyperlink{_e_p_t_r_saw_8h}{EPTRSaw.h}"}
-00062 \textcolor{preprocessor}{#include "\hyperlink{_noise_8h}{Noise.h}"}
-00063 \textcolor{preprocessor}{#include "\hyperlink{_d_c_blocker_8h}{DCBlocker.h}"}
-00064 \textcolor{preprocessor}{#include "\hyperlink{_filter_8h}{Filter.h}"}
-00065 \textcolor{preprocessor}{#include "\hyperlink{_leaky_8h}{Leaky.h}"}
-00066 \textcolor{preprocessor}{#endif}
+00042 \textcolor{comment}{//!\(\backslash\)brief DSG - A Collection of tools for Digital Signal Generation}
+00043 \textcolor{comment}{//!\(\backslash\)copyright Lesser GNU Public License}
+00044 \textcolor{comment}{//!\(\backslash\)todo Increase documentation level. Add documentation for every variable, parameter...}
+00045 \textcolor{comment}{//!\(\backslash\)todo Implement Blep Based Algorithms}
+00046 \textcolor{comment}{}\textcolor{keyword}{namespace }\hyperlink{namespace_d_s_g}{DSG} \{\}
+00047 \textcolor{preprocessor}{#include "\hyperlink{_audio_settings_8h}{AudioSettings.h}"}
+00048 \textcolor{preprocessor}{#include "\hyperlink{_signal_process_8h}{SignalProcess.h}"}
+00049 \textcolor{preprocessor}{#include "\hyperlink{_buffer_8h}{Buffer.h}"}
+00050 \textcolor{preprocessor}{#include "\hyperlink{_ring_buffer_8h}{RingBuffer.h}"}
+00051 \textcolor{preprocessor}{#include "\hyperlink{_signal_generator_8h}{SignalGenerator.h}"}
+00052 \textcolor{preprocessor}{#include "\hyperlink{_sine_8h}{Sine.h}"}
+00053 \textcolor{preprocessor}{#include "\hyperlink{_sinc_8h}{Sinc.h}"}
+00054 \textcolor{preprocessor}{#include "\hyperlink{_denormal_8h}{Denormal.h}"}
+00055 \textcolor{preprocessor}{#include "Math.h"}
+00056 \textcolor{preprocessor}{#include "\hyperlink{_blackman_8h}{Blackman.h}"}
+00057 \textcolor{preprocessor}{#include "\hyperlink{_l_u_t_8h}{LUT.h}"}
+00058 \textcolor{preprocessor}{#include "\hyperlink{_window_8h}{Window.h}"}
+00059 \textcolor{preprocessor}{#include "\hyperlink{_bounds_8h}{Bounds.h}"}
+00060 \textcolor{preprocessor}{#include "\hyperlink{_generic_generator_8h}{GenericGenerator.h}"}
+00061 \textcolor{preprocessor}{#include "\hyperlink{_delay_8h}{Delay.h}"}
+00062 \textcolor{preprocessor}{#include "\hyperlink{_sleep_8h}{Sleep.h}"}
+00063 \textcolor{preprocessor}{#include "\hyperlink{_buffer_conversion_8h}{BufferConversion.h}"}
+00064 \textcolor{preprocessor}{#include "\hyperlink{_fourier_series_8h}{FourierSeries.h}"}
+00065 \textcolor{preprocessor}{#include "\hyperlink{_fourier_saw_8h}{FourierSaw.h}"}
+00066 \textcolor{preprocessor}{#include "\hyperlink{_fourier_square_8h}{FourierSquare.h}"}
+00067 \textcolor{preprocessor}{#include "\hyperlink{_fourier_triangle_8h}{FourierTriangle.h}"}
+00068 \textcolor{preprocessor}{#include "\hyperlink{_analog_saw_8h}{AnalogSaw.h}"}
+00069 \textcolor{preprocessor}{#include "\hyperlink{_analog_square_8h}{AnalogSquare.h}"}
+00070 \textcolor{preprocessor}{#include "\hyperlink{_analog_triangle_8h}{AnalogTriangle.h}"}
+00071 \textcolor{preprocessor}{#include "\hyperlink{_b_l_i_t_8h}{BLIT.h}"}
+00072 \textcolor{preprocessor}{#include "\hyperlink{_b_l_i_t_saw_8h}{BLITSaw.h}"}
+00073 \textcolor{preprocessor}{#include "\hyperlink{_d_s_f_8h}{DSF.h}"}
+00074 \textcolor{preprocessor}{#include "\hyperlink{_d_p_w_8h}{DPW.h}"}
+00075 \textcolor{preprocessor}{#include "\hyperlink{_d_p_w_saw_8h}{DPWSaw.h}"}
+00076 \textcolor{preprocessor}{#include "\hyperlink{_e_p_t_r_saw_8h}{EPTRSaw.h}"}
+00077 \textcolor{preprocessor}{#include "\hyperlink{_noise_8h}{Noise.h}"}
+00078 \textcolor{preprocessor}{#include "\hyperlink{_d_c_blocker_8h}{DCBlocker.h}"}
+00079 \textcolor{preprocessor}{#include "\hyperlink{_filter_8h}{Filter.h}"}
+00080 \textcolor{preprocessor}{#include "\hyperlink{_leaky_8h}{Leaky.h}"}
+00081 \textcolor{preprocessor}{#endif}
 \end{DoxyCode}
