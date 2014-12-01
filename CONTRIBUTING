@@ -8,7 +8,7 @@ CONTRIBUTING
 
 GUIDELINES
 
-1)When acquiring the repository from www.github.com/zyvitski/DSG please create a new branch from the “dev” branch of the project to use as a working copy for your development. We would like to ensure that the master branch only contains code that is tested and deemed to be ready for deployment.
+1)When acquiring the repository from www.github.com/zyvitski/DSG please fork the repository and use the fork as your working copy. We would like to ensure that the master branch only contains code that is tested and deemed to be ready for deployment.
 
 2)Please document your code! We ask that you document each source file using oxygen style documentation. We ask that each namespace, class,function… have at least a \brief description within the source to ensure that we know a little about your code. We do not require any further documentation but we encourage it greatly so that other developers are able to understand and use your code properly.
 
