@@ -1,0 +1,66 @@
+DISCLAIMER	
+
+	This document describes the guidelines for contributing to the DSG project. The content in this document is intended to be guidelines rather than requirements in regards to possible conflicts to the GNU LGPL and GPL licenses. Meaning that if any guidelines set forth within this document conflict with the terms set forth within the LGPL, the terms set forth within the LGPL will take precedent over any guidelines set forth in this document.
+
+CONTRIBUTING
+	First of all, thank you for expressing interest in contributing to the DSG project. We at the DSG project understand that we could not continue to improve our project without contribution from a wide pool of developers with differing perspectives regarding programming and signal processing.
+	In regards to contribution we ask that you please follow the guidelines within this documents in order help maintain am efficient workflow.
+
+GUIDELINES
+
+1)When acquiring the repository from www.github.com/zyvitski/DSG please create a new branch from the “dev” branch of the project to use as a working copy for your development. We would like to ensure that the master branch only contains code that is tested and deemed to be ready for deployment.
+
+2)Please document your code! We ask that you document each source file using oxygen style documentation. We ask that each namespace, class,function… have at least a \brief description within the source to ensure that we know a little about your code. We do not require any further documentation but we encourage it greatly so that other developers are able to understand and use your code properly.
+
+3)Include a License Notice. Under the terms of the LGPL license that governs the DSG project, each and every source file must contain a copy of the license notice as reads:
+
+//
+//  FILENAME.extension
+//  DSG
+//
+//  Created by DEVELOPER NAME on CREATION DATE>
+//  Copyright (c) YEAR DEVELOPER NAME. All rights reserved.
+//
+/*
+ This file is part of the Digital Signal Generation Project or “DSG”.
+
+ DSG is free software: you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ DSG is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public License
+ along with DSG.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+4)When you are done developing your code and wish to submit it to be a part of the project, please issue a PULL REQUST on github. This way we can review and hopefully add your code to the project.
+
+5)Please properly format your code. All of your code must exist within the namespace “DSG” and if desired you can implement a nested namespace with a name of your choosing or a name already used within the project. We ask that if you do implement a nested namespace, that you follow this pattern for your nested namespace:
+
+namespace DSG{
+#ifdef DSG_Short_Names
+    inline
+#endif
+    namespace YOUR_NAMESPACE_NAME{
+    }
+}
+
+6) Know the library before implementing something new. Before writing something please ensure that we do not already have it. This way we can avoid duplicates which result in bulk in the project.
+
+7) If you wish to add a new algorithm or other process, please write a brief summary of what the algorithm does and why you wish to add it to the project. We would like to keep track of what users and developers want/need so we can properly steer the project in the right direction.
+
+8) Try to make your code fast. We strive to make our code top of the line as far as efficiency goes and are always trying to improve the speed of our existing code. 
+
+9) Stay cross platform. Please do not use operating system specific libraries and functions. We would like to remain cross platform. If any of our code is currently non functional on your OS please try to correct the mistake and contribute that fix to the project in the manor described in this document.
+
+10) Please use our documentation. We will do our best to ensure that our documentation is accurate and up to date.
+
+11) We reserve the right to append guidelines on to this document if a specific change is needed to improve the function of the project or this document.
+
+12) As always, HAVE FUN and HAPPY CODING! We hope to see your contributions soon!
+ 
