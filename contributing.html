@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="main.css">
+
+<head>
+    <div "navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home</a>
+                <a class="navbar-brand" href="license.html">License</a>
+                <a class="navbar-brand" href="Documentation.html">Documentation</a>
+                <a class="navbar-brand" href="contributing.html">Contributing</a>
+                <a class="navbar-brand" href="https://www.github.com/zyvitski/DSG" target="_blank">Get The Code</a>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>The Digital Signal Generation Project</h1>
+            <p>Tools For Efficiently Generating and Manipulating Digital Signals</p>
+        </div>
+
+    </div>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Contributing</h2>
+        <div class="panel">
+            <h4>DISCLAIMER</h4>
+        <p>
+            	
+
+	This document describes the guidelines for contributing to the DSG project. The content in this document is intended to be guidelines rather than requirements in regards to possible conflicts to the GNU LGPL and GPL licenses. Meaning that if any guidelines set forth within this document conflict with the terms set forth within the LGPL, the terms set forth within the LGPL will take precedent over any guidelines set forth in this document.
+            </p>
+
+            <h4>Welcome</h4>
+            <p>
+	First of all, thank you for expressing interest in contributing to the DSG project. We at the DSG project understand that we could not continue to improve our project without contribution from a wide pool of developers with differing perspectives regarding programming and signal processing.
+	In regards to contribution we ask that you please follow the guidelines within this documents in order help maintain am efficient workflow.
+            </p>
+            <h3>Guidelines</h3>
+        </div>
+        <div class="well">
+            <ol class="list-group">
+                <li class="list-group-item">DSG is written in C++. We try to avoid mixing C library functions and C++ code, but we do break our own rules sometimes. We ask that you try to stick to STD C++.</li>
+                <li class="list-group-item">
+                    When acquiring the repository from www.github.com/zyvitski/DSG please fork the repository and use the fork as your working copy. We would like to ensure that the master branch only contains code that is tested and deemed to be ready for deployment.
+                </li>
+                <li class="list-group-item">
+                    Please document your code! We ask that you document each source file using oxygen style documentation. We ask that each namespace, class,function… have at least a \brief description within the source to ensure that we know a little about your code. We do not require any further documentation but we encourage it greatly so that other developers are able to understand and use your code properly.
+                </li>
+                <li class="list-group-item">
+                    
+                Include a License Notice. Under the terms of the LGPL license that governs the DSG project, each and every source file must contain a copy of the license notice as reads:
+<pre>
+//
+//  FILENAME.extension
+//  DSG
+//
+//  Created by DEVELOPER NAME on CREATION DATE>
+//  Copyright (c) YEAR DEVELOPER NAME. All rights reserved.
+//
+/*
+ This file is part of the Digital Signal Generation Project or “DSG”.
+
+ DSG is free software: you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ DSG is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public License
+ along with DSG.  If not, see <http://www.gnu.org/licenses/>.
+*/
+</pre>
+                </li>
+                <li class="list-group-item">
+                When you are done developing your code and wish to submit it to be a part of the project, please issue a PULL REQUST on github. This way we can review and hopefully add your code to the project.
+                </li>
+                <li class="list-group-item">
+                Please properly format your code. All of your code must exist within the namespace “DSG” and if desired you can implement a nested namespace with a name of your choosing or a name already used within the project. We ask that if you do implement a nested namespace, that you follow this pattern for your nested namespace:
+                    <pre>
+namespace DSG{
+#ifdef DSG_Short_Names
+    inline
+#endif
+    namespace YOUR_NAMESPACE_NAME{
+    //your code here
+    }
+}</pre>
+                </li>
+                <li class="list-group-item">
+                Know the library before implementing something new. Before writing something please ensure that we do not already have it. This way we can avoid duplicates which result in bulk in the project.
+                </li>
+                <li class="list-group-item">
+                 If you wish to add a new algorithm or other process, please write a brief summary of what the algorithm does and why you wish to add it to the project. We would like to keep track of what users and developers want/need so we can properly steer the project in the right direction.
+                </li>
+                <li class="list-group-item">
+                Try to make your code fast. We strive to make our code top of the line as far as efficiency goes and are always trying to improve the speed of our existing code.
+                </li>
+                <li class="list-group-item">
+                 Stay cross platform. Please do not use operating system specific libraries and functions. We would like to remain cross platform. If any of our code is currently non functional on your OS please try to correct the mistake and contribute that fix to the project in the manor described in this document.
+                </li>
+                <li class="list-group-item">
+                 Please use our documentation. We will do our best to ensure that our documentation is accurate and up to date.
+                </li>
+                <li class="list-group-item">
+                 We reserve the right to append guidelines on to this document if a specific change is needed to improve the function of the project or this document.
+                </li>
+                <li class="list-group-item">
+                 As always, HAVE FUN and HAPPY CODING! We hope to see your contributions soon!
+                </li>       
+            </ol>
+
+        </div>
+    </div>
+</body>
+
+</html>
