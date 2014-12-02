@@ -1,9 +1,52 @@
 .license {
     text-indent: 25px;
-
 }
-
+.navbar{
+ color:white;   
+}
 ol li.list-group-item { 
     list-style: decimal inside;
     display: list-item;
+}
+
+
+.divider {
+    height:50px;
+}
+
+section {
+    height:500px;
+    padding-top:50px;
+    padding-bottom:50px;
+    overflow:auto;
+}
+
+.bg-1 {
+	background: url('under-the-wave-beach-hd-wallpaper-1920x1200-7671.jpg') no-repeat center center fixed;
+    color:#fff;
+    background-size:cover;
+}
+  
+.bg-2 {
+	background: url('/assets/example/bg_suburb.jpg') no-repeat top center fixed;
+    color:#fff;
+    background-size:cover;
+}
+
+.bg-3 {
+	background: url('/assets/example/bg_blueplane.jpg') no-repeat bottom center fixed;
+    color:#fff;
+    background-size:cover;
+}
+
+#footer {
+    height: 60px;
+    background-color:#585858;
+    margin-top:50px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+#footer a {
+  color:#efefef;
 }
