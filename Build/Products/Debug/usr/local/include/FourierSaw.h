@@ -39,6 +39,7 @@ namespace DSG{
             virtual inline bool Perform(DSG::DSGSample& signal);
             virtual inline bool Perform(DSG::RingBuffer& signal);
             virtual inline DSG::DSGFrequency const& Frequency(DSG::DSGFrequency const& value);
+            virtual inline DSG::DSGFrequency const& Frequency();
         protected:
             unsigned long _h;
             const double _a;
@@ -70,6 +71,9 @@ namespace DSG{
             _frequency = value;
             _dt = _frequency/DSG::SampleRate();
             _h = MaxHarms(_frequency);
+            return _frequency;
+        }
+        inline DSG::DSGFrequency const& DSG::Fourier::FourierSaw::Frequency(){
             return _frequency;
         }
     }

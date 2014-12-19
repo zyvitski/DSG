@@ -38,6 +38,8 @@ namespace DSG{
             virtual inline bool Perform(DSG::DSGSample& signal);
             virtual inline bool Perform(DSG::RingBuffer& signal);
             virtual inline bool Cutoff(DSG::DSGFrequency const& cutoff);
+            virtual inline bool SampleRateChanged(DSG::DSGFrequency const& sampleRate);
+
         protected:
             DSG::DSGSample _temp;
             unsigned long count;
@@ -60,6 +62,10 @@ namespace DSG{
         inline bool DSG::Filter::FilterBase::Cutoff(DSG::DSGFrequency const& cutoff){
             return false;
         }
+        inline bool DSG::Filter::FilterBase::SampleRateChanged(DSG::DSGFrequency const& sampleRate){
+            return true;
+        };
+
     }
 }
 #endif /* defined(__DSG__Filter__) */

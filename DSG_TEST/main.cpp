@@ -10,9 +10,15 @@
 #ifdef DEBUG
 #include <iostream>
 #endif
+#include <fstream>
+#include <sstream>
+const int N = 10000;
+
 int main(int argc, const char * argv[])
 {
-    DSG::AnalogSaw _gen(40,0);
-    std::cout<<DSG::SampleRate();
-
+    DSG::AnalogTriangle _saw(220.0,0);
+    DriverInit(&_saw);
+    DSG::Sleep(6000);
+    DriverExit();
+    return 0;
 }

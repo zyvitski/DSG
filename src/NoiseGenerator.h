@@ -32,6 +32,8 @@ namespace DSG{
         virtual ~NoiseGenerator();
         virtual inline bool Perform(DSG::DSGSample& signal);
         virtual inline bool Perform(DSG::RingBuffer& signal);
+        virtual inline bool SampleRateChanged(DSG::DSGFrequency const& sampleRate);
+
     protected:
         DSGSample (*_function)(DSGSample);
         DSG::DSGSample _storage;
@@ -48,6 +50,9 @@ namespace DSG{
                 }else return false;
             }else return false;
         }return true;
+    }
+    inline bool DSG::NoiseGenerator::SampleRateChanged(DSG::DSGFrequency const& sampleRate){
+        return true;
     }
 }
 #endif /* defined(__DSG__NoiseGenerator__) */

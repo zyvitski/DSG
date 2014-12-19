@@ -33,6 +33,7 @@ namespace DSG{
         virtual ~GenericGenerator();
         virtual inline bool Perform(DSG::DSGSample& signal);
         virtual inline bool Perform(DSG::RingBuffer& signal);
+        virtual inline bool SampleRateChanged(DSG::DSGFrequency const& sampleRate);
     protected:
         DSG::DSGSample (*_callback)(DSG::DSGSample const&);
     };
@@ -51,6 +52,9 @@ namespace DSG{
                 }else return false;
             }else return false;
         }return true;
+    }
+    inline bool DSG::GenericGenerator::SampleRateChanged(DSG::DSGFrequency const& sampleRate){
+        return true;
     }
 }
 #endif /* defined(__DSG__GenericGenerator__) */

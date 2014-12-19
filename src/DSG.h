@@ -21,6 +21,8 @@
  A copy of the LGPL and the GNU Public License should be included with the distrobution in the files: COPYING (GPL), and COPYING.LESSER (LGPL)
 Additionally each source file should contain a copy of the license notice which reads as follows:
  \copyright
+ 
+
  This file is part of the Digital Signal Generation Project or “DSG”.
 
  DSG is free software: you can redistribute it and/or modify
@@ -37,6 +39,9 @@ Additionally each source file should contain a copy of the license notice which 
  along with DSG.  If not, see <http://www.gnu.org/licenses/>.
 
  */
+
+
+
 #define DSG_Short_Names // enables inlining of nested namespaces to allow shorter explicit typenames
 //Example: DSG::Analog::AnalogSaw (Long Name)...DSG::AnalogSaw (Short Name)(only available with this macro enabled
 //!\brief DSG - A Collection of tools for Digital Signal Generation
@@ -78,4 +83,6 @@ namespace DSG {}
 #include "DCBlocker.h"
 #include "Filter.h"
 #include "Leaky.h"
+#include "MTOF.h"
+#include "PlotDataFile.h"
 #endif
