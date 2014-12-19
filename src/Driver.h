@@ -11,7 +11,7 @@
 #include <iostream>
 #endif
 #include <portaudio.h>
-#include "DSG.h"
+#include <DSG/DSG.h>
 int DriverInit(void * data);
 int DriverExit();
 int Callback( const void *input,

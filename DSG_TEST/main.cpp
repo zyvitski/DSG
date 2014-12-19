@@ -5,20 +5,20 @@
 //  Created by Alexander Zywicki on 9/16/14.
 //  Copyright (c) 2014 Alexander Zywicki. All rights reserved.
 //
-//#include "../src/DSG.h"
-#include "../src/Driver.h"
+
+
 #ifdef DEBUG
 #include <iostream>
 #endif
-#include <fstream>
-#include <sstream>
-const int N = 10000;
+
+#include <DSG/DSG.h>
 
 int main(int argc, const char * argv[])
 {
-    DSG::AnalogTriangle _saw(220.0,0);
-    DriverInit(&_saw);
-    DSG::Sleep(6000);
-    DriverExit();
+    DSG::RingBuffer b(4096);
+    DSG::AnalogSaw _saw(20,0);
+    _saw.Perform(b);
+    DSG::File::Write<DSG::File::PlotFile>("filename", b);
+
     return 0;
 }

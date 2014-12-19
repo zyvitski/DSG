@@ -84,5 +84,5 @@ namespace DSG {}
 #include "Filter.h"
 #include "Leaky.h"
 #include "MTOF.h"
-#include "PlotDataFile.h"
+#include "DSGFile.h"
 #endif

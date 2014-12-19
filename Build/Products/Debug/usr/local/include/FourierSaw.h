@@ -43,7 +43,6 @@ namespace DSG{
         protected:
             unsigned long _h;
             const double _a;
-            double phs;
             double value;
             int i;
         };

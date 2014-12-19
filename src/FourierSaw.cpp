@@ -22,8 +22,8 @@
  along with DSG.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "FourierSaw.h"
-DSG::Fourier::FourierSaw::FourierSaw():DSG::SignalGenerator(),_a(1.7/PI),phs(0),value(0),i(0){}
-DSG::Fourier::FourierSaw::FourierSaw(DSG::DSGFrequency const& frequency,DSG::DSGPhase const& offset):DSG::SignalGenerator(frequency,offset),_a(1.7/PI),phs(0),value(0),i(0){
+DSG::Fourier::FourierSaw::FourierSaw():DSG::SignalGenerator(),_a(1.7/PI),value(0),i(0){}
+DSG::Fourier::FourierSaw::FourierSaw(DSG::DSGFrequency const& frequency,DSG::DSGPhase const& offset):DSG::SignalGenerator(frequency,offset),_a(1.7/PI),value(0),i(0){
     _h = MaxHarms(_frequency)+1;
 }
 DSG::Fourier::FourierSaw::~FourierSaw(){}

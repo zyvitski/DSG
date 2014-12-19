@@ -57,10 +57,6 @@
 		1F7387281A1BCD96002D4A50 /* FourierSeries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F7387251A1BCD96002D4A50 /* FourierSeries.cpp */; };
 		1F7387291A1BCD96002D4A50 /* FourierSeries.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7387261A1BCD96002D4A50 /* FourierSeries.h */; };
 		1F73872A1A1BCD96002D4A50 /* FourierSeries.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7387261A1BCD96002D4A50 /* FourierSeries.h */; };
-		1F73FF061A43982D0085D3AD /* PlotDataFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F73FF041A43982D0085D3AD /* PlotDataFile.cpp */; };
-		1F73FF071A43982D0085D3AD /* PlotDataFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F73FF041A43982D0085D3AD /* PlotDataFile.cpp */; };
-		1F73FF081A43982D0085D3AD /* PlotDataFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F73FF051A43982D0085D3AD /* PlotDataFile.h */; };
-		1F73FF091A43982D0085D3AD /* PlotDataFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F73FF051A43982D0085D3AD /* PlotDataFile.h */; };
 		1F7548DC1A0ABB410078A1F6 /* DSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7548D91A0ABB410078A1F6 /* DSF.h */; };
 		1F7548DD1A0ABB410078A1F6 /* DSF.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7548D91A0ABB410078A1F6 /* DSF.h */; };
 		1F89D72B19EBA2EF00794DCD /* DCBlocker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F89D72919EBA2EF00794DCD /* DCBlocker.cpp */; };
@@ -75,6 +71,8 @@
 		1F949FA019FEFA7100C0DF7E /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F949F9D19FEFA7100C0DF7E /* Filter.cpp */; };
 		1F949FA119FEFA7100C0DF7E /* Filter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F949F9E19FEFA7100C0DF7E /* Filter.h */; };
 		1F949FA219FEFA7100C0DF7E /* Filter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F949F9E19FEFA7100C0DF7E /* Filter.h */; };
+		1F97AA921A44E2BF00D5CCA1 /* DSGFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F97AA8F1A44E2BF00D5CCA1 /* DSGFile.h */; };
+		1F97AA931A44E2BF00D5CCA1 /* DSGFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F97AA8F1A44E2BF00D5CCA1 /* DSGFile.h */; };
 		1F9A2E0E19F0F85A009A71CF /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F9A2E0D19F0F85A009A71CF /* Window.h */; };
 		1F9A2E0F19F0F85A009A71CF /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F9A2E0D19F0F85A009A71CF /* Window.h */; };
 		1FA5CEA619EE323400B29E71 /* White.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA5CEA519EE323400B29E71 /* White.h */; };
@@ -84,7 +82,6 @@
 		1FAB5FAA1A12E23E00F99417 /* DPW.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FAB5FA91A12E23E00F99417 /* DPW.h */; };
 		1FAB5FAB1A12E23E00F99417 /* DPW.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FAB5FA91A12E23E00F99417 /* DPW.h */; };
 		1FAB7D4819CB5F0800515633 /* libportaudio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAB7D4719CB5F0800515633 /* libportaudio.dylib */; };
-		1FAB7D4B19CB651700515633 /* Driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB7D4919CB651700515633 /* Driver.cpp */; };
 		1FAC222719D09C42000D9052 /* libDSG.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F43E41E19C8D5ED0012C668 /* libDSG.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		1FAC222819D09C42000D9052 /* libDSG.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F43E44A19C8D6E90012C668 /* libDSG.a */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		1FB525A519F5D8FF00252FDB /* NoiseGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB525A319F5D8FF00252FDB /* NoiseGenerator.cpp */; };
@@ -255,8 +252,6 @@
 		1F7123A019ED928B0066884B /* BufferConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BufferConversion.h; path = src/BufferConversion.h; sourceTree = "<group>"; };
 		1F7387251A1BCD96002D4A50 /* FourierSeries.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FourierSeries.cpp; path = src/FourierSeries.cpp; sourceTree = "<group>"; };
 		1F7387261A1BCD96002D4A50 /* FourierSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FourierSeries.h; path = src/FourierSeries.h; sourceTree = "<group>"; };
-		1F73FF041A43982D0085D3AD /* PlotDataFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlotDataFile.cpp; path = src/PlotDataFile.cpp; sourceTree = "<group>"; };
-		1F73FF051A43982D0085D3AD /* PlotDataFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlotDataFile.h; path = src/PlotDataFile.h; sourceTree = "<group>"; };
 		1F7548D91A0ABB410078A1F6 /* DSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSF.h; path = src/DSF.h; sourceTree = "<group>"; };
 		1F89D72919EBA2EF00794DCD /* DCBlocker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DCBlocker.cpp; path = src/DCBlocker.cpp; sourceTree = "<group>"; };
 		1F89D72A19EBA2EF00794DCD /* DCBlocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCBlocker.h; path = src/DCBlocker.h; sourceTree = "<group>"; };
@@ -264,6 +259,7 @@
 		1F949F9819FEF91A00C0DF7E /* Leaky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Leaky.h; path = src/Leaky.h; sourceTree = "<group>"; };
 		1F949F9D19FEFA7100C0DF7E /* Filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Filter.cpp; path = src/Filter.cpp; sourceTree = "<group>"; };
 		1F949F9E19FEFA7100C0DF7E /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Filter.h; path = src/Filter.h; sourceTree = "<group>"; };
+		1F97AA8F1A44E2BF00D5CCA1 /* DSGFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSGFile.h; path = src/DSGFile.h; sourceTree = "<group>"; };
 		1F9A2E0D19F0F85A009A71CF /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Window.h; path = src/Window.h; sourceTree = "<group>"; };
 		1FA5CEA519EE323400B29E71 /* White.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = White.h; path = src/White.h; sourceTree = "<group>"; };
 		1FAB5FA61A128E3400F99417 /* Bounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bounds.h; path = src/Bounds.h; sourceTree = "<group>"; };
@@ -376,6 +372,7 @@
 		1F43E42519C8D6140012C668 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				1F97AA8D1A44E2AB00D5CCA1 /* File */,
 				1F7548D71A0ABB2D0078A1F6 /* DSF */,
 				1F27F9CA19FA08D4008D2153 /* delay */,
 				1F89D72819EBA2D800794DCD /* filters */,
@@ -434,8 +431,6 @@
 				1FC95FCB1A252AAC003088F2 /* MTOF.h */,
 				1F1D29F71A26D13300C89E5E /* Phasor.cpp */,
 				1F1D29F81A26D13300C89E5E /* Phasor.h */,
-				1F73FF041A43982D0085D3AD /* PlotDataFile.cpp */,
-				1F73FF051A43982D0085D3AD /* PlotDataFile.h */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -459,6 +454,14 @@
 				1F949F9E19FEFA7100C0DF7E /* Filter.h */,
 			);
 			name = filters;
+			sourceTree = "<group>";
+		};
+		1F97AA8D1A44E2AB00D5CCA1 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				1F97AA8F1A44E2BF00D5CCA1 /* DSGFile.h */,
+			);
+			name = File;
 			sourceTree = "<group>";
 		};
 		1FA8763019CA42AD00AE3EF1 /* Fourier */ = {
@@ -552,11 +555,11 @@
 				1F9A2E0E19F0F85A009A71CF /* Window.h in Headers */,
 				1FA5CEA619EE323400B29E71 /* White.h in Headers */,
 				1FB9FCBF19CA88C700E42C69 /* AnalogSaw.h in Headers */,
+				1F97AA921A44E2BF00D5CCA1 /* DSGFile.h in Headers */,
 				1FB9FD1219CA88F800E42C69 /* PI.h in Headers */,
 				1FB525A719F5D8FF00252FDB /* NoiseGenerator.h in Headers */,
 				1F949F9B19FEF91A00C0DF7E /* Leaky.h in Headers */,
 				1F1092D219E148F5002DF1A2 /* Sleep.h in Headers */,
-				1F73FF081A43982D0085D3AD /* PlotDataFile.h in Headers */,
 				1FC3424B19DA0F3E004C028E /* EPTRSaw.h in Headers */,
 				1F27F9CF19FA08F0008D2153 /* Delay.h in Headers */,
 				1F49BFDA19E5EDB500EA40ED /* Pink.h in Headers */,
@@ -607,11 +610,11 @@
 				1F9A2E0F19F0F85A009A71CF /* Window.h in Headers */,
 				1FA5CEA719EE323400B29E71 /* White.h in Headers */,
 				1FB9FCD519CA88D500E42C69 /* FourierTriangle.h in Headers */,
+				1F97AA931A44E2BF00D5CCA1 /* DSGFile.h in Headers */,
 				1FB9FD1319CA88F800E42C69 /* PI.h in Headers */,
 				1FB525A819F5D8FF00252FDB /* NoiseGenerator.h in Headers */,
 				1F949F9C19FEF91A00C0DF7E /* Leaky.h in Headers */,
 				1F1092D319E148F5002DF1A2 /* Sleep.h in Headers */,
-				1F73FF091A43982D0085D3AD /* PlotDataFile.h in Headers */,
 				1FC3424C19DA0F3E004C028E /* EPTRSaw.h in Headers */,
 				1F27F9D019FA08F0008D2153 /* Delay.h in Headers */,
 				1F49BFDB19E5EDB500EA40ED /* Pink.h in Headers */,
@@ -779,7 +782,6 @@
 				1FB9FCD219CA88D500E42C69 /* FourierTriangle.cpp in Sources */,
 				1FB9FCBE19CA88C700E42C69 /* AnalogSaw.cpp in Sources */,
 				1FB9FD1C19CA88F800E42C69 /* SignalProcess.cpp in Sources */,
-				1F73FF061A43982D0085D3AD /* PlotDataFile.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -811,7 +813,6 @@
 				1FB9FCD819CA88D900E42C69 /* AnalogSquare.cpp in Sources */,
 				1FB9FCD619CA88D900E42C69 /* AnalogSaw.cpp in Sources */,
 				1FB9FD1D19CA88F800E42C69 /* SignalProcess.cpp in Sources */,
-				1F73FF071A43982D0085D3AD /* PlotDataFile.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -820,7 +821,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F43E46919C900110012C668 /* main.cpp in Sources */,
-				1FAB7D4B19CB651700515633 /* Driver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
